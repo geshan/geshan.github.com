@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Apply Multiple Drupal Themes for Sections in a Single Drupal Website - Geshan&#8217;s Blog</title>
+  <meta name="author" content="Geshan Manandhar">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/blog/2009/03/01/apply-multiple-drupal-themes-for">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="Geshan's Blog" type="application/atom+xml">
+
+  <!-- http://opengraphprotocol.org/ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://yoursite.com/blog/2009/03/01/apply-multiple-drupal-themes-for">
+  <meta property="og:title" content="Apply Multiple Drupal Themes for Sections in a Single Drupal Website - Geshan's Blog">
+  
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.united.min.css" rel="stylesheet" type="text/css">
+
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+  <body   >
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Geshan&#8217;s Blog</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a rel="index" href="/">Blog</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
+                        <span class="visible-xs">RSS</span>
+                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
+                    </a>
+                </li>
+                
+            </ul>
+            
+                <form class="search navbar-form navbar-right" action="https://www.google.com/search" method="GET">
+                    <input type="hidden" name="q" value="site:yoursite.com">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="q" placeholder="Search">
+                    </div>
+                </form>
+            
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div id="main" class="container">
+        <div id="content">
+          <div class="row">
+  <div class="page-content col-md-8" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Geshan's Blog" />
+    
+    <meta itemprop="url" content="http://yoursite.com" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2009-03-01T16:07:00+04:00"  data-updated="true" itemprop="datePublished dateCreated"><time class='entry-date' datetime='2009-03-01T16:07:00+04:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2009</span></span> <span class='time'>4:07 pm</span></time></time>
+        
+           | <a href="#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://yoursite.com">Comments</a>
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Apply Multiple Drupal Themes for Sections in a Single Drupal Website
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody description"><div class='post'>
+Think of a way by which you could select one Drupal theme for your blog section, one for your forum and one for the other pages/nodes. So this is possible how you do it what you are going to get in this blog post. I am doing it on a Drupal 6 website, it can also be done for a Drupal 5 website.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_L4bRnZ5TPr8/Sap9vjpw4HI/AAAAAAAAA-Q/Z2l-h6jpMr8/s1600-h/both.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 242px;" src="http://3.bp.blogspot.com/_L4bRnZ5TPr8/Sap9vjpw4HI/AAAAAAAAA-Q/Z2l-h6jpMr8/s400/both.jpg" alt="" id="BLOGGER_PHOTO_ID_5308193366787285106" border="0" /></a><br /><h3>Modules You will need</h3>A Drupal theme for a section say blog or forum is possible with use of the Sections module which you can get <a href="http://drupal.org/project/sections" target="_blank">here</a>. You can sort things by using the Path Auto module, you can download the Path Auto module <a href="http://drupal.org/project/pathauto" target="_blank">here</a>, PathAuto depends on Token get it <a href="http://drupal.org/project/token" target="_blank">here</a>. Now lets see how to get started:<br /><h3>Steps to Do it</h3><ol><li>Download, install and activate Path Auto and Sections module as below at <span style="font-weight: bold;">Administer>>Site Building>>Modules</span> . (links in above paragraph)<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazaeHZ9s1I/AAAAAAAAA-Y/TEU756fg2H8/s1600-h/modules_section.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 234px;" src="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazaeHZ9s1I/AAAAAAAAA-Y/TEU756fg2H8/s400/modules_section.jpg" alt="" id="BLOGGER_PHOTO_ID_5308858271681852242" border="0" /></a><br /></li><li>Configure your URL for the content type/node type you want the different section with a theme for. In this example I am having a different theme for blogs.<br />So my blog URL should be consistent like below done with PathAuto settings done at <span style="font-weight: bold;">Adminster>>Site Building>> URL Aliases>>Automated Alias Settings</span> which is http://yoursiteurl/admin/build/path/pathauto [you must have permission to do it :-) ]<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_L4bRnZ5TPr8/Sazb0YmsheI/AAAAAAAAA-g/HE9jM_b6fhc/s1600-h/path_settings.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 143px;" src="http://4.bp.blogspot.com/_L4bRnZ5TPr8/Sazb0YmsheI/AAAAAAAAA-g/HE9jM_b6fhc/s400/path_settings.jpg" alt="" id="BLOGGER_PHOTO_ID_5308859753767405026" border="0" /></a>(You can use other replacement patters but make sure all blogs fall under /blog )<br /></li><li>Create a section from <span style="font-weight: bold;">Administer>>Site Building>>Sections>></span>Add Section as below:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazcY54uF9I/AAAAAAAAA-o/mR-Eu_84FmU/s1600-h/create_section.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 286px; height: 400px;" src="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazcY54uF9I/AAAAAAAAA-o/mR-Eu_84FmU/s400/create_section.jpg" alt="" id="BLOGGER_PHOTO_ID_5308860381176666066" border="0" /></a><br /></li><li>Make Sure your section is enabled as below.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazdaODhoyI/AAAAAAAAA-w/IWB520MFUFg/s1600-h/blog_section_enabled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 94px;" src="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazdaODhoyI/AAAAAAAAA-w/IWB520MFUFg/s400/blog_section_enabled.jpg" alt="" id="BLOGGER_PHOTO_ID_5308861503282193186" border="0" /></a><br /></li><li>Add a blog and enjoy the new theme for that segment of you website going to the URL http://yoursiteurl/blog like below:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazeGus3I_I/AAAAAAAAA-4/nB2CVBhk94Q/s1600-h/blogs_page.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 218px;" src="http://4.bp.blogspot.com/_L4bRnZ5TPr8/SazeGus3I_I/AAAAAAAAA-4/nB2CVBhk94Q/s400/blogs_page.jpg" alt="" id="BLOGGER_PHOTO_ID_5308862267959747570" border="0" /></a><br /></li><li>Enjoy the different them but after some configuration defined in things to consider below.<br /></li></ol><h3>Things to Consider</h3>You must have two or more themes active at <span style="font-weight: bold;">Administer>>Site Building>>Themes</span> and have the respective blocks placed on respective theme regions for the block to appear as you want on the themes when activated. Block can be placed aptly for themes at <span style="font-weight: bold;">Adminster>>Site Building>>Blocks.</span><br /><h3>Live Demo</h3>Live Demo of this tutorial can be witnessed at <a href="http://www.geshanmanandhar.com/" target="_blank">http://www.geshanmanandhar.com</a> , the main site has Acquia Marina theme.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_L4bRnZ5TPr8/SazgVSVZTrI/AAAAAAAAA_A/7BpeXrXonFk/s1600-h/geshan_projects_page.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 242px;" src="http://1.bp.blogspot.com/_L4bRnZ5TPr8/SazgVSVZTrI/AAAAAAAAA_A/7BpeXrXonFk/s400/geshan_projects_page.jpg" alt="" id="BLOGGER_PHOTO_ID_5308864717066423986" border="0" /></a><br />The blog section at <a href="http://www.geshanmanandhar.com/blog" target="_blank">http://www.geshanmanandhar.com/blog</a> has Color Paper Theme. The blog section is just for testing now :-).<br /><h3>Conclusion</h3>This is a very useful feature in Drupal you can even have multiple themes as per pages if you create sections for each page but it will be best utilized when used for sections like blogs, forums, news etc.<br /><br /><blockquote>Multiple themes in same Drupal site if fun, useful and applicable.</blockquote></div>
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
+          
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Geshan Manandhar</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2009-03-01T16:07:00+04:00"  data-updated="true" itemprop="datePublished dateCreated"><time class='entry-date' datetime='2009-03-01T16:07:00+04:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2009</span></span> <span class='time'>4:07 pm</span></time></time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/drupal/'>drupal</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/blog/2009/03/01/apply-multiple-drupal-themes-for/" data-via="geshan" data-counturl="http://yoursite.com/blog/2009/03/01/apply-multiple-drupal-themes-for/" >Tweet</a>
+  
+  
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2009/02/26/webhosting-geeks-helps-you-find-better/" title="Previous Post: Webhosting geeks helps you find better web host">&laquo; Webhosting geeks helps you find better web host</a></li>
+            
+            
+            <li class="next"><a href="/blog/2009/03/10/video-every-drupalista-should-watch-at/" title="Next Post: A video Every Drupalista should watch at least once">A video Every Drupalista should watch at least once &raquo;</a></li>
+            
+          </ul>
+        
+      </footer>
+    </article>
+    
+  </div>
+
+  
+  <aside class="sidebar col-md-4">
+    
+      <section class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+    <div class="list-group">
+        
+        
+        <a class="list-group-item " href="/blog/categories/misc/index.html">
+            <span class="badge">149</span>
+            misc
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/mobiles/index.html">
+            <span class="badge">8</span>
+            mobiles
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/technology/index.html">
+            <span class="badge">92</span>
+            technology
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/foss/index.html">
+            <span class="badge">12</span>
+            foss
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/drupal/index.html">
+            <span class="badge">37</span>
+            drupal
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/programming/index.html">
+            <span class="badge">16</span>
+            programming
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/tutorial/index.html">
+            <span class="badge">20</span>
+            tutorial
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/about-me/index.html">
+            <span class="badge">2</span>
+            about me
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/learn-php/index.html">
+            <span class="badge">4</span>
+            learn php
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/php/index.html">
+            <span class="badge">16</span>
+            php
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/codeigniter/index.html">
+            <span class="badge">1</span>
+            codeigniter
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/git/index.html">
+            <span class="badge">2</span>
+            git
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/apps/index.html">
+            <span class="badge">4</span>
+            apps
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/android/index.html">
+            <span class="badge">2</span>
+            android
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/testing/index.html">
+            <span class="badge">1</span>
+            testing
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/javascript/index.html">
+            <span class="badge">1</span>
+            javascript
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/symfony/index.html">
+            <span class="badge">1</span>
+            symfony
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/talks/index.html">
+            <span class="badge">2</span>
+            talks
+        </a>
+        
+    </div>
+</section><section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent Posts</h3>
+  </div>
+  
+  <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/blog/2014/08/30/things-i-wished-i-knew-while-doing-my/">Things I Wished I Knew While Doing My Tech Bachelor / Undergraduate (Slides and Video)</a>
+    
+    <a class="list-group-item " href="/blog/2014/08/29/basic-overview-of-message-queues-rabbit/">Basic Overview of Message Queues - Rabbit Mq With Symfony 2 (Slides and Talk Video)</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/28/4-git-tips-beyond-basics/">4 Git Tips Beyond the Basics</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/18/3-bundles-to-get-started-with-rest-in/">3 Bundles to Get Started With REST in Symfony 2 and Some Tips</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/12/a-big-thanks-to-all-programmers-you/">A Big Thanks to All the Programmers, You Make the World Go Round</a>
+    
+  </div>
+</section>
+
+<section id="twitter-timeline" class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Latest Tweets
+            
+            <small class="pull-right">
+              <a class="btn" href="//twitter.com/geshan" title="@geshan on Twitter" target="_blank">
+                <i class="icon-external-link"></i>
+              </a>
+            </small>
+            
+        </h3>
+    </div>
+    <div class="list-group">
+          <a class="twitter-timeline" data-dnt="true" href="//twitter.com/geshan"  data-widget-id="518273942725722112"  data-link-color="#049cdb" data-tweet-limit="" data-chrome="noheader nofooter transparent noscrollbar">Tweets by @geshan</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</section>
+
+
+    
+  </aside>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo"><div class="container">
+    <p class="text-muted credits">
+  Copyright &copy; 2014 - Geshan Manandhar<br>
+  <small>
+      <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
+      <span class="credit">customized with <a href="https://github.com/kAworu/octostrap3">octostrap3</a></span>.
+  </small>
+</p>
+
+</div>
+</footer>
+    
+
+<script type="text/javascript">
+      var disqus_shortname = 'geshanblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr-2.0.js"></script>
+
+
+  </body>
+</html>

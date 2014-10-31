@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Show Drupal Blocks Only on Specific Pages With PHP Code - Geshan&#8217;s Blog</title>
+  <meta name="author" content="Geshan Manandhar">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/blog/2009/11/09/show-drupal-blocks-only-on-specific">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="Geshan's Blog" type="application/atom+xml">
+
+  <!-- http://opengraphprotocol.org/ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://yoursite.com/blog/2009/11/09/show-drupal-blocks-only-on-specific">
+  <meta property="og:title" content="Show Drupal Blocks Only on Specific Pages With PHP Code - Geshan's Blog">
+  
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.united.min.css" rel="stylesheet" type="text/css">
+
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+  <body   >
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Geshan&#8217;s Blog</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a rel="index" href="/">Blog</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
+                        <span class="visible-xs">RSS</span>
+                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
+                    </a>
+                </li>
+                
+            </ul>
+            
+                <form class="search navbar-form navbar-right" action="https://www.google.com/search" method="GET">
+                    <input type="hidden" name="q" value="site:yoursite.com">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="q" placeholder="Search">
+                    </div>
+                </form>
+            
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div id="main" class="container">
+        <div id="content">
+          <div class="row">
+  <div class="page-content col-md-8" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Geshan's Blog" />
+    
+    <meta itemprop="url" content="http://yoursite.com" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2009-11-09T07:00:00+04:00"  data-updated="true" itemprop="datePublished dateCreated"><time class='entry-date' datetime='2009-11-09T07:00:00+04:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2009</span></span> <span class='time'>7:00 am</span></time></time>
+        
+           | <a href="#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://yoursite.com">Comments</a>
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Show Drupal Blocks Only on Specific Pages With PHP Code
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody description"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">Drupal blocks are the basic building elements of any Drupal page. Blocks are placed in block regions and they serve different purposes from showing a list of elements even to show a picture or a video.<br />Menus of the <a href="http://drupal.org/" target="_blank">Drupal</a> system are also blocks of special kind that show links to other drupal nodes/pages/url or external links.<b> (I assume that you know about drupal blocks and how they can be shown or hidden on basic given conditions and also you have some knowledge of php.)</b><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_L4bRnZ5TPr8/SveLLq4zKiI/AAAAAAAABJw/UgGoCjGvzyk/s1600-h/page_specific_php_01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_L4bRnZ5TPr8/SveLLq4zKiI/AAAAAAAABJw/UgGoCjGvzyk/s320/page_specific_php_01.png" height="218" width="320" /></a></div>Having a look at a block&#8217;s configuration page (Site Building &gt;&gt; Blocks &gt;&gt; List) and clicking configure aside one of the block descriptions there are various ways to control the visibility of a particular Drupal block.Some are let users control what they see, to show only to block to only specific roles.<br /><br /><h4>The Need</h4>In page specific visibility the first two options are quite clear, you want to show a particular block in some url and its sub URL like setting to option 2 : &#8220;Show on only the listed pages.&#8221; and typing the following on pages:<br /><ul><li>blog - will show the block on siteURL/blog page only</li><li>blog/* - will show the block on siteURL/blog/any url - pages</li></ul>But what if I want to show a block in one node type (or content type), then the need to choose the third option &#8220;Show if the following PHP code returns TRUE (PHP-mode, experts only).&#8221; arises.&nbsp; It does not need expert knowledge.<br /><br /><br /><h4>Scenario 1: For node types</h4>After selecting the third option on &#8220;Page specific visibility settings&#8221;, the logic is quite simple if TRUE is returned the block is shown if FALSE is returned the block is hidded from display. Lets say I want to see a the block only on story content type, then I can do it by pasting the code below on the PHP code option in page specific visibility settings.<br /><br /><pre class="php" name="code">  &lt;?php<br />  // Only show if $return is true<br />  $return = FALSE;<br /><br />  // Match current node type with story<br />  if ( (arg(0) == 'node') &amp;&amp; is_numeric(arg(1)) )  {<br />    $nid = arg(1);<br />    $node = node_load($nid);<br />    $type = $node-&gt;type;<br />    if($type == "story") {<br />       $return = TRUE;<br />    }<br />  }<br />  <br />  return $return;<br />  ?&gt;<br /></pre><br /><b>In action:</b><br /><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_L4bRnZ5TPr8/SveLRyAJ8jI/AAAAAAAABJ4/KffC5hbtvXc/s1600-h/page_specific_php_02.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_L4bRnZ5TPr8/SveLRyAJ8jI/AAAAAAAABJ4/KffC5hbtvXc/s320/page_specific_php_02.png" height="317" width="320" /></a></div>You can further enhance it with multiple node types with use of the <a href="http://php.net/manual/en/function.in-array.php" target="_blank">in_array()</a> php function to show multiple node types. Or tweak it to fit your custom needs.<br /><br /><h4>Scenario 2: For OG (Group) nodes</h4>I had yet another problem I needed to show some specific blocks like group calendar, group blogs only to OG - Group nodes and only to group members. So I digged into the OG module and found two very good functions, they are:<br /><ul><li><i>og_get_group_context(): </i>Used for things like setting current theme and breadcrumbs.&nbsp; - Check og module for more information or see it <a href="http://drupalcontrib.org/api/function/og_get_group_context" target="_blank">here</a>.</li><li>o<i>g_is_group_member():</i> Check a user&#8217;s membership in a group. More <a href="http://drupalcontrib.org/api/function/og_is_group_member/6" target="_blank">here</a>.<br /></li></ul>So using these two functions I can show a block only when a group node is loaded and only to the group&#8217;s members with the code below:<br /><br /><pre class="php" name="code">&lt;?php<br />  $return  = FALSE;<br />  <br />  if ($groupnode = og_get_group_context()) {<br />        if(og_is_group_member($groupnode-&gt;nid)) {<br />          $return = TRUE;<br />      }<br />  }<br />  <br />  return $return;<br /> ?&gt;<br /></pre>The above code could have been better :). Above code should also be put in the &#8220;Page specific visibility&#8221; of the block configuration settings page.<br /><br /><h4>Better Use and Possibility</h4>A better use of the above code I assume will be to make a module and call a function. The function will determine to show the blog or not. It will give a central control of the code else if one thing is changed like in scenario one if node type has to be blog from story it should be edited in all the blog config pages which is a very bad solution. So calling a function form lets say for now a custom_show_block module with function: custom_show_block_normal() will do the trick. Below is a screenshot in assumption that custom_show_block module has been created and custom_show_block_normal() function in custom_show_block module has code of scenario 1:<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_L4bRnZ5TPr8/SveLYDRZ5mI/AAAAAAAABKA/r8QV-ZF5wU4/s1600-h/page_specific_php_03.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_L4bRnZ5TPr8/SveLYDRZ5mI/AAAAAAAABKA/r8QV-ZF5wU4/s320/page_specific_php_03.png" height="230" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><br /></div>If the module will have setting to choose the node types and other things it would be great ;).<br /><br /><h4>Conclusion</h4><blockquote>Block visibility with PHP is very flexible and customizable like other parts of Drupal. With block visibility for specific pages with PHP the need to show a block for specified condition will be easier. Happy coding.</blockquote></div></div>
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
+          
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Geshan Manandhar</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2009-11-09T07:00:00+04:00"  data-updated="true" itemprop="datePublished dateCreated"><time class='entry-date' datetime='2009-11-09T07:00:00+04:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2009</span></span> <span class='time'>7:00 am</span></time></time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/drupal/'>drupal</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/blog/2009/11/09/show-drupal-blocks-only-on-specific/" data-via="geshan" data-counturl="http://yoursite.com/blog/2009/11/09/show-drupal-blocks-only-on-specific/" >Tweet</a>
+  
+  
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2009/10/15/nepal-is-hit-hard-by-climate-change/" title="Previous Post: Nepal is hit hard by climate change, lets go green - Blog Action Day">&laquo; Nepal is hit hard by climate change, lets go green - Blog Action Day</a></li>
+            
+            
+            <li class="next"><a href="/blog/2009/11/16/control-book-outline-form-and-menu-for/" title="Next Post: Control book outline form and menu for specified Drupal node types">Control book outline form and menu for specified Drupal node types &raquo;</a></li>
+            
+          </ul>
+        
+      </footer>
+    </article>
+    
+  </div>
+
+  
+  <aside class="sidebar col-md-4">
+    
+      <section class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+    <div class="list-group">
+        
+        
+        <a class="list-group-item " href="/blog/categories/misc/index.html">
+            <span class="badge">149</span>
+            misc
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/mobiles/index.html">
+            <span class="badge">8</span>
+            mobiles
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/technology/index.html">
+            <span class="badge">92</span>
+            technology
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/foss/index.html">
+            <span class="badge">12</span>
+            foss
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/drupal/index.html">
+            <span class="badge">37</span>
+            drupal
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/programming/index.html">
+            <span class="badge">16</span>
+            programming
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/tutorial/index.html">
+            <span class="badge">20</span>
+            tutorial
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/about-me/index.html">
+            <span class="badge">2</span>
+            about me
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/learn-php/index.html">
+            <span class="badge">4</span>
+            learn php
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/php/index.html">
+            <span class="badge">16</span>
+            php
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/codeigniter/index.html">
+            <span class="badge">1</span>
+            codeigniter
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/git/index.html">
+            <span class="badge">2</span>
+            git
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/apps/index.html">
+            <span class="badge">4</span>
+            apps
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/android/index.html">
+            <span class="badge">2</span>
+            android
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/testing/index.html">
+            <span class="badge">1</span>
+            testing
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/javascript/index.html">
+            <span class="badge">1</span>
+            javascript
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/symfony/index.html">
+            <span class="badge">1</span>
+            symfony
+        </a>
+        
+        
+        <a class="list-group-item " href="/blog/categories/talks/index.html">
+            <span class="badge">2</span>
+            talks
+        </a>
+        
+    </div>
+</section><section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent Posts</h3>
+  </div>
+  
+  <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/blog/2014/08/30/things-i-wished-i-knew-while-doing-my/">Things I Wished I Knew While Doing My Tech Bachelor / Undergraduate (Slides and Video)</a>
+    
+    <a class="list-group-item " href="/blog/2014/08/29/basic-overview-of-message-queues-rabbit/">Basic Overview of Message Queues - Rabbit Mq With Symfony 2 (Slides and Talk Video)</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/28/4-git-tips-beyond-basics/">4 Git Tips Beyond the Basics</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/18/3-bundles-to-get-started-with-rest-in/">3 Bundles to Get Started With REST in Symfony 2 and Some Tips</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/12/a-big-thanks-to-all-programmers-you/">A Big Thanks to All the Programmers, You Make the World Go Round</a>
+    
+  </div>
+</section>
+
+<section id="twitter-timeline" class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Latest Tweets
+            
+            <small class="pull-right">
+              <a class="btn" href="//twitter.com/geshan" title="@geshan on Twitter" target="_blank">
+                <i class="icon-external-link"></i>
+              </a>
+            </small>
+            
+        </h3>
+    </div>
+    <div class="list-group">
+          <a class="twitter-timeline" data-dnt="true" href="//twitter.com/geshan"  data-widget-id="518273942725722112"  data-link-color="#049cdb" data-tweet-limit="" data-chrome="noheader nofooter transparent noscrollbar">Tweets by @geshan</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</section>
+
+
+    
+  </aside>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo"><div class="container">
+    <p class="text-muted credits">
+  Copyright &copy; 2014 - Geshan Manandhar<br>
+  <small>
+      <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
+      <span class="credit">customized with <a href="https://github.com/kAworu/octostrap3">octostrap3</a></span>.
+  </small>
+</p>
+
+</div>
+</footer>
+    
+
+<script type="text/javascript">
+      var disqus_shortname = 'geshanblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr-2.0.js"></script>
+
+
+  </body>
+</html>
