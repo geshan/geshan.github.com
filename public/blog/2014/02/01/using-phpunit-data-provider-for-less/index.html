@@ -14,14 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yoursite.com/blog/2014/02/01/using-phpunit-data-provider-for-less">
+  <link rel="canonical" href="http://geshan.com.np/blog/2014/02/01/using-phpunit-data-provider-for-less">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Geshan's Blog" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://yoursite.com/blog/2014/02/01/using-phpunit-data-provider-for-less">
+  <meta property="og:url" content="http://geshan.com.np/blog/2014/02/01/using-phpunit-data-provider-for-less">
   <meta property="og:title" content="Using PHPUnit Data Provider for Less Code and Greater Coverage - Geshan's Blog">
   
 
@@ -72,7 +72,7 @@
             </ul>
             
                 <form class="search navbar-form navbar-right" action="https://www.google.com/search" method="GET">
-                    <input type="hidden" name="q" value="site:yoursite.com">
+                    <input type="hidden" name="q" value="site:geshan.com.np">
                     <div class="form-group">
                         <input class="form-control" type="text" name="q" placeholder="Search">
                     </div>
@@ -90,7 +90,7 @@
   <div class="page-content col-md-8" itemscope itemtype="http://schema.org/Blog">
     <meta itemprop="name" content="Geshan's Blog" />
     
-    <meta itemprop="url" content="http://yoursite.com" />
+    <meta itemprop="url" content="http://geshan.com.np" />
     <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       
   <header class="page-header">
@@ -112,7 +112,7 @@
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-02-01T11:51:00+04:00"  data-updated="true" itemprop="datePublished dateCreated"><time class='entry-date' datetime='2014-02-01T11:51:00+04:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>11:51 am</span></time></time>
         
            | <a href="#disqus_thread" itemprop="discussionUrl"
-             data-disqus-identifier="http://yoursite.com">Comments</a>
+             data-disqus-identifier="http://geshan.com.np">Comments</a>
         
       </p>
     
@@ -126,7 +126,7 @@
 
 
 <div class="entry-content clearfix" itemprop="articleBody description"><div class='post'>
-<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"></div>Writing testable code is a harder target to achieve than just writing tests for the code written. You cannot write comprehensive tests that covers many function each of 200 or more lines and classes that measure 1000s of lines of code (<a href="http://en.wikipedia.org/wiki/Source_lines_of_code" target="_blank">LOC</a>). Writing testable code is always important if you want to be able to test/unit test your code and be confident that nothing will break.<br /><br />Tests also help a lot when you re-factor some code or write new features. If all the tests are passing you are quite sure that nothing is breaking. Seeing all tests come out green is a very good sight for us software engineer.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-mIzQVI5oxMU/Uuu1Bn0PmKI/AAAAAAAAndg/Wkq0HGPD1pM/s1600/all_green_tests.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-mIzQVI5oxMU/Uuu1Bn0PmKI/AAAAAAAAndg/Wkq0HGPD1pM/s1600/all_green_tests.jpg" height="156" width="640" /></a></div><br /><h2 style="text-align: left;">Testing in PHP with PHPUnit</h2>Unit testing and testing as a whole is not a new thing in PHP, &nbsp;<a href="http://phpunit.de/" target="_blank">PHPUnit</a> the de facto unit testing framework in PHP started in <a href="http://gpfr.sourceforge.net/releases/phpunit-1.0.0/" target="_blank">2001</a>, The chart below shows that popularity of PHPUnit has really grown over the past years in comparison to <a href="http://www.simpletest.org/" target="_blank">Simple Test</a> another PHP testing framework.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-iY16ziAjtiE/UuylucQEn-I/AAAAAAAAndw/cSZ9W2csjUM/s1600/phpUnit_popularity.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-iY16ziAjtiE/UuylucQEn-I/AAAAAAAAndw/cSZ9W2csjUM/s1600/phpUnit_popularity.jpg" height="387" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="font-size: small;">Source:&nbsp;</span><a href="http://www.google.com/trends/explore#q=phpunit%2C%20simpletest" style="font-size: medium;" target="_blank">Google Trends</a></td></tr></tbody></table>PHPUnit is a great unit testing framework that can automate testing and help in getting optimal output. As they state in the <a href="http://phpunit.de/manual/current/en/index.html" target="_blank">documentation</a>:<br /><blockquote>The difference between a good programmer and a bad programmer is that the good programmer uses tests to detect mistakes as soon as possible. The sooner you test for a mistake the greater your chance of finding it and the less it will cost to find and fix.</blockquote>It is true the sooner the problem is detected and fixed the better it is, same goes when some code is re-factored, a new feature is added or a bug resolved.<br /><h2 style="text-align: left;">Data Provider in PHPUnit</h2><div>There are may features of PHPUnit, which can help in writing comprehensive <a href="http://en.wikipedia.org/wiki/Unit_testing" target="_blank">unit testing</a> and moving toward the direction of <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">test driven development</a> (TDD). Among them,&nbsp;<a href="http://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.data-providers" target="_blank">data providers</a> provide arbitrary arguments to a test function so that same code can be used to test multiple scenarios and possible cases. In this very simple example I will use a part of checkout. The logic is very simple:</div><div><ol style="text-align: left;"><li>If the payment method is &nbsp;&#8220;Cash&#8221;, apply a cash on delivery fee of 5.0</li><li>If the payment method is &#8220;Credit Card&#8221;, do not apply a cash on delivery fee.&nbsp;</li></ol><h3 style="text-align: left;">The part of the checkout class is given below:</h3><script src="http://gist-it.appspot.com/https://github.com/geshan/dataprovider-example/blob/master/src/DataProvider/Example/Checkout.php"></script><br />Source: <a href="https://github.com/geshan/dataprovider-example/blob/master/src/DataProvider/Example/Checkout.php" target="_blank">Github repository</a><br /><br /><h3 style="text-align: left;">The test for the above checkout class is given below:</h3><script src="http://gist-it.appspot.com/https://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php"></script><br />Source: <a href="https://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php" target="_blank">Github repository</a><br /><h3 style="text-align: left;">What makes using data provider in this example relevant and optimal?</h3></div><div><ul style="text-align: left;"><li>As the test needs to be run for both &#8220;Cash&#8221; and &#8220;Credit Card&#8221; the only thing it changes here is the addition of cash on delivery fee.</li><li>There is just one test with the payment method being passed as a parameter, saving us from writing X no of tests for X no. of payment methods. So less code and more coverage.</li><li>The test is clear concise and understandable.</li></ul><h3 style="text-align: left;">Things to consider in the code:</h3><div><ul style="text-align: left;"><li>The test runs the as many times as the data set provided by the provider function.</li><li>@dataProvider annotation is necessary in the test to get the data sets from the provider function.</li><li>When writing the provider function, its better to comment who is using the provided data sets and the order of variables (check the comment of &nbsp;paymentMethodProvider method).</li></ul><div>Both the above files with composer.json is available as a public <a href="https://github.com/geshan/dataprovider-example" target="_blank">git repository</a> for your reference, you can check the <a href="https://github.com/geshan/dataprovider-example/blob/master/README.md" target="_blank">read me</a> file to know how to run the tests.</div></div><h2 style="text-align: left;">Conclusion</h2></div><div>Whenever you write tests and think, &#8220;Why am I writing a new test for the similar thing. I guess there can be a way to write less test/code and cover all my test cases.&#8221; Then is time to use data providers in PHPUnit. You save on time and effort to cover the cases, a new case is just another array in the provider function, even in case of new test cases being added its a one line change given the tests pass. I hope this helps you to write less test code and achieve more coverage.</div><div><br /></div></div></div>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"></div>Writing testable code is a harder target to achieve than just writing tests for the code written. You cannot write comprehensive tests that covers many function each of 200 or more lines and classes that measure 1000s of lines of code (<a href="http://en.wikipedia.org/wiki/Source_lines_of_code" target="_blank">LOC</a>). Writing testable code is always important if you want to be able to test/unit test your code and be confident that nothing will break.<br /><br />Tests also help a lot when you re-factor some code or write new features. If all the tests are passing you are quite sure that nothing is breaking. Seeing all tests come out green is a very good sight for us software engineer.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-mIzQVI5oxMU/Uuu1Bn0PmKI/AAAAAAAAndg/Wkq0HGPD1pM/s1600/all_green_tests.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-mIzQVI5oxMU/Uuu1Bn0PmKI/AAAAAAAAndg/Wkq0HGPD1pM/s1600/all_green_tests.jpg" height="156" width="640" /></a></div><!-- more --><br /><h2 style="text-align: left;">Testing in PHP with PHPUnit</h2>Unit testing and testing as a whole is not a new thing in PHP, &nbsp;<a href="http://phpunit.de/" target="_blank">PHPUnit</a> the de facto unit testing framework in PHP started in <a href="http://gpfr.sourceforge.net/releases/phpunit-1.0.0/" target="_blank">2001</a>, The chart below shows that popularity of PHPUnit has really grown over the past years in comparison to <a href="http://www.simpletest.org/" target="_blank">Simple Test</a> another PHP testing framework.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-iY16ziAjtiE/UuylucQEn-I/AAAAAAAAndw/cSZ9W2csjUM/s1600/phpUnit_popularity.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-iY16ziAjtiE/UuylucQEn-I/AAAAAAAAndw/cSZ9W2csjUM/s1600/phpUnit_popularity.jpg" height="387" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="font-size: small;">Source:&nbsp;</span><a href="http://www.google.com/trends/explore#q=phpunit%2C%20simpletest" style="font-size: medium;" target="_blank">Google Trends</a></td></tr></tbody></table>PHPUnit is a great unit testing framework that can automate testing and help in getting optimal output. As they state in the <a href="http://phpunit.de/manual/current/en/index.html" target="_blank">documentation</a>:<br /><blockquote>The difference between a good programmer and a bad programmer is that the good programmer uses tests to detect mistakes as soon as possible. The sooner you test for a mistake the greater your chance of finding it and the less it will cost to find and fix.</blockquote>It is true the sooner the problem is detected and fixed the better it is, same goes when some code is re-factored, a new feature is added or a bug resolved.<br /><h2 style="text-align: left;">Data Provider in PHPUnit</h2><div>There are may features of PHPUnit, which can help in writing comprehensive <a href="http://en.wikipedia.org/wiki/Unit_testing" target="_blank">unit testing</a> and moving toward the direction of <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">test driven development</a> (TDD). Among them,&nbsp;<a href="http://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.data-providers" target="_blank">data providers</a> provide arbitrary arguments to a test function so that same code can be used to test multiple scenarios and possible cases. In this very simple example I will use a part of checkout. The logic is very simple:</div><div><ol style="text-align: left;"><li>If the payment method is &nbsp;&#8220;Cash&#8221;, apply a cash on delivery fee of 5.0</li><li>If the payment method is &#8220;Credit Card&#8221;, do not apply a cash on delivery fee.&nbsp;</li></ol><h3 style="text-align: left;">The part of the checkout class is given below:</h3><script src="http://gist-it.appspot.com/https://github.com/geshan/dataprovider-example/blob/master/src/DataProvider/Example/Checkout.php"></script><br />Source: <a href="https://github.com/geshan/dataprovider-example/blob/master/src/DataProvider/Example/Checkout.php" target="_blank">Github repository</a><br /><br /><h3 style="text-align: left;">The test for the above checkout class is given below:</h3><script src="http://gist-it.appspot.com/https://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php"></script><br />Source: <a href="https://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php" target="_blank">Github repository</a><br /><h3 style="text-align: left;">What makes using data provider in this example relevant and optimal?</h3></div><div><ul style="text-align: left;"><li>As the test needs to be run for both &#8220;Cash&#8221; and &#8220;Credit Card&#8221; the only thing it changes here is the addition of cash on delivery fee.</li><li>There is just one test with the payment method being passed as a parameter, saving us from writing X no of tests for X no. of payment methods. So less code and more coverage.</li><li>The test is clear concise and understandable.</li></ul><h3 style="text-align: left;">Things to consider in the code:</h3><div><ul style="text-align: left;"><li>The test runs the as many times as the data set provided by the provider function.</li><li>@dataProvider annotation is necessary in the test to get the data sets from the provider function.</li><li>When writing the provider function, its better to comment who is using the provided data sets and the order of variables (check the comment of &nbsp;paymentMethodProvider method).</li></ul><div>Both the above files with composer.json is available as a public <a href="https://github.com/geshan/dataprovider-example" target="_blank">git repository</a> for your reference, you can check the <a href="https://github.com/geshan/dataprovider-example/blob/master/README.md" target="_blank">read me</a> file to know how to run the tests.</div></div><h2 style="text-align: left;">Conclusion</h2></div><div>Whenever you write tests and think, &#8220;Why am I writing a new test for the similar thing. I guess there can be a way to write less test/code and cover all my test cases.&#8221; Then is time to use data providers in PHPUnit. You save on time and effort to cover the cases, a new case is just another array in the provider function, even in case of new test cases being added its a one line change given the tests pass. I hope this helps you to write less test code and achieve more coverage.</div><div><br /></div></div></div>
 </div>
 
 
@@ -165,7 +165,7 @@
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/blog/2014/02/01/using-phpunit-data-provider-for-less/" data-via="geshan" data-counturl="http://yoursite.com/blog/2014/02/01/using-phpunit-data-provider-for-less/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://geshan.com.np/blog/2014/02/01/using-phpunit-data-provider-for-less/" data-via="geshan" data-counturl="http://geshan.com.np/blog/2014/02/01/using-phpunit-data-provider-for-less/" >Tweet</a>
   
   
   
@@ -191,6 +191,25 @@
   <aside class="sidebar col-md-4">
     
       <section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent Posts</h3>
+  </div>
+  
+  <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/blog/2014/08/30/things-i-wished-i-knew-while-doing-my/">Things I Wished I Knew While Doing My Tech Bachelor / Undergraduate (Slides and Video)</a>
+    
+    <a class="list-group-item " href="/blog/2014/08/29/basic-overview-of-message-queues-rabbit/">Basic Overview of Message Queues - Rabbit Mq With Symfony 2 (Slides and Talk Video)</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/28/4-git-tips-beyond-basics/">4 Git Tips Beyond the Basics</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/18/3-bundles-to-get-started-with-rest-in/">3 Bundles to Get Started With REST in Symfony 2 and Some Tips</a>
+    
+    <a class="list-group-item " href="/blog/2014/07/12/a-big-thanks-to-all-programmers-you/">A Big Thanks to All the Programmers, You Make the World Go Round</a>
+    
+  </div>
+</section>
+<section class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">Categories</h3>
     </div>
@@ -305,26 +324,7 @@
         </a>
         
     </div>
-</section><section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Recent Posts</h3>
-  </div>
-  
-  <div id="recent_posts" class="list-group">
-    
-    <a class="list-group-item " href="/blog/2014/08/30/things-i-wished-i-knew-while-doing-my/">Things I Wished I Knew While Doing My Tech Bachelor / Undergraduate (Slides and Video)</a>
-    
-    <a class="list-group-item " href="/blog/2014/08/29/basic-overview-of-message-queues-rabbit/">Basic Overview of Message Queues - Rabbit Mq With Symfony 2 (Slides and Talk Video)</a>
-    
-    <a class="list-group-item " href="/blog/2014/07/28/4-git-tips-beyond-basics/">4 Git Tips Beyond the Basics</a>
-    
-    <a class="list-group-item " href="/blog/2014/07/18/3-bundles-to-get-started-with-rest-in/">3 Bundles to Get Started With REST in Symfony 2 and Some Tips</a>
-    
-    <a class="list-group-item " href="/blog/2014/07/12/a-big-thanks-to-all-programmers-you/">A Big Thanks to All the Programmers, You Make the World Go Round</a>
-    
-  </div>
 </section>
-
 <section id="twitter-timeline" class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">
