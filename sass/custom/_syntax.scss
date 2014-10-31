@@ -1,0 +1,17 @@
+/* boostrap fix & integration */
+body {
+    figure.code {
+        padding: 0;
+        .highlight {
+            code {
+                @include border-radius(0);
+            }
+            pre {
+                white-space: pre;
+            }
+            .gutter {
+                // display: none; /* uncomment this line if you want to hide line numbers in code highlight */
+            }
+        }
+    }
+}

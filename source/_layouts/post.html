@@ -1,0 +1,52 @@
+---
+layout: default
+navbar: Blog
+single: true
+---
+
+<div class="row">
+  <div class="page-content {% unless page.sidebar == false or site.post_asides == empty and site.default_asides == empty %}col-md-8{% else %}col-md-12{% endunless %}" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="{{site.title}}" />
+    {% if site.description %}<meta itemprop="description" content="{{site.description}}" />{% endif %}
+    <meta itemprop="url" content="{{site.url}}" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      {% include article.html %}
+      <footer>
+        <p class="meta text-muted">
+          {% include post/author.html %}
+          {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+          {% include post/categories.html %}
+        </p>
+        {% unless page.sharing == false %}
+          {% include post/sharing.html %}
+        {% endunless %}
+        {% if page.previous.url or page.next.url %}
+          <ul class="meta text-muted pager">
+            {% if page.previous.url %}
+            <li class="previous"><a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a></li>
+            {% endif %}
+            {% if page.next.url %}
+            <li class="next"><a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a></li>
+            {% endif %}
+          </ul>
+        {% endif %}
+      </footer>
+    </article>
+    {% if site.disqus_short_name and page.comments == true %}
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+      </section>
+    {% endif %}
+  </div>
+
+  {% unless page.sidebar == false or site.post_asides == empty and site.default_asides == empty %}
+  <aside class="sidebar col-md-4">
+    {% if site.post_asides.size %}
+      {% include_array post_asides %}
+    {% else %}
+      {% include_array default_asides %}
+    {% endif %}
+  </aside>
+  {% endunless %}
+</div>
