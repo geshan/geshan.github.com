@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://geshan.com.np/sitemap.xml 
+Sitemap: http://geshan.github.io/sitemap.xml 
