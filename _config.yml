@@ -57,7 +57,9 @@ titlecase: true       # Converts page and post titles to titlecase
 default_asides: [
     asides/recent_posts.html,
     custom/asides/category_list.html,
-    asides/twitter.html
+    asides/twitter.html,
+    asides/github.html,
+    asides/social.html
   ]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
