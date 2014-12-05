@@ -33,9 +33,13 @@ The main themes of this talk was as follows:
 * Software Quality
 * Automation
 
+## Slides
+
 Below are the slides of the presentation (it has some links embedded :), check them as well):
 
 <center><iframe src="//www.slideshare.net/slideshow/embed_code/42379240" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></center>
+
+## Video
 
 And the video of the talk:
 
