@@ -49,7 +49,7 @@ to setup and you get great visualization of major Google Analytics data delivere
 {% img center /images/free-site-services/ga-visually.jpg 'Communicate Google Analytics Report as infographics' 'Communicate Google Analytics Report as infographics' %}
 
 The report informs about page views, visitor information etc. For full reports your clients can always go to
-the main Google Analytics website or use the [app](http://play.Google.com) to check site analytics information
+the main Google Analytics website or use the [app](https://play.google.com/store/apps/details?id=com.google.android.apps.giant&hl=en) to check site analytics information
 on the go.
 
 ## Free Dashboard with key website metrics
