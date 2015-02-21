@@ -31,4 +31,5 @@ cost can be brought to 0 because we can use Google Apps for free. It is very goo
 companies but even smaller start-ups are giving their services for free.
   
 > This is a contribution to non profit organizations by informing them that they can get lots of useful services at no
-> cost which can otherwise cost them hundreds of dollars each year. Lets #doGood.
+> cost which can otherwise cost them hundreds of dollars each year. If you know of any more software or SAAS, please
+> add it in the comments. Lets #doGood.
