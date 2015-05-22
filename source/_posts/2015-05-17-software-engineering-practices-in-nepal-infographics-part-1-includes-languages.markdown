@@ -27,4 +27,4 @@ You can view this infographics in [interactive](http://bit.ly/1EPE37N) mode too.
 
 **If you enjoyed viewing the infographics, I again request to fill up the [survey](http://bit.ly/nep-dev-survey) if you have not filled it up yet.**
   
-> Thanks to everyone filling up the survey even in such dire conditions in Nepal. I hope to get some more responses so that the next infographic in this series will have more data. #prayForNepal #stayStrongNepal
+> Thanks to everyone filling up the survey even in such dire conditions in Nepal. I hope to get some more responses so that the next infographics in this series will have more data. #prayForNepal #stayStrongNepal
