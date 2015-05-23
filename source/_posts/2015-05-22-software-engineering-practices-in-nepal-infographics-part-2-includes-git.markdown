@@ -10,6 +10,7 @@ categories:
  - php
  - symfony
  - foss
+ - git
 ---
 
 I hope life is slowly going back to normal in Nepal though the news of aftershocks is not encouraging. My prayers are with the
