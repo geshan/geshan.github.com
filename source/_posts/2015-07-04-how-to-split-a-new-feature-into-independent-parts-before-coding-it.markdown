@@ -4,7 +4,6 @@ title: "How to split a new feature into independent parts before coding it"
 date: 2015-07-04 07:08:17 +0400
 comments: true
 categories: 
-categories: 
  - Programming
  - Misc
 ---
