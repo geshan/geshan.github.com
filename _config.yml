@@ -7,7 +7,7 @@ title: Geshan's Blog
 subtitle: A blog about technology, open source, web development etc.
 author: Geshan Manandhar
 description: A blog about technology, open source, web development etc.
-
+simple_search: https://www.google.com/search
 site.email: geshan@gmail.com
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
