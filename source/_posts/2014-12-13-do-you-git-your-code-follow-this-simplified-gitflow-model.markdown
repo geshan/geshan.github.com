@@ -48,8 +48,7 @@ For a detailed example with explanation and git commands read the following slid
 
 <center><iframe src="//www.slideshare.net/slideshow/embed_code/42503092" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></center>
 
-You can also view the [interactive slides](http://gitflow-talk.herokuapp.com/).
+You can also view the [interactive slides](http://bit.ly/1KzaNbj).
+
 > I believe you have learned something new and will be willing to integrate the simplified gitflow in
 > your daily work with your team decreasing complexity and increasing productivity.
-
-
