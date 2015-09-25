@@ -26,8 +26,8 @@ You can also view the [interactive slides](http://bit.ly/1KzaNbj).
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/nwM2U-38JP8" frameborder="0" allowfullscreen></iframe></center>
 
-I talk about git flow for the first 15-16 minutes then I start answering quesitons on git and gitflow. Then
-I explain about other things in git which can be helpful. I did this presenation at [YIPL](http://yipl.com.np)
+I talk about git flow for the first 15-16 minutes then I start answering questions on git and gitflow. Then
+I explain about other things in git which can be helpful. I did this presentation at [YIPL](http://yipl.com.np)
 on 11-Mar-2015. I know its a late post its like a part 2 of [Do you git your code? Follow this simplified gitflow branching model to improve productivity](http://bit.ly/s-git-flow).
 
 > Hope you learn something new about git and simplified gitflow from this video.
