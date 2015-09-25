@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building you next product, get your HTTP API working first"
+title: "Building your next product, get your HTTP API working first"
 date: 2015-08-22 14:00:22 +0400
 comments: true
 categories:
