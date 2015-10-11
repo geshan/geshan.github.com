@@ -49,7 +49,7 @@ Do one step deployment and least human work. Tools like [Capistrano](http://capi
 
 Logs are the only way your software application talks back to you. Gather all your system, application logs and make it accessible via a web interface. Follow the logging [standard](https://tools.ietf.org/html/rfc5424) and use free SAAS to render your logs in a readable way that gives you value. If dog is a man’s best friend, log is a developer’s best friend. Understand and exploit [the importance of logging in your software application](http://geshan.com.np/blog/2015/08/importance-of-logging-in-your-applications/).
 
-Just having logs is not enough, view your logs after each change. Always check your logs after each deployment to track any suspicious activity. You can use Logentries(http://logentries.com) and Loggly(http://loggly.com) for cloud logging.  
+Just having logs is not enough, view your logs after each change. Always check your logs after each deployment to track any suspicious activity. You can use [Logentries](http://logentries.com) or [Loggly](http://loggly.com) for cloud logging.  
 
 ## Conclusion
 
