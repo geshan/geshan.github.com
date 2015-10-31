@@ -3,7 +3,10 @@ layout: post
 title: "How to use simplified gitflow branching model [Video]"
 date: 2015-09-25 17:16:23 +0400
 comments: true
-categories: git, technology, misc
+categories: 
+- git 
+- technology
+- misc
 ---
 
 Just knowing git and all team members pushing code to the main branch (master) is not a good practice.
