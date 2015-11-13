@@ -175,6 +175,11 @@ new console tab.
 ```
 docker exec -it laravelmysqldocker_front_1 chmod 0777 /var/www/storage -R
 ```
+or it can be done locally too with the following command:
+
+```
+chmod 0777 /var/www/storage -R
+```
 
 If you want to run your artisan commands you can run them inside the front container. Hit the command below:
 
