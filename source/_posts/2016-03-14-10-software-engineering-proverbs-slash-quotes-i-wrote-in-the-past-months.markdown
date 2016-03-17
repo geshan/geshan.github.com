@@ -8,7 +8,6 @@ categories:
 - misc
 - Programming
 - testing
-- talks
 ---
 
 In the past months, I was tweeting some insightful and enlightening software engineering proverbs. Like the one below
