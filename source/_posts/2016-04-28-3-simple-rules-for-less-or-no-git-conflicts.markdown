@@ -9,8 +9,8 @@ categories:
 - git
 ---
 
-Do you write at least 10 lines of code a day in any programming language? Do you work alone of in a team?
-If your answer is yes to both questions, you need to learn git even if you work alone in a project.
+Do you write at least 10 lines of code a day in any programming language? Do you work alone or in a team?
+If your answer is yes to both questions, you need to learn `git` even if you work alone in a project.
 [Git](https://git-scm.com/) is the most popular versions control system and it has become a must have
 software engineer skill.
 
@@ -21,6 +21,7 @@ In this post I am going to reveal 3 simple rules to avoid git conflicts.
 
 {% img center /images/3-rules-git-conflict/git-conflict.png '3 simple rules for less or no git conflicts' '3 simple rules for less or no git conflicts' %}
 <!-- more -->
+
 ## Assumption
 
 You have some working knowledge of git. You follow a git branching model like gitflow or simplified gitflow.
