@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PHP Developers Nepal Meetup #16 a round up and my talk on simpilfied gitflow"
-date: 2016-06-25 05:50:35 +0400
+date: 2016-06-25 15:50:35 +0400
 comments: true
 categories:
 - Technology
@@ -31,9 +31,8 @@ there were around 100 participants which makes it one of the biggest PHP Develop
 
 ## My Talk on Simplified Gitflow
 
-This is not the first time I was presenting this talk :). I had already given this talk at [YIPL in Mar 2015](http://geshan.com.np/blog/2015/09/how-to-use-simplified-gitflow-branching-model-video/).
-Now 15 months later I was doing it again. This time I changed the slides and made it more general.
-I hope it was helpful to the audience.
+This is not the first time I presented this talk :). I had already given this talk at [YIPL in Mar 2015](http://geshan.com.np/blog/2015/09/how-to-use-simplified-gitflow-branching-model-video/).
+This time I changed the slides and made it more general. I hope it was helpful to the audience.
 
 {% img center /images/php-dev-meetup-16/simplified-gitflow-talk.jpg 'PHP Dev Meetup 16 My talk on simplified gitflow' 'PHP Dev Meetup 16 My talk on simplified gitflow' %}
 
