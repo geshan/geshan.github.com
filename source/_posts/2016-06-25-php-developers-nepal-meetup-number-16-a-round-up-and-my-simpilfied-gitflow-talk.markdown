@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PHP Developers Nepal Meetup #16 a round up and my talk on simpilfied gitflow"
+title: "PHP Developers Nepal Meetup #16 a round up and my talk on simpilfied gitflow with slides"
 date: 2016-06-25 15:50:35 +0400
 comments: true
 categories:
@@ -42,4 +42,4 @@ This time I changed the slides and made it more general. I hope it was helpful t
 
 ## Hope to see more meetups
 
-Hope there will be a Developers Nepal meetup which is language agnostic soon. Kudos.
+> Hope there will be a Developers Nepal meetup which is language agnostic soon. Kudos.
