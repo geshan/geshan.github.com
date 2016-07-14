@@ -40,6 +40,12 @@ This time I changed the slides and made it more general. I hope it was helpful t
 
 <script async class="speakerdeck-embed" data-id="acdf3ecb8fd84007b33113d906e5dd3c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+## Video of my talk on Simplified Gitflow
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jznORrhoV-M?rel=0" frameborder="0" allowfullscreen></iframe>
+
+More vidoes of the full event in this [playlist](https://www.youtube.com/playlist?list=PLhTqkNYfkucxGk2OssIseNLMF9jPXYoHC).
+
 ## Hope to see more meetups
 
 > Hope there will be a Developers Nepal meetup which is language agnostic soon. Kudos.
