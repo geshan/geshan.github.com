@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Some useful resources and suggestions for conference speakers and wanna be speakers"
+title: "Some useful resources and suggestions for tech conference speakers and aspiring speakers"
 date: 2016-09-14 11:02:38 +0400
 comments: true
 categories:
@@ -18,7 +18,7 @@ I do not consider myself an experienced speaker. I have [spoken](http://geshan.c
 
 Some years back, I thought that submitting a paper to a tech conference was a lot of work. General tech conferences just need you to submit a title and a 200-300 word abstract that's it. The organizers/paper selection committee decides to select or reject the paper on that basis. So just jot down those great abstracts and start submitting the papers.
 
-You will be happy to know that many conferences also cover travel and hotel costs for speakers. So if you get selected you get a chance to visit a new city/country and speak about a topic you like too.
+You will be happy to know that some conferences also cover travel and hotel costs for speakers. So, if you get selected you get a chance to visit a new city/country and speak about a topic you like too.
 
 ## How Do I know which conferences have an open CFP
 
@@ -28,29 +28,29 @@ Now, as you are excited to submit your ideas in the form of papers let's see whe
 
 Below are some of the websites that inform you about Call For Papers (CFP):
 
-1. [Papercall.io](http://papercall.io/) - You can also submit your papers from this web application. Generally, lists only tech conferences. You can get a weekly update about events listed in PaperCall.io subscribing to [The Weekly CFP](http://theweeklycfp.com/)
+1. [Papercall.io](http://papercall.io/) - You can also submit your papers from this web application. Generally, lists only tech conferences. You can get a weekly update about events listed in PaperCall.io subscribing to [The Weekly CFP](http://theweeklycfp.com/).
 1. [Lanyrd.com/calls](http://lanyrd.com/calls/) - Lists call for speakers for a lot of events. Events/Conferences are both tech and non-tech.
-1.  [CallingAllPapers.com](http://callingallpapers.com/) - Lists all call for papers with days left marker sorted with a deadline.
+1. [CallingAllPapers.com](http://callingallpapers.com/) - Lists all call for papers with days left marker sorted with a deadline. It has only tech conferences listed.
 1. [The CFP Report](https://thecfpreport.com/) - Sends a weekly with all tech paper calls. You can even select the day of the week you want the email, I get it each Friday :)
 
-## Content is king
+## First time speaker? Content is king
 
 Generally, first-time speakers do not get a chance to speak at conferences. So I recommend you to starts speaking at local meetups. It will be great if you record your talk and publish it as a blog post. This will help you land your first conference speaking opportunity.
 
 Great, so your paper is selected at a tech conference after you already spoke at some meetups. Now after you sort out the administrative procedure like visa if any, you need to focus on your slides. The rule is simple, content is king. No matter you do a soft talk or a super technical talk with lots of code, you need to deliver great content.
 
-Having a agenda or list of things you are going to talk about is a must have. Slides with content in bullets and optimal text is always better. Images play a great role if you want to have that punch slide or convey your message in a visual form. I use and recommend right free images that I get from [Pixabay](https://pixabay.com) and [Unsplash](https://unsplash.com/).
+Having a agenda or list of things you are going to talk about is a must have. Slides with content in bullets and optimal text on each slide is always better. Images play a vital role if you want to have that punch slide or convey your message in a visual form. I use and recommend right free images that I get from [Pixabay](https://pixabay.com) and [Unsplash](https://unsplash.com/).
 
-## Feedback always helps
+## Suggestions to speakers, feedback about your talk
 
 Any feedback about your talk is always helpful. Four general suggestions I have for speakers are:
 
-1. Keep your slides free from any grammatical errors
-1. While speaking try to avoid any `Ahh` and `umm..` etc fillers
+1. Keep your slides free from any grammatical errors.
+1. While speaking try to avoid any `Ahh` and `umm..` etc fillers.
 1. Keep track of your speaking speed, don't speak too fast or too slow.
 1. Speaking is spontaneous. Still, try to memorize your starting and ending quote/sentence. You could even record your start and end sentences, listen to it and improve on it.
 
-The best feedback is what your audience tell you. I have got comments and suggestions on the content, the demo code as well as how I speak. It has helped me a lot. One important feedback I got was that on stage I turn myself into a rapper :). So, the next talk I gave I was conscious about my speaking pace.
+The best feedback is what your audience tell you. I have got comments and suggestions on the content, the demo code as well as how I speak. It has helped me a lot. One important feedback I got was that on stage I turn myself into a rapper :) (spoke too fast). So, the next talk I gave I was conscious about my speaking pace.
 
 Always try to get face to face feedback one on one with people in the audience. Whenever possible have your talk listed on [Joind.in](https://joind.in). Have a slide towards the end to rate your talk and ask for feedback. Joind.in also has a page to list [call for papers](https://joind.in/event/callforpapers)
 
