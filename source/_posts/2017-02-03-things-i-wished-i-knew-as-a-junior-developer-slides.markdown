@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Things I wished I knew as a junior developer for Developers Nepal Meetup #4 [Slides]"
+title: "Things I wished I knew as a junior developer for Developers Nepal Meetup #4 [Slides and Video]"
 date: 2017-02-08 07:31:35 +0400
 comments: true
 categories:
 - Technology
 - misc
+- Talks
 ---
 
 Being a senior software developer is more about the mindset and pro-activeness. Technical skills can take you to a point then you will be stagnant. To grow you need to learn in tech field. Above was the context for my talk titled "Things I wished I knew as a junior developer".  
@@ -37,6 +38,12 @@ I gave this talk on 4-Feb-2017 for Developers Nepal Meetup #4, the slides are be
 
 You can also view the slides on [slideshare](http://www.slideshare.net/geshan/things-i-wished-i-knew-as-a-junior-developer).
 
+## Video
+
+The video of the talk is below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cLokEa545SY" frameborder="0" allowfullscreen></iframe>
+
 ## Meetup Report
 
 There were lots of participants making it a really good opportunity to network.
@@ -47,9 +54,7 @@ It was great meetup to attend, speak and moderate the panel discussion.
 
 {% img center /images/things-jr-dev/dn-meetup-4-panelists.jpg 'Open discussion panelists at DN Meetup 4' 'Open discussion panelists at DN Meetup 4' %}
 
-If you are interested more about the meetup you can view the meetup report below:
-
-<iframe src="https://docs.google.com/document/d/1utAY2UyxNOzBKFbp8cfY4cbz6Np517_fVGO4VCVXdds/pub?embedded=true" width="750px" height="500px"></iframe>
+If you are interested more about the meetup you can view the meetup report [here](https://docs.google.com/document/d/1utAY2UyxNOzBKFbp8cfY4cbz6Np517_fVGO4VCVXdds/).
 
 More photos of the meetup can be viewed [here](https://www.dropbox.com/sh/jeq76wzcaffg1ft/AABcnAJpd3Kk6HiEbt3XjgQ7a?dl=0).
 

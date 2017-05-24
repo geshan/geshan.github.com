@@ -65,11 +65,16 @@ The slides of my talk are below:
 
 I wrote a small script to pull in the latest tweet with #LaraconEu for the demo which is [here](https://github.com/geshan/larabot-hubot).
 
+## Video Of My Talk on Chatops
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SZ3UfwBACIo" frameborder="0" allowfullscreen></iframe>
+
 After that I attended the following talks for the day:
 
 1. How to avoid database migration hell - which was good
 1. Varnish For PHP Developers - that was a bit of too much code still good
 1. One Box Doesn't fit all - by Frank which was a different way at looking at scalability, still, it was a great talk.
+
 
 ### Conference Day 2
 
