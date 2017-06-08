@@ -18,7 +18,7 @@ Every company is a [technology company](https://www.forbes.com/sites/forbestechc
 
 Below are some of the assumptions I have made for this opinionated matrix:
 
-* It focuses on a tech/engineering team doing software development
+* It focuses on a tech/engineering team doing software development.
 * It tilts towards software teams practicing agile methodologies.
 * It is more targeted towards web applications/APIs developing teams.
 * Many things can be added to the 6 main criteria and 25 sub criteria, still these 25 points I think are important.
