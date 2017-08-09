@@ -27,6 +27,12 @@ talk titled "Adopt a painless continuous delivery culture, add more business val
 
 Slides on [slideshare](http://bit.ly/cdbv-gm)
 
+## The Video
+
+The video of the talk is below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O5CYaITOtog" frameborder="0" allowfullscreen></iframe>
+
 ## The Abstract
 
 A continuous delivery of new features definitely adds value to the business, it should be effortless to the tech team too. 5 years back our sys-admin team was in Istanbul and the dev team was in Dubai. Even then changes were shipped periodically but the process was cumbersome. A stable delivery pipeline with tests, continuous integration and small atomic deployments with github flow gives us a leading-edge. The culture of logging and monitoring ingrained in our team helps us move fast. Now, we ask a chatbot to deploy our microservices several times a day to production. In this session, I will unveil details on how you can get started with a smooth continuous delivery pipeline one step at a time.
