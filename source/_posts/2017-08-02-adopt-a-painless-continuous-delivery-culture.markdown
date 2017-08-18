@@ -31,7 +31,7 @@ Slides on [slideshare](http://bit.ly/cdbv-gm)
 
 The video of the talk is below:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O5CYaITOtog" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2oYPAHJwr6U" frameborder="0" allowfullscreen></iframe>
 
 ## The Abstract
 
