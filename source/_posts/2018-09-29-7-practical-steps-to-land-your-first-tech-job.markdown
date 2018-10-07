@@ -16,7 +16,7 @@ categories:
 
 ## TLDR;
 
-> Network in person, use recuriter's help, contribute to open source, list companies/roles you wan to work in and learn a new tech thing each month to land your first tech job. Bonus but important points, make a killer resume, have a great pet project deployed online to show and start early.
+> Network in person, use recuriter's help, contribute to open source, list companies/roles you want to work in and learn a new tech thing each month to land your first tech job. Bonus but important points, make a killer resume, have a great pet project deployed online to show and start early.
 
 ## Interesting subject 
 
