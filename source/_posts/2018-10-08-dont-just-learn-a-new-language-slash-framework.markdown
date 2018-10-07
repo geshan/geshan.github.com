@@ -14,7 +14,7 @@ categories:
 
 <!-- more -->
 
-Now if you think how will I do this new project I don't even know language 'X' or framework 'Y' stop complaining. Maybe you are a new starter in tech or coding but you need to know how to learn new things. The best way to learn something new is by doing it. This post will focus on getting some common things right. It will help you get from I want to learn 'X' to I have a project running in 'X', so follow on. If you are convinced about doing a project to learn something new, open source it. Github is the de facto service to host your open source projects. Then you can leverage lots of services for free. This post will be equally useful to coding new starters as well as experienced softweare engineers.
+Now if you think how will I do this new project I don't even know language 'X' or framework 'Y' stop complaining. Maybe you are a new starter in tech or coding but you need to know how to learn new things. The best way to learn something new is by doing it. This post will focus on getting some common things right. It will help you get from I want to learn 'X' to I have a project running in 'X', so follow on. If you are convinced about doing a project to learn something new, open source it. Github is the de facto service to host your open source projects. Then you can leverage lots of services for free. This post will be equally useful for coding new starters as well as experienced software engineers.
 
 ## TLDR;
 
@@ -43,7 +43,7 @@ Just making it work should not be your priority. Writing quality should also be 
 Now you are writing a new project to learn your favorite 'X' or 'Y'. You have written some parts of it, you are collaborating with Git and have the code open source on Github. You have Docker in place and code quality checks run on each push, great! But you can't show it to your friend who is living in a different city/country right? Wrong!
 
 You can use different services to deploy your web application. With a URL you can show it to your friend, a recruiter or anyone who knows the URL. You can deploy it for free to services like [Heroku](https://www.heroku.com) or [Zeit Now](https://zeit.co/now).
-If you have Dockerized your open source app I would recommend Zeit Now. With the recent [Github integration](https://zeit.co/github) Zeit Now will give a new URL to each pull request. This makes testing a breeze. You can check an example on a demo [currency converter API](https://github.com/geshan/currency-api/pull/9) app I wrote.
+If you have Dockerized your open source app I would recommend Zeit Now. With the recent [Github integration](https://zeit.co/github), Zeit Now will give a new URL to each pull request. This makes testing a breeze. You can check an example on a demo [currency converter API](https://github.com/geshan/currency-api/pull/9) app I wrote.
 
 ## Conclusion
 
