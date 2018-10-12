@@ -1,2 +1,22 @@
+<script>
+    window.addEventListener('load', function () {
+        if ('serviceWorker' in navigator) {
+    
+            var isWorkboxEnabled = false;
+            var serviceWorker = (isWorkboxEnabled) ? 'service-worker-workbox.js' : 'service-worker-vanilla.js';
+    
+            // Register the ServiceWorker
+            navigator.serviceWorker.register(serviceWorker, {
+                scope: './'
+            }).then(function(reg) {
+                console.log('Service worker has been registered for scope:', reg.scope);
+            }).catch(function (error) {
+                // registration failed
+                console.log('Service worker registration failed with: ', error);
+            });
+        }
+    });
+</script>
+
 <script src="{{ root_url }}/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="{{ root_url }}/javascripts/modernizr-2.0.js"></script>
