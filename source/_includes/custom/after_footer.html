@@ -3,7 +3,7 @@
         if ('serviceWorker' in navigator) {
     
             var isWorkboxEnabled = false;
-            var serviceWorker = (isWorkboxEnabled) ? 'service-worker-workbox.js' : 'service-worker-vanilla.js';
+            var serviceWorker = (isWorkboxEnabled) ? '/service-worker-workbox.js' : '/service-worker-vanilla.js';
     
             // Register the ServiceWorker
             navigator.serviceWorker.register(serviceWorker, {
