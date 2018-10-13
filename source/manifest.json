@@ -1,0 +1,114 @@
+{
+    "name": "Geshan Blog",
+    "short_name": "GeshanBlog",
+    "description": "A blog about software engineering and thing around it",
+    "start_url": "https://geshan.com.np/",
+    "scope": "/",
+    "dir": "ltr",
+    "lang" : "en",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "transparent",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+      {
+        "src": "/images/icons/17d0d7a5-e2a7-dcc0-cb86-de67951e03d9.webPlatform.png",
+        "sizes": "44x44",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/b8759ab5-f6d6-689f-aedd-0382b3e80958.webPlatform.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/51468e2e-1a31-52df-004b-5f3dd3a09caf.webPlatform.png",
+        "sizes": "1240x600",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/e95ff6de-a509-c671-d251-6ac672301229.webPlatform.png",
+        "sizes": "300x300",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/b7501f81-3473-3524-db49-7059be07cfb0.webPlatform.png",
+        "sizes": "150x150",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/3dcb949f-0484-4c19-7c26-0ff3b52b9f32.webPlatform.png",
+        "sizes": "88x88",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/1a0c113b-63b0-5356-22a8-1495672047c1.webPlatform.png",
+        "sizes": "24x24",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/16a21a8f-88b1-8c78-0efa-140b09cf221f.webPlatform.png",
+        "sizes": "50x50",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/9a1b7d79-93d2-8a4d-730a-23c61c5fb4e5.webPlatform.png",
+        "sizes": "620x300",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/f5b14cc8-2cb7-26bf-972d-c183737496d3.webPlatform.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/489c5726-941e-ad09-b98e-d07a841dd554.webPlatform.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/dcdf92fb-67ca-546d-de25-ae4e47dcb22c.webPlatform.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/6f346589-7e9c-4665-33ad-ecff55ce0d03.webPlatform.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/7b0b950c-d685-c3ec-8507-75b2a9445655.webPlatform.png",
+        "sizes": "36x36",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/f9f22f2b-1907-9538-ebbf-7a69c38915b8.webPlatform.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/bc58da46-61e7-de8b-2f0f-f5cf2894eaae.webPlatform.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/222d8367-651d-af08-dc6b-de58a9b17ede.webPlatform.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/d9dc34cd-8e84-682c-82ac-680e34c14b20.webPlatform.png",
+        "sizes": "120x120",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/819ee63f-61fb-ca48-2f7a-318592fb4cb8.webPlatform.png",
+        "sizes": "76x76",
+        "type": "image/png"
+      }
+    ],
+    "splash_pages": null
+  }
+  
