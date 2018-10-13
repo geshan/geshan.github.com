@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: https://geshan.com.np
+url: http://geshan.com.np
 title: Geshan's Blog
 subtitle: A blog about technology, open source, web development etc.
 author: Geshan Manandhar
@@ -48,7 +48,7 @@ recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 
-titlecase: false       # Converts page and post titles to titlecase
+titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -56,7 +56,8 @@ titlecase: false       # Converts page and post titles to titlecase
 default_asides: [
     asides/recent_posts.html,
     custom/asides/category_list.html,
-    asides/social.html
+    asides/twitter.html,
+    asides/github.html
   ]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
@@ -70,14 +71,14 @@ default_asides: [
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 
-github_show_profile_link: 
-github_skip_forks: 
+github_user: geshan
+github_repo_count: 5
+github_show_profile_link: true
+github_skip_forks: true
 
 # Twitter
-twitter_user:
-twitter_tweet_button:
+twitter_user: geshan
+twitter_tweet_button: true
 
 # Google +1
 google_plus_one: false
@@ -114,13 +115,13 @@ social:
   adn: # App.net
   dribbble:
   facebook:
-    user: 
-    app_id:
+    user: geshan
+    app_id: 106030259434380
   github:
     user: geshan
     show_profile_link: yes
   googleplus:
-  linkedin: geshan
+  linkedin:
   pinterest:
   stackoverflow:
   twitter:

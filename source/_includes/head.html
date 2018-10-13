@@ -8,8 +8,6 @@
   {% if page.description %}<meta name="description" content="{{ page.description | strip_html | condense_spaces | truncate:150 }}">{% endif %}
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
-  {% include custom/head.html %}
-  
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -26,6 +24,8 @@
   <meta property="og:url" content="{{ canonical }}">
   <meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase | truncate:70 }}{% else %}{{ page.title | truncate:70 }}{% endif %} - {% endif %}{{ site.title }}">
   {% if page.title %}{% if page.description %}<meta property="og:description" content="{{ page.description | strip_html | condense_spaces | truncate:200 }}">{% endif %}{% else %}{% if site.description %}<meta property="og:description" content="{{ site.description | truncate:200 }}">{% endif %}{% endif %}
+
+  {% include custom/head.html %}
 
   {% comment %}
     screen.css is included after custom/head so it can override stuff like Bootstrap fonts etc.
