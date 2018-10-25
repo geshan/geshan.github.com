@@ -10,6 +10,7 @@ categories:
 - testing
 - logging
 - deployment
+- DevOps
 ---
 
 Software development is not just punching some code on the keyboard for desired output. The business side of software development always takes priority than the technicalities of it.  

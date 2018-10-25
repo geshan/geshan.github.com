@@ -8,6 +8,7 @@ categories:
 - technology
 - misc
 - talks
+- DevOps
 ---
 
 Just knowing git and all team members pushing code to the main branch (master) is not a good practice.

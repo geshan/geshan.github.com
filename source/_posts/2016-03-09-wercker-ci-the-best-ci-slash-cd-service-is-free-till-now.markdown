@@ -8,6 +8,7 @@ categories:
 - misc
 - deployment
 - Talks
+- DevOps
 ---
 On 7-Mar-2016 I did a short talk titled "The best CI/CD service is free (till now), lets use it" at [Namshi](http://namshi.com). 
 It was a quick rundown of [Wercker](http://wercker.com/) CI (Continuous Integration) features and how it works. 

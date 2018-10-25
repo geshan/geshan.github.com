@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - Talks
+- DevOps
 ---
 
 Your work responsibilities boil down to 2 things, either add value to customers or save cost for the business.

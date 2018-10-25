@@ -7,6 +7,7 @@ categories:
   - Technology
   - deployment
   - misc
+  - DevOps
 ---
 
 Getting code done for a feature from developer's machine to production in less time is a quality of efficient 

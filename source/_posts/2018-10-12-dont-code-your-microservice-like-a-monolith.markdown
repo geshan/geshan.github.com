@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - microservice
+- DevOps
 ---
 
 Will you use a gun to kill a fly? The answer is NO. The same thing goes when you want to write a microservice application that is going to be maximum of 10K lines of code. Don't over-engineer it. Ok, you have been writing and maintaining large code bases. Some might be 100K+ lines of code but you need to get over your habits and think differently. This post helps you unravel the mysteries of writing small and maintainable microservices. The suggestions are opinionated but it is in practice in a million dollar business. 

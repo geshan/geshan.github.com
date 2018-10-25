@@ -7,6 +7,7 @@ categories:
 - Technology
 - logging
 - misc
+- DevOps
 ---
 
 "This feature we deployed last week was working fine till yesterday now I have no idea why is it not working!" This is like a typical sentence you hear from developers when there is no logging in place. It can be to a great extent solved by having automated tests, still having logging and monitoring gives you a different viewpoint. In this post I am going to reveal the importance of having logs for your code and monitoring your code to cut down the firefighting time for bugs and errors by huge margins.
