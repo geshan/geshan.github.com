@@ -9,6 +9,7 @@ categories:
 - Laravel
 - Technology
 - Misc
+- DevOps
 ---
 
 "How do I get new team members contributing code to the project in a matter of minutes/hours not days?" is a common question heard in development teams. There are some ways to do, in my opinion [docker](http://docker.com) is one of the best.

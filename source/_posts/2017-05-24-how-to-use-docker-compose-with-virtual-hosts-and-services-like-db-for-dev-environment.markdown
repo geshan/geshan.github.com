@@ -7,6 +7,7 @@ categories:
 - Docker
 - Technology
 - misc
+- DevOps
 ---
 
 Docker as been immensely popular in the past years. If you are not using docker at least in your dev environment in 2017. 

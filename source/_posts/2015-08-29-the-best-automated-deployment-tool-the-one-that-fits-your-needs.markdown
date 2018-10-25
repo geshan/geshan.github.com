@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - deployment
+- DevOps
 ---
 
 The process of getting completed feature or bug fix code from the development environment to

@@ -7,6 +7,7 @@ categories:
  - Technology
  - Misc
  - Talks
+ - DevOps
 ---
 
 I was in Kathmandu,Nepal for a week at the end of November and this time I talked about how to become a better software
