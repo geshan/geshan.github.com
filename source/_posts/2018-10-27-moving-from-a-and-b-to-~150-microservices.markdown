@@ -11,7 +11,7 @@ categories:
 ---
 
 I gave a talk at #devopsdaysNewy on 24-Oct-2018. It was a great conference with lots of amazing people.
-I want to thank the organizers for putting together such an amazing event. I want to extend the thanks to the sponsors who made it possible :). It was very good couple of days to meet new people and form a network. I think my talk on microservcies went pretty good too. It was my second devops days and I enjoyed it.
+I want to thank the organizers for putting together such an amazing event. I want to extend the thanks to the sponsors who made it possible :). It was very good couple of days to meet new people and form a network. I think my talk on microservices went pretty good too. It was my second devops days and I enjoyed it.
 
 {% img center /images/a-b-to-150-ms/150-ms-geshan.jpg 'Moving from A and B to 150 microservices, the journey, and learnings' 'Moving from A and B to 150 microservices, the journey, and learnings' %}
 <!-- more -->
