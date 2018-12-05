@@ -32,7 +32,7 @@ FreeCodeCamp is the place to go for learning how to code for free. It has a very
 
 HackerNoon is also another extremely popular publication. It is on Medium right now but it may not be there for long. They are going public with [crowd sourcing](https://www.startengine.com/hackernoon). From the content point of view, there is a sizable amount of content for software engineers. It also has lots of stories on cryptocurrencies. With 7 editors and 7K+ writers (includes me), this is a huge publication too. To write for them you need to send your draft to Stories@AMiPublications.com. The wait time for each story is 1 week or more (I have already published 5 stories). It also has a writer's group on Facebook. You can include yourself as a "Contributing Writer" on [LinkedIn](https://www.linkedin.com/company/hackernoon/) too.
 
-### [CodeBurst.io](codeburst.io) - 62K followers
+### [CodeBurst.io](https://codeburst.io) - 62K followers
 
 CodeBurst is a popular medium publication with contents focused on web development. With a motto of "Bursts of code to power through your day". I  see most stories geared towards Javascript. They have a page encouraging "[Write For Us](https://codeburst.io/how-to-write-for-codeburst-io-63fec4bf111c)". They mention having over 2 million page views per month. With 2 Editors and more than 900 writers, this is not a small Medium publication. I am not sure of the editorial process and wait times as I have not tried to publish any of my stories here. It could be a good starting point for new writers.
 
