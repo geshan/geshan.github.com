@@ -71,7 +71,7 @@ default_asides: [
 # ----------------------- #
 
 # Github repositories
-github_user: geshan
+github_user: 
 github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
@@ -98,8 +98,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: geshanblog
-disqus_show_comment_count: true
+disqus_short_name: 
+disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id: UA-56310304-1
@@ -119,7 +119,7 @@ social:
     app_id: 106030259434380
   github:
     user: geshan
-    show_profile_link: yes
+    show_profile_link: no
   googleplus:
   linkedin:
   pinterest:
