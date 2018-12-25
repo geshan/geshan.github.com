@@ -6,6 +6,7 @@ comments: true
 categories:
  - Technology
  - Misc
+cover: /images/free-non-profit-services/non-profit.jpg
 ---
 
 Non profit and charitable organization always need a backing to be on track and do good for the community and society

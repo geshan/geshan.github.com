@@ -8,6 +8,7 @@ categories:
 - misc
 - Programming
 - testing
+cover: /images/testing-types/software-testing.jpg
 ---
 
 Tests check that the code does what it is expected to do. It also gives confidence to the software engineer that the code 

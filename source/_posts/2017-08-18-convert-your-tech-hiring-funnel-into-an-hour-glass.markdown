@@ -6,6 +6,7 @@ comments: true
 categories:
 - Technology
 - misc
+cover: /images/tech-hiring-funnel-hour-glass/tech-hiring-funnel-hourglass.jpg
 ---
 
 Sometimes I feel that the software company ([YIPL](http://younginnovations.com.np/ourstory)) we started a decade back is turning into a software engineer factory. We take in fresh grads or junior software engineers, train them, mentor them. When they get the skills after 6-9 months and are ready to be productive to the company they move to a bigger better software company. This is a common story in Kathmandu Tech Scene. I am not blaming people moving jobs in tech but I think, there is a fundamental flaw in the process and system itself. In this blog post I will unveil a tech hiring funnel we follow for a few tech startups in Kathmandu. It will also contain some of my thoughts on how to retain tech talent by converting the funnel into an hour glass.

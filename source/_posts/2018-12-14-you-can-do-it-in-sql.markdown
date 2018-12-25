@@ -7,6 +7,9 @@ categories:
 - Technology
 - Misc
 - SQL
+description: Use SQL to do math like sum, average etc. Utilize it for grouping one to many relational values like getting categories of product. Leverage SQL for string manipulation like using CONCAT_WS for...
+keywords: SQL, Beginner
+cover: /images/do-it-in-sql/tea-lights.jpg
 ---
 
 “SQL, Lisp, and Haskell are the only programming languages that I’ve seen where one spends more time thinking than typing." - Philip Greenspun

@@ -8,6 +8,7 @@ categories:
 - misc
 - git
 - talks
+cover: /images/php-dev-meetup-16/php-dev-meetup-16.jpg
 ---
 
 I had given a talk in the PHP Developers Nepal meetup #14 in Aug 2014 about [Rabbit Mq and Symfony](http://geshan.com.np/blog/2014/08/basic-overview-of-message-queues-rabbit/).

@@ -8,6 +8,7 @@ categories:
 - misc
 - Programming
 - testing
+cover: /images/10-quotes/code-html-small.jpg
 ---
 
 In the past months, I was tweeting some insightful and enlightening software engineering proverbs. Like the one below

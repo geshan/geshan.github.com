@@ -6,6 +6,7 @@ comments: true
 categories: 
 - Technology
 - Misc
+cover: /images/tip-beginner-sw-eng/puzzle.jpg
 ---
 Most of the tutorials you have read or watched till now usually do one thing, spoon-feeding. This is "OK" to learn a new thing but not good when you need to `solve` a task. A task usually involves reaching a goal by overcoming a problem. This post unveils the most important "tip" for all beginner software engineers.
 

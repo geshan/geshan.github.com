@@ -6,6 +6,7 @@ comments: true
 categories: 
 - Technology
 - Misc
+cover: /images/top-5-2018/everest.jpg
 ---
 
 I have never done this in the past 11 years of blogging, this time it is going to be different. I am listing the 5 most viewed posts from this blog in 2018. All posts are not from 2018 but they have been viewed more than the others. I am using my Google Analytics stats to compile this list. So, here I present the most popular blog posts of 2018 on [Geshan.com.np](https://geshan.com.np):

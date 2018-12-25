@@ -8,6 +8,7 @@ categories:
 - DevOps
 - Misc 
 - Docker
+cover: /images/4-ways-docker/docker-whale.jpg
 ---
 
 10 years back it was Git that transformed the way software engineers worked. Half a decade back it was [Docker](https://www.docker.com/) that brought the container to the masses. Before Docker, container was like a sacred secret in companies like Google and Heroku. Docker is a software and a company too. It tried to build a broader ecosystem but [Kubernetes](https://kubernetes.io/) stole the thunder along the way keeping [swarm](https://docs.docker.com/engine/swarm/) at bay. This post is not about how some Docker tools are not popular. It is about how Docker has changed the way we work in the past 5 years.

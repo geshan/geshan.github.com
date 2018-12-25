@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - git
+cover: /images/3-rules-git-conflict/git-conflict.png
 ---
 
 Do you write at least 10 lines of code a day in any programming language? Do you work alone or in a team?

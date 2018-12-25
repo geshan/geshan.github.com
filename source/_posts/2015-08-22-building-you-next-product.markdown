@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - api
+cover: /images/product-http-api/rest-json.jpg
 ---
 
 We have seen many technology software products coming, some coming up as the next big thing, some
