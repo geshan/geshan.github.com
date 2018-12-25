@@ -8,6 +8,7 @@ categories:
   - deployment
   - misc
   - DevOps
+cover: /images/5-deployment-considerations/capistrano-deployment.png
 ---
 
 Getting code done for a feature from developer's machine to production in less time is a quality of efficient 

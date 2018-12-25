@@ -8,6 +8,7 @@ categories:
 - DevOps
 - Misc 
 - Talks
+cover: /images/a-b-to-150-ms/150-ms-geshan.jpg
 ---
 
 I gave a talk at #devopsdaysNewy on 24-Oct-2018. It was a great conference with lots of amazing people.

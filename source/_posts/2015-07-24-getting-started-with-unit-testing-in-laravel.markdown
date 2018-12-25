@@ -8,6 +8,7 @@ categories:
  - testing
  - php
  - Laravel
+cover: /images/laravel-unit-tests/laravel-popularity.png
 ---
 
 Automated Testing an application is kind of a puzzle given the choice of methodologies (TDD, BDD...), frameworks etc

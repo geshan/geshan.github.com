@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - talks
+cover: /images/career-paths-for-tech-grads/cptg-01.jpg
 ---
 
 

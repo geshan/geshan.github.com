@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - Programming
+cover: /images/3-podcasts/3-podcasts-sw-eng.jpg
 ---
 
 I have been listening to podcasts since years now, though it has not been continuous. I remember listening to Lullabot podcast 7 years back in 2008. Some podcasts have good content and sound quality. Some podcasts start with a great intro music and their sound quality disappoints. In this post, I will mention 3 amazing podcasts I have been listening in past months. Every software engineer/developer should listen to them. They have great content and sound quality in all the episodes.

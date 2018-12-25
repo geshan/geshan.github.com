@@ -11,6 +11,7 @@ categories:
 - logging
 - deployment
 - DevOps
+cover: /images/4-pillars-software-application/4-pillars-software-application.png
 ---
 
 Software development is not just punching some code on the keyboard for desired output. The business side of software development always takes priority than the technicalities of it.  

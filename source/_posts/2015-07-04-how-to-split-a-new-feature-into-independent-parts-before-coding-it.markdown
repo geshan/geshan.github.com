@@ -6,6 +6,7 @@ comments: true
 categories: 
  - Programming
  - Misc
+cover: /images/split-feature/strong-base.jpg
 ---
 
 As software engineers we always face a problem on how to break this task down to independent release ready parts before

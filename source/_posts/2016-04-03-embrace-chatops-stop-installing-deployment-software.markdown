@@ -8,6 +8,7 @@ categories:
 - misc
 - deployment
 - Talks
+cover: /images/chatops/chatops-hubot.jpg
 ---
 
 On 1-Apr-2016 For [CodeMotion Dubai 2016](http://dubai2016.codemotionworld.com/) conference I talked about chatOps at Namshi. 

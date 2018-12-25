@@ -6,6 +6,7 @@ comments: true
 categories:
 - Technology
 - misc
+cover: /images/speaker-resources/speaker.jpg
 ---
 
 I do not consider myself an experienced speaker. I have [spoken](http://geshan.com.np/blog/categories/talks/) at a couple of conferences and some meetups in the past years. I have to learn lots of technical and non-technical things to become a better speaker. Still, I would like to share some resources that will help new and experienced speakers.

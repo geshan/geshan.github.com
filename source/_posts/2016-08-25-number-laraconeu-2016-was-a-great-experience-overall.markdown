@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - talks
+cover: /images/laracon-eu-2016/laracon-eu.jpg
 ---
 
 It all started with submitting my chatops talk to some open call for papers in April 2016. After giving the talk in CodeMotion Dubai, I felt chatops is a useful topic. Everyone working in software development can leverage it to make their life easier. My talk was a Laravel centered version of the same talk.

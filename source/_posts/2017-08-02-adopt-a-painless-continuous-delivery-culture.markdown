@@ -8,6 +8,7 @@ categories:
 - misc
 - Talks
 - DevOps
+cover: /images/continuous-delivery/geshan-devops--days-pdx-2017.jpg
 ---
 
 Your work responsibilities boil down to 2 things, either add value to customers or save cost for the business.

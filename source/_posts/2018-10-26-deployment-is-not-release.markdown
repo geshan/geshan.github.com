@@ -7,6 +7,7 @@ categories:
 - Technology
 - DevOps
 - Misc
+cover: /images/deployment-not-release/flags.jpg
 ---
 
 Breaking down a big feature to epics and stories is always tricky. Then you have sub-stories making the process complicated. If you could deploy the finished task that delivers value to the business it would help. Enter feature flags, using this you can deploy your code to production behind a gate. Code and feature are on production but not fully released to everyone. This post is going to help you adjust your mental model for getting more benefits with feature flags.

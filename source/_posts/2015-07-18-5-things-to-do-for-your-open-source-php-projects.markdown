@@ -10,6 +10,7 @@ categories:
  - php
 facebook:
    image: http://geshan.com.np/images/php-oss-checklist/example-foss.png
+cover: /images/php-oss-checklist/example-foss.png
 ---
 
 Open source software (oss) are very popular in the software world, be it the server serving your web pages or the 

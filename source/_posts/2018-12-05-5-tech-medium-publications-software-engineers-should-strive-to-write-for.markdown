@@ -6,6 +6,7 @@ comments: true
 categories: 
 - Technology
 - Misc
+cover: /images/5-tech-medium-publications/library.jpg
 ---
 Starting a tech blog has changed in the last few years. 10 years back starting a blog without your website, you had 2 options Blogger or Wordpress. Both gave you a free sub-domain. Things did not change much for quite some time, but in 2012 medium came with a storm. It gained a lot of traction with its simplistic interface in 2014-2015. With the publication feature, Medium makes it very easy for a group of writers to collaborate.  These days I would suggest most people start their blog on it.
 

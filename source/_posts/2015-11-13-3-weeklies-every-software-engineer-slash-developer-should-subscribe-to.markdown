@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - Programming
+cover: /images/3-weeklies/3-weeklies-sw-eng.jpg
 ---
 Being updated is an important need for all technology professionals. These days, there are many ways to get updated and we are at times overwhelmed with the things we read. To help this situations, and get a rundown of a curated list of links to read for any topic is subscribe to a weekly.
 

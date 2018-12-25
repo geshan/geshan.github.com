@@ -9,6 +9,7 @@ categories:
 - misc
 - talks
 - DevOps
+cover: /images/simplified-gitflow/simple-git-flow.jpg
 ---
 
 Just knowing git and all team members pushing code to the main branch (master) is not a good practice.

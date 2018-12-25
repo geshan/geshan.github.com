@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - Programming
+cover: /images/3-podcasts-part-2/3-podcasts-sw-eng-part-02.jpg
 ---
 
 Listening to podcasts is a good way to learn new things. Like the last [time](http://geshan.com.np/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/), I have found some more podcasts

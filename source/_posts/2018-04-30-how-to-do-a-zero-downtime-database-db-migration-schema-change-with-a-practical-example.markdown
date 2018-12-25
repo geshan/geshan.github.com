@@ -9,6 +9,7 @@ categories:
 - database
 - deployment
 - DevOps
+cover: /images/db-migration/db-migration.png
 ---
 
 Database migration on a production database is never simple. Depending on the volume of requests some teams schedule database migration to off hours. You can run your alter statements with zero or minimal downtime following the steps mentioned below with a practical example.
