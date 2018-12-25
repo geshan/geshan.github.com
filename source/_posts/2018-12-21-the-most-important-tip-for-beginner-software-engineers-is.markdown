@@ -82,7 +82,7 @@ The task as mentioned earlier is to write a create/POST API where Refunds with p
 1. Create a method to get the data from the controller sent by user
 1. Validate all the input for values, refund types, and reasons.
 1. If all validation passes, generate a random alphanumeric number of length 10 which is not existing in the refund table (recursive check)
-1. If validation fails to respond with a proper validation failure message, decide on reponse structure
+1. If validation fails to respond with a proper validation failure message, decide on response structure
 1.  Start a database transaction
     1. Insert the refund related values of refund_nr, reason_reason, is_premium_customer to the `refund` table
     1. On insert success, get the id of the last insert
