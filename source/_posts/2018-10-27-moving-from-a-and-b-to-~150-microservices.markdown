@@ -9,6 +9,8 @@ categories:
 - Misc 
 - Talks
 cover: /images/a-b-to-150-ms/150-ms-geshan.jpg
+description: We were frustrated too, but in 4-5 years of time, we replaced A (front-end) and B (back-office) system with ~150 microservices.
+keywords: Microservices, Software Architecture, Software Engineering
 ---
 
 I gave a talk at #devopsdaysNewy on 24-Oct-2018. It was a great conference with lots of amazing people.
