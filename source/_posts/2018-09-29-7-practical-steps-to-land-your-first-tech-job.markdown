@@ -7,6 +7,8 @@ categories:
 - Technology
 - misc
 cover: /images/5-steps-first-tech-job/first-tech-job-a.jpg
+description: Network in person, use recuriter's help, contribute to open source, list companies/roles you want to work in and learn a new tech thing each month to land your first tech job.
+keywords: Beginner software engineer, software engineer, job
 ---
 
 "If you hate your job, take a loan and you will start liking it". I don't remember where I read this but this sounds convincing. Now think of the tech job market worldwide, saying it is growing would be an understatement, it is booming. Still, why don't fresh graduates not get a job when the pass out of universities? Let's have a closer look at this issue and try to help technology students get a job as soon as their course finishes.
@@ -31,7 +33,9 @@ Let's face this, it is a mix of the education system and the individual student 
 
 I am no education expert or anything still I have worked like a decade in tech and in multiple countries by now. One thing is sure, skills and results are the primary and degrees are secondary. Universities/colleges should try to bridge the gap between students and real market needs. Like I don't know of any university that will teach students lets say `git` that you are going to use each day at work. That doesn't mean what is being taught is wrong :). Yes, I am ranting a bit here. 
 
-On the student's side, you need to research what is relevant for the market, learn on your own and brand yourself so that you can sell your skills faster. For instance, if I interview a candidate who has a good tech blog with helpful and regular posts may be even on medium. Your chances of getting hired are up by like ~5% already. Because being able to put your ideas/learning in words is an important skill for a software engineer.
+On the student's side, you need to research what is relevant for the market, learn on your own and brand yourself so that you can sell your skills faster. For instance, if I interview a candidate who has a good tech blog with helpful and regular posts may be even on medium. Your chances of getting hired are up by like ~5% already. 
+
+> Because being able to put your ideas/learning in words is an important skill for a software engineer.
 
 {% img center /images/5-steps-first-tech-job/first-tech-job-b.jpg '5 practical steps to land your first tech job' '5 practical steps to land your first tech job' %}
 
@@ -65,4 +69,8 @@ Now as you have shortlisted companies and roles you want to work for you have ob
 
 There are many other general things that you need to be good on like having a clear and impressive 1-page resume, having at least one project that is online. Like, having basic knowledge of a breadth of things and a bit of depth in the area you want to work in,  knowing your skill and going to the right area of tech also helps. You need to do the above steps like 6-9 months before your course ends else doing things in haste and the very end will not help much.
 
-The tech industry needs new people every year worldwide. From the positive angle, tech needs more and more new people. From the other side, your competition is not only in your city but anywhere in your world so your skills and ability to learn sets you apart. Best of luck hunting for your first tech role!
+The tech industry needs new people every year worldwide. From the positive angle, tech needs more and more new people. 
+
+> From the other side, your competition is not only in your city but anywhere in the world so your skills and ability to learn sets you apart. 
+
+Best of luck hunting for your first tech role!

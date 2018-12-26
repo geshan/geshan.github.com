@@ -7,6 +7,8 @@ categories:
 - Technology
 - Misc
 - SQL
+- Software Engineering
+- database
 description: Use SQL to do math like sum, average etc. Utilize it for grouping one to many relational values like getting categories of product. Leverage SQL for string manipulation like using CONCAT_WS for...
 keywords: SQL, Beginner
 cover: /images/do-it-in-sql/tea-lights.jpg

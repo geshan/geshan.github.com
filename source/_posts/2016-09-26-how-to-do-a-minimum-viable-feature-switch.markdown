@@ -7,6 +7,7 @@ categories:
 - Technology
 - misc
 - DevOps
+- Feature Flags
 cover: /images/feature-switch/feature-switch.jpg
 ---
 

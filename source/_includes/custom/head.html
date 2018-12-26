@@ -8,5 +8,8 @@
 <meta name="twitter:creator" content="@geshan">
 <meta name="twitter:title" content="{{ page.title }}">
 {% if page.description %}<meta name="twitter:description" content="{{ page.description | strip_html | condense_spaces | truncate:200 }}">{% endif %}
+<meta name="twitter:image:src" content="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}"/>
 
 <meta name="p:domain_verify" content="e654c68562abebfa25c291f59d7d00e8"/>
+
+<meta property="fb:pages" content="30717799226" />
