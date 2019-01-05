@@ -37,13 +37,7 @@ single: true
         <h1>Comments</h1>
         <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
       </section>
-    {% endif %}
-    {% if site.social.facebook.app_id and page.comments == true %}
-    <section>
-      <h2>Comments</h2>
-      <div id="disqus_thread" aria-live="polite">{% include custom/fb-comments.html %}</div>
-    </section>
-    {% endif %}
+    {% endif %}    
   </div>
 
   {% unless page.sidebar == false or site.post_asides == empty and site.default_asides == empty %}
