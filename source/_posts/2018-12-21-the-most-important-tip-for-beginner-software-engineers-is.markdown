@@ -12,7 +12,8 @@ keywords: beginner software engineer, software engineer, software engineer tip
 ---
 Most of the tutorials you have read or watched till now usually do one thing, spoon-feeding. This is "OK" to learn a new thing but not good when you need to `solve` a task. A task usually involves reaching a goal by overcoming a problem. This post unveils the most important "tip" for all beginner software engineers.
 
-{% img center /images/tip-beginner-sw-eng/puzzle.jpg 'The most important tip for beginner software engineers is' 'The most important tip for beginner software engineers is' %}
+<img class="center" src="/images/generic/loading.gif" title="The most important tip for beginner software engineers is" alt="The most important tip for beginner software engineers is" data-echo="/images/tip-beginner-sw-eng/puzzle.jpg">
+
 <!-- more -->
 
 ## TL;DR
@@ -37,7 +38,7 @@ This is not magic this is looking at the problem from another viewpoint.
 
 You have to do a task, it is to create a refund with payments. A refund always has a reason like damaged, late delivery etc and the payments for that item can be maximum of 2. One of type cash another of type credit (store credit). You are also given the database schema. This is a back-end task and you need to create a POST `/refunds` API that can create the refund and its related payments. The database structure is as below:
 
-{% img center /images/tip-beginner-sw-eng/refund-schema-v2.png 'refund schema v2' 'refund schema example' %}
+<img class="center" src="/images/generic/loading.gif" title="refund schema v2" alt="refund schema v2" data-echo="/images/tip-beginner-sw-eng/refund-schema-v2.png">
 
 You could discuss the API payload too with one of the team members and agreed on the below JSON payload:
 
