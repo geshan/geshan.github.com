@@ -68,7 +68,7 @@ ndb opens up a screen like below when you do `ndb .` or `ndb index.js`:
 
 {% img center /images/debugging-node-js/01ndb-index.png 'debugging nodeJs applications with ndb' 'debugging nodeJs applications with ndb' %}
 
-Please add a breakpoint on line 46. As you have ran the application with ndb it will run in debug mode and stop at the breakpoint like below when you hit `http://localhost:8080/api/convert/USD/AUD/2019-01-01` on the browser. I have set the breakpoint on exchangeRates.js like 46 in the screenshot below:
+Please add a breakpoint on line 46. As you ran the application with ndb it will run in debug mode and stop at the breakpoint like below when you hit `http://localhost:8080/api/convert/USD/AUD/2019-01-01` on the browser. I have set the breakpoint on exchangeRates.js like 46 in the screenshot below:
 
 {% img center /images/debugging-node-js/02ndb-pause.png 'Pausing at the break-point while debugging' 'Pausing at the break-point while debugging' %}
 
@@ -119,4 +119,4 @@ If it works for this app, you can debug any of your nodejs application with this
 
 > Welcome to the new way of debugging nodejs application that is browser independent and a lot more smoother than the default experience. Step up your debugging nodejs application game.
 
-I hope this post has helped you debug your nodejs application better. If you have any other things to share about debugging nodejs apps or better usage of ndb please commment below!
+I hope this post has helped you debug your nodejs application better. If you have any other things to share about debugging nodejs apps or better usage of ndb please comment below!
