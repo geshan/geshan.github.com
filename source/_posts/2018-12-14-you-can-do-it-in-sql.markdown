@@ -35,7 +35,7 @@ It will be easier to explain the superpowers of SQL putting it in action on an e
 
 {% img center /images/do-it-in-sql/refund-schema.png 'You can do it in SQL- refund schema' 'You can do it in SQL - refund schema example' %}
 
-There are 2 refunds and 7 related payments as example [data](http://sqlfiddle.com/#!9/b242d/5).
+There are 2 refunds and 7 related payments as example [data](http://sqlfiddle.com/#!9/b242d/5 "Try the example in sql fiddle").
 
 ### Some assumptions
 
@@ -76,7 +76,7 @@ Resulting in:
 
 {% img center /images/do-it-in-sql/02result-with-grouping.png 'Result with grouping and aggregate function sum' 'Result with grouping and aggregate function sum' %}
 
-The result is easy now if you need the total refund for the item just change the GROUP BY to be on fk_item and it's done. For 2 and 3 records it won't feel significant. If there were say 20 refunds for that item, the first solution with a loop is writing more code with no gain.  Like sum, other SQL functions can be used too. Simple math operations like [sum](https://www.w3schools.com/sql/func_mysql_sum.asp), multiply, [average](https://www.w3schools.com/sql/func_mysql_avg.asp) etc can be easy with SQL. This means no more loops.
+The result is easy now if you need the total refund for the item just change the GROUP BY to be on fk_item and it's done. For 2 and 3 records it won't feel significant. If there were say 20 refunds for that item, the first solution with a loop is writing more code with no gain.  Like sum, other SQL functions can be used too. Simple math operations like [sum](https://www.w3schools.com/sql/func_mysql_sum.asp "Sum in mysql"), multiply, [average](https://www.w3schools.com/sql/func_mysql_avg.asp "Average function in mysql") etc can be easy with SQL. This means no more loops.
 
 ### Use GROUP_CONCAT to fetch related 1:m relation values
 
@@ -95,7 +95,7 @@ Now we know that item 2001 has been refunded twice for 2 refunds. It will be eas
 
 ### String manipulation
 
-Many [string manipulation](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html) tasks like substring, concatenation, change case, and string compare can be done in SQL. With this example, I am going to show the usage of `CONCAT_WS`. It is concat with a separator. It can also be used to select for instance first_name and last_name with space in between. 
+Many [string manipulation](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html "Mysql string functions") tasks like substring, concatenation, change case, and string compare can be done in SQL. With this example, I am going to show the usage of `CONCAT_WS`. It is concat with a separator. It can also be used to select for instance first_name and last_name with space in between. 
 
 > In case of having an optional middle name `COALESCE` can be used with `CONCAT_WS`. That is something for you to explore :).
 
@@ -137,7 +137,7 @@ With proper use of IF in SQL sorting by a custom priority formula is a lot easie
 
 > Use the superpowers of SQL to make your life easier as a software engineer. 
 
-You can play with the example and run your own queries on [SQL fiddle](http://sqlfiddle.com/#!9/b242d/5).
+You can play with the example and run your own queries on [SQL fiddle](http://sqlfiddle.com/#!9/b242d/5 "The full example with queries in sql fiddle").
 
 ## Conclusion
 

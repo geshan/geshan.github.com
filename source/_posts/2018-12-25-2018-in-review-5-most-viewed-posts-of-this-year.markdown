@@ -11,12 +11,12 @@ description: All posts are not from 2018 but they have been viewed more than the
 keywords: SQL, Docker, Microservices, Review, Blog, Git
 ---
 
-I have never done this in the past 11 years of blogging, this time it is going to be different. I am listing the 5 most viewed posts from this blog in 2018. All posts are not from 2018 but they have been viewed more than the others. I am using my Google Analytics stats to compile this list. So, here I present the most popular blog posts of 2018 on [Geshan.com.np](https://geshan.com.np):
+I have never done this in the past 11 years of blogging, this time it is going to be different. I am listing the 5 most viewed posts from this blog in 2018. All posts are not from 2018 but they have been viewed more than the others. I am using my Google Analytics stats to compile this list. So, here I present the most popular blog posts of 2018 on [Geshan.com.np](https://geshan.com.np "Geshan blog"):
 
 {% img center /images/top-5-2018/everest.jpg '5 most viewed posts of 2018 a recap' '5 most viewed posts of 2018 a recap' %}
 <!-- more -->
 
-## 1. [You Can Do It in SQL, Stop Writing Extra Code for That](https://geshan.com.np/blog/2018/12/you-can-do-it-in-sql/)
+## 1. [You Can Do It in SQL, Stop Writing Extra Code for That](https://geshan.com.np/blog/2018/12/you-can-do-it-in-sql/ "A post on doing things in sql instead of code")
 
 This post was published just 10 days back but I garnered a lot of views. The post highlights:
 
@@ -24,7 +24,7 @@ This post was published just 10 days back but I garnered a lot of views. The pos
 
 {% img center /images/do-it-in-sql/tea-lights.jpg 'You can do it in SQL, stop writing extra code for that' 'You can do it in SQL, stop writing extra code for that' %}
 
-## 2. [4 Ways Docker Changed the Way Software Engineers Work in Past Half Decade](https://geshan.com.np/blog/2018/12/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/)
+## 2. [4 Ways Docker Changed the Way Software Engineers Work in Past Half Decade](https://geshan.com.np/blog/2018/12/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/ "Story about how docker has changed software engineering in past 5 years")
 
 Another post from this December that got pretty popular in past weeks. This post is about how docker has changed software engineering in the past 5 years. The post can be summarized as:
 
@@ -32,7 +32,7 @@ Another post from this December that got pretty popular in past weeks. This post
 
 {% img center /images/4-ways-docker/docker-whale.jpg '4 ways Docker changed the way software engineers work in past half decade' '4 ways Docker changed the way software engineers work in past half decade' %}
 
-## 3. [How to Use Docker Compose With Virtual Hosts and Shared Services (Like Db) for Dev Environment](https://geshan.com.np/blog/2017/05/how-to-use-docker-compose-with-virtual-hosts-and-services-like-db-for-dev-environment/)
+## 3. [How to Use Docker Compose With Virtual Hosts and Shared Services (Like Db) for Dev Environment](https://geshan.com.np/blog/2017/05/how-to-use-docker-compose-with-virtual-hosts-and-services-like-db-for-dev-environment/ "post on how to use docker compose with virtual hosts and shared services like a db for dev env")
 
 This is another post about Docker, it is from May 2017. This piece was also able to gather a good amount of views. The post advocates:
 
@@ -40,7 +40,7 @@ This is another post about Docker, it is from May 2017. This piece was also able
 
 {% img center /images/docker-compose-vhost/docker-compose-vhost.jpg 'Docker compose with vhost and shared services' 'Docker compose with vhost and shared services' %}
 
-## 4. [3 Simple Rules for Less or No Git Conflicts](https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/)
+## 4. [3 Simple Rules for Less or No Git Conflicts](https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/ "story about git conflicts and steps to avoid them")
 
 This is a post about git from 2016. It also got many hits this year probably due to some search engine traffic. Mainly the post can be summarized at
 
@@ -48,7 +48,7 @@ This is a post about git from 2016. It also got many hits this year probably due
 
 {% img center /images/3-rules-git-conflict/git-conflict.png '3 simple rules for less or no git conflicts' '3 simple rules for less or no git conflicts' %}
 
-## 5. [Don’t Code Your Microservice Like a Monolith, Keep It Maintainable Not Over-engineered](https://geshan.com.np/blog/2018/10/dont-code-your-microservice-like-a-monolith/)
+## 5. [Don’t Code Your Microservice Like a Monolith, Keep It Maintainable Not Over-engineered](https://geshan.com.np/blog/2018/10/dont-code-your-microservice-like-a-monolith/ "post on how to write microservices to keep it maintainable")
 
 This is a post from Oct this year about  Microservice and how to not code it like a Monolith. This post was also able to get some views from different sources. The post mainly advocates:
 
@@ -58,4 +58,4 @@ This is a post from Oct this year about  Microservice and how to not code it lik
 
 ## Conclusion
 
-> Looks like docker has been a popular topic for this year. Probably I would blog more about it next year too. I have started cross-posting my posts to [Dev.to](https://dev.to/geshan) and medium publications like [FreeCodeCamp](https://medium.freecodecamp.org/@geshan) and [HackerNoon](https://hackernoon.com/@geshan). I hope these posts help more and more people.
+> Looks like docker has been a popular topic for this year. Probably I would blog more about it next year too. I have started cross-posting my posts to [Dev.to](https://dev.to/geshan "me on dev.to") and medium publications like [FreeCodeCamp](https://medium.freecodecamp.org/@geshan "my posts on freecodecamp") and [HackerNoon](https://hackernoon.com/@geshan "my stories on hackernoon"). I hope these posts help more and more people.

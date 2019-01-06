@@ -16,7 +16,7 @@ NodeJs was released almost 9 years ago. The default debugging process of NodeJs 
 
 Finally, Google chrome labs has released ndb, which they say is "An improved debugging experience for Node.js, enabled by Chrome DevTools". Ndb is a boon to debug a nodejs app.
 
-I am going to show a step by step process of debugging nodejs application with [ndb](https://github.com/GoogleChromeLabs/ndb). In other words, you will learn how to debug a nodejs application using ndb. Below you can see ndb in action, let's roll up your sleeves and get started:
+I am going to show a step by step process of debugging nodejs application with [ndb](https://github.com/GoogleChromeLabs/ndb "ndb github page"). In other words, you will learn how to debug a nodejs application using ndb. Below you can see ndb in action, let's roll up your sleeves and get started:
 
 {% img center /images/debugging-node-js/00ndb.png 'debugging nodeJs applications with ndb' 'debugging nodeJs applications with ndb' %}
 <!-- more -->
@@ -33,15 +33,15 @@ For debugging nodejs application in place of just another script I will use a fu
 
 ## Debugging nodejs express application as a demo
 
-I am using my opensource [currency API](https://github.com/geshan/currency-api) for this step-by-step getting started of debugging a nodejs application. It is built using express js framework. You can also check the running app hosted on [Zeit Now](https://currency-api-nodejs.now.sh/api/convert/USD/AUD/2019-01-01) to see the USD to AUD rate of 2019-01-10 as an example. 
+I am using my opensource [currency API](https://github.com/geshan/currency-api "Currency API app on github") for this step-by-step getting started of debugging a nodejs application. It is built using express js framework. You can also check the running app hosted on [Zeit Now](https://currency-api-nodejs.now.sh/api/convert/USD/AUD/2019-01-01 "Currency API app hosted on Zeit now") to see the USD to AUD rate of 2019-01-10 as an example. 
 
 The idea of the application is simple. If the conversion rate is available in the database it will fetch it from the database. If not it will fetch it from another API and send it back to the user also saving the rate in the database at the same time (async) for later use. 
 
-You can clone the application from github and run `npm install` to get it ready for debugging. This is a very simple application with most of the logic in `exchangeRates.js` [file](https://github.com/geshan/currency-api/blob/master/src/exchangeRates.js). It has mocha [tests](https://github.com/geshan/currency-api/blob/master/test/exchnageRatesTest.js) too as it was a demo for testing nodejs application.
+You can clone the application from github and run `npm install` to get it ready for debugging. This is a very simple application with most of the logic in `exchangeRates.js` [file](https://github.com/geshan/currency-api/blob/master/src/exchangeRates.js "You can have a look at the code on github"). It has mocha [tests](https://github.com/geshan/currency-api/blob/master/test/exchnageRatesTest.js "You can check the test too") too as it was a demo for testing nodejs application.
 
 ### 1. Getting started, install ndb
 
-Installing ndb is very easy. All you need to do to get started with debugging your nodejs application is to install [ndb](https://github.com/GoogleChromeLabs/ndb#installation). I would suggest to install it globally with:
+Installing ndb is very easy. All you need to do to get started with debugging your nodejs application is to install [ndb](https://github.com/GoogleChromeLabs/ndb#installation "ndb installation instructions on github"). I would suggest to install it globally with:
 
 ```
 # with npm
@@ -98,7 +98,7 @@ As any other debugger with ndb you can:
 
 > The console tab is also helpful if you want to some quick nodejs code in the context. 
 
-Read more about what you can do with ndb in the official [readme](https://github.com/GoogleChromeLabs/ndb#what-can-i-do). Below is a screenshot of the useful console:
+Read more about what you can do with ndb in the official [readme](https://github.com/GoogleChromeLabs/ndb#what-can-i-do "ndb readme what can I do section"). Below is a screenshot of the useful console:
 
 {% img center /images/debugging-node-js/04ndb-console.png 'ndb console is useful for debugging nodejs apps' 'ndb console is useful for debugging nodejs apps' %}
 
