@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://geshan.com.np
+url: https://geshan.com.np
 title: Geshan's Blog
 subtitle: A blog about technology and software engineering covering topics like php, javascript, docker, microservices etc
 author: Geshan Manandhar
@@ -73,12 +73,12 @@ default_asides: [
 # Github repositories
 github_user: 
 github_repo_count: 5
-github_show_profile_link: true
-github_skip_forks: true
+github_show_profile_link: false
+github_skip_forks: false
 
 # Twitter
 twitter_user: geshan
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -105,7 +105,7 @@ disqus_show_comment_count: true
 google_analytics_tracking_id: UA-56310304-1
 
 # Facebook Like
-facebook_like: true
+facebook_like: false
 
 
 #https://github.com/coogie/oscailte/#social-sidebar
@@ -133,3 +133,12 @@ social:
       show_profile_link: yes
       widget_id: 518273942725722112
   youtube:
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
