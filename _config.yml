@@ -136,9 +136,7 @@ social:
 
 compress_html:
   clippings: all
-  comments: [""]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  comments: all
+  endings: all
   profile: false
-  blanklines: false
-  ignore:
-    envs: []
+  startings: [head, body]
