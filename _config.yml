@@ -4,9 +4,9 @@
 
 url: http://geshan.com.np
 title: Geshan's Blog
-subtitle: A blog about technology and software engineering
+subtitle: A blog about technology and software engineering covering topics like php, javascript, docker, microservices etc
 author: Geshan Manandhar
-description: A blog about technology and software engineering
+description: A blog about technology and software engineering covering topics like php, javascript, docker, microservices etc
 simple_search: https://www.google.com/search
 site.email: geshan@gmail.com
 cover: /images/generic/blog.jpg
@@ -125,7 +125,7 @@ social:
   googleplus:
   linkedin: geshan
   pinterest:
-  stackoverflow: geshan
+  stackoverflow: 112849/geshan
   twitter:
     user: geshan
     widget:
