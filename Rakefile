@@ -416,5 +416,10 @@ task :optimize_images do
   end
 end
 
-
-
+desc "Minify CSS"
+task :minify_css do
+  puts "## Minifying CSS"
+  input = "#{source_dir}/assets/bootstrap/dist/css/bootstrap.united.min.css #{source_dir}/stylesheets/screen.css"
+  output = "#{source_dir}/_includes/inline.css"
+  system "cleancss -e -o #{output} #{input}"
+end
