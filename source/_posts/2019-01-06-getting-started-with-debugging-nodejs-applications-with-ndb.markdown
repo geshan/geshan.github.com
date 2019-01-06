@@ -18,7 +18,8 @@ Finally, Google chrome labs has released ndb, which they say is "An improved deb
 
 I am going to show a step by step process of debugging nodejs application with [ndb](https://github.com/GoogleChromeLabs/ndb "ndb github page"). In other words, you will learn how to debug a nodejs application using ndb. Below you can see ndb in action, let's roll up your sleeves and get started:
 
-{% img center /images/debugging-node-js/00ndb.png 'debugging nodeJs applications with ndb' 'debugging nodeJs applications with ndb' %}
+<img class="center" src="/images/generic/loading.gif" title="debugging nodeJs applications with ndb" alt="debugging nodeJs applications with ndb" data-echo="/images/debugging-node-js/00ndb.png">
+
 <!-- more -->
 
 ## Prerequisites
@@ -66,11 +67,11 @@ Notice that you don't need to put any `-- inspect` so the experience is a lot sm
 
 ndb opens up a screen like below when you do `ndb .` or `ndb index.js`:
 
-{% img center /images/debugging-node-js/01ndb-index.png 'debugging nodeJs applications with ndb' 'debugging nodeJs applications with ndb' %}
+<img class="center" src="/images/generic/loading.gif" title="debugging nodeJs applications with ndb" alt="debugging nodeJs applications with ndb" data-echo="/images/debugging-node-js/01ndb-index.png">
 
 Please add a breakpoint on line 46. As you ran the application with ndb it will run in debug mode and stop at the breakpoint like below when you hit `http://localhost:8080/api/convert/USD/AUD/2019-01-01` on the browser. I have set the breakpoint on exchangeRates.js like 46 in the screenshot below:
 
-{% img center /images/debugging-node-js/02ndb-pause.png 'Pausing at the break-point while debugging' 'Pausing at the break-point while debugging' %}
+<img class="center" src="/images/generic/loading.gif" title="Pausing at the break-point while debugging" alt="Pausing at the break-point while debugging" data-echo="/images/debugging-node-js/02ndb-pause.png">
 
 ndb allows you to run any script for debugging. For example, I can run `ndb npm start` and it will use the nodemon run. This means I can debug the application while changing the code which is great. 
 
@@ -86,7 +87,7 @@ As the debugger is working I can place more break points or run through the code
 
 The usual debugging workflow I assume you are familiar with. below I have advanced to line 52:
 
-{% img center /images/debugging-node-js/03ndb-continue.png 'Continuing further the break-point while debugging' 'Continuing further the break-point while debugging' %}
+<img class="center" src="/images/generic/loading.gif" title="Continuing further the break-point while debugging" alt="Continuing further the break-point while debugging" data-echo="/images/debugging-node-js/03ndb-continue.png">
 
 ## More debugging things
 
@@ -100,7 +101,7 @@ As any other debugger with ndb you can:
 
 Read more about what you can do with ndb in the official [readme](https://github.com/GoogleChromeLabs/ndb#what-can-i-do "ndb readme what can I do section"). Below is a screenshot of the useful console:
 
-{% img center /images/debugging-node-js/04ndb-console.png 'ndb console is useful for debugging nodejs apps' 'ndb console is useful for debugging nodejs apps' %}
+<img class="center" src="/images/generic/loading.gif" title="ndb console is useful for debugging nodejs apps" alt="ndb console is useful for debugging nodejs apps" data-echo="/images/debugging-node-js/04ndb-console.png">
 
 ## Conclusion (TLDR)
 
