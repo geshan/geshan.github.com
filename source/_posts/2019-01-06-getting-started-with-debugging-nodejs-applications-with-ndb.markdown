@@ -118,3 +118,5 @@ Debugging any nodejs application with ndb is a better developer experience. To d
 If it works for this app, you can debug any of your nodejs application with this approach.
 
 > Welcome to the new way of debugging nodejs application that is browser independent and a lot more smoother than the default experience. Step up your debugging nodejs application game.
+
+I hope this post has helped you debug your nodejs application better. If you have any other things to share about debugging nodejs apps or better usage of ndb please commment below!

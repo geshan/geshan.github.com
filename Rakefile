@@ -55,7 +55,8 @@ end
 desc "Generate jekyll site"
 task :generate do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
-  puts "## Generating Site with Jekyll"
+  puts "## Generating Site with Jekyll"  
+  #Rake::Task["optimize_images"].invoke
   system "compass compile --css-dir #{source_dir}/stylesheets"
   system "jekyll build"
 end
@@ -402,3 +403,18 @@ task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
 end
+
+desc "Optimize Images"
+task :optimize_images do
+  puts "## Optimizing Images"
+  Dir.glob("#{source_dir}/images/*.{jp,pn}g").each do |f|
+    ext = File.extname(f)
+    optimized_file = "#{File.basename(f, ext)}#{ext}"
+    if test(?f, f) and not File.exists?(optimized_file)
+      ok_failed system("imagemin #{f} > #{source_dir}/images/#{optimized_file}")
+    end
+  end
+end
+
+
+

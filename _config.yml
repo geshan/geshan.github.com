@@ -57,7 +57,7 @@ titlecase: false       # Converts page and post titles to titlecase
 default_asides: [
     asides/recent_posts.html,
     custom/asides/category_list.html,
-    asides/twitter.html
+    asides/social.html
   ]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
@@ -111,20 +111,21 @@ facebook_like: true
 #https://github.com/coogie/oscailte/#social-sidebar
 
 social:
-  title: # Defaults to "Follow me!" if not present
+  title: Find me at # Defaults to "Follow me!" if not present
+  visible: true
   adn: # App.net
   dribbble:
   facebook:
-    user: geshan
+    user: 
     app_id: 106030259434380
     page_id: 30717799226
   github:
     user: geshan
     show_profile_link: no
   googleplus:
-  linkedin:
+  linkedin: geshan
   pinterest:
-  stackoverflow:
+  stackoverflow: geshan
   twitter:
     user: geshan
     widget:
