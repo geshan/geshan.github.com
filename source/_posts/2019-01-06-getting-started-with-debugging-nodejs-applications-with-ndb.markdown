@@ -7,22 +7,23 @@ categories:
 - Technology
 - Javascript
 - NodeJs
+pagetitle: Debugging nodejs applications using ndb step by step guide
 cover: /images/debugging-node-js/00ndb.png
-description: If you are still using clumsy node inspector with chrome node debuggger, its time to step up your debugging nodejs app skills with ndb for nodejs 8 or later
+description: Debugging nodejs is a lot easier using ndb compared to node inspector with chrome node debugger. Learn more about browser independent debugging workflow.
 keywords: debugging nodejs, debugging node js, debugging node.js, debugging node js apps, debugging node js apps with ndb, ndb, nodejs ndb, ndb nodejs
 ---
 
-NodeJs was released almost 9 years ago. The default debugging process of NodeJs (read Node.js) is quite clumsy. You are already aware of the need to add `--inspect` to the node script with node inspector. It is also dependent on chrome. Then look at the proper web socket connection which is hard and debug using chrome node debugger. To be honest, it is a pain in the neck. 
+NodeJs was released almost 9 years ago. The [default debugging process](https://nodejs.org/api/debugger.html "Default nodejs debugging process") of NodeJs (read Node.js) is quite clumsy. You are already aware of the need to add `--inspect` to the node script with node inspector. It is also dependent on chrome. Then look at the proper web socket connection which is hard and debug using chrome node debugger. To be honest, it is a pain in the neck. 
 
-Finally, Google chrome labs has released ndb, which they say is "An improved debugging experience for Node.js, enabled by Chrome DevTools". Ndb is a boon to debug a nodejs app.
+Finally, Google chrome labs has released ndb, which they say is "An improved debugging experience for Node.js, enabled by Chrome DevTools". It is a boon to debug a nodejs app.
 
-I am going to show a step by step process of debugging nodejs application with [ndb](https://github.com/GoogleChromeLabs/ndb "ndb github page"). In other words, you will learn how to debug a nodejs application using ndb. Below you can see ndb in action, let's roll up your sleeves and get started:
+I am going to show a step by step process of debugging nodejs application with [ndb](https://github.com/GoogleChromeLabs/ndb "ndb github page"). In other words, you will learn how to debug a nodejs application using ndb. Below you can see it in action, let's roll up your sleeves and get started:
 
-<img class="center" src="/images/generic/loading.gif" title="debugging nodeJs applications with ndb" alt="debugging nodeJs applications with ndb" data-echo="/images/debugging-node-js/00ndb.png">
+<img class="center" src="/images/generic/loading.gif" title="debugging nodeJs applications" alt="debugging nodeJs applications" data-echo="/images/debugging-node-js/00ndb.png">
 
 <!-- more -->
 
-## Prerequisites
+## Prerequisites for debugging nodejs application
 
 Below are some prerequisites before you get started:
 
@@ -55,7 +56,7 @@ You can also install and use it locally per app if you want. One thing I had to 
 
 ### 2. Run the app with ndb (not node or nodemon)
 
-For debugging nodejs applications with ndb you can directly run the nodejs app script with ndb rather than node. For example, if you were used to doing `node index.js` or ` nodemon index.js` in development. To debug your app you can run:
+For debugging nodejs applications using ndb you can directly run the nodejs app script with it rather than node. For example, if you were used to doing `node index.js` or ` nodemon index.js` in development. To debug your app you can run:
 
 ```
 ndb index.js
@@ -67,11 +68,11 @@ Notice that you don't need to put any `-- inspect` so the experience is a lot sm
 
 ndb opens up a screen like below when you do `ndb .` or `ndb index.js`:
 
-<img class="center" src="/images/generic/loading.gif" title="debugging nodeJs applications with ndb" alt="debugging nodeJs applications with ndb" data-echo="/images/debugging-node-js/01ndb-index.png">
+<img class="center" src="/images/generic/loading.gif" title="debugging nodeJs applications" alt="debugging nodeJs applications" data-echo="/images/debugging-node-js/01ndb-index.png">
 
 Please add a breakpoint on line 46. As you ran the application with ndb it will run in debug mode and stop at the breakpoint like below when you hit `http://localhost:8080/api/convert/USD/AUD/2019-01-01` on the browser. I have set the breakpoint on exchangeRates.js like 46 in the screenshot below:
 
-<img class="center" src="/images/generic/loading.gif" title="Pausing at the break-point while debugging" alt="Pausing at the break-point while debugging" data-echo="/images/debugging-node-js/02ndb-pause.png">
+<img class="center" src="/images/generic/loading.gif" title="Pausing at the break-point while debugging" alt="debugging nodejs" data-echo="/images/debugging-node-js/02ndb-pause.png">
 
 ndb allows you to run any script for debugging. For example, I can run `ndb npm start` and it will use the nodemon run. This means I can debug the application while changing the code which is great. 
 
@@ -87,9 +88,9 @@ As the debugger is working I can place more break points or run through the code
 
 The usual debugging workflow I assume you are familiar with. below I have advanced to line 52:
 
-<img class="center" src="/images/generic/loading.gif" title="Continuing further the break-point while debugging" alt="Continuing further the break-point while debugging" data-echo="/images/debugging-node-js/03ndb-continue.png">
+<img class="center" src="/images/generic/loading.gif" title="Continuing further the break-point while debugging" alt="debugging node.js" data-echo="/images/debugging-node-js/03ndb-continue.png">
 
-## More debugging things
+## More debugging nodejs things
 
 As any other debugger with ndb you can:
 
@@ -99,13 +100,13 @@ As any other debugger with ndb you can:
 
 > The console tab is also helpful if you want to some quick nodejs code in the context. 
 
-Read more about what you can do with ndb in the official [readme](https://github.com/GoogleChromeLabs/ndb#what-can-i-do "ndb readme what can I do section"). Below is a screenshot of the useful console:
+Read more about what you can do with it in the official [readme](https://github.com/GoogleChromeLabs/ndb#what-can-i-do "ndb readme what can I do section"). Below is a screenshot of the useful console:
 
 <img class="center" src="/images/generic/loading.gif" title="ndb console is useful for debugging nodejs apps" alt="ndb console is useful for debugging nodejs apps" data-echo="/images/debugging-node-js/04ndb-console.png">
 
 ## Conclusion (TLDR)
 
-Debugging any nodejs application with ndb is a better developer experience. To debug the currency API nodejs express app with ndb you run do the following commands give you have node > 8 installed:
+Debugging nodejs application with ndb is a better developer experience compared to the default debugger. To debug the currency API nodejs express app with it you run do the following commands give you have node > 8 installed:
 
 1. npm install -g ndb
 1. git clone git@github.com:geshan/currency-api.git
