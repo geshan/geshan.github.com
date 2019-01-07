@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{% if page.pagetitle %}{{ page.pagetitle }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
   <meta name="author" content="{{ site.author }}">
 
   {% if page.description %}<meta name="description" content="{{ page.description | strip_html | condense_spaces | truncate:200 }}">{% endif %}
