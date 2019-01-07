@@ -15,7 +15,7 @@ who build websites, using technology we enable clients to meet their business go
 shop if you can provide something more for free to your clients it would add value to your service and a bigger
 smile on your client's faces.
 
-{% img center /images/free-site-services/free-site-services.jpg 'Free site services' 'Free site services' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/free-site-services.jpg" title="Free site services" alt="Free site services">
 
 <!-- more -->
 I am not referring to the obvious free add ons like Google [Analytics](http://google.com/analytics) or doing some
@@ -30,7 +30,7 @@ As a new business whose website is launched to production it would be a concern 
 running 24/7. For this use a free service like [uptime robot](http://uptimerobot.com). You can setup 50 monitors
 for free that ping a url, check ports or even scan for keywords on the given website every 5 mins.
 
-{% img center /images/free-site-services/uptime-robot.jpg 'Automatically report downtime with uptimerobot' 'Automatically report downtime with uptimerobot' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/uptime-robot.jpg" title="Automatically report downtime with uptimerobot" alt="Automatically report downtime with uptimerobot">
 
 As a web shop, if you setup monitors for all your websites it will be easier to manage from the same account.
 Depending on your location you can setup SMS alerts. If you use [pushbullet](http://pushbullet.com) you can
@@ -46,7 +46,7 @@ not be proactive to check it now and then. Why not provide them with a digest of
 via email as infographics. You can do it using [Visual.ly GA](http://visual.ly/), which takes less than a minute
 to setup and you get great visualization of major Google Analytics data delivered to their inbox every week.
 
-{% img center /images/free-site-services/ga-visually.jpg 'Communicate Google Analytics Report as infographics' 'Communicate Google Analytics Report as infographics' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/ga-visually.jpg" title="Communicate Google Analytics Report as infographics" alt="Communicate Google Analytics Report as infographics">
 
 The report informs about page views, visitor information etc. For full reports your clients can always go to
 the main Google Analytics website or use the [app](https://play.google.com/store/apps/details?id=com.google.android.apps.giant&hl=en) to check site analytics information
@@ -57,7 +57,7 @@ If my website just went live, I would love to see some key metrics about my webs
 dashboard. Information like is the website up now, how many people are currently on the website, how many page
 views did the website get yesterday etc would help.
 
-{% img center /images/free-site-services/freeboard.jpg 'Show major site metrics on a dashboard' 'Show major site metrics on a dashboard' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/freeboard.jpg" title="Show major site metrics on a dashboard" alt="Show major site metrics on a dashboard">
 
 To portray such information you should utilize [Freeboard](http://freeboard.io). Get the latest version of Freeboard
 from [github](https://github.com/Freeboard/freeboard) and host it on your own or on something like dashboard.clientsite.com,
@@ -69,7 +69,7 @@ password protect it and load necessary data with some code changes.
 If your client uses Gmail or Google Apps for email you could suggest and help setup a weekly report of their
 email contacts and email usage behavior using [Conspire](http://conspire.com).
 
-{% img center /images/free-site-services/conspire.jpg 'Email reports with conspire' 'Email reports with conspire' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/conspire.jpg" title="Email reports with conspire" alt="Email reports with conspire">
 
 It helps to analyze who you contacted the most in the past week and who you are loosing touch with.
 It also informs about how long you and your contacts took to reply to emails. Your clients can use conspire to

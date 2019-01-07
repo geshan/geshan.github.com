@@ -18,7 +18,7 @@ talk about the community. For this 16th installment, we did an open discussion f
 The topic of open discussion was "Does automated deployment and DevOps add value to the organization?".
 It was the highlight of the event.
 
-{% img center /images/php-dev-meetup-16/php-dev-meetup-16.jpg 'PHP Dev Meetup 16 Open Panel discussion on DevOps' 'PHP Dev Meetup 16 Open Panel discussion on DevOps' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/php-dev-meetup-16/php-dev-meetup-16.jpg" title="PHP Dev Meetup 16 Open Panel discussion on DevOps" alt="PHP Dev Meetup 16 Open Panel discussion on DevOps">
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ there were around 100 participants which makes it one of the biggest PHP Develop
 This is not the first time I presented this talk :). I had already given this talk at [YIPL in Mar 2015](http://geshan.com.np/blog/2015/09/how-to-use-simplified-gitflow-branching-model-video/).
 This time I changed the slides and made it more general. I hope it was helpful to the audience.
 
-{% img center /images/php-dev-meetup-16/simplified-gitflow-talk.jpg 'PHP Dev Meetup 16 My talk on simplified gitflow' 'PHP Dev Meetup 16 My talk on simplified gitflow' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/php-dev-meetup-16/simplified-gitflow-talk.jpg" title="PHP Dev Meetup 16 My talk on simplified gitflow" alt="PHP Dev Meetup 16 My talk on simplified gitflow">
 
 ## Slides of Simplified Gitflow
 

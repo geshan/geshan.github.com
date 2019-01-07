@@ -15,7 +15,7 @@ keywords: Beginner software engineer, learning, software engineering
 
 “For the things we have to learn before we can do them, we learn by doing them.” ― Aristotle, The Nicomachean Ethics. Imagine you already read 3 books about cycling. Then someone gave you a cycle and asked to ride it, will you be able to ride it? The simple answer is "No". It is not about how much have you read about cycling or how many videos did you watch about it. It is about getting on a cycle, balancing on it, learning the feet, hands and eye co-ordination. Same goes for learning a new tech skill, a new language or framework.
 
-{% img center /images/language-framework-learn/cycle.jpg 'Dont just learn a new language framework, implement it as a running open source project' 'Dont just learn a new language framework, implement it as a running open source project' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/language-framework-learn/cycle.jpg" title="Dont just learn a new language framework, implement it as a running open source project" alt="Dont just learn a new language framework, implement it as a running open source project">
 
 <!-- more -->
 
@@ -29,7 +29,7 @@ If you are convinced about doing a project to learn something new, open source i
 
 > Write a project to learn that language/framework, open source it then leverage services for free. Don't just watch courses, read the docs and then find solutions. Learn by doing. Use git and implement docker in your project. Code correctly add a code quality check service to be aware of the best practices, deploy your project to get a working URL for it.
 
-{% img center /images/language-framework-learn/lang-framework-learn.jpg 'Dont just learn a new language framework, implement it as a running open source project' 'Dont just learn a new language framework, implement it as a running open source project' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/language-framework-learn/lang-framework-learn.jpg" title="Dont just learn a new language framework, implement it as a running open source project" alt="Dont just learn a new language framework, implement it as a running open source project">
 
 ## Don't just watch courses, read the docs and find solutions
 

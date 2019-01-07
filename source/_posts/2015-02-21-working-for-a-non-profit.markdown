@@ -14,7 +14,7 @@ at large. As they are do not work for profit, covering operation costs can be an
 non profit/not for profit organization can cut down on recurring software cost like Microsoft office, email hosting
 etc it will be a relief. 
 
-{% img center /images/free-non-profit-services/non-profit.jpg 'Help non profit organizations' 'Help non profit organizations' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-non-profit-services/non-profit.jpg" title="Help non profit organizations" alt="Help non profit organizations">
 
 Below are 7 services that cost otherwise still are completely free for non profit organizations:
 <!-- more -->

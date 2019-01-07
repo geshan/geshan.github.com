@@ -21,7 +21,7 @@ libraries. It is a difficult yet rewarding experience to lead/support an open so
 of starting an open source project or open sourcing some part(s) of your existing system, this post has a checklist 
 to assist you with it.
 
-{% img center /images/php-oss-checklist/example-foss.png 'An example open source php project' 'Example open source project' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/php-oss-checklist/example-foss.png" title="An example open source php project" alt="Example open source project">
 <!-- more -->
 
 ## Intro
@@ -103,7 +103,7 @@ show what is being done and reflect on status of the project issues visually. He
 your rescue. You can show the status of the issues as below to make all the interested people clear of what is happening 
 in the form of a Agileish Kanban board:
 
-{% img center /images/php-oss-checklist/huBoard.png 'An example of issues on HuBoard' 'Example of issues on HuBoard' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/php-oss-checklist/huBoard.png" title="An example of issues on HuBoard" alt="Example of issues on HuBoard">
 
 ## Conclusion
 

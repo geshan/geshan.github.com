@@ -13,7 +13,7 @@ Being updated is an important need for all technology professionals. These days,
 
 Weeklies are compact and organized list of links with articles, podcasts, videos etc. They are focused to a related to a topic, technology, language or framework delivered to you email inbox each week. This post curates a list of 3 weeklies for all software engineer/developers. The main 3 weeklies are language and framework agnostic. Towards the end there is mention of some language, framework and CMS specific weeklies.
 
-{% img center /images/3-weeklies/3-weeklies-sw-eng.jpg '3 weeklies every software engineer should subscribe to' '3 weeklies every software engineer should subscribe to' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/3-weeklies/3-weeklies-sw-eng.jpg" title="3 weeklies every software engineer should subscribe to" alt="3 weeklies every software engineer should subscribe to">
 (Background image shot by me.)
 <!-- more -->
 

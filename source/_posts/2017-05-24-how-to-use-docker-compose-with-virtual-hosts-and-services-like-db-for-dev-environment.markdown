@@ -17,7 +17,7 @@ in a matter of hours not days. All thanks to docker.  Along the same lines, this
 docker for your dev environment with least friction and maximum productivity. It is an opinionated post. We migrated to this `external_links`
 [approach](https://docs.docker.com/compose/compose-file/#externallinks) so that we could run multiple projects/microservices that use the same db/services shared among them.
 
-{% img center /images/docker-compose-vhost/docker-compose-vhost.jpg 'Docker compose with vhost and shared services' 'Docker compose with vhost and shared services' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-compose-vhost/docker-compose-vhost.jpg" title="Docker compose with vhost and shared services" alt="Docker compose with vhost and shared services">
 
 <!-- more -->
 
@@ -51,7 +51,7 @@ docker for your dev environment with least friction and maximum productivity. It
 1. In `~/projects/counter` run `docker-compose up`
 1. Then go to `http://counter.local.dev` on your browser you should see `Page visited 1 times`, refresh it, it should say `Page visited 2 times`
 
-{% img center /images/docker-compose-vhost/page-visited.png 'All working you should see this' 'All working you should see this' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-compose-vhost/page-visited.png" title="All working you should see this" alt="All working you should see this">
 
 Virtual host has been possible in above setup as we ran the nginx proxy and configured `VIRTUAL_HOST` and `VIRTUAL_PORT` parameters correctly
 in the docker-compose.yml of the sample counter project. Mysql was already running before the project even started to run and it was `external_links`,

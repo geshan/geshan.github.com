@@ -13,7 +13,7 @@ cover: /images/career-paths-for-tech-grads/cptg-01.jpg
 
 After almost 2 years, I gave another talk to the students of [Prime College](http://prime.edu.np). Last time it was "[Things I wished I knew while doing my tech bachelors](http://geshan.com.np/blog/2014/08/things-i-wished-i-knew-while-doing-my/)". This time it was **Career Paths for to be tech graduates**. I prepared the slides at 9 and was already presenting the talk at 11:15.
 
-{% img center /images/career-paths-for-tech-grads/cptg-01.jpg 'Career Paths for tech graduates the talk' 'Career Paths for tech graduates the talk' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/career-paths-for-tech-grads/cptg-01.jpg" title="Career Paths for tech graduates the talk" alt="Career Paths for tech graduates the talk">
 
 <!-- more -->
 
@@ -25,7 +25,7 @@ After almost 2 years, I gave another talk to the students of [Prime College](htt
 
 The students were from [Bsc. CSIT](http://www.bsccsit.com/) and [BIM](https://en.wikipedia.org/wiki/Bachelor_in_Information_Management) of second and fourth semester. They were high on youth and not worried about their careers. As it was a short talk, I wanted the session to be interactive. I was trying to get more questions out of them. Some of them were shy to ask the questions so they came in later after the talk to have a chat with me.
 
-{% img center /images/career-paths-for-tech-grads/cptg-02.jpg 'Career Paths for tech graduates the participants' 'Career Paths for tech graduates the participants' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/career-paths-for-tech-grads/cptg-02.jpg" title="Career Paths for tech graduates the participants" alt="Career Paths for tech graduates the participants">
 
 ## Questions
 

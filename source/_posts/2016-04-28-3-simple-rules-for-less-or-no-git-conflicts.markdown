@@ -20,7 +20,7 @@ I have seen teams fall into this trap of git conflicts when they start using git
 Merging branches to the main branch becomes a pain when there are git conflicts.
 In this post I am going to reveal 3 simple rules to avoid git conflicts.
 
-{% img center /images/3-rules-git-conflict/git-conflict.png '3 simple rules for less or no git conflicts' '3 simple rules for less or no git conflicts' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/3-rules-git-conflict/git-conflict.png" title="3 simple rules for less or no git conflicts" alt="3 simple rules for less or no git conflicts">
 <!-- more -->
 
 ## Assumption

@@ -27,7 +27,7 @@ her sleeves and helped us group and compile the data into percentages, thank you
 **Data for this infographics is taken from this [survey](http://bit.ly/nep-dev-survey), I kindly request you to fill it.**
 <!-- more -->
 
-{% img center /images/sw-eng-np-infographics-part02/Software_Engineering_Nepal_Mid_2015_Part02.png 'Software Engineering Practices in Nepal Infographics Part 2' 'Software Engineering Practices in Nepal Infographics Part 2' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/sw-eng-np-infographics-part02/Software_Engineering_Nepal_Mid_2015_Part02.png" title="Software Engineering Practices in Nepal Infographics Part 2" alt="Software Engineering Practices in Nepal Infographics Part 2">
 
 You can view this infographics in [interactive](http://bit.ly/1R8EfHQ) mode too.
 

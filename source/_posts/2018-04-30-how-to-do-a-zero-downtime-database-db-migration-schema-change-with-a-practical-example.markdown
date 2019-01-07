@@ -16,7 +16,7 @@ keywords: database, sql, database migration, database schema migration
 
 Database migration on a production database is never simple. Depending on the volume of requests some teams schedule database migration to off hours. You can run your alter statements with zero or minimal downtime following the steps mentioned below with a practical example.
 
-{% img center /images/db-migration/db-migration.png 'How to do a zero downtime database' 'How to do a zero downtime database' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/db-migration/db-migration.png" title="How to do a zero downtime database" alt="How to do a zero downtime database">
 
 <!-- more -->
 
@@ -24,13 +24,13 @@ Database migration on a production database is never simple. Depending on the vo
 
 As an example for this post, let's assume you work for an E-commerce company which has both recurring and new customers. You have partners who publicize a discount code valid for a given date range and get a percent of the order's total tracked by their discount code. Below is the schema for the partner and coupon code. Below is the initial schema before any change:
 
-{% img center /images/db-migration/schema-01.png 'Initial DB schema' 'Initial DB Schema' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/db-migration/schema-01.png" title="Initial DB schema" alt="Initial DB Schema">
 
 Now the new requirement is to track different commission percent for the new and recurring customer. New and recurring customers are evaluated by a different system/microservice and it is also responsible for commission calculation based on order total which is out of the scope of this focused example. 
 
 To do commission tracking by customer type we would decide to add 2 new columns commission_percent_new_customer, commission_percent_recurring_customer, the difficult question is how to roll it out without downtime.
 
-{% img center /images/db-migration/schema-02.png 'Updated schema with 2 new columns' 'Updated schema with 2 new columns' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/db-migration/schema-02.png" title="Updated schema with 2 new columns" alt="Updated schema with 2 new columns">
 
 ### Migration script (DB schema alter statement)
 
@@ -65,7 +65,7 @@ For the second issue, if db alter and code release is deployed in a specific seq
 
 ### Final schema after dropping commission_percent column
 
-{% img center /images/db-migration/schema-03.png 'Updated schema with 1 column less' 'Updated schema with 1 column less' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/db-migration/schema-03.png" title="Updated schema with 1 column less" alt="Updated schema with 1 column less">
 
 ## Things to consider
 

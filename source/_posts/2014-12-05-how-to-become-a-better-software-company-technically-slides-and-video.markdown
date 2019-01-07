@@ -13,7 +13,7 @@ categories:
 I was in Kathmandu,Nepal for a week at the end of November and this time I talked about how to become a better software
 company technically at [YIPL](http://yipl.com.np) on 24-Nov-2014.
 
-{% img center /images/better-tech-co/better-tech-co.jpg 'Better Software Company Talk' 'Better Software Company Talk' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/better-tech-co/better-tech-co.jpg" title="Better Software Company Talk" alt="Better Software Company Talk">
 
 Generally the software scene in Nepal is good, a handful are working at big scale with hundreds of software engineers
 and many are small with some developers. A thing I noticed talking with developers is that mostly is only about **making

@@ -17,7 +17,7 @@ many frameworks, methods and styles to choose from. In this blog post I will she
 with "Unit" testing in a Laravel application. Laravel has gained lots of popularity in the past years may be due to its
 simplicity, ease of use, clear documentation and availability of packages/libraries. 
 
-{% img center /images/laravel-unit-tests/laravel-popularity.png 'Laravel is very popular' 'Laravel is very popular' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-popularity.png" title="Laravel is very popular" alt="Laravel is very popular">
 <!-- more -->
 
 ## Introduction 
@@ -29,7 +29,7 @@ tested in a unit test fashion and not only on how it is rendered in a browser. S
 tests are [Unit](https://github.com/laravel/framework/blob/5.1/tests/View/ViewBladeCompilerTest.php) test and the 
 documentation for application tests are for [functional](http://laravel.com/docs/5.1/testing) test.
 
-{% img center /images/laravel-unit-tests/laravel-testing-doc.png 'Laravel application testing doc' 'Laravel application testing doc' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-testing-doc.png" title="Laravel application testing doc" alt="Laravel application testing doc">
 
 ## Qualities of Unit tests
 
@@ -46,7 +46,7 @@ qualities of unit tests are:
 The above 5 characteristics make it easy to setup and super fast when you run as there are no external dependencies
 like a database or file system.
 
-{% img center /images/laravel-unit-tests/laravel-unit-tests.png 'Laravel unit tests' 'Laravel unit tests' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-unit-tests.png" title="Laravel unit tests" alt="Laravel unit tests">
 
 ## More on Unit testing
 
@@ -66,7 +66,7 @@ domain/business logic can reside. For this example I will use a checkout example
 
 We will structure the Laravel application as:
 
-{% img center /images/laravel-unit-tests/laravel-unit-test-structure.png 'Laravel unit test application structure' 'Laravel unit test application structure' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-unit-test-structure.png" title="Laravel unit test application structure" alt="Laravel unit test application structure">
 
 For the above case we will do the following to achieve unit testing with a structure having Service as below:
  
@@ -137,7 +137,7 @@ all I would opt for having tests after code. Below is example of the test code w
 
 **The full running app with tests is available as an open source repository on [github](https://github.com/geshan/laravel-unit-test-example/).**
 
-{% img center /images/laravel-unit-tests/running-laravel-app.png 'Running Laravel app with PHP server' 'Running Laravel app with PHP server' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/running-laravel-app.png" title="Running Laravel app with PHP server" alt="Running Laravel app with PHP server">
 
 ### Tip
 
@@ -148,7 +148,7 @@ All I needed to do was change the provided gulp file with `mix.phpUnit();` and r
 each change my tests would automatically run and I would see the green or red desktop notification too. Quite handy.
 </blockquote>
 
-{% img center /images/laravel-unit-tests/tests-green-gulp.png 'Handy gulp tdd for Laravel' 'Handy gulp tdd for Laravel' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/tests-green-gulp.png" title="Handy gulp tdd for Laravel" alt="Handy gulp tdd for Laravel">
 
 ## Choice of Tools and services
 

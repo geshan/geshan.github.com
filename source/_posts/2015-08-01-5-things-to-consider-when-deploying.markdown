@@ -17,7 +17,7 @@ tech/engineering teams. Automated deployment with tools like [capistrano](http:/
 then screw up on production. This post will highlight things to consider when you deploy a new major feature 
 that involves some big code and database changes. 
 
-{% img center /images/5-deployment-considerations/capistrano-deployment.png 'Deployment success with Capistrano' 'Deployment success with Capistrano' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/5-deployment-considerations/capistrano-deployment.png" title="Deployment success with Capistrano" alt="Deployment success with Capistrano">
 <!-- more -->
 
 ## What is a Major Feature 

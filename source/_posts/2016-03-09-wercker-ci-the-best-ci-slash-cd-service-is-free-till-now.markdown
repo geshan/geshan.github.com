@@ -14,7 +14,7 @@ cover: /images/wercker/wercker-talk.jpg
 On 7-Mar-2016 I did a short talk titled "The best CI/CD service is free (till now), lets use it" at [Namshi](http://namshi.com). 
 It was a quick rundown of [Wercker](http://wercker.com/) CI (Continuous Integration) features and how it works. 
 
-{% img center /images/wercker/wercker-talk.jpg 'Wercker CI the best CI-CD service is free till now, use it' 'Wercker CI the best CI-CD service is free till now, use it' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/wercker/wercker-talk.jpg" title="Wercker CI the best CI-CD service is free till now, use it" alt="Wercker CI the best CI-CD service is free till now, use it">
 
 <!-- more -->
 
