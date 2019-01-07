@@ -12,7 +12,7 @@ cover: /images/laracon-eu-2016/laracon-eu.jpg
 
 It all started with submitting my chatops talk to some open call for papers in April 2016. After giving the talk in CodeMotion Dubai, I felt chatops is a useful topic. Everyone working in software development can leverage it to make their life easier. My talk was a Laravel centered version of the same talk.
 
-{% img center /images/laracon-eu-2016/laracon-eu.jpg 'Laracon EU 2016' 'Laracon EU 2016' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/laracon-eu.jpg" title="Laracon EU 2016" alt="Laracon EU 2016">
 
 <!-- more -->
 
@@ -43,19 +43,19 @@ Most speakers were staying at Park Vitoria Hotel. It is right infornt of Amsterd
 
 The ice breaking speaker dinner was great. Speakers interacted and got along well with each other. I guess they also changed their selected talks to attend talking with other speakers. I want to thank the organizers of Laracon EU for the effort they put into speaker hospitality.
 
-{% img center /images/laracon-eu-2016/speaker-dinner.jpg 'On the way to the restaurant for speaker dinner' 'On the way to the restaurant for speaker dinner' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/speaker-dinner.jpg" title="On the way to the restaurant for speaker dinner" alt="On the way to the restaurant for speaker dinner">
 
 ### Conference Day 1
 
 Day 1 on 23-Aug-2016 kicked off like half an hour late due to minor technical issues. Taylor Otwell rocked the stage as usual. One thing, I noticed is even a seasoned speaker like Taylor gets a bit nervous before going to stage. So for us rookie speakers it is absolutely  normal to be nervous.
 
-{% img center /images/laracon-eu-2016/taylor-laracon-eu.jpg 'Taylor Otwell with his keynote at Laracon EU 2016' 'Taylor Otwell with his keynote at Laracon EU 2016' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/taylor-laracon-eu.jpg" title="Taylor Otwell with his keynote at Laracon EU 2016" alt="Taylor Otwell with his keynote at Laracon EU 2016">
 
 Then I attended the talk by Hannes Van De Vreken about IOC Containers. The talk was quite helpful. We took the train together to the venue. Still, I was preparing for my talk that was after lunch.
 
 My turn was next after lunch. Ubuntu wasn't helping much with the huge display that needed 50 Hz refresh rate. After some googling, it played out well without issues.  My talk went pretty smooth and I even got a few questions a the end. I guess I managed my time well.
 
-{% img center /images/laracon-eu-2016/geshan-laracon-eu.jpg 'Me talking about Chatops at Laracon EU 2016' 'Me talking about Chatops at Laracon EU 2016' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/geshan-laracon-eu.jpg" title="Me talking about Chatops at Laracon EU 2016" alt="Me talking about Chatops at Laracon EU 2016">
 More pictures from my talk [here](https://www.facebook.com/media/set/?set=a.10154031202522979.1073741829.625427978&type=1&l=48cf6b4aa3).
 
 The slides of my talk are below:
@@ -88,7 +88,7 @@ I was more relaxed on day 2, I had no talk to do. Then I focused on getting the 
 1. The State of content management By Tihomir - Generally a good talk, as I told to him the contents could be condensed better.
 1. Curing the common Loop By Adam Wathan - Amazing talk a good mix of slides and live coding. Collections seems like the lodash of PHP world.
 
-{% img center /images/laracon-eu-2016/adam-laracon-eu.jpg 'Adam talking about Curing Loops at Laracon EU 2016' 'Adan talking about Curing Loops at Laracon EU 2016' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/adam-laracon-eu.jpg" title="Adam talking about Curing Loops at Laracon EU 2016" alt="Adan talking about Curing Loops at Laracon EU 2016">
 
 For more description of the above talks it's best to have a look at the Laracon EU 2016 [schedule](http://laracon.eu/2016/schedule).
 

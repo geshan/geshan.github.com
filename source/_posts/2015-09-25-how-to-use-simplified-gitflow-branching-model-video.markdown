@@ -18,7 +18,7 @@ GitFlow is one of the options for doing a feature branching model but it is not 
 In this blog post with a video and presentation I would elaborate on how a team can use `simplified gitflow`
 and get the most out of using git.
 
-{% img center /images/simplified-gitflow/simple-git-flow.jpg 'Simplified git-flow' 'Simplified git-flow' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
 
 <!-- more -->
 

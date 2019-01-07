@@ -15,7 +15,7 @@ keywords: Microservices, Programming, Software Architecture, Software Engineerin
 
 Will you use a gun to kill a fly? The answer is NO. The same thing goes when you want to write a microservice application that is going to be maximum of 10K lines of code. Don't over-engineer it. Ok, you have been writing and maintaining large code bases. Some might be 100K+ lines of code but you need to get over your habits and think differently. This post helps you unravel the mysteries of writing small and maintainable microservices. The suggestions are opinionated but it is in practice in a million dollar business. 
 
-{% img center /images/microservice-code/lego.jpg 'Do not code your microservice like a monolith, keep it maintainable not over-engineered' 'Do not code your microservice like a monolith, keep it maintainable not over-engineered' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/microservice-code/lego.jpg" title="Do not code your microservice like a monolith, keep it maintainable not over-engineered" alt="Do not code your microservice like a monolith, keep it maintainable not over-engineered">
 
 <!-- more -->
 
@@ -48,7 +48,7 @@ Object Relation Mapping (ORM) when I first saw an ORM in action, I said to mysel
 
 Data mapper or Active record both bring their own opinions, ways of doing things and extra weight. This not only causes performance issues but also code readability suffers. Think of the pre and post hooks/event listener Doctrine has, they work like magic and it is always tricky to understand magic. 
 
-{% img center /images/microservice-code/pot-on-head.jpg 'Do not code your microservice like a monolith, keep it maintainable not over-engineered' 'Do not code your microservice like a monolith, keep it maintainable not over-engineered' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/microservice-code/pot-on-head.jpg" title="Do not code your microservice like a monolith, keep it maintainable not over-engineered" alt="Do not code your microservice like a monolith, keep it maintainable not over-engineered">
 
 Just try this, explain how an ORM related insert code works VS how a simple and straightforward INSERT SQL query works to a beginner/junior software engineer. You will already regret using that ORM. Especially in the context of microservices ORM is a clear overhead. The microservice is anticipated to be maximum of 10K lines of code and affect hardly 10 tables so just don't use an ORM, period.
 
@@ -58,7 +58,7 @@ I am not saying that you don't need to learn about [software design patterns](ht
 
 Design Patterns are relevant for a code base that is already big and in the next 6-12 months is going to be bigger, your usual monolith. They can turn out to be "extra baggage" for a service that is 100s of lines of code now and will become 1000s of lines of code in the next 6-12 months. We never foresee it to be bigger than that because to do that other part we will have another microservice. So keep your microservice code fat free and well tested.
 
-{% img center /images/microservice-code/baggage.jpg 'Do not code your microservice like a monolith, keep it maintainable not over-engineered' 'Do not code your microservice like a monolith, keep it maintainable not over-engineered' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/microservice-code/baggage.jpg" title="Do not code your microservice like a monolith, keep it maintainable not over-engineered" alt="Do not code your microservice like a monolith, keep it maintainable not over-engineered">
 
 ## Conclusion
 

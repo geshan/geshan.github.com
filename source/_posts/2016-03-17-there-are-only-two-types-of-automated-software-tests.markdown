@@ -17,7 +17,7 @@ There is unit testing, integration testing, functional testing, acceptance testi
 As per Guru99's [post](http://www.guru99.com/types-of-software-testing.html) there are more than 100 types of 
 software testing. In this post I am going to categorize automated software tests into two, the fast ones and not fast ones.
 
-{% img center /images/testing-types/software-testing.jpg 'There are only two types of automated software tests, fast ones and not fast ones' 'There are only two types of automated software tests, fast ones and not fast ones' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/testing-types/software-testing.jpg" title="There are only two types of automated software tests, fast ones and not fast ones" alt="There are only two types of automated software tests, fast ones and not fast ones">
 
 <!-- more -->
 

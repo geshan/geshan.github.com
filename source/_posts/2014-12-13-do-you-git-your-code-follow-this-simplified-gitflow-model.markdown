@@ -18,7 +18,7 @@ delivery practices like continuous integration and automated deployment etc. Amo
 system software [git](http://git-scm.com) is a distributed system that is very popular and easy to use once
 you get used to it.
 
-{% img center /images/simplified-gitflow/simple-git-flow.jpg 'Simplified git-flow' 'Simplified git-flow' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
 
 <!-- more -->
 The full [gitflow](hhttp://nvie.com/posts/a-successful-git-branching-model/) has 3 perpetual branches develop,

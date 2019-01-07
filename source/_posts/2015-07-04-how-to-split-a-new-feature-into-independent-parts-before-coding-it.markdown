@@ -19,7 +19,7 @@ you solve this issue where given a task how do you plan to split it into **indep
 the language and framework, software design and architecture play and important role for the life of your software, 
 a strong base is needed to build software system that will last longer.
 
-{% img center /images/split-feature/strong-base.jpg 'A strong base for longer lasting software system' 'A strong base for longer lasting software system' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/split-feature/strong-base.jpg" title="A strong base for longer lasting software system" alt="A strong base for longer lasting software system">
 <!-- more -->
 
 ## Some Assumptions
@@ -47,7 +47,7 @@ Now after you are ready to do this task what should your next step be? Jump on y
 You need to organize and discuss each of your task and have a mindset to split it into independent release ready tasks
 first in your mind and best document it on something. So how do you do it then?
 
-{% img center /images/split-feature/un-tangle.jpg 'Untangle and organize your task' 'Untangle and organize your task' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/split-feature/un-tangle.jpg" title="Untangle and organize your task" alt="Untangle and organize your task">
 
 ### Think CRUD
 

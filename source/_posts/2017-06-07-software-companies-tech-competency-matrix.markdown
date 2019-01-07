@@ -11,7 +11,7 @@ cover: /images/swtcm/swtcm.jpg
 
 Every company is a [technology company](https://www.forbes.com/sites/forbestechcouncil/2017/01/23/why-every-company-is-a-technology-company/#62d4503657ae). A technology company without great software and technical team is insignificant. In this post I will unfold my understanding of what makes a tech team competent in 4 levels with 6 main criteria and 25 sub criteria.
 
-{% img center /images/swtcm/swtcm.jpg 'Software Companies Tech Competency Matrix' 'Software Companies Tech Competency Matrix' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/swtcm/swtcm.jpg" title="Software Companies Tech Competency Matrix" alt="Software Companies Tech Competency Matrix">
 
 <!-- more -->
 

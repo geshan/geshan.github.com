@@ -23,7 +23,7 @@ this edition too, for your help in data normalization, filtering and grouping.
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
 <!-- more -->
 
-{% img center /images/sw-eng-np-infographics-part04/Software_Engineering_Nepal_Mid_2015_Part04.png 'Software Engineering Practices in Nepal Infographics Part 4' 'Software Engineering Practices in Nepal Infographics Part 4' %}
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/sw-eng-np-infographics-part04/Software_Engineering_Nepal_Mid_2015_Part04.png" title="Software Engineering Practices in Nepal Infographics Part 4" alt="Software Engineering Practices in Nepal Infographics Part 4">
 
 You can view this infographics in [interactive](http://bit.ly/1Fk3WxK) mode too.
 
