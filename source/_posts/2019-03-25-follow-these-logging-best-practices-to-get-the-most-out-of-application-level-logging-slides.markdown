@@ -8,6 +8,10 @@ categories:
 - Talks
 - Logging
 - Misc
+pagetitle: Logging best practices to get the most out of application logging
+cover: /images/logging-best-practices/logging-bp.jpg
+description: Logs from the application level are the only way your application talks back to you. Having proper logs with commendable search capabilities is like having a torch in a dark room.
+keywords: Logging, best practices, logging best practices, application logging
 ---
 
 Logs from the application level are the only way your application talks back to you. Having proper logs with commendable search capabilities is like having a torch in a dark room.
