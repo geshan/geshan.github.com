@@ -1,0 +1,11 @@
+version: '3'
+services:
+  octopress:
+    container_name: octopress-gcomnp
+    build:
+      context: ./ 
+    volumes:
+      - ./:/home/octopress/Code
+    command: rake preview
+    ports:
+    - "4000:4000"
