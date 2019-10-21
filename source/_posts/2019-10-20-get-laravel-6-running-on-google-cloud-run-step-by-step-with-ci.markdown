@@ -25,7 +25,7 @@ Laravel has [soared](https://trends.google.com/trends/explore?date=2014-10-22%20
 * You know how to use Git from the CLI
 * Your code is hosted on GitHub for CI/CD and you are familiar with GitHub
 * Know a fair bit of docker, maybe even multi-stage build
-* Have a working Google cloud account (they give you $300 credit free for 1 yr, no reasons not to have an account)
+* Have a working Google cloud account (they give you [$300 credit](https://cloud.google.com/free/) free for 1 yr, no reasons not to have an account)
 
 ## Why is Cloud Run a great option for beginners
 
@@ -241,7 +241,7 @@ As a bonus it will run the Laravel default test on the push, like you can see be
 
 Only the owner of the repo has access to the `Actions` tab so other people don't necessarily need to know the results of your test builds :).
 
-### 8. Add deploy to Google Cloud button
+### 8. Add deploy to [Google Cloud button](https://github.com/GoogleCloudPlatform/cloud-run-button)
 
 Now let's deploy this Laravel setup to Google Cloud Run the easy way. Given you have merged your PR from the `docker` branch. Let's run the following commands:
 
