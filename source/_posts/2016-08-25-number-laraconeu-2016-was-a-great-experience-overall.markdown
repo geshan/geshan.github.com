@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "#LaraconEU 2016 was a great experience overall"
+title: "LaraconEU 2016 was a great experience overall"
 date: 2016-08-25 05:59:03 +0200
 comments: true
 categories:
 - Technology
 - misc
 - talks
+- Laravel
 cover: /images/laracon-eu-2016/laracon-eu.jpg
 ---
 
