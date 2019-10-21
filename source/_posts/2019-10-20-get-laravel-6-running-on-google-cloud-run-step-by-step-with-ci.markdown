@@ -279,7 +279,7 @@ Laravel app running like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
 
-What just happned above is:
+What just happened above is:
 
 1. After choosing the region, the script built a docker container image from the `Dockerfile` in the repo
 1. Then it pushed the built image to [Google Container Registry](https://cloud.google.com/container-registry/)
