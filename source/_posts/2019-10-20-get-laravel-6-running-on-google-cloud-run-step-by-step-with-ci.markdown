@@ -34,8 +34,9 @@ For two reasons as mentioned below
 1. Learn about the best practices and software like docker and CI/CD
 2. Getting the basics going is click a button, select 2 things wait for 5 mins you get a working HTTPs URL. Can it be any easier than this :)
 
-
 ## Steps to deploy
+
+Below are the steps to set up and deploy Laravel 6 on Cloud Run:
 
 ### 1. Clone Laravel or new Laravel project
 
@@ -51,7 +52,7 @@ composer create-project --prefer-dist laravel/laravel laravel6-on-google-cloud-r
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/01install-laravel.jpg" title="Installing Laravel with composer" alt="Installing Laravel with composer">
 
 
-### 2. Test it was ok
+### 2. Test it locally first
 
 Then run `cd laravel6-on-google-cloud-run` then `php artisan serve` to see if it is working, for me it was fine when I went to `http://localhost:8000` on a web browser. I had PHP 7.2 installed locally.
 
@@ -79,11 +80,11 @@ git remote add origin git@github.com:geshan/laravel6-on-google-cloud-run.git
 git push -u origin master
 ```
 
-#### After running the above commands I had this on my github repo.
+#### After running the above commands I had this on my github repo
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/04initial-push.jpg" title="After the first push, repo looks like this" alt="After the first push, repo looks like this">
 
-### 5. Add whole app, open PR
+### 5. Add full Laravel, open PR
 
 Now let's add the whole app as a PR to the Github repo by executing the following commands:
 
@@ -99,7 +100,7 @@ do I need a PR? Well, it is always better to do things methodically even if it i
 
 After that merge your pull request.
 
-### 6. Setup tests with GitHub actions
+### 6. Setup tests with [GitHub actions](https://github.com/features/actions)
 
 Not some fun part, after you merged your PR now Github knows that this is a Laravel project. Click on  `Actions` tab on your repo page and you should be able to see something like below:
 
@@ -114,7 +115,7 @@ There you go, you have your CI setup. Laravel default tests will run on each git
 
 ### 7. Add docker and docker-compose to run app locally
 
-Now let's add docker and docker-compose to run the app locally without PHP or artisan serve. We will need the container to run Laravel on Google Cloud Run too. This part is inspired by [Laravel on Google Cloud Run](https://nsirap.com/posts/010-laravel-on-google-cloud-run/) post by Nicolas.
+Now let's add docker and docker-compose to run the app locally without PHP or artisan serve. We will need the container to run Laravel on Google Cloud Run too. This part is inspired by [Laravel on Google Cloud Run](https://nsirap.com/posts/010-laravel-on-google-cloud-run/) post by Nicolas. If you want to learn more about [Docker](https://www.docker.com/) and Laravel please refer to this [post](https://geshan.com.np/blog/2015/10/getting-started-with-laravel-mariadb-mysql-docker/).
 
 Run the following commands first to get your master up to date as we added the `workflow` file from Github interface:
 
@@ -259,9 +260,9 @@ Then add the following to your `readme.md` file:
 [![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/geshan/laravel6-on-google-cloud-run.git)
 ```
 
-Be careful and replace the last part with your repo's `HTTPs` URL, for example, if your repo is at `https://github.com/ghaleroshan/laravel6-on-google-cloud-run` it will be `ttps://github.com/ghaleroshan/laravel6-on-google-cloud-run.git`, then commit and push. Your PR should look something like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/3/files) one.
+Be careful and replace the last part with your repo's `HTTPs` URL, for example, if your repo is at `https://github.com/ghaleroshan/laravel6-on-google-cloud-run` it will be `https://github.com/ghaleroshan/laravel6-on-google-cloud-run.git`, then commit and push. Your PR should look something like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/3/files) one.
 
-### 9. Deploy on Google cloud run
+### 9. Deploy on Google Cloud Run
 
 After you merge your Pull Request (PR), then go to your repo page and click on the `Run on Google Cloud` button.
 
@@ -278,11 +279,19 @@ Laravel app running like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
 
+What just happned above is:
+
+1. After choosing the region, the script built a docker container image from the `Dockerfile` in the repo
+1. Then it pushed the built image to [Google Container Registry](https://cloud.google.com/container-registry/)
+1. After that using the [gcloud](https://cloud.google.com/sdk/gcloud/) CLI it deployed the built image to Cloud Run, which gave back the URL.
+
 ### 10. Hurray, your app is working
 
 After you git the URL you should see your app working on Google Cloud Run like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/11laravel-url.jpg" title="Laravel Running on Google Cloud Run" alt="Laravel Running on Google Cloud Run">
+
+If you want to deploy another version you can merge your PR to master and click the button again to deploy.
 
 ## More about Google Cloud Run
 
