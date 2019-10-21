@@ -90,7 +90,8 @@ Now let's add the whole app as a PR to the Github repo by executing the followin
 
 ```bash
 git checkout -b laravel6-full-app
-git add .gitignore 
+git add .gitignore
+git add .
 git commit -m "Add the whole Laravel 6 app"
 git push origin laravel6-full-app
 ```
