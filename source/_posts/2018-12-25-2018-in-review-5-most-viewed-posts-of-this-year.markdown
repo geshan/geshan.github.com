@@ -24,7 +24,7 @@ This post was published just 10 days back but I garnered a lot of views. The pos
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/tea-lights.jpg" title="You can do it in SQL, stop writing extra code for that" alt="You can do it in SQL, stop writing extra code for that">
 
-## 2. [4 Ways Docker Changed the Way Software Engineers Work in Past Half Decade](https://geshan.com.np/blog/2018/12/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/ "Story about how docker has changed software engineering in past 5 years")
+## 2. [4 Ways Docker Changed the Way Software Engineers Work in Past Half Decade](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/ "Story about how docker has changed software engineering in past 5 years")
 
 Another post from this December that got pretty popular in past weeks. This post is about how docker has changed software engineering in the past 5 years. The post can be summarized as:
 
