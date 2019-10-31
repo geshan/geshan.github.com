@@ -42,7 +42,7 @@ I think my talk went pretty well too. There was no time or provision to ask a qu
 
 Below are the slides from my talk:
 
-<script async class="speakerdeck-embed" data-id="4f33e89002cc4a29926808ef42457fc2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="26f9b284425c4048a8aa587e155636ce" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 The slides are on [slide share](https://www.slideshare.net/geshan/are-logs-a-software-engineers-best-friend-yes-follow-these-best-practices) too.
 
