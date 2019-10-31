@@ -8,6 +8,7 @@ categories:
 - misc
 - Laravel
 - Talks
+cover: /images/laracon-au-2019/01-laracon-au-2019.jpg
 ---
 
 This is my second Laracon, the first one was [Laracon EU 2016](https://geshan.com.np/blog/2016/08/number-laraconeu-2016-was-a-great-experience-overall/) which was one of the best conferences I have ever attended and spoken at. This blog post is a rundown of the talks of the first day of Laracon AU 2019 with slides from my talk, carry on reading…
