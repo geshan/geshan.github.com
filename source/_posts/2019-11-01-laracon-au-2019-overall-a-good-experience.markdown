@@ -31,7 +31,7 @@ After lunch, [Jess Archer](https://jessarcher.com/) spread her knowledge of SPAs
 
 After the break, [Amy](https://amyskapers.tech/) took on the stage to show us the magic of CSS grids. The main highlight for me was it helped me demystify the seemingly magical CSS grids. Last but not least was [JMac](https://jasonmccreary.me/) (creater of Laravel [Shift](https://laravelshift.com/))giving us important pointers to “Creating maintainable Laravel applications”. He had 10 points to do so. My main takeaway was “grok the framework” if I was writing Laravel every day that is something I would remember and follow :)
 
-You can follow all the tweets/images at [#laraconau](https://twitter.com/search?q=%23laraconau) on twitter. Special thanks to Shane Smith for his amazing threads. I don’t know how he is tweeting, listening and taking pictures at the same time :).
+You can follow all the tweets/images at [#laraconau](https://twitter.com/search?q=%23laraconau) on twitter. Special thanks to [Shane Smith](https://twitter.com/shanesmithau) for his amazing threads on twitter. I don’t know how he is tweeting, listening and taking pictures at the same time :).
 
 ## My talk
 
