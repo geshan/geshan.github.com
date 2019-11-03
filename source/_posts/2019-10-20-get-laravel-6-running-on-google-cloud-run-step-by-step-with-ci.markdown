@@ -9,6 +9,8 @@ categories:
 - Programming
 - Laravel
 - Docker
+- Google Cloud Run
+- Git
 cover: /images/laravel6-on-google-cloud-run/00laravel6-on-gcr.jpg
 ---
 Laravel has [soared](https://trends.google.com/trends/explore?date=2014-10-22%202019-10-21&q=laravel,symfony) in popularity in the last few years. The Laravel community even says that Laravel has made writing PHP enjoyable than a pain. Laravel 6 has some interesting new [features](https://laracasts.com/series/whats-new-in-laravel-6). Getting a super scaleable working URL for your application take hours if not days. Setting up something like Kubernetes is a huge task. This is where Google Cloud Run shines, you can get a working HTTPs URL for any of your containerized app in minutes.
