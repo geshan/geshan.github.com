@@ -31,7 +31,7 @@ Below are the tech publications on Medium I would suggest all software engineers
 
 FreeCodeCamp is the place to go for learning how to code for free. It has a very popular and frequently updated publication on Medium. The content published on FreeCodeCamp blog is excellent. There are 17 editors and more than a 1K+ writers on this publication. You will need to read this elaborate blog [post](http://bit.ly/how-to-submit) to know how to submit your story there. Writing for them is not easy, they also do light editing of your stories. Even if your story gets accepted it could have a wait time of 1-2 weeks to be published (my first story for them is still in the pipeline).  All in all you must try to get your stories published there because of the sheer number of subscribers. It is #2 on [toppub.xyz](https://toppub.xyz/).
 
-### [HackerNoon](https://hackernoon.com/) - 403kK followers
+### [HackerNoon](https://hackernoon.com/) - 403K followers
 
 HackerNoon is also another extremely popular publication. It is on Medium right now but it may not be there for long. They are going public with [crowd sourcing](https://www.startengine.com/hackernoon). From the content point of view, there is a sizable amount of content for software engineers. It also has lots of stories on cryptocurrencies. With 7 editors and 7K+ writers (includes me), this is a huge publication too. To write for them you need to send your draft to Stories@AMiPublications.com. The wait time for each story is 1 week or more (I have already published 5 stories). It also has a writer's group on Facebook. You can include yourself as a "Contributing Writer" on [LinkedIn](https://www.linkedin.com/company/hackernoon/) too.
 

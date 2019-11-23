@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Moving from A and B to 150 microservices, the journey, and learnings [Slides]"
+title: "Moving from A and B to 150 microservices, the journey, and learnings [Slides and Video]"
 date: 2018-10-27 08:08:00 +1100
 comments: true
 categories: 
@@ -28,6 +28,12 @@ Are you frustrated working with large, legacy and potentially lethal code bases?
 <script async class="speakerdeck-embed" data-id="05a92573b3fc4221b6a17478ae0db2b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 Slides on [slide share](https://www.slideshare.net/geshan/moving-from-a-and-b-to-150-microservices-the-journey-and-learnings)
+
+## Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QitdhwHYAVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Video added on 23-Nov-2019.
 
 ## Conclusion
 
