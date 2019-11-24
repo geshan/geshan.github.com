@@ -4,7 +4,6 @@ title: "Working for a non profit? get these 7 useful software completely free"
 date: 2015-02-21 07:47:40 +0400
 comments: true
 categories:
- - Technology
  - Misc
 cover: /images/free-non-profit-services/non-profit.jpg
 ---

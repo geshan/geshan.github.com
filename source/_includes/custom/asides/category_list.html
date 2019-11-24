@@ -4,7 +4,7 @@
     </div>
     <div class="list-group">
         {% assign sorted_cats = site.categories | sort %}
-        {% assign categories_to_show = "devops,software-engineering,web-development,misc,technology" | split: ',' %}
+        {% assign categories_to_show = "devops,software-engineering,web-development,misc,talks" | split: ',' %}
         {% assign categories_to_show = categories_to_show | sort %}
         {% for category in sorted_cats %}
         {% assign cat_slug = category | first | slugize | downcase | replace:' ','-' %}
