@@ -4,8 +4,6 @@ title: "5 signs that reveal your software development process is agile only on p
 date: 2018-11-20 20:00:22 +1100
 comments: true
 categories: 
-- Technology
-- DevOps
 - Misc 
 - Agile
 cover: /images/5-signs-agile-on-paper/board.jpg

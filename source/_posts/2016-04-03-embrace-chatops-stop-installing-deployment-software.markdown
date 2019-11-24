@@ -4,7 +4,6 @@ title: "Embrace chatOps, stop installing deployment software [Slides and Video]"
 date: 2016-04-03 14:03:09 +0400
 comments: true
 categories: 
-- Technology
 - misc
 - deployment
 - Talks

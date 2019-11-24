@@ -4,10 +4,10 @@ title: "PHP Developers Nepal Meetup #16 a round up and my talk on simpilfied git
 date: 2016-06-25 15:50:35 +0400
 comments: true
 categories:
-- Technology
 - misc
 - git
 - talks
+- Web development
 cover: /images/php-dev-meetup-16/php-dev-meetup-16.jpg
 ---
 

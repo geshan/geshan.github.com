@@ -6,6 +6,7 @@ comments: true
 categories:
 - Software Engineering
 - Web Development
+- Devops
 - Talks
 - Docker
 - Google Cloud Run

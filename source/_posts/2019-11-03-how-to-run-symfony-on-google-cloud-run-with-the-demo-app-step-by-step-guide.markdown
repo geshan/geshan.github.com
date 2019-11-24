@@ -5,10 +5,10 @@ date: 2019-11-03 14:22:00 +0000
 comments: true
 categories:
 - Technology
-- misc
 - Programming
 - Symfony
 - Docker
+- Devops
 - Google Cloud Run
 cover: /images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg
 ---

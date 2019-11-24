@@ -4,13 +4,12 @@ title: "Software Engineering Practices in Nepal Infographics Part 2 includes Git
 date: 2015-05-22 06:40:58 +0400
 comments: true
 categories:
- - Technology
- - Misc
  - Infographics
  - php
  - symfony
  - foss
  - git
+ - Software Engineering
 ---
 
 I hope life is slowly going back to normal in Nepal though the news of aftershocks is not encouraging. My prayers are with the

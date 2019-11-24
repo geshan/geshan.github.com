@@ -7,8 +7,6 @@ categories:
 - Docker
 - php
 - Laravel
-- Technology
-- Misc
 - DevOps
 cover: /images/laravel-mysql-docker/laravel-mysql-docker.png
 ---

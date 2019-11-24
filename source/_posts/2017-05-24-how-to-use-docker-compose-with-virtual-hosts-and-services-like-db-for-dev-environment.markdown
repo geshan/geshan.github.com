@@ -5,8 +5,6 @@ date: 2017-05-24 18:53:04 +0400
 comments: true
 categories:
 - Docker
-- Technology
-- misc
 - DevOps
 cover: /images/docker-compose-vhost/docker-compose-vhost.jpg
 ---

@@ -4,10 +4,9 @@ title: "There are only two types of automated software tests, fast ones and not 
 date: 2016-03-17 09:38:18 +0400
 comments: true
 categories: 
-- Technology
-- misc
 - Programming
 - testing
+- Software Engineering
 cover: /images/testing-types/software-testing.jpg
 ---
 

@@ -4,8 +4,8 @@ title: "Software Companies Tech Competency Matrix"
 date: 2017-06-07 16:18:57 +0400
 comments: true
 categories:
-- Technology
 - misc
+- Software Engineering
 cover: /images/swtcm/swtcm.jpg
 ---
 

@@ -5,7 +5,7 @@ date: 2018-12-21 19:47:44 +1100
 comments: true
 categories: 
 - Technology
-- Misc
+- Software Engineering
 cover: /images/tip-beginner-sw-eng/puzzle.jpg
 description: First, solve the problem. Then, write the code. - John Johnson
 keywords: beginner software engineer, software engineer, software engineer tip

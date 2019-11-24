@@ -4,8 +4,6 @@ title: "Adopt a painless continuous delivery culture, add more business value [S
 date: 2017-08-02 07:17:30 +0400
 comments: true
 categories:
-- Technology
-- misc
 - Talks
 - DevOps
 cover: /images/continuous-delivery/geshan-devops--days-pdx-2017.jpg

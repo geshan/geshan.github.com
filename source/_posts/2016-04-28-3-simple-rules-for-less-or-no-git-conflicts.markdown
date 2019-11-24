@@ -4,9 +4,9 @@ title: "3 simple rules for less or no git conflicts"
 date: 2016-04-28 10:14:43 +0400
 comments: true
 categories:
-- Technology
 - misc
 - git
+- Software Engineering
 cover: /images/3-rules-git-conflict/git-conflict.png
 ---
 

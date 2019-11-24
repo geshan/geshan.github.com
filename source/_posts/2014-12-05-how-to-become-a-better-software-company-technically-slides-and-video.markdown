@@ -4,10 +4,8 @@ title: "How to become a better software company technically - slides and video"
 date: 2014-12-05 08:49:28 +0400
 comments: true
 categories:
- - Technology
- - Misc
  - Talks
- - DevOps
+ - Software Engineering
 ---
 
 I was in Kathmandu,Nepal for a week at the end of November and this time I talked about how to become a better software

@@ -4,9 +4,8 @@ title: "Software Engineering Practices in Nepal Infographics Part 4 includes PM 
 date: 2015-05-29 07:07:59 +0400
 comments: true
 categories: 
- - Technology
- - Misc
  - Infographics
+ - Software Engineering
 ---
 
 It has already been a month that the devastating earthquake hit Nepal. I hope life is coming back to normal now and 

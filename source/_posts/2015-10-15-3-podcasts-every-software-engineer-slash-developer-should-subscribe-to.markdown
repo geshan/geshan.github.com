@@ -4,7 +4,6 @@ title: "3 Podcasts every software engineer/developer should subscribe to"
 date: 2015-10-15 07:17:09 +0400
 comments: true
 categories:
-- Technology
 - misc
 - Programming
 cover: /images/3-podcasts/3-podcasts-sw-eng.jpg

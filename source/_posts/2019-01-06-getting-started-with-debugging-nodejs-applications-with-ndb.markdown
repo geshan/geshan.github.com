@@ -4,9 +4,9 @@ title: "Getting started with debugging nodeJs applications with ndb"
 date: 2019-01-06 11:02:36 +1100
 comments: true
 categories:
-- Technology
 - Javascript
 - NodeJs
+- Software Engineering
 pagetitle: Debugging nodejs applications using ndb step by step guide
 cover: /images/debugging-node-js/00ndb.png
 description: Debugging nodejs is a lot easier using ndb compared to node inspector with chrome node debugger. Learn more about browser independent debugging workflow.

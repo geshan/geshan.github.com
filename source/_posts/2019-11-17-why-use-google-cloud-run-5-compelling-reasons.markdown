@@ -5,6 +5,7 @@ date: 2019-11-17 15:39:38 +0000
 comments: true
 categories: 
 - Docker
+- Devops
 - Google Cloud Run
 - Software Engineering
 cover: /images/reasons-to-use-google-cloud-run/00reasons-to-use-cloud-run.jpg

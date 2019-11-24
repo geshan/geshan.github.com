@@ -4,9 +4,8 @@ title: "Software Engineering Practices in Nepal Infographics Part 3 includes dev
 date: 2015-05-23 09:36:02 +0400
 comments: true
 categories:
- - Technology
- - Misc
  - Infographics
+ - Software Engineering
 ---
 
 Let rebuild #Nepal, do what you can. As a software professional from past 6 years I think this is how I can help, informing

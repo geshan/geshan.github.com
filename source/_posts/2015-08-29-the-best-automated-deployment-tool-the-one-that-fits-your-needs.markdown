@@ -4,10 +4,9 @@ title: "The best automated deployment tool is... the one that fits your needs"
 date: 2015-08-29 15:22:48 +0400
 comments: true
 categories:
-- Technology
-- misc
 - deployment
 - DevOps
+- Software Engineering
 cover: /images/deployment-tools/fabric-deployment.png
 ---
 
