@@ -5,9 +5,9 @@ date: 2015-07-18 07:01:00 +0400
 comments: true
 categories: 
  - Programming
- - Technology
  - foss
  - php
+ - Software Engineering
 facebook:
    image: http://geshan.com.np/images/php-oss-checklist/example-foss.png
 cover: /images/php-oss-checklist/example-foss.png

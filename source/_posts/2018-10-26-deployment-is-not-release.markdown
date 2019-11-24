@@ -4,9 +4,7 @@ title: "Deployment is not Release, let's use feature flags"
 date: 2018-10-26 08:13:05 +1100
 comments: true
 categories: 
-- Technology
 - DevOps
-- Misc
 - Feature Flags
 - Software Engineering
 cover: /images/deployment-not-release/flags.jpg

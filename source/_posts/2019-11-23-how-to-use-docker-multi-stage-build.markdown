@@ -5,6 +5,7 @@ date: 2019-11-25 15:33:44 +0000
 comments: true
 categories: 
 - Docker
+- Devops
 - Software Engineering
 cover: /images/docker-multi-stage-builds/docker-msb-optimal-images.jpg
 ---

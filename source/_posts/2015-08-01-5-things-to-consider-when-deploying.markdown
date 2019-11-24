@@ -4,9 +4,7 @@ title: "5 Things to consider when deploying a new major feature to production"
 date: 2015-08-01 14:29:19 +0400
 comments: true
 categories: 
-  - Technology
   - deployment
-  - misc
   - DevOps
 cover: /images/5-deployment-considerations/capistrano-deployment.png
 ---

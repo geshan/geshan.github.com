@@ -4,7 +4,6 @@ title: "Different types of web hosting compared to types of housing [Infographic
 date: 2016-11-29 15:28:50 +0400
 comments: true
 categories:
-- Technology
 - Infographics
 - misc
 ---

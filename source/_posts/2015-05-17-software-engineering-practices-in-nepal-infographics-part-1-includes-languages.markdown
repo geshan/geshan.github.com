@@ -4,12 +4,11 @@ title: "Software Engineering Practices in Nepal Infographics Part 1 includes Lan
 date: 2015-05-17 16:26:29 +0400
 comments: true
 categories:
- - Technology
- - Misc
  - Infographics
  - php
  - symfony
  - foss
+ - Software Engineering
 ---
 
 A big earthquake hit Nepal on 25-Apr-2015 and another big one was felt on 12-May-2015. The [aftershocks](http://seismonepal.gov.np/) till now have been around 250. I pray that all the people in Nepal have the strength and positive energy to endure this difficult time. Rather than pitying on themselves, people have already started to work and this is a positive sign. Moreover, instead of spreading false news and rumors I would suggest people to focus on positive things, stay alert and cautious.

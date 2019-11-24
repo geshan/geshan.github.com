@@ -4,8 +4,6 @@ title: "Wercker CI the best CI/CD service is free till now, use it [Slides]"
 date: 2016-03-09 09:34:08 +0400
 comments: true
 categories: 
-- Technology
-- misc
 - deployment
 - Talks
 - DevOps

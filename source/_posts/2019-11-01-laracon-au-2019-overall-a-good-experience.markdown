@@ -5,9 +5,9 @@ date: 2019-11-01 09:01:15 +0000
 comments: true
 categories: 
 - Technology
-- misc
 - Laravel
 - Talks
+- Software Engineering
 cover: /images/laracon-au-2019/01-laracon-au-2019.jpg
 ---
 

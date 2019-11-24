@@ -4,9 +4,8 @@ title: "Podcasts Every Software Engineer/developer Should Subscribe To - Part 4"
 date: 2019-07-08 04:58:14 +0000
 comments: true
 categories:
-- Technology
-- misc
 - Programming
+- Software Engineering
 cover: /images/3-podcasts-part-4/3-podcasts-sw-eng-part-04.jpg
 ---
 Podcasts are a great way to learn new things even for the lazy reader. If you are not fast at reading or don't like it very much podcasts can be your way to get the information with less effort. It is easier than reading. This is a part 4 in the series (do check part [1](http://geshan.com.np/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/) and

@@ -4,10 +4,7 @@ title: "Don't just learn a new language/framework, implement it as a running ope
 date: 2018-10-08 15:27:26 +1100
 comments: true
 categories: 
-- Technology
-- misc
-- git
-- docker
+- Software Engineering
 cover: /images/language-framework-learn/cycle.jpg
 description: Imagine you already read 3 books about cycling. Then someone gave you a cycle and asked to ride it, will you be able to ride it? The simple answer is "No".
 keywords: Beginner software engineer, learning, software engineering

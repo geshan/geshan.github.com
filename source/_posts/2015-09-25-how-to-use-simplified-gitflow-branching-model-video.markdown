@@ -5,10 +5,9 @@ date: 2015-09-25 17:16:23 +0400
 comments: true
 categories: 
 - git 
-- technology
-- misc
 - talks
 - DevOps
+- Software Engineering
 cover: /images/simplified-gitflow/simple-git-flow.jpg
 ---
 

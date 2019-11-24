@@ -4,10 +4,9 @@ title: "Logging best practices to get the most out of application level logging 
 date: 2019-03-26 09:02:43 +0000
 comments: true
 categories: 
-- Technology
 - Talks
 - Logging
-- Misc
+- Devops
 pagetitle: Logging best practices to get the most out of application logging with Slides
 cover: /images/logging-best-practices/logging-bp.jpg
 description: Logs from the application level are the only way your application talks back to you. Having proper logs with commendable search capabilities is like having a torch in a dark room.

@@ -5,7 +5,7 @@ date: 2015-07-04 07:08:17 +0400
 comments: true
 categories: 
  - Programming
- - Misc
+ - Software Engineering
 cover: /images/split-feature/strong-base.jpg
 ---
 

@@ -4,13 +4,12 @@ title: "4 pillars of a solid software application and tools to support it"
 date: 2015-10-10 10:21:52 +0400
 comments: true
 categories:
-- Technology
-- misc
 - Programming
 - testing
 - logging
 - deployment
 - DevOps
+- Software Engineering
 cover: /images/4-pillars-software-application/4-pillars-software-application.png
 ---
 

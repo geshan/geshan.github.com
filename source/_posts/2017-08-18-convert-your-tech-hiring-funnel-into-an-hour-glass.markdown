@@ -4,7 +4,6 @@ title: "Convert your tech hiring funnel into an hour glass, retain your tech tal
 date: 2017-08-18 20:52:05 +0400
 comments: true
 categories:
-- Technology
 - misc
 cover: /images/tech-hiring-funnel-hour-glass/tech-hiring-funnel-hourglass.jpg
 ---

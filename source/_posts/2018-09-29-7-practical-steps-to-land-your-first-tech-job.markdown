@@ -4,7 +4,6 @@ title: "5 practical steps to land your first tech job"
 date: 2018-09-29 15:55:58 +1000
 comments: true
 categories:
-- Technology
 - misc
 - Jobs
 cover: /images/5-steps-first-tech-job/first-tech-job-a.jpg

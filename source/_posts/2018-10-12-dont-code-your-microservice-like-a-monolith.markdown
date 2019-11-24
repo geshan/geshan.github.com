@@ -4,8 +4,6 @@ title: "Don't code your microservice like a monolith, keep it maintainable not o
 date: 2018-10-12 15:54:07 +1100
 comments: true
 categories: 
-- Technology
-- misc
 - microservice
 - DevOps
 cover: /images/microservice-code/lego.jpg

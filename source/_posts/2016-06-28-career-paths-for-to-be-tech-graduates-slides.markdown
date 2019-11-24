@@ -4,7 +4,6 @@ title: "Career paths for to be tech graduates [Slides]"
 date: 2016-06-28 14:03:05 +0400
 comments: true
 categories:
-- Technology
 - misc
 - talks
 cover: /images/career-paths-for-tech-grads/cptg-01.jpg

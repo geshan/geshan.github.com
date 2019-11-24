@@ -4,8 +4,6 @@ title: "You can do it in SQL, stop writing extra code for that"
 date: 2018-12-14 19:30:54 +1100
 comments: true
 categories: 
-- Technology
-- Misc
 - SQL
 - Software Engineering
 - database

@@ -4,7 +4,6 @@ title: "Some useful resources and suggestions for tech conference speakers and a
 date: 2016-09-14 11:02:38 +0400
 comments: true
 categories:
-- Technology
 - misc
 cover: /images/speaker-resources/speaker.jpg
 ---

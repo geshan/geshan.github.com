@@ -4,10 +4,9 @@ title: "How to do a minimum viable feature switch, includes a simple code exampl
 date: 2016-09-26 09:55:05 +0400
 comments: true
 categories:
-- Technology
-- misc
 - DevOps
 - Feature Flags
+- Software Engineering
 cover: /images/feature-switch/feature-switch.jpg
 ---
 

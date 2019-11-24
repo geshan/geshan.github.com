@@ -4,9 +4,7 @@ title: "Importance of logging in your applications, start logging today"
 date: 2015-08-08 08:04:02 +0400
 comments: true
 categories:
-- Technology
 - logging
-- misc
 - DevOps
 cover: /images/logging-importance/logging-code.png
 ---

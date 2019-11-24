@@ -5,8 +5,7 @@ date: 2014-12-13 07:52:40 +0400
 comments: true
 categories:
  - Git
- - Technology
- - Misc
+ - Software Engineering
 ---
 
 Git or a similar VCS is the backbone for code collaboration in a multi-developers environment. When you follow

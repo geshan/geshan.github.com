@@ -4,9 +4,7 @@ title: "4 ways Docker changed the way software engineers work in past half decad
 date: 2018-12-01 09:14:51 +1100
 comments: true
 categories: 
-- Technology
 - DevOps
-- Misc 
 - Docker
 - Software Engineering
 cover: /images/4-ways-docker/docker-whale.jpg

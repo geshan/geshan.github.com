@@ -4,8 +4,6 @@ title: "Why use docker? 3 reasons from a development perspective"
 date: 2018-10-10 15:29:22 +1100
 comments: true
 categories:
-- Technology
-- misc
 - Docker
 - DevOps
 cover: /images/why-docker/whale.jpg

@@ -4,7 +4,6 @@ title: "3 weeklies every software engineer/developer should subscribe to"
 date: 2015-11-13 13:39:35 +0400
 comments: true
 categories:
-- Technology
 - misc
 - Programming
 cover: /images/3-weeklies/3-weeklies-sw-eng.jpg

@@ -4,11 +4,10 @@ title: "How to do a zero downtime database (DB) migration (schema change) with a
 date: 2018-04-30 22:00:41 +0400
 comments: true
 categories:
-- Technology
-- misc
 - database
 - deployment
 - DevOps
+- Software Engineering
 cover: /images/db-migration/db-migration.png
 description: Database migration on a production database is never simple. You can run your alter statements with zero or minimal downtime following the steps mentioned below with a practical example.
 keywords: database, sql, database migration, database schema migration

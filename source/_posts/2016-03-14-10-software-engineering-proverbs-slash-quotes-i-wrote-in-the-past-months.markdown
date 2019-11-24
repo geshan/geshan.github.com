@@ -4,10 +4,9 @@ title: "10 software engineering proverbs/quotes I wrote in the past months"
 date: 2016-03-14 15:30:20 +0400
 comments: true
 categories: 
-- Technology
-- misc
 - Programming
 - testing
+- Software Engineering
 cover: /images/10-quotes/code-html-small.jpg
 ---
 

@@ -4,7 +4,6 @@ title: "Things I wished I knew as a junior developer for Developers Nepal Meetup
 date: 2017-02-08 07:31:35 +0400
 comments: true
 categories:
-- Technology
 - misc
 - Talks
 cover: /images/things-jr-dev/geshan-dn-meetup-4.jpg
