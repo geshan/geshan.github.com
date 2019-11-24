@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use docker multi-stage build to create optimal containers for dev and production"
+title: "How to use docker multi-stage build to create optimal images for dev and production"
 date: 2019-11-25 15:33:44 +0000
 comments: true
 categories: 
@@ -23,7 +23,7 @@ Docker has sharply [risen in popularity](https://trends.google.com/trends/explor
 
 ## Docker multi-stage builds intro
 
-Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 Mb](https://microbadger.com/images/golang) Golang 1.13 official image (123 Mb even with Alpine) can be just as big as the go executable of your application. As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 Mb) just to run that executable. So, if you go app binary is say 10 Mb your image can be 15 Mb (10 Mb binary + 5 Mb alpine) rather than the heavy 294 Mb official go image or 123 Mb alpine go image. You can have a look at an [example](https://medium.com/travis-on-docker/multi-stage-docker-builds-for-creating-tiny-go-images-e0e1867efe5a) too.
+Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 Mb](https://microbadger.com/images/golang) Golang 1.13 official image (123 Mb even with Alpine) can be just as big as the go executable of your application. As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 Mb) just to run that executable. So, if your go app binary is 10 Mb your image can be 15 Mb (10 Mb binary + 5 Mb alpine) rather than the heavy 294 Mb official go image or 123 Mb alpine go image. You can have a look at an [example](https://medium.com/travis-on-docker/multi-stage-docker-builds-for-creating-tiny-go-images-e0e1867efe5a) too.
 
 Another great example can be a frontend javascript application, you could use an app with node, webpack and all needed npm dev dependencies to build the application. In the next stage, it can be served with a minimal nginx apline image which will be of much less size.
 
@@ -97,7 +97,7 @@ So currently it is 165 Mb, hopefully, we can decrease its size too in this proce
 
 Now as we want to have dev dependencies and `nodemon` on dev builds and only production npm dependencies on production build, the docker related files have been modified as follows:
 
-### Dockerfile with mulit-stage build
+### Dockerfile with multi-stage build
 
 ```
 FROM node:12-alpine as base
