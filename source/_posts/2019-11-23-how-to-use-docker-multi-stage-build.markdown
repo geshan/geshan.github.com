@@ -24,7 +24,7 @@ Docker has sharply [risen in popularity](https://trends.google.com/trends/explor
 
 ## Docker multi-stage builds intro
 
-Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 Mb](https://microbadger.com/images/golang) Golang 1.13 official image (123 Mb even with Alpine) can be just as big as the go executable of your application. As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 Mb) just to run that executable. So, if your go app binary is 10 Mb your image can be 15 Mb (10 Mb binary + 5 Mb alpine) rather than the heavy 294 Mb official go image or 123 Mb alpine go image. You can have a look at an [example](https://medium.com/travis-on-docker/multi-stage-docker-builds-for-creating-tiny-go-images-e0e1867efe5a) too.
+Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 MB](https://microbadger.com/images/golang) Golang 1.13 official image (123 MB even with Alpine) can be just as big as the go executable of your application. As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 MB) just to run that executable. So, if your go app binary is 10 MB your image can be 15 MB (10 MB binary + 5 MB alpine) rather than the heavy 294 MB official go image or 123 MB alpine go image. You can have a look at an [example](https://medium.com/travis-on-docker/multi-stage-docker-builds-for-creating-tiny-go-images-e0e1867efe5a) too.
 
 Another great example can be a frontend javascript application, you could use an app with node, webpack and all needed npm dev dependencies to build the application. In the next stage, it can be served with a minimal nginx apline image which will be of much less size.
 
@@ -90,7 +90,7 @@ Let’s look at how big is this image we got from running `docker build . -t cur
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/01original-docker-image.jpg" title="Original docker image before multi-stage build" alt="Original docker image before multi-stage build">
 
-So currently it is 165 Mb, hopefully, we can decrease its size too in this process.
+So currently it is 165 MB, hopefully, we can decrease its size too in this process.
 
 ## Solution with multi-stage build
 
@@ -158,9 +158,9 @@ All the changes made can be viewed in this [pull request](https://github.com/ges
 We ran the following commands to build the dev and the production images:
 
 * docker build . -t currency-api-dev --target=dev
-* docker build . -t currency-api-dev --target=production
+* docker build . -t currency-api-prod --target=production
 
-> We have shaved off ~25 Mb from the older image for a production build. It happened because we removed nodemon and some dev dependencies for production. Even for the dev build it is ~21 Mb smaller.
+> We have shaved off ~25 MB from the older image for a production build. It happened because we removed nodemon and some dev dependencies for production. Even for the dev build it is ~21 MB smaller.
 
 ## Conclusion / tl;dr
 
