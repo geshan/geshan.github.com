@@ -4,7 +4,6 @@ title: "How to run Symfony on Google Cloud Run with the demo app [Step-by-Step G
 date: 2019-11-03 14:22:00 +0000
 comments: true
 categories:
-- Technology
 - Programming
 - Symfony
 - Docker

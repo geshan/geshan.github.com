@@ -4,7 +4,6 @@ title: "Laracon AU 2019 overall a good experience"
 date: 2019-11-01 09:01:15 +0000
 comments: true
 categories: 
-- Technology
 - Laravel
 - Talks
 - Software Engineering
