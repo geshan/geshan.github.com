@@ -4,7 +4,6 @@ title: "From 0 to working Serverless URL for a Containerized app with Google Clo
 date: 2019-11-10 02:52:17 +0000
 comments: true
 categories:
-- Software Engineering
 - Web Development
 - Devops
 - Talks

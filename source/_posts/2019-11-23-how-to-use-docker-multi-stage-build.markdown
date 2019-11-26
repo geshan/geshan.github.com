@@ -6,7 +6,6 @@ comments: true
 categories: 
 - Docker
 - Devops
-- Software Engineering
 cover: /images/docker-multi-stage-builds/docker-msb-optimal-images.jpg
 ---
 

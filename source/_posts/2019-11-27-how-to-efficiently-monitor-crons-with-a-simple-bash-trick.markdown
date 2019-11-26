@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to efficiently monitor Crons with a simple bash trick"
-date: 2019-11-26 15:40:30 +0000
+date: 2019-11-27 15:40:30 +0000
 comments: true
 categories: 
 - Software Engineering
@@ -12,7 +12,7 @@ Setting up and running crons has changed in the past years from a crontab comman
 
 This post is going to highlight one cool bash trick which simplifies cron monitoring. The solution is language and framework agnostic as it is done in the command itself. Let's dive deeper into this way of monitoring crons.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/docker-msb-optimal-images.jpg" title="Use docker multi-stage build to create optimal images" alt="Streamline your docker image building with multi-stage builds for dev and production">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/monitor-crons/monitor-crons.jpg" title="Use a bash trick to efficiently monitor crons" alt="Use a bash trick to efficiently monitor crons">
 
 <!-- more -->
 
