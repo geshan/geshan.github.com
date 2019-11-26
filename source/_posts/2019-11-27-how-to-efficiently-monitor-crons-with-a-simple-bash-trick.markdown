@@ -7,7 +7,7 @@ categories:
 - Software Engineering
 ---
 If you have worked with software systems long enough you have surely worked with crons. Cron is a time-based task scheduler in UNIX-like operating systems. We use to run some task/script periodically, for example, every day at 9:30 AM.
- 
+
 Setting up and running crons has changed in the past years from a crontab command to now running it on Kubernetes as CronJob, still, the basics remain the same and it is very important to monitor cron jobs. You don't want to wake up to some client not being paid because the CronJob did not run.
 
 This post is going to highlight one cool bash trick which simplifies cron monitoring. The solution is language and framework agnostic as it is done in the command itself. Let's dive deeper into this way of monitoring crons.
