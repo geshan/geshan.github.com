@@ -5,7 +5,7 @@ date: 2019-12-02 14:03:37 +0000
 comments: true
 categories: 
 - Software Engineering
-cover: /images/monitor-crons/monitor-crons.jpg
+cover: /images/pull-request-merge/pull-request-merge-fast.jpg
 ---
 Have you ever faced a call to completely redesign your code in one of your pull requests? I have and then thought what are the ways to avoid this. Call it a pull request or merge request, basically, it is a set of changes you want to go ahead and merge to the main branch to deploy to production and complete your task. This post is going to highlight a semi silver bullet to get your pull requests merged faster :), carry on reading.
 
