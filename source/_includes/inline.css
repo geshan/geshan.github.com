@@ -167,5 +167,10 @@ article footer a{
   }
   .list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover {
     background-color: #4dd599;
-    border-color: #aea79f;
+    border-color: unset;
+  }
+
+  .panel>.list-group .list-group-item, .panel-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
