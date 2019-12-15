@@ -59,7 +59,6 @@ article img:not(.no-border){
 article .entry-content a{
     color: #000;
     text-decoration: underline;
-    text-decoration-style: dashed;
 }
 
 .page-header{
