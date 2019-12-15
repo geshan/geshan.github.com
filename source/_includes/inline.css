@@ -102,10 +102,6 @@ a.list-group-item:focus, a.list-group-item:hover{
     color: #4dd599;
 }
 
-article footer a{
-    float: right;
-}
-
 .form-control{
     border-radius: 0;
     box-shadow: unset;
@@ -184,4 +180,8 @@ article footer a{
 
   .navbar-default .navbar-toggle {
     border-color: #adadad;
+  }
+
+  navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover {
+    background-color:#adadad;
   }
