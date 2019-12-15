@@ -72,8 +72,8 @@ article img:not(.no-border){
     border-radius: 0;
 }
 .panel-default{
-    margin-left: 9rem;
-    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
     border: none;
 }
 
@@ -164,4 +164,8 @@ article footer a{
   }
   .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
       color: #000;
+  }
+  .list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover {
+    background-color: #4dd599;
+    border-color: #aea79f;
   }
