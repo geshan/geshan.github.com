@@ -71,8 +71,8 @@ article img:not(.no-border){
     border-radius: 0;
 }
 .panel-default{
-    margin-left: 2rem;
-    margin-top: 5rem;
+    margin-left: 0rem;
+    margin-top: 3rem;
     border: none;
 }
 
@@ -172,4 +172,16 @@ article footer a{
   .panel>.list-group .list-group-item, .panel-title {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #4dd599;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #adadad;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: #adadad;
   }
