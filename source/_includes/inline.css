@@ -185,3 +185,7 @@ a.list-group-item:focus, a.list-group-item:hover{
   navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover {
     background-color:#adadad;
   }
+
+  .pager .next>a,.pager .next>span{
+    float:none;
+ }
