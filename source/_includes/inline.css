@@ -114,12 +114,12 @@ a.list-group-item:focus, a.list-group-item:hover{
     color: #4dd599;
     transition: all 0.8s ease;
     padding: 1rem 2.6rem;
+    float: right;
     /* text-decoration: underline; */
   }
   .btn-default:hover{
-      background-color: #4dd599;
-      border: 1px solid #4dd599;
-  
+    background-color: #4dd599;
+    border: 1px solid #4dd599;
   }
   
   .badge{
