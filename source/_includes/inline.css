@@ -186,6 +186,10 @@ a.list-group-item:focus, a.list-group-item:hover{
     background-color:#adadad;
   }
 
-  .pager .next>a,.pager .next>span{
+ .pager .next>a,.pager .next>span{
     float:none;
+ }
+
+ li.next {
+  float: right;
  }
