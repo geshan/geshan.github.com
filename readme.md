@@ -10,3 +10,4 @@ Docker is used to run it on local machine. Use the following command to generate
 
 docker-compose run octopress rake generate
 ```
+
