@@ -10,6 +10,9 @@ categories:
 - Docker
 - Google Cloud Run
 cover: /images/serverless-containers/01serverless-containers.jpg
+pagetitle: From 0 to working serverless URL for a dockerized app on Google Cloud Run - Slides and Video
+description: Serverless Containers are possible and getting a running URL with Google cloud run is super easy.
+keywords: Google Cloud, Google Cloud Run, serverless, containers, serverless containers, docker
 ---
 
 What is the fastest way to get a working URL for your stateless container in a serverless way? With 0 doubts it is [Google Cloud Run](https://cloud.google.com/run/). Containers and Docker are far more popular than Serverless if we look at [Google Trends](https://trends.google.com/trends/explore?date=2015-01-01%202019-11-10&q=serverless,containers,docker), still there is a meeting point for both these technologies and Cloud Run does a great job to make it super easy to deploy serverless containers in minutes. This post details about a talk I gave at Serverless Days Sydney 2019 about serverless containers.

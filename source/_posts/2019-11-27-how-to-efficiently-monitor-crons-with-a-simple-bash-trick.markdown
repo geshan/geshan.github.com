@@ -6,6 +6,9 @@ comments: true
 categories: 
 - Software Engineering
 cover: /images/monitor-crons/monitor-crons.jpg
+pagetitle: How to effectively monitor crons with a simple bash trick
+description: Follow this example to monitor crons efficiently with a bash trick
+keywords: bash, cron, monitor cron
 ---
 If you have worked with software systems long enough you have surely worked with crons. Cron is a time-based task scheduler in UNIX-like operating systems. We use to run some task/script periodically, for example, every day at 9:30 AM.
 

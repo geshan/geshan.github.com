@@ -7,6 +7,9 @@ categories:
 - Programming
 - Software Engineering
 cover: /images/3-podcasts-part-4/3-podcasts-sw-eng-part-04.jpg
+pagetitle: Podcasts every software engineer should subscribe to part 4
+description: Listen to these podcasts to become a better software engineer.
+keywords: Podcast, software podcast, software engineer podcast
 ---
 Podcasts are a great way to learn new things even for the lazy reader. If you are not fast at reading or don't like it very much podcasts can be your way to get the information with less effort. It is easier than reading. This is a part 4 in the series (do check part [1](http://geshan.com.np/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/) and
 [2](http://geshan.com.np/blog/2016/05/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-2/) and [3](https://geshan.com.np/blog/2017/01/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-3/)) of podcasts you must subscribe to and listen to as a software engineer. Same as the last 3 times the 3 podcasts listed below have great content and considerably good sound quality too. Below is the list:

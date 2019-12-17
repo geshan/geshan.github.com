@@ -10,6 +10,9 @@ categories:
 - Devops
 - Google Cloud Run
 cover: /images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg
+pagetitle: How to Run Symfony on Google Cloud Run step by step guide for the demo app
+description: Follow this step by step guide to run Symfony Demo app on Google Cloud Run
+keywords: Symfony, PHP, Google Cloud, Google Cloud Run, Symfony Hosting, Symfony Demo app
 ---
 Symfony is without doubts one of the most [popular](https://raygun.com/blog/top-php-frameworks/) PHP frameworks. It has amazing flexibility and is written in an applaudable modular fashion. Some Symfony components even [power](https://symfony.com/projects/laravel) other prominent frameworks like Laravel. Running Symfony is a bit tricky at times, especially the [permissions](https://symfony.com/doc/current/setup/file_permissions.html) of the cache and logs folder, this blog post demystifies running the Symfony [Demo App](https://github.com/symfony/demo) in a docker container and hosting it serverless on [Google Cloud Run](https://cloud.google.com/run/).
 
