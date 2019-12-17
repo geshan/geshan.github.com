@@ -7,6 +7,9 @@ categories:
 - Docker
 - Devops
 cover: /images/docker-multi-stage-builds/docker-msb-optimal-images.jpg
+pagetitle: How to use docker multi-stage build to create optimal images for dev, QA and prod
+description: Follow this step by step guide to know how to use docker multi-stage build with a Node js app demo
+keywords: Docker, docker multi-stage build, docker build
 ---
 
 Docker has sharply [risen in popularity](https://trends.google.com/trends/explore?date=2015-11-23%202019-11-23&q=%2Fm%2F0wkcjgj,%2Fg%2F11gds4ys6t) in the past years. It has been one of the tools that have [changed the way we work](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) as software engineers and DevOps Engineers. From Docker v 17.05 [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) was introduced which helped abandon the older [builder pattern](https://blog.alexellis.io/mutli-stage-docker-builds/) with use of stages and [target](https://docs.docker.com/engine/reference/commandline/build/#specifying-target-build-stage---target). This post discussed how you can exploit `docker multi-stage build` to build optimal images suited for dev/test and production with a NodeJs example application.

@@ -6,6 +6,9 @@ comments: true
 categories: 
 - Misc
 cover: /images/2019-recap/2019-year-in-review.jpg
+pagetitle: A reacp of 2019
+description: A review of the professional things that happened in 2019 for me
+keywords: recap, review, year in review, 2019 in review, 2019 recap
 ---
 This is the first time I am writing a recap of a year after getting inspired by some amazing recaps. This post is a look back on all the professional things I did this year and a hint to what’s coming in 2020. Last year I did [5 most popular](https://geshan.com.np/blog/2018/12/2018-in-review-5-most-viewed-posts-of-this-year/) posts on my blog, this year is a look back at 2019. Let’s jump to the highlights
 
