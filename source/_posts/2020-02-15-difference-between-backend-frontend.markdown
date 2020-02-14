@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Difference between backend, frontend, full-stack and super stack development"
-date: 2020-02-15 06:37:59 +0000
+date: 2020-02-15 16:37:59 +0000
 comments: true
 categories: 
 - Software Engineering
@@ -34,20 +34,36 @@ From the above image, it is pretty clear, blue thing (light and dark both) are f
 
 It is clear that this is a comparison between ends and non-ends, backEND, frontEnd, full-stack, and super stack. A quick distinction is what you see rendered on the web browser is usually frontend, the languages that talks to the datastore are mostly backend. If the software work consists of both backend and frontend it can be termed full-stack. So what is the super stack work, read on... 
 
-> I will write only points for each of the web development work categories and keep it high level.
+Rather than segmenting yourself as a backend or frontend developer, let’s look at it from the work point of view. Generally, as software engineers, we are solution providers so sometimes doing some work that is not your specialty would be good. It is in our best interest to develop [T shaped skills](https://en.wikipedia.org/wiki/T-shaped_skills). Let’s jump to an overview of the types of development work.
+
+I would recommend to have a look at this popular [roadmap](https://github.com/kamranahmedse/developer-roadmap) for technologies you might want to be aware of to become a proficient frontend, backend or DevOps engineer.
+
+> I will write only points for each of the web development work categories and keep it high level. Let’s zoom in.
 
 ### Backend development
 
-Some of my observatioin about backend development
+Some of my observations about backend development:
 
-* Development work will involve working with at least one backend language like PHP, NodeJs, Ruby, Python, Java, etc which can communicate with a database/datastore. 
+* Backend development work will involve working with at least one backend language like [PHP](https://www.php.net/), [NodeJs](https://nodejs.org/en/), [Ruby](https://www.ruby-lang.org/en/), [Python](https://www.python.org/), [Java](https://www.java.com/en/), etc which can communicate with a database/datastore. 
 * Backend software development work will encompass designing of Relational databases which is generally represented as [Entity-Relationship (ER) diagrams](https://www.lucidchart.com/pages/er-diagrams)
 * Backend work will require the software engineer/developer to understand more complex concepts of the database like concurrency, [locking](https://www.methodsandtools.com/archive/archive.php?id=83) and [transactions](https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/).
-* Of course, to do backend knowledge of [SQL](https://www.khanacademy.org/computing/computer-programming/sql) will be indispensable
-* To do backend development work well knowledge of network, DNS, APIs, 
+* Of course, to do backend development knowledge of [SQL](https://www.khanacademy.org/computing/computer-programming/sql) will be indispensable
+  * Similarly the work will involve setting up and/or configuring a Relational DBMS like [Mysql](https://www.mysql.com/), [Postgres](https://www.postgresql.org/), [SQL Server](https://www.microsoft.com/en-in/sql-server/), [Oracle](https://www.oracle.com/database/), etc.
+* To do backend development work well knowledge of network, DNS, etc will also be very helpful.
+* Depending on the work, it will involve creating APIs for other consumers like a mobile application or a frontend application. Work might include building [RESTful](https://www.mulesoft.com/resources/api/what-is-rest-api-design) API or [GraphQL](https://graphql.org/). Peeking into [gRPC](https://grpc.io/) will be beneficial too.
 
+There are many things I am skipping here like knowledge of data structure and algorithms, HTTP, operating system knowledge, NoSQL database, Message Brokers, etc but that is intentional as this is an oversimplified high-level summary.
 
 ### Frontend development
+
+Following are my views on Frontend development:
+
+* Frontend development work encompasses the ability to change how things look (maybe not designing it as it will fall under [UI/UX](https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/) work), thereby includes colors, buttons, margins etc. This will be mostly [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) work.
+* Frontend work with less doubts include wrangling [HTML](https://www.w3schools.com/html/). HTML might look simple, still knowlege of latest version and [HTML 5 tags](https://www.htmlgoodies.com/tutorials/html5/new-tags-in-html5.html) like header, footer will help. Knowing [meta tags](https://www.w3schools.com/tags/tag_meta.asp) like [viewport](https://www.w3schools.com/css/css_rwd_viewport.asp) will also be great.
+* Frontend task these days will surely involve some form of [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and include working with frameworks/libraries like [Angular](https://angularjs.org/), [React](https://reactjs.org/) or [Vue](https://vuejs.org/).
+  * To do some meaningful frontend work you will need to understand [js package management](https://www.freecodecamp.org/news/javascript-package-managers-101-9afd926add0a/), module bundlers like [webpack](https://webpack.js.org/) and go through some [Javascript fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) too, best of [luck](https://lucasfcosta.com/2017/07/17/The-Ultimate-Guide-to-JavaScript-Fatigue.html) :).
+* After you survive the fatigure, Frontend work will entail consuming APIs (mainly REST APIs).
+* Frontend work in current times might involve learning some [Typescript](https://www.typescriptlang.org/), mash up some [Progressive Web Apps (PWA)](https://developers.google.com/web/progressive-web-apps) and things along these lines.
 
 ### Full-stack development
 
