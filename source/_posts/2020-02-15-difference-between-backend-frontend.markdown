@@ -69,7 +69,7 @@ I have skipped [static site generators](https://www.staticgen.com/), [web compon
 
 I would consider Mobile App development as a special category of Frontend development, that might be a discussion for another blog post.
 
-### Full-stack development 
+### Full-stack development
 
 Following is my understanding of [full-stack development](https://skillcrush.com/blog/front-end-back-end-full-stack/) work:
 
@@ -84,10 +84,10 @@ The term "full-stack developer" seems over demanding to me, I have met a couple 
  Let's unfold my views about the "super stack" development work:
 
 * Super stack development work involves not only developing the feature/app (which is full-stack ish) on your (the developers') machine but deploying it and making it accessible and scalable.
-* This type of work encompasses knowing about the servers, cloud these days and venturing into the Devops/SRE land.
-* Super stack work also includes thinking about security, employing your knowledge of things like the OWASP top 10 and writing secure code.
+* This type of work encompasses knowing about the servers, cloud these days and venturing into the [Devops](https://www.atlassian.com/devops)/[SRE](https://landing.google.com/sre/) land.
+* Super stack work also includes thinking about security, employing your knowledge of things like the [OWASP top 10](https://owasp.org/www-project-top-ten/) and writing secure code.
 
-Super stack development work focuses on real end to end delivery of the task or project. It might encompass creating and updating a CI/CD pipeline to help everyone in the team. It can also include setting up servers or kubernetes pods dependent on where and how the company you work for deploys its web applications.
+Super stack development work focuses on real end to end delivery of the task or project. It might encompass creating and updating a CI/CD pipeline to help everyone in the team. It can also include setting up servers or [kubernetes](https://kubernetes.io/) pods dependent on where and how the company you work for deploys its web applications.
 
 ## Conclusion
 
