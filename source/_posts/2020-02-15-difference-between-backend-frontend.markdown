@@ -65,9 +65,34 @@ Following are my views on Frontend development:
 * After you survive the fatigure, Frontend work will entail consuming APIs (mainly REST APIs).
 * Frontend work in current times might involve learning some [Typescript](https://www.typescriptlang.org/), mash up some [Progressive Web Apps (PWA)](https://developers.google.com/web/progressive-web-apps) and things along these lines.
 
-### Full-stack development
+I have skipped [static site generators](https://www.staticgen.com/), [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [JAM stack](https://jamstack.org/) and many other things.
+
+I would consider Mobile App development as a special category of Frontend development, that might be a discussion for another blog post.
+
+### Full-stack development 
+
+Following is my understanding of [full-stack development](https://skillcrush.com/blog/front-end-back-end-full-stack/) work:
+
+* Full-stack development is a mix of both backend and frontend development work. That mix is not all things in the backend + all things in frontend. It's a selective mix depending on the task.
+* A task will qualify as a full-stack work when it involves things like adding a field to a database table, writing backend code and changing frontend form and logic to deliver this new feature.
+* Being able to execute a full-stack task means knowing both the sides of the stack to the point that it can be carried out. It will be great to consult more experienced team members to see if anything can be improved.
+
+The term "full-stack developer" seems over demanding to me, I have met a couple of people who are real full-stack developers. Still, most of the software engineers I know "can" do full-stack tasks but identity themselves more as a backend or frontend engineer.
 
 ### Super stack development
 
+ Let's unfold my views about the "super stack" development work:
+
+* Super stack development work involves not only developing the feature/app (which is full-stack ish) on your (the developers') machine but deploying it and making it accessible and scalable.
+* This type of work encompasses knowing about the servers, cloud these days and venturing into the Devops/SRE land.
+* Super stack work also includes thinking about security, employing your knowledge of things like the OWASP top 10 and writing secure code.
+
+Super stack development work focuses on real end to end delivery of the task or project. It might encompass creating and updating a CI/CD pipeline to help everyone in the team. It can also include setting up servers or kubernetes pods dependent on where and how the company you work for deploys its web applications.
+
 ## Conclusion
 
+Some skills will be needed to do all kinds of above mentioned work like using [Git](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/), automated testing with [unit](https://geshan.com.np/blog/2016/03/there-are-only-two-types-of-automated-software-tests/) and other tests, doing meaningful [code reviews](https://geshan.com.np/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/), using [Docker](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/).
+
+This post is not about backend, frontend, full-stack, and super stack "developer", it's about the development work and skills a software engineer would need to carry out that task. 
+
+> Rather than saying I am x-end or y-stack, as software engineers if we strive to add more value to the business without overstepping responsibilities, everyone wins including our customers.
