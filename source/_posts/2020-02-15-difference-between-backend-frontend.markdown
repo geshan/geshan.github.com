@@ -77,7 +77,7 @@ Following is my understanding of [full-stack development](https://skillcrush.com
 * A task will qualify as a full-stack work when it involves things like adding a field to a database table, writing backend code and changing frontend form and logic to deliver this new feature.
 * Being able to execute a full-stack task means knowing both the sides of the stack to the point that it can be carried out. It will be great to consult more experienced team members to see if anything can be improved.
 
-The term "full-stack developer" seems over demanding to me, I have met a couple of people who are real full-stack developers. Still, most of the software engineers I know "can" do full-stack tasks but identity themselves more as a backend or frontend engineer.
+The term "full-stack developer" seems over demanding to me, I have met a couple of people who are real full-stack developers, they are [mythical](https://stackoverflow.blog/2019/10/17/imho-the-mythical-fullstack-engineer/). Still, most of the software engineers I know "can" do full-stack tasks but identity themselves more as a backend or frontend engineer.
 
 ### Super stack development
 
