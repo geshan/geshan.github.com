@@ -50,6 +50,11 @@ bin/console our-cron:command \
 
 We did a bit different variation to the above command and created a bash script where the command and name of the heartbeat were sent as parameters.
 
+#### Another SAAS
+
+We are using OpsGenie but there are other SAAS providers in the cron monitoring space too. One you can use for a single monitor for free is [Cronitor.io](https://cronitor.io/). In addition to [cron monitoring](https://cronitor.io/
+cron-job-monitoring), Cronitor provides simple [uptime monitoring](https://cronitor.io/uptime-monitoring) for websites and APIs. It also has a handy CLI tool to import your existing crontab and send it to Cronitor.
+
 ### So what issues did it solve?
 
 * There is no need to pull an extra library/package just to do a curl. Like OpsGenie PHP client which I had considered pulling in initially :)
