@@ -52,8 +52,7 @@ We did a bit different variation to the above command and created a bash script 
 
 #### Another SAAS
 
-We are using OpsGenie but there are other SAAS providers in the cron monitoring space too. One you can use for a single monitor for free is [Cronitor.io](https://cronitor.io/). In addition to [cron monitoring](https://cronitor.io/
-cron-job-monitoring), Cronitor provides simple [uptime monitoring](https://cronitor.io/uptime-monitoring) for websites and APIs. It also has a handy CLI tool to import your existing crontab and send it to Cronitor.
+We are using OpsGenie but there are other SAAS providers in the cron monitoring space too. One you can use for a single monitor for free is [Cronitor.io](https://cronitor.io/). In addition to [cron monitoring](https://cronitor.io/cron-job-monitoring), Cronitor provides simple [uptime monitoring](https://cronitor.io/uptime-monitoring) for websites and APIs. It also has a handy CLI tool to import your existing crontab and send it to Cronitor.
 
 ### So what issues did it solve?
 
