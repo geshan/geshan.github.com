@@ -81,7 +81,7 @@ Following is my understanding of [full-stack development](https://skillcrush.com
 
 The term "full-stack developer" seems over demanding to me, I have met a couple of people who are real full-stack developers, they are [mythical](https://stackoverflow.blog/2019/10/17/imho-the-mythical-fullstack-engineer/). Still, most of the software engineers I know "can" do full-stack tasks but identify themselves more as a backend or frontend engineer.
 
-> Learning Javascript very well can give you an edge when doing full-stack work. Javascript is the only langauge that can be used both on the backend (NodeJs) and frontend (with segmentation on the framework side). 
+> Learning Javascript very well can give you an edge when doing full-stack work. Javascript is the only language that can be used both on the backend (NodeJs) and frontend (with segmentation on the framework side).
 
 Typescript is [exploding in popularity](https://redmonk.com/jgovernor/2019/05/07/typescriptexploding/) which can be used in both backend and frontend.
 
