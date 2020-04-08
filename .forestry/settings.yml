@@ -16,7 +16,7 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public
-  install_dependencies_command: rake generate
+  install_dependencies_command: bundle install && rake generate
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
   working_dir: "/srv"
