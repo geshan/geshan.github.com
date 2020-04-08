@@ -1,0 +1,31 @@
+---
+label: blog-post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: boolean
+  name: comments
+  label: comments
+- type: list
+  name: categories
+  label: categories
+- type: file
+  name: cover
+  label: cover
+- type: text
+  name: pagetitle
+  label: pagetitle
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: keywords
+  label: keywords
