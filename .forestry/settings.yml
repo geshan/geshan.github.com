@@ -5,19 +5,19 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: source/_posts
+  path: posts
   label: Posts
   create: all
   match: "**/*"
-upload_dir: source/images
+upload_dir: images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_output_directory: public
-  install_dependencies_command: bundle install && rake generate
-  preview_docker_image: forestryio/ruby:2.6
+  preview_output_directory: _site
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: rake preview
+  instant_preview_command: npx eleventy --serve

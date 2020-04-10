@@ -1,5 +1,5 @@
 ---
-label: blog-post
+label: post
 hide_body: false
 fields:
 - type: text
@@ -15,8 +15,8 @@ fields:
   name: comments
   label: comments
 - type: list
-  name: categories
-  label: categories
+  name: tags
+  label: tags
 - type: file
   name: cover
   label: cover

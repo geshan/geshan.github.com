@@ -1,0 +1,8 @@
+<footer role="contentinfo">
+    <div class="container">
+        <div>
+          {% set lastPost = collections.posts | head(-1) %}
+            <p class="text-muted credits"> Copyright © {{ lastPost[0].year }} - Geshan Manandhar</p>
+        </div>
+    </div>
+</footer>

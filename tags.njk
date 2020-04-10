@@ -1,0 +1,23 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/home.njk
+renderData:
+  title: Category “{{ tag }}”
+permalink: /blog/categories/{{ tag | slug }}/
+---
+<article role="article">
+  <header class="page-header"><h1 class="entry-title"> Category: {{tag}}</h1></header>
+  {% set postslist = collections[ tag ] %}
+  {% include "postslist-h3.njk" %}
+  <p>See <a href="{{ '/blog/categories/' | url }}">all tags</a>.</p>
+</article>

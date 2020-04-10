@@ -1,0 +1,14 @@
+---
+layout: layouts/home.njk
+permalink: /blog/archives/
+eleventyNavigation:
+  key: Timeline
+  order: 2
+---
+<article role="article">
+  <header class="page-header">
+    <h1 class="entry-title">Blog Timeline</h1>
+  </header>
+{% set postslist = collections.posts %}
+{% include "postslist-h3.njk" %}
+</article>

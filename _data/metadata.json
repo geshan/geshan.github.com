@@ -1,0 +1,17 @@
+{
+  "title": "Geshan's Blog",
+  "url": "https://geshan.com.np/",
+  "description": "A blog about software engineering, devops and web development covering topics like php, javascript, docker, microservices etc.",
+  "feed": {
+    "subtitle": "A blog about software engineering, devops and web development",
+    "filename": "atom.xml",
+    "path": "/atom.xml",
+    "id": "https://geshan.com.np/"
+  },
+  "author": {
+    "name": "Geshan Manandhar",
+    "email": "geshan@gmail.com"
+  },
+  "defaultCoverImage": "/images/generic/blog.jpg",
+  "disqusShortname" : "geshanblog"
+}

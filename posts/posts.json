@@ -1,0 +1,7 @@
+{
+  "tags": [
+    "posts"
+  ],
+  "permalink": "/blog/{{ page.date | yearMonth }}/{{ page.fileSlug }}/",
+  "templateClass": "tmpl-post"
+}

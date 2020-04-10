@@ -1,0 +1,12 @@
+{% if date %}
+<time datetime="{{ date | getSitemapDate }}" data-updated="true" itemprop="datePublished dateCreated">
+    <time class="entry-date" datetime="{{ date | getSitemapDate }}">
+      <span class="date">
+        {{ date | displayDate }} 
+        {% if post.templateContent %}
+          (about a {{ helpers.getReadingTime(post.templateContent) }} minute read)
+        {% endif %}
+      </span>
+    </time>
+</time>
+{% endif %}

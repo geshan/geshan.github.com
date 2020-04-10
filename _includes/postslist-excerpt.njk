@@ -1,0 +1,23 @@
+<div class="blog-index">
+  {% for post in postslist | reverse %}
+    <article class="post" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <header class="page-header"><h2 class="entry-title" itemprop="name headline">
+        <a href="{{ post.url }}" itemprop="url">
+          {{ post.data.title }}
+        </a>
+        </h2><p class="meta text-muted text-uppercase"> 
+          <span class="glyphicon glyphicon-calendar">
+          </span>
+          {% set date = post.date %}
+          {% include "components/posted-date-time.njk" %}
+          | <a href="{{post.url}}#disqus_thread" itemprop="discussionUrl" data-disqus-identifier="{{ post.url }}">Comments</a></p>
+      </header>
+      <div class="entry-content clearfix" itemprop="articleBody description">
+        {% excerptMore post %}
+      </div>
+      <footer>
+        <a class="btn btn-default" href="{{ post.url }}">Read on →</a>
+      </footer>
+    </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,32 @@
+{% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+
+<meta charset="utf-8">
+<meta name="author" content="{{ metadata.author.name }}">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ renderData.description or description or metadata.description }}">
+<meta name="keywords" content="{{ renderData.keywords or keywords or metadata.keywords }}">
+
+<meta name="p:domain_verify" content="e654c68562abebfa25c291f59d7d00e8" />
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ absolutePostUrl }}">
+<meta property="og:title" content="{{ title or page.title or metadata.title }}">
+<meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
+<meta property="og:site_name" content="{{ metadata.title }}" />
+{% set coverImage %}{{ cover or metadata.defaultCoverImage }}{% endset %}
+<meta property="og:image" content="{{ coverImage | url | absoluteUrl(metadata.url) }}" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:widgets:new-embed-design" content="on">
+<meta name="twitter:site" content="@geshan">
+<meta name="twitter:creator" content="@geshan">
+<meta name="twitter:title" content="{{ title or page.title or metadata.title }}">
+<meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
+<meta name="twitter:image:src" content="{{ coverImage | url | absoluteUrl(metadata.url) }}" />
+
+<link rel="canonical" href="{{ absolutePostUrl }}">
+
+<meta property="fb:pages" content="30717799226" />
+<meta property="fb:app_id" content="106030259434380" />
