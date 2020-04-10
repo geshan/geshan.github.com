@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: ''
+  label: Home
+  create: all
+  match: "**/index.md"
+- type: directory
   path: about
   label: About
   create: all
