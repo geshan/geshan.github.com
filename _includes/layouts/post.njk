@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+<meta itemprop="name" content="Geshan's Blog">
+<meta itemprop="description" content="A blog about software engineering, devops and web development covering topics like php, javascript, docker, microservices etc">
+<meta itemprop="url" content="https://geshan.com.np">
+<article class="hentry" role="article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class-"page-header">
+    <h1 class="entry-title" itemprop="name headline">{{ title }}</h1>
+    <p class="meta text-muted">
+    {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute read)
+    </p>
+    </header>
+    <div class="entry-content clearfix" itemprop="articleBody description">
+        {{ content | safe }}
+    </div>
+    <footer>
+        <p class="meta text-muted">
+          <span class="glyphicon glyphicon-user"></span>
+          <span class="byline author vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">{{ metadata.author.name }}</span></span>
+          <span class="glyphicon glyphicon-calendar"></span>
+          {% include "components/posted-date-time.njk" %}
+        <div class="shareaholic-canvas" data-app="share_buttons" data-app-id="11665322"></div>
+        <ul class="meta text-muted pager">
+            {% if prevPost.url %}
+              <li class="previous"><a href="{{ prevPost.url }}" title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
+            {% endif %}
+            {% if nextPost.url %}
+              <li class="next"><a href="{{ nextPost.url }}" title="Next Post: {{ nextPost.data.title }}">"{{ nextPost.data.title }}" »</a></li>
+            {% endif %}
+        </ul>
+    </footer>
+</article>
+<section>
+    {%- if templateClass == "tmpl-post" -%}
+    <h3>Comments</h3>
+    <div id="disqus_thread" aria-live="polite"></div>
+    <script defer>
+    var disqus_config = function () {
+      this.page.url = "{{ page.url | url | absoluteUrl(metadata.url) }}";
+      this.page.identifier = "{{ page.fileSlug }}";
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://{{ metadata.disqusShortname }}.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>  
+    {%- endif -%}
+</section>

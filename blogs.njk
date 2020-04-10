@@ -1,0 +1,20 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Blog
+  order: 1
+pagination:
+    data: collections.latestPosts
+    size: 5
+permalink: "/posts/{{ pagination.pageNumber + 1  }}/index.html"
+---
+{% set postslist = pagination.items | reverse %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist-excerpt.njk" %}
+<ul class="pager">
+    {% if pagination.href.previous %}<li class="previous"><a href="{{ pagination.href.previous }}">←&nbsp;Newer</a></li>{% endif %}
+    <li><a href="/blog/archives">Timeline</a></li>
+    {% if pagination.href.next %}<li class="next"><a href="{{ pagination.href.next }}">Older&nbsp;→</a></li>{% endif %}
+</ul>
+
+<p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>

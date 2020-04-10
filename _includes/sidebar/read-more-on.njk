@@ -1,0 +1,14 @@
+
+<section class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Read more on</h3></div>
+    <div class="list-group">
+    {%- set allowedTags = ['devops', 'misc', 'software engineering', 'talks', 'web development'] -%}
+    {%- for tag in collections.tagList | sort  -%}
+      {%- if tag | lower in allowedTags -%}
+      {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
+        <a class="list-group-item{% if tagUrl == page.url %} active{% endif %}" href="{{ tagUrl}}" title="{{ tag }}"><span class="badge">{{ collections[ tag ] | length }}</span>{{ tag | lower }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+    </div>
+</section>
