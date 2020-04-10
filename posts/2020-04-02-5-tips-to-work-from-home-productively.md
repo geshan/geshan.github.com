@@ -13,7 +13,7 @@ keywords: work from home tips, tips for work from home, work from home, work fro
   home productively
 
 ---
-2020 is a year of unprecedented things. COVID-19 (coronavirus) has already infected more than [a million](https://ncov2019.live/ "a million") people worldwide and it is not slowing down. Because of the mandatory quarantine and social distancing, many people are working from home for the first time in their lives. I have worked from home 3 days a week for 8 months out of the last 12 months. It was like switching to a full 5 days a week mode from 60%. Some people now have worked days or weeks from home, so this post will unveil 5 actionable things to work from home productively and more efficiently.
+2020 is a year of unprecedented things. COVID-19 (coronavirus) has already infected more than [1.5 million](https://ncov2019.live/ "1.5 million") people worldwide and it is not slowing down. Because of the mandatory quarantine and social distancing, many people are working from home for the first time in their lives. I have worked from home 3 days a week for 8 months out of the last 12 months. It was like switching to a full 5 days a week mode from 60%. Some people now have worked days or weeks from home, so this post will unveil 5 actionable things to work from home productively and more efficiently.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/work-from-home-tips/01work-from-home-tips.jpg" title="5 tips to work from home productively and efficiently" alt="5 tips to work from home productively">
 
