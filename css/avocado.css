@@ -8869,6 +8869,7 @@ a {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
+    clear: both;
     border-color: #adadad
 }
 
@@ -8912,6 +8913,8 @@ article > div > footer {
     border-right: solid 5px transparent;
     border-bottom: solid 5px #000;
 }
+
+
 
 /** eleventy stuff */
 
