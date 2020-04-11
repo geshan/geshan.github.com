@@ -1,0 +1,10 @@
+{
+	"name" : "Geshan.com.np",
+	"short_name" : "Geshan.com.np",
+	"description" : "A blog about software engineering, devops and web development.",
+	"start_url" : "/",
+	"display" : "fullscreen",
+	"orientation" : "landscape",
+	"lang" : "English",
+	"background_color" : "#fff"
+}
