@@ -32,6 +32,7 @@
     "markdown-it-anchor": "^5.2.5"
   },
   "dependencies": {
-    "eleventy-plugin-blog-tools": "^0.3.0"
+    "eleventy-plugin-blog-tools": "^0.3.0",
+    "html-minifier": "^4.0.0"
   }
 }
