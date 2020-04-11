@@ -1,0 +1,13 @@
+<link rel="manifest" href="/manifest.json" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="application-name" content="Geshan.com.np" />
+<meta name="apple-mobile-web-app-title" content="Geshan.com.np" />
+<meta name="msapplication-starturl" content="/index.html" />
+<meta name="theme-color" content="#fff">
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js");
+  }
+</script>

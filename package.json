@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "eleventy-plugin-blog-tools": "^0.3.0",
+    "eleventy-plugin-pwa": "^1.0.8",
     "html-minifier": "^4.0.0"
   }
 }

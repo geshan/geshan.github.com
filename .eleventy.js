@@ -7,12 +7,14 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const blogTools = require("eleventy-plugin-blog-tools");
 const htmlmin = require("html-minifier");
+const pluginPWA = require("eleventy-plugin-pwa");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(blogTools);
+  eleventyConfig.addPlugin(pluginPWA);
 
   eleventyConfig.setDataDeepMerge(true);
 
