@@ -94,6 +94,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy({ "root": "/" });
+  eleventyConfig.addPassthroughCopy("admin-blog");
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath && outputPath.endsWith(".html") ) {
