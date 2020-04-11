@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  eleventy-blog:
+    build:
+      context: .
+    command: "npm run serve"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
+    environment:
+      - NODE_ENV=dev
