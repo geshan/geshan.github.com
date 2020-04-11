@@ -36,7 +36,7 @@ They don't depend on any external dependencies. External dependencies include fi
 or any third party API or service. Unit tests even mock the other code elements they need like other classes and its methods. 
 This makes the test focused on one unit and they run in milliseconds/seconds not minutes. A simple example is below:
 
-<script src="http://gist-it.appspot.com/http://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php"></script>
+<script src="https://gist-it.appspot.com/http://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php"></script>
 
 You can view the full code [here](http://github.com/geshan/dataprovider-example), yes it is a simple class with no code or external dependency.
 
