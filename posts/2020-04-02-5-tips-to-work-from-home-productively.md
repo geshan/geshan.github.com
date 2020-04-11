@@ -29,7 +29,7 @@ Create a [dedicated workspace](https://www.entrepreneur.com/article/207306) with
 
 ### 2. Know your tools and tech
 
-It goes without saying that a slow internet connection will ruin your work from home experience. If you can get a faster internet connection, this is needed for all the video conferencing calls and meetings you are going to have. Depending on the tech and software you use get used to the tips and tricks of those software products. For example this [push to talk](https://support.zoom.us/hc/en-us/articles/360000510003-Push-to-Talk) feature in Zoom was very useful for me. Other things like turning your camera on and knowing how and when to use screen sharing are also very helpful to be more productive and stay efficient.
+It goes without saying that a slow internet connection will ruin your work from home experience. If you can get a faster internet connection, this is needed for all the video conferencing calls and meetings you are going to have. Depending on the tech and software you use, get used to the tips and tricks of those software products. For example, this [push to talk](https://support.zoom.us/hc/en-us/articles/360000510003-Push-to-Talk) feature in Zoom was very useful for me. Other things like turning your camera on and knowing how and when to use screen sharing are also very helpful to be more productive and stay efficient.
 
 ### 3. Set boundaries and have fixed hours
 
@@ -41,7 +41,7 @@ Midday or end of the day don’t forget to do some digital detox, maybe take a w
 
 ### 5. Watch what you are eating
 
-Last but certainly not the least, keep an eye on what you are [eating](https://twitter.com/JamesTechRec/status/1239847703594405888). Because you are at home 5 or more days a week, that should not equate to over-snacking each day:). Yes you will be eating more than being at the office. Balance it up with a fruit/veg only lunch or something light. The best thing would be to have a specific time set aside for eating and not eat at your [desk](https://risepeople.com/blog/7-reasons-why-eating-lunch-at-your-desk-is-a-bad-idea/) to clear your brain fog.
+Last but certainly not least, keep an eye on what you are [eating](https://twitter.com/JamesTechRec/status/1239847703594405888). Because you are at home 5 or more days a week, that should not equate to over-snacking each day:). Yes, you will be eating more than being at the office. Balance it up with a fruit/veg only lunch or something light. The best thing would be to have a specific time set aside for eating and not eat at your [desk](https://risepeople.com/blog/7-reasons-why-eating-lunch-at-your-desk-is-a-bad-idea/) to clear your brain fog.
 
 ## Expert advice
 
