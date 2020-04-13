@@ -17,6 +17,8 @@ The web has been around for a while now. I have been building websites for 20 ye
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/static-vs-dynamic-website/01static-vs-dynamic-vs-jam-stack.jpg" title="Static vs dynamic website, JAM stack in between with tech and cost considerations" alt="Static vs dynamic website, JAM stack in between with tech and cost considerations">
 
+<!-- more -->
+
 ## Prerequisites
 
 This blog post is written for a reader who knows the following:
@@ -26,8 +28,6 @@ This blog post is written for a reader who knows the following:
 * General know-how of how a website and DNS works would be beneficial.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/static-vs-dynamic-website/02static-vs-dynamic-vs-jam-stack.jpg" title="HTML Code" alt="HTML Code - at the end all website are HTML, CSS and JS :)">
-
-<!-- more -->
 
 ## Dynamic Website
 
