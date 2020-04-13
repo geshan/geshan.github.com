@@ -7,7 +7,7 @@ tags:
 - Web Development
 cover: "/images/static-vs-dynamic-website/01static-vs-dynamic-vs-jam-stack.jpg"
 pagetitle: Static vs dynamic website, JAM stack in between [has tech and cost considerations]
-description: This post explain the main differences between Static, dynamic and JAM
+description: This post explains the main differences between Static, dynamic and JAM
   stack websites. It also covers the technical and cost aspects of all 3 options.
 keywords: static vs dynamic website, difference between static and dynamic web page,
   jamstack, jam stack,dynamic vs static website, static site generators
