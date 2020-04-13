@@ -89,8 +89,15 @@ With an array of new offerings and SAAS, a JAM stack website can be running pote
 
 Let's summarize the key difference of Dynamic, Static and JAM Stack website below:
 
-Tables are not yet supported.  
-Click **View Source** above to edit this table.
+| Criteria                                                          | Dynamic Website | Static Website                                                                 | JAM Stack website                           |
+|-------------------------------------------------------------------|:---------------:|--------------------------------------------------------------------------------|---------------------------------------------|
+| *Needs a web server?*                                             |  Definitely Yes | Generally Yes                                                                  | No (it is outsourced)                       |
+| *Uses a backend language?*                                        | Definitely Yes  | No                                                                             | No                                          |
+| *Needs a database server?*                                        | Definitely Yes  | No                                                                             | No                                          |
+| *Is served with Static Flat files/ Uses a static site generator?* | No              | Yes                                                                            | Yes                                         |
+| *Easy and fast to add or edit content?*                           | Yes             | No                                                                             | Yes (if configured with a CMS)              |
+| *Talks to other APIs?*                                            | May do it       | Generally No                                                                   | Generally Yes                               |
+| *General monthly Running Cost*                                    | $5 - More       | $[2.5](https://reclaimhosting.com/shared-hosting/) - More (depending on usage) | $0 - More (depending on SAAS subscriptions) |
 
 ## Conclusion
 
