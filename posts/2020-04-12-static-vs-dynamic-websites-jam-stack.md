@@ -27,6 +27,8 @@ This blog post is written for a reader who knows the following:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/static-vs-dynamic-website/02static-vs-dynamic-vs-jam-stack.jpg" title="HTML Code" alt="HTML Code - at the end all website are HTML, CSS and JS :)">
 
+<!-- more -->
+
 ## Dynamic Website
 
 On a dynamic website, the webserver responds with a web page content generated dynamically on each request tailored for the user. From a content editor's point of view, adding and editing content is easy and does not require more technical knowledge like knowing HTML for instance.
