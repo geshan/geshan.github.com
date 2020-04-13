@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Static vs dynamic website with JAM stack website in between
-date: 2020-04-12T21:35:47.000+00:00
+date: 2020-04-12T11:35:47Z
 comments: true
 tags:
 - Web Development
@@ -47,7 +47,7 @@ A dynamic website will cost more money upfront to be built. It will also entail 
 
 For a static website, the webserver responds with the same fixed content for every request regardless of the user. From a content editor's point of view, adding and editing content is not easy and requires more technical knowledge like knowing HTML and CSS. Data is pulled in only from static flat HTML  files.
 
-> Adding or editing website content will take longer than Dynamic websites. It will involve a "deployment" process for each change for a pure static website.
+> Adding or editing website content will take longer than Dynamic websites. It will involve a "deployment" process for each change for a purely static website.
 
 The first [CERN](http://info.cern.ch/hypertext/WWW/TheProject.html) website is static.
 
@@ -89,18 +89,18 @@ With an array of new offerings and SAAS, a JAM stack website can be running pote
 
 Let's summarize the key difference of Dynamic, Static and JAM Stack website below:
 
-| Criteria                                                          | Dynamic Website | Static Website                                                                 | JAM Stack website                           |
-|-------------------------------------------------------------------|:---------------:|--------------------------------------------------------------------------------|---------------------------------------------|
-| *Needs a web server?*                                             |  Definitely Yes | Generally Yes                                                                  | No (it is outsourced)                       |
-| *Uses a backend language?*                                        | Definitely Yes  | No                                                                             | No                                          |
-| *Needs a database server?*                                        | Definitely Yes  | No                                                                             | No                                          |
-| *Is served with Static Flat files/ Uses a static site generator?* | No              | Yes                                                                            | Yes                                         |
-| *Easy and fast to add or edit content?*                           | Yes             | No                                                                             | Yes (if configured with a CMS)              |
-| *Talks to other APIs?*                                            | May do it       | Generally No                                                                   | Generally Yes                               |
-| *General monthly Running Cost*                                    | $5 - More       | $[2.5](https://reclaimhosting.com/shared-hosting/) - More (depending on usage) | $0 - More (depending on SAAS subscriptions) |
+| Criteria | Dynamic Website | Static Website | JAM Stack website |
+| --- | :---: | --- | --- |
+| Needs a web server? | Definitely Yes | Generally Yes | No (it is outsourced) |
+| Uses a backend language? | Definitely Yes | No | No |
+| Needs a database server? | Definitely Yes | No | No |
+| Is served with Static Flat files/ Uses a static site generator? | No | Yes | Yes |
+| Easy and fast to add or edit content? | Yes | No | Yes (if configured with a CMS) |
+| Talks to other APIs? | May do it | Generally No | Generally Yes |
+| General monthly Running Cost | $5 - More | $2.5 - More (depending on usage) | $0 - More (depending on SAAS subscriptions) |
 
 ## Conclusion
 
-Selecting between a dynamic, pure static or a Static Site Generator (SSG) compiled JAM stack will depend on what you want to build, knowing their differences will certainly help.
+Selecting between a dynamic, purely static or a Static Site Generator (SSG) compiled JAM stack will depend on what you want to build, knowing their differences will certainly help.
 
-> If you are building a small personal blog go with a JAM stack website, if you want to build a full on e-commerce website probably a dynamic website is your best bet. A pure Static web would be advisable for something that is “build and forget”, or needs changes like once a quarter.
+> If you are building a small personal blog go with a JAM stack website, if you want to build a full on e-commerce website probably a dynamic website is your best bet. A purely Static web would be advisable for something that is “build and forget”, or needs changes like once a quarter.
