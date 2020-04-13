@@ -41,7 +41,7 @@ Dynamic websites from a technical standpoint require more than just HTML and CSS
 
 ### Cost for running a dynamic website
 
-Dynamic Website will cost more money upfront to be built. It will also entail a larger recurring running cost for the database, web space, web server and other things you choose to include for your dynamic website. Recurring costs for running a dynamic website can range from 5 to thousands of dollars a month depending on the traffic and resources used to run the website. For example a small Dynamic website can be hosted on a digital ocean droplet for $5 a month.
+A dynamic website will cost more money upfront to be built. It will also entail a larger recurring running cost for the database, web space, web server and other things you choose to include for your dynamic website. Recurring costs for running a dynamic website can range from 5 to thousands of dollars a month depending on the traffic and resources used to run the website. For example, a small Dynamic website can be hosted on a digital ocean droplet for $5 a month.
 
 ## Static website
 
@@ -49,11 +49,11 @@ For a static website, the webserver responds with the same fixed content for eve
 
 > Adding or editing website content will take longer than Dynamic websites. It will involve a "deployment" process for each change for a pure static website.
 
-The first [CERN](http://info.cern.ch/hypertext/WWW/TheProject.html) website is a static website.
+The first [CERN](http://info.cern.ch/hypertext/WWW/TheProject.html) website is static.
 
 ### Technical aspects of a static website
 
-Static websites from a technical point of view are just a collection of HTML and CSS files. It may have some client-side JavaScript. There would be no backend language or an external data store. For a pure static website a full-blown database dependent CMS is also not in the scope. There are [Static Site Generators](https://www.staticgen.com/) that can help manage the content still deployment and Git is something technical to learn. The main advantages of a static website would be speed, security, and scalability.
+Static websites from a technical point of view are just a collection of HTML and CSS files. It may have some client-side JavaScript. There would be no backend language or an external data store. For a purely static website a full-blown database dependent, CMS is also not in the scope. There are [Static Site Generators](https://www.staticgen.com/) that can help manage the content still deployment and Git is something technical to learn. The main advantages of a static website would be speed, security, and scalability.
 
 ### Cost for running a static website
 
@@ -75,13 +75,13 @@ JAM stack term was coined by Mathias Biilman, the co-founder and CEO of Netlify,
 
 ### Technical aspects of a JAM stack website
 
-JAM stack websites from a technical side are still a collection of HTML and CSS files. It will have some client-side JavaScript to talk with external APIs. There would be no backend language or external database for the website but it will communicate with other API to get and store data. 
+JAM stack websites from a technical side are still a collection of HTML and CSS files. It will have some client-side JavaScript to talk with external APIs. There would be no backend language or external database for the website but it will communicate with other API to get and store data.
 
 > The main advantages of a JAM stack website would be ease of editing, speed, security, scalability and better developer experience.
 
 ### Cost for running a JAM stack website
 
-A JAM stack website could cost less to build than a dynamic website. Updating content on a JAM configured properly with a headless CMS would be a simple task. As a static website would not generally require a dedicated database, the monthly running cost would be higher than a static website but lower than a dynamic one. 
+A JAM stack website could cost less to build than a dynamic website. Updating content on a JAM configured properly with a headless CMS would be a simple task. As a static website would not generally require a dedicated database, the monthly running cost would be higher than a static website but lower than a dynamic one.
 
 With an array of new offerings and SAAS, a JAM stack website can be running potentially free too. For example, a JAM website can be hosted on [Netlify](https://www.netlify.com/) with [Forestry](https://forestry.io/) as a CMS for no monthly cost but with limits. You can also explore [Stackbit](https://www.stackbit.com/) to put it all together and get a website working with just clicks.
 
@@ -89,15 +89,8 @@ With an array of new offerings and SAAS, a JAM stack website can be running pote
 
 Let's summarize the key difference of Dynamic, Static and JAM Stack website below:
 
-| Criteria | Dynamic Website | Static Website | JAM Stack website |
-| --- | :---: | --- | --- |
-| Needs a web server? | Definitely Yes | Generally Yes | No (it is outsourced) |
-| Uses a backend language? | Definitely Yes | No | No |
-| Needs a database server? | Definitely Yes | No | No |
-| Is served with Static Flat files/ Uses a static site generator? | No | Yes | Yes |
-| Easy and fast to add or edit content? | Yes | No | Yes (if configured with a CMS) |
-| Talks to other APIs? | May do it | Generally No | Generally Yes |
-| General monthly Running Cost | $5 - More | $2.5 - More (depending on usage) | $0 - More (depending on SAAS subscriptions) |
+Tables are not yet supported.  
+Click **View Source** above to edit this table.
 
 ## Conclusion
 
