@@ -13,5 +13,6 @@
     "email": "geshan@gmail.com"
   },
   "defaultCoverImage": "/images/generic/blog.jpg",
-  "disqusShortname" : "geshanblog"
+  "disqusShortname" : "geshanblog",
+  "gaId": "UA-56310304-1"
 }
