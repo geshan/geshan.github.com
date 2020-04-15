@@ -6,6 +6,10 @@
 <meta name="msapplication-starturl" content="/index.html" />
 <meta name="theme-color" content="#fff">
 
+<link rel="preload" href="/workbox-v4.3.1/workbox-sw.js" as="script">
+<link rel="preload" href="/workbox-v4.3.1/workbox-core.prod.js" as="script">
+<link rel="preload" href="/workbox-v4.3.1/workbox-precaching.prod.js" as="script">
+
 <script>
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/service-worker.js");
