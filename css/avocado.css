@@ -8692,9 +8692,13 @@ article img:not(.no-border) {
 }
 
 .navbar-default {
-    background-color: unset;
+    background-color: #fff;
     border: none;
-    padding-top: 1.2rem
+    padding-top: 1.2rem;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    width: 100%;
 }
 
 .navbar-default .navbar-brand,
@@ -8902,7 +8906,7 @@ article > div > footer {
 .nav>li.active:after {
     content:'';
     position: absolute;
-    top: 100%;
+    top: 75%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -8912,8 +8916,6 @@ article > div > footer {
     border-right: solid 5px transparent;
     border-bottom: solid 5px #000;
 }
-
-
 
 /** eleventy stuff */
 
@@ -8950,3 +8952,24 @@ h1:hover a.direct-link, h2:hover a.direct-link, h3:hover a.direct-link, h4:hover
   text-decoration: none;
 }
 
+/* fixed header */
+div#content {
+  padding-top: 65px;
+}
+
+/* progress bar */
+
+div.progress-container {
+  width: 100%;
+  height: 4px;
+  background: var(--gray);
+  position: fixed;
+  top: 62px;
+  z-index: 99;
+}
+  
+div.progress-bar {
+  height: 4px;
+  background: var(--lightgreen);
+  width: 0%;
+}
