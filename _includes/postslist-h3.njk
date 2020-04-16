@@ -4,12 +4,12 @@
         {% set postslist = postslist | reverse %}
         {% for post in postslist %}
         {%- if loop.index == 1  or postslist[ loop.index0 - 1 ].year != post.year -%} <h2>{{ post.year }}</h2> {%- endif -%}
-                <article class="page-header" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
-                    <h3 itemprop="name headline">
-                        <a href="{{ post.url | url }}" itemprop="url">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+                <article class="page-header">
+                    <h3>
+                        <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
                     </h3>
                     <p class="meta text-muted"> <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="{{ date | getSitemapDate }}" data-updated="true" itemprop="datePublished dateCreated">
+                    <time datetime="{{ date | getSitemapDate }}" data-updated="true">
                         <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
                             {{ post.date | displayDate }} |
                             (about a {{ helpers.getReadingTime(post.templateContent) }} minute read)
