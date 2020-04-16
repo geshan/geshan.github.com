@@ -27,7 +27,7 @@ to logging and git.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/3-podcasts-part-2/software-engineering-daily-podcast.jpg" title="Software Engineering Daily podcast" alt="Software Engineering Daily podcast">
 
-## [Scale your code](https://scaleyourcode.com/interviews)
+## Scale your code
 
 Christophe Limpalair hosts Scale your code podcast. A new episode usually arrives every 15 days. He also interviews known
 tech personalities. The podcast covers a wide array of topics from open source to performance. This podcast informs

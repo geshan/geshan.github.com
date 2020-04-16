@@ -29,9 +29,9 @@ Now, as you are excited to submit your ideas in the form of papers let's see whe
 Below are some of the websites that inform you about Call For Papers (CFP):
 
 1. [Papercall.io](http://papercall.io/) - You can also submit your papers from this web application. Generally, lists only tech conferences. You can get a weekly update about events listed in PaperCall.io subscribing to [The Weekly CFP](http://theweeklycfp.com/).
-1. [Lanyrd.com/calls](http://lanyrd.com/calls/) - Lists call for speakers for a lot of events. Events/Conferences are both tech and non-tech.
+1. Lanyrd.com/calls - Lists call for speakers for a lot of events. Events/Conferences are both tech and non-tech.
 1. [CallingAllPapers.com](http://callingallpapers.com/) - Lists all call for papers with days left marker sorted with a deadline. It has only tech conferences listed.
-1. [The CFP Report](https://thecfpreport.com/) - Sends a weekly with all tech paper calls. You can even select the day of the week you want the email, I get it each Friday :)
+1. The CFP Report - Used to send a weekly with all tech paper calls. You can even select the day of the week you want the email, I get it each Friday :)
 
 ## First time speaker? Content is king
 
