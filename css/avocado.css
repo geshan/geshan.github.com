@@ -303,25 +303,6 @@ th {
     }
 }
 
-@font-face {
-    font-family: &#8217;
-    Glyphicons Halflings&#8217;
-    ;
-    src: url(../assets/bootstrap/dist/fonts/glyphicons-halflings-regular.eot);
-    src: url(../assets/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix) format(&#8216;
-    embedded-opentype&#8217;
-    ),
-    url(../assets/bootstrap/dist/fonts/glyphicons-halflings-regular.woff) format(&#8216;
-    woff&#8217;
-    ),
-    url(../assets/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf) format(&#8216;
-    truetype&#8217;
-    ),
-    url(../assets/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format(&#8216;
-    svg&#8217;
-    )
-}
-
 .glyphicon {
     position: relative;
     top: 1px;

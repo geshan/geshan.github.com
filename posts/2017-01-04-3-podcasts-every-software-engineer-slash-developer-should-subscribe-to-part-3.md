@@ -25,7 +25,7 @@ Sometimes they even bring in guests which is like a cherry on the cake. The last
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/3-podcasts-part-3/to-be-continuous.jpg" title="To Be Continuous Podcast" alt="To Be Continuous Podcast">
 
-## [Tech People by Gistia Labs](http://www.gistia.com/techpeople/)
+## Tech People by Gistia Labs
 
 In-depth interviews is what tech people by Gistia Labs podcast excels on. They bring in leaders from the
 tech industry to discuss topics from Angular in the enterprise to UX for Lean startup.

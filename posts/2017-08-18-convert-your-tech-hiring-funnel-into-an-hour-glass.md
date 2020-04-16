@@ -40,7 +40,7 @@ It works well at the 10s scale but I am not sure how good will it will work at t
 
 ## The hourglass transformation
 
-If you spend so much time hiring a good candidate but do not have a great on-boarding procedure you are doing something wrong.  Listen to [this](https://blog.fogcreek.com/how-to-onboard-software-engineers-interview-with-kate-heddleston/) amazing podcast/interview with Kate Heddleston to get more idea about tech role on-boarding. After a smooth on-boarding process, I think the following things matter for retaining tech talent:
+If you spend so much time hiring a good candidate but do not have a great on-boarding procedure you are doing something wrong.  Listen to this amazing [talk]((https://www.kateheddleston.com/talk/ef464595-b113-4c1b-9c5b-cc1f3681055c)) by Kate Heddleston to get more idea about tech role on-boarding. After a smooth on-boarding process, I think the following things matter for retaining tech talent:
 
 1. Motivation is always important. Bluntly put "money talks". If you are not able to pay your software engineers good money (at least as per market rates) they will look for other opportunities.
 1. Software engineers and generally other tech roles crave for challenges. New things, shiny technology attracts us tech people. So keeping your software stack up to date will help retain tech talent.
