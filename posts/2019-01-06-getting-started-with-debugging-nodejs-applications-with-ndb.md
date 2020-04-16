@@ -39,7 +39,7 @@ I am using my opensource [currency API](https://github.com/geshan/currency-api "
 
 The idea of the application is simple. If the conversion rate is available in the database it will fetch it from the database. If not it will fetch it from another API and send it back to the user also saving the rate in the database at the same time (async) for later use. 
 
-You can clone the application from github and run `npm install` to get it ready for debugging. This is a very simple application with most of the logic in `exchangeRates.js` [file](https://github.com/geshan/currency-api/blob/master/src/exchangeRates.js "You can have a look at the code on github"). It has mocha [tests](https://github.com/geshan/currency-api/blob/master/test/exchnageRatesTest.js "You can check the test too") too as it was a demo for testing nodejs application.
+You can clone the application from github and run `npm install` to get it ready for debugging. This is a very simple application with most of the logic in `exchangeRates.js` [file](https://github.com/geshan/currency-api/blob/master/src/exchangeRates.js "You can have a look at the code on github"). It has mocha [tests](https://github.com/geshan/currency-api/blob/master/test/exchangeRatesTest.js "You can check the test too") too as it was a demo for testing nodejs application.
 
 ### 1. Getting started, install ndb
 
