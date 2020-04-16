@@ -2,24 +2,24 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-
-<meta itemprop="name" content="Geshan's Blog">
-<meta itemprop="description" content="A blog about software engineering, devops and web development covering topics like php, javascript, docker, microservices etc">
-<meta itemprop="url" content="https://geshan.com.np">
-<article class="hentry" role="article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+{% set coverImage %}{{ cover or metadata.defaultCoverImage }}{% endset %}
+{% set logoUrl %}{{ "images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %}
+{% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
+<article class="hentry" role="article">
     <header class="page-header">
-    <h1 class="entry-title" itemprop="name headline">{{ title }}</h1>
+    <h1 class="entry-title">{{ title }}</h1>
     <p class="meta text-muted">
     {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute read)
     </p>
     </header>
-    <div class="entry-content clearfix" itemprop="articleBody description">
+    <div class="entry-content clearfix">
         {{ content | safe }}
     </div>
     <footer>
         <p class="meta text-muted">
           <span class="glyphicon glyphicon-user"></span>
-          <span class="byline author vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">{{ metadata.author.name }}</span></span>
+          <span class="byline author vcard" itemscope="" itemtype="http://schema.org/Person">Posted by <span class="fn">{{ metadata.author.name }}</span></span>
           <span class="glyphicon glyphicon-calendar"></span>
           {% include "components/posted-date-time.njk" %}
         <div class="shareaholic-canvas" data-app="share_buttons" data-app-id="11665322"></div>

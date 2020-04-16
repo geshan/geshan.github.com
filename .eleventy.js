@@ -64,6 +64,10 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter("stripTags", (content) => {
+    return content.replace(/(<([^>]+)>)/ig,"").replace(/\n/g,'');
+  })
+
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
   eleventyConfig.addCollection("posts", function(collection) {
