@@ -9,7 +9,7 @@ tags:
  - PHP
  - Software Engineering
 facebook:
-   image: http://geshan.com.np/images/php-oss-checklist/example-foss.png
+   image: https://geshan.com.np/images/php-oss-checklist/example-foss.png
 cover: /images/php-oss-checklist/example-foss.png
 ---
 
