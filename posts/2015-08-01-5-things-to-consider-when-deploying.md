@@ -11,9 +11,7 @@ cover: /images/5-deployment-considerations/capistrano-deployment.png
 
 Getting code done for a feature from developer's machine to production in less time is a quality of efficient 
 tech/engineering teams. Automated deployment with tools like [capistrano](http://capistranorb.com/) or 
-[fabric](http://fabfile.org/) make deployment an easy task than a dreaded operation where you miss one step and 
-then screw up on production. This post will highlight things to consider when you deploy a new major feature 
-that involves some big code and database changes. 
+[fabric](http://www.fabfile.org/) make deployment an easy task than a dreaded operation where you miss one step and then screw up on production. This post will highlight things to consider when you deploy a new major feature that involves some big code and database changes. 
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/5-deployment-considerations/capistrano-deployment.png" title="Deployment success with Capistrano" alt="Deployment success with Capistrano">
 <!-- more -->
