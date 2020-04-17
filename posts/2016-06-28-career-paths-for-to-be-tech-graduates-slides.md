@@ -10,7 +10,7 @@ cover: /images/career-paths-for-tech-grads/cptg-01.jpg
 ---
 
 
-After almost 2 years, I gave another talk to the students of [Prime College](http://prime.edu.np). Last time it was "[Things I wished I knew while doing my tech bachelors](http://geshan.com.np/blog/2014/08/things-i-wished-i-knew-while-doing-my/)". This time it was **Career Paths for to be tech graduates**. I prepared the slides at 9 and was already presenting the talk at 11:15.
+After almost 2 years, I gave another talk to the students of Prime College. Last time it was "[Things I wished I knew while doing my tech bachelors](http://geshan.com.np/blog/2014/08/things-i-wished-i-knew-while-doing-my/)". This time it was **Career Paths for to be tech graduates**. I prepared the slides at 9 and was already presenting the talk at 11:15.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/career-paths-for-tech-grads/cptg-01.jpg" title="Career Paths for tech graduates the talk" alt="Career Paths for tech graduates the talk">
 
