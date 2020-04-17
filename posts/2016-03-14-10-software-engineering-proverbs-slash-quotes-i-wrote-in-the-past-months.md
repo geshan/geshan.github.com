@@ -24,61 +24,61 @@ I browsed through my twitter timeline and collected them in one place.
 
 ***
 
-###There is no pill to convert yourself as a good programmer, it takes lots of reading, learning and practice. So start now.
+### There is no pill to convert yourself as a good programmer, it takes lots of reading, learning and practice. So start now.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/01pills.jpg" title="There is no pill to convert yourself as a good programmer, it takes lots of reading, learning and practice. So start now." alt="There is no pill to convert yourself as a good programmer, it takes lots of reading, learning and practice. So start now.">
 
 ***
 
-###An open pull request (PR) is a liability in at least 2 ways. 1 it's a feature/fix not shipped to customers. 2 it will invite code conflicts soon.
+### An open pull request (PR) is a liability in at least 2 ways. 1 it's a feature/fix not shipped to customers. 2 it will invite code conflicts soon.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/02PR.jpg" title="An open pull request is a liability in at least 2 ways. 1 it is a feature-fix not shipped to customers. 2 it will invite code conflicts soon." alt="An open pull request is a liability in at least 2 ways. 1 it is a feature-fix not shipped to customers. 2 it will invite code conflicts soon.">
 
 ***
 
-###Talking about automated testing and Continuous Integration(CI) is easy, balancing it with delivery and cost as a web shop manager is hard.
+### Talking about automated testing and Continuous Integration(CI) is easy, balancing it with delivery and cost as a web shop manager is hard.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/03test-ci-balance.jpg" title="Talking about automated testing and Continuous Integration(CI) is easy, balancing it with delivery and cost as a web shop manager is hard." alt="Talking about automated testing and Continuous Integration(CI) is easy, balancing it with delivery and cost as a web shop manager is hard.">
 
 ***
 
-###Having automated tests but no Continuous Integration(CI) is like having a sword but letting it rot.
+### Having automated tests but no Continuous Integration(CI) is like having a sword but letting it rot.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/04test-ci-sword.jpg" title="Having automated tests but no Continuous Integration(CI) is like having a sword but letting it rot." alt="Having automated tests but no Continuous Integration(CI) is like having a sword but letting it rot.">
 
 ***
 
-###You cannot follow everything by the book. It's generally an ish implementation like Agileish, Kanbanish and RESTish.
+### You cannot follow everything by the book. It's generally an ish implementation like Agileish, Kanbanish and RESTish.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/05follow-book.jpg" title="You cannot follow everything by the book. It is generally an ish implementation like agileish, kanbanish and RESTish." alt="You cannot follow everything by the book. It is generally an ish implementation like agileish, kanbanish and RESTish.">
 
 ***
 
-###If you are thinking of a software product idea, make a pain killer people can't live without not an optional vitamin people can and will skip.
+### If you are thinking of a software product idea, make a pain killer people can't live without not an optional vitamin people can and will skip.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/06pain-killer.jpg" title="If you are thinking of a software product idea, make a pain killer people can not live without not an optional vitamin people can and will skip." alt="If you are thinking of a software product idea, make a pain killer people can not live without not an optional vitamin people can and will skip.">
 
 ***
 
-###Software engineers have power to create great solutions but the best software to solve the least important problem is of no use.
+### Software engineers have power to create great solutions but the best software to solve the least important problem is of no use.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/07solution-importance.jpg" title="Software engineers have power to create great solutions but the best software to solve the least important problem is of no use." alt="Software engineers have power to create great solutions but the best software to solve the least important problem is of no use.">
 
 ***
 
-###Programmers/developers need to become software engineers. Think of solution then technology to implement it. Think of abstractions then code.
+### Programmers/developers need to become software engineers. Think of solution then technology to implement it. Think of abstractions then code.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/08solution-abstract.jpg" title="Programmers-developers need to become software engineers. Think of solution then technology to implement it. Think of abstractions then code." alt="Programmers-developers need to become software engineers. Think of solution then technology to implement it. Think of abstractions then code.">
 
 ***
 
-###Software developers are solution providers first, engineers second. Solution should have business value than using the latest tech fad.
+### Software developers are solution providers first, engineers second. Solution should have business value than using the latest tech fad.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/09solution-value.jpg" title="Software developers are solution providers first, engineers second. Solution should have business value than using the latest tech fad." alt="Software developers are solution providers first, engineers second. Solution should have business value than using the latest tech fad.">
 
 ***
 
-###If you don't sharpen your axe then it will take more time and effort to cut the tree. Same goes for software development.
+### If you don't sharpen your axe then it will take more time and effort to cut the tree. Same goes for software development.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/10-quotes/10axe.jpg" title="If you don't sharpen your axe then it will take more time and effort to cut the tree. Same goes for software development." alt="If you don't sharpen your axe then it will take more time and effort to cut the tree. Same goes for software development.">
 
