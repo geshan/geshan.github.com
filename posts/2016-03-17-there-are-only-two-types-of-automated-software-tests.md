@@ -55,8 +55,7 @@ to load the whole application and takes long time to execute fall in this catego
 
 <script src="https://gist.github.com/geshan/4512326704954f6b8388.js"></script>
 
-The above example is taken from [Sylius](https://github.com/Sylius/Sylius/blob/master/features/checkout/checkout_with_offline_payment.feature) 
-project, to test checkout with offline payment method on the browser.
+The above example is taken from [Sylius](https://github.com/Sylius/Sylius/blob/master/features/checkout/paying_for_order/paying_with_paypal_during_checkout.feature) project, to test pay with paypal.
 
 ### Conclusion
 

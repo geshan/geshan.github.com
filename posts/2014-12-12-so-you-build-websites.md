@@ -5,26 +5,20 @@ date: 2014-12-12 09:32:20 +04:00
 comments: true
 tags:
  - Misc
+cover: "/images/free-site-services/free-site-services.jpg"
 ---
 
 "It was great doing business with you, I hope your new website will help you to attract more business.",
-you generally tell these words when you handover the completed website to your client. Businesses build websites
-to gain more work or if it's an online business then the whole business depends on it. In any case as developers
-who build websites, using technology we enable clients to meet their business goals. In this context, as a web
-shop if you can provide something more for free to your clients it would add value to your service and a bigger
-smile on your client's faces.
+you generally tell these words when you handover the completed website to your client. Businesses build websites to gain more work or if it's an online business then the whole business depends on it. In any case as developers who build websites, using technology we enable clients to meet their business goals. In this context, as a web shop if you can provide something more for free to your clients it would add value to your service and a bigger smile on your client's faces.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/free-site-services.jpg" title="Free site services" alt="Free site services">
 
 <!-- more -->
-I am not referring to the obvious free add ons like Google [Analytics](http://google.com/analytics) or doing some
-basic Search Engine Optimization (SEO) with initial sitemap submission to
-Google [Webmaster Tools](http://google.com/webmaster-tools). They should be taken for granted for each website
-you develop. These are things that needs to be done for each website you build as a great web shop. Having a solid
-back-end (if need be) and a great user experience (UX) will make your clients happy, following the tips below
-will make them even happier.
+I am not referring to the obvious free add ons like Google [Analytics](http://google.com/analytics) or doing some basic Search Engine Optimization (SEO) with initial sitemap submission to
+Google [Search Console](https://search.google.com/search-console/). They should be taken for granted for each website you develop. These are things that needs to be done for each website you build as a great web shop. Having a solid back-end (if need be) and a great user experience (UX) will make your clients happy, following the tips below will make them even happier.
 
 ## Automatically report any downtime
+
 As a new business whose website is launched to production it would be a concern to make sure it is up and
 running 24/7. For this use a free service like [uptime robot](http://uptimerobot.com). You can setup 50 monitors
 for free that ping a url, check ports or even scan for keywords on the given website every 5 mins.
@@ -40,6 +34,7 @@ downtime is surely not enough, it is your chance to prove yourself by providing 
 the issue as soon as possible.
 
 ## Google Analytics report as infographics
+
 As mentioned earlier you have added free Google Analytics tracking for client's website, still the client might
 not be proactive to check it now and then. Why not provide them with a digest of the analytics tracking information
 via email as infographics. You can do it using [Visual.ly GA](http://visual.ly/), which takes less than a minute
@@ -52,6 +47,7 @@ the main Google Analytics website or use the [app](https://play.google.com/store
 on the go.
 
 ## Free Dashboard with key website metrics
+
 If my website just went live, I would love to see some key metrics about my website on a single screen, a
 dashboard. Information like is the website up now, how many people are currently on the website, how many page
 views did the website get yesterday etc would help.
@@ -65,8 +61,9 @@ password protect it and load necessary data with some code changes.
 >A basic dashboard should be given free, if the client wants more you should bill it.
 
 ## Conspire email report - Bonus
+
 If your client uses Gmail or Google Apps for email you could suggest and help setup a weekly report of their
-email contacts and email usage behavior using [Conspire](http://conspire.com).
+email contacts and email usage behavior using Conspire - http://conspire.com .
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/conspire.jpg" title="Email reports with conspire" alt="Email reports with conspire">
 
