@@ -30,7 +30,7 @@ For this post I have made the following assumptions:
 
 ## Maintainable Code
 
-Making software work is super important, making it just work is a problem. I have seen teams writing code for the sake of making it work. Sometimes it feels like the code is there just for compilers/interpreters not humans. Code, simple, readable and maintainable is also important. We have discussed some rules about making code maintainable do [read](http://blog.yipl.com.np/7-golden-rules-of-simple-clean-code/) it. [Naming things well](http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming) and writing relevant code comments is also undermined.  
+Making software work is super important, making it just work is a problem. I have seen teams writing code for the sake of making it work. Sometimes it feels like the code is there just for compilers/interpreters not humans. Code, simple, readable and maintainable is also important. We have discussed some rules about making code maintainable do [read](https://blog.yipl.com.np/7-golden-rules-of-simple-and-clean-code-and-some-more-considerations-slides-e66662af2daf) it. [Naming things well](http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming) and writing relevant code comments is also undermined.  
 
 Having a culture of code review always helps. If someone else can check your code before its merged to the main branch, it is a good practice to follow. It opens up more ways to learn how to code in a practical way. Code reviews are better done in systems like [Github](http://github.com), [Bitbucket](http://bitbucket.org) and [Gitlab](http://gitlab.com).
 
@@ -38,7 +38,7 @@ Having a culture of code review always helps. If someone else can check your cod
 
 Having automated tests is important. Opt for the test type that matches your team's current skill set. Unit testing are good to have. Writing testable code and giving team members the skill to do unit testing is an investment. Best way to approach unit testing will be grab the low hanging fruit. It will be better to start with Smoke Tests or basic functional tests. Doing a web application on each push/deployment? Check that all pages respond with a 200 HTTP response.
 
-Step by step add more tests and time for your team members to gain more skills. As soon as you have some form of automated tests, wire it up with a [Continuous Integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration) service. Some good options are [Travis CI](https://travis-ci.com), [Wercker](http://wercker.com), [Shippable CI](http://shippable.com).
+Step by step add more tests and time for your team members to gain more skills. As soon as you have some form of automated tests, wire it up with a [Continuous Integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration) service. Some good options are [Travis CI](https://travis-ci.com), [Wercker](https://app.wercker.com/), [Shippable CI](http://shippable.com).
 
 ## Automated Deployment
 

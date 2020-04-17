@@ -189,7 +189,7 @@ docker exec -it laravelmysqldocker_front_1 /bin/sh
 
 You will get the shell of the front container then do `cd /var/www` and `php artisan` all your artisan commands are there.
 
-### Access http://http://laravel-docker.dev
+### Access http://laravel-docker.dev
 
 You should be able to load Laravel in the browser now navigating to `http://laravel-docker.dev`. Here you can see the Laravel 5 default page loading.
 
