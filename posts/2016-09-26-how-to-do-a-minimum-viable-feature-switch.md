@@ -36,7 +36,7 @@ There are many ways to do a feature switch for this post as an example I will ad
 
 The simple checkout already has 2 payment methods `Cash` and `CreditCard`. We will add `PayPal` to it. The current proof of concept implementation only shows the order total. For, Cash it shows 5 more than credit card as it adds `Cash On Delivery (COD)` fees.
 
-The code is an addition to my previous post on [unit testing with Laravel](http://geshan.com.np/blog/2015/07/getting-started-with-unit-testing-in-laravel/). If you have not read it, I highly recommend you to do it. This example has [tests](https://github.com/geshan/laravel-unit-test-example/pull/4/files#diff-b3678da71dcc0bd1aa883f9f930c1ca5R34) too.
+The code is an addition to my previous post on [unit testing with Laravel](https://geshan.com.np/blog/2015/07/getting-started-with-unit-testing-in-laravel/). If you have not read it, I highly recommend you to do it. This example has [tests](https://github.com/geshan/laravel-unit-test-example/pull/4/files#diff-b3678da71dcc0bd1aa883f9f930c1ca5R34) too.
 
 ### Checkout Example with PayPal
 

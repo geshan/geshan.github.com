@@ -59,5 +59,5 @@ The above example is taken from [Sylius](https://github.com/Sylius/Sylius/blob/m
 
 ### Conclusion
 
-Testing is super important for a robust software application. Automated testing + CI is one of the [four pillars](http://geshan.com.np/blog/2015/10/4-pillars-of-a-solid-software-application-and-tools-to-support-it/) 
+Testing is super important for a robust software application. Automated testing + CI is one of the [four pillars](https://geshan.com.np/blog/2015/10/4-pillars-of-a-solid-software-application-and-tools-to-support-it/) 
 of any solid software application. Happy testing hope your tests run in seconds not minutes.

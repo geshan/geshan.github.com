@@ -37,7 +37,7 @@ I am running this example on Ubuntu 14.04.2 LTS.
 
 ## Why use docker?
 
-The reasons to use docker are simiar to [vagrant](http://geshan.com.np/blog/2014/07/getting-started-with-php-lemp-on-vagrant/). There are some more compelling reasons to use docker and docker compose, some of them are:
+The reasons to use docker are simiar to [vagrant](https://geshan.com.np/blog/2014/07/getting-started-with-php-lemp-on-vagrant/). There are some more compelling reasons to use docker and docker compose, some of them are:
 
 ### Quick setup of development environment
 

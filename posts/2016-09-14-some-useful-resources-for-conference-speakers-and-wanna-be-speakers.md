@@ -8,7 +8,7 @@ tags:
 cover: /images/speaker-resources/speaker.jpg
 ---
 
-I do not consider myself an experienced speaker. I have [spoken](http://geshan.com.np/blog/categories/talks/) at a couple of conferences and some meetups in the past years. I have to learn lots of technical and non-technical things to become a better speaker. Still, I would like to share some resources that will help new and experienced speakers.
+I do not consider myself an experienced speaker. I have [spoken](https://geshan.com.np/blog/categories/talks/) at a couple of conferences and some meetups in the past years. I have to learn lots of technical and non-technical things to become a better speaker. Still, I would like to share some resources that will help new and experienced speakers.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/speaker-resources/speaker.jpg" title="Some resources for conference speakers" alt="Some resources for conference speakers">
 
