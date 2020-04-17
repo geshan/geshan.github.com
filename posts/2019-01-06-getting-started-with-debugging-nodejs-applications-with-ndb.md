@@ -35,7 +35,7 @@ For debugging nodejs application in place of just another script I will use a fu
 
 ## Debugging nodejs express application as a demo
 
-I am using my opensource [currency API](https://github.com/geshan/currency-api "Currency API app on github") for this step-by-step getting started of debugging a nodejs application. It is built using express js framework. You can also check the running app hosted on [Zeit Now](https://currency-api-nodejs.now.sh/api/convert/USD/AUD/2019-01-01 "Currency API app hosted on Zeit now") to see the USD to AUD rate of 2019-01-10 as an example. 
+I am using my opensource [currency API](https://github.com/geshan/currency-api "Currency API app on github") for this step-by-step getting started of debugging a nodejs application. It is built using express js framework. You can also check the running app hosted on Zeit Now to see the USD to AUD rate of 2019-01-10 as an example.
 
 The idea of the application is simple. If the conversion rate is available in the database it will fetch it from the database. If not it will fetch it from another API and send it back to the user also saving the rate in the database at the same time (async) for later use. 
 
