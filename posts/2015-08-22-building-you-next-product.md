@@ -21,7 +21,7 @@ you should make your web Application Programming Interface (API) working first.
 
 ## Introduction
 
-There are many startups listed on [StartUps In Nepal](http://startupsinnepal.com/) as well, I hope
+There are many startups listed on StartUps In Nepal as well, I hope
 these people have a good backend infrastructure and have given enough importance to making their technology
 strong and scalable. If anyone is trying to rewrite a product or thinking of redoing their product I would
 really suggest to go the API oriented path.
