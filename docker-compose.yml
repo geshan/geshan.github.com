@@ -10,3 +10,4 @@ services:
       - ./:/app
     environment:
       - NODE_ENV=dev
+      - ELEVENTY_ENV=dev
