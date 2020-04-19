@@ -5,6 +5,7 @@ date: 2020-04-19T20:35:47Z
 comments: true
 tags:
 - Web Development
+- JAM stack
 cover: "/images/jamstack-tutorial/00jamstack-tutorial.jpg"
 pagetitle: "JAMStack Tutorial: Set up a website with no coding for $0 [Step by step]"
 description: This JAMStack tutorial (30+ screenshots and 2000+ words) explains how to set up a JAMStack website with just clicks step by step. Website runs for $0.
