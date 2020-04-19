@@ -6,7 +6,7 @@ comments: true
 tags:
 - Web Development
 cover: "/images/jamstack-tutorial/00jamstack-tutorial.jpg"
-pagetitle: "JAMStack Tutorial: Set up website with no coding for $0 [Step by step]"
+pagetitle: "JAMStack Tutorial: Set up a website with no coding for $0 [Step by step]"
 description: This JAMStack tutorial (30+ screenshots and 2000+ words) explains how to set up a JAMStack website with just clicks step by step. Website runs for $0.
 keywords: jamstack tutorial, jamstack website, static site generators, jamstack, jamstack cms, jamstack apps
 ---
@@ -19,7 +19,7 @@ This JAMstack tutorial will show you how to create a JAMstack website with just 
 
 ## Prerequisites
 
-If JAMstack is something new for you have a look at my previous post detailing [what is JAMstack](https://geshan.com.np/blog/2020/04/static-vs-dynamic-websites-jam-stack/#jam-stack-with-a-cms) and some of it's technical aspects. For this tutorial following are the prerequisites:
+If JAMstack is something new for you have a look at my previous post detailing [what is JAMstack](https://geshan.com.np/blog/2020/04/static-vs-dynamic-websites-jam-stack/#jam-stack-with-a-cms) and some of its technical aspects. For this tutorial following are the prerequisites:
 
 1. You must have a working email address (a no brainier, still good to be explicit).
 1. Knowledge of markdown would be beneficial.
@@ -34,7 +34,7 @@ This post has multiple sections shown below in the table of content:
 - [Steps](#steps)
   * [1. Register on Github](#1.-register-on-github)
     + [1.1. Start to register](#1.1.-start-to-register)
-    + [1.2. Complete set up](#1.2.-complete-set-up)
+    + [1.2. Complete setup](#1.2.-complete-setup)
     + [1.3. Verify email](#1.3.-verify-email)
     + [1.4. See your Github profile page](#1.4.-see-your-github-profile-page)
   * [2. Register on Netlify](#2.-register-on-netlify)
@@ -72,7 +72,7 @@ This post has multiple sections shown below in the table of content:
 
 ## Services involved
 
-You will need to register to the 4 (or less) online services to get your JAMstack website up and running. The good news is all of them have a free plan so your website will have a recurring running cost of exactly $0, hurray!
+You will need to register for the 4 (or less) online services to get your JAMstack website up and running. The good news is all of them have a free plan so your website will have a recurring running cost of exactly $0, hurray!
 
 1. **[Github](https://github.com)** - To host the code, probably you already have a Github account :)
 1. **[Netlify](https//netlify.com)** - CDN to host the website, it will be fast as it will be static files mainly
@@ -95,7 +95,7 @@ Go to [https://github.com/join](https://github.com/join) and fill the details li
 
 Then click "Create account"
 
-#### 1.2. Complete set up
+#### 1.2. Complete setup
 
 After that scroll to the next page and click "Complete Setup"
 
@@ -125,7 +125,7 @@ Carry on to register on Netlify.
 
 ### 2. Register on Netlify
 
-Netlify will host your JAMstack website on it's own Content Delivery Network (CDN), they have a free plan. So let's get a Netlify account too.
+Netlify will host your JAMstack website on its own Content Delivery Network (CDN), they have a free plan. So let's get a Netlify account too.
 
 #### 2.1. Registration page
 
@@ -171,7 +171,7 @@ Success! Your Forestry account is registered, let's go to the next step.
 
 ### 4. Register on Stackbit with Github
 
-Stackbit is the magic glue that will cement all the other 3 services together to inject life to your JAMStack website. Let's go ahead and get an account for Stackbit on it's [Login](https://app.stackbit.com/login) page.
+Stackbit is the magic glue that will cement all the other 3 services together to inject life to your JAMStack website. Let's go ahead and get an account for Stackbit on its [Login](https://app.stackbit.com/login) page.
 
 #### 4.1. Stackbit registration
 
@@ -216,7 +216,7 @@ Next step is to choose the CMS, let's choose Forestry you have an account there 
 
 #### 5.4. Add Project name
 
-Then it is time to name the project and connect your accounts, I have named it `jamstack-fresh`, name it as you  want.
+Then it is time to name the project and connect your accounts, I have named it `jamstack-fresh`, name it as you want.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/19stackbit-name-project.jpg" title="Name the project on Stackbit" alt="Name the project on Stackbit">
 
@@ -253,7 +253,7 @@ We are getting close the, your website should be building at this point like bel
 
 ---
 
-After a couple of minutes it should be deployed, it will show up as below:
+After a couple of minutes, it should be deployed, it will show up as below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/25stackbit-deployed-fresh.jpg" title="Your website is deployed" alt="Website deployed on Netlify with Stackbit">
 
@@ -277,10 +277,9 @@ Hurray! Let's see your website live, click the "View Site" blue button, your sit
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/28fresh-working.jpg" title="Yes! your website is working" alt="Yes! your JAMstack website is working">
 
-
 ### 6. Edit text on the website
 
-Good news, your website is up on a URL like: [https://jamstack-fresh-a9bfb.netlify.app/](https://jamstack-fresh-a9bfb.netlify.app/). Now you have to edit it to make it yours. Let's change the homepage text to say something different. For that click the "Edit in Forestry" blue button, you will be taken to the forestry dashboard.
+Good news, your website is up on a URL like [https://jamstack-fresh-a9bfb.netlify.app/](https://jamstack-fresh-a9bfb.netlify.app/). Now you have to edit it to make it yours. Let's change the homepage text to say something different. For that click the "Edit in Forestry" blue button, you will be taken to the forestry dashboard.
 
 #### 6.1. Edit your website on Forestry
 
@@ -297,7 +296,7 @@ Then click on "Hero Section"
 #### 6.3. Edit the text of home hero section like below
 
 Now edit the Title to something like "Welcome to JAMStack test" and the content to something like below.
-After that click on the "Save" at the top right and then go to the tab with your website open, it should be deploying now.
+After that click on the "Save" at the top right and then go to the tab with your website open, it should start deploying now.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/31forestry-home-hero-edit.jpg" title="Edit the hero section of homepage" alt="Edit the hero section of homepage">
 
@@ -328,7 +327,7 @@ Please check out the "Media" menu on the sidebar below the "Site" title and play
 Here are some of the further steps you can take to enhance your new web presence:
 
 1. Please read through the [Forestry Product Tour](https://forestry.io/docs/quickstart/tour/) to know other things like adding an image from the media library and doing other changes. You will need to fiddle around with Forestry. It would be great to check the Forestry documentation for [Managing Content](https://forestry.io/docs/editing/) and [Media Library](https://forestry.io/docs/editing/media-library/), it is easy.
-1. You can get a free top-level domain like a .tk, .ml, .cf or .gq for free. So you can have **mywebsite.gq** free from [Freenom](https://www.freenom.com/), if you want a .com try another domain registrar like [NameCheap](https://www.namecheap.com/).
+1. You can get a free top-level domain like a .tk, .ml, .cf or .gq for free. So you can have **mywebsite.gq** free from [Freenom](https://www.freenom.com/). If you want a .com try another domain registrar like [NameCheap](https://www.namecheap.com/).
 1. You can then configure [Custom Domain in netlify](https://docs.netlify.com/domains-https/custom-domains/) to get it working on the domain name you registered.
 1. If you are really serious about your website or blog try to optimize it better for SEO, for this you will need some coding and help from someone who knows Go lang and has worked with Hugo.
 1. If you want to move out from medium to your own JAMstack website you can try Stackbit [medium import](https://www.stackbit.com/medium/).
