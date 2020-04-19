@@ -5,7 +5,7 @@ date: 2020-04-19T20:35:47Z
 comments: true
 tags:
 - Web Development
-cover: "/images/static-vs-dynamic-website/01static-vs-dynamic-vs-jam-stack.jpg"
+cover: "/images/jamstack-tutorial/00jamstack-tutorial.jpg"
 pagetitle: "JAMStack Tutorial: Set up website without any coding for $0 [Step by step]"
 description: This JAMStack tutorial (30+ screenshots and 2000+ words) explains how to set up a JAMStack website with just clicks step by step. Website runs for $0.
 keywords: jamstack tutorial, jamstack website, static site generators, jamstack, jamstack cms, jamstack apps
