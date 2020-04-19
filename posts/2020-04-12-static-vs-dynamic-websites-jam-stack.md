@@ -5,6 +5,7 @@ date: 2020-04-12T11:35:47Z
 comments: true
 tags:
 - Web Development
+- JAM stack
 cover: "/images/static-vs-dynamic-website/01static-vs-dynamic-vs-jam-stack.jpg"
 pagetitle: Static vs dynamic website, JAM stack in between [has tech and cost considerations]
 description: This post explains the main differences between Static, dynamic and JAM
