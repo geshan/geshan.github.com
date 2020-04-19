@@ -329,14 +329,14 @@ Here are some of the further steps you can take to enhance your new web presence
 1. Please read through the [Forestry Product Tour](https://forestry.io/docs/quickstart/tour/) to know other things like adding an image from the media library and doing other changes. You will need to fiddle around with Forestry. It would be great to check the Forestry documentation for [Managing Content](https://forestry.io/docs/editing/) and [Media Library](https://forestry.io/docs/editing/media-library/), it is easy.
 1. You can get a free top-level domain like a .tk, .ml, .cf or .gq for free. So you can have **mywebsite.gq** free from [Freenom](https://www.freenom.com/). If you want a .com try another domain registrar like [NameCheap](https://www.namecheap.com/).
 1. You can then configure [Custom Domain in netlify](https://docs.netlify.com/domains-https/custom-domains/) to get it working on the domain name you registered.
-1. If you are really serious about your website or blog try to optimize it better for SEO, for this you will need some coding and help from someone who knows Go lang and has worked with Hugo.
-1. If you want to move out from medium to your own JAMstack website you can try Stackbit [medium import](https://www.stackbit.com/medium/).
+1. If you are serious about your website or blog try to optimize it better for SEO, for this you will need some coding and help from someone who knows Go lang and has worked with Hugo.
+1. If you want to move out from medium to your JAMstack website you can try Stackbit [medium import](https://www.stackbit.com/medium/).
 
 ## Caveats
 
 There are some caveats you should consider for this free website, they are as follows:
 
-* Be mindful of the **build minutes**, Netlify [free plan](https://www.netlify.com/pricing/) has 300 build minutes per month. Basically that means each time you hit save or add a new image from Forestry it will trigger a build and deploy on Netlify.
+* Be mindful of the **build minutes**, Netlify [free plan](https://www.netlify.com/pricing/) has 300 build minutes per month. That means each time you hit save or add a new image from Forestry it will trigger a build and deploy on Netlify.
 
 > Each build will take around a minute or more and this reduces your build time quota of 300 minutes every month. So, it is advisable to bulk your changes, mainly the text ones and be careful and use the "Save"  button sparingly.
 
