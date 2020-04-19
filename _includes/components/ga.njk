@@ -1,6 +1,8 @@
+{%- if helpers.getEnv() != "dev" -%}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.gaId }}"></script>
 <script>
 window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '{{ metadata.gaId }}');
 </script>
+{%- endif -%}

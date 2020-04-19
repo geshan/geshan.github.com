@@ -12,6 +12,9 @@ module.exports = {
     console.log(obj);
     return JSON.stringify(obj, null, 2);
   },
+  getEnv() {
+    return process.env.ELEVENTY_ENV || 'production';
+  },
   getStats(posts) {
     //from - https://www.stackbit.com/blog/content-stats-eleventy/
     const totalPosts = posts.length;
