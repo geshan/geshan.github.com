@@ -78,7 +78,7 @@ You will need to register for the 4 (or less) online services to get your JAMsta
 1. **[Github](https://github.com)** - To host the code, probably you already have a Github account :)
 1. **[Netlify](https//netlify.com)** - CDN to host the website, it will be fast as it will be static files mainly
 1. **[Forestry](https://forestry.io)** - Git-based Content Management System (CMS) service to edit the JAMStack website content, your content changes will reflect on the website in a couple of minutes. Still fast for a JAMstack website.
-1. **[Stackbit](https//stackbit.com)** - Service to manage above 3 and glue all of them together to bring your JAMstack website to life.
+1. **[Stackbit](https://stackbit.com)** - Service to manage above 3 and glue all of them together to bring your JAMstack website to life.
 
 Let's dive in now.
 
