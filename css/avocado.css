@@ -8940,7 +8940,7 @@ span.sharing-common {
   color: #fff;
   height: 52px;
   width: 52px;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 52px;
   text-align: center;
   padding: 0;
@@ -8965,6 +8965,10 @@ span.twitter-color {
 
 span.tg-color {
   background-color: #0088cc;
+}
+
+span.wa-color {
+  background-color: #25D366;
 }
 
 h3.comments {
