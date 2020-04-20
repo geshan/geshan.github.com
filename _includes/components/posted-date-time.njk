@@ -2,7 +2,7 @@
 <time datetime="{{ date | getSitemapDate }}" data-updated="true">
     <time class="entry-date" datetime="{{ date | getSitemapDate }}">
       <span class="date">
-        {{ date | displayDate }} 
+        {{ date | displayDateOnly }} 
         {% if post.templateContent %}
           (about a {{ helpers.getReadingTime(post.templateContent) }} minute read)
         {% endif %}
