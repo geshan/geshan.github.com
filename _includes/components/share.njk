@@ -1,0 +1,10 @@
+{%- if templateClass == "tmpl-post" -%}
+<script src="https://kit.fontawesome.com/140bae2d75.js" crossorigin="anonymous" defer></script>
+<span class="share-icons">
+  <span class="share-message">Please share:<span>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on LinkedIn"><span class="fa fa-linkedin sharing-common li-color"></span></a>
+  <a href="http://twitter.com/share?text={{ title }} - &url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Twitter"><span class="fa fa-twitter sharing-common twitter-color"></span></a>
+  <a href="http://www.facebook.com/sharer.php?u={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Facebook"><span class="fa fa-facebook sharing-common fb-color"></span></a>
+  <a href="https://pinterest.com/pin/create/button/?url={{ absolutePostUrl }}&media={{ coverImage | url | absoluteUrl(metadata.url) }}&description={{ title }}" target="_blank" title="Share '{{ title }}' on Pinterest"><span class="fa fa-pinterest sharing-common pi-color"></span></a>
+</span>
+{%- endif -%}

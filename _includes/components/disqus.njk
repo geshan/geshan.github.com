@@ -1,6 +1,6 @@
 
 {%- if templateClass == "tmpl-post" -%}
-  <h3>Comments</h3>
+  <h3 class="comments">Comments</h3>
   <div id="disqus_thread" aria-live="polite"></div>
   <script defer>
   var disqus_config=function(){this.page.url="{{ page.url | url | absoluteUrl(metadata.url) }}",this.page.identifier="{{ page.fileSlug }}"};!function(){var e=document,t=e.createElement("script");t.src="https://{{ metadata.disqusShortname }}.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)}();

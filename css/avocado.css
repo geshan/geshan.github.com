@@ -8931,3 +8931,38 @@ h1:hover a.direct-link, h2:hover a.direct-link, h3:hover a.direct-link, h4:hover
   text-decoration: none;
 }
 
+/* share icons */
+span.share-icons {
+  margin-left: 15px;
+}
+
+span.sharing-common {
+  color: #fff;
+  height: 52px;
+  width: 52px;
+  font-size: 26px;
+  line-height: 52px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+span.fb-color {
+  background-color: #4E4990;
+}
+
+span.pi-color {
+  background-color: #dc0000;
+}
+
+span.li-color {
+  background-color: #0067b1;
+}
+
+span.twitter-color {
+  background-color: #0098F4;
+}
+
+h3.comments {
+  clear:both;
+}
