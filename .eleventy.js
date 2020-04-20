@@ -29,6 +29,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
+  eleventyConfig.addFilter("displayDateOnly", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd-LLL-yyyy");
+  });
+
   eleventyConfig.addFilter("displayDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd-LLL-yyyy HH:MM:s");
   });
