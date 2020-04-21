@@ -12,6 +12,7 @@
     {%- include "components/sw.njk" -%}
   </head>
   <body>
+    {%- include "components/gtm.njk" -%}
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
     <div id="wrap">
       <header role="banner">
@@ -56,7 +57,6 @@
       </div>
     </div><!-- wrap close -->
     {% include "footer/footer.njk" %}
-    {%- include "components/gtm.njk" -%}
     <!-- Current page: {{ page.url | url }} -->
     <script src="/js/all.min.js" defer></script>
   </body>
