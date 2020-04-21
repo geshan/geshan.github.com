@@ -2,11 +2,11 @@
 <script src="https://kit.fontawesome.com/140bae2d75.js" crossorigin="anonymous" defer></script>
 <span class="share-icons">
   <span class="share-message">Please share:<span>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on LinkedIn"><span class="fa fa-linkedin sharing-common li-color"></span></a>
-  <a href="http://twitter.com/share?text={{ title }} - &url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Twitter"><span class="fa fa-twitter sharing-common twitter-color"></span></a>
-  <a href="http://www.facebook.com/sharer.php?u={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Facebook"><span class="fa fa-facebook sharing-common fb-color"></span></a>
-  <a href="https://pinterest.com/pin/create/button/?url={{ absolutePostUrl }}&media={{ coverImage | url | absoluteUrl(metadata.url) }}&description={{ title }}" target="_blank" title="Share '{{ title }}' on Pinterest"><span class="fa fa-pinterest sharing-common pi-color"></span></a>
-  <a href="https://t.me/share/url?url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Telegram"><span class="fa fa-telegram sharing-common tg-color"></span></a>
-  <a href="https://api.whatsapp.com/send?text={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Whatsapp"><span class="fa fa-whatsapp sharing-common wa-color"></span></a>
+  <a id="linkedin-share" href="https://www.linkedin.com/shareArticle?mini=true&url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on LinkedIn" onClick="ga('send', 'event', 'share', 'clickShareOnLinkedIn');"><span class="fa fa-linkedin sharing-common li-color"></span></a>
+  <a id="twitter-share" href="http://twitter.com/share?text={{ title }} - &url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Twitter" onClick="ga('send', 'event', 'share', 'clickShareOnTwitter');"><span class="fa fa-twitter sharing-common twitter-color"></span></a>
+  <a id="facebook-share" href="http://www.facebook.com/sharer.php?u={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Facebook" onClick="ga('send', 'event', 'share', 'clickShareOnFacebook');"><span class="fa fa-facebook sharing-common fb-color"></span></a>
+  <a id="pinterest-share" href="https://pinterest.com/pin/create/button/?url={{ absolutePostUrl }}&media={{ coverImage | url | absoluteUrl(metadata.url) }}&description={{ title }}" target="_blank" title="Share '{{ title }}' on Pinterest" onClick="ga('send', 'event', 'share', 'clickShareOnPinterest');"><span class="fa fa-pinterest sharing-common pi-color"></span></a>
+  <a id="telegram-share" href="https://t.me/share/url?url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Telegram" onClick="ga('send', 'event', 'share', 'clickShareOnTelegram');"><span class="fa fa-telegram sharing-common tg-color"></span></a>
+  <a id="whatsapp-share" href="https://api.whatsapp.com/send?text={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Whatsapp" onClick="ga('send', 'event', 'share', 'clickShareOnWhatsapp');"><span class="fa fa-whatsapp sharing-common wa-color"></span></a>
 </span>
 {%- endif -%}

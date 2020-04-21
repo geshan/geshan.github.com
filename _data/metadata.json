@@ -14,5 +14,6 @@
   },
   "defaultCoverImage": "/images/generic/blog.jpg",
   "disqusShortname" : "geshanblog",
-  "gaId": "UA-56310304-1"
+  "gaId": "UA-56310304-1",
+  "gtmId": "GTM-TWT2D9T"
 }
