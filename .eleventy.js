@@ -39,7 +39,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("getSitemapDate", dateObj => {
     const dateInUTC = DateTime.fromJSDate(dateObj, {zone: 'utc'});
-    return dateInUTC.toISO();
+    return dateInUTC.toISODate();
   });
 
   eleventyConfig.addFilter("yearMonth", dateObj => {
