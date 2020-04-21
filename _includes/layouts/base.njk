@@ -19,8 +19,8 @@
         <nav class="navbar navbar-default" role="navigation">
           <div class="container">
               <div class="navbar-header">
-                  <button type="button" id="navbar-toggler" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Menu" onclick="toggleNavBar()"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="/">Geshan&#8217;s Blog</a></div>
-              <div id="navbar-links" class="navbar-collapse collapse" style="display: none;">
+                  <button type="button" id="navbar-toggler" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Menu" onclick="toggleNavBar()"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand nav-item-link" href="/">Geshan&#8217;s Blog</a></div>
+                  <div id="navbar-links" class="navbar-collapse collapse" style="display: none;">
                   <ul class="nav navbar-nav">
                       {%- for entry in collections.all | eleventyNavigation %}
                         <li class="nav-item{% if entry.url == page.url %} active{% endif %}"><a class="nav-item-link" href="{{ entry.url | url }}">{{ entry.title }}</a></li>
