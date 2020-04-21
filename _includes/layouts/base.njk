@@ -22,7 +22,7 @@
               <div id="navbar-links" class="navbar-collapse collapse" style="display: none;">
                   <ul class="nav navbar-nav">
                       {%- for entry in collections.all | eleventyNavigation %}
-                        <li class="nav-item{% if entry.url == page.url %} active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+                        <li class="nav-item{% if entry.url == page.url %} active{% endif %}"><a class="nav-item-link" href="{{ entry.url | url }}">{{ entry.title }}</a></li>
                       {%- endfor %}
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
