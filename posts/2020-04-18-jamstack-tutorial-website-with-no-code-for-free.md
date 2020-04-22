@@ -1,17 +1,20 @@
 ---
 layout: post
-title: "JAMstack tutorial to create a website with just clicks and no code at all for free [Step by step]"
-date: 2020-04-19T20:35:47Z
+title: JAMstack tutorial to create a website with just clicks and no code at all for
+  free [Step by step]
+date: 2020-04-19T20:35:47.000+00:00
 comments: true
 tags:
 - Web Development
 - JAM stack
 cover: "/images/jamstack-tutorial/00jamstack-tutorial.jpg"
-pagetitle: "JAMStack Tutorial: Set up a website with no coding for $0 [Step by step]"
-description: This JAMStack tutorial (30+ screenshots and 2000+ words) explains how to set up a JAMStack website with just clicks step by step. Website runs for $0.
-keywords: jamstack tutorial, jamstack website, static site generators, jamstack, jamstack cms, jamstack apps
----
+pagetitle: 'JAMStack Tutorial: Set up a website with no coding for $0 [Step by step]'
+description: This JAMStack tutorial (30+ screenshots and 2000+ words) explains how
+  to set up a JAMStack website with just clicks step by step. Website runs for $0.
+keywords: jamstack tutorial, jamstack website, static site generators, jamstack, jamstack
+  cms, jamstack apps
 
+---
 This JAMstack tutorial will show you how to create a JAMstack website with just clicks, no code and for $0. It will detail how to set up a JAMstack website step by step with 30+ screenshots and 2000+ words. It will involve using a git-based CMS service to edit your content easily. Let's get started.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/00jamstack-tutorial.jpg" title="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]" alt="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]">
@@ -76,7 +79,7 @@ This post has multiple sections shown below in the table of content:
 You will need to register for the 4 (or less) online services to get your JAMstack website up and running. The good news is all of them have a free plan so your website will have a recurring running cost of exactly $0, hurray!
 
 1. **[Github](https://github.com)** - To host the code, probably you already have a Github account :)
-1. **[Netlify](https//netlify.com)** - CDN to host the website, it will be fast as it will be static files mainly
+1. **[Netlify](https://netlify.com)** - CDN to host the website, it will be fast as it will be static files mainly
 1. **[Forestry](https://forestry.io)** - Git-based Content Management System (CMS) service to edit the JAMStack website content, your content changes will reflect on the website in a couple of minutes. Still fast for a JAMstack website.
 1. **[Stackbit](https://stackbit.com)** - Service to manage above 3 and glue all of them together to bring your JAMstack website to life.
 
