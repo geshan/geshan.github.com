@@ -1,0 +1,5 @@
+{% set postslist = popular.posts %}
+{% if postslist.length > 0 %}
+<p>I hope you have find the below popular 🔥 in last 30 days posts useful.</p>
+{% include "postslist-popular.njk" %}
+{% endif %}
