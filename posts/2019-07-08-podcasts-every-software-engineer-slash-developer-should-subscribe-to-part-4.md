@@ -11,8 +11,7 @@ pagetitle: Podcasts every software engineer should subscribe to part 4
 description: Listen to these podcasts to become a better software engineer.
 keywords: Podcast, software podcast, software engineer podcast
 ---
-Podcasts are a great way to learn new things even for the lazy reader. If you are not fast at reading or don't like it very much podcasts can be your way to get the information with less effort. It is easier than reading. This is a part 4 in the series (do check part [1](https://geshan.com.np/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/) and
-[2](https://geshan.com.np/blog/2016/05/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-2/) and [3](https://geshan.com.np/blog/2017/01/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-3/)) of podcasts you must subscribe to and listen to as a software engineer. Same as the last 3 times the 3 podcasts listed below have great content and considerably good sound quality too. Below is the list:
+Podcasts are a great way to learn new things even for the lazy reader. If you are not fast at reading or don't like it very much podcasts can be your way to get the information with less effort. It is easier than reading. This is a part 4 in the series (do check part [1](https://geshan.com.np/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/) and [2](https://geshan.com.np/blog/2016/05/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-2/) and [3](https://geshan.com.np/blog/2017/01/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-3/)) of podcasts you must subscribe to and listen to as a software engineer. Same as the last 3 times the 3 podcasts listed below have great content and considerably good sound quality too. Below is the list:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/3-podcasts-part-4/3-podcasts-sw-eng-part-04.jpg" title="3 podcasts every software engineer should subscribe to - part 4" alt="3 podcasts every software engineer should subscribe to - part 4">
 
@@ -20,7 +19,7 @@ Podcasts are a great way to learn new things even for the lazy reader. If you ar
 
 ## [Developer Tea by Jonathan](https://spec.fm/podcasts/developer-tea)
 
-Developer Tea is an exceptional podcast to listen to. Jonathan sometimes does an interview and most of the times it is a discourse on software engineering related topics. A recent episode on [Mid-Year Resolutions](https://spec.fm/podcasts/developer-tea/302953) was a strong reminder that half of the year is gone and in less than six months we will reach 2020. 
+Developer Tea is an exceptional podcast to listen to. Jonathan sometimes does an interview and most of the times it is a discourse on software engineering related topics. A recent episode on [Mid-Year Resolutions](https://spec.fm/podcasts/developer-tea/302953) was a strong reminder that half of the year is gone and in less than six months we will reach 2020.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/3-podcasts-part-4/developer-tea.jpg" title="Developer Tea Podcast" alt="Developer Tea Podcast">
 

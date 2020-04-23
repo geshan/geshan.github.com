@@ -324,6 +324,6 @@ To run Laravel 6 on Google Cloud Run quickly follow the steps below:
 
 ## Conclusion
 
-There you go running a Laravel app on Google cloud run was pretty easy. You have even got test running on Github with Github actions. Hope it helps. To do a CI/CD approach you can check this [post](https://medium.com/google-cloud/simplifying-continuous-deployment-to-cloud-run-with-cloud-build-including-custom-domain-setup-ssl-22d23bed5cd6), it shows deployment using Cloud build. As the same container is running for local and production (Google Cloud Run) environment you don't need to learn a new framework to go Serverless.
+There you go running a Laravel app on Google cloud run was pretty easy. You have even got test running on Github with Github actions. Hope it helps. To do a CI/CD approach you can check this [post](https://medium.com/google-cloud/simplifying-continuous-deployment-to-cloud-run-with-cloud-build-including-custom-domain-setup-ssl-22d23bed5cd6), it shows deployment using Cloud build. As the same container is running for local and production (Google Cloud Run) environment you don't need to learn a new framework to go Serverless. You can try [Symfony](https://geshan.com.np/blog/2019/11/how-to-run-symfony-on-google-cloud-run-with-the-demo-app-step-by-step-guide/) too on Google Cloud Run.
 
 > Any containerized web app can be run on Google Cloud Run, it is a great service.
