@@ -5,6 +5,9 @@ on:
     branches:
       - source
       - staging
+  schedule:
+    # everyday at 8 PM UTC
+    - cron: '0 20 * * *'
 
 jobs:
   deploy:
