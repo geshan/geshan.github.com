@@ -15,10 +15,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-        env:
-          GA_API_ENDPOINT: ${{ secrets.GA_API_ENDPOINT }}
       - run: npm install
       - run: npm run build
+        env:
+          GA_API_ENDPOINT: ${{ secrets.GA_API_ENDPOINT }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
