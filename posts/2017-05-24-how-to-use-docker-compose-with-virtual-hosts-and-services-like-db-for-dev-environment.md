@@ -9,11 +9,7 @@ tags:
 cover: /images/docker-compose-vhost/docker-compose-vhost.jpg
 ---
 
-Docker as been immensely popular in the past years. If you are not using docker at least in your dev environment in 2017. 
-You are surely missing out on some great advantages. Your new software engineer should start writing production-ready code 
-in a matter of hours not days. All thanks to docker.  Along the same lines, this post will cover how you can set up 
-docker for your dev environment with least friction and maximum productivity. It is an opinionated post. We migrated to this `external_links`
-[approach](https://docs.docker.com/compose/compose-file/#externallinks) so that we could run multiple projects/microservices that use the same db/services shared among them.
+Docker as been immensely popular in the past years. If you are not using docker at least in your dev environment in 2017. You are surely missing out on some great advantages. Your new software engineer should start writing production-ready code in a matter of hours not days. All thanks to docker.  Along the same lines, this post will cover how you can set up docker for your dev environment with least friction and maximum productivity. It is an opinionated post. We migrated to this `external_links` [approach](https://docs.docker.com/compose/compose-file/#externallinks) so that we could run multiple projects/microservices that use the same db/services shared among them.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-compose-vhost/docker-compose-vhost.jpg" title="Docker compose with vhost and shared services" alt="Docker compose with vhost and shared services">
 
@@ -51,10 +47,7 @@ docker for your dev environment with least friction and maximum productivity. It
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-compose-vhost/page-visited.png" title="All working you should see this" alt="All working you should see this">
 
-Virtual host has been possible in above setup as we ran the nginx proxy and configured `VIRTUAL_HOST` and `VIRTUAL_PORT` parameters correctly
-in the docker-compose.yml of the sample counter project. Mysql was already running before the project even started to run and it was `external_links`,
-the IP of the mysql container was automatically added to the `/etc/hosts` of the counter project container which enabled us to use the host for mysql db
-as [mysql](https://github.com/geshan/counter/blob/master/index.js#L4) in the connection config we passed to the mysql library.
+Virtual host has been possible in above setup as we ran the nginx proxy and configured `VIRTUAL_HOST` and `VIRTUAL_PORT` parameters correctly in the docker-compose.yml of the sample counter project. Mysql was already running before the project even started to run and it was `external_links`, the IP of the mysql container was automatically added to the `/etc/hosts` of the counter project container which enabled us to use the host for mysql db as [mysql](https://github.com/geshan/counter/blob/master/index.js#L4) in the connection config we passed to the mysql library.
 
 Steps for running dependent services like nginx proxy, mysql can surely be automated for speed and efficiency.
 
@@ -65,5 +58,5 @@ Steps for running dependent services like nginx proxy, mysql can surely be autom
 1. Use [nginx proxy](https://github.com/jwilder/nginx-proxy) to enable virtual host per project with two simple env variables `VIRTUAL_HOST` and `VIRTUAL_PORT` in the project's [docker-compose](https://github.com/geshan/counter/blob/master/docker-compose.yml#L8-L9) file. `VIRTUAL_PORT` is 8080 because application is [running](https://github.com/geshan/counter/blob/master/index.js#L27) on port 8080 and same port is exposed from the [dockerfile](https://github.com/geshan/counter/blob/master/Dockerfile#L10).
 1. Run all your dependencies before hand and then run `docker-compose up` on your project(s). Dependencies can be run with `docker-compose up -d` to put it in the background. You can use `docker-compose -f logs` to follow logs and check if the service is running fine.
 1. In this way, you can run multiple projects sharing the same db instance and each project can have its own virtual host.
- 
+
 > Hope you found this helpful. For more clarity, please read the [Dockerfile](https://github.com/geshan/counter/blob/master/Dockerfile), [docker-compose.yml](https://github.com/geshan/counter/blob/master/docker-compose.yml) and [index.js](https://github.com/geshan/counter/blob/master/index.js) of the sample counter project thoroughly.

@@ -9,6 +9,7 @@ tags:
 cover: /images/5-tech-medium-publications/library.jpg
 description: Some popular medium posts you as a technology writer should start writing for are listed in this post.
 keywords: Blog, Blogging, medium, writing
+lastModified: 2020-04-23 10:01:22 +11:00
 ---
 Starting a tech blog has changed in the last few years. 10 years back starting a blog without your website, you had 2 options Blogger or Wordpress. Both gave you a free sub-domain. Things did not change much for quite some time, but in 2012 medium came with a storm. It gained a lot of traction with its simplistic interface in 2014-2015. With the publication feature, Medium makes it very easy for a group of writers to collaborate.  These days I would suggest most people start their blog on it.
 
@@ -58,6 +59,10 @@ Though [dev.to](https://dev.to/) is not a Medium publication but it surely deser
 > Currently the 11,357th website in the world, it has no editorial process. 
 
 This makes it one of the most accessible website to write for that without doubts has a big audience. I got [2250+ followers](https://dev.to/geshan) on Dev.to in less than 2 months having just 20 posts.
+
+## Update 2020
+
+In 2020, both FreeCodeCamp and Hackernoon have moved to their own platforms. FreeCodeCamp is using the [Ghost CMS](https://ghost.org/) and Hackernoon has built it's own CMS. Other publications are still on Medium.
 
 ## Conclusion
 

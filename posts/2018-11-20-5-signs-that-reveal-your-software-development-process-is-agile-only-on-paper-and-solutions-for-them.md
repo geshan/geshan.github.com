@@ -9,6 +9,7 @@ tags:
 cover: /images/5-signs-agile-on-paper/board.jpg
 description: Using Jira does not make your software development process agile. Being agile is having an agile mindset and putting it into practice everyday.
 keywords: Agile, Agile software development, Software Engineering
+lastModified: 2020-04-23 11:00:22 +11:00
 ---
 
 Agility comes with practice not putting big words on paper. Using Jira does not make your software development process agile. Saying we do "scrum" is not being agile. Being agile is having an agile mindset and putting it into practice everyday. It is about thinking about the value you deliver to the customer and how to do it better.  This post will also unveil these 5 signs and how to solve these issues. The signs and solutions will concern multiple roles like Product Manager, Software engineer etc.
@@ -63,7 +64,7 @@ The first thing to consider here is:
 
 > Deployment is a technical task and releasing a new software version is a business activity.
 
-[Deployment is not release](https://geshan.com.np/blog/2018/10/deployment-is-not-release/). If you are not able to make that distinction there is something that needs to be fixed. On top of it, if you hardly release one new version each month, you are doing agile wrong.  [Release early release often](https://en.wikipedia.org/wiki/Release_early,_release_often) is an excellent philosophy to get feedback early. With early feedback, you can make a new set of changes in the next release to make the software better. This might not apply for mobile applications with long vendor approval process. For web applications deploying and releasing multiple times a day should be a norm. 
+[Deployment is not release](https://geshan.com.np/blog/2018/10/deployment-is-not-release/). If you are not able to make that distinction there is something that needs to be fixed. On top of it, if you hardly release one new version each month, you are doing agile wrong.  [Release early release often](https://en.wikipedia.org/wiki/Release_early,_release_often) is an excellent philosophy to get feedback early. With early feedback, you can make a new set of changes in the next release to make the software better. This might not apply for mobile applications with long vendor approval process. For web applications deploying and releasing multiple times a day should be a norm.
 
 ### Solution
 
@@ -75,7 +76,7 @@ Call it DevOps, SRE or Platforms engineering whatever you want but do it and dep
 
 ## Not being careful about team motivation
 
-Software development is a team sport. If one player is hurt the team covers for that player. If one team member lacks some skills team covers and helps teach that skill to the team member. Self organizing team that reflects on how to make the process better is at the heart of agile. 
+Software development is a team sport. If one player is hurt the team covers for that player. If one team member lacks some skills team covers and helps teach that skill to the team member. Self organizing team that reflects on how to make the process better is at the heart of agile.
 
 > Team motivation and happy team members are essential to high productivity. 
 

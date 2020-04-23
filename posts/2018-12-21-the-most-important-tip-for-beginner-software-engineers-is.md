@@ -52,7 +52,7 @@ POST /refunds
   {
      item_id: 20,
      amount: 5000,
-     is_cash: true    
+     is_cash: true
   },
   {
      item_id: 20,
@@ -73,11 +73,11 @@ What most beginner software engineers will do is start scanning the code base, i
 
 ### The appropriate step
 
-The most appropriate step, in my opinion, is to sit down and solve the problem on paper in steps. So you ask yourself to write `Refund` and its related `Payments` on the database what do I need to do. You come up with a plan in steps and tweak it. 
+The most appropriate step, in my opinion, is to sit down and solve the problem on paper in steps. So you ask yourself to write `Refund` and its related `Payments` on the database what do I need to do. You come up with a plan in steps and tweak it.
 
 > If you have someone senior you can validate your steps and get feedback. 
 
-This will also decrease the code review time a lot as both of you have already agreed on the modality of the solution. 
+This will also decrease the code review time a lot as both of you have already agreed on the modality of the solution.
 
 ### So how to do it
 
@@ -87,7 +87,7 @@ The task as mentioned earlier is to write a create/POST API where Refunds with p
 1. Validate all the input for values, refund types, and reasons.
 1. If all validation passes, generate a random alphanumeric number of length 10 which is not existing in the refund table (recursive check)
 1. If validation fails to respond with a proper validation failure message, decide on response structure
-1.  Start a database transaction
+1. Start a database transaction
     1. Insert the refund related values of refund_nr, reason_reason, is_premium_customer to the `refund` table
     1. On insert success, get the id of the last insert
     1. With the refund_id, insert payment related values of fk_refund, fk_item, amount, is_cash to the `payment` table
@@ -104,8 +104,7 @@ After you have a step by step plan you can start writing code. Then,  you can go
 
 You could even write tests given the company and culture supports and encourages it.  
 
-
-When your solution is evident in your mind and you have a step by step action plan on paper now you can write code. 
+When your solution is evident in your mind and you have a step by step action plan on paper now you can write code.
 
 > You can even break up the parts in ways that will be easier to finish and wire up. 
 

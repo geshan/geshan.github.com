@@ -17,9 +17,7 @@ ready) but not deployed to production it is an opportunity loss for the business
 
 <!-- more -->
 
-Below are the slides of my
-talk titled "Adopt a painless continuous delivery culture, add more business value" given today at
-[DevOpsDays Portland 2017](https://www.devopsdays.org/events/2017-portland/program/):
+Below are the slides of my talk titled "Adopt a painless continuous delivery culture, add more business value" given today at [DevOpsDays Portland 2017](https://www.devopsdays.org/events/2017-portland/program/):
 
 ## The Slides
 

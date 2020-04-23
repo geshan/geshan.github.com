@@ -28,8 +28,7 @@ This post is not discussing pull requests for open source projects. It is only f
 
 Do not open a pull request with 50 files changed and 2000 lines added, no one can or will review such a long set of changes in one go. This means it will take multiple sittings and a lot of discussions. A long length will also guarantee that the PR will not be short-lived. Basically, a big changeset violates all the qualities of a [great](https://medium.com/@hugooodias/the-anatomy-of-a-perfect-pull-request-567382bb6067) pull request like easy to comprehend,  having a low discussion and short-lived.
 
-There are [numerous benefits](https://smallbusinessprogramming.com/optimal-pull-request-size/) of a smaller pull request. One of the technical one is surely having [fewer git conflicts](https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/). Other benefits include shorter 
-cycle time and less risk.
+There are [numerous benefits](https://smallbusinessprogramming.com/optimal-pull-request-size/) of a smaller pull request. One of the technical one is surely having [fewer git conflicts](https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/). Other benefits include shorter cycle time and less risk.
 
 > A [study](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/) has revealed that a review of 200-400 LOC over 60 to 90 minutes should yield 70-90% defect discovery.
 
@@ -61,6 +60,6 @@ With feature flags you can ship the files you need step by step but the only use
 
 ## Conclusion
 
-Creating smaller pull requests helps the code author, the reviewer, the team and with better productivity the whole company. Use the tools on disposal well, still, never underestimate the human factor and the power of clear communication.
+Creating smaller pull requests helps the code author, the reviewer, the team and with better productivity the whole company. Use the tools on disposal well, still, never underestimate the human factor and the power of clear communication. For a better git skill set do read these [git tips](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/).
 
 > Hopefully the above strategies give you a better idea of how you keep your pull requests smaller leading to a more productive team.
