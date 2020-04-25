@@ -1,11 +1,11 @@
-module.exports = function(post) {
+module.exports = function(post, length = 300) {
   let excerpt = post.data.excerpt ? `<p>${post.data.excerpt}</p>` : "";
   const postContent = post.templateContent;
 
   let startPosition = 0;
   let endPosition = postContent.toLowerCase().indexOf('<!-- more -->');
   if (endPosition == -1) {
-    return postContent.replace(/(<([^>]+)>)/ig,"").substring(0, 300) + '...';
+    return postContent.replace(/(<([^>]+)>)/ig,"").substring(0, length) + '...';
   }
   if (startPosition !== -1 && endPosition !== -1) {
       excerpt = postContent.substring(startPosition, endPosition);

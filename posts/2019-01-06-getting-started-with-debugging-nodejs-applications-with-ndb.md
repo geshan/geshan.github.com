@@ -11,6 +11,7 @@ pagetitle: Debugging nodejs applications using ndb step by step guide
 cover: /images/debugging-node-js/00ndb.png
 description: Debugging nodejs is a lot easier using ndb compared to node inspector with chrome node debugger. Learn more about browser independent debugging workflow.
 keywords: debugging nodejs, debugging node js, debugging node.js, debugging node js apps, debugging node js apps with ndb, ndb, nodejs ndb, ndb nodejs
+lastModified: 2020-04-25 11:05:22 +11:00
 ---
 
 NodeJs was released almost 9 years ago. The [default debugging process](https://nodejs.org/api/debugger.html "Default nodejs debugging process") of NodeJs (read Node.js) is quite clumsy. You are already aware of the need to add `--inspect` to the node script with node inspector. It is also dependent on chrome. Then look at the proper web socket connection which is hard and debug using chrome node debugger. To be honest, it is a pain in the neck. 
@@ -37,7 +38,7 @@ For debugging nodejs application in place of just another script I will use a fu
 
 I am using my opensource [currency API](https://github.com/geshan/currency-api "Currency API app on github") for this step-by-step getting started of debugging a nodejs application. It is built using express js framework. You can also check the running app hosted on Zeit Now to see the USD to AUD rate of 2019-01-10 as an example.
 
-The idea of the application is simple. If the conversion rate is available in the database it will fetch it from the database. If not it will fetch it from another API and send it back to the user also saving the rate in the database at the same time (async) for later use. 
+The idea of the application is simple. If the conversion rate is available in the database it will fetch it from the database. If not it will fetch it from another API and send it back to the user also saving the rate in the database at the same time (async) for later use. This step by step guide will be easy to follow.
 
 You can clone the application from github and run `npm install` to get it ready for debugging. This is a very simple application with most of the logic in `exchangeRates.js` [file](https://github.com/geshan/currency-api/blob/master/src/exchangeRates.js "You can have a look at the code on github"). It has mocha [tests](https://github.com/geshan/currency-api/blob/master/test/exchangeRatesTest.js "You can check the test too") too as it was a demo for testing nodejs application.
 

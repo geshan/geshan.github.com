@@ -12,7 +12,7 @@ description: This post explains the main differences between Static, dynamic and
   stack websites. It also covers the technical and cost aspects of all 3 options.
 keywords: static vs dynamic website, difference between static and dynamic web page,
   jamstack, jam stack,dynamic vs static website, static site generators
-
+lastModified: 2020-04-25 10:03:22 +11:00
 ---
 The web has been around for a while now. I have been building websites for 20 years now and I started by building static websites. Later I worked on many dynamic websites and web applications. This post is a quick rundown on the major difference between dynamic and static websites. There are some details about the JAM (Javascript API and Markup) stack. It also has some explanation of the technologies and costs associated with each of the 3 options.
 
@@ -44,7 +44,7 @@ Dynamic websites from a technical standpoint require more than just HTML and CSS
 
 ### Cost for running a dynamic website
 
-A dynamic website will cost more money upfront to be built. It will also entail a larger recurring running cost for the database, web space, web server and other things you choose to include for your dynamic website. Recurring costs for running a dynamic website can range from 5 to thousands of dollars a month depending on the traffic and resources used to run the website. For example, a small Dynamic website can be hosted on a digital ocean droplet for $5 a month.
+A dynamic website will cost more money upfront to be built. It will also entail a larger recurring running cost for the database, web space, web server and other things you choose to include for your dynamic website. Recurring cost considerations for running a dynamic website vary. Costs can range from 5 to thousands of dollars a month depending on the traffic and resources used to run the website. For example, a small Dynamic website can be hosted on a digital ocean droplet for $5 a month.
 
 ## Static website
 

@@ -49,7 +49,7 @@ the data structure and how to accept or give out data, try implementing your API
 ## Strong backend and multiple clients
 
 If you are able to plan all your data communcation getting and giving out data to clients in the form of resource URLs,
-then you can build a strong backend. When you have a strong and scaleable back-end it can handle multiple clients easily. If you have a performant backend then the same backend can serve a front-end Javascript framework or a mobile applicaiton as a client in a speedy and consistent way.
+then you can build a strong backend. When you have a strong and scaleable back-end it can handle multiple clients easily. If you have a performant backend then the same backend can serve a front-end Javascript framework or a mobile application as a client in a speedy and consistent way.
 
 ## Why not build frontend parallel
 
@@ -59,7 +59,7 @@ If your budget and resources support you can have two teams backend and frontend
 
 ## Mobile first is a side effect
 
-If you have a strong and well documented backend HTTP APIs it can be called easily from the your mobile applicaiton to post or receive any information. Becuase is data is stored centrally on a persistent store the backend HTTP APIs work like a communication layer between your mobile applications and the data store.
+If you have a strong and well documented backend HTTP APIs it can be called easily from the your mobile application to post or receive any information. Because is data is stored centrally on a persistent store the backend HTTP APIs work like a communication layer between your mobile applications and the data store.
 
 ## Speed and performance is another good side effect
 
