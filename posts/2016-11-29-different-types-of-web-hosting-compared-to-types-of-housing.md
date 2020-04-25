@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Different types of web hosting compared to types of housing [Infographics]"
+title: "Different types of web hosting compared to housing types [Infographics]"
 date: 2016-11-29 15:28:50 +04:00
 comments: true
 tags:

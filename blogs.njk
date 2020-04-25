@@ -7,6 +7,8 @@ pagination:
     data: collections.latestPosts
     size: 5
 permalink: "/posts/{{ pagination.pageNumber + 1  }}/index.html"
+renderData:
+  title: Posts on Geshan's Blog Page {{ pagination.pageNumber + 1  }}
 ---
 {% set postslist = pagination.items | reverse %}
 {% set postslistCounter = collections.posts | length %}
