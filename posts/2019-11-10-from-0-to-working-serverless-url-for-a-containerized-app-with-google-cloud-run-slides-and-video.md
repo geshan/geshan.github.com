@@ -13,6 +13,7 @@ cover: /images/serverless-containers/01serverless-containers.jpg
 pagetitle: From 0 to working serverless URL for a dockerized app on Google Cloud Run - Slides and Video
 description: Serverless Containers are possible and getting a running URL with Google cloud run is super easy.
 keywords: Google Cloud, Google Cloud Run, serverless, containers, serverless containers, docker
+lastModified: 2020-04-25 11:03:22 +11:00
 ---
 
 What is the fastest way to get a working URL for your stateless container in a serverless way? With 0 doubts it is [Google Cloud Run](https://cloud.google.com/run/). Containers and Docker are far more popular than Serverless if we look at [Google Trends](https://trends.google.com/trends/explore?date=2015-01-01%202019-11-10&q=serverless,containers,docker), still there is a meeting point for both these technologies and Cloud Run does a great job to make it super easy to deploy serverless containers in minutes. This post details about a talk I gave at Serverless Days Sydney 2019 about serverless containers.
@@ -37,7 +38,7 @@ Slides are also on [SlideShare](https://www.slideshare.net/geshan/from-0-to-work
 
 ## Some details
 
-Serverless has seen a good amount of growth in recent months/years. Come out of the illusion that serverless is just Function As A Service (FAAS), for example [S3](https://aws.amazon.com/serverless/) is serverless. So be more open to ideas like serverless containers where you don’t need to learn another language/framework/paradigm to get your product faster to your customers. Serverless containers IMHO is that sweet spot with a good level of abstraction as well as having the needed control. Serverless containers enable you to go serverless without the need to be tied to FAAS. 
+Serverless has seen a good amount of growth in recent months/years. Come out of the illusion that serverless is just Function As A Service (FAAS), for example [S3](https://aws.amazon.com/serverless/) is serverless. So be more open to ideas like serverless containers where you don’t need to learn another language/framework/paradigm to get your product faster to your customers. Serverless containers IMHO is that sweet spot with a good level of abstraction as well as having the needed control. Serverless containers enable you to go serverless without the need to be tied to FAAS. Any dockerized app can go serverless with Google Cloud Run.
 
 With Google Cloud, you can take advantage of the whole suite of amazing developer-friendly products like [Google Cloud Build](https://cloud.google.com/cloud-build/), [Container registry](https://cloud.google.com/container-registry/), etc. With the Google Stack Driver offerings like [logging](https://cloud.google.com/logging/), [trace](https://cloud.google.com/trace/) and [debugger](https://cloud.google.com/debugger/) (which you can use to debug apps even on production), etc, it is sure that Google has put that extra effort to make it’s cloud offering more software engineer friendly than other competitors.
 

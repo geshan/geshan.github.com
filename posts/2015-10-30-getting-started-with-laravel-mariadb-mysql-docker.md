@@ -256,7 +256,7 @@ on the project root and it will stop the containers like below:
 
 ## Next Steps
 
-You can carry on using the docker containers to replace your local Apache/Ngnix and MySQL. You can develop your Laravel applicaiton with ease using docker and docker compose.
+You can carry on using the docker containers to replace your local Apache/Ngnix and MySQL. You can develop your Laravel application with ease using docker and docker compose.
 
 ## Conclusion
 

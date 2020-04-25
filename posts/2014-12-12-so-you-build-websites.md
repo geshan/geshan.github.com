@@ -67,7 +67,7 @@ email contacts and email usage behavior using Conspire - http://conspire.com .
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/free-site-services/conspire.jpg" title="Email reports with conspire" alt="Email reports with conspire">
 
-It helps to analyze who you contacted the most in the past week and who you are loosing touch with.
+It helps to analyze who you contacted the most in the past week and who you are losing touch with.
 It also informs about how long you and your contacts took to reply to emails. Your clients can use conspire to
 connect with new people and expand their businesses.
 
