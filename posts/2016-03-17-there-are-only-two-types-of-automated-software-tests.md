@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "There are only two types of automated software tests, fast ones and not fast ones"
+title: "There are only two types of automated software tests, fast and not fast"
 date: 2016-03-17 09:38:18 +04:00
 comments: true
 tags: 
