@@ -8,26 +8,16 @@ tags:
  - Software Engineering
 ---
 
-Git or a similar VCS is the backbone for code collaboration in a multi-developers environment. When you follow
-a proper branch naming convention, git branching and merging can also be tied to an issue flow for better
-project management.
+Git or a similar VCS is the backbone for code collaboration in a multi-developers environment. When you follow a proper branch naming convention, git branching and merging can also be tied to an issue flow for better project management.
 
-Source code Version Control System (VCS) and automated testing open doors to other great software quality and
-delivery practices like continuous integration and automated deployment etc. Amongst various version control
-system software [git](http://git-scm.com) is a distributed system that is very popular and easy to use once
-you get used to it.
+Source code Version Control System (VCS) and automated testing open doors to other great software quality and delivery practices like continuous integration and automated deployment etc. Amongst various version control system software [git](http://git-scm.com) is a distributed system that is very popular and easy to use once you get used to it.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
 
 <!-- more -->
-The full [gitflow](hhttp://nvie.com/posts/a-successful-git-branching-model/) has 3 perpetual branches develop,
-release and master. Tickets/Issues can be grouped to release from develop. This in turn creates difficulty when
-tracing the ticket that caused any problem when it occurs.
+The full [gitflow](hhttp://nvie.com/posts/a-successful-git-branching-model/) has 3 perpetual branches develop, release and master. Tickets/Issues can be grouped to release from develop. This in turn creates difficulty when tracing the ticket that caused any problem when it occurs.
 
-Simplified gitflow has only one perpetual branch master which decreases the complexity, only one ticket can be
-deployed and tested in any given environment like staging or production. When only one ticket is deployed on a
-given environment, it is very easy to trace a problem if it occurs. As the full gitflow, master is the stable
-branch which can be deployed to production anytime.
+Simplified gitflow has only one perpetual branch master which decreases the complexity, only one ticket can be deployed and tested in any given environment like staging or production. When only one ticket is deployed on a given environment, it is very easy to trace a problem if it occurs. As the full gitflow, master is the stable branch which can be deployed to production anytime.
 
 If a new feature or bug fix needs to be done, the developer will follow the given steps:
 
@@ -38,10 +28,7 @@ If a new feature or bug fix needs to be done, the developer will follow the give
 1. Test it, if everything is ok, create a tag from feat-123 like 12-12-14 (today's date) and deploy it to production
 1. Test it on production, if everything is fine on production after testing merge the tag to master.
 
-The above steps are repeated for each ticket, feature of bug fix. Generally its good to wait an hour or two to merge
-the tag to master to make sure at that all the things are running fine. Smaller deployments also help to increase
-the overall stability of the whole systems. I am following simplified git-flow for
-[blogging](https://github.com/geshan/geshan.github.com/network) as well, for this blog source branch acts as master.
+The above steps are repeated for each ticket, feature of bug fix. Generally its good to wait an hour or two to merge the tag to master to make sure at that all the things are running fine. Smaller deployments also help to increase the overall stability of the whole systems. I am following simplified git-flow for [blogging](https://github.com/geshan/geshan.github.com/network) as well, for this blog source branch acts as master.
 
 For a detailed example with explanation and git commands read the following slides:
 

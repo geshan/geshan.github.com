@@ -8,16 +8,11 @@ tags:
  - Software Engineering
 ---
 
-It has already been a month that the devastating earthquake hit Nepal. I hope life is coming back to normal now and 
-people in Nepal are optimistic, positive and hopeful. I hope everyone will do what they are best doing with sincerity
-as its one of the best ways you can help in rebuilding Nepal.
+It has already been a month that the devastating earthquake hit Nepal. I hope life is coming back to normal now and people in Nepal are optimistic, positive and hopeful. I hope everyone will do what they are best doing with sincerity as its one of the best ways you can help in rebuilding Nepal.
 
-Below is final the Part 4 of the Software Engineering Practices in Nepal Infographics. In this edition the information
-reveals Project Management Methodology and Software, testing frameworks and mobile apps all extracted out from the
-survey data.
+Below is final the Part 4 of the Software Engineering Practices in Nepal Infographics. In this edition the information reveals Project Management Methodology and Software, testing frameworks and mobile apps all extracted out from the survey data.
 
-Special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) and [Ansubha Manandhar](http://bit.ly/ansu-blog) for 
-this edition too, for your help in data normalization, filtering and grouping.
+Special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) and [Ansubha Manandhar](http://bit.ly/ansu-blog) for this edition too, for your help in data normalization, filtering and grouping.
 
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
 <!-- more -->
