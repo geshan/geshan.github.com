@@ -10,8 +10,7 @@ tags:
 cover: /images/chatops/chatops-hubot.jpg
 ---
 
-On 1-Apr-2016 For [CodeMotion Dubai 2016](http://dubai2016.codemotionworld.com/) conference I talked about chatOps at Namshi. 
-The main topics of the talk were:
+On 1-Apr-2016 For [CodeMotion Dubai 2016](http://dubai2016.codemotionworld.com/) conference I talked about chatOps at Namshi. The main topics of the talk were:
 
 1. What is chatOps?
 1. Why do chatOps?
@@ -37,11 +36,7 @@ and on [facebook](https://www.facebook.com/codemotiondubai/).
 
 ### Talk Abstract
 
-Are you still deploying with capistrano? It is high time to put the chat bots to work. Using chatops to deploy your 
-software gives visibility to all team members. It also gives a consistent interface to deploy. Software Engineers do not 
-need to install any extra software to deploy. Ops is happy because software engineers do not need SSH access to servers 
-anymore. Namshi is a Rocket Internet e-commerce venture in Dubai. At Namshi, we deploy all our apps with chatbots built 
-with hubot. In this session, I will uncover some real life use cases of chat bots at Namshi.
+Are you still deploying with capistrano? It is high time to put the chat bots to work. Using chatops to deploy your software gives visibility to all team members. It also gives a consistent interface to deploy. Software Engineers do not need to install any extra software to deploy. Ops is happy because software engineers do not need SSH access to servers anymore. Namshi is a Rocket Internet e-commerce venture in Dubai. At Namshi, we deploy all our apps with chatbots built with hubot. In this session, I will uncover some real life use cases of chat bots at Namshi.
 
 ### Some lessons learnt
 
