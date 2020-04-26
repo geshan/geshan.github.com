@@ -32,7 +32,7 @@ In-depth interviews is what tech people by Gistia Labs podcast excels on. They b
 
 ## [Mixergy by Andrew](https://mixergy.com/interviews/)
 
-Another admirable podcast is Mixergy hosted by [Andrew Warner](http://www.andrewwarner.com/). With over a 1000 interviews with proven entrepreneurs, he knows how to ask the right questions. Andrew sometimes elicits such insightful information out of his guest. It is intriguing how he does it. If you ever want to learn how to interview people this is one podcast you can't afford do miss. He generally interviews tech entrepreneurs. The interviews usually last like an hour. You even as a software engineer get to know important things about how to run a business.
+Another admirable podcast is Mixergy hosted by Andrew Warner. With over a 1000 interviews with proven entrepreneurs, he knows how to ask the right questions. Andrew sometimes elicits such insightful information out of his guest. It is intriguing how he does it. If you ever want to learn how to interview people this is one podcast you can't afford do miss. He generally interviews tech entrepreneurs. The interviews usually last like an hour. You even as a software engineer get to know important things about how to run a business.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/3-podcasts-part-3/mixergy.jpg" title="Mixergy Podcast" alt="Mixergy Podcast">
 

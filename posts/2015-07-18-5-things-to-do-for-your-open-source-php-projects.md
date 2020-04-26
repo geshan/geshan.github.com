@@ -38,7 +38,7 @@ As an example I am using a project with just 2 PHP files so you can see how powe
 
 ## 2. Write Tests
 
-Writing tests for code is also important to verify that the code does what you expect and intend it to do. As generally open source projects are libraries Unit tests is recommended more than functional/integration tests. You can see an example test [here](https://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php). Below are the two main choices of framework you have for writing tests depending on the style of testing:
+Writing tests for code is also important to verify that the code does what you expect and intend it to do. As generally open source projects are libraries Unit tests is recommended more than functional/integration tests. You can see an example [test](https://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php). Below are the two main choices of framework you have for writing tests depending on the style of testing:
 
 * [PHPUnit](https://phpunit.de/) - The most popular PHP test framework, you can use it for a Test Driven Development approach.
 * [PHPSpec](http://www.phpspec.net/) - The new emerging concept which some say are better than PHPunit, follows Behavior Driven Development approach.

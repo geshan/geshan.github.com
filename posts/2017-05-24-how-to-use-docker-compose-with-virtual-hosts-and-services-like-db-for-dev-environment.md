@@ -41,9 +41,9 @@ Docker as been immensely popular in the past years. If you are not using docker 
 1. Run the Nginx proxy to enable virtual hosts with `$ docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy`
 1. Add `127.0.0.1 counter.local.dev` to your hosts file (on unix based system it is `/etc/hosts` file)
 1. Create an empty folder db in your home (`~/db`), to save your mysql data
-1. Clone mysql repo from [here](https://github.com/geshan/sample-mysql) maybe at `~/projects/mysql`
+1. Clone mysql [repo](https://github.com/geshan/sample-mysql) maybe at `~/projects/mysql`
 1. In `~/projects/mysql` run docker-compose up to run mysql, it will create [counter db, counts table with one row](https://github.com/geshan/sample-mysql/blob/master/init-dump/counter.sql).
-1. Clone the sample counter app from [here](https://github.com/geshan/counter) to maybe `~/projects/counter`.
+1. Clone the sample counter app from this [repo](https://github.com/geshan/counter) to maybe `~/projects/counter`.
 1. In `~/projects/counter` run `docker-compose up`
 1. Then go to `http://counter.local.dev` on your browser you should see `Page visited 1 times`, refresh it, it should say `Page visited 2 times`
 
