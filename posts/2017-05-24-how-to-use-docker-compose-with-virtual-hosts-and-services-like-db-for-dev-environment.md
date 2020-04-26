@@ -7,7 +7,7 @@ tags:
 - Docker
 - devops
 cover: /images/docker-compose-vhost/docker-compose-vhost.jpg
-description: Learn how to use docker, docker compose with virtual hosts and shared services like a database on your dev enviroment easily.
+description: Learn how to use docker, docker compose with virtual hosts and shared services like a database on your dev environment easily.
 keywords: docker, docker compose, docker virtual host, docker compose virtual host
 ---
 

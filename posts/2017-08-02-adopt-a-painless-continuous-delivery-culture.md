@@ -7,8 +7,8 @@ tags:
 - Talks
 - devops
 cover: /images/continuous-delivery/geshan-devops--days-pdx-2017.jpg
-description: Your work responsibilities boil down to 2 things, either add value to customers or save cost for the business. This talk is about how we used continous delivery for better business outcomes.
-keywords: continuous delivery, continuous deployment, continous delivery talk
+description: Your work responsibilities boil down to 2 things, either add value to customers or save cost for the business. This talk is about how we used continuous delivery for better business outcomes.
+keywords: continuous delivery, continuous deployment, continuous delivery talk
 ---
 
 Your work responsibilities boil down to 2 things, either add value to customers or save cost for the business.
