@@ -40,7 +40,7 @@ This is possible as the data is usually pulled in from a datastore like a relati
 
 ### Technical aspects of dynamic website
 
-Dynamic websites from a technical standpoint require more than just HTML and CSS. There would be some backend language needed to fetch the content on the fly from a datastore. Some popular backend languages are PHP, Python, Ruby. Dynamic websites are generally powered by a Content Management System (CMS). Some [popular](https://trends.builtwith.com/cms) open-source CMSes include [Drupal](https://www.drupal.org/), [WordPress](https://wordpress.org/) (Claims to power [36%](https://wordpress.com/) of the web) and [Joomla](https://www.joomla.org/) if you want to get started with one.
+Dynamic websites from a technical standpoint require more than just HTML and CSS. There would be some backend language needed to fetch the content on the fly from a datastore. Some popular backend languages are PHP, Python, Ruby. Dynamic websites are generally powered by a Content Management System (CMS). Some [popular](https://trends.builtwith.com/cms) open-source CMSes include [Drupal](https://www.drupal.org), [WordPress](https://wordpress.org/) (Claims to power [36%](https://wordpress.com/) of the web) and [Joomla](https://www.joomla.org/) if you want to get started with one.
 
 ### Cost for running a dynamic website
 

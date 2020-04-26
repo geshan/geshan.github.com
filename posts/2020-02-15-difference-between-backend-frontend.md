@@ -97,7 +97,7 @@ Super stack development work focuses on real end to end delivery of the task or 
 
 ## Conclusion
 
-Some skills will be needed to do all kinds of above-mentioned work like using [Git](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/), automated testing with [unit](https://geshan.com.np/blog/2016/03/there-are-only-two-types-of-automated-software-tests/) and other tests, doing meaningful [code reviews](https://geshan.com.np/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/), using [Docker](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/).
+Some skills will be needed to do all kinds of above-mentioned work like using [Git](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/), automated testing with [unit](https://geshan.com.np/blog/2016/03/there-are-only-two-types-of-automated-software-tests/) and other tests, doing meaningful [code reviews](https://geshan.com.np/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/), using [Docker in past 5 years](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/).
 
 This post is not about backend, frontend, full-stack, and super stack "developer", it's about the development work and skills a software engineer would need to carry out that task.
 

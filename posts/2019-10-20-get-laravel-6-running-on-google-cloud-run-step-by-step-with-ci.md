@@ -309,7 +309,7 @@ Behind the scenes, it is using [Knative](https://cloud.google.com/knative/) and 
 
 To run Laravel 6 on Google Cloud Run quickly follow the steps below:
 
-1. Make sure you are logged into your [Google Cloud Account](https://console.cloud.google.com/)
+1. Make sure you are logged into your [Google Cloud Account](https://accounts.google.com/ServiceLogin?service=cloudconsole&passive=1209600&osid=1&continue=https://console.cloud.google.com/&followup=https://console.cloud.google.com/)
 1. Go to [https://github.com/geshan/laravel6-on-google-cloud-run](https://github.com/geshan/laravel6-on-google-cloud-run)
 1. Click the "Run On Google Cloud" blue button
 1. Select your project
