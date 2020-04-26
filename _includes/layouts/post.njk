@@ -23,6 +23,7 @@ templateClass: tmpl-post
           <span class="glyphicon glyphicon-calendar"></span>
           {% include "components/posted-date-time.njk" %}
           {% include "components/share.njk" %}
+        </p>
         <ul class="meta text-muted pager">
             {% if prevPost.url %}
               <li class="previous"><a href="{{ prevPost.url }}" title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
