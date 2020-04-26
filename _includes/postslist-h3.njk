@@ -18,13 +18,7 @@
                     
                     <span class="glyphicon glyphicon-tags">
                     </span>&nbsp; 
-                    <span class="categories"> 
-                        {% for tag in post.data.tags %}
-                        {%- if collections.tagList.indexOf(tag) != -1 -%}
-                        {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
-                        <a href="{{ tagUrl | url }}">{{ tag | lower }}</a>{% if notloop.last %},{% endif %}
-                        {%- endif -%}
-                        {% endfor %} 
+                    <span class="categories">
                     </span>
                 </article>
 
