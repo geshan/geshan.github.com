@@ -7,6 +7,8 @@ tags:
 - Docker
 - devops
 cover: /images/docker-compose-vhost/docker-compose-vhost.jpg
+description: Learn how to use docker, docker compose with virtual hosts and shared services like a database on your dev enviroment easily.
+keywords: docker, docker compose, docker virtual host, docker compose virtual host
 ---
 
 Docker as been immensely popular in the past years. If you are not using docker at least in your dev environment in 2017. You are surely missing out on some great advantages. Your new software engineer should start writing production-ready code in a matter of hours not days. All thanks to docker.  Along the same lines, this post will cover how you can set up docker for your dev environment with least friction and maximum productivity. It is an opinionated post. We migrated to this `external_links` [approach](https://docs.docker.com/compose/compose-file/#externallinks) so that we could run multiple projects/microservices that use the same db/services shared among them.

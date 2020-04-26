@@ -7,6 +7,8 @@ tags:
 - Misc
 - Software Engineering
 cover: /images/swtcm/swtcm.jpg
+description: In this post I will unfold my understanding of what makes a tech team competent in 4 levels with 6 main criteria and 25 sub criteria.
+keywords: software engineering, software company
 ---
 
 Every company is a [technology company](https://www.forbes.com/sites/forbestechcouncil/2017/01/23/why-every-company-is-a-technology-company/#62d4503657ae). A technology company without great software and technical team is insignificant. In this post I will unfold my understanding of what makes a tech team competent in 4 levels with 6 main criteria and 25 sub criteria.
@@ -24,8 +26,6 @@ Below are some of the assumptions I have made for this opinionated matrix:
 * It is more targeted towards web applications/APIs developing teams.
 * Many things can be added to the 6 main criteria and 25 sub criteria, still these 25 points I think are important.
 * Many things are dependent on the scale your team works at, for example if you get 2 requests per minute you don't need a load-balancer :)
-
-
 
 ## The matrix
 
