@@ -10,7 +10,7 @@ tags:
 - devops
 - Google Cloud Run
 cover: /images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg
-pagetitle: How to Run Symfony on Google Cloud Run step by step guide for the demo app
+pagetitle: How to Run Symfony on Google Cloud Run step by step guide - demo app
 description: Follow this step by step guide to run Symfony Demo app on Google Cloud Run
 keywords: Symfony, PHP, Google Cloud, Google Cloud Run, Symfony Hosting, Symfony Demo app
 ---

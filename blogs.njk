@@ -9,6 +9,7 @@ pagination:
 permalink: "/posts/{{ pagination.pageNumber + 1  }}/index.html"
 renderData:
   title: Posts on Geshan's Blog Page {{ pagination.pageNumber + 1  }}
+  description: "More posts on Geshan's Blog, page {{ pagination.pageNumber + 1  }} among many pages"
 ---
 {% set postslist = pagination.items | reverse %}
 {% set postslistCounter = collections.posts | length %}

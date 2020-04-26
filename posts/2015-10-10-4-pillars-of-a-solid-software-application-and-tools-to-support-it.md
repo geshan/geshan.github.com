@@ -15,7 +15,7 @@ cover: /images/4-pillars-software-application/4-pillars-software-application.png
 
 Software development is not just punching some code on the keyboard for desired output. The business side of software development always takes priority than the technicalities of it.  
 
-I have seen some software development teams are slow because they have a lot of technical debt. Some teams are naive, the members don't want to explore new things . They are stuck with 5 year old technology like FTP, old legacy framework etc. In this post, I will shed some light on the four basic and important things of a solid software application. This contents of post is language and framework agnostic. It is applicable to any software project.
+I have seen some software development teams are slow because they have a lot of technical debt. Some teams are naive, the members don't want to explore new things . They are stuck with 5 year old technology like FTP, old legacy framework etc. In this post, I will shed some light on the four basic and important pillars of a solid software application that support creating reliable software. This contents of post is language and framework agnostic. It is applicable to any software project.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/4-pillars-software-application/4-pillars-software-application.png" title="4 pillars of a solid software application" alt="4 pillars of a solid software application">
 
