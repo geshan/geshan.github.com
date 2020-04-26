@@ -43,6 +43,6 @@ make such kind a matrix on a team level then individual programmer.
 ## Conclusion
 
 As a company evaluates any programmer, you could try to rate your team or processes giving them a point as per the level in each of the 25 criteria.
-So any team could score between 25-100 (25 is level 1 on each point and 100 is level 4 in each point). It should be an interesting exercise, [here](https://docs.google.com/spreadsheets/d/1nenLo3uV3xN0PBt-heg0HLogLgHKw32QFeF4wj6Hdqs/edit?usp=sharing) is an example.
+So any team could score between 25-100 (25 is level 1 on each point and 100 is level 4 in each point). It should be an interesting exercise, This [sheet](https://docs.google.com/spreadsheets/d/1nenLo3uV3xN0PBt-heg0HLogLgHKw32QFeF4wj6Hdqs/edit?usp=sharing) is an example.
 
 > Hopefully you know where your tech competency/maturity stands on a team level better now.

@@ -36,7 +36,7 @@ Model-View-Controller, I got introduced to it in 2007 or maybe a bit earlier. Th
 Use controllers if you want and if it still makes sense. Think like my app gets HTTP request and it has to give back HTTP response. Do think of having a backend API and frontend(s) consuming it. Check the code below, it is surely not MVC:
 
 <script src="https://gist.github.com/geshan/1f76e5ebb3c15fd3c147c6c97420f923.js"></script>
-You can see the full app [here](https://github.com/geshan/currency-api). Veify the structure it is not MVC :)
+You can see the full app on this [repo](https://github.com/geshan/currency-api). Veify the structure it is not MVC :)
 
 So rather than doing an effort to get precise lines of M-V-C, write tests, implement continuous integration. Add some logs and monitoring to the app. Make the code maintainable, keep it as lean and simple as possible.
 

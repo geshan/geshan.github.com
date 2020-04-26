@@ -56,7 +56,7 @@ Then I attended the talk by Hannes Van De Vreken about IOC Containers. The talk 
 My turn was next after lunch. Ubuntu wasn't helping much with the huge display that needed 50 Hz refresh rate. After some googling, it played out well without issues.  My talk went pretty smooth and I even got a few questions a the end. I guess I managed my time well.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/geshan-laracon-eu.jpg" title="Me talking about Chatops at Laracon EU 2016" alt="Me talking about Chatops at Laracon EU 2016">
-More pictures from my talk [here](https://www.facebook.com/media/set/?set=a.10154031202522979.1073741829.625427978&type=1&l=48cf6b4aa3).
+More pictures from my talk are on this [album](https://www.facebook.com/media/set/?set=a.10154031202522979.1073741829.625427978&type=1&l=48cf6b4aa3).
 
 The slides of my talk are below:
 
@@ -64,7 +64,7 @@ The slides of my talk are below:
 
 [Slideshare link](http://bit.ly/chatops-slides-leu)
 
-I wrote a small script to pull in the latest tweet with #LaraconEu for the demo which is [here](https://github.com/geshan/larabot-hubot).
+I wrote a small script to pull in the latest tweet with #LaraconEu for the demo which is on this [repo](https://github.com/geshan/larabot-hubot).
 
 ## Video Of My Talk on Chatops
 

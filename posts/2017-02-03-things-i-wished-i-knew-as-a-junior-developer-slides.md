@@ -56,8 +56,8 @@ It was great meetup to attend, speak and moderate the panel discussion.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/things-jr-dev/dn-meetup-4-panelists.jpg" title="Open discussion panelists at DN Meetup 4" alt="Open discussion panelists at DN Meetup 4">
 
-If you are interested more about the meetup you can view the meetup report [here](https://docs.google.com/document/d/1utAY2UyxNOzBKFbp8cfY4cbz6Np517_fVGO4VCVXdds/).
+If you are interested more about the meetup you can view the meetup report on [google docs](https://docs.google.com/document/d/1utAY2UyxNOzBKFbp8cfY4cbz6Np517_fVGO4VCVXdds/).
 
-More photos of the meetup can be viewed [here](https://www.dropbox.com/sh/jeq76wzcaffg1ft/AABcnAJpd3Kk6HiEbt3XjgQ7a?dl=0).
+More photos of the meetup can be viewed on this [album](https://www.dropbox.com/sh/jeq76wzcaffg1ft/AABcnAJpd3Kk6HiEbt3XjgQ7a?dl=0).
 
 > I hope you learned something new.

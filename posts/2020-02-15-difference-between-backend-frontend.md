@@ -63,7 +63,7 @@ Following are my views on Frontend development:
 * Frontend task these days will surely involve some form of [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and include working with frameworks/libraries like [Angular](https://angularjs.org/), [React](https://reactjs.org/) or [Vue](https://vuejs.org/).
   * To do some meaningful frontend work you will need to understand [js package management](https://www.freecodecamp.org/news/javascript-package-managers-101-9afd926add0a/), module bundlers like [webpack](https://webpack.js.org/) and go through some [Javascript fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) too, best of [luck](https://lucasfcosta.com/2017/07/17/The-Ultimate-Guide-to-JavaScript-Fatigue.html) :).
 * After you survive the fatigue, Frontend work will entail consuming APIs (mainly REST APIs).
-* Frontend work in current times might involve learning some [Typescript](https://www.typescriptlang.org/), mash up some [Progressive Web Apps (PWA)](https://developers.google.com/web/progressive-web-apps) and things along these lines.
+* Frontend work in current times might involve learning some [Typescript](https://www.typescriptlang.org/), mash up some [Progressive Web Apps (PWA)](https://web.dev/progressive-web-apps/) and things along these lines.
 
 I have skipped [static site generators](https://www.staticgen.com/), [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [JAM stack](https://jamstack.org/) and many other things.
 

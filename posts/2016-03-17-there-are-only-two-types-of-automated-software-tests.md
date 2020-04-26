@@ -28,7 +28,7 @@ Fast tests are code that test one unit of code generally a method. Unit test is 
 
 <script src="https://gist-it.appspot.com/http://github.com/geshan/dataprovider-example/blob/master/tests/DataProvider/Example/Test/CheckoutTest.php"></script>
 
-You can view the full code [here](http://github.com/geshan/dataprovider-example), yes it is a simple class with no code or external dependency.
+You can view the full code [on this repo](http://github.com/geshan/dataprovider-example), yes it is a simple class with no code or external dependency.
 
 Some integration tests can also be fast tests. These integration tests can test many classes. They should not dependent on any external dependencies mentioned above to obtain speed. So these tests will still run in seconds and not take minutes to finish.
 
