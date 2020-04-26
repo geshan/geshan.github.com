@@ -15,6 +15,11 @@ module.exports = {
   getEnv() {
     return process.env.ELEVENTY_ENV || 'production';
   },
+  getMetaDescription(content) {
+    const contentBody = content.match(/<div\s+class="entry-content clearfix">[\S\s]*?<\/div>/gi)
+    return contentBody[0].replace(/(<([^>]+)>)/ig,"")
+            .replace('"', '').replace(/\n/g,' ').trim().substring(0, 150) + '...';
+  },
   getStats(posts) {
     //from - https://www.stackbit.com/blog/content-stats-eleventy/
     const totalPosts = posts.length;
