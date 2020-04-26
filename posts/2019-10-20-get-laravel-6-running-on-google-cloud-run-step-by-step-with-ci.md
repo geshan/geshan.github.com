@@ -16,7 +16,7 @@ pagetitle: How to setup Laravel on Google Cloud run, a step by step guide with C
 description: Follow this step by step guide to run Laravel on Google Cloud Run
 keywords: Laravel, PHP, Google Cloud, Google Cloud Run, Laravel 6
 ---
-Laravel has [soared](https://trends.google.com/trends/explore?date=2014-10-22%202019-10-21&q=laravel,symfony) in popularity in the last few years. The Laravel community even says that Laravel has made writing PHP enjoyable than a pain. Laravel 6 has some interesting new [features](https://laracasts.com/series/whats-new-in-laravel-6). Getting a super scaleable working URL for your application take hours if not days. Setting up something like Kubernetes is a huge task. This is where Google Cloud Run shines, you can get a working HTTPs URL for any of your containerized app in minutes.
+Laravel has [soared](https://trends.google.com/trends/explore?date=2014-10-22%202019-10-21&q=laravel,symfony) in popularity in the last few years. The Laravel community even says that Laravel has made writing PHP enjoyable than a pain. Laravel 6 has some interesting new [features](https://laracasts.com/series/whats-new-in-laravel-6). Getting a super scalableworking URL for your application take hours if not days. Setting up something like Kubernetes is a huge task. This is where Google Cloud Run shines, you can get a working HTTPs URL for any of your containerized app in minutes.
 
 [Google Cloud Run](https://cloud.google.com/run/) is serverless and fully managed by Google, you get super scale, billing by the second, HTTPs URL and your own domain mapping. If you want to run stateless containers Cloud run is hands down the easiest way to do it. In this post, I will detail how to get your Laravel 6 app working on Google cloud run with Continuous Integration (CI).
 
@@ -303,7 +303,7 @@ If you want to deploy another version you can merge your PR to master and click 
 
 The [pricing](https://cloud.google.com/run/pricing) for Google Cloud Run is very generous. You can run any containerized app or web app on Google cloud run. I ran a pet project that got ~ 1 request per minute and I did not have to pay anything.
 
-Behind the scenes, it is using [Knative](https://cloud.google.com/knative/) and [Kubernetes](https://kubernetes.io/). It can also be run on your Kubernetes cluster but who would choose to manage a K8s cluster if you can just push and get scaleable serverless fully managed app :).
+Behind the scenes, it is using [Knative](https://cloud.google.com/knative/) and [Kubernetes](https://kubernetes.io/). It can also be run on your Kubernetes cluster but who would choose to manage a K8s cluster if you can just push and get scalableserverless fully managed app :).
 
 ## TLDR
 
