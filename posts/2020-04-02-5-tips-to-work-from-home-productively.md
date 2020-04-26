@@ -37,7 +37,7 @@ Working with family around is not easy. Set [clear boundaries](https://www.fastc
 
 ### 4. Take a break/exercise
 
-Midday or end of the day don’t forget to do some digital detox, maybe take a walk or just take a break. If you are alone schedule some time to talk with someone over the phone or on a video call. You might say it is lockdown and going out for a walk is not an option. Well, a person in Sydney [ran a marathon on the balcony](https://9now.nine.com.au/today/coronavirus-sydney-man-runs-marathon-on-balcony-for-healthcare-workers/331386ed-dc4c-42f1-951d-81581c35e4fe) so be creative on how to take a [break](https://www.huffpost.com/entry/gps-guides_b_1632700) and/or [exercise](https://www.youtube.com/watch?v=Tz9d7By2ytQ). It is important for your physical and mental health.
+Midday or end of the day don’t forget to do some digital detox, maybe take a walk or just take a break. If you are alone schedule some time to talk with someone over the phone or on a video call. You might say it is lockdown and going out for a walk is not an option. Well, a person in Sydney [ran a marathon on the balcony](https://9now.nine.com.au/today/coronavirus-sydney-man-runs-marathon-on-balcony-for-healthcare-workers/331386ed-dc4c-42f1-951d-81581c35e4fe) so be creative on how to take a [break](https://img.huffingtonpost.com/asset/5b9bec7326000035007f4b2f.jpeg) and/or [exercise](https://www.youtube.com/watch?v=Tz9d7By2ytQ). It is important for your physical and mental health.
 
 ### 5. Watch what you are eating
 
