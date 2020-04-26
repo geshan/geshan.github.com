@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /blog/categories/*
 
 Sitemap: https://geshan.com.np/sitemap.xml 
