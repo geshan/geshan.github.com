@@ -46,7 +46,7 @@ From [Moz’s](https://moz.com/learn/seo/canonicalization) perspective:
 
 > A canonical tag (aka "rel canonical") is a way of telling search engines that a specific URL represents the master copy of a page.
 
-So, if you can set the canonical URL of your content submitting it to multiple sites will not hurt your SEO. I am not an expert in this matter but these are my two cents :)
+So, if you can set the canonical URL of your content submitting it to multiple sites will not hurt your SEO. I am not an expert in this matter but these are my two cents :) for you to get a bigger audience.
 
 ## Why submit to multiple sites in the first place?
 Different people consume information from varied sources. Similar to brands of tea/coffee, people prefer to get their information from different sources. If you can post your tech content to multiple sources including the master copy on your blog/domain you have the possibility to reach a much wider audience.
@@ -78,7 +78,6 @@ Hackernoon is also a very vibrant community of writers and readers. Being one of
 Hashnode is another developer community similar to Dev.to. It also has many writers/bloggers writing content. You can start off with your own [subdomain](https://geshan.hashnode.dev) they have branded as [devblog](https://hashnode.com/devblog). As it is your own blog, there is no editorial process here. Hashnode is one of the [top ~43500 websites](https://www.alexa.com/siteinfo/hashnode.com) in the world and has a very good amount of visitors. You can also read and participate in [discussion](https://hashnode.com/discussions/popular) on Hashnode. You can find the part to add canonical link at the bottom of [write a story](https://hashnode.com/create/story) page at the “Is this a republished article?” section, like shown below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/repost-blog/04hashnode.jpg" title="Post your content to Hashnode" alt="Post your content to Hashnode with canonical link">
-
 
 ## Conclusion
 
