@@ -108,7 +108,7 @@ After that merge your pull request.
 
 ### 6. Setup tests with [GitHub actions](https://github.com/features/actions)
 
-Not some fun part, after you merged your PR now Github knows that this is a Laravel project. Click on  `Actions` tab on your repo page and you should be able to see something like below:
+Now some fun part, after you merged your PR now Github knows that this is a Laravel project. Click on  `Actions` tab on your repo page and you should be able to see something like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/05github-actions.jpg" title="Click Actions tab to view options" alt="Click Actions tab to view options">
 
