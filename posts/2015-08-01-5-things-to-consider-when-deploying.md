@@ -25,11 +25,9 @@ How to differentiate between a regular and major feature deployment? For example
 
 So, what are the things you need to consider when you want to deploy the new major feature that the team has completed development with and wants to go on production with it. Below are the things that you should make a checklist of before doing a major deployment that involves big code changes and some database schema changes with migrations:
 
-
 ### 1. Rigorous testing on staging 
 
-This is a no-brainer, you must test the new feature rigorously on the staging environment and be sure that you
-have covered the different use-cases. I would even suggest having a google sheet which lists the possible cases and test it. If you have a Quality Assurance (QA) department you could surely take their help on the matter. Anyhow, developer-level testing is also very vital and it costs a lot lesser to find a bug on staging and fix it than go live and have a rollback because of the major bug being discovered on production. The question would be if it is release ready or if the testing takes too long it can delay the release.
+This is a no-brainer, you must test the new feature rigorously on the staging environment and be sure that you have covered the different use-cases. I would even suggest having a google sheet which lists the possible cases and test it. If you have a Quality Assurance (QA) department you could surely take their help on the matter. Anyhow, developer-level testing is also very vital and it costs a lot lesser to find a bug on staging and fix it than go live and have a rollback because of the major bug being discovered on production. The question would be if it is release ready or if the testing takes too long it can delay the release.
 
 ### 2. Always take a database backup
 
@@ -45,9 +43,7 @@ If you plan to do one major deployment to release the major feature, no doubts y
 
 ### 5. Features based on condition
 
-Last but not the least, if you are deploying a major feature giving early access to your company employees 
-(or a group within the company) is always a very good idea. Like the feature could be tested on production by 
-the product team. You care now asking how? It is simple just restrict the feature code to be executed when the user is logged in with @yourcompnay.com email address. Once I remember we did it for rolling out a payment method that it would show up only if you use one special email address. So the major feature can be deployed to production and still have filtered access. After the concerned team give a green light you just remove the condition to access the feature and make it available to all customers/users.
+Last but not the least, if you are deploying a major feature giving early access to your company employees (or a group within the company) is always a very good idea. Like the feature could be tested on production by the product team. You care now asking how? It is simple just restrict the feature code to be executed when the user is logged in with @yourcompnay.com email address. Once I remember we did it for rolling out a payment method that it would show up only if you use one special email address. So the major feature can be deployed to production and still have filtered access. After the concerned team give a green light you just remove the condition to access the feature and make it available to all customers/users.
 
 ## Conclusion
 
