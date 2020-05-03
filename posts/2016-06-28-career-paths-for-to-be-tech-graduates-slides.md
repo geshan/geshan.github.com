@@ -28,10 +28,10 @@ The students were from Bsc. CSIT and [BIM](https://en.wikipedia.org/wiki/Bachelo
 
 ## Questions
 
-Questions centered towards roles and problems faced by tech companies in Nepal. I answered the queries with the things I knew and what I had experienced when I was working in Nepal. Few of them were enthusiastic about opening up their own company. I wish them best of luck.
+Questions centered towards roles and problems faced by tech companies in Nepal. I answered the queries with the things I knew and what I had experienced when I was working in Nepal. Few of them were enthusiastic about opening up their own company. I wish them the best of luck.
 
 ## Conclusion
 
-Students get serious about internship, job and career only towards their final semesters. I think they should start planning for their internship at the mid of their bachelor study. By the 3/4 stage, they should know which career path should I take.
+Students get serious about an internship, job and career only towards their final semesters. I think they should start planning for their internship at the mid of their bachelor study. By the 3/4 stage, they should know which career path should I take.
 
 > I hope the short talk and QnA session helped some of the participants to think about their career plans.

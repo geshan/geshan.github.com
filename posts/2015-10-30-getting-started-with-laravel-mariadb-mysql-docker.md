@@ -13,7 +13,7 @@ cover: /images/laravel-mysql-docker/laravel-mysql-docker.png
 
 "How do I get new team members contributing code to the project in a matter of minutes/hours not days?" is a common question heard in development teams. There are some ways to do, in my opinion [docker](http://docker.com) is one of the best.
 
-Docker enables using same software stack in development, staging and production. You don't need to worry about the version of PHP, MYSQL or any other dependency with Docker. This post will be about Laravel and MariaDB (MySQL) with Docker for local development. It will also feature use of docker-compose. We will use PHP 5.6 and MariaDB 10.1 with Laravel 5.1. This guide helps getting started with Laravel and Docker with a database.
+Docker enables using the same software stack in development, staging and production. You don't need to worry about the version of PHP, MYSQL or any other dependency with Docker. This post will be about Laravel and MariaDB (MySQL) with Docker for local development. It will also feature the use of docker-compose. We will use PHP 5.6 and MariaDB 10.1 with Laravel 5.1. This guide helps getting started with Laravel and Docker with a database.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-mysql-docker/laravel-mysql-docker.png" title="Getting started with Laravel, MariaDB (MySQL) and docker, docker compose" alt="Getting started with Laravel, MariaDB (MySQL) and docker, docker compose">
 
