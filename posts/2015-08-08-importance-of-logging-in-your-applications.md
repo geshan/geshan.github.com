@@ -47,7 +47,7 @@ Some logging libraries for some languages are listed as follow:
 
 * [Monolog](https://github.com/Seldaek/monolog) - PHP (based on PSR-3 logging standard)
 * [Winston](https://github.com/winstonjs/winston) - Javascript
-*  [Python logger](https://docs.python.org/3/howto/logging.html) - for python 3 it also follows the RFC 5424 standard
+* [Python logger](https://docs.python.org/3/howto/logging.html) - for python 3 it also follows the RFC 5424 standard
 
 The idea is that you will generally find a logger library to log messages from your application. The logging library/packages for your language/framework is just a Google search away.
 

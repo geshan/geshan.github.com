@@ -10,7 +10,7 @@ tags:
 cover: /images/deployment-tools/fabric-deployment.png
 ---
 
-The process of getting completed feature or bug fix code from the development environment to your web servers is web software deployment. We have been deploying code in various ways, a decade back we were used to uploading our files using File Transfer Protocol (FTP). I would not considering copying files from the development machine to a web server a form of automated deployment, basically it was a necessary evil at that time.
+The process of getting a completed feature or bug fix code from the development environment to your web servers is web software deployment. We have been deploying code in various ways, a decade back we were used to uploading our files using File Transfer Protocol (FTP). I would not considering copying files from the development machine to a web server a form of automated deployment, basically it was a necessary evil at that time.
 
 If you still use FTP at this time like [22%](http://bit.ly/sw-eng-np-pt3) of Nepali developers you really need to move on. In this post I will briefly mention some deployment tools and try to analyze their pros and cons. Still as the title reads the best automated deployment tool is the one that best fits your needs.
 
@@ -85,7 +85,7 @@ If you are already doing automated deployment you can look at making it even eas
 
 If you have your tests running you can even explore continuous delivery.
 
-Further more the whole deployment process can be revamped with introduction of containers and [Docker](https://www.docker.com/). If docker is setup right, you may not even need deployment tools but it will surely take lots of resources to get the docker setup running and functioning correctly for production usage.
+Further more the whole deployment process can be revamped with an introduction of containers and [Docker](https://www.docker.com/). If docker is setup right, you may not even need deployment tools but it will surely take lots of resources to get the docker setup running and functioning correctly for production usage.
 
 ## Conclusion
 
