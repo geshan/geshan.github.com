@@ -7,8 +7,7 @@ tags:
 - Software Engineering
 cover: "/images/pair-programming-benefits/01pair-programming-benefits.jpg"
 pagetitle: '5 pair programming benefits you should know about'
-description: This JAMStack tutorial (30+ screenshots and 2000+ words) explains how
-  to set up a JAMStack website with just clicks step by step. Website runs for $0.
+description: This post start with defining pair programming and proceeds to it's benefits, and concludes with summary of a research.(1400+ words)
 keywords: pair programming, pair program, pair programming benefits, benefits of pair programming, pair programming advantages, advantages of pair programming
 ---
 There are proven benefits of pair programming you and your team can take advantage of. I have been pair programming here and there for some years now. I have pair programmed with engineers senior to me as well as software engineers junior to me. Every time while pair programming I have learned something new from the other person regardless of my colleague’s programming experience. I believe you and your team can also reap these rewards of pair programming, let’s get started.
