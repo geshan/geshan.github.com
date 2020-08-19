@@ -38,6 +38,7 @@ module.exports = {
         if(!tags[t]) tags[t] = 0;
         tags[t]++;
       });
+      p.wordCount = wordCount(p.templateContent);
       
       //Add to the yearly stat
       let year = new Date(p.date).getFullYear();
@@ -59,11 +60,13 @@ module.exports = {
       avgWords,
       "firstPost": {
         "title": firstPost.data.title,
-        "date": firstPost.date
+        "date": firstPost.date,
+        "wordCount": firstPost.wordCount
       },
       "lastPost": {
         "title": lastPost.data.title,
-        "date": lastPost.date
+        "date": lastPost.date,
+        "wordCount": lastPost.wordCount
       },
       "tags": JSON.stringify(tags),
       "categories": JSON.stringify(categories),
