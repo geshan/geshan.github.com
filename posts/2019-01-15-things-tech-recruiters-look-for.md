@@ -160,4 +160,4 @@ Share your thoughts and experience of finding a job in Australia. Have you found
 
 ---
 
-PS: I might do a part 2 of this :)
+PS: I did a [part 2](https://geshan.com.np/blog/2020/08/things-tech-recruiters-look-for-in-your-resume-first-interview-part-02/) of this :)

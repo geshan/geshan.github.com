@@ -1418,7 +1418,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee
+    border-top: 1px solid #aaa
 }
 
 .sr-only {
@@ -1809,7 +1809,7 @@ blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
     font-size: 17.5px;
-    border-left: 5px solid #eee
+    border-left: 5px solid #4dd599
 }
 
 blockquote ol:last-child,
@@ -1838,7 +1838,7 @@ blockquote small:before {
 blockquote.pull-right {
     padding-right: 15px;
     padding-left: 0;
-    border-right: 5px solid #eee;
+    border-right: 5px solid #4dd599;
     border-left: 0;
     text-align: right
 }
@@ -8973,4 +8973,8 @@ span.wa-color {
 
 h3.comments {
   clear:both;
+}
+
+article img.center {
+    min-height: 200px;
 }
