@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vegeta load testing a quick primer with GET examples
-date: 2020-09-07 15:20:29 +11:00
+date: 2020-09-06 16:25:29 +11:00
 comments: true
 tags:
 - Software Engineering
@@ -22,7 +22,7 @@ Load testing in plain terms means testing an application by simulating some conc
 
 > There are many ways to load test applications/APIs and Vegeta is one of the easiest tools to perform load testing on your APIs or applications.
 
-I had once written about [fast and not so fast test](https://geshan.com.np/blog/2016/03/there-are-only-two-types-of-automated-software-tests/), that would be a good post to read more about testing.
+I had once written about [fast and not so fast test](/blog/2016/03/there-are-only-two-types-of-automated-software-tests/), that would be a good post to read more about testing.
 
 ## Prerequisites
 
@@ -40,7 +40,9 @@ Another option is to go with [JMeter](https://jmeter.apache.org/). Apache JMeter
 
 > Vegeta is a go-lang binary (and library) so installing and using it is a breeze. There are not many concepts to understand and learn. 
 
-To start with, simply provide a URL and give it how many requests per second you want the URL to be hit with. Vegeta will hit the URL with the frequency provided and can give the HTTP response codes and response time in an easy to comprehend graph. Next, let’s install Vegeta to begin Vegeta load testing.
+To start with, simply provide a URL and give it how many requests per second you want the URL to be hit with. Vegeta will hit the URL with the frequency provided and can give the HTTP response codes and response time in an easy to comprehend graph. 
+
+> The best thing about Vegeta is there is no need to install python or Java to get started. Next, let’s install Vegeta to begin Vegeta load testing.
 
 ## Install Vegeta
 
@@ -84,7 +86,7 @@ Check if it installed properly with:
 vegeta --version
 ```
 
-You should see a version number is displayed.
+You should see a version number displayed.
 
 ## Your first Vegeta load testing command
 
@@ -161,7 +163,9 @@ As we have seen doing load testing on multiple URLs with Vegeta is a breeze. Veg
 
 ## Conclusion
 
-This post was like scratching the surface with a primer on load testing with Vegeta. There are many advanced things that can be done with Vegeta load testing. 
+This post was like scratching the surface with a primer on load testing with Vegeta. There are many advanced things that can be done with Vegeta load testing. Vegeta has been very useful in multiple occasions.I had once used Vegeta to load test Google Cloud Functions and Google Cloud Run with the same code to see the response time difference between those two for a [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/). The graph comparing both the services made the difference crystal clear. 
+
+In another instance, we tested a new public facing [microservice](/blog/2018/10/moving-from-a-and-b-to-~150-microservices/) that was replacing a part of an old monolith. It was very useful doing vegeta load testing to know the response time difference for similar Request Per Second loads.
 
 Load testing the application or API you want to go to production with is crucial. 
 
