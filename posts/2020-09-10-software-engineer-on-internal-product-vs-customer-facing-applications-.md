@@ -123,7 +123,7 @@ Here is the summary of the above differences as a simple table:
 | Criteria | Internal Products | Customer-facing applications |
 | --- | :---: | --- |
 | Performance and scalability | A bit of slow performance is Ok. | Application needs to be performant and scaleable under high loads. |
-| Security sensitivity | Not very sensitive as internal applications are being a VPN/firewall. | Highly sensitive to security issues as anyone in the world can access a customer-facing application. |
+| Security sensitivity | Not very sensitive as internal applications are behind a VPN/firewall. | Highly sensitive to security issues as anyone in the world can access a customer-facing application. |
 | A/B Testing, feature flags, and gradual rollout | These are not used much for internal products. | These are used heavily on customer-facing applications with segmenting too. |
 | UX Love | Internal products don't get much of the UX love. | Customer-facing applications get a lot of UX love :). |
 
