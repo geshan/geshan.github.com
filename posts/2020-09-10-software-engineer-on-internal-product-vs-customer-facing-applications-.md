@@ -95,7 +95,7 @@ Security is everyone’s responsibility. In no means or form, I am suggesting to
 
 ### Minimal use of feature flags, A/B testing, and gradual rollouts on internal applications
 
-As per my experience, I have never seen an internal application being A/B tested. The reason is simple: you can just go to the user and have a chat to come to a better decision. As the users are limited and within the same organization you can even ask the user to use a certain browser or software. Once, we deployed a go executable on like 10 photographers’ Mac to be able to upload images to S3 much faster. There was no need for an A/B test there.
+As per my experience, I have never seen an internal application being A/B tested. The reason is simple: you can just go to the user and have a chat to come to a better decision. As the users are limited and within the same organization you can even ask the user to use a certain browser or software. Once, we deployed a go executable on like 10 photographers’ Mac to be able to upload images to S3 much faster. There was no need for an A/B test there. Another reason not to do A/B testing for internal products is the limited scale which will result in skewed results due to low volumes.
 
 There is a similar situation for using feature flags. It will be needed now and then but not all the time. I have also rarely witnessed gradual rollout like 1%  of the users for the first week, then 5% next week and slowly going to 100% on internal products.
 
@@ -105,27 +105,30 @@ Similarly, feature flags are used a lot more for customer-facing applications. I
 
 I share a similar experience with gradual rollouts on customer-facing applications. One instance I remember is we changed our payment gateway. After a lot of rigorous testing on staging, the first time it was released to production was for just 1% of the customers. Gradually next week it came to 5%. After some fixes, it went to 10, and to reach 100% it took like a month or so.
 
+In terms of measuring impact, internal products are easier. Internal products work on one of these two objectives. Either enable to do a thing or optimize (like speed) of something by X%. On the other hand, customer products have multiple complex metrics. The metrics can range from NPS, conversion rate to return rate, etc. While one metric is improved another metric might be hampered along the way.
+
 ### Customer-facing applications get more UX love
 
 Customers are the money payers and they should “enjoy” using our websites and mobile apps. Contrastingly, employees who use the internal product, it is part of their jobs. Internal products are built to make their lives easier so the UX love is somewhat missing on them.
 
 This certainly does not equate to that all internal products must lack the UX factor. I am just sharing my personal experience from the past 8-9 years of working in e-commerce. Once we built an internal application that was built on bootstrap. I am not saying bootstrap CSS is bad in any way.
 
-> My point here is that in that project we didn’t even have a dedicated UX person for designs. The frontend engineers pieced together the app and it was ready to go.
-> Of course, it made the user’s life much easier and their work much faster. Still, some UX love would have been the cherry on the cake.
+> My point here is that in that project we didn’t even have a dedicated UX person for designs. The frontend engineers pieced together the app and it was ready to go. Of course, it made the user’s life much easier and their work much faster. Still, some UX love would have been the cherry on the cake.
 
 On the flip side, customer products usually have a dedicated UX person. This person does research, thinks through how the customer will use this new feature. S/he probably even interviews some customers to get the feedback and make that app/feature a UX gem. Making that button round or square is a decision. Showing the message on top or beside the product is another factor. I won’t be wrong if I say customer-facing applications get much more UX attention and work than internal products and honestly it is deserved too.
+
+Another reason internal products don't get much of the UX love is "personas". While customer-facing apps cater to different personas with varied needs, internal products have usually one persona trying to get their job done.
 
 ## Summary
 
 Here is the summary of the above differences as a simple table:
 
-| Criteria | Internal Products | Customer-facing applications |
-| --- | :---: | --- |
-| Performance and scalability | A bit of slow performance is Ok. | Application needs to be performant and scaleable under high loads. |
-| Security sensitivity | Not very sensitive as internal applications are behind a VPN/firewall. | Highly sensitive to security issues as anyone in the world can access a customer-facing application. |
-| A/B Testing, feature flags, and gradual rollout | These are not used much for internal products. | These are used heavily on customer-facing applications with segmenting too. |
-| UX Love | Internal products don't get much of the UX love. | Customer-facing applications get a lot of UX love :). |
+| Criteria                                            |                           Internal Products                           | Customer-facing applications                                                                        |
+|-----------------------------------------------------|:---------------------------------------------------------------------:|-----------------------------------------------------------------------------------------------------|
+| **Performance and scalability**                     |                    A bit of slow performance is Ok.                   | Application needs to be performant and scaleable under high loads.                                   |
+| **Security sensitivity**                            | Not very sensitive as internal applications are being a VPN/firewall. | Highly sensitive to security issues as anyone in the world can access a customer-facing application. |
+| **A/B Testing, feature flags, and gradual rollout** | These are not used much for internal products.                        | These are used heavily on customer-facing applications with segmenting too.                         |
+| **UX Love**                                         | Internal products don't get much of the UX love.                      | Customer-facing applications get a lot of UX love :).                                               |
 
 ## Conclusion
 
