@@ -22,9 +22,9 @@ Like it or not, your hiring process will most of the time involve take-home codi
 
 ## What are take-home coding challenges?
 
-A take-home coding challenge is a mini project or a small task that your prospective employer gives you to do for accessing your technical skills and knowledge. You are given a task of generally moderate complexity and that can be finished over a weekend or a similar amount of time.
+A take-home coding challenge is a mini project or a small task that your prospective employer gives you to do for assessing your technical skills and knowledge. You are given a task of generally moderate complexity and that can be finished over a weekend or a similar amount of time.
 
-There are other ways to access your technical skills in place of take-home coding challenges. One of them is a timed coding challenge on HackerRank or similar websites.
+There are other ways to assess your technical skills in place of take-home coding challenges. One of them is a timed coding challenge on HackerRank or similar websites.
 
 > In my opinion, another effective alternative to a take-home coding challenge is pair-programming on a task.
 
@@ -32,15 +32,15 @@ Coding side-by-side (or virtually) on the same task can give much better insight
 
 You, me, and many other software engineers have done one or more of these take-home coding challenges in their search for a new role or their first role. Let’s look further at how you can outrival your competition:
 
-## What is being accessed?
+## What is being assessed?
 
-With a take-home coding challenge the main thing that is being accessed is if you can write code as per the company’s levels and standards. Because you are given ample amounts of time, you are expected to provide a decent quality of output.
+With a take-home coding challenge the main thing that is being assessed is if you can write code as per the company’s levels and standards. Because you are given ample amounts of time, you are expected to provide a decent quality of output.
 
 On top of it, the decisions you are implying in the form of code is also being evaluated. You are also being analyzed on how well have you followed the instructions.
 
 > If a take-home coding challenge clearly instructs you not to use an external library and you still use it. It is pretty sure that you will fail it and not proceed to the next step.
 
-Another aspect implicitly being accessed is your written communication ability. How you write a clear and concise readme will also play a vital role to move you forward in the hiring process. So think about these things before submitting your solution. Make a small checklist of the steps below, that will definitely help you.
+Another aspect implicitly being assessed is your written communication ability. How you write a clear and concise readme will also play a vital role to move you forward in the hiring process. So think about these things before submitting your solution. Make a small checklist of the steps below, that will definitely help you.
 
 Time to go to the steps that will help you outshine your competitor in take-home coding challenges.
 
