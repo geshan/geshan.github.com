@@ -22,7 +22,7 @@ Load testing is an important part of releasing a reliable API or application. Ve
 
 ## What is Load testing?
 
-Load testing in plain terms means testing an application by simulating some concurrent requests to determine the behavior of the application in the real world like scenario. Basically it tests how the application will respond when multiple simultaneous users try to use the application.
+Load testing in plain terms means testing an application by simulating some concurrent requests to determine the behavior of the application in the real world like scenario. Basically, it tests how the application will respond when multiple simultaneous users try to use the application.
 
 > There are many ways to load test applications/APIs and Vegeta is one of the easiest tools to perform load testing on your APIs or applications.
 
@@ -86,7 +86,7 @@ You should see a version number displayed.
 
 ## Your first Vegeta load testing command
 
-There are multiple ways to use Vegeta load testing tool, one of the simplest ways to get the output on the command line for faster analysis. To your first Vegeta load testing command execute the following:
+There are multiple ways to use the Vegeta load testing tool, one of the simplest ways to get the output on the command line for faster analysis. To your first Vegeta load testing command execute the following:
 
     echo "GET http://httpbin.org/get" | vegeta attack -duration=5s -rate=5 | vegeta report --type=text
 
@@ -104,7 +104,7 @@ Vegeta load testing tool ran the attack of 25 requests spread over 5 seconds at 
 
 ## Vegeta Load testing with graphical output
 
-Another representation of vegeta load testing results is an easy to understand graph. We can get a graph output with the below command:
+Another representation of Vegeta load testing results is an easy to understand graph. We can get a graph output with the below command:
 
     cd && echo "GET http://httpbin.org/get" | vegeta attack -duration=30s -rate=10 -output=results-veg-httpbin-get.bin && cat results-veg-httpbin-get.bin | vegeta plot --title="HTTP Bin GET 10 rps for 30 seconds" > http-bin-get-10rps-30seconds.html
 
@@ -113,10 +113,10 @@ Let’s analyze how we used Vegeta for load testing httpbin.org here:
 1. We went to the user home with `cd` command
 2. Then we set up the URL for `vegeta attack` by echoing `GET http://httpbin.org/get`
 3. This step is when we “attack” (a.k.a load test) httpbin servers at 10 requests per second for 30 seconds duration (so in total 300 requests in 30 seconds) we also specified that we want the output at `results-vegeta-httbin-get.bin` file
-4. Now this result is like a binary that can’t be read easily so next thing is we read the contents of this binary file with `cat` and passed it to `vegeta plot` with a fancy title and filename to get the HTML file
+4. Now this result is like a binary that can’t be read easily so the next thing is we read the contents of this binary file with `cat` and passed it to `vegeta plot` with a fancy title and filename to get the HTML file
 5. When we open the created HTML file we can see a graph like below in the HTML file:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/03vegeta-graph.jpg" title="Vegeta load testing graph output" alt="Graph output of 10 RPS for 30 seconds with vegeta">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/03vegeta-graph.jpg" title="Vegeta load testing graph output" alt="Graph output of 10 RPS for 30 seconds with Vegeta">
 
 So we sent 300 requests and all of them came back with a 200, the max response time was 552 milliseconds. One of the fastest response times was 234 milliseconds. This gives us a clear picture that HTTP bin can easily handle 10 requests per second for 30 seconds.
 
@@ -126,7 +126,7 @@ Generally, you get the idea of how you use Vegeta for load testing your own serv
 
 ## My service uses an Auth token
 
-Well all the services won’t be open to all, most will use a [JWT](https://jwt.io/) or some other way to authenticate and authorize users. To test such services you can use a command like below:
+Well, all the services won’t be open to all, most will use a [JWT](https://jwt.io/) or some other way to authenticate and authorize users. To test such services you can use a command like below:
 
     cd && echo "GET http://httpbin.org/get" | vegeta attack -header "authorization: Bearer <your-token-here>" -duration=40s -rate=10 -output=results-veg-token.bin && cat results-veg-token.bin | vegeta plot --title="HTTP Get with token" > http-get-token.html
 
@@ -140,21 +140,20 @@ Testing multiple URLs with different HTTP methods is also relatively easy with V
 
 1. Create a `targets.txt` file (filename can be anything) with content like below that has a list of your URLs prefixed by the HTTP verb. In the one below I am load testing 3 GET URLs
 
-    GET http://httpbin.org/get
-    GET http://httpbin.org/ip
+   GET http://httpbin.org/get
+   GET http://httpbin.org/ip
+2. Now similar to the first example with the text output run this command in the folder the targets.txt file is created: `vegeta attack -duration=5s -rate=5 --targets=targets.txt | vegeta report --type=text`
+3. We will see a text output like below:
 
-1. Now similar to the first example with the text output run this command in the folder the targets.txt file is created: `vegeta attack -duration=5s -rate=5 --targets=targets.txt | vegeta report --type=text`
-2. We will see a text output like below:
-
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/04vegeta-multiple-urls.jpg" title="Vegeta load testing with multiple GET URLs output" alt="Text output of multiple GET URLs with vegeta">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/04vegeta-multiple-urls.jpg" title="Vegeta load testing with multiple GET URLs output" alt="Text output of multiple GET URLs with Vegeta">
 
 As we have seen doing load testing on multiple URLs with Vegeta is a breeze. Vegeta load testing can easily be done for other HTTP verbs like POST and PUT. Please refer to Vegeta [docs](https://github.com/tsenart/vegeta#targets-with-custom-bodies).
 
 ## Conclusion
 
-This post was like scratching the surface with a primer on load testing with Vegeta. There are many advanced things that can be done with Vegeta load testing. Vegeta has been very useful in multiple occasions.I had once used Vegeta to load test Google Cloud Functions and Google Cloud Run with the same code to see the response time difference between those two for a [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/). The graph comparing both the services made the difference crystal clear.
+This post was like scratching the surface with a primer on load testing with Vegeta. There are many advanced things that can be done with Vegeta load testing. Vegeta has been very useful on multiple occasions. I had once used Vegeta to load test Google Cloud Functions and Google Cloud Run with the same code to see the response time difference between those two for a [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/). The graph comparing both the services made the difference crystal clear.
 
-In another instance, we tested a new public facing [microservice](/blog/2018/10/moving-from-a-and-b-to-\~150-microservices/) that was replacing a part of an old monolith. It was very useful doing vegeta load testing to know the response time difference for similar Request Per Second loads.
+In another instance, we tested a new public-facing [microservice](/blog/2018/10/moving-from-a-and-b-to-\~150-microservices/) that was replacing a part of an old monolith. It was very useful doing Vegeta load testing to know the response time difference for similar Request Per Second loads.
 
 Load testing the application or API you want to go to production with is crucial.
 
