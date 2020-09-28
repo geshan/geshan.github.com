@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "How to get your pull request (PR) approved and merged quickly"
-date: 2019-12-02 14:03:37 +00:00
+title: How to get your pull request (PR) approved and merged quickly
+date: 2019-12-02T14:03:37.000+00:00
 comments: true
-tags: 
+tags:
 - Software Engineering
-cover: /images/pull-request-merge/pull-request-merge-fast.jpg
+cover: "/images/pull-request-merge/pull-request-merge-fast.jpg"
 pagetitle: How to get your Pull Request (PR) approved quickly for faster merge
 description: Follow these tips to get your PR approved then merged faster than usual
 keywords: Git, pull reqeuest, pr approval
-lastModified: 2020-04-25 11:09:28 +11:00
+lastModified: 2020-04-25T11:09:28.000+11:00
+
 ---
 Have you ever faced a call to completely redesign your code in one of your pull requests? I have and then thought what are the ways to avoid this. Call it a pull request or merge request, basically, it is a set of changes you want to go ahead and merge to the main branch to deploy to production and complete your task. This post is going to highlight a semi silver bullet to get your pull requests merged faster :), carry on reading.
 
@@ -19,7 +20,7 @@ Have you ever faced a call to completely redesign your code in one of your pull 
 
 ## Introduction
 
-Sometimes getting your pull request reviewed, agreed upon and approved feels like playing a game of tug of war with the reviewers. You end up discussing, changing parts of the code and at times having some healthy arguments too. So how can you avoid draining energy on pull requests?
+Sometimes getting your pull request reviewed, agreed upon, and approved feels like playing a game of tug of war with the reviewers. You end up discussing, changing parts of the code and at times having some healthy arguments too. So how can you avoid draining energy on pull requests?
 
 ## Disclaimer
 
@@ -27,9 +28,9 @@ This post is not discussing pull requests for open source projects. It is only f
 
 ## Keep changes small
 
-Do not open a pull request with 50 files changed and 2000 lines added, no one can or will review such a long set of changes in one go. This means it will take multiple sittings and a lot of discussions. A long length will also guarantee that the PR will not be short-lived. Basically, a big changeset violates all the qualities of a [great](https://medium.com/@hugooodias/the-anatomy-of-a-perfect-pull-request-567382bb6067) pull request like easy to comprehend,  having a low discussion and short-lived.
+Do not open a pull request with 50 files changed and 2000 lines added, no one can or will review such a long set of changes in one go. This means it will take multiple sittings and a lot of discussions. A long length will also guarantee that the PR will not be short-lived. Basically, a big changeset violates all the qualities of a [great](https://medium.com/@hugooodias/the-anatomy-of-a-perfect-pull-request-567382bb6067) pull request like easy to comprehend,  having a low discussion, and short-lived.
 
-There are [numerous benefits](https://smallbusinessprogramming.com/optimal-pull-request-size/) of a smaller pull request. One of the technical one is surely having [fewer git conflicts](https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/). Other benefits include shorter cycle time and less risk.
+There are [numerous benefits](https://smallbusinessprogramming.com/optimal-pull-request-size/) to a smaller pull request. One of the technical one is surely having [fewer git conflicts](https://geshan.com.np/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/). Other benefits include a shorter cycle time and less risk.
 
 > A [study](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/) has revealed that a review of 200-400 LOC over 60 to 90 minutes should yield 70-90% defect discovery.
 
@@ -39,11 +40,11 @@ So it is very clear that keeping the changes <400 lines is great for everyone. F
 
 ## But how to keep changes small?
 
-That is the million-dollar question. It is easy to say keep your changes small, but how can we do it in practice. Once in 2016, I had a big rewrite and it has 50 files changed and ~1500 or more lines of code. Now as I think of it how could have I done it in like 10 smaller pull requests, here are the strategies:
+That is the million-dollar question. It is easy to say keep your changes small, but how can we do it in practice. Once in 2016, I had a big rewrite and it has 50 files changed and \~1500 or more lines of code. Now as I think of it how could have I done it in like 10 smaller pull requests, here are the strategies:
 
 ### Discuss first, code second
 
-This is the main reason for rewrites. We usually tend to write the code, sometimes even fully done and then open the pull request but the reviewer has a different solution. That different solution can be better too. So you end up accepting the change request and the new “better” solution = a partial rewrite of the solution for the task.
+This is the main reason for rewrites. We usually tend to write the code, sometimes even fully done, and then open the pull request but the reviewer has a different solution. That different solution can be better too. So you end up accepting the change request and the new “better” solution = a partial rewrite of the solution for the task.
 
 It would have been a lot better to spend like 15 mins before writing a single line of code saying I want to use this library, I want to use X pattern and do it this way with the probable reviewer of your code you code review would be exponentially easier and faster. This would also give the reviewer a proper sense o how many PRs are coming and what to expect next.
 
@@ -61,6 +62,6 @@ With feature flags you can ship the files you need step by step but the only use
 
 ## Conclusion
 
-Creating smaller pull requests helps the code author, the reviewer, the team and with better productivity the whole company. Use the tools on disposal well, still, never underestimate the human factor and the power of clear communication. For a better git skill set do read these [git tips](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/).
+Creating smaller pull requests helps the code author, the reviewer, the team, and results in better productivity for the whole company. Use the tools on disposal well, still, never underestimate the human factor and the power of clear communication. For a better git skill set do read these [git tips](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/).
 
 > Hopefully the above strategies give you a better idea of how you keep your pull requests smaller leading to a more productive team.
