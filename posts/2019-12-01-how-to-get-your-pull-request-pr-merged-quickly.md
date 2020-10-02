@@ -52,7 +52,7 @@ It would have been a lot better to spend like 15 mins before writing a single li
 
 What do I mean by `enabler code`? Basically, if you are writing a new POST API endpoint and you have tests. The first one can be to create the new table/fields on the database. Given you have written the part that talks to the database and adds the new resource. That can be a separate pull request.
 
-Another pull request can be adding the validation logic for that new resource. Finally, you can have the `enabler` glue controller code which opens up the API endpoint giving it access to any consumers. Breaking this single task into 4 pull requests gives you a lot smaller PRs to discuss and change if any change request is done. A friend mine does it and I understand the value now, at first it felt like he is opening too many pull requests.
+Another pull request can be adding the validation logic for that new resource. Finally, you can have the `enabler` glue controller code which opens up the API endpoint giving it access to any consumers. Breaking this single task into 4 pull requests gives you a lot smaller PRs to discuss and change if any change request is done. A friend mine does it and I understand the value now, at first it felt like he is opening too many pull requests. You can read more about it in this [post](/blog/2020/10/small-pull-requests/).
 
 ### Feature flags
 
