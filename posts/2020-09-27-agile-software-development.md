@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is Agile software development? Explain to me like I’m five
+title: What is Agile software development? Explain it to me like I’m five
 date: 2020-09-27T16:27:29.000+11:00
 comments: true
 tags:
@@ -8,13 +8,13 @@ tags:
 cover: "/images/agile-software-development/02agile-software-development-apple.jpg"
 pagetitle: 'Agile software development: explain to me like I’m five'
 description: 'In this post, we will define what agile software development is with
-  a simple analogy that a five-year-old can understand. Analogy:  service an apple
+  a simple analogy that a five-year-old can understand. Analogy:  serving an apple
   to 4 kids, carry on reading.'
 keywords: agile software development, agile software development methodology, what
   is agile software development
 
 ---
-Agile software development means different things to different people. In this post, we will define what agile software development is with a simple analogy that a five-year-old can understand. The analogy we will use is as straightforward as service an apple to 4 kids. Yes, it will be that that easy, let's get started:
+Agile software development means different things to different people. In this post, we will define what agile software development is with a simple analogy that a five-year-old can understand. The analogy we will use is as straightforward as serving an apple to 4 kids. Yes, it will be that easy, let's get started:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/agile-software-development/01agile-software-development-apple.jpg" title="Agile software development Apple serving analogy" alt="Agile software development serve apple to 4 children analogy">
 
@@ -53,7 +53,7 @@ In addition to the above values, there are [12 principles](https://agilemanifest
 
 > Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 
-Then there are other principles discussing changes, delivery of software, collaboration, etc. So til now it still seems jumbled, right? This is surely not something a five-year-old can comprehend in any way. Follow on to read the real thing, the over-simplified analogy.
+Then there are other principles discussing changes, delivery of software, collaboration, etc. So until now it still seems jumbled, right? This is surely not something a five-year-old can comprehend in any way. Follow on to read the over-simplified analogy.
 
 ## Agile software development analogy
 
