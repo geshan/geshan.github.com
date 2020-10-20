@@ -14,7 +14,7 @@ description: Follow this step by step guide to know how to use docker multi-stag
 keywords: Docker, docker multi-stage build, docker build
 
 ---
-Docker has sharply [risen in popularity](https://trends.google.com/trends/explore?date=2015-11-23%202019-11-23&q=%2Fm%2F0wkcjgj,%2Fg%2F11gds4ys6t) in the past years. It has been one of the tools that have [changed the way we work](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) as software engineers and DevOps Engineers. From Docker v 17.05 [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) was introduced which helped abandon the older [builder pattern](https://blog.alexellis.io/mutli-stage-docker-builds/) with the use of stages and [target](https://docs.docker.com/engine/reference/commandline/build/#specifying-target-build-stage---target). 
+Docker has sharply [risen in popularity](https://trends.google.com/trends/explore?date=2015-11-23%202019-11-23&q=%2Fm%2F0wkcjgj,%2Fg%2F11gds4ys6t) in the past years. It has been one of the tools that have [changed the way we work](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) as software engineers and DevOps Engineers. From Docker v 17.05 [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) was introduced which helped abandon the older [builder pattern](https://blog.alexellis.io/mutli-stage-docker-builds/) with the use of stages and [target](https://docs.docker.com/engine/reference/commandline/build/#specifying-target-build-stage---target).
 
 This post discussed how you can exploit `docker multi-stage build` to build optimal images suited for dev/test and production with a NodeJs example application. They are some compelling reasons to use [docker on a dev environment](https://geshan.com.np/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/) too.
 
@@ -29,9 +29,9 @@ This post discussed how you can exploit `docker multi-stage build` to build opti
 
 ## Docker multi-stage builds intro
 
-Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 MB](https://microbadger.com/images/golang) Golang 1.13 official image (123 MB even with Alpine) can be just as big as the go executable of your application. 
+Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 MB](https://microbadger.com/images/golang) Golang 1.13 official image (123 MB even with Alpine) can be just as big as the go executable of your application.
 
-As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 MB) just to run that executable. 
+As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 MB) just to run that executable.
 
 So, if your go app binary is 10 MB your image can be 15 MB (10 MB binary + 5 MB alpine) rather than the heavy 294 MB official go image or 123 MB alpine go image. You can have a look at an [example](https://medium.com/travis-on-docker/multi-stage-docker-builds-for-creating-tiny-go-images-e0e1867efe5a) too.
 
@@ -92,7 +92,7 @@ Don’t be concerned about the `VIRTUAL_HOST` and `VIRTUAL_PORT` that is for [ng
 
 Let’s look at how big is this image we got from running `docker build . -t currency-api-original`.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/01original-docker-image.jpg" title="Original docker image before multi-stage build" alt="Original docker image before multi-stage build">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/01original-docker-image.jpg" title="Original docker image before multi-stage build" alt="Original docker image before multi-stage build" height="29px">
 
 So currently it is 165 MB, hopefully, we can decrease its size too in this process.
 
@@ -154,7 +154,7 @@ The main change for the docker-compose file is the `target:dev` in the build par
 
 All the changes made can be viewed in this [pull request](https://github.com/geshan/currency-api/pull/49) too. Let’s look at how big is the image now:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/02optimized-docker-image.jpg" title="Smaller and environment optimized images after multi-stage build" alt="Smaller and environment optimized images after multi-stage build">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/02optimized-docker-image.jpg" title="Smaller and environment optimized images after multi-stage build" alt="Smaller and environment optimized images after multi-stage build" height="58px">
 
 We ran the following commands to build the dev and the production images:
 
