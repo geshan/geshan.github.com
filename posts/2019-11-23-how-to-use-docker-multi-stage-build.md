@@ -92,7 +92,7 @@ Don’t be concerned about the `VIRTUAL_HOST` and `VIRTUAL_PORT` that is for [ng
 
 Let’s look at how big is this image we got from running `docker build . -t currency-api-original`.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/01original-docker-image.jpg" title="Original docker image before multi-stage build" alt="Original docker image before multi-stage build" height="30">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/01original-docker-image.jpg" title="Original docker image before multi-stage build" alt="Original docker image before multi-stage build" style="height: 30px;">
 
 So currently it is 165 MB, hopefully, we can decrease its size too in this process.
 
@@ -154,7 +154,7 @@ The main change for the docker-compose file is the `target:dev` in the build par
 
 All the changes made can be viewed in this [pull request](https://github.com/geshan/currency-api/pull/49) too. Let’s look at how big is the image now:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/02optimized-docker-image.jpg" title="Smaller and environment optimized images after multi-stage build" alt="Smaller and environment optimized images after multi-stage build" height="58">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-multi-stage-builds/02optimized-docker-image.jpg" title="Smaller and environment optimized images after multi-stage build" alt="Smaller and environment optimized images after multi-stage build" style="height: 60px;">
 
 We ran the following commands to build the dev and the production images:
 
