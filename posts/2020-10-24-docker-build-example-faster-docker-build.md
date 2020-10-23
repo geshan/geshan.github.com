@@ -20,7 +20,7 @@ In this post, we will see a docker build example of a node js API application st
 
 1. A familiarity with docker and docker build process is required
 1. All examples are based on `Docker version 19.03.13, build 4484c46d9d` on a Mac
-1. The [Currency API](https://github.com/geshan/currency-api) app is sed for this docker build example
+1. The [Currency API](https://github.com/geshan/currency-api) app is used for this docker build example
 
 ## Why faster docker build
 
@@ -52,7 +52,7 @@ When we try to build the above docker file with docker build using the following
 ```
 time docker build -t node-14-first-bad-cache-no-buildkit .
 ```
-The `time` command is prefixed to the `docker build` command so that we know the time it takes for the docker build command to finish. Below is how long it took:
+The `time` [command](https://www.computerhope.com/unix/utime.htm) is prefixed to the `docker build` command so that we know the time it takes for the docker build command to finish. Below is how long it took:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/02docker-build-bad-cache-no-buildkit.jpg" title="First docker build without buildkit and no thoughts on caching" alt="Docker build example output without buildkit and has bad caching">
 
