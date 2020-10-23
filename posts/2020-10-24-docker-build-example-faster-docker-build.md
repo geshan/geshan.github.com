@@ -117,7 +117,7 @@ time DOCKER_BUILDKIT=1 docker build -t node-14-fourth-good-cache-file-change-wit
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/05docker-build-good-cache-with-bk-code-change.jpg" title="Fourth docker build with buildkit and good caching after code change" alt="Docker build example output with buildkit and has good caching after code change">
 
-Eventhough the code changed but the NPM modules were cached making the build complete in mere 6 seconds.
+Eventhough the code changed but the NPM modules were cached making the build complete in mere 6 seconds. Same principles apply for exploiting docker build cache. It can be applied to PHP with composer.json and composer.lock file or any other language. Always think of the previous command run and how can it be cached better.
 
 All four images were around 233 MB, one took ~60 seconds and last one took 6 seconds. That is like 10x faster.
 
