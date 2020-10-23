@@ -73,7 +73,7 @@ As you can see the build time is less than half of the previous build without bu
 
 ## Docker Build example: fast build
 
-Ok, there is a major issue in our previous docker file. The docker cache is busted on each change be it our custom code or any other npm modules being added.
+Ok, there is a major issue in our previous docker file. The docker cache is busted on each change be it our custom code or any other npm modules being added. Read more about docker build cache in this [post](https://pythonspeed.com/articles/docker-caching-model/ "Docker build cache") too.
 
 ### Faster docker build with proper caching
 
@@ -90,7 +90,6 @@ Our code changes almost every time but the npm modules we pull in change infrequ
     EXPOSE 8080
     
     CMD ["node", "index.js"]
-    
 
 You can have a look at the diff between these two docker files [here](https://github.com/geshan/currency-api/compare/docker-build...docker-build-better-cache?expand=1#diff-dd2c0eb6ea5cfc6c4bd4eac30934e2d5746747af48fef6da689e85b752f39557R1).
 
