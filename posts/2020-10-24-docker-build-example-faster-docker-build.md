@@ -60,7 +60,7 @@ The `time` [command](https://www.computerhope.com/unix/utime.htm) is prefixed to
 
 ### Easy speed up, use BUILDKIT
 
-Docker build has recently added [BUILDKIT](https://docs.docker.com/develop/develop-images/build_enhancements/) from version 18.09. Docker basically says it is an overhaul of the build process. As mentioned in this [post](https://brianchristner.io/what-is-docker-buildkit/) it is faster, efficient, and concurrent. You can read more about its goodness in this [article](https://www.docker.com/blog/advanced-dockerfiles-faster-builds-and-smaller-images-using-buildkit-and-multistage-builds/) by docker. For now, let’s see it in action:
+Docker build has recently added [BUILDKIT](https://docs.docker.com/develop/develop-images/build_enhancements/) from version 18.09. Docker basically says it is an overhaul of the build process. As mentioned in this [post](https://brianchristner.io/what-is-docker-buildkit/) it is faster, efficient, and concurrent. You can read more about its goodness in this [article](https://www.docker.com/blog/advanced-dockerfiles-faster-builds-and-smaller-images-using-buildkit-and-multistage-builds/) on docker.com. For now, let’s see it in action:
 
 ```
 time DOCKER_BUILDKIT=1 docker build -t node-14-second-bad-cache-with-buildkit .
