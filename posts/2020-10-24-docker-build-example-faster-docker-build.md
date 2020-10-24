@@ -91,7 +91,7 @@ Our code changes almost every time but the npm modules we pull in change infrequ
     
     CMD ["node", "index.js"]
 
-You can have a look at the diff between these two docker files [here](https://github.com/geshan/currency-api/compare/docker-build...docker-build-better-cache?expand=1#diff-dd2c0eb6ea5cfc6c4bd4eac30934e2d5746747af48fef6da689e85b752f39557R1).
+You can have a look at the diff between these two docker files [here](https://github.com/geshan/currency-api/compare/docker-build...docker-build-better-cache?expand=1#diff-dd2c0eb6ea5cfc6c4bd4eac30934e2d5746747af48fef6da689e85b752f39557R1). The main change is that we copy the package.json and package-lock.json file first then run npm install. Only after that, the custom code is copied to `/src`. So if you don't add a new npm library the cache will hold up.
 
 > It took 34 seconds to build for the first time as below with the following command:
 
