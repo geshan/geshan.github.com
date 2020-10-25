@@ -137,8 +137,7 @@ Add a key to the `.env.example` file, copy it from `.env` file like below:
     APP_DEBUG=true
     APP_URL=http://localhost
 
-As this is just a demo this is ok to do, for a real app always be careful with secrets.
-For production-ready apps do turn of the debugging and other dev related things.
+As this is just a demo this is ok to do, for a real app always be careful with secrets. For production-ready apps do turn of the debugging and other dev related things.
 
 Add the following `Dockerfile` on the project root:
 
@@ -197,10 +196,10 @@ If you try to understand everything here it might be overwhelming, let me boil d
 1. We are using the official PHP Apache docker image to run Laravel, it has PHP version 7.3.
 2. We are using multistage build to get the dependencies with Composer then copying them to the main docker image that has PHP 7.3 and Apache.
 3. As Google Cloud Run requires the web-server to be listening to port `8080` we are using `000-default.conf` to configure this
-4. To make things easy to run with single command `docker-compose up` we are using docker-compose.
+4. To make things easy to run with a single command `docker-compose up` we are using docker-compose.
 5. Now as you have read this far, run `docker-compose up` on your root and then after everything runs go to `http://localhost:8080` to see that Laravel 6 is running locally on Docker. Below is my `docker-compose up` output towards the end:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/07docker-compose-output.jpg" title="Docker compose running Laravel with PHP 7.3 and Apache" alt="Docker compose running Laravel with PHP 7.3 and Apache">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/07docker-compose-output.jpg" title="Docker compose running Laravel with PHP 7.3 and Apache" alt="Docker-compose running Laravel with PHP 7.3 and Apache">
 
 As Laravel is running fine with Docker, let's open a PR like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/2/files) one to add Docker to our project. I ran the following commands on the root of the project before opening the Pull Request (PR):
 
@@ -259,8 +258,7 @@ After that, given you are logged into your Google account and have Google cloud 
 2. Choose the region -- `Choose a region to deploy this application`, I usually go with `us-central-1`
 3. Then wait for the container to be built and deployed, you can see my process below:
 
-If everything goes fine on your `Google Cloud Shell`, you will see HTTPs URL you can hit to see your
-Laravel app running like below:
+If everything goes fine on your `Google Cloud Shell`, you will see HTTPs URL you can hit to see your Laravel app running like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
 
@@ -272,7 +270,7 @@ What just happened above is:
 
 ### 10. Hurray, your app is working
 
-After you git the URL you should see your app working on Google Cloud Run like below:
+After you hit the URL you should see your app working on Google Cloud Run like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/11laravel-url.jpg" title="Laravel Running on Google Cloud Run" alt="Laravel Running on Google Cloud Run">
 
@@ -280,9 +278,9 @@ If you want to deploy another version you can merge your PR to master and click 
 
 ## More about Google Cloud Run
 
-The [pricing](https://cloud.google.com/run/pricing) for Google Cloud Run is very generous. You can run any containerized app or web app on Google cloud run. I ran a pet project that got \~ 1 request per minute and I did not have to pay anything.
+The [pricing](https://cloud.google.com/run/pricing) for Google Cloud Run is very generous. You can run any containerized app or web app on [Google Cloud Run](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/ "0 to working URL on Google Cloud Run"). I ran a pet project that got \~ 1 request per minute and I did not have to pay anything.
 
-Behind the scenes, it is using [Knative](https://cloud.google.com/knative/) and [Kubernetes](https://kubernetes.io/). It can also be run on your Kubernetes cluster but who would choose to manage a K8s cluster if you can just push and get scalableserverless fully managed app :).
+Behind the scenes, it is using [Knative](https://cloud.google.com/knative/) and [Kubernetes](https://kubernetes.io/). It can also be run on your Kubernetes cluster but who would choose to manage a K8s cluster if you can just push and get a scalable serverless fully managed app :).
 
 ## TLDR
 
@@ -303,6 +301,6 @@ To run Laravel 6 on Google Cloud Run quickly follow the steps below:
 
 ## Conclusion
 
-There you go running a Laravel app on Google cloud run was pretty easy. You have even got test running on Github with Github actions. Hope it helps. To do a CI/CD approach you can check this [post](https://medium.com/google-cloud/simplifying-continuous-deployment-to-cloud-run-with-cloud-build-including-custom-domain-setup-ssl-22d23bed5cd6), it shows deployment using Cloud build. As the same container is running for local and production (Google Cloud Run) environment you don't need to learn a new framework to go Serverless. You can try [Symfony](https://geshan.com.np/blog/2019/11/how-to-run-symfony-on-google-cloud-run-with-the-demo-app-step-by-step-guide/) too on Google Cloud Run.
+There you go running a Laravel app on Google cloud run was pretty easy. You have even got tests running on Github with Github actions. Hope it helps. To do a CI/CD approach you can check this [post](https://medium.com/google-cloud/simplifying-continuous-deployment-to-cloud-run-with-cloud-build-including-custom-domain-setup-ssl-22d23bed5cd6), it shows deployment using Cloud build. As the same container is running for local and production (Google Cloud Run) environments you don't need to learn a new framework to go Serverless. You can try [Symfony](https://geshan.com.np/blog/2019/11/how-to-run-symfony-on-google-cloud-run-with-the-demo-app-step-by-step-guide/) too on Google Cloud Run.
 
 > Any containerized web app can be run on Google Cloud Run, it is a great service.
