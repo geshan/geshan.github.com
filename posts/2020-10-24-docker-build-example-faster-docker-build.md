@@ -47,6 +47,8 @@ Let’s look at the docker below, this innocent-looking docker file is taken fro
     EXPOSE 8080
     CMD ["node", "index.js"]
 
+`RUN npm ci` is another better [option](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable "NPM ci a better option") in place of `RUN npm install --production`
+
 ### Let's use the regular docker build
 
 When we try to build the above docker file with docker build using the following command
