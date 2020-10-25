@@ -6,9 +6,14 @@ comments: true
 tags:
 - Misc
 cover: "/images/start-tech-startup/01start-tech-startup.jpg"
-pagetitle: Start a tech startup for exactly $0 with Google Clould Platform and other services
-description: Learn how to piece together Google Cloud Platform (GCP) services ($300 credit on signup) and other services to start your tech startup with this no-fuss 2000+ words technical guide.
-keywords: how to start a tech startup, how to start a startup, start a tech startup, start a startup
+pagetitle: Start a tech startup for exactly $0 with Google Clould Platform and other
+  services
+description: Learn how to piece together Google Cloud Platform (GCP) services ($300
+  credit on signup) and other services to start your tech startup with this no-fuss
+  2000+ words technical guide.
+keywords: how to start a tech startup, how to start a startup, start a tech startup,
+  start a startup
+
 ---
 Learn how to start a tech startup with no money. You might think I am joking but I am not. In this no-fuss technical guide, I will walk you through the process to start a tech startup. This guide will not dive deep into the technical details. If you know technical things like how to set up a DNS, dockerize your applications, etc you can glue together a tech startup for no cost at all.
 
@@ -83,11 +88,11 @@ We will be using serverless containers for your application deployed on Google C
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/06cloud-run.jpg" title="Serverless containers on cloud run" alt="Serverless containers on cloud run">
 
-With Cloud run you get 2 million requests a month [free](https://cloud.google.com/run/pricing#tables). After that, it is 0.40 $ per million requests. Well, the math is not that simple but it is advertized like that for sure. Google cloud run is a lot easier to set up than a full-blown Kubernetes cluster with similar benefits. Know more about it in this [talk](blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/).
+With Cloud run you get 2 million requests a month [free](https://cloud.google.com/run/pricing#tables). After that, it is 0.40 $ per million requests. Well, the math is not that simple but it is advertized like that for sure. Google cloud run is a lot easier to set up than a full-blown Kubernetes cluster with similar benefits. Know more about it in this [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/).
 
 ### Dockerize your application
 
-To deploy your application, you will need to dockerize it. In this [step-by-step guide](blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) you will see how to deploy a Laravel application to Google Cloud Run Fully managed. Following similar steps, you can deploy any PHP application to Google Cloud Run. Just bear in mind that you choose a lower-cost region like us-central-1 so that you don’t burn the free credit fast.
+To deploy your application, you will need to dockerize it. In this [step-by-step guide](/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) you will see how to deploy a Laravel application to Google Cloud Run Fully managed. Following similar steps, you can deploy any PHP application to Google Cloud Run. Just bear in mind that you choose a lower-cost region like us-central-1 so that you don’t burn the free credit fast.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/07cloud-run-costs.jpg" title="Cloud run costs for a small startup" alt="Cloud run costs for a small startup for last 90 days staging and prod both">
 
