@@ -7,8 +7,11 @@ tags:
 - Software Engineering
 cover: "/images/software-engineer-skills/01great-software-engineer.jpg"
 pagetitle: 3 crucial qualities of a great software engineer
-description: There are many software engineer qualities that will make you stand out. Among them, these 3 are crucial for you to become a great software engineer and leave the competition behind.
+description: There are many software engineer qualities that will make you stand out.
+  Among them, these 3 are crucial for you to become a great software engineer and
+  leave the competition behind.
 keywords: software engineer qualities
+
 ---
 There are many software engineer qualities that will make you stand out. Among them, these 3 are crucial for you to become a great software engineer and leave the competition behind. Surely technical qualities matter a lot to be counted as a superior software engineer. On the other hand, this post is geared towards the non-technical aspects of software engineering.
 
@@ -27,7 +30,7 @@ For this post, we are more concerned than just the hard skills needed to prove y
 
 ## Good business acumen
 
-Simply put, [business acumen](https://www.advantexe.com/what-is-business-acumen) is an understanding of how a company makes money and meets its goals and objectives. I have written in a [previous talk](blog/2017/02/things-i-wished-i-knew-as-a-junior-developer-slides/) too:
+Simply put, [business acumen](https://www.advantexe.com/what-is-business-acumen) is an understanding of how a company makes money and meets its goals and objectives. I have written in a [previous talk](/blog/2017/02/things-i-wished-i-knew-as-a-junior-developer-slides/) too:
 
 > Solutions and value to the business is much more important than the latest language/framework.
 
