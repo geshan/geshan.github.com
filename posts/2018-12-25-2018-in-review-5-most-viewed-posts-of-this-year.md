@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "2018 in review: 5 most viewed posts of this year"
-date: 2018-12-25 18:55:50 +11:00
+title: '2018 in review: 5 most viewed posts of this year'
+date: 2018-12-25T18:55:50.000+11:00
 comments: true
-tags: 
+tags:
 - Technology
 - Misc
-cover: /images/top-5-2018/everest.jpg
-description: All posts are not from 2018 but they have been viewed more than the others. I am using my Google Analytics stats to compile this list.
+cover: "/images/top-5-2018/everest.jpg"
+description: All posts are not from 2018 but they have been viewed more than the others.
+  I am using my Google Analytics stats to compile this list.
 keywords: SQL, Docker, Microservices, Review, Blog, Git
----
 
+---
 I have never done this in the past 11 years of blogging, this time it is going to be different. I am listing the 5 most viewed posts from this blog in 2018. All posts are not from 2018 but they have been viewed more than the others. I am using my Google Analytics stats to compile this list. So, here I present the most popular blog posts of 2018 on [Geshan.com.np](https://geshan.com.np "Geshan blog"):
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/top-5-2018/everest.jpg" title="5 most viewed posts of 2018 a recap" alt="5 most viewed posts of 2018 a recap">
@@ -58,4 +59,4 @@ This is a post from Oct this year about  Microservice and how to not code it lik
 
 ## Conclusion
 
-> Looks like docker has been a popular topic for this year. Probably I would blog more about it next year too. I have started cross-posting my posts to [Dev.to](https://dev.to/geshan "me on dev.to") and medium publications like [FreeCodeCamp](https://medium.freecodecamp.org/@geshan "my posts on freecodecamp") and [HackerNoon](https://hackernoon.com/@geshan "my stories on hackernoon"). I hope these posts help more and more people.
+> Looks like docker has been a popular topic for this year. Probably I would blog more about it next year too. I have started [cross-posting ](https://geshan.com.np/blog/2019/12/repost-your-tech-blog/ "Repost your tech blog, get a larger audience without hurting SEO")my posts to [Dev.to](https://dev.to/geshan "me on dev.to") and [medium publications](/blog/2018/12/5-tech-medium-publications-software-engineers-should-strive-to-write-for/ "Medium publications to post your tech content to") like [FreeCodeCamp](https://medium.freecodecamp.org/@geshan "my posts on freecodecamp") and [HackerNoon](https://hackernoon.com/@geshan "my stories on hackernoon"). I hope these posts help more and more people.
