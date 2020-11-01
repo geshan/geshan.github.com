@@ -41,6 +41,8 @@ I had done some [time limiting on Facebook](/blog/2010/12/how-to-limit-time-you-
 
 It is very important to take a social media break now in midst of a global pandemic. COVID-19 has already done a lot of damage. Don’t be pulled into an endless stream of “not so good news”. This is not the best for your mental health. Social media can also be a hindrance to your [work from home productivity](/blog/2020/04/5-tips-to-work-from-home-productively/).
 
+> Please read this [piece](https://seths.blog/2018/10/social-media-is-a-symptom-not-a-tactic/) by Seth Godin, may be he will convince you to take a social media break.
+
 ## Do you need to take a social media break?
 
 What did you do the first thing in the morning after waking up? If your answer is I looked at my phone or checked any of my social media apps you `NEED` a social media break, period.
