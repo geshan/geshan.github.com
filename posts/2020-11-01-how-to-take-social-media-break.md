@@ -161,4 +161,4 @@ Of course, use your common sense. Don’t take a break from LinkedIn if you are 
 
 ***
 
-PS: Thanks to Ansubha for helping me edit this blog post.
+PS: Thanks to [Ansubha](https://www.instagram.com/manandhar.ansubha/) for helping me edit this blog post.
