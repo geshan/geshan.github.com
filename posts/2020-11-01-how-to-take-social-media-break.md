@@ -30,7 +30,7 @@ A social media break is a time where you don’t use social media at varying deg
 As I read/scanned through many [posts](https://wanderingaimfully.com/social-media-detox-recap/), common takeaways from doing the detox were
 
 * [Increased productivity](https://blog.issuu.com/social-media-hiatus-how-to-take-one-and-stay-productive/)
-* [bettersleep](https://www.self.com/story/does-going-on-a-social-media-cleanse-actually-do-anything-for-your-mental-health), and
+* [better sleep](https://www.self.com/story/does-going-on-a-social-media-cleanse-actually-do-anything-for-your-mental-health), and
 * [smarter and wiser](https://www.lifehack.org/318316/8-things-that-will-happen-you-break-with-social-media).
 
 I cannot vouch that I have got smarter, but I can definitely say that I have more control over when I want to use my phone.
@@ -49,11 +49,11 @@ What did you do the first thing in the morning after waking up? If your answer i
 
 > You can’t manage what you don’t measure - [Peter Drucker](https://www.azquotes.com/quote/867361).
 
-The same thing applies to your social media time usage (or if I can call it waste). To track your usage, you can start using [Rescue TIme](https://www.rescuetime.com/ref/631000). You can track your screen time on both mobile and laptop/desktop with their app to the minute. This gives you a very good idea of how much time you are spending on Instagram, Facebook, or even Tik Tok. 
+The same thing applies to your social media time usage (or if I can call it waste). To track your usage, you can start using [Rescue TIme](https://www.rescuetime.com/ref/631000). You can track your screen time on both mobile and laptop/desktop with their app to the minute. This gives you a very good idea of how much time you are spending on Instagram, Facebook, or even Tik Tok.
 
 With the desktop app, you can also track how much time you are spending on the web application of these social media platforms. It will help you have an idea of the total time you are spending on social media platforms, then you can decide if you want to take a break or not.
 
-If  you decide to do it, keep in mind that  If a youtuber can take a social media break and succeed at it, you can surely do it. For inspiration, check it out below:
+If you decide to do it, keep in mind that  If a YouTuber can take a social media break and succeed at it, you can surely do it. For inspiration, check it out below:
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/9z8_YhWoq2o' frameborder='0' allowfullscreen></iframe></div>
 
@@ -61,7 +61,7 @@ If  you decide to do it, keep in mind that  If a youtuber can take a social medi
 
 What do you consider social media? What do you want to get out of a social media break? Is LinkedIn social media, I think yes. Ask yourself these questions, after you have some data decide which social media platforms you want to take a break from and which platforms you want to continue using.
 
-List the social media accounts you want to get off from. In my case, it was Facebook, Twitter, LinkedIn, and Instagram in no particular order. I am still using youtube (considering not using it too). I am basically nonexistent on Pinterest and don’t even have a Tik Tok account. You could have your own list of apps for social media break which may include platforms like Tik Tok, snap chat, and Pinterest. 
+List the social media accounts you want to get off from. In my case, it was Facebook, Twitter, LinkedIn, and Instagram in no particular order. I am still using youtube (considering not using it too). I am basically nonexistent on Pinterest and don’t even have a Tik Tok account. You could have your own list of apps for social media break which may include platforms like Tik Tok, snap chat, and Pinterest.
 
 > If you are doing mindless scrolling anywhere and want a digital detox from that platform include it in your social media breakup list.
 
@@ -153,7 +153,7 @@ My messages are clear because of Rambox and Messenger app :).
 
 ## Conclusion
 
-This is a game of self-control and self-discipline. If you falter at one place, they will get the best of you.
+This is a game of self-control and self-discipline. If you falter in one place, they will get the best of you.
 
 > Take control of where you want to spend your valuable time.
 
