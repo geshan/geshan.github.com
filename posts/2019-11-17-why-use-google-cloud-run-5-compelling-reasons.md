@@ -10,8 +10,8 @@ tags:
 - Software Engineering
 cover: "/images/reasons-to-use-google-cloud-run/00reasons-to-use-cloud-run.jpg"
 pagetitle: 5 reasons to use serverless containers on Google Cloud Run
-description: Tackle the serverless pain points with serverless containers on Google
-  Cloud Run
+description: Read the 5 most compelling reasons to use serverless containers. No.
+  1. no need to learn a new language, framework or paradigm
 keywords: serverless containers, Google Cloud, Google Cloud Run, Serverless, containers
 
 ---
