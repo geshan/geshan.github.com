@@ -31,7 +31,7 @@ It is very clear that `Cold Starts` and `Vendor Lock-in` are the two big ones. I
 
 ## How I ran into Google Cloud Run
 
-A year back I was helping some masters students here in Sydney with a side project. I was mentoring them, guiding them to have a real-world project they could include in their resumes. For this project, we started using Google Cloud Platform, why? Because you get [$300 free credit](https://cloud.google.com/free/docs/gcp-free-tier) for a year :) simple. There are other Serverless containers offerings like [AWS Fargate](https://aws.amazon.com/fargate/) and [Azure Containers](https://azure.microsoft.com/en-au/product-categories/containers/). I don’t think they are as good and as software engineer friendly as Cloud Run. In my opinion, Google Cloud Run actually brings serverless containers to the masses. Running serverless containers on Cloud Run is very easy. If you can dockerize your app, you can run it in a serverless way on Cloud Run on serverless containers. 
+A year back I was helping some masters students here in Sydney with a side project. I was mentoring them, guiding them to have a real-world project they could include in their resumes. For this project, we started using Google Cloud Platform, why? Because you get [$300 free credit](https://cloud.google.com/free/docs/gcp-free-tier) for a year :) simple. There are other Serverless containers offerings like [AWS Fargate](https://aws.amazon.com/fargate/) and [Azure Containers](https://azure.microsoft.com/en-au/product-categories/containers/). I don’t think they are as good and as software engineer friendly as Cloud Run. In my opinion, Google Cloud Run actually brings serverless containers to the masses. Running serverless containers on Cloud Run is very easy. If you can dockerize your app, you can run it in a serverless way on Cloud Run on serverless containers.
 
 I wanted to learn how to set up a Google Kubernetes Engine ([GKE](https://cloud.google.com/kubernetes-engine/)) Kubernetes cluster, so I teamed up with another DevOps Engineer and started to configure a Kubernetes cluster. As the app’s backend API was already containerized and GKE was managed K8s I thought getting a running URL would not take long.
 
@@ -41,7 +41,7 @@ Fast forward 2 months, the project didn’t really go as planned and the k8s clu
 
 > I thought let’s give it a try. To my delightful surprise, I could get a working serverless HTTPs URL for the same app in like 30 mins.
 
-That just blew my mind and I instantly became a Google Cloud Run Fan. If you liked my story, in addition to the official guides/videos do have a look at the [unofficial Cloud Run FAQ](https://github.com/ahmetb/cloud-run-faq) and the [awesome Cloud Run](https://github.com/steren/awesome-cloudrun) repos on Github. I have also done a talk on [Serverless Containers](blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/ "Serverless containers talk and video") on Google Cloud run.
+That just blew my mind and I instantly became a Google Cloud Run Fan. If you liked my story, in addition to the official guides/videos do have a look at the [unofficial Cloud Run FAQ](https://github.com/ahmetb/cloud-run-faq) and the [awesome Cloud Run](https://github.com/steren/awesome-cloudrun) repos on Github. I have also done a talk on [Serverless Containers](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/ "Serverless containers talk and video") on Google Cloud run.
 
 ## Google Cloud Run in the wild
 
@@ -61,35 +61,35 @@ As Cloud run is serverless you already have the advantages of a Serverless offer
 
 ### 1.  No need to learn a new framework/paradigm
 
-The first thing to distinguish is Function as a Service (FAAS) is only one type of serverless offering, Amazon S3 is a backend as a service and it is also a serverless offering. So, as we generally think FAAS = serverless. Going Serverless means to deploy a function to one of the cloud providers. This has its own strings attached, you have too many functions to manage, you need to think of how to manage a fully stateless function, etc. 
+The first thing to distinguish is Function as a Service (FAAS) is only one type of serverless offering, Amazon S3 is a backend as a service and it is also a serverless offering. So, as we generally think FAAS = serverless. Going Serverless means to deploy a function to one of the cloud providers. This has its own strings attached, you have too many functions to manage, you need to think of how to manage a fully stateless function, etc.
 
-Then you might need to learn a new framework like [Serverlss framework](https://serverless.com/) to get the real value out of a FAAS. 
+Then you might need to learn a new framework like [Serverlss framework](https://serverless.com/) to get the real value out of a FAAS.
 
-> With containers it's all gone, you are probably using [docker](https://geshan.com.np/blog/categories/docker/) containers already. Instead of deploying them on your Kubernetes cluster, you can just run them on fully managed Cloud Run and it works. 
+> With containers it's all gone, you are probably using [docker](https://geshan.com.np/blog/categories/docker/) containers already. Instead of deploying them on your Kubernetes cluster, you can just run them on fully managed Cloud Run and it works.
 
 Another advantage of serverless containers is you are `not locked-in` to one provider, as they are containers you can run them wherever you want. If you want to move some Kubernetes cluster in the future that will be an easy move.
 
 ### 2. Serverless containers can run any language/binary/framework
 
-Function as a Service(FAAS) have their own place and it gives you unprecedented abstraction like you don’t need to worry about OS-level issues or security problems. But on the flip side, you are confined to the given runtimes and allowed versions. For example, if you want to run Node 12/14 on [AWS Lambda](https://aws.amazon.com/lambda/) it is not possible out of the box. Let’s take this even further, what if you want to run Rust or Fortran :). You can’t do it. 
+Function as a Service(FAAS) have their own place and it gives you unprecedented abstraction like you don’t need to worry about OS-level issues or security problems. But on the flip side, you are confined to the given runtimes and allowed versions. For example, if you want to run Node 12/14 on [AWS Lambda](https://aws.amazon.com/lambda/) it is not possible out of the box. Let’s take this even further, what if you want to run Rust or Fortran :). You can’t do it.
 
-> On Google cloud run you can even run [Fortran](https://github.com/zachmccormick/fortran-cloudrun) or [Pascal](https://medium.com/google-cloud/serverless-computing-with-pascal-d7a16633db44) if you want. 
+> On Google cloud run you can even run [Fortran](https://github.com/zachmccormick/fortran-cloudrun) or [Pascal](https://medium.com/google-cloud/serverless-computing-with-pascal-d7a16633db44) if you want.
 
 As long as it is a container and can expose a web-server on port 8080 (or any configured post) you can run anything you want on serverless containers.
 
 ### 3. HTTPs URL + custom domain mapping
 
-Configuring SSL is not an easy task, with [Let’s Encrypt](https://letsencrypt.org/) you can get a free certificate still you have to configure and install it well. HTTPs secure websites are important from every aspect, even for things like [SEO](https://support.google.com/webmasters/answer/7451184?hl=en). 
+Configuring SSL is not an easy task, with [Let’s Encrypt](https://letsencrypt.org/) you can get a free certificate still you have to configure and install it well. HTTPs secure websites are important from every aspect, even for things like [SEO](https://support.google.com/webmasters/answer/7451184?hl=en).
 
-> Cloud Run gives you HTTPs URL as soon as you deploy your container. 
+> Cloud Run gives you HTTPs URL as soon as you deploy your container.
 
 As an added bonus, you can even [map your own domain](https://cloud.google.com/run/docs/mapping-custom-domains "Cloud run domain mapping") to the running set of containers.
 
 ### 4. Google cloud toolset at your disposal
 
-Google Cloud Platform, in my opinion, is the most software engineer friendly cloud platform of them all. You can build your containers with [Cloud Build](https://cloud.google.com/cloud-build/), push them to [Container Registry](https://cloud.google.com/container-registry/) for running them later as serverless containers on Cloud Run. 
+Google Cloud Platform, in my opinion, is the most software engineer friendly cloud platform of them all. You can build your containers with [Cloud Build](https://cloud.google.com/cloud-build/), push them to [Container Registry](https://cloud.google.com/container-registry/) for running them later as serverless containers on Cloud Run.
 
-> On top of it, you can even debug your application in production with [Stackdriver debugger](https://cloud.google.com/debugger/) and get performance analysis with [Stackdriver trace](https://cloud.google.com/trace/). 
+> On top of it, you can even debug your application in production with [Stackdriver debugger](https://cloud.google.com/debugger/) and get performance analysis with [Stackdriver trace](https://cloud.google.com/trace/).
 
 There is a [profiler](https://cloud.google.com/profiler/) if you want to use and [monitoring](https://cloud.google.com/monitoring/) and [logging](https://cloud.google.com/logging) too. You can use all of these tools very easily with Google Cloud Run. For my side project, I am using trace and debugger sometimes. Trace has been very helpful to know the execution times for the scrapers of the project.
 
@@ -103,14 +103,14 @@ You can get your product to the hands of your customers much faster. Even if you
 
 ## Conclusion
 
-Vendor lock-in and cold start are the two major issues with FAAS serverless model. With Google Cloud run you don’t need to worry about both these big issues for serverless containers. 
+Vendor lock-in and cold start are the two major issues with FAAS serverless model. With Google Cloud run you don’t need to worry about both these big issues for serverless containers.
 
-> As its containers, you can move anywhere and with the [concurrency model](https://cloud.google.com/run/docs/about-concurrency) of Cloud run, the cold start problem is handled to a good extent. 
+> As its containers, you can move anywhere and with the [concurrency model](https://cloud.google.com/run/docs/about-concurrency) of Cloud run, the cold start problem is handled to a good extent.
 
 With the recent feature add of [minimum instances](https://cloud.google.com/run/docs/configuring/min-instances "Cloud run minimum instances"), you can even have a few containers running all the time (then it is not serverless containers anymore). If you are concerned about the cost at this point, you might want to read this [comparison](https://medium.com/google-cloud/cloud-run-vs-cloud-functions-whats-the-lowest-cost-728d59345a2e) between Cloud Run and Cloud functions.
 
-If you are convinced by now to use serverless containers with Google Cloud Run, take [Laravel](https://geshan.com.np/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) or [Symfony](https://geshan.com.np/blog/2019/11/how-to-run-symfony-on-google-cloud-run-with-the-demo-app-step-by-step-guide/) for a spin. You can even try a simple NodeJs [app](https://github.com/geshan/currency-api) if you like. 
+If you are convinced by now to use serverless containers with Google Cloud Run, take [Laravel](/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) or [Symfony](/blog/2019/11/how-to-run-symfony-on-google-cloud-run-with-the-demo-app-step-by-step-guide/) for a spin. You can even try a simple NodeJs [app](https://github.com/geshan/currency-api) if you like.
 
-All of them have the `Run on Google Cloud` button which makes deploying insanely easy. If you want to set up your CI/CD pipeline have a look at the [cloudbuild.yml](https://github.com/geshan/currency-api/blob/master/cloudbuild.yaml) file in the Currency API NodeJs repo. For a general overview of serverless containers, please watch my [talk](https://geshan.com.np/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/).
+All of them have the `Run on Google Cloud` button which makes deploying insanely easy. If you want to set up your CI/CD pipeline have a look at the [cloudbuild.yml](https://github.com/geshan/currency-api/blob/master/cloudbuild.yaml) file in the Currency API NodeJs repo. For a general overview of serverless containers, please watch my [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/).
 
 > All in all, if I start a new pet project or even a production load ready project today I will go with serverless containers on Cloud Run for sure.
