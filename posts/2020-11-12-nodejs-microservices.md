@@ -3,8 +3,7 @@ layout: post
 title: 5 important reasons to choose Node.js for your microservices
 date: 2020-11-11T21:15:25.000+11:00
 comments: true
-tags:
-- Misc
+tags: []
 cover: "/images/nodejs-microservices/01nodejs-microservices.jpg"
 pagetitle: 5 potent reasons to choose Node.js for your microservices
 description: There are multiple good reasons to build nodejs microservices, this 2000+
