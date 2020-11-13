@@ -7,8 +7,8 @@ tags:
 - Software Engineering
 cover: "/images/vegeta-load-testing/01truck-load.jpg"
 pagetitle: Vegeta load testing an easy to follow how to tutorial with GET examples
-description: Get started with vegeta load testing reading this easy to follow 1500+
-  word tutorial with pracical examples. Find out easy to execute comamnds to load
+description: Get started with Vegeta load testing by reading this easy to follow 1500+
+  word tutorial with practical examples. Find out easy to execute commands to load
   test your app/API in seconds.
 keywords: vegeta load testing, vegeta load testing examples, vegeta load test, load
   testing
