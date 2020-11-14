@@ -11,10 +11,10 @@ const pluginPWA = require("eleventy-plugin-pwa");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(blogTools);
   eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   eleventyConfig.setDataDeepMerge(true);
 

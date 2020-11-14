@@ -5,9 +5,10 @@ date: 2020-11-11T21:15:25.000+11:00
 comments: true
 tags:
 - Software Engineering
+- NodeJs
 cover: "/images/nodejs-microservices/01nodejs-microservices.jpg"
 pagetitle: 5 potent reasons to choose Node.js for your microservices
-description: There are multiple good reasons to build nodejs microservices, this 2000+
+description: There are multiple good reasons to build nodejs microservices, this 1800+
   words post discusses 5 of the important ones. Let's get started.
 keywords: nodejs microservices, microservices in node js, microservices node js, node.js
   microservice, microservices with node js, microservices with node.js, microservices,
