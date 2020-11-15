@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Node.js for PHP developers: 5 must-know pragmatic aspects with code examples"
+title: 'Node.js for PHP developers: 5 must-know pragmatic aspects with code examples'
 date: 2020-11-14T23:15:25.000+11:00
 comments: true
 tags:
@@ -8,9 +8,13 @@ tags:
 - NodeJs
 - PHP
 cover: "/images/nodejs-for-php-developers/01nodejs-for-php-developers.jpg"
-pagetitle: "Node.js for PHP developers: 5 must-know practical aspects with code examples"
-description: There are some important pragmatic aspects about Node.js which are ultra helpful for PHP developers. This 3000+ words guide lists 5 dominant ones with code examples.
-keywords: node js for php, node js for php developers, nodejs for php, node.js for php, node js vs php, nodejs php, node.js vs php, php vs node js
+pagetitle: 'Node.js for PHP developers: 5 must-know practical aspects with code examples'
+description: There are some important pragmatic aspects about Node.js which are ultra
+  helpful for PHP developers. This 3000+ words guide lists 5 dominant ones with code
+  examples.
+keywords: node js for php, node js for php developers, nodejs for php, node.js for
+  php, node js vs php, nodejs php, node.js vs php, php vs node js
+
 ---
 While the popularity of Node.js is [increasing](https://trends.google.com/trends/explore?date=2019-11-12%202020-11-12&q=%2Fm%2F060kv,%2Fm%2F0bbxf89), PHP’s traction is going [down](https://ibb.co/4fZN8n8). With that context, this post is going to elaborate on 5 must-know practical aspects of using Node.js for PHP developers. These will be things no-one talks or writes about, time to get going.
 
@@ -20,7 +24,7 @@ While the popularity of Node.js is [increasing](https://trends.google.com/trends
 
 ## Node.js for PHP developers (not Node.js vs PHP)
 
-This piece is a list of things you as a PHP developer must know and learn to use Node.js effectively. On the contrary, this post is not a Node.js vs PHP write up where PHP is bashed. I have used both languages. I started to write more Node.js in 2016. When I started I faced some difficulties as I was used to PHP at work for more than 7 years prior to that.
+This piece is a list of things you as a PHP developer must know and learn to use Node.js effectively. On the contrary, this post is not a Node.js vs PHP write up where PHP is bashed. I have used both languages. I started to write more Node.js in 2016. When I started I faced some difficulties as I was used to PHP at work for more than 7 years prior to that. There was a book released towards 2012 end covering [Node.js for PHP developers](https://www.oreilly.com/library/view/nodejs-for-php/9781449333775/).
 
 This blog post is not going to talk about what PHP or Node.js is, you can read about it in other [posts](https://www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/). I will also not talk much about the [Non-Blocking I/O](https://blog.cloudboost.io/why-is-node-called-a-non-blocking-i-o-model-eb639063bc14) or the [event loop](https://blog.logrocket.com/a-complete-guide-to-the-node-js-event-loop/). Still, some of it will be brushed through when discussing the practical aspects of writing good Node.js code.
 
