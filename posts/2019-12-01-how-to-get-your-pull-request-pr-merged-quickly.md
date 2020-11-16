@@ -46,22 +46,32 @@ That is the million-dollar question. It is easy to say keep your changes small, 
 
 This is the main reason for rewrites. We usually tend to write the code, sometimes even fully done, and then open the pull request but the reviewer has a different solution. That different solution can be better too. So you end up accepting the change request and the new “better” solution = a partial rewrite of the solution for the task.
 
-It would have been a lot better to spend like 15 mins before writing a single line of code saying I want to use this library, I want to use X pattern and do it this way with the probable reviewer of your code you code review would be exponentially easier and faster. This would also give the reviewer a proper sense o how many PRs are coming and what to expect next.
+> It would have been a lot better to spend like 15 mins before writing a single line of code saying I want to use this library, I want to use X pattern and do it this way with the probable reviewer of your code. 
+
+Your code review would be exponentially easier and faster with this approach. This would also give the reviewer a proper sense o how many PRs are coming and what to expect next.
 
 ### Enabler code last
 
 What do I mean by `enabler code`? Basically, if you are writing a new POST API endpoint and you have tests. The first one can be to create the new table/fields on the database. Given you have written the part that talks to the database and adds the new resource. That can be a separate pull request.
 
-Another pull request can be adding the validation logic for that new resource. Finally, you can have the `enabler` glue controller code which opens up the API endpoint giving it access to any consumers. Breaking this single task into 4 pull requests gives you a lot smaller PRs to discuss and change if any change request is done. A friend mine does it and I understand the value now, at first it felt like he is opening too many pull requests. You can read more about it in this [post](/blog/2020/10/small-pull-requests/).
+Another pull request can be adding the validation logic for that new resource. Finally, you can have the `enabler` glue controller code which opens up the API endpoint giving it access to any consumers.
+
+> Breaking this single task into 4 pull requests gives you a lot smaller PRs to discuss and update if any change request is done.
+
+A friend mine does it and I understand the value now, at first it felt like he is opening too many pull requests. You can read more about it in this [post](/blog/2020/10/small-pull-requests/).
 
 ### Feature flags
 
-This is one of the underutilized things I see in software engineering. The first time I did it and saw this in production it blew my mind. I was amazed not because of the 3 extra lines of code in the if I wrote but by the immense flexibility, it gave us (the tech team) and the business. We deployed PayPal but it was accessible only to `myname@mycompany.com` for 2 days before being opened up to `*@mycompany.com` later to be opened up to all customers.
+This is one of the underutilized things I see in software engineering. The first time I did it and saw this in production it blew my mind. I was amazed not because of the 3 extra lines of code in the if I wrote but by the immense flexibility, it gave us (the tech team) and the business. 
+
+> We deployed PayPal but it was accessible only to `myname@mycompany.com` for 2 days before being opened up to `*@mycompany.com` later to be opened up to all customers.
 
 With feature flags you can ship the files you need step by step but the only user for a given amount of time can be `you@yourcompany.com`. In this way, you can have smaller pull requests even for critical features and get your code tested on production gradually. Even in the above example of POST API, the last enable code could be shipped behind a feature flag and only when you have tested it well on production you can open it up to more people step by step.
 
 ## Conclusion
 
-Creating smaller pull requests helps the code author, the reviewer, the team, and results in better productivity for the whole company. Use the tools on disposal well, still, never underestimate the human factor and the power of clear communication. For a better git skill set do read these [git tips](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/).
+Creating smaller pull requests helps the code author, the reviewer, the team, and results in better productivity for the whole company. 
 
-> Hopefully the above strategies give you a better idea of how you keep your pull requests smaller leading to a more productive team.
+> Use the tools on disposal well, never underestimate the human factor and the power of clear communication.
+
+For a better git skill set do read these [git tips](https://geshan.com.np/blog/2014/07/4-git-tips-beyond-basics/). Hopefully the above strategies give you a better idea of how you keep your pull requests smaller leading to a more productive team.

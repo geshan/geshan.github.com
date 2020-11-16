@@ -53,8 +53,10 @@ Now let's use some SQL powers. You can find the example with related queries run
 
 As software engineers, let's say if we need to find the total cash and credit amount refunded for an item what would we do? We would run something like:
 
-    SELECT fk_item, fk_refund, amount, is_cash 
-    FROM payment WHERE fk_item=2001;
+``` sql
+SELECT fk_item, fk_refund, amount, is_cash 
+FROM payment WHERE fk_item=2001;
+```
 
 With current data, it will give 3 rows like below:
 
@@ -62,11 +64,13 @@ With current data, it will give 3 rows like below:
 
 With these 3 rows, we would loop over them. If it is cash accumulate it to cashBalance variable, if not sum it up to creditBalace variable. Rather than that it would be a lot easier (probably faster) to do in SQL like:
 
-    SELECT fk_item, SUM(amount) AS total_paid, 
-    IF(is_cash = 1, 'cash', 'credit') as type
-    FROM payment 
-    WHERE fk_item = 2001 
-    GROUP BY fk_item, is_cash;
+``` sql
+SELECT fk_item, SUM(amount) AS total_paid, 
+IF(is_cash = 1, 'cash', 'credit') as type
+FROM payment 
+WHERE fk_item = 2001 
+GROUP BY fk_item, is_cash;
+```
 
 Resulting in:
 
@@ -78,9 +82,11 @@ The result is easy now if you need the total refund for the item just change the
 
 [Group concat](http://www.mysqltutorial.org/mysql-group_concat/) is a powerful operation in SQL databases. It is very useful when you need to get data from one to many relationship. For instance, you want to get all tags for a blog post or you want to get all categories of a product. Concerning this refunds example, one item can be refunded multiple times. So we will get all the refunds associated with the item id. To get this we will run only 1 query and get it without any loops in the code like below:
 
-    SELECT fk_item, 
-    GROUP_CONCAT(DISTINCT fk_refund) refund_ids FROM payment
-    WHERE fk_item = 2001;
+``` sql
+SELECT fk_item, 
+GROUP_CONCAT(DISTINCT fk_refund) refund_ids FROM payment
+WHERE fk_item = 2001;
+```
 
 This results in:
 
@@ -96,8 +102,10 @@ Many [string manipulation](https://dev.mysql.com/doc/refman/8.0/en/string-functi
 
 In this example, I will select refund_nr with it's related reason:
 
-    SELECT CONCAT_WS("-", refund_nr, reason) AS refund_nr_with_reason
-    FROM refund;
+``` sql
+SELECT CONCAT_WS("-", refund_nr, reason) AS refund_nr_with_reason
+FROM refund;
+```
 
 Resulting in:
 
@@ -114,11 +122,13 @@ All software engineers know you can sort based on a column. But if you are given
 
 As per above rules it is decided that premium customers and priority above 50000 (in cents) will be processed first. Then other refunds will be processed. Let's get the priority refunds as below:
 
-    SELECT r.refund_nr, r.reason, p.fk_item, p.amount, p.is_cash, 
-    IF(p.premium_customer = 1, 9999999999, p.amount * (IF(is_cash = 1, 25, 20))) AS priority FROM 
-    refund AS r INNER JOIN payment AS p ON r.id = p.fk_refund
-    HAVING priority > 50000
-    ORDER BY priority DESC
+``` sql
+SELECT r.refund_nr, r.reason, p.fk_item, p.amount, p.is_cash, 
+IF(p.premium_customer = 1, 9999999999, p.amount * (IF(is_cash = 1, 25, 20))) AS priority FROM 
+refund AS r INNER JOIN payment AS p ON r.id = p.fk_refund
+HAVING priority > 50000
+ORDER BY priority DESC
+```
 
 The results are below:
 

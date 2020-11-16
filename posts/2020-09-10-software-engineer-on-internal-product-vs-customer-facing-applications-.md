@@ -10,7 +10,7 @@ cover: "/images/internal-vs-customer-facing-apps/02ecommerce.jpg"
 pagetitle: Difference between working as a software engineer on an internal product
   and customer-facing application in E-commerce companies
 description: Get the inside outs of working as a software engineer on internal products
-  vs customer-facing applicaiton for e-commerce compaines in this 1950+ word post.
+  vs customer-facing application for e-commerce compaines in this 1950+ word post.
 keywords: working as software engineer
 
 ---

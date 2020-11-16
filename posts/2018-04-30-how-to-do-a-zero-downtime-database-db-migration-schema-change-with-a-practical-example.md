@@ -35,7 +35,7 @@ To do commission tracking by customer type we would decide to add 2 new columns 
 
 The following migration script will update the DB schema to be in the above state for MYSQL DB:
 
-```
+``` sql
 ALTER TABLE `partner_discount_code` ADD `commission_percent_new_customer` DECIMAL NULL AFTER `commission_percent`,
 ADD `commission_percent_recurring_customer` DECIMAL NULL AFTER `commission_percent_new_customer`, 
 ,algorithm=inplace,lock=none;

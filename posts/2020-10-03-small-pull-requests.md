@@ -68,20 +68,22 @@ A better way to do this first part would be to write the functionality without p
 
 This is a very small application and it is not written in a SOLID way. So, our change to show all exchange rates for a given currency is incorporated in [this](https://github.com/geshan/currency-api/pull/96/files) small pull request. The main change is give below:
 
-    async function getByToCurrency(currentPage, currency) {
-      const offset = (currentPage - 1) * config.itemsPerPage;
-    
-      let currencyExchangeRates = await db.query(
-        `SELECT from_currency, to_currency, rate, on_date FROM exchange_rates where to_currency = ? LIMIT ?,?`,
-        [currency, offset, config.itemsPerPage]
-      );
-    
-      if (currencyExchangeRates.length) {
-        return currencyExchangeRates;
-      }
-    
-      return [];
-    }
+``` js
+async function getByToCurrency(currentPage, currency) {
+  const offset = (currentPage - 1) * config.itemsPerPage;
+
+  let currencyExchangeRates = await db.query(
+    `SELECT from_currency, to_currency, rate, on_date FROM exchange_rates where to_currency = ? LIMIT ?,?`,
+    [currency, offset, config.itemsPerPage]
+  );
+
+  if (currencyExchangeRates.length) {
+    return currencyExchangeRates;
+  }
+
+  return [];
+}
+```
 
 As you can see, the change is merely 14 lines of code which is very straightforward. Then, there are 80 lines of unit test code to verify that it works correctly.
 
@@ -93,9 +95,11 @@ It is possible because the code is not reachable as of now. There is no route or
 
 Once the above small pull request is merged and deployed you can start work on the enabler cement code. This cement code wires up the above code to a user action like viewing the rates. It will be possible with a route that will invoke the above `getByToCurrency` method. You can see how we exposed the code as a new route in this [small pull request](https://github.com/geshan/currency-api/pull/97/files#diff-168726dbe96b3ce427e7fedce31bb0bcR26-R28). You can see the main code below:
 
-    app.get('/api/rates/:currency', async (req, res) => {
-      res.json(await exchangeRates.getByToCurrency(req.query.page || 1, req.params.currency));
-    });
+``` js
+app.get('/api/rates/:currency', async (req, res) => {
+  res.json(await exchangeRates.getByToCurrency(req.query.page || 1, req.params.currency));
+});
+```
 
 These 3 lines of enabler code act as the cement between the user hitting the URL and linking the new route to our existing code from the previous small pull request.
 

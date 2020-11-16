@@ -46,20 +46,21 @@ You can clone the application from github and run `npm install` to get it ready 
 
 Installing ndb is very easy. All you need to do to get started with debugging your nodejs application is to install [ndb](https://github.com/GoogleChromeLabs/ndb#installation "ndb installation instructions on github"). I would suggest to install it globally with:
 
-```
+``` bash
 # with npm
 npm install -g ndb
 
 #with yarn
 yarn global add ndb
 ```
+
 You can also install and use it locally per app if you want. One thing I had to fix was to get the latest version of chrome as I saw some permission issues.
 
 ### 2. Run the app with ndb (not node or nodemon)
 
 For debugging nodejs applications using ndb you can directly run the nodejs app script with it rather than node. For example, if you were used to doing `node index.js` or ` nodemon index.js` in development. To debug your app you can run:
 
-```
+``` bash
 ndb index.js
 ```
 
@@ -83,7 +84,7 @@ You can also debug your test with a command like `ndb npm test`.
 
 ### 3. Let's debug some code
 
-As the debugger is working I can place more break points or run through the code at my speed and convenience. 
+As the debugger is working I can place more break points or run through the code at my speed and convenience.
 
 > The essential shortcuts are `F10` to step over function call and `F11` to step into a function. 
 
