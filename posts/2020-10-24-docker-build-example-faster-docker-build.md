@@ -37,15 +37,17 @@ There are many reasons you would want your Docker containers to build faster, he
 
 Let’s look at the docker below, this innocent-looking docker file is taken from a [Node Js API](https://github.com/geshan/currency-api/commit/1bfa57939bb7647d9350a7445d223e4c0789f112). It has one major issue we will uncover as we proceed:
 
-    FROM node:14-alpine
-    
-    WORKDIR /src
-    COPY . /src
-    ENV NODE_ENV=production
-    RUN npm install --production
-    
-    EXPOSE 8080
-    CMD ["node", "index.js"]
+``` bash
+FROM node:14-alpine
+
+WORKDIR /src
+COPY . /src
+ENV NODE_ENV=production
+RUN npm install --production
+
+EXPOSE 8080
+CMD ["node", "index.js"]
+```
 
 `RUN npm ci` is another better [option](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable "NPM ci a better option") in place of `RUN npm install --production`
 
@@ -53,7 +55,9 @@ Let’s look at the docker below, this innocent-looking docker file is taken fro
 
 When we try to build the above docker file with docker build using the following command
 
-    time docker build -t node-14-first-bad-cache-no-buildkit .
+``` bash
+time docker build -t node-14-first-bad-cache-no-buildkit .
+```
 
 The `time` [command](https://www.computerhope.com/unix/utime.htm) is prefixed to the `docker build` command so that we know the time it takes for the docker build command to finish. Below is how long it took:
 
@@ -65,7 +69,9 @@ The `time` [command](https://www.computerhope.com/unix/utime.htm) is prefixed to
 
 Docker build has recently added [BUILDKIT](https://docs.docker.com/develop/develop-images/build_enhancements/) from version 18.09. Docker basically says it is an overhaul of the build process. As mentioned in this [post](https://brianchristner.io/what-is-docker-buildkit/) it is faster, efficient, and concurrent. You can read more about its goodness in this [article](https://www.docker.com/blog/advanced-dockerfiles-faster-builds-and-smaller-images-using-buildkit-and-multistage-builds/) on docker.com. For now, let’s see it in action:
 
-    time DOCKER_BUILDKIT=1 docker build -t node-14-second-bad-cache-with-buildkit .
+``` bash
+time DOCKER_BUILDKIT=1 docker build -t node-14-second-bad-cache-with-buildkit .
+```
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/03docker-build-bad-cache-with-buildkit.jpg" title="Second docker build with buildkit but no thoughts on caching" alt="Docker build example output with buildkit but has bad caching">
 
@@ -81,23 +87,27 @@ Ok, there is a major issue in our previous docker file. The docker cache is bust
 
 Our code changes almost every time but the npm modules we pull in change infrequently. So we can safely cache the npm modules as below:
 
-    FROM node:14-alpine
-    WORKDIR /src
-    COPY package.json package-lock.json /src/
-    
-    ENV NODE_ENV=production
-    RUN npm install --production
-    
-    COPY . /src
-    EXPOSE 8080
-    
-    CMD ["node", "index.js"]
+``` bash
+FROM node:14-alpine
+WORKDIR /src
+COPY package.json package-lock.json /src/
+
+ENV NODE_ENV=production
+RUN npm install --production
+
+COPY . /src
+EXPOSE 8080
+
+CMD ["node", "index.js"]
+```
 
 You can have a look at the diff between these two docker files [here](https://github.com/geshan/currency-api/compare/docker-build...docker-build-better-cache?expand=1#diff-dd2c0eb6ea5cfc6c4bd4eac30934e2d5746747af48fef6da689e85b752f39557R1). The main change is that we copy the package.json and package-lock.json file first then run npm install. Only after that, the custom code is copied to `/src`. So if you don't add a new npm library the cache will hold up.
 
 > It took 34 seconds to build for the first time as below with the following command:
 
-    time DOCKER_BUILDKIT=1 docker build -t node-14-third-good-cache-with-buildkit .
+``` bash
+time DOCKER_BUILDKIT=1 docker build -t node-14-third-good-cache-with-buildkit .
+```
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/04docker-build-good-cache-with-buildkit.jpg" title="Third docker build with buildkit and good caching" alt="Docker build example output with buildkit and has good caching">
 
@@ -105,7 +115,9 @@ You can have a look at the diff between these two docker files [here](https://gi
 
 For this docker build example, I added a line of [comment](https://github.com/geshan/currency-api/compare/docker-build...docker-build-better-cache?expand=1#diff-e727e4bdf3657fd1d798edcd6b099d6e092f8573cba266154583a746bba0f346R30) in the index.js file of the Node JS API application. Now let’s see how long it takes and if it caches the node_modules used in the `npm install` command.
 
-    time DOCKER_BUILDKIT=1 docker build -t node-14-fourth-good-cache-file-change-with-buildkit .
+``` bash
+time DOCKER_BUILDKIT=1 docker build -t node-14-fourth-good-cache-file-change-with-buildkit .
+```
 
 > The build took only 6.01 seconds, thanks to great cache usage by docker and use of buildkit.
 

@@ -35,18 +35,36 @@ If you have read this far, now let's dive into the reasons you would want to use
 
 ### 1. Runs on my machine = runs anywhere
 
-If you have correctly dockerized your app and it runs without problems on your machine, 99% of the times it will run smoothly anywhere. By anywhere it means on your friend's machine, on the staging environment and production too. Given all of them have docker installed and configured correctly your app will run. Using docker also makes the application code cloud provider agnostic. Your application can potentially run on AWS or GCP or Azure without issues.
+If you have correctly dockerized your app and it runs without problems on your machine, 99% of the times it will run smoothly anywhere. 
+
+> By anywhere it means on your friend's machine, on the staging environment and production too.
+
+Given all of them have docker installed and configured correctly your app will run. Using docker also makes the application code cloud provider agnostic. Your application can potentially run on AWS or GCP or Azure without issues.
 
 ### 2. New team member can be productive from day 1
 
-Think of this, a new team member joins then s/he spends more than a day to set up the machine with the right OS. Setup the language(s) used in the company add database(s) on top of it. 2-3 days is wasted on just getting the environment setup correctly. Enter docker + docker-compose, the new joiner sets up the OS. Installs docker then runs 3-5 commands, grabs some coffee and magic: your apps(s) are running. The new joiner can contribute with the working code on day 1. Think of all the cost a company can save with this approach. A streamlined docker implementation makes it a reality.
+Think of this, a new team member joins then s/he spends more than a day to set up the machine with the right OS. Setup the language(s) used in the company add database(s) on top of it. 2-3 days is wasted on just getting the environment setup correctly.
+
+> Enter docker + docker-compose, the new joiner sets up the OS. Installs docker then runs 3-5 commands, grabs some coffee and magic: your apps(s) are running.
+
+The new joiner can contribute with the working code on day 1. Think of all the cost a company can save with this approach. A streamlined docker implementation makes it a reality.
 
 ### 3. Test app's compatibility with the newer version of language/database
 
-Picture this, a new version of the language you use just released. Like you were using PHP 5.6 and 7.0 has come out. You don't know how much work will be needed to make your application compatible with the new version of the language. Use docker here, you just need to run two different docker containers one running the current version and another running the newer version. You can even test the app side by side to measure performance. This can apply for any programming language.
+Picture this, a new version of the language you use just released. Like you were using PHP 5.6 and 7.0 has come out. You don't know how much work will be needed to make your application compatible with the new version of the language.
+
+> Use docker here, you just need to run two different docker containers one running the current version and another running the newer version. 
+
+You can even test the app side by side to measure performance. This can apply for any programming language.
 
 The same technique can be used to say test MYSQL version 5.7 and 8.0. You might think there are tools like NVM (Node version manager) or RVM (Ruby version manager) but things like that don't exist for each language. Also, you can just use docker than overloading your local machine.
 
 ## Conclusion
 
-Docker is a boon to both software engineers and DevOps engineers. It makes releasing software much easier as the whole stack is shipped not only the code. Still, to move your production to Docker many things need to be considered. Things like container builder (for instance [Google cloud build](https://cloud.google.com/cloud-build/docs/)), container orchestration (like [Kubernetes](https://kubernetes.io/)). So before jumping to the container on staging/production be convinced of its benefits on the local development environment. I hope you exploit Docker to extract the most benefit out of it.
+Docker is a boon to both software engineers and DevOps engineers.
+
+> It makes releasing software much easier as the whole stack is shipped not only the code. 
+
+Still, to move your production to Docker many things need to be considered. Things like container builder (for instance [Google cloud build](https://cloud.google.com/cloud-build/docs/)), container orchestration (like [Kubernetes](https://kubernetes.io/)). So before jumping to the container on staging/production be convinced of its benefits on the local development environment. For better local development experience and segregation from production environment, [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/) is amazing.
+
+I hope you exploit Docker to extract the most benefit out of it.

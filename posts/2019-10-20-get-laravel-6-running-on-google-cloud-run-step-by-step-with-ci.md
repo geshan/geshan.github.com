@@ -54,7 +54,7 @@ Start by cloning Laravel or using composer or the Laravel CLI as indicated in th
 
 I ran the following command to get the latest laravel:
 
-```bash
+``` bash
 composer create-project --prefer-dist laravel/laravel laravel6-on-google-cloud-run
 ```
 
@@ -79,12 +79,14 @@ You can use any Git hosting provider, for this example I will be using [Github A
 Now after you have the repo created, add it to your local Laravel copy and push the Readme file. To do this
 run the following commands on your cli:
 
-    git init
-    code . # I used VS code to change the readme
-    git add readme.md
-    git commit -m "Initial commit -- App Readme"
-    git remote add origin git@github.com:geshan/laravel6-on-google-cloud-run.git
-    git push -u origin master
+``` bash
+git init
+code . # I used VS code to change the readme
+git add readme.md
+git commit -m "Initial commit -- App Readme"
+git remote add origin git@github.com:geshan/laravel6-on-google-cloud-run.git
+git push -u origin master
+```
 
 #### After running the above commands I had this on my github repo
 
@@ -94,7 +96,7 @@ run the following commands on your cli:
 
 Now let's add the whole app as a PR to the Github repo by executing the following commands:
 
-```bash
+`` bash
 git checkout -b laravel6-full-app
 git add .gitignore
 git add .
@@ -124,70 +126,80 @@ Now let's add docker and docker-compose to run the app locally without PHP or ar
 
 Run the following commands first to get your master up to date as we added the `workflow` file from Github interface:
 
-    git checkout master
-    git fetch
-    git pull --rebase origin master # as we added the workflow file from github interface
-    git checkout -b docker
+``` bash
+git checkout master
+git fetch
+git pull --rebase origin master # as we added the workflow file from github interface
+git checkout -b docker
+```
 
 Add a key to the `.env.example` file, copy it from `.env` file like below:
 
-    APP_NAME=Laravel
-    APP_ENV=local
-    APP_KEY=base64:DJkdj8L5Di3rUkUOwmBFCrr5dsIYU/s7s+W52ClI4AA=
-    APP_DEBUG=true
-    APP_URL=http://localhost
+```
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:DJkdj8L5Di3rUkUOwmBFCrr5dsIYU/s7s+W52ClI4AA=
+APP_DEBUG=true
+APP_URL=http://localhost
+```
 
 As this is just a demo this is ok to do, for a real app always be careful with secrets. For production-ready apps do turn of the debugging and other dev related things.
 
 Add the following `Dockerfile` on the project root:
 
-    FROM composer:1.9.0 as build
-    WORKDIR /app
-    COPY . /app
-    RUN composer global require hirak/prestissimo && composer install
-    
-    FROM php:7.3-apache-stretch
-    RUN docker-php-ext-install pdo pdo_mysql
-    
-    EXPOSE 8080
-    COPY --from=build /app /var/www/
-    COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
-    COPY .env.example /var/www/.env
-    RUN chmod 777 -R /var/www/storage/ && \
-        echo "Listen 8080" >> /etc/apache2/ports.conf && \
-        chown -R www-data:www-data /var/www/ && \
-        a2enmod rewrite
+``` bash
+FROM composer:1.9.0 as build
+WORKDIR /app
+COPY . /app
+RUN composer global require hirak/prestissimo && composer install
+
+FROM php:7.3-apache-stretch
+RUN docker-php-ext-install pdo pdo_mysql
+
+EXPOSE 8080
+COPY --from=build /app /var/www/
+COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY .env.example /var/www/.env
+RUN chmod 777 -R /var/www/storage/ && \
+    echo "Listen 8080" >> /etc/apache2/ports.conf && \
+    chown -R www-data:www-data /var/www/ && \
+    a2enmod rewrite
+```
 
 Then add the following file at `docker/000-default.conf`
 
-    <VirtualHost *:8080>
-    
-    	ServerAdmin webmaster@localhost
-    	DocumentRoot /var/www/public/
-    
-    	<Directory /var/www/>
-    	  AllowOverride All
-    	  Require all granted
-    	</Directory>
-    
-    	ErrorLog ${APACHE_LOG_DIR}/error.log
-    	CustomLog ${APACHE_LOG_DIR}/access.log combined
-    
-    </VirtualHost>
+```
+<VirtualHost *:8080>
+
+  ServerAdmin webmaster@localhost
+  DocumentRoot /var/www/public/
+
+  <Directory /var/www/>
+    AllowOverride All
+    Require all granted
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+```
 
 After that add the following `docker-compose.yml`
 
-    version: '3'
-    services:
-      app:
-        build:
-          context: ./
-        volumes:
-          - .:/var/www
-        ports:
-          - "8080:8080"
-        environment:
-          - APP_ENV=local
+```
+version: '3'
+services:
+  app:
+    build:
+      context: ./
+    volumes:
+      - .:/var/www
+    ports:
+      - "8080:8080"
+    environment:
+      - APP_ENV=local
+```
 
 #### Boil down to main things
 
@@ -203,25 +215,31 @@ If you try to understand everything here it might be overwhelming, let me boil d
 
 As Laravel is running fine with Docker, let's open a PR like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/2/files) one to add Docker to our project. I ran the following commands on the root of the project before opening the Pull Request (PR):
 
-    git status
+``` bash
+git status
+```
 
 It should give you something like below:
 
-    On branch docker
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-    
-    	Dockerfile
-    	docker-compose.yml
-    	docker/
-    
-    nothing added to commit but untracked files present (use "git add" to track)
+``` bash
+On branch docker
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  Dockerfile
+  docker-compose.yml
+  docker/
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 Now run the following commands:
 
-    git add .
-    git commit -m "Add docker and docker compose"
-    git push origin docker
+``` bash
+git add .
+git commit -m "Add docker and docker compose"
+git push origin docker
+```
 
 As a bonus it will run the Laravel default test on the push, like you can see below:
 
@@ -233,16 +251,20 @@ Only the owner of the repo has access to the `Actions` tab so other people don't
 
 Now let's deploy this Laravel setup to Google Cloud Run the easy way. Given you have merged your PR from the `docker` branch. Let's run the following commands:
 
-    git checkout master
-    git fetch
-    git pull --rebase origin master
-    git checkout -b cloud-run-button
+``` bash
+git checkout master
+git fetch
+git pull --rebase origin master
+git checkout -b cloud-run-button
+```
 
 Then add the following to your `readme.md` file:
 
-    ### Run on Google cloud run
-    
-    [![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/geshan/laravel6-on-google-cloud-run.git)
+```
+### Run on Google cloud run
+
+[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/geshan/laravel6-on-google-cloud-run.git)
+```
 
 Be careful and replace the last part with your repo's `HTTPs` URL, for example, if your repo is at `https://github.com/ghaleroshan/laravel6-on-google-cloud-run` it will be `https://github.com/ghaleroshan/laravel6-on-google-cloud-run.git`, then commit and push. Your PR should look something like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/3/files) one.
 

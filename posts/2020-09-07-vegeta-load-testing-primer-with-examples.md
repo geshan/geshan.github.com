@@ -60,11 +60,13 @@ The easiest way to begin load testing with Vegeta is to download the right execu
 
 If you are on a 64-bit Linux you can make Vegeta work with the following set of commands:
 
-    cd ~/downloads
-    wget https://github.com/tsenart/vegeta/releases/download/v12.8.3/vegeta-12.8.3-linux-amd64.tar.gz
-    tar -zxvf vegeta-12.8.3-linux-amd64.tar.gz
-    chmod +x vegeta
-    ./vegeta --version
+``` bash
+cd ~/downloads
+wget https://github.com/tsenart/vegeta/releases/download/v12.8.3/vegeta-12.8.3-linux-amd64.tar.gz
+tar -zxvf vegeta-12.8.3-linux-amd64.tar.gz
+chmod +x vegeta
+./vegeta --version
+```
 
 If you want to execute Vegeta from any path, you can add a symlink to your path executing a command like `ln -s ~/downloads/vegeta ~/bin/vegeta` , then it will work on a new CLI tab.
 
@@ -72,15 +74,21 @@ If you want to execute Vegeta from any path, you can add a symlink to your path 
 
 You can also install Vegeta on a Mac with the following command:
 
-    brew update && brew install vegeta
+``` bash
+brew update && brew install vegeta
+```
 
 If you already have go-lang installed on your machine and GOBIN in your PATH, you can try to start your Vegeta load testing journey:
 
-    go get -u github.com/tsenart/vegeta
+``` bash
+go get -u github.com/tsenart/vegeta
+```
 
 Check if it installed properly with:
 
-    vegeta --version
+``` bash
+vegeta --version
+```
 
 You should see a version number displayed.
 
@@ -88,8 +96,9 @@ You should see a version number displayed.
 
 There are multiple ways to use the Vegeta load testing tool, one of the simplest ways to get the output on the command line for faster analysis. To your first Vegeta load testing command execute the following:
 
-    echo "GET http://httpbin.org/get" | vegeta attack -duration=5s -rate=5 | vegeta report --type=text
-
+``` bash
+echo "GET http://httpbin.org/get" | vegeta attack -duration=5s -rate=5 | vegeta report --type=text
+```
 So what just happened here?
 
 1. We echoed the URL in this case httpbin.org/get and we passed it through Vegeta attack
@@ -106,7 +115,9 @@ Vegeta load testing tool ran the attack of 25 requests spread over 5 seconds at 
 
 Another representation of Vegeta load testing results is an easy to understand graph. We can get a graph output with the below command:
 
-    cd && echo "GET http://httpbin.org/get" | vegeta attack -duration=30s -rate=10 -output=results-veg-httpbin-get.bin && cat results-veg-httpbin-get.bin | vegeta plot --title="HTTP Bin GET 10 rps for 30 seconds" > http-bin-get-10rps-30seconds.html
+``` bash
+cd && echo "GET http://httpbin.org/get" | vegeta attack -duration=30s -rate=10 -output=results-veg-httpbin-get.bin && cat results-veg-httpbin-get.bin | vegeta plot --title="HTTP Bin GET 10 rps for 30 seconds" > http-bin-get-10rps-30seconds.html
+```
 
 Let’s analyze how we used Vegeta for load testing httpbin.org here:
 
@@ -128,7 +139,9 @@ Generally, you get the idea of how you use Vegeta for load testing your own serv
 
 Well, all the services won’t be open to all, most will use a [JWT](https://jwt.io/) or some other way to authenticate and authorize users. To test such services you can use a command like below:
 
-    cd && echo "GET http://httpbin.org/get" | vegeta attack -header "authorization: Bearer <your-token-here>" -duration=40s -rate=10 -output=results-veg-token.bin && cat results-veg-token.bin | vegeta plot --title="HTTP Get with token" > http-get-token.html
+``` bash
+cd && echo "GET http://httpbin.org/get" | vegeta attack -header "authorization: Bearer <your-token-here>" -duration=40s -rate=10 -output=results-veg-token.bin && cat results-veg-token.bin | vegeta plot --title="HTTP Get with token" > http-get-token.html
+```
 
 This example uses the same pattern as the above one, the main difference here is the use of `-header` param in the `vegeta attack` command used for Vegeta load testing.
 
@@ -140,8 +153,11 @@ Testing multiple URLs with different HTTP methods is also relatively easy with V
 
 1. Create a `targets.txt` file (filename can be anything) with content like below that has a list of your URLs prefixed by the HTTP verb. In the one below I am load testing 3 GET URLs
 
-   GET http://httpbin.org/get
-   GET http://httpbin.org/ip
+``` bash
+GET http://httpbin.org/get
+GET http://httpbin.org/ip
+```
+
 2. Now similar to the first example with the text output run this command in the folder the targets.txt file is created: `vegeta attack -duration=5s -rate=5 --targets=targets.txt | vegeta report --type=text`
 3. We will see a text output like below:
 

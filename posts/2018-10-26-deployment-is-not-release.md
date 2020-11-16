@@ -21,7 +21,7 @@ Breaking down a big feature to epics and stories is always tricky. Then you have
 
 ## Why use feature flags?
   
-Have you ever faced a situation that you need to deploy an epic but it is not possible as it is 80% completed? It is an epic that has to be "released" all or nothing. That is where the power of feature flag comes into play. You can deploy (not release to everyone) each new value addition to production. The trick here is to put it behind a simple logic like if email ends in @yourcompany.com. You can check a minimal code [example](https://geshan.com.np/blog/2016/09/how-to-do-a-minimum-viable-feature-switch/). 
+Have you ever faced a situation that you need to deploy an epic but it is not possible as it is 80% completed? It is an epic that has to be "released" all or nothing. That is where the power of feature flag comes into play. You can deploy (not release to everyone) each new value addition to production. The trick here is to put it behind a simple logic like if email ends in @yourcompany.com. You can check a minimal code [example](/blog/2016/09/how-to-do-a-minimum-viable-feature-switch/). 
 
 > You have to separate the technical deployment process from the business process of releasing a new feature.
 

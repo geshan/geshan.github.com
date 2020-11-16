@@ -194,7 +194,7 @@ Jumping even multiple major versions in Node.js is a seamless experience. Upgrad
 
 In my personal experience, I have upgraded Node.js microservices from versions 0.12 to 4 in the past. Recently I upgraded an application from Node.js 10 to 14. All of my Node.js major version upgrades have been easy. 
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-for-php-developers/02node-10-to-14.jpg" title="Upgrading node 10 to 14 is easy" alt="Node.js for PHP developers, upgrading Node.js from version 10 to 14 is seamless" style="min-height: 150px;">
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-for-php-developers/02node-10-to-14.jpg" title="Upgrading node 10 to 14 is easy" alt="Node.js for PHP developers, upgrading Node.js from version 10 to 14 is seamless" style="min-height: 100px;">
 
 Some minor package.json changes were the only small issues I encountered. After deployment, there were rarely any issues related to code compatibility. As an added bonus, the performance was usually better upgrading the major versions.
 
@@ -255,16 +255,16 @@ RUN npm config set unsafe-perm true && npm install -g nodemon
 RUN npm install
 CMD ["npm", "start"]
 ```
+
 As Node.js has a built-in web server, the Dockerfile is much cleaner. 
 
-> When you install node, npm is bundled with it. This eliminates the need to install packages at a different stage in the docker build. 
+> When you install node, npm is bundled with it. This eliminates the need to install packages at a different stage in the docker build.
+
 In the above Dockerfile multi-stage docker build is used to separate production and development docker images. Having the package manager (npm) bundled and having the web-server as part of the language/runtime is something different in Node.js for PHP developers.
 
 ## Conclusion
 
-When using Node.js for PHP developers it does need a mild shift in thinking to exploit the powers of Node.js well.
-
-Node.js is not a silver bullet. There are drawbacks and it needs adapting to different ways of code execution.
+When using Node.js for PHP developers it does need a mild shift in thinking to exploit the powers of Node.js well. Node.js is not a silver bullet. There are drawbacks and it needs adapting to different ways of code execution.
 
 > Certainly, there are some benefits of using Node.js for PHP developers like async programming and concurrency. Other advantages stem out from the Node.js process being long-running.
 

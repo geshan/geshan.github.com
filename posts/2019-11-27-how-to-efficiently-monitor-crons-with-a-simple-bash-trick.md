@@ -29,7 +29,6 @@ This post is going to highlight one efficient bash trick which simplifies cron j
 We were working on a project that had two CronJobs one running every 6 hours and the other one running every fortnight. This project was done in Symfony and the crons were set up as Symfony commands executed on Kubernetes as CronJob. 
 As we monitor our applications with New Relic, we monitor and get notified if the Crons don't run in time with OpsGenie Heartbeat Monitoring. 
 
-
 You can use Healthchecks or Cronitor, anything that suits your needs, the main thing is getting an alert when crons don't run in the expected time and frequency.
 So all good till now, but when I looked into the code to ping OpsGenie I saw multiple ways of doing it. Mostly it was like get the latest OpsGenie API/SDK and call it from the application. Someone had even built a wrapper library to do this heartbeat ping and other things.
 
@@ -49,8 +48,10 @@ The solution to all the above problems is very simple, use bash with the && oper
 
 We ran our Symfony cron command with ping to OpsGenie like below:
 
-    bin/console our-cron:command \
-    && curl -X GET 'https://api.opsgenie.com/v2/heartbeats/our-cron/ping' --header 'Authorization: GenieKey '"$OPSGENIE_API_KEY"''
+``` bash
+bin/console our-cron:command \
+&& curl -X GET 'https://api.opsgenie.com/v2/heartbeats/our-cron/ping' --header 'Authorization: GenieKey '"$OPSGENIE_API_KEY"''
+```
 
 We did a bit different variation to the above command and created a bash script where the command and name of the heartbeat were sent as parameters.
 

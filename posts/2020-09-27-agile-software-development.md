@@ -5,6 +5,7 @@ date: 2020-09-27T16:27:29.000+11:00
 comments: true
 tags:
 - Software Engineering
+- Agile
 cover: "/images/agile-software-development/02agile-software-development-apple.jpg"
 pagetitle: 'Agile software development: explain to me like I’m five'
 description: 'In this post, we will define what agile software development is with

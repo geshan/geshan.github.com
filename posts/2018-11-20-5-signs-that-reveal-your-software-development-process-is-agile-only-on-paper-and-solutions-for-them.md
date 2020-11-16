@@ -90,4 +90,6 @@ Build a culture of continuous improvement. Reflect on things that have been done
 
 Being agile on paper and being agile in practice are two different things. Don't let your agile software process be like waterfall with the so-labeled agile skin. Be agile and fix these signs to have high team output with fantastic performance. 
 
+If you find it difficult to explian agile, try this [agile software explanation](/blog/2020/09/agile-software-development/) and analogy that even a 5 year old will understand.
+
 > Agile should be implemented to solve people and communication problems which results in stabilizing the technical issues.

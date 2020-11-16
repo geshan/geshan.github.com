@@ -53,38 +53,42 @@ We are going to see an example Node Js app which is a currency converter API bui
 
 The following are the current `Dockerfile` and `docker-compose.yml` for local development:
 
-### Dockerfile
+### Dockerfile without multi-stage build
 
-    FROM node:12-alpine
-    
-    WORKDIR /src
-    COPY package.json package-lock.json /src/
-    RUN npm install --production
-    
-    COPY . /src
-    
-    EXPOSE 8080
-    
-    RUN npm config set unsafe-perm true
-    RUN npm install -g nodemon
-    
-    CMD ["node", "index.js"]
+``` bash
+FROM node:12-alpine
+
+WORKDIR /src
+COPY package.json package-lock.json /src/
+RUN npm install --production
+
+COPY . /src
+
+EXPOSE 8080
+
+RUN npm config set unsafe-perm true
+RUN npm install -g nodemon
+
+CMD ["node", "index.js"]
+```
 
 As we can see `nodemon` is installed even on production which is unnecessary on production. Another issue is there are no dev dependencies so tests can’t be run inside docker.
 
 ### Docker Compose file
 
-    web:
-      build: .
-      volumes:
-       - .:/src
-      command: npm start
-      ports:
-        - "8080:8080"
-      environment:
-        NODE_ENV: dev
-        VIRTUAL_HOST: 'currency.test'
-        VIRTUAL_PORT: 8080
+``` bash
+web:
+  build: .
+  volumes:
+    - .:/src
+  command: npm start
+  ports:
+    - "8080:8080"
+  environment:
+    NODE_ENV: dev
+    VIRTUAL_HOST: 'currency.test'
+    VIRTUAL_PORT: 8080
+```
 
 Don’t be concerned about the `VIRTUAL_HOST` and `VIRTUAL_PORT` that is for [nginx proxy](https://github.com/jwilder/nginx-proxy).
 
@@ -96,32 +100,34 @@ Let’s look at how big is this image we got from running `docker build . -t cur
 
 So currently it is 165 MB, hopefully, we can decrease its size too in this process.
 
-## Solution with multi-stage build
+## Solution with multi-stage docker build
 
 Now as we want to have dev dependencies and `nodemon` on dev builds and only production npm dependencies on production build, the docker related files have been modified as follows:
 
 ### Dockerfile with multi-stage build
 
-    FROM node:12-alpine as base
-    
-    WORKDIR /src
-    COPY package.json package-lock.json /src/
-    COPY . /src
-    EXPOSE 8080
-    
-    FROM base as production
-    
-    ENV NODE_ENV=production
-    RUN npm install --production
-    
-    CMD ["node", "index.js"]
-    
-    FROM base as dev
-    
-    ENV NODE_ENV=development
-    RUN npm config set unsafe-perm true && npm install -g nodemon
-    RUN npm install
-    CMD ["npm", "start"]
+``` bash
+FROM node:12-alpine as base
+
+WORKDIR /src
+COPY package.json package-lock.json /src/
+COPY . /src
+EXPOSE 8080
+
+FROM base as production
+
+ENV NODE_ENV=production
+RUN npm install --production
+
+CMD ["node", "index.js"]
+
+FROM base as dev
+
+ENV NODE_ENV=development
+RUN npm config set unsafe-perm true && npm install -g nodemon
+RUN npm install
+CMD ["npm", "start"]
+```
 
 Let’s analyze what changed here and why? Following are the highlights:
 
@@ -134,21 +140,23 @@ The builds are more streamlined and we have optimized our docker images to be mo
 
 ### Docker-compose file after the multi-stage build
 
-    version: '3.5'
-    services:
-      web:
-        build:
-          context: ./
-          target: dev
-        volumes:
-        - .:/src
-        command: npm start
-        ports:
-          - "8080:8080"
-        environment:
-          NODE_ENV: dev
-          VIRTUAL_HOST: 'currency.test'
-          VIRTUAL_PORT: 8080
+``` bash
+version: '3.5'
+services:
+  web:
+    build:
+      context: ./
+      target: dev
+    volumes:
+    - .:/src
+    command: npm start
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: dev
+      VIRTUAL_HOST: 'currency.test'
+      VIRTUAL_PORT: 8080
+```
 
 The main change for the docker-compose file is the `target:dev` in the build parameters.
 
