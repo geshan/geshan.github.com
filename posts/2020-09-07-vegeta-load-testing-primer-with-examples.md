@@ -26,9 +26,9 @@ Load testing in plain terms means testing an application by simulating some conc
 
 > There are many ways to load test applications/APIs and Vegeta is one of the easiest tools to perform load testing on your APIs or applications.
 
-I had once written about [fast and not so fast test](/blog/2016/03/there-are-only-two-types-of-automated-software-tests/), that would be a good post to read more about testing.
+I had once written about [fast and not so fast test](/blog/2016/03/there-are-only-two-types-of-automated-software-tests/), that would be a good post to read more about testing. This tutorial will guide you on how to install and use Vegeta for load testing.
 
-## Prerequisites
+## Prerequisites for this tutorial
 
 Before jumping on the main topic let’s look at some prerequisites:
 
