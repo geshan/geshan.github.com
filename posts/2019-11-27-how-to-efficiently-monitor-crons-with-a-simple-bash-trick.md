@@ -49,8 +49,7 @@ The solution to all the above problems is very simple, use bash with the && oper
 We ran our Symfony cron command with ping to OpsGenie like below:
 
 ``` bash
-bin/console our-cron:command \
-&& curl -X GET 'https://api.opsgenie.com/v2/heartbeats/our-cron/ping' --header 'Authorization: GenieKey '"$OPSGENIE_API_KEY"''
+bin/console our-cron:command && curl -X GET 'https://api.opsgenie.com/v2/heartbeats/our-cron/ping' --header 'Authorization: GenieKey '"$OPSGENIE_API_KEY"''
 ```
 
 We did a bit different variation to the above command and created a bash script where the command and name of the heartbeat were sent as parameters.
