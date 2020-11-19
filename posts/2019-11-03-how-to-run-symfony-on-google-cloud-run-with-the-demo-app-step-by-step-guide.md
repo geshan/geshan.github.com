@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How to run Symfony on Google Cloud Run with the demo app [Step-by-Step Guide]"
-date: 2019-11-03 14:22:00 +00:00
+title: How to run Symfony on Google Cloud Run with the demo app [Step-by-Step Guide]
+date: 2019-11-03T14:22:00.000+00:00
 comments: true
 tags:
 - Programming
@@ -9,10 +9,13 @@ tags:
 - Docker
 - devops
 - Google Cloud Run
-cover: /images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg
+cover: "/images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg"
 pagetitle: How to Run Symfony on Google Cloud Run step by step guide - demo app
-description: Follow this step by step guide to run Symfony Demo app on Google Cloud Run
-keywords: Symfony, PHP, Google Cloud, Google Cloud Run, Symfony Hosting, Symfony Demo app
+description: Follow this step by step guide to run Symfony Demo app on Google Cloud
+  Run
+keywords: Symfony, PHP, Google Cloud, Google Cloud Run, Symfony Hosting, Symfony Demo
+  app
+
 ---
 Symfony is without doubts one of the most [popular](https://raygun.com/blog/top-php-frameworks/) PHP frameworks. It has amazing flexibility and is written in an applaudable modular fashion. Some Symfony components even [power](https://symfony.com/projects/laravel) other prominent frameworks like Laravel. Running Symfony is a bit tricky at times, especially the [permissions](https://symfony.com/doc/current/setup/file_permissions.html) of the cache and logs folder, this blog post demystifies running the Symfony [Demo App](https://github.com/symfony/demo) in a docker container and hosting it serverless on [Google Cloud Run](https://cloud.google.com/run/).
 
@@ -24,7 +27,7 @@ Symfony is without doubts one of the most [popular](https://raygun.com/blog/top-
 
 1. You have done at least one project with Symfony (of course you are comfortable with PHP and composer)
 1. You have a good working knowledge of git and Github
-1. Know a fair bit of [docker](https://geshan.com.np/blog/categories/docker/), maybe even multi-stage build
+1. Know a fair bit of [docker](https://geshan.com.np/blog/categories/docker/), maybe even [multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/)
 1. Have a working Google cloud account (they give you [$300 credit](https://cloud.google.com/free/) free for 1 yr, no reasons not to have an account)
 
 This post is not going to be a detailed one like the last one about [Laravel on Google Cloud Run](https://geshan.com.np/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/). If you are fairly new Git or Docker, please do read the above-mentioned post thoroughly.
