@@ -201,7 +201,7 @@ This above simple dockerfile is also available as a [pull request](https://githu
 We will create 3 stages from the above simple dockerfile. The stages will be as follows:
 
 1. Base: This stage will have things common for docker with Node.js
-1. Production: This stage will have components useful for production environment for Node.js on docker
+1. Production: This stage will have components useful for production environment for Node.js on docker. It also uses `npm ci` in place of npm install.
 1. Dev: This stage will have nodemon which is only useful for developing Node.js on docker
 
 Below is the modified dockerfile:
@@ -215,7 +215,7 @@ EXPOSE 3000
 
 FROM base as production
 ENV NODE_ENV=production
-RUN npm install --production
+RUN npm ci
 COPY . /src
 CMD ["node", "bin/www"]
 
