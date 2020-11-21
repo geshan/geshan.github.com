@@ -1,15 +1,19 @@
 ---
 layout: post
-title: 'How to use Docker with Node.js a step-by-step tutorial'
+title: How to use Docker with Node.js a step-by-step tutorial
 date: 2020-11-20T20:15:25.000+11:00
 comments: true
 tags:
 - Web Development
 - NodeJs
 cover: "/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg"
-pagetitle: 'How to use Docker with Node.js a step-by-step tutorial'
-description: Follow this 2000+ word step-by-step tutorial to use Docker with Node.js using best practices like BUILDKIT and caching with docker compose.
-keywords: docker with nodejs, nodejs on docker, docker nodejs, node dockerfile, node.js docker, nodejs dockerfile, docker node js development, docker compose, nodejs docker compose
+pagetitle: How to use Docker with Node.js a step-by-step tutorial
+description: Follow this 2000+ word step-by-step tutorial to use Docker with Node.js
+  using best practices like BUILDKIT and caching with docker compose.
+keywords: docker with nodejs, nodejs on docker, docker nodejs, node dockerfile, node.js
+  docker, nodejs dockerfile, docker node js development, docker compose, nodejs docker
+  compose
+
 ---
 Both Docker and Node.js have risen in popularity in the past 5 years. Running Node.js on docker containers with docker-compose for local development is a great experience. In this step-by-step tutorial, we will look at how Node.js docker and docker-compose with multi-stage docker build work in sync. Time to get cracking.
 
@@ -23,7 +27,7 @@ Docker has [changed the way](/blog/2018/11/4-ways-docker-changed-the-way-softwar
 
 > Containers have made it easier to ship the whole stack including the OS, not just the code.
 
-There is more than one reason to use docker everywhere, especially in the [development environment](blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/). Docker was the second most loved platform in the [Stack Overflow Survey 2020](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-platforms) same as [2019](https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-platforms). The same survey 2020 edition also quotes
+There is more than one reason to use docker everywhere, especially in the [development environment](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/). Docker was the second most loved platform in the [Stack Overflow Survey 2020](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-platforms) same as [2019](https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-platforms). The same survey 2020 edition also quotes
 
 > “We also see some year over year growth in the popularity of container technologies such as Docker and Kubernetes.”
 
@@ -194,7 +198,7 @@ Below is a recap of running the docker container, viewing logs and stopping it:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/08docker-run-simple.jpg" title="Docker run logs and stop" alt="Ouptut of docker run with logs and later stopping it">
 
-This above simple dockerfile is also available as a [pull request](https://github.com/geshan/express-app/pull/3/files) for your convenience. At this juncture, we can proceed to make the Node.js dockerfile even better with [multi-stage docker build](blog/2019/11/how-to-use-docker-multi-stage-build/).
+This above simple dockerfile is also available as a [pull request](https://github.com/geshan/express-app/pull/3/files) for your convenience. At this juncture, we can proceed to make the Node.js dockerfile even better with [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/).
 
 #### 2.2 Multi-stage docker file to support Nodejs docker in production
 
