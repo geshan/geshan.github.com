@@ -305,6 +305,21 @@ After the Node.js docker containers are built, it can be run with `docker-compos
 
 The changes for docker-compose addition is in this [pull request](https://github.com/geshan/express-app/pull/5/files). This is how you can run Node.js on Docker which works very well for Developing as well as putting the containers in production environment.
 
+## TLDR; Give me a quick run down
+
+All the code is in a public [github repository](https://github.com/geshan/express-app). You can run the following commands to get started quickly:
+
+1. Given you have get setup correctly, clone the repo with: `git clone git@github.com:geshan/express-app.git`
+1. Then execute `cd express-app`
+1. After that run `COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build`
+1. Consequently execute: `docker-compose up` , wait for some time to see `nodemon starting...` on your console.
+1. Following that, hit `http://localhost:3000` on a browser
+1. You should see the following output on your browser:
+
+<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/05express-output-changes.jpg" title="Node.js Express code on the browser with docker and docker compose" alt="Node.js Express code on the browser with docker and docker compose">
+
+Enjoy! Now you can reverse engineer the `Dockerfile` and `docker-compose.yml` file. If you have any questions, search for specific thing like say `target` in this post.
+
 ## Considerations
 
 There are some considerations you should be aware of:
