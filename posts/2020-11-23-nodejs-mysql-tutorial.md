@@ -22,6 +22,24 @@ Node.js and MySQL mix very well together. In this Node.js MySQL tutorial, we wil
 
 <!-- more -->
 
+## Table of contents
+
+1.  [Why Node.js MySQL tutorial](#why-node.js-mysql-tutorial)
+2.  [Prerequisites for Node.js MySQL tutorial](#prerequisites-for-node.js-mysql-tutorial)
+3.  [Node.js MySQL tutorial steps](#node.js-mysql-tutorial-steps)
+    1.  [Setup Express js for Node.js MySQL tutorial](#setup-express-js-for-node.js-mysql-tutorial)
+        1.  [Delete public folder](#delete-public-folder)
+        2.  [Delete existing routes and create a new route for quotes](#delete-existing-routes-and-create-a-new-route-for-quotes)
+    2.  [Setup MySQL with quote table](#setup-mysql-with-quote-table)
+    3.  [Wire up Node.js with MySQL](#wire-up-node.js-with-mysql)
+        1.  [Install mysql2 in the express app](#install-mysql2-in-the-express-app)
+    4.  [Show the quotes - Get API](#show-the-quotes---get-api)
+        1.  [Paginate the quotes for Node.js MySQL tutorial](#paginate-the-quotes-for-node.js-mysql-tutorial)
+        2.  [Next steps](#next-steps)
+    5.  [Save new quote - POST API for Node.js MySQL tutorial](#save-new-quote---post-api-for-node.js-mysql-tutorial)
+4.  [TLDR; I want to run it quickly](#tldr%3B-i-want-to-run-it-quickly)
+5.  [Conclusion](#conclusion)
+
 ## Why Node.js MySQL tutorial
 
 Node.js has been popularly coupled with NoSQL databases, especially Mongo DB. If you move an older codebase to Node.js you will not have the option to choose a database. Most older systems or even new ones use a relational database management system like MySQL. This leads to a need for a step-by-step Node.js MySQL tutorial.

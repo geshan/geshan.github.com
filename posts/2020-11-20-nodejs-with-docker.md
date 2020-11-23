@@ -21,6 +21,26 @@ Both Docker and Node.js have risen in popularity in the past 5 years. Running No
 
 <!-- more -->
 
+## Table of contents
+
+1.  [Docker the new norm](#docker-the-new-norm)
+2.  [Node.js on Docker with high scalability](#node.js-on-docker-with-high-scalability)
+3.  [Assumptions for Docker with Node.js](#assumptions-for-docker-with-node.js)
+4.  [Steps](#steps)
+    1.  [Setup express with express-generator](#1.-setup-express-with-express-generator)
+        1.  [1.1 Use express-generator to scaffold the app](#1.1-use-express-generator-to-scaffold-the-app)
+        2.  [1.2 Edit the index to see the changes](#1.2-edit-the-index-to-see-the-changes)
+        3.  [1.3 Add nodemon to monitor changes and reload](#1.3-add-nodemon-to-monitor-changes-and-reload)
+    2.  [Use Node.js on Docker](#2.-use-node.js-on-docker)
+        1.  [2.1 Simple docker file for local Node.js docker development](#2.1-simple-docker-file-for-local-node.js-docker-development)
+        2.  [2.2 Multi-stage docker file to support Nodejs docker in production](#2.2-multi-stage-docker-file-to-support-nodejs-docker-in-production)
+    3.  [Node.js Docker made better with docker-compose](#3.-node.js-docker-made-better-with-docker-compose)
+        1.  [3.1 Build the Node.js docker-compose with dev target](#3.1-build-the-node.js-docker-compose-with-dev-target)
+        2.  [3.2 Run the Docker with Node.js using docker compose up](#3.2-run-the-docker-with-node.js-using-docker-compose-up)
+5.  [TLDR; Give me a quick run down](#tldr%3B-give-me-a-quick-run-down)
+6.  [Considerations](#considerations)
+7.  [Conclusion](#conclusion)
+
 ## Docker the new norm
 
 Docker has [changed the way](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) we software engineers work in the past 5-7 years.
