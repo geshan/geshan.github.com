@@ -21,6 +21,22 @@ In this post, we will look at how to take a social media break in 4 steps where 
 
 <!-- more -->
 
+## Table of contents
+
+1.  [What is a social media break?](#what-is-a-social-media-break%3F)
+2.  [Why take a social media break now?](#why-take-a-social-media-break-now%3F)
+3.  [Do you need to take a social media break?](#do-you-need-to-take-a-social-media-break%3F)
+4.  [Assumptions and goals](#assumptions-and-goals)
+5.  [My goals of a social media break](#my-goals-of-a-social-media-break)
+6.  [Steps on how to take a social media break](#steps-on-how-to-take-a-social-media-break)
+    1.  [Turn off push notifications from social apps on your mobile](#1.-turn-off-push-notifications-from-social-apps-on-your-mobile)
+    2.  [Stop posting using social media apps](#2.-stop-posting-using-social-media-apps)
+    3.  [Delete social media apps, use the browser (chrome or safari) for access instead](#3.-delete-social-media-apps%2C-use-the-browser-(chrome-or-safari)-for-access-instead)
+    4.  [Logout of all your social accounts even on the browser](#4.-logout-of-all-your-social-accounts-even-on-the-browser)
+    5.  [Bonus: Setup apps like Buffer and Rambox (optional)](#bonus%3A-setup-apps-like-buffer-and-rambox-(optional))
+7.  [Final consideration](#final-consideration)
+8.  [Conclusion](#conclusion)
+
 ## What is a social media break?
 
 A social media break is a time where you don’t use social media at varying degrees.

@@ -212,7 +212,7 @@ After that, click "Hugo", we are selecting Hugo as it claims to be the "[fastest
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/17stackbit-choose-hugo-ssg.jpg" title="Choose Hugo as the Static site generator for your website" alt="Choose Hugo as the Static site generator for your website">
 
 
-#### 5.0. Choose Forestry click connect accounts
+#### 5.3. Choose Forestry click connect accounts
 
 Next step is to choose the CMS, let's choose Forestry you have an account there already :)
 

@@ -22,6 +22,20 @@ While the popularity of Node.js is [increasing](https://trends.google.com/trends
 
 <!-- more -->
 
+## Table of contents
+
+1.  [Node.js for PHP developers (not Node.js vs PHP)](#node.js-for-php-developers-(not-node.js-vs-php))
+2.  [Node.js for PHP developers the practical side](#node.js-for-php-developers-the-practical-side)
+    1.  [Node.js code execution is async and non-sequential](#node.js-code-execution-is-async-and-non-sequential)
+        1.  [Node.js promises possibilities](#node.js-promises-possibilities)
+    2.  [Node.js process is long-running, unlike PHP](#node.js-process-is-long-running%2C-unlike-php)
+        1.  [Memoization example](#memoization-example)
+        2.  [Connection Pool example with MySQL](#connection-pool-example-with-mysql)
+    3.  [Debugging is easier in Node.js than in PHP](#debugging-is-easier-in-node.js-than-in-php)
+    4.  [Major version upgrades in Node.js is seamless over PHP](#major-version-upgrades-in-node.js-is-seamless-over-php)
+    5.  [Dockerizing a Node.js application is a breeze compared to PHP](#dockerizing-a-node.js-application-is-a-breeze-compared-to-php)
+3.  [Conclusion](#conclusion)
+
 ## Node.js for PHP developers (not Node.js vs PHP)
 
 This piece is a list of things you as a PHP developer must know and learn to use Node.js effectively. On the contrary, this post is not a Node.js vs PHP write up where PHP is bashed. I have used both languages. I started to write more Node.js in 2016. When I started I faced some difficulties as I was used to PHP at work for more than 7 years prior to that. There was a book released towards 2012 end covering [Node.js for PHP developers](https://www.oreilly.com/library/view/nodejs-for-php/9781449333775/).

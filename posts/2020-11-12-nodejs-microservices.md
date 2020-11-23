@@ -21,6 +21,19 @@ There are multiple good reasons to build Node.js microservices, this post discus
 
 <!-- more -->
 
+## Table of contents
+
+1.  [What is microservices architecture](#what-is-microservices-architecture)
+2.  [What is Node.js](#what-is-node.js)
+3.  [Node.js pros and cons](#node.js-pros-and-cons)
+4.  [Why Node.js microservices?](#why-node.js-microservices%3F)
+    1.  [Enables full-stack web development](#enables-full-stack-web-development)
+    2.  [Built-in web server for Node.js Microservices](#built-in-web-server-for-node.js-microservices)
+    3.  [Node.js Microservices elevate developer happiness](#node.js-microservices-elevate-developer-happiness)
+    4.  [Node Js is fast and scalable](#node-js-is-fast-and-scalable)
+    5.  [Battle-tested and used at the enterprise scale](#battle-tested-and-used-at-the-enterprise-scale)
+5.  [Conclusion](#conclusion)
+
 ## What is microservices architecture
 
 Martin fowler a visionary in this domain describes [microservices](https://martinfowler.com/articles/microservices.html) as:

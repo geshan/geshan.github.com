@@ -23,6 +23,21 @@ The [$300 free credit](https://cloud.google.com/free) for 12 months is key to ge
 
 <!-- more -->
 
+## Table of contents
+
+1.  [How to start a tech startup](#how-to-start-a-tech-startup)
+2.  [Considerations](#considerations)
+3.  [Steps](#steps)
+    1.  [Domain Name](#domain-name)
+    2.  [DNS, security and caching](#dns%2C-security-and-caching)
+    3.  [The brochure site](#the-brochure-site)
+    4.  [Cement them together](#cement-them-together)
+    5.  [Time for Google Cloud Platform (GCP)](#time-for-google-cloud-platform-(gcp))
+    6.  [Dockerize your application](#dockerize-your-application)
+    7.  [Database](#database)
+    8.  [Other GCP services](#other-gcp-services)
+    9.  [Other free services](#other-free-services)
+4.  [Conclusion](#conclusion)
 
 ## How to start a tech startup
 
