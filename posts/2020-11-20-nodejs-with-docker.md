@@ -42,7 +42,6 @@ It also works well with a big team where [Spotify](https://blog.risingstack.com/
 
 With high scalability in the picture, it becomes a lot easier to scale the application horizontally with Docker and Kubernetes. Using Docker with Node.js enables high scalability.
 
-
 ## Assumptions for Docker with Node.js
 
 1. You have some familiarity with using Node.js (express js or any other framework)
