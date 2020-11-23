@@ -1,15 +1,20 @@
 ---
 layout: post
-title: "Node.js MySQL tutorial: a step-by-step getting started guide with Express js REST API"
+title: 'Node.js MySQL tutorial: a step-by-step getting started guide with Express
+  js REST API'
 date: 2020-11-23T23:15:25.000+11:00
 comments: true
 tags:
 - Web Development
 - NodeJs
 cover: "/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial-full.jpg"
-pagetitle: "Node.js MySQL tutorial: a step-by-step getting started guide with Express js REST API"
-description: Follow this 2500+ word step-by-step tutorial to learn Node.js and MySQL together. You will build a REST API for quotes using Express Js in this guide.
-keywords: Nodejs mysql tutorial, Node.js mysql tutorial, nodejs mysql, nodejs express mysql, node.js express mysql example, nodejs mysql express tutorial
+pagetitle: 'Node.js MySQL tutorial: a step-by-step getting started guide with Express
+  js REST API'
+description: Follow this 2500+ word step-by-step tutorial to learn Node.js and MySQL
+  together. You will build a REST API for quotes using Express Js in this guide.
+keywords: Nodejs mysql tutorial, Node.js mysql tutorial, nodejs mysql, nodejs express
+  mysql, node.js express mysql example, nodejs mysql express tutorial
+
 ---
 Node.js and MySQL mix very well together. In this Node.js MySQL tutorial, we will look into how to get started with both of them step-by-step to build REST API for quotes using Express js.
 
@@ -179,9 +184,9 @@ INSERT INTO `quote` (`id`, `quote`, `author`) VALUES
 (4, 'First, solve the problem. Then, write the code.', 'John Johnson'),
 (5, 'Java is to JavaScript what car is to Carpet.', 'Chris Heilmann'),
 (6, 'Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.', 'John Woods'),
-(7, 'I\'m not a great programmer; I\'m just a good programmer with great habits.', 'Kent Beck'),
+(7, "I'm not a great programmer; I'm just a good programmer with great habits.", 'Kent Beck'),
 (8, 'Truth can only be found in one place: the code.', 'Robert C. Martin'),
-(9, 'If you have to spend effort looking at a fragment of code and figuring out what it\'s doing, then you should extract it into a function and name the function after the \"what\".', 'Martin Fowler'),
+(9, "If you have to spend effort looking at a fragment of code and figuring out what it's doing, then you should extract it into a function and name the function after the 'what'.", 'Martin Fowler'),
 (10, 'The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.', 'Donald Knuth'),
 (11, 'SQL, Lisp, and Haskell are the only programming languages that I’ve seen where one spends more time thinking than typing.', 'Philip Greenspun'),
 (12, 'Deleted code is debugged code.', 'Jeff Sickel'),
