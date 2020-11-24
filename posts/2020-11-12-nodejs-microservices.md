@@ -142,7 +142,7 @@ There are many examples where Node.js has shined. Possibly many of them included
 
 > LinkedIn tried Node.js in 2012, [reporting](http://highscalability.com/blog/2012/10/4/linkedin-moved-from-rails-to-node-27-servers-cut-and-up-to-2.html) 27 servers cut and responses 20x faster in some scenarios.
 
-Similarly in [Paypal](http://highscalability.com/blog/2013/12/11/using-Node.js-paypal-doubles-rps-lowers-latency-with-fewer-de.html), there was a 35% decrease in the average response time for the same page with the use of Node.js. Netflix measured a [70% reduction](https://netflixtechblog.com/making-netflix-com-faster-f95d15f2e972) in startup time with the use of Node.js. Likewise, [Ebay](https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/) converted a Node.js Hackathon project into a production application due to scalability and resource usage.
+Similarly in [Paypal](http://highscalability.com/blog/2013/12/11/using-nodejs-paypal-doubles-rps-lowers-latency-with-fewer-de.html), there was a 35% decrease in the average response time for the same page with the use of Node.js. Netflix measured a [70% reduction](https://netflixtechblog.com/making-netflix-com-faster-f95d15f2e972) in startup time with the use of Node.js. Likewise, [Ebay](https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/) converted a Node.js Hackathon project into a production application due to scalability and resource usage.
 
 The list goes on and on, [Spotify](https://blog.risingstack.com/how-enterprises-benefit-from-microservices-architectures/#spotifybuildsflawlessuserexperiencewithmicroservices) using Node.js microservices definitely proves the scale with 75 million active users.
 
