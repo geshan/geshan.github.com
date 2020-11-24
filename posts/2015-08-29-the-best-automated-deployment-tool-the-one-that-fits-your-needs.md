@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "The best automated deployment tool is... the one that fits your needs"
-date: 2015-08-29 15:22:48 +04:00
+title: The best automated deployment tool is... the one that fits your needs
+date: 2015-08-29T15:22:48.000+04:00
 comments: true
 tags:
 - deployment
 - devops
 - Software Engineering
-cover: /images/deployment-tools/fabric-deployment.png
----
+cover: "/images/deployment-tools/fabric-deployment.png"
 
+---
 The process of getting a completed feature or bug fix code from the development environment to your web servers is web software deployment. We have been deploying code in various ways, a decade back we were used to uploading our files using File Transfer Protocol (FTP). I would not considering copying files from the development machine to a web server a form of automated deployment, basically it was a necessary evil at that time.
 
 If you still use FTP at this time like [22%](http://bit.ly/sw-eng-np-pt3) of Nepali developers you really need to move on. In this post I will briefly mention some deployment tools and try to analyze their pros and cons. Still as the title reads the best automated deployment tool is the one that best fits your needs.
@@ -67,7 +67,7 @@ I cannot give you a clear cut winner from the above table, it will depend solely
 
 ### Capistrano
 
-Capistrano written in ruby has been around as an automated deployment tools for years not, its quite stable and has support for lots of languages and frameworks from symfony to NodeJs etc. You can get more information about it from this [podcast](https://changelog.com/110/) and the official [docs](https://github.com/capistrano/capistrano/blob/master/README.md).
+Capistrano written in ruby has been around as an automated deployment tools for years not, its quite stable and has support for lots of languages and frameworks from symfony to NodeJs etc. You can get more information about it from this [podcast](https://changelog.com/podcast/110/) and the official [docs](https://github.com/capistrano/capistrano/blob/master/README.md).
 
 The good thing about Capistrano is it already has a defined [flow](http://capistranorb.com/documentation/getting-started/flow/) on how to deploy applications. If you can understand the flow [visually](https://raw.githubusercontent.com/mpasternacki/capistrano-documentation-support-files/master/default-execution-path/Capistrano%20Execution%20Path.jpg) and know how to make/edit a recipe and structure your tasks you are done. Another good thing about Capistrano as it keeps versions of releases and does a symlink switch when the view version is ready. Same thing for rollback, it is fast because basically it is just a symlink switch to the immediate old successful deployed version of the code.
 
