@@ -593,6 +593,8 @@ As all the code is in a public [Github repository](https://github.com/geshan/nod
 
 You can look at the code and try to see how the whole thing is pieced together in this Node.js MySQL tutorial with Express Js for a quotes REST API.
 
+You can dockerize the REST API app following this step-by-step [tutorial](/blog/2020/11/nodejs-with-docker/). After that app is dockerized you can host it easily on something like Google Cloud Run. If you want a quick start testing ground without Docker, I would recommend [Glitch](https://glitch.com/).
+
 ## Conclusion
 
 Creating a REST API with Node.js and MySQL is not that difficult. 
