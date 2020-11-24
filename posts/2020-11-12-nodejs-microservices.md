@@ -48,7 +48,7 @@ Technically, it should be independent to deploy in an automated way. Node.js fit
 
 ## What is Node.js
 
-Mozilla developer portal describes [Node.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Node.js/Introduction) as:
+Mozilla developer portal describes [Node.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_nodejs/Introduction) as:
 
 > Node (or more formally Node.js) is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript. The runtime is intended for use outside of a browser context (i.e. running directly on a computer or server OS). As such, the environment omits browser-specific JavaScript APIs and adds support for more traditional OS APIs including HTTP and file system libraries.
 
@@ -90,7 +90,7 @@ Node.js enables actual full-stack web development. The frontend without doubts n
 
 Node.js has many other features and benefits. Unlike the frontend, the software engineer doesn't need to worry about cross-browser compatibility and browser versions while writing Node.js code. Node.js also doesn’t need the weight of transpilers like [Babel](https://babeljs.io/).
 
-As [reported](http://highscalability.com/blog/2013/12/11/using-Node.js-paypal-doubles-rps-lowers-latency-with-fewer-de.html) at Paypal - “Using JavaScript on both the front-end and the back-end removed an artificial boundary between the browser and server, allowing engineers to code both.” So Node.js adoption does open new doors of full-stack web development.
+As [reported](http://highscalability.com/blog/2013/12/11/using-nodejs-paypal-doubles-rps-lowers-latency-with-fewer-de.html) at Paypal - “Using JavaScript on both the front-end and the back-end removed an artificial boundary between the browser and server, allowing engineers to code both.” So Node.js adoption does open new doors of full-stack web development.
 
 ### Built-in web server for Node.js Microservices
 
