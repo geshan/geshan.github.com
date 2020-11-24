@@ -88,9 +88,9 @@ Node.js enables actual full-stack web development. The frontend without doubts n
 
 > Yes, the developers should learn the [backend vs frontend](/blog/2020/02/difference-between-backend-frontend/) concepts but they don’t need to learn a completely new programming language.
 
-Node.js has many other features and benefits. Unlike the frontend, the software engineer doesn't need to worry about cross-browser compatibility and browser versions while writing Node.js code. Node.js also doesn’t need the weight of transpilers like [Babel](https://babeljs.io/).
+Node.js has many other features and benefits. Unlike the frontend, the software engineer doesn't need to worry about cross-browser compatibility and browser versions while writing Node.js code for a [REST API](/blog/2020/11/nodejs-mysql-tutorial/). Node.js also doesn’t need the weight of transpilers like [Babel](https://babeljs.io/).
 
-As [reported](http://highscalability.com/blog/2013/12/11/using-nodejs-paypal-doubles-rps-lowers-latency-with-fewer-de.html) at Paypal - “Using JavaScript on both the front-end and the back-end removed an artificial boundary between the browser and server, allowing engineers to code both.” So Node.js adoption does open new doors of full-stack web development.
+As [reported](http://highscalability.com/blog/2013/12/11/using-nodejs-paypal-doubles-rps-lowers-latency-with-fewer-de.html) at Paypal - `“Using JavaScript on both the front-end and the back-end removed an artificial boundary between the browser and server, allowing engineers to code both.”` So Node.js adoption does open new doors of full-stack web development.
 
 ### Built-in web server for Node.js Microservices
 
