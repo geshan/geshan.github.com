@@ -274,7 +274,7 @@ As Node.js has a built-in web server, the Dockerfile is much cleaner.
 
 > When you install node, npm is bundled with it. This eliminates the need to install packages at a different stage in the docker build.
 
-In the above Dockerfile multi-stage docker build is used to separate production and development docker images. Having the package manager (npm) bundled and having the web-server as part of the language/runtime is something different in Node.js for PHP developers.
+In the above Dockerfile multi-stage docker build is used to separate production and development docker images. Having the package manager (npm) bundled and having the web-server as part of the language/runtime is something different in Node.js for PHP developers. If you are interested more in Dockering a Node.js applicaiton step-by-step follow this [tutorial](/blog/2020/11/nodejs-with-docker/).
 
 ## Conclusion
 
