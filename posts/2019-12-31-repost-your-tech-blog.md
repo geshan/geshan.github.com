@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Repost your tech blog, get a larger audience without hurting SEO"
-date: 2019-12-31 15:22:28 +00:00
+title: Repost your tech blog, get a larger audience without hurting SEO
+date: 2019-12-31T15:22:28.000+00:00
 comments: true
-tags: 
+tags:
 - Misc
-cover: /images/repost-blog/repost-blog.jpg
-pagetitle: 4 websites to repost your tech blog content to get a bigger audience without hurting SEO
-description: Repost your tech blog content to more places, get a larger audience without hurting SEO.
+cover: "/images/repost-blog/repost-blog.jpg"
+pagetitle: 4 websites to repost your tech blog content to get a bigger audience without
+  hurting SEO
+description: Repost your tech blog content to more places, get a larger audience without
+  hurting SEO.
 keywords: repost blog, blog, content
+
 ---
 If blogging is one of your goals for 2020 you are reading the right blog post. Setting goals for a new year is a lot better than resolutions as goal setting is proactive whereas resolutions give out a reactive connotation. Anyhow, in this post we are going to find out about websites where you should repost your tech blog content that will fetch more audience to your content and will not hamper the Search Engine Optimisation (SEO) of your website.
 
@@ -75,7 +78,7 @@ Hackernoon is also a very vibrant community of writers and readers. Being one of
 
 ### [HashNode](https://hashnode.com/)
 
-Hashnode is another developer community similar to Dev.to. It also has many writers/bloggers writing content. You can start off with your own [subdomain](https://geshan.hashnode.dev) they have branded as [devblog](https://hashnode.com/devblog). As it is your own blog, there is no editorial process here. Hashnode is one of the [top ~43500 websites](https://www.alexa.com/siteinfo/hashnode.com) in the world and has a very good amount of visitors. You can also read and participate in [discussion](https://hashnode.com/discussions/popular) on Hashnode. You can find the part to add canonical link at the bottom of [write a story](https://hashnode.com/create/story) page at the “Is this a republished article?” section, like shown below:
+Hashnode is another developer community similar to Dev.to. It also has many writers/bloggers writing content. You can start off with your own [subdomain](https://geshan.hashnode.dev) they have branded as [devblog](https://hashnode.com/devblog). As it is your own blog, there is no editorial process here. Hashnode is one of the [top ~43500 websites](https://www.alexa.com/siteinfo/hashnode.com) in the world and has a very good amount of visitors. You can also read and participate in the [communnitu](https://hashnode.com/community) on Hashnode. You can find the part to add canonical link at the bottom of [write a story](https://hashnode.com/create/story) page at the “Is this a republished article?” section, like shown below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/repost-blog/04hashnode.jpg" title="Post your content to Hashnode" alt="Post your content to Hashnode with canonical link">
 
