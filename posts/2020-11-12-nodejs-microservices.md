@@ -124,7 +124,7 @@ This speaks volumes about developer happiness in the Node.js ecosystem. It is al
 
 > One personal experience I want to share is, how easy it is to upgrade even major version of Node.js.
 
-Recently I upgraded a microservice from Node.js 8 to Node.js version 14. The upgrade was as smooth as butter with a reduction in response time bonus. I wished I could say that for PHP.  Deploying Node.js is also easy, if your application is dockerized it becomes even easier. This surely elevates developer happiness while working in Node.js to new levels.
+Recently I upgraded a microservice from Node.js 8 to Node.js version 14. The upgrade was as smooth as butter with a reduction in response time bonus. I wished I could say that for PHP.  Deploying Node.js is also easy, if your application is dockerized it becomes even easier. You can learn about dockerizing your Node.js application in this step-by-step [tutorial](/blog/2020/11/nodejs-with-docker/). This surely elevates developer happiness while working in Node.js to new levels.
 
 ### Node Js is fast and scalable
 
