@@ -1,15 +1,18 @@
 ---
 layout: post
-title: 'Get PHPUnit Code Coverage 2+ times faster with pcov compared to X-debug'
+title: Get PHPUnit Code Coverage 2+ times faster with Pcov compared to X-debug
 date: 2020-11-27T22:15:25.000+11:00
 comments: true
 tags:
 - Web Development
 - PHP
 cover: "/images/phpunit-code-coverage-pcov/01faster-phpunit-code-coverage.jpg"
-pagetitle: 'Get PHPUnit Code Coverage 2+ times faster with pcov compared to X-debug'
-description: Speed up your PHPUnit code coverage using Pcov in place of X-debug. Make it at least twice as fast.
-keywords: phpunit code coverage, phpunit coverage, phpunit test coverage, pcov, speed up phpunit coverage
+pagetitle: Get PHPUnit Code Coverage 2+ times faster with Pcov compared to X-debug
+description: Speed up your PHPUnit code coverage using Pcov in place of X-debug. Pcov
+  made the Laravel framework tests twice as fast.
+keywords: phpunit code coverage, phpunit coverage, phpunit test coverage, pcov, speed
+  up phpunit coverage
+
 ---
 PHPUnit is the de-facto testing library for PHP. With the use of pcov you can speed up PHPUnit code coverage by 2-5 times for PHP 7.0+ application. In this post, we will compare the results of an experiment I did on Laravel framework tests. The tests were run without coverage, then with X-Debug coverage, and finally with pcov all on Github actions. Pcov took half the time to run the PHPUnit tests with code coverage compared to X-debug, let’s go to the numbers.
 
