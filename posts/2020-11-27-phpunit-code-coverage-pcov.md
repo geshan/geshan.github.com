@@ -29,7 +29,7 @@ Think of it as how much it will save in terms of waiting time for your colleague
 
 [XDebug](https://xdebug.org/) is a debugger that can do coverage too. [PHPdbg](https://www.php.net/manual/en/intro.phpdbg.php) is another alternative to X-debug. [Pcov](https://github.com/krakjoe/pcov) is built for PHPUnit code coverage not something else.
 
-[Michael Dyranda](https://dyrynda.com.au/blog/using-pcov-instead-of-xdebug-for-coverage) has also talked about this issue, where he mentions:
+[Michael Dyrynda](https://dyrynda.com.au/blog/using-pcov-instead-of-xdebug-for-coverage) has also talked about this issue, where he mentions:
 
 > You have access to the same output formats that are available to PHPUnit (formatted output, clover, JSON, HTML, etc.) with none of the overhead.
 
