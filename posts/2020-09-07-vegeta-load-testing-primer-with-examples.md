@@ -99,6 +99,7 @@ There are multiple ways to use the Vegeta load testing tool, one of the simplest
 ``` bash
 echo "GET http://httpbin.org/get" | vegeta attack -duration=5s -rate=5 | vegeta report --type=text
 ```
+
 So what just happened here?
 
 1. We echoed the URL in this case httpbin.org/get and we passed it through Vegeta attack
@@ -158,8 +159,8 @@ GET http://httpbin.org/get
 GET http://httpbin.org/ip
 ```
 
-2. Now similar to the first example with the text output run this command in the folder the targets.txt file is created: `vegeta attack -duration=5s -rate=5 --targets=targets.txt | vegeta report --type=text`
-3. We will see a text output like below:
+1. Now similar to the first example with the text output run this command in the folder the targets.txt file is created: `vegeta attack -duration=5s -rate=5 --targets=targets.txt | vegeta report --type=text`
+2. We will see a text output like below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/04vegeta-multiple-urls.jpg" title="Vegeta load testing with multiple GET URLs output" alt="Text output of multiple GET URLs with Vegeta">
 
@@ -167,7 +168,7 @@ As we have seen doing load testing on multiple URLs with Vegeta is a breeze. Veg
 
 ## Conclusion
 
-This post was like scratching the surface with a primer on load testing with Vegeta. There are many advanced things that can be done with Vegeta load testing. Vegeta has been very useful on multiple occasions. I had once used Vegeta to load test Google Cloud Functions and Google Cloud Run with the same code to see the response time difference between those two for a [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/). The graph comparing both the services made the difference crystal clear.
+This post was like scratching the surface with a primer on load testing with Vegeta. There are many advanced things that can be done with Vegeta load testing. Vegeta has been very useful on multiple occasions. I had once used Vegeta to load test Google Cloud Functions and Google [Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/ "Reasons to use Serverless containers with Google cloud run") with the same code to see the response time difference between those two for a [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/). The graph comparing both the services made the difference crystal clear.
 
 In another instance, we tested a new public-facing [microservice](/blog/2018/10/moving-from-a-and-b-to-\~150-microservices/) that was replacing a part of an old monolith. It was very useful doing Vegeta load testing to know the response time difference for similar Request Per Second loads.
 
