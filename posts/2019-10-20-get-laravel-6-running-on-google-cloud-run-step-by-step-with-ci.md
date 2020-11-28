@@ -106,7 +106,7 @@ git push origin laravel6-full-app
 
 After that go and open a Pull Request (PR), on the repo like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/1) one. You might be thinking I am the only one working on this, why do I need PR? Well, it is always better to do things methodically even if it is just one person working on the project :).
 
-After that merge your pull request. You can read more about getting your [pull request merged faster](/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/ "Get our PR reviews and merged faster") too.
+After that merge your pull request. You can read more about getting your [pull request](/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/ "Get our PR reviews and merged faster") merged faster too.
 
 ### 6. Setup tests with [GitHub actions](https://github.com/features/actions)
 
