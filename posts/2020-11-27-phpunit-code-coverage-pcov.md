@@ -57,7 +57,7 @@ Tests for Laravel 8.x run on multiple versions of PHP like 7.3, 7.4,8 on lowest 
 
 > Another reason to choose Laravel 8.x was it is using [PHPUnit  9.3](https://github.com/laravel/framework/blob/8.x/composer.json#L89) which does not need pcov-clobber to get the PHPUnit coverage.
 
-I had blogged about getting started with [Unit testing in Laravel](/blog/2015/07/getting-started-with-unit-testing-in-laravel/) in the past which should be a good unit testing refresher. [Data provider for PHPunit](blog/2014/02/using-phpunit-data-provider-for-less/) is also a great way to write less test code but achieve more code coverage.
+I had blogged about getting started with [Unit testing in Laravel](/blog/2015/07/getting-started-with-unit-testing-in-laravel/) in the past which should be a good unit testing refresher. [Data provider for PHPunit](/blog/2014/02/using-phpunit-data-provider-for-less/) is also a great way to write less test code but achieve more code coverage.
 
 Below are the steps I took to find out how fast Pcov was against Xdebug for PHPUnit code coverage.
 
