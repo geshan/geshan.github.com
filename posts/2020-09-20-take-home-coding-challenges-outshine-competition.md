@@ -72,7 +72,7 @@ Below is an example of the pull requests I made for a coding challenge:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/take-home-coding-challenges/02take-home-coding-challenge-pull-requests.jpg" title="Take-home coding challenges pull request example" alt="Take-home coding challenges pull requests example">
 
-Keep your pull requests small. Work as if you are working in a team and review your own PRs. Step by step PRs and logical commits will help you outdo your competition. This tells the evaluators a clear story of how you reached the solution.
+Keep your [pull request](/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/) small. Work as if you are working in a team and review your own pull requests. Step by step PRs and logical commits will help you outdo your competition. This tells the evaluators a clear story of how you reached the solution.
 
 ### Write automated tests
 
