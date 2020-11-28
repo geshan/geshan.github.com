@@ -77,6 +77,6 @@ To make the most out of this tutorial, you can fork the [repo](https://github.co
 
 ## Conclusion
 
-Running Symfony entails some tricky configuration :) so the Dockerized version is a breeze to run. I really believe that Google Cloud Run is a superior product if you know how to dockerize your web app and run it on port 8080 you can get amazing scalability with unparallel ease to make it run. I have written a much longer guide to run [Laravel on Google Cloud Run](https://geshan.com.np/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) too.
+Running Symfony entails some tricky configuration :) so the Dockerized version is a breeze to run. I really believe that Google [Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) is a superior product if you know how to dockerize your web app and run it on port 8080 you can get amazing scalability with unparallel ease to make it run. I have written a much longer guide to run [Laravel on Google Cloud Run](https://geshan.com.np/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) too.
 
 > I would recommend Cloud Run for any pet project or even production application.
