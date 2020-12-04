@@ -29,6 +29,12 @@ On the other hand, as Donald G. Reinertsen mentions in his book The [principles 
 
 > Smaller batch sizes also reduce risk and overhead. Thereby, small pull requests also have the same effect.
 
+As per [Github's Octoverse 2020 Productivity report](https://octoverse.github.com/static/2020-productivity-report.pdf#page=5) on page 5, the first `key finding` is:
+
+> Small pull requests drive innovation and productivity
+
+It further adds, "Teams that focus on small pull requests and closer collaboration have better reviews and faster feedback. Throughout the year, developers stepped up their work by keeping pull requests at the same size or smaller and merged pull requests up to seven and a half hours faster. This gives developers more time to do the things they love". Yet another data backed reason to have smaller pull requests.
+
 In my personal experience, I have opened pull requests with 50 files changed and 2 files changed. Of course, the one with only 2 files changed and \~100 lines changed got merged a lot faster.
 
 ## Role of enabler code in small pull requests
