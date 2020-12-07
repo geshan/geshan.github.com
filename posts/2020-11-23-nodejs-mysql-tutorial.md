@@ -50,7 +50,7 @@ If you are starting a new project don't blindly use a NoSQL like Mongo DB. This 
 
 ## Prerequisites for Node.js MySQL tutorial
 
-1.You have Node.js installed on your machine (or a docker container that can run Node.js). We will be using Node.js version 12 and npm x.
+1. You have Node.js installed on your machine (or a docker container that can run Node.js). We will be using Node.js version 12 and npm 6.14.
 1. You are familiar with how Node.js works generally and also know about Node.js frameworks. We will use Express js for this guide.
 1. Some git knowledge would be really helpful
 1. You have access to a MySQL instance either running locally or remotely. I would suggest using [remote MySQL](https://remotemysql.com/). You should know how RDBMS works.
