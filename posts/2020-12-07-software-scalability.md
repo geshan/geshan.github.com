@@ -7,8 +7,8 @@ tags:
 - Software Engineering
 cover: "/images/software-scalability/01software-scalability.jpg"
 pagetitle: 6 dev and operations factors to consider for software scalability to meet high demands
-description: Software scalability is an interesting issue to have. Read this 2500+ post to know dev and ops aspects to focus on to achieve scaleable software.
-keywords: sofware scalability, scalable software, high scalability, scaling system, scalable software architecture, highly scaleable
+description: Software scalability is an interesting issue to have. Read this 2500+ post to know dev and ops aspects to focus on to achieve scalable software.
+keywords: sofware scalability, scalable software, high scalability, scaling system, scalable software architecture, highly scalable
 ---
 Software scalability is an interesting issue to have. Making software scalable consists of multiple factors, we discuss some dev (code) related and a few operations (platforms) associated aspects in this blog post.
 
@@ -17,6 +17,31 @@ We will discuss more on how to write software (software development) and how you
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/software-scalability/01software-scalability.jpg" title="Software scalability factors to consider" alt="Software scalability dev and ops factors to consider to meet high demands">
 
 <!-- more -->
+## Table of contents
+
+1.  [What is software scalability](#what-is-software-scalability)
+2.  [Software Scalability dev point of view](#software-scalability-dev-point-of-view)
+    1.  [Scalable software with efficient code](#scalable-software-with-efficient-code)
+        1.  [Choosing the apt algorithm](#choosing-the-apt-algorithm)
+        2.  [Better memory management](#better-memory-management)
+        3.  [Choosing performant libraries](#choosing-performant-libraries)
+    2.  [Asynchronous processing](#asynchronous-processing)
+        1.  [Use queues and consumer for software scalability](#use-queues-and-consumer-for-software-scalability)
+        2.  [Use async code where applicable](#use-async-code-where-applicable)
+    3.  [Write stateless applications for scalable software](#write-stateless-applications-for-scalable-software)
+        1.  [Don’t use the local file system](#don%E2%80%99t-use-the-local-file-system)
+        2.  [Replace server-side sessions with something client side](#replace-server-side-sessions-with-something-client-side)
+3.  [Software Scalability from an operations standpoint](#software-scalability-from-an-operations-standpoint)
+    1.  [Vertical scaling vs Horizontal scaling](#vertical-scaling-vs-horizontal-scaling)
+        1.  [Vertical Scaling (Scale Up)](#vertical-scaling-(scale-up))
+        2.  [Horizontal scaling (Scale out)](#horizontal-scaling-(scale-out))
+    2.  [Using NoSQL for high software scalability](#using-nosql-for-high-software-scalability)
+        1.  [NoSQL database for scalable software](#nosql-database-for-scalable-software)
+        2.  [Eventual consistency and CAP Theorem](#eventual-consistency-and-cap-theorem)
+    3.  [Caching to enable software scalability](#caching-to-enable-software-scalability)
+        1.  [Memoization](#memoization)
+        2.  [HTTP Caching for scalable software](#http-caching-for-scalable-software)
+4.  [Conclusion](#conclusion)
 
 ## What is software scalability
 
@@ -26,16 +51,13 @@ We will discuss more on how to write software (software development) and how you
 
 So if the software can be elastic on handling load given more resources are allocated (mostly dynamically) when the volume of requests increases we can say that the software is scalable. Even to achieve this we need to focus on the code part too.
 
-
 ## Software Scalability dev point of view
 
-Software engineers should know how to write scalable software. You should focus on writing code that makes software scalability easy and put it as a priority. It is easy to write software that barely works but it is difficult to write tested, maintainable code that also scales very well. Below are a couple of things that can help you to write more scalable software.
-
+Software engineers should know how to write scalable software. You should focus on writing code that makes software scalability easy and put it as a priority. It is easy to write software that barely works but it is difficult to write tested, maintainable code that also scales very well. Below are a a few things that can help you to write more scalable software.
 
 ### Scalable software with efficient code
 
 Software applications can be written in a way where it just works. On the other hand, it can be written in a way with software scalability, maintenance, and resilience in mind.
-
 
 #### Choosing the apt algorithm
 
@@ -51,7 +73,12 @@ As a software engineer, you should be careful about things like [memory manageme
 
 #### Choosing performant libraries 
 
-Other things that can help software scalability include comparing and using more performance solutions. For example, you can use just javascript in place of [lodash](https://lodash.com/) and it will be [faster](https://codeburst.io/why-you-shouldnt-use-lodash-anymore-and-use-pure-javascript-instead-c397df51a66) and more performant. Also, don’t just use a library or package because it’s popular, check the performance and software scalability implications. For instance you could use [Day.js](https://github.com/iamkun/dayjs) in place of [Moment.js](https://momentjs.com/) to do simple date manipulation. If need be use the native methods to make the software more scalable.
+Other things that can help software scalability include comparing and using more performance solutions. 
+For example, you can use just javascript in place of [lodash](https://lodash.com/) and it will be [faster](https://codeburst.io/why-you-shouldnt-use-lodash-anymore-and-use-pure-javascript-instead-c397df51a66) and more performant.
+
+> Also, don’t just use a library or package because it’s popular, check the performance and software scalability implications.
+
+For instance you could use [Day.js](https://github.com/iamkun/dayjs) in place of [Moment.js](https://momentjs.com/) to do simple date manipulation. If need be use the native methods to make the software more scalable.
 
 ### Asynchronous processing
 
@@ -65,7 +92,7 @@ Imagine this, a customer has successfully placed an order and you need to send a
 
 #### Use async code where applicable
 
-Another example of asynchronous processing is using async code. Depending on the language, you should be able to push some tasks to the background. While the task is being executed, a response can be sent that it is scheduled. Nodejs example [link](https://geshan.com.np/blog/2020/11/nodejs-for-php-developers/#node.js-code-execution-is-async-and-non-sequential). Of course, this depends on your language of choice, some languages like PHP might not support async code out of the box.
+Another example of asynchronous processing is using async code. Depending on the language, you should be able to push some tasks to the background. While the task is being executed, a response can be sent that it is scheduled. You can look at a Node.js [example](https://geshan.com.np/blog/2020/11/nodejs-for-php-developers/#node.js-code-execution-is-async-and-non-sequential) of an async response. Of course, this depends on your language of choice, some languages like PHP might not support async code out of the box.
 
 ### Write stateless applications for scalable software
 
@@ -102,7 +129,11 @@ Similarly, if the components are not laid out well or chosen properly it will ha
 
 This is a continuation of the [cattle vs pet](https://www.hava.io/blog/cattle-vs-pets-devops-explained) analogy of servers. Time to analyze it a bit further. Imagine this, you are technically managing a fairly popular e-commerce website that has around 500 orders a day and ~50k users coming to the website. You have a big web server that is close to an [Amazon EC2 m5.4xlarge](https://aws.amazon.com/ec2/instance-types/) spec. It has 16 vCPUs and has a massive 64GB of RAM. Let’s assume your [WooCommerce](https://woocommerce.com/) store is running on it where the web server and MySQL database are also in that same machine.
 
-Now, just 3 months before Black Friday the company wants to push for a massive TV campaign and expects 5-7 times more traffic on Black Friday. The management is investing a lot in advertising and the website can’t go down for those 4-5 days. It is also expected that there will be 300k+ users on the website and 3k+ orders placed for those 3-4 days. You have 2 options to scale the application now either scale up (vertical scaling) or scale-out (horizontal scaling).
+Now, just 3 months before Black Friday the company wants to push for a massive TV campaign and expects 5-7 times more traffic on Black Friday. The management is investing a lot in advertising and the website can’t go down for those 4-5 days.
+
+> It is also expected that there will be 300k+ users on the website and 3k+ orders placed for those 3-4 days.
+
+You have 2 options to scale the application now either scale up (vertical scaling) or scale-out (horizontal scaling).
 
 #### Vertical Scaling (Scale Up)
 
@@ -116,11 +147,15 @@ But there are 3 main issues, you will need a bit of downtime to upgrade the hard
 
 #### Horizontal scaling (Scale out)
 
-Another option is to scale-out also known as horizontal scaling. With this path, you will try to get many smaller EC2 instances like 8-50 of t3.mediums. 
+Another option is to scale-out also known as horizontal scaling. With this path, you will try to get many smaller EC2 instances like 8-50 of t3.mediums.
 
 > Each of them will have 2 vCPUs and 4 GB of RAM. So a fleet of 50 t3.mediums can give you 100 vCPUs and 200 GBs of RAM in total. To distribute the load correctly among the fleets of these new EC2 instances you can use [Amazon Application load balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/).
 
-To make the application more scalable you can use Amazon RDS db.m5.8xlarge instance with 32 vCPUs and 128 GB RAM. As per need, you can also configure the backup. At this point, your 50 servers are your cattle if 3 dies, you spin up 3 more. If there is a lot less load then only 3 instances are running and when traffic spikes up 20 more come up in minutes. After the sale period ends you scale down the DB to a db.m5.large and things are working fine for 500 orders a day.
+To make the application more scalable you can use Amazon RDS db.m5.8xlarge instance with 32 vCPUs and 128 GB RAM. As per need, you can also configure the backup. At this point, your 50 servers are your cattle if 3 dies, you spin up 3 more.
+
+> If there is much less load then only 3 instances are running and when traffic spikes up 20 more come up in minutes.
+
+After the sale period ends you scale down the DB to a db.m5.large and things are working fine for 500 orders a day.
 
 As this is important let’s explain it visually below:  PS: pardon my bad designing skills :)
 
@@ -132,11 +167,13 @@ As this is important let’s explain it visually below:  PS: pardon my bad desig
 
 This is the part where [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/) shine. You can package your workload into lightweight containers and Kubernetes can manage horizontal scaling, rolling deployment etc for those containers. Docker has [changed the way we software engineers’ work](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
 
-One takeaway here is Scaling RDBMS is hard. With things like sharding, it might be easier to Scale-up a relational database than try scaling out if you don’t know what you are doing. Amazon is just an example here the same concepts can be applied to any major cloud vendor like Google Cloud or Azure. That leads me to my next point, the usage of NoSQL databases.
+One takeaway here is Scaling RDBMS is hard. With things like sharding, it might be easier to Scale-up a relational database than try scaling out if you don’t know what you are doing. Amazon is an example here the same concepts can be applied to any major cloud vendor like Google Cloud or Azure. That leads me to my next point, the usage of NoSQL databases.
 
 ### Using NoSQL for high software scalability
 
-In the above example, if your web store had 20 people on the website they can be served from a Relational database. For each request from every user, the application is hitting a relational database at this point which is slow but not crippling. Now imagine 120 users on the website at the same time. It is very likely that the performance has degraded significantly and we can see some [connection to database](https://sysadminxpert.com/aws-rds-max-connections-limit/) issues popping up depending on the database provisioned.
+In the above example, if your web store had 20 people on the website they can be served from a Relational database. For each request from every user, the application is hitting a relational database at this point which is slow but not crippling. Now imagine 120 users are on the website at the same time. It is very likely that the performance has degraded significantly and we can see some [connection to database](https://sysadminxpert.com/aws-rds-max-connections-limit/) issues popping up depending on the database provisioned.
+
+#### NoSQL database for scalable software
 
 This is where a NoSQL datastore is very handy. We can use a NoSQL memory key-value store like [Redis](https://redis.io/).
 
@@ -148,9 +185,13 @@ Both Redis and Solr/Elastic search will need some data to be filled up in advanc
 
 > For each write request, it will need to reach the relational database.
 
-For instance, every purchase by the customer must be stored in the relational database. For all the browsing, which should be 80-90% or more of the traffic we can use NoSQL databases for more software scalability. NoSQL databases are fast because they take the tradeoff of [eventual consistency](https://twitter.com/mykola/status/1101337299525267457). I would really recommend you to refresh your knowledge about [CAP theorem](https://www.ibm.com/cloud/learn/cap-theorem#toc-what-is-th-DXABpEgu) -- Consistency, Availability and Partition tolerance to understand data storages better.
+For instance, every purchase by the customer must be stored in the relational database. For all the browsing, which should be 80-90% or more of the traffic we can use NoSQL databases for more software scalability. 
 
-You can read more on how to scale from [1 to 11 million users] (http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html) in this post on HighScalability. So a NoSQL database can work as an effective cache, which takes us to the next point of effective caching for software scalability.
+#### Eventual consistency and CAP Theorem
+
+NoSQL databases are fast because they take the tradeoff of [eventual consistency](https://twitter.com/mykola/status/1101337299525267457). I would really recommend you to refresh your knowledge about [CAP theorem](https://www.ibm.com/cloud/learn/cap-theorem#toc-what-is-th-DXABpEgu) -- Consistency, Availability and Partition tolerance to understand data storages better.
+
+You can read more on how to scale from [1 to 11 million users](http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html) in this post on HighScalability. So a NoSQL database can work as an effective cache, which takes us to the next point of effective caching for software scalability.
 
 ### Caching to enable software scalability
 
