@@ -386,7 +386,7 @@ module.exports = {
 }
 ```
 
-We will use this helper.js file to calculate the offset. The other function will return an empty array if rows is empty, else it will return rows.
+We will use this helper.js file to calculate the offset. The other function will return an empty array if rows variable is empty, else it will return rows.
 
 Next we will update the query to get quotes in `/services/quotes.js` service. The change quote service looks like below:
 
