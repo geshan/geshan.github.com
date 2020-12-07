@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 cover: "/images/software-scalability/01software-scalability.jpg"
-pagetitle: 6 dev and operations factors to consider for software scalability to meet high demands
+pagetitle: "Software scalability: 6 dev and operations factors to consider for meeting high demands"
 description: Software scalability is an interesting issue to have. Read this 2500+ post to know dev and ops aspects to focus on to achieve scalable software.
 keywords: sofware scalability, scalable software, high scalability, scaling system, scalable software architecture, highly scalable
 ---
@@ -88,11 +88,11 @@ Imagine this, a customer has successfully placed an order and you need to send a
 
 > You can easily set up queues and consumers to get the email sending task done well after the order is placed. If the email is sent 1 minute late it does not cause a problem.
 
- If you want to reduce the latency when there are many orders you can always scale up the number of consumers. Any non-critical or non-blocking task can be pushed to the background to be done asynchronously. This helps use the available resources at optimum level without any problems.
+If you want to reduce the latency when there are many orders you can always scale up the number of consumers. Any non-critical or non-blocking task can be pushed to the background to be done asynchronously. It helps use the available resources at optimum level without any problems.
 
 #### Use async code where applicable
 
-Another example of asynchronous processing is using async code. Depending on the language, you should be able to push some tasks to the background. While the task is being executed, a response can be sent that it is scheduled. You can look at a Node.js [example](https://geshan.com.np/blog/2020/11/nodejs-for-php-developers/#node.js-code-execution-is-async-and-non-sequential) of an async response. Of course, this depends on your language of choice, some languages like PHP might not support async code out of the box.
+Another example of asynchronous processing is using async code. Depending on the language, you should be able to push some tasks to the background. While the task is being executed, a response can be sent that it is scheduled. You can look at a Node.js [example](/nodejs-for-php-developers/#node.js-code-execution-is-async-and-non-sequential) of an async response. Of course, this depends on your language of choice, some languages like PHP might not support async code out of the box.
 
 ### Write stateless applications for scalable software
 
@@ -110,9 +110,9 @@ This makes it easy to save the file and serving it can be scaled too with the us
 
 Another classic example is to not use [server-side sessions](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies) for web applications but use client-side cookies. 
 
-> You can easily replace server-side sessions with something like a [JSON Web Token (JWT)](https://jwt.io/) for authentication and authorization. 
+> You can easily replace server-side sessions with something like a [JSON Web Token (JWT)](https://jwt.io/) for authentication and authorization.
 
-JWTs can be easily passed to the server on each request from the client as part of the header or as a cookie. This makes scaling software a lot easier as servers can act as [cattle than a pet](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/).  If you absolutely need sessions don’t save it on the server file system move it to a datastore like redis which will make the server replaceable easily.
+JWTs can be easily passed to the server on each request from the client as part of the header or as a cookie. It makes scaling software a lot easier as servers can act as [cattle than a pet](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/). If you absolutely need sessions don’t save it on the server file system move it to a datastore like redis which will make the server replaceable easily.
 The main point here is you should not love your server, they should be disposable and elastic as per the load. This is made possible by writing stateless software which is easily scalable and also highly available.
 
 ## Software Scalability from an operations standpoint
@@ -207,11 +207,11 @@ The first level of caching can be done on the code level. One of the basic ways 
 
 > Memoization is a higher-order function that caches another function. It can turn some slow functions into fast ones. It saves the result of a function call after the first time to the cache, so if you call the function again with the same arguments, it will find it in the cache.
 
-You can have a look at a [Node.js Memoization](/blog/2020/11/nodejs-for-php-developers/#memoization-example) example where the server caches the response for 1 minute. So for 1 minute even if the data changes the client gets the same old data.
+You can have a look at a [Node.js Memoization](/blog/2020/11/nodejs-for-php-developers/#memoization-example) example where the server caches the response for 1 minute. Therefore, for 1 minute even if the data changes the client gets the same old data.
 
 #### HTTP Caching for scalable software
 
-Another level of caching can be done on the HTTP layer. With good use of [HTTP headers](https://web.dev/http-cache/) responses can be cached for a desired amount of time. This can also be implemented with an application like [Cloudflare](https://support.cloudflare.com/hc/en-us/articles/202775670-Customizing-Cloudflare-s-cache) to set up rules to cache responses for minutes or hours to reduce the load on the servers. This type of caching mechanism helps us achieve a high level of software scalability. 
+Another level of caching can be done on the HTTP layer. With good use of [HTTP headers](https://web.dev/http-cache/) responses can be cached for a desired amount of time. This can also be implemented with an application like [Cloudflare](https://support.cloudflare.com/hc/en-us/articles/202775670-Customizing-Cloudflare-s-cache) to set up rules to cache responses for minutes or hours to reduce the load on the servers. This type of caching mechanism helps us achieve a high level of software scalability.
 
 If you have the capacity to manage a full-on HTTP cache and HTTP accelerator, [Varnish](https://varnish-cache.org/index.html) is a great option. Varnish claims:
 
