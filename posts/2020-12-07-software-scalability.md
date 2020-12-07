@@ -185,7 +185,7 @@ Both Redis and Solr/Elastic search will need some data to be filled up in advanc
 
 > For each write request, it will need to reach the relational database.
 
-For instance, every purchase by the customer must be stored in the relational database. For all the browsing, which should be 80-90% or more of the traffic we can use NoSQL databases for more software scalability. 
+For instance, every purchase by the customer must be stored in the relational database. In case of all the browsing, which should be 80-90% or more of the traffic we can use NoSQL databases for more software scalability.
 
 #### Eventual consistency and CAP Theorem
 
