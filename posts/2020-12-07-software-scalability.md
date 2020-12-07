@@ -45,7 +45,7 @@ We will discuss more on how to write software (software development) and how you
 
 ## What is software scalability
 
-[Full scale blog](https://fullscale.io/blog/what-is-software-scalability) defines software scalability as:
+[Full-scale blog](https://fullscale.io/blog/what-is-software-scalability) defines software scalability as:
 
 > Software scalability is an attribute of a tool or a system to increase its capacity and functionalities based on its users’ demand. Scalable software can remain stable while adapting to changes, upgrades, overhauls, and resource reduction.
 
@@ -53,7 +53,7 @@ So if the software can be elastic on handling load given more resources are allo
 
 ## Software Scalability dev point of view
 
-Software engineers should know how to write scalable software. You should focus on writing code that makes software scalability easy and put it as a priority. It is easy to write software that barely works but it is difficult to write tested, maintainable code that also scales very well. Below are a a few things that can help you to write more scalable software.
+Software engineers should know how to write scalable software. You should focus on writing code that makes software scalability easy and put it as a priority. It is easy to write software that barely works but it is difficult to write tested, maintainable code that also scales very well. Below are a few things that can help you to write more scalable software.
 
 ### Scalable software with efficient code
 
@@ -78,7 +78,7 @@ For example, you can use just javascript in place of [lodash](https://lodash.com
 
 > Also, don’t just use a library or package because it’s popular, check the performance and software scalability implications.
 
-For instance you could use [Day.js](https://github.com/iamkun/dayjs) in place of [Moment.js](https://momentjs.com/) to do simple date manipulation. If need be use the native methods to make the software more scalable.
+For instance, you could use [Day.js](https://github.com/iamkun/dayjs) in place of [Moment.js](https://momentjs.com/) to do simple date manipulation. If need be use the native methods to make the software more scalable.
 
 ### Asynchronous processing
 
@@ -88,7 +88,7 @@ Imagine this, a customer has successfully placed an order and you need to send a
 
 > You can easily set up queues and consumers to get the email sending task done well after the order is placed. If the email is sent 1 minute late it does not cause a problem.
 
-If you want to reduce the latency when there are many orders you can always scale up the number of consumers. Any non-critical or non-blocking task can be pushed to the background to be done asynchronously. It helps use the available resources at optimum level without any problems.
+If you want to reduce the latency when there are many orders you can always scale up the number of consumers. Any non-critical or non-blocking task can be pushed to the background to be done asynchronously. It helps use the available resources at an optimum level without any problems.
 
 #### Use async code where applicable
 
@@ -106,13 +106,13 @@ Stateless software does not share anything between requests. It also doesn't dep
 
 This makes it easy to save the file and serving it can be scaled too with the use of Content Delivery Network (CDN). It also helps in software scalability by separating static and dynamic content. Static content like images and other files like PDF can be served much more efficiently with a CDN than your web server. Utilize your webserver to serve up the dynamic content as web servers like Apache or Nginx are built to do that better than just serving up static files.
 
-#### Replace server-side sessions with something client side
+#### Replace server-side sessions with something client-side
 
 Another classic example is to not use [server-side sessions](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies) for web applications but use client-side cookies. 
 
 > You can easily replace server-side sessions with something like a [JSON Web Token (JWT)](https://jwt.io/) for authentication and authorization.
 
-JWTs can be easily passed to the server on each request from the client as part of the header or as a cookie. It makes scaling software a lot easier as servers can act as [cattle than a pet](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/). If you absolutely need sessions don’t save it on the server file system move it to a datastore like redis which will make the server replaceable easily.
+JWTs can be easily passed to the server on each request from the client as part of the header or as a cookie. It makes scaling software a lot easier as servers can act as [cattle than a pet](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/). If you absolutely need sessions don’t save it on the server file system move it to a datastore like Redis which will make the server replaceable easily.
 The main point here is you should not love your server, they should be disposable and elastic as per the load. This is made possible by writing stateless software which is easily scalable and also highly available.
 
 ## Software Scalability from an operations standpoint
@@ -127,7 +127,7 @@ Similarly, if the components are not laid out well or chosen properly it will ha
 
 ### Vertical scaling vs Horizontal scaling
 
-This is a continuation of the [cattle vs pet](https://www.hava.io/blog/cattle-vs-pets-devops-explained) analogy of servers. Time to analyze it a bit further. Imagine this, you are technically managing a fairly popular e-commerce website that has around 500 orders a day and ~50k users coming to the website. You have a big web server that is close to an [Amazon EC2 m5.4xlarge](https://aws.amazon.com/ec2/instance-types/) spec. It has 16 vCPUs and has a massive 64GB of RAM. Let’s assume your [WooCommerce](https://woocommerce.com/) store is running on it where the web server and MySQL database are also in that same machine.
+This is a continuation of the [cattle vs pet](https://www.hava.io/blog/cattle-vs-pets-devops-explained) analogy of servers. Time to analyze it a bit further. Imagine this, you are technically managing a fairly popular e-commerce website that has around 500 orders a day and ~50k users coming to the website. You have a big web server that is close to an [Amazon EC2 m5.4xlarge](https://aws.amazon.com/ec2/instance-types/) spec. It has 16 vCPUs and has a massive 64GB of RAM. Let’s assume your [WooCommerce](https://woocommerce.com/) store is running on it where the webserver and MySQL database are also in that same machine.
 
 Now, just 3 months before Black Friday the company wants to push for a massive TV campaign and expects 5-7 times more traffic on Black Friday. The management is investing a lot in advertising and the website can’t go down for those 4-5 days.
 
@@ -135,7 +135,7 @@ Now, just 3 months before Black Friday the company wants to push for a massive T
 
 You have 2 options to scale the application now either scale up (vertical scaling) or scale-out (horizontal scaling).
 
-#### Vertical Scaling (Scale Up)
+#### Vertical Scaling (Scale-Up)
 
 If you choose the scale-up path also called vertical scaling. With vertical scaling, you add more hardware to solve the scaling issue.  
 
@@ -145,7 +145,7 @@ The CPU and RAM are 6 times compared to the old machine so theoretically, it sho
 
 But there are 3 main issues, you will need a bit of downtime to upgrade the hardware. The second and main one is that the machine is the single point of failure. If there is an issue in the DB due to load the website can still come crashing down. You will need to scale down later and if the traffic is not as much as expected, there are resources wasted due to over-provisioning.
 
-#### Horizontal scaling (Scale out)
+#### Horizontal scaling (Scale-out)
 
 Another option is to scale-out also known as horizontal scaling. With this path, you will try to get many smaller EC2 instances like 8-50 of t3.mediums.
 
@@ -165,7 +165,7 @@ As this is important let’s explain it visually below:  PS: pardon my bad desig
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/software-scalability/03horizontal-scaling-software-scalability.jpg" title="Horizontal scalability with load balancer for software scalability" alt="Horizontal scalability with load balancer for software scalability">
 
-This is the part where [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/) shine. You can package your workload into lightweight containers and Kubernetes can manage horizontal scaling, rolling deployment etc for those containers. Docker has [changed the way we software engineers’ work](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
+This is the part where [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/) shine. You can package your workload into lightweight containers and Kubernetes can manage horizontal scaling, rolling deployment, etc for those containers. Docker has [changed the way we software engineers’ work](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
 
 One takeaway here is Scaling RDBMS is hard. With things like sharding, it might be easier to Scale-up a relational database than try scaling out if you don’t know what you are doing. Amazon is an example here the same concepts can be applied to any major cloud vendor like Google Cloud or Azure. That leads me to my next point, the usage of NoSQL databases.
 
@@ -179,7 +179,7 @@ This is where a NoSQL datastore is very handy. We can use a NoSQL memory key-val
 
 > Using an in-memory datastore like Redis to serve all the product details will drastically reduce the response times.
 
-Another use can be for searching rather than running complex SQL query to find red t-shirt from Adidas of medium size we can use [Solr](https://lucene.apache.org/solr/) or [Elastic Search](https://www.elastic.co/) for blazing-fast faceted search. Solr is a NoSQL database with transaction support. This can help for software scalability and resilience.
+Another use can be for searching rather than running complex SQL query to find red t-shirt from Adidas of medium size we can use [Solr](https://lucene.apache.org/solr/) or [Elastic Search](https://www.elastic.co/) for blazing-fast faceted search. Solr is a NoSQL database with transaction support. This can help with software scalability and resilience.
 
 Both Redis and Solr/Elastic search will need some data to be filled up in advance to function but they surely outweigh the benefits of not hitting a relational database on each client request.
 
@@ -211,7 +211,7 @@ You can have a look at a [Node.js Memoization](/blog/2020/11/nodejs-for-php-deve
 
 #### HTTP Caching for scalable software
 
-Another level of caching can be done on the HTTP layer. With good use of [HTTP headers](https://web.dev/http-cache/) responses can be cached for a desired amount of time. This can also be implemented with an application like [Cloudflare](https://support.cloudflare.com/hc/en-us/articles/202775670-Customizing-Cloudflare-s-cache) to set up rules to cache responses for minutes or hours to reduce the load on the servers. This type of caching mechanism helps us achieve a high level of software scalability.
+Another level of caching can be done on the HTTP layer. With good use of [HTTP headers](https://web.dev/http-cache/) responses can be cached for a desired amount of time. HTTP Caching can also be implemented with an application like [Cloudflare](https://support.cloudflare.com/hc/en-us/articles/202775670-Customizing-Cloudflare-s-cache) to set up rules to cache responses for minutes or hours to reduce the load on the servers. This type of caching mechanism helps us achieve a high level of software scalability.
 
 If you have the capacity to manage a full-on HTTP cache and HTTP accelerator, [Varnish](https://varnish-cache.org/index.html) is a great option. Varnish claims:
 
@@ -225,6 +225,6 @@ I am not sure if a [read replica](https://cloud.google.com/sql/docs/mysql/replic
 
 Software scalability is a difficult problem, what makes it even more complex is the context.
 
-> What is very high scale for a medium size company may be of no concern to one of the [FAANG](https://en.wikipedia.org/wiki/Big_Tech) companies. It is about RPM/RPS your software systems handle everyday.
+> What is a very high scale for a medium-size company may be of no concern to one of the [FAANG](https://en.wikipedia.org/wiki/Big_Tech) companies. It is about RPM/RPS your software systems handle every day.
 
 I have not worked with systems that have 100K or millions of requests per second, I have only read about that scale. I have seen and worked with systems with 100s to sometimes 1000s of requests per second. Even at this volume software scalability is an interesting and challenging problem to meet high demands.
