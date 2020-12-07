@@ -1,18 +1,21 @@
 ---
 layout: post
-title: "How to do a zero downtime database (DB) migration (schema change) with a practical example"
-date: 2018-04-30 22:00:41 +04:00
+title: How to do a zero downtime database (DB) migration (schema change) with a practical
+  example
+date: 2018-04-30T22:00:41.000+04:00
 comments: true
 tags:
 - database
 - deployment
 - devops
 - Software Engineering
-cover: /images/db-migration/db-migration.png
-description: Database migration on a production database is never simple. You can run your alter statements with zero or minimal downtime following the steps mentioned below with a practical example.
+cover: "/images/db-migration/db-migration.png"
+description: Database migration on a production database is never simple. You can
+  run your alter statements with zero or minimal downtime following the steps mentioned
+  below with a practical example.
 keywords: database, sql, database migration, database schema migration
----
 
+---
 Database migration on a production database is never simple. Depending on the volume of requests some teams schedule database migration to off hours. You can run your alter statements with zero or minimal downtime following the steps mentioned below with a practical example.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/db-migration/db-migration.png" title="How to do a zero downtime database" alt="How to do a zero downtime database">
@@ -20,6 +23,8 @@ Database migration on a production database is never simple. Depending on the vo
 <!-- more -->
 
 ## Example
+
+Before jumping to the example, read how [MySQL relational database](https://milapneupane.com.np/2019/07/06/how-to-work-optimally-with-relational-databases/) works to refresh your database knowledge. It will help you undertand how database migrations can be done in a better way.
 
 As an example for this post, let's assume you work for an E-commerce company which has both recurring and new customers. You have partners who publicize a discount code valid for a given date range and get a percent of the order's total tracked by their discount code. Below is the schema for the partner and coupon code. Below is the initial schema before any change:
 
