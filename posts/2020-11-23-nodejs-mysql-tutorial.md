@@ -254,7 +254,7 @@ When you hit `http://localhost:3000` after starting the express js app, you can 
 
 Let’s pull similar data from our database table `quote` and improvise more on it.
 
-To show multiple quotes we will change the static response with a dynamic one. For that we will need to connect to the database. Let’s create a config file that has the database credentials like below called `config.js` at the root of the project (besides app.js):
+To show multiple quotes we will change the static response with a dynamic one. For that, we will need to connect to the database. Let’s create a config file that has the database credentials like below called `config.js` at the root of the project (besides app.js):
 
 ``` js
 const env = process.env;
@@ -386,7 +386,7 @@ module.exports = {
 }
 ```
 
-We will use this helper.js file to calculate the offset. The other function will return an empty array if rows variable is empty, else it will return rows.
+We will use this helper.js file to calculate the offset. The other function will return an empty array if the rows variable is empty, else it will return rows.
 
 Next we will update the query to get quotes in `/services/quotes.js` service. The change quote service looks like below:
 
@@ -591,7 +591,7 @@ As all the code is in a public [Github repository](https://github.com/geshan/nod
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/04quotes-dynamic-output.jpg" title="Quotes API with dynamic output from DB" alt="Quotes API dynamic output for Node.js MySQL tutorial using Express js from DB table quote">
 
-You can look at the code and try to see how the whole thing is pieced together in this Node.js MySQL tutorial with Express Js for a quotes REST API. This API can act like a good base for a [Node.js microservice](/blog/2020/11/nodejs-microservices/).
+You can look at the code and try to see how the whole thing is pieced together in this Node.js MySQL tutorial with Express Js for a quotes REST API. This API can act as a good base for a [Node.js microservice](/blog/2020/11/nodejs-microservices/).
 
 You can dockerize the REST API app following this step-by-step [tutorial](/blog/2020/11/nodejs-with-docker/). After that app is dockerized you can host it easily on something like Google Cloud Run. If you want a quick start testing ground without Docker, I would recommend [Glitch](https://glitch.com/).
 
