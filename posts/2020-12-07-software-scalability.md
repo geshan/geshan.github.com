@@ -1,14 +1,19 @@
 ---
 layout: post
-title: 6 dev and operations factors to consider for software scalability to meet high demands
+title: 6 dev and operations factors to consider for software scalability to meet high
+  demands
 date: 2020-12-07T20:15:25.000+11:00
 comments: true
 tags:
 - Software Engineering
 cover: "/images/software-scalability/01software-scalability.jpg"
-pagetitle: "Software scalability: 6 dev and operations factors to consider for meeting high demands"
-description: Software scalability is an interesting issue to have. Read this 2500+ post to know dev and ops aspects to focus on to achieve scalable software.
-keywords: sofware scalability, scalable software, high scalability, scaling system, scalable software architecture, highly scalable
+pagetitle: 'Software scalability: 6 dev and operations factors to consider for meeting
+  high demands'
+description: Software scalability is an interesting issue to have. Read this 2500+
+  words post to know dev and ops aspects to focus on for achieving scalable software.
+keywords: sofware scalability, scalable software, high scalability, scaling system,
+  scalable software architecture, highly scalable
+
 ---
 Software scalability is an interesting issue to have. Making software scalable consists of multiple factors, we discuss some dev (code) related and a few operations (platforms) associated aspects in this blog post.
 
