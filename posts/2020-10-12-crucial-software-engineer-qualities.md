@@ -13,7 +13,7 @@ description: There are many software engineer qualities that will make you stand
 keywords: software engineer qualities
 
 ---
-There are many software engineer qualities that will make you stand out. Among them, these 3 are crucial for you to become a great software engineer and leave the competition behind. Surely technical qualities matter a lot to be counted as a superior software engineer. On the other hand, this post is geared towards the non-technical aspects of software engineering.
+There are many qualities of a great software engineer that will make you stand out. Among them, these 3 are crucial for you to become a great software engineer and leave the competition behind. Surely technical qualities matter a lot to be counted as a superior software engineer. On the other hand, this post is geared towards the non-technical aspects of software engineering.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/software-engineer-skills/01great-software-engineer.jpg" title="Crucial qualities of a great software engineer" alt="Softwrae engineer coding">
 
@@ -21,11 +21,11 @@ There are many software engineer qualities that will make you stand out. Among t
 
 ## Software engineer qualities to work on
 
-With no doubt, a great software engineer writes working, testable and maintainable code. There are numerous technical skills that will be required to differentiate yourself as a great software engineer. Writing clean code, debugging bugs, and following standard are some of these technical skills.
+With no doubt, a great software engineer writes working, testable and maintainable code. Numerous technical skills will be required to differentiate yourself as a great software engineer. Writing clean code, debugging bugs, and following standard are some of these technical skills.
 
-Some opine [positive attitude and communication skills](https://www.scalablepath.com/blog/7-qualities-that-differentiate-a-good-programmer-from-a-great-programmer/) as must-have qualities of a great software engineer. Another [post](https://devskiller.com/qualities-great-developer/) points to curiosity and a love of learning to be essential to be an efficient software engineer.
+Some opine [positive attitude and communication skills](https://www.scalablepath.com/blog/7-qualities-that-differentiate-a-good-programmer-from-a-great-programmer/) as must-have qualities of a great software engineer. Another [post](https://devskiller.com/qualities-great-developer/) points to curiosity and a love of learning to be essential to be an efficient software engineer. You can find a [great software engineer](https://distantjob.com/blog/is-eastern-europe-a-good-source-of-software-engineering-talent/) in Eastern Europe too if you are looking for one.
 
-For this post, we are more concerned than just the hard skills needed to prove yourself as a valuable software engineer. You can find [great software engineer](https://distantjob.com/blog/is-eastern-europe-a-good-source-of-software-engineering-talent/) in Eastern Europe too, if you are looking for one. Let’s proceed to the software engineer qualities you need to work on to set you up for success:
+For this post, we are more concerned than just the hard skills needed to prove yourself as a valuable software engineer. Let’s proceed to the software engineer qualities you need to work on to set you up for success:
 
 ## Good business acumen
 
@@ -41,7 +41,7 @@ Think of the trade-offs and the cost to benefit ratio too. For instance, once we
 
 This is an example of good business acumen as the business was not losing any money. Yes, a fraction of the customers were facing a minor inconvenience but that was also fixed in about a week.
 
-Product managers/owners must have great business acumen. It is also important for software engineers to have good business acumen. I have never seen a software engineer who as promoted and had bad business acumen. Maybe their technical skill was a bit rusty but it was easily covered by good business acumen.
+Product managers/owners must have great business acumen. It is also important for software engineers to have good business acumen. I have never seen a software engineer who was promoted and had bad business acumen. Maybe their technical skill was a bit rusty but it was easily covered by good business acumen.
 
 If you work as a software engineer for an e-commerce company, you must know what the [conversion rate](https://www.nngroup.com/articles/conversion-rates/) is. Similarly, it is better to know things like [Customer acquisition cost (CAC)](https://blog.hubspot.com/service/what-does-cac-stand-for) and [Customer Lifetime Value(CLTV)](https://blog.hubspot.com/service/how-to-calculate-customer-lifetime-value). In case you are working for a SAAS business, you much understand what [churn rate](https://blog.hubspot.com/service/what-is-churn-rate) is all about to sharpen your business acumen. You can learn more about how investors look at numbers in a fun way by watching [Shark Tank](https://www.youtube.com/channel/UCmdI-Y9DGqIUzVXGZ-o1pOQ). It sums up to having a great sense of how the business works and accumulate valuable domain knowledge over time are super crucial qualities of a great software engineer.
 
