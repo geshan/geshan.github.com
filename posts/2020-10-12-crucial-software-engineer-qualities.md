@@ -19,14 +19,13 @@ There are many software engineer qualities that will make you stand out. Among t
 
 <!-- more -->
 
-
 ## Software engineer qualities to work on
 
-With no doubts, a great software engineer writes working, testable and maintainable code. There are numerous technical skills that will be required to differentiate yourself as a great software engineer. Writing clean code, debugging bugs, and following standard are some of these technical skills.
+With no doubt, a great software engineer writes working, testable and maintainable code. There are numerous technical skills that will be required to differentiate yourself as a great software engineer. Writing clean code, debugging bugs, and following standard are some of these technical skills.
 
 Some opine [positive attitude and communication skills](https://www.scalablepath.com/blog/7-qualities-that-differentiate-a-good-programmer-from-a-great-programmer/) as must-have qualities of a great software engineer. Another [post](https://devskiller.com/qualities-great-developer/) points to curiosity and a love of learning to be essential to be an efficient software engineer.
 
-For this post, we are more concerned than just the hard skills needed to prove yourself as a valuable software engineer. Let’s proceed to the software engineer qualities you need to work on to set you up for success:
+For this post, we are more concerned than just the hard skills needed to prove yourself as a valuable software engineer. You can find [great software engineer](https://distantjob.com/blog/is-eastern-europe-a-good-source-of-software-engineering-talent/) in Eastern Europe too, if you are looking for one. Let’s proceed to the software engineer qualities you need to work on to set you up for success:
 
 ## Good business acumen
 
@@ -34,17 +33,17 @@ Simply put, [business acumen](https://www.advantexe.com/what-is-business-acumen)
 
 > Solutions and value to the business is much more important than the latest language/framework.
 
-As a software engineer, you must not worship a particular language or framework. Similarly, you should not apply the latest trends and fads to your day to day work just because it is trendy. Always think of what value does it add to the business. Also, analyze, how does it help make/save money to the business. 
+As a software engineer, you must not worship a particular language or framework. Similarly, you should not apply the latest trends and fads to your day to day work just because it is trendy. Always think of what value does it add to the business. Also, analyze, how does it help make/save money for the business.
 
-Think of the trade-offs and the cost to benefit ratio too. For instance, once we became aware of a bug. It was affecting ~0.25% of the customers. 
+Think of the trade-offs and the cost to benefit ratio too. For instance, once we became aware of a bug. It was affecting \~0.25% of the customers.
 
-> The cost of fixing the issue at that time was far more than not fixing it. We did eventually fix the small bug but it was only in the next sprint. 
+> The cost of fixing the issue at that time was far more than not fixing it. We did eventually fix the small bug but it was only in the next sprint.
 
 This is an example of good business acumen as the business was not losing any money. Yes, a fraction of the customers were facing a minor inconvenience but that was also fixed in about a week.
 
 Product managers/owners must have great business acumen. It is also important for software engineers to have good business acumen. I have never seen a software engineer who as promoted and had bad business acumen. Maybe their technical skill was a bit rusty but it was easily covered by good business acumen.
 
-If you work as a software engineer for an e-commerce company, you must know what [conversion rate](https://www.nngroup.com/articles/conversion-rates/) is. Similarly, it is better to know things like [Customer acquisition cost (CAC)](https://blog.hubspot.com/service/what-does-cac-stand-for) and [Customer Lifetime Value(CLTV)](https://blog.hubspot.com/service/how-to-calculate-customer-lifetime-value). In case you are working for a SAAS business, you much understand what [churn rate](https://blog.hubspot.com/service/what-is-churn-rate) is all about to sharpen your business acumen. You can learn more about how investors look at numbers in a fun way watching [Shark Tank](https://www.youtube.com/channel/UCmdI-Y9DGqIUzVXGZ-o1pOQ). It sums up to having a great sense of how the business works and accumulate valuable domain knowledge over time are super crucial qualities of a great software engineer.
+If you work as a software engineer for an e-commerce company, you must know what the [conversion rate](https://www.nngroup.com/articles/conversion-rates/) is. Similarly, it is better to know things like [Customer acquisition cost (CAC)](https://blog.hubspot.com/service/what-does-cac-stand-for) and [Customer Lifetime Value(CLTV)](https://blog.hubspot.com/service/how-to-calculate-customer-lifetime-value). In case you are working for a SAAS business, you much understand what [churn rate](https://blog.hubspot.com/service/what-is-churn-rate) is all about to sharpen your business acumen. You can learn more about how investors look at numbers in a fun way by watching [Shark Tank](https://www.youtube.com/channel/UCmdI-Y9DGqIUzVXGZ-o1pOQ). It sums up to having a great sense of how the business works and accumulate valuable domain knowledge over time are super crucial qualities of a great software engineer.
 
 ## Highly responsible
 
@@ -56,13 +55,13 @@ A quality of a great software engineer is that they follow up the task on hand v
 
 > For an efficient and highly responsible software engineer the Quality Assurance (QA) team is more like a gate to pass by not a group of testers.
 
-The engineer would have already thoroughly tested their work by both automated and manual ways. Finding obvious bugs in the work done by an amazing engineer would be difficult. As they would be already highly responsible to think about that edge case or that probable use-case and tackled it in the code. They might have gone ahead to write tests for such scenarios so that it doesn’t come back and bite the team in the future.
+The engineer would have already thoroughly tested their work in both automated and manual ways. Finding obvious bugs in the work done by an amazing engineer would be difficult. As they would be already highly responsible to think about that edge case or that probable use-case and tackled it in the code. They might have gone ahead to write tests for such scenarios so that it doesn’t come back and bite the team in the future.
 
-Following true DevOps and SRE philosophy, a great software engineer will own their work and be accountable for it. 
+Following true DevOps and SRE philosophy, a great software engineer will own their work and be accountable for it.
 
-> If things break in something they have developed and deployed, they will be the first to respond. 
+> If things break in something they have developed and deployed, they will be the first to respond.
 
-The response can be as quick as a rollback or even write a quick fix to patch the issue temporarily. They will come back to the issue and release a permanent solution to the issues introduced by code they have added. Basically, great software engineers truly live by the philosophy of [you build it you run it](https://www.atlassian.com/incident-management/devops/you-built-it-you-run-it). They also make great [on-call](https://skeltonthatcher.com/2017/10/18/build-run-developers-also-call/) engineers.
+The response can be as quick as a rollback or even write a quick fix to patch the issue temporarily. They will come back to the issue and release a permanent solution to the issues introduced by the code they have added. Basically, great software engineers truly live by the philosophy of [you build it you run it](https://www.atlassian.com/incident-management/devops/you-built-it-you-run-it). They also make great [on-call](https://skeltonthatcher.com/2017/10/18/build-run-developers-also-call/) engineers.
 
 ## Ace team players
 
@@ -72,7 +71,7 @@ A great software engineer will always look out for the whole team. They will hel
 
 > Great software engineers have this innate ability to translate technical jargon and requirements into simple layman language.
 
-This in turn helps all team members understand what is being done. For instance, a non-technical product owner can easily explain to the executive why this feature will take more time. As a valuable software engineer would go the extra mile to explain the need to refactor and then only do the main task. This will make it faster in the long run and make the feature more reliable too.
+This in turn helps all team members understand what is being done. For instance, a non-technical product owner can easily explain to the executive why this feature will take more time. A valuable software engineer would go the extra mile to explain the need to refactor and then only do the main task. This will make it faster in the long run and make the feature more reliable too.
 
 A great software engineer is an impact multiplier. Let’s say if s/he is somewhat free and they see that the QA person has a lot to do in this sprint. They will not think twice about helping the QA person and help the QA person.
 
