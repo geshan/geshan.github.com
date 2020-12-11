@@ -97,7 +97,7 @@ If you want to reduce the latency when there are many orders you can always scal
 
 #### Use async code where applicable
 
-Another example of asynchronous processing is using async code. Depending on the language, you should be able to push some tasks to the background. While the task is being executed, a response can be sent that it is scheduled. You can look at a Node.js [example](/nodejs-for-php-developers/#node.js-code-execution-is-async-and-non-sequential) of an async response. Of course, this depends on your language of choice, some languages like PHP might not support async code out of the box.
+Another example of asynchronous processing is using async code. Depending on the language, you should be able to push some tasks to the background. While the task is being executed, a response can be sent that it is scheduled. You can look at a Node.js [example](/blog/2020/11/nodejs-for-php-developers/#node.js-code-execution-is-async-and-non-sequential) of an async response. Of course, this depends on your language of choice, some languages like PHP might not support async code out of the box.
 
 ### Write stateless applications for scalable software
 
