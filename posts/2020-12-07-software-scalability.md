@@ -224,7 +224,7 @@ If you have the capacity to manage a full-on HTTP cache and HTTP accelerator, [V
 
 With a 1 million + download of the [Varnish Docker image](https://hub.docker.com/_/varnish), I think people might have configured it well on [Kubernetes](https://dealancer.medium.com/creating-a-scalable-and-resilient-varnish-cluster-using-kubernetes-853f03ec9731) too for unmatched software scalability with great HTTP caching.
 
-I am not sure if a [read replica](https://cloud.google.com/sql/docs/mysql/replication/create-replica#:~:text=A%20read%20replica%20is%20a,analytics%20traffic%20from%20the%20primary) is a pure [database caching](https://aws.amazon.com/caching/database-caching/) mechanism. But I am very sure that it helps in software scalability putting less pressure on the main database by running the read queries on the read replica. There are other ways to implement cache on an N-tire application. Depending on your architecture you might want to add a cache to speed up things as well as give a boost to software scalability.
+I am not sure if a [read replica](https://cloud.google.com/sql/docs/mysql/replication/create-replica#:~:text=A%20read%20replica%20is%20a,analytics%20traffic%20from%20the%20primary) is a pure [database caching](https://aws.amazon.com/caching/database-caching/) mechanism. But I am very sure that it helps in software scalability putting less pressure on the main database by running the read queries on the read replica. There are other ways to implement cache on an N-tier application. Depending on your architecture you might want to add a cache to speed up things as well as give a boost to software scalability.
 
 ## Conclusion
 
