@@ -23,7 +23,7 @@ Google [Cloud Run](https://cloud.google.com/run/) makes deploying serverless con
 
 ## Serverless pain points
 
-Function as a service (FAAS) has lots of advantages, still, there are some pain points too. [Bret McGowen](https://twitter.com/bretmcg) (a developer advocate at Google Cloud) did a survey about `Serverless pain points`. Below is a summary of the results (as presented at [Serverless Conf 2019 NYC](https://acloud.guru/series/serverlessconf-nyc-2019/view/what-is-cloud-run) by Bret)
+Function as a service (FAAS) has lots of advantages, still, there are some pain points too. A developer advocate at Google Cloud did a survey about `Serverless pain points`. Below is a summary of the results as presented at a conference in 2019.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/reasons-to-use-google-cloud-run/01serverless-issues.jpg" title="Serverless Pain points from a survey" alt="Serverless Pain points from a survey">
 
@@ -31,7 +31,7 @@ It is very clear that `Cold Starts` and `Vendor Lock-in` are the two big ones. I
 
 ## How I ran into Google Cloud Run
 
-A year back I was helping some masters students here in Sydney with a side project. I was mentoring them, guiding them to have a real-world project they could include in their resumes. For this project, we started using Google Cloud Platform, why? Because you get [$300 free credit](https://cloud.google.com/free/docs/gcp-free-tier) for a year :) simple. There are other Serverless containers offerings like [AWS Fargate](https://aws.amazon.com/fargate/) and [Azure Containers](https://azure.microsoft.com/en-au/product-categories/containers/). I don’t think they are as good and as software engineer friendly as Cloud Run. In my opinion, Google Cloud Run actually brings serverless containers to the masses. Running serverless containers on Cloud Run is very easy. If you can dockerize your app, you can run it in a serverless way on Cloud Run on serverless containers.
+A year back I was helping some master's students here in Sydney with a side project. I was mentoring them, guiding them to have a real-world project they could include in their resumes. For this project, we started using Google Cloud Platform, why? Because you get [$300 free credit](https://cloud.google.com/free/docs/gcp-free-tier) for a year :) simple. There are other Serverless container offerings like [AWS Fargate](https://aws.amazon.com/fargate/) and [Azure Containers](https://azure.microsoft.com/en-au/product-categories/containers/). I don’t think they are as good and as software engineer friendly as Cloud Run. In my opinion, Google Cloud Run actually brings serverless containers to the masses. Running serverless containers on Cloud Run is very easy. If you can dockerize your app, you can run it in a serverless way on Cloud Run on serverless containers.
 
 I wanted to learn how to set up a Google Kubernetes Engine ([GKE](https://cloud.google.com/kubernetes-engine/)) Kubernetes cluster, so I teamed up with another DevOps Engineer and started to configure a Kubernetes cluster. As the app’s backend API was already containerized and GKE was managed K8s I thought getting a running URL would not take long.
 
@@ -63,7 +63,7 @@ As Cloud run is serverless you already have the advantages of a Serverless offer
 
 The first thing to distinguish is Function as a Service (FAAS) is only one type of serverless offering, Amazon S3 is a backend as a service and it is also a serverless offering. So, as we generally think FAAS = serverless. Going Serverless means to deploy a function to one of the cloud providers. This has its own strings attached, you have too many functions to manage, you need to think of how to manage a fully stateless function, etc.
 
-Then you might need to learn a new framework like [Serverlss framework](https://serverless.com/) to get the real value out of a FAAS.
+Then you might need to learn a new framework like the [Serverless framework](https://serverless.com/) to get the real value out of a FAAS.
 
 > With containers it's all gone, you are probably using [docker](https://geshan.com.np/blog/categories/docker/) containers already. Instead of deploying them on your Kubernetes cluster, you can just run them on fully managed Cloud Run and it works.
 
