@@ -461,6 +461,8 @@ As you have a basic GET API up and running you can add more features to it like:
 
 I will leave it up to you on what else you would want to build on top of the newly created GET quotes REST API endpoint. The next step is to create a POST API to create new quotes.
 
+If you want to try a hosted DB you can check this [Node.js HarperDB](https://amanhimself.dev/blog/build-rest-api-with-nodejs-harperdb/) tutorial.
+
 ### Save new quote - POST API for Node.js MySQL tutorial
 
 To create new quotes we will need a Post API. Before we get on with it, let’s clear out our assumptions:
