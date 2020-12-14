@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "5 tech medium publications software engineers should strive to write for"
-date: 2018-12-05 19:16:06 +11:00
+title: 9+ tech medium publications software engineers should strive to write for
+date: 2018-12-05T19:16:06.000+11:00
 comments: true
-tags: 
+tags:
 - Technology
 - Misc
-cover: /images/5-tech-medium-publications/library.jpg
-description: Some popular medium posts you as a technology writer should start writing for are listed in this post.
-keywords: Blog, Blogging, medium, writing
-lastModified: 2020-04-23 10:01:22 +11:00
+cover: "/images/5-tech-medium-publications/library.jpg"
+description: '9+ popular medium posts you as a technology writer should start writing
+  for are listed in this post. One tip: JavaScript related writers are high in demand,
+  read on.'
+keywords: Blog, Blogging, medium, writing, tech medium publication
+lastModified: 2020-12-13T22:01:22Z
+
 ---
 Starting a tech blog has changed in the last few years. 10 years back starting a blog without your website, you had 2 options Blogger or Wordpress. Both gave you a free sub-domain. Things did not change much for quite some time, but in 2012 medium came with a storm. It gained a lot of traction with its simplistic interface in 2014-2015. With the publication feature, Medium makes it very easy for a group of writers to collaborate.  These days I would suggest most people start their blog on it.
 
@@ -24,7 +27,7 @@ Writing is never easy for most people. If you don't try it you never know if it 
 
 Writing is another form of expressing yourself. As people working in the tech domain, we need this skill of expressing ourselves well. Similarly, reading and learning about new things is also very important in our field. Learning is essential to survive in tech and move forward. Open source software there are a lot of consumers compared to producers. Likewise, there are a lot of readers for tech content but relatively much fewer writers.  
 
-## Tech Medium publications accepting writers
+## Tech Medium publications accepting writers (as of 2018-2019)
 
 Below are the tech publications on Medium I would suggest all software engineers to follow to sharpen their skills:
 
@@ -48,9 +51,34 @@ ITNEXT seems to cover a wider array of topics from DevOps to Javascript. It call
 
 Bits and Pieces look like a pretty active tech medium publication. It has content covering topics like NodeJs, PHP and mobile development. With a motto of "Coding In The Age Of Code Components". It somewhat lives up to it. It has detailed "Write a post" [page](https://blog.bitsrc.io/how-to-write-a-post-for-bits-and-pieces-13de0133151b) which includes lots of examples. With 5 editors and more than 65 writers, it is an expanding publication. I think the barrier to entry should not be that high. The waiting time for a story to be published should be less as well.  
 
+## Update 2020
+
+In 2020, both FreeCodeCamp and Hackernoon have moved to their own platforms. FreeCodeCamp is using the [Ghost CMS](https://ghost.org/) and Hackernoon has built it's own CMS. Other publications are still on Medium.
+
+## Update 2021
+
+To make the list more comprehensive I am adding some more great medium publicaitons, as follows:
+
+### [Better Programming](https://medium.com/better-programming) - 165K followers
+
+Better programming as a tech medium publication with a whopping 165K followers is only second to [Towards Data Science](https://towardsdatascience.com/) with 510K followers. It is also very popular and wants writers to [write about](https://medium.com/better-programming/write-for-us-5c4bcba59397) tutorials, actionanble advice and deep dives. The Better branding with a B in differnt colors has [Better Marketing](https://medium.com/better-marketing) and [Better Humans](https://medium.com/better-humans) as other highly successful publications. All 3 brands accept stories from freelance writers. Better programming has great writeups on JavasScript, CSS and even databases.
+
+### [Level Up Coding](https://levelup.gitconnected.com/) - 54K followers
+
+Level Up Coding is under the Gitconnected brand. It has a [write for us](https://levelup.gitconnected.com/how-to-get-published-on-gitconnected-dac547ef556b) page recommedning to write about step-by-step guides, programming tips, and following best practices to mentions some from the list. They have articiles published from Go Lang to Javascirpt and from Python to Git. So many things under the sofware enginerring universe is covered at Level Up Coding. With more than 54K followers it is with less doubts a popular tech medium publication.
+
+### [DailyJs](https://medium.com/dailyjs) - 108K followers
+
+DailyJs is a very popular medium tech publicaiton with 108K followers. If you write anything related to JavaScript you should aim at [submitting](https://medium.com/dailyjs/how-to-submit-your-story-to-dailyjs-30f02b2d5287) the medium post to DailyJs. They claim to have "received over 1M total views" and their [twitter](https://twitter.com/javascriptdaily) account has 432.4K followers. Send that email to Chris and be part of a thriving JavaScript medium publication.
+
+
+### [JavaScript In Plain English](https://medium.com/javascript-in-plain-english) - 40K followers
+
+Another JavsScript focused tech medium publication happy to take your medium stories is JavaScript In Plain English. Their [write for us](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-join-our-team-b0854ead7d14) mentions you can submit anything related to JavaScript. You can send Sunil an email or DM him on twitter to get he process started. In addition to JavaScript medium stories I have found a few posts on CV and databases too on JavaScirpt in Plain English. With more than 40K followers it is a great publiction to get a wider audience for your medium posts.
+
 ## Popular Niche Ones
 
-I would like to mention some popular niche publications. First one is [DailyJs](https://medium.com/dailyjs) with 89K followers have a "Submit Your Story" [page](https://medium.com/dailyjs/how-to-submit-your-story-to-dailyjs-30f02b2d5287). [UX Collective](https://uxdesign.cc/) with 228K follower is also [calling for stories](https://uxdesign.cc/submit-your-article-to-uxdesign-cc-abea95d3a1ba). Last but not least, [UX Planet](https://uxplanet.org/) having 173K followers also wants you to write for [them](https://uxplanet.org/how-to-publish-your-content-on-ux-planet-fd9dc99756db).
+[UX Collective](https://uxdesign.cc/) with 228K follower is also [calling for stories](https://uxdesign.cc/submit-your-article-to-uxdesign-cc-abea95d3a1ba). Last but not least, [UX Planet](https://uxplanet.org/) having 173K followers also wants you to write for [them](https://uxplanet.org/how-to-publish-your-content-on-ux-planet-fd9dc99756db).
 
 ## Honorable Mention
 
@@ -59,10 +87,6 @@ Though [dev.to](https://dev.to/) is not a Medium publication but it surely deser
 > Currently the 11,357th website in the world, it has no editorial process. 
 
 This makes it one of the most accessible website to write for that without doubts has a big audience. I got [2250+ followers](https://dev.to/geshan) on Dev.to in less than 2 months having just 20 posts.
-
-## Update 2020
-
-In 2020, both FreeCodeCamp and Hackernoon have moved to their own platforms. FreeCodeCamp is using the [Ghost CMS](https://ghost.org/) and Hackernoon has built it's own CMS. Other publications are still on Medium.
 
 ## Conclusion
 
