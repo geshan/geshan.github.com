@@ -572,7 +572,7 @@ Below is the output of both cURL commands:
 
 Depending on the configs and the database records you might get a `duplicate entry` error. Just change the quote to something different and try. The code changes for the POST quote API is in this [pull request](https://github.com/geshan/nodejs-mysql/pull/6/files).
 
-You can find lots of quotes to try [here](https://quote-garden.herokuapp.com/api/v2/genres/computer?page=1&limit=100).
+You can find lots of quotes to try [here](https://github.com/skolakoda/programming-quotes-api).
 
 ---
 
