@@ -54,7 +54,7 @@ I have mentioned this in my previous post about [how to get your pull request re
 
 ## Example of small pull requests
 
-We will be using an example application that gives out currency conversion rates. The application is [open source](https://github.com/geshan/currency-api) and already [running](https://currency-api.geshanm.now.sh/api/convert/USD/AUD/2020-10-02). For this example, we are adding a new feature to list all the rates for a given currency with pagination.
+We will be using an example application that gives out currency conversion rates. The application is [open source](https://github.com/geshan/currency-api) and already running. For this example, we are adding a new feature to list all the rates for a given currency with pagination.
 
 As we want to have small pull requests we will divide the task into two pull requests.
 
