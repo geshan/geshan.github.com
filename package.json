@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/geshan/geshan.github.com.git"
   },
   "author": {
     "name": "Geshan Manandhar",
@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/geshan/geshan.github.com/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/geshan/geshan.github.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
