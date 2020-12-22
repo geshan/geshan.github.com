@@ -101,6 +101,8 @@ Business value is the most important thing a software engineer can deliver. If y
 
 You can get your product to the hands of your customers much faster. Even if your product becomes a massive hit and garners millions of requests per day as you are serverless the cloud provider (in this case Google) is going to scale your apps for you (given they are stateless). So you as a software engineer can focus on solving business problems to make more money for the business with serverless containers doing their job well.
 
+On a different note, do try this tutorial if you want to deploy a [Node.js application to Azure]().
+
 ## Conclusion
 
 Vendor lock-in and cold start are the two major issues with FAAS serverless model. With Google Cloud run you don’t need to worry about both these big issues for serverless containers.
