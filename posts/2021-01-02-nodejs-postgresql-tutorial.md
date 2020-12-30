@@ -4,7 +4,8 @@ title: "Node.js Postgresql tutorial: Build a simple REST API with Express step-b
 date: 2021-01-02T22:45:35.000+11:00
 comments: true
 tags:
-- Misc
+- Web Development
+- NodeJs
 cover: "/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg"
 pagetitle: 'Node.js Postgresql tutorial: Build a simple REST API with Express step-by-step'
 description: "Follow this 2500+ word step-by-step tutorial to learn Node.js and PostgreSQL
@@ -18,6 +19,26 @@ Node.js can be used efficiently with relational databases like PostgreSQL. In th
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg" title="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step" alt="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step">
 
 <!-- more -->
+
+## Table of contents
+
+<nav class="toc">
+
+1. [Prerequisites](#prerequisites)
+1.  [Steps for Node.js PostgreSQL tutorial](#steps-for-node.js-postgresql-tutorial)
+    1.  [Setup Express with express generator](#setup-express-with-express-generator)
+        1.  [Delete the public folder](#delete-the-public-folder)
+        2.  [Delete unnecessary existing routes then create a new route for quotes](#delete-unnecessary-existing-routes-then-create-a-new-route-for-quotes)
+        3.  [Change index route to give out JSON](#change-index-route-to-give-out-json)
+    2.  [Setup PostgreSQL with quote table](#setup-postgresql-with-quote-table)
+    3.  [Link Node.js with Postgres](#link-node.js-with-postgres)
+    4.  [Show Quotes - GET API with pagination](#show-quotes---get-api-with-pagination)
+    5.  [Save a new quote - POST API for Node.js PostgreSQL tutorial](#save-a-new-quote---post-api-for-node.js-postgresql-tutorial)
+        1.  [Adding validation for creating quotes POST API](#adding-validation-for-creating-quotes-post-api)
+2.  [TLDR; quick rundown](#tldr%3B-quick-rundown)
+3.  [Conclusion](#conclusion)
+
+</nav>
 
 You can read my previous tutorial to try [Node.js with MySQL](/blog/2020/11/nodejs-mysql-tutorial/). You should read this guide to use [Docker with Node.js](/blog/2020/11/nodejs-with-docker/), it is also a step-by-step guide. You can, of course, carry on with this Node.js with PostgreSQL tutorial :). 
 
@@ -421,7 +442,7 @@ With the create quote POST API working. You can easily build upon it to create t
 
 Similar to the previous steps, all the code changes for this step can be found in this [pull request](https://github.com/geshan/nodejs-posgresql/pull/6/files).
 
-### Adding validation for creating quotes POST API
+#### Adding validation for creating quotes POST API
 
 Till now it should be functional but we should not push validation to the database layer as it will be more resource expensive. So in the next part of this step, we will add validation on the code level.
 
