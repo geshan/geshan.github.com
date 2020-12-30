@@ -7,7 +7,9 @@ eleventyNavigation:
   order: "3"
 date: 2020-12-28T14:21:25.000+00:00
 cover: "/images/geshan.jpg"
-description: I am Geshan. I am a software engineer, with more than a decade of software engineering experience. I have been blogging since 2007.
+description: I am Geshan. I am a software engineer, with more than a decade of software
+  engineering experience. I have been blogging since 2007.
+
 ---
 Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia serving THE ICONIC as a lead software engineer. 
 
@@ -15,9 +17,19 @@ Hi, I am Geshan. I am a software engineer, with more than a decade of software e
 
 I have a keen interest in REST architecture, microservices and cloud computing. I am a language-agnostic software engineer who believes the value provided to the business is more important than the choice of language or framework.
 
+## Consciously evolving
+
+I was born and lived the majority of my life in Kathmandu, Nepal. I have lived and worked in the Netherlands, U.A.E and Australia. This multi-cultural experience has enriched my life in various aspects. It has also given me chances to work on software systems of varying scale that millions of customers have used, benefitted from and can rely upon.
+
 ## Day to day
 
 Day to day, I use mainly Javascript (Node.js) and PHP with MySQL database to translate business requirements into reliable, scalable, and reslilient software.
+
+## Why This blog?
+
+I have been blogging since 2007, I blog about things I have learnt, things I want to share or just something I want to rant about :). The best feeling is, when you are stuck on something you Google for a solution and you end up finding your own blog post written some years back. That feeling is priceless.
+
+Another factor that motivates me to keep on publishing blog posts is the feedback you get from people. I have been told that the person was looking for something technical and one of my blog post helped the person solve the issue or learn something new. This also given a sense of immense satisfaction.
 
 ## Public Speaking
 
