@@ -29,7 +29,7 @@ Day to day, I use mainly Javascript (Node.js) and PHP with MySQL database to tra
 
 I have been blogging since 2007, I blog about things I have learnt, things I want to share or just something I want to rant about :). The best feeling is, when you are stuck on something you Google for a solution and you end up finding your own blog post written some years back. That feeling is priceless.
 
-Another factor that motivates me to keep on publishing blog posts is the feedback you get from people. I have been told that the person was looking for something technical and one of my blog post helped the person solve the issue or learn something new. This also given a sense of immense satisfaction.
+Another factor that motivates me to keep on publishing blog posts is the feedback you get from people. I have been told that the person was looking for something technical and one of my blog posts. The person added, it helped to solve the issue or learn something new. This also gives me a sense of immense satisfaction.
 
 ## Public Speaking
 
