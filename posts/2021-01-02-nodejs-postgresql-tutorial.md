@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Node.js Postgresql tutorial: Build a simple REST API with Express step-by-step"
+title: 'Node.js Postgresql tutorial: Build a simple REST API with Express step-by-step'
 date: 2021-01-01T21:15:35.000+11:00
 comments: true
 tags:
@@ -8,10 +8,11 @@ tags:
 - NodeJs
 cover: "/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg"
 pagetitle: 'Node.js Postgresql tutorial: Build a simple REST API with Express step-by-step'
-description: "Follow this 2500+ word step-by-step tutorial to learn Node.js and PostgreSQL
-  together. You will build a REST API for quotes using Express Js in this guide."
-keywords: Nodejs postgres tutorial, Node.js postgres tutorial, nodejs postgres, nodejs express
-  postgres, node.js express postgres example, nodejs postgres express tutorial, Node js postgresql tutorial, node js postgres tutorial
+description: Follow this 2500+ word step-by-step tutorial to learn Node.js and PostgreSQL
+  together. You will build a REST API for quotes using Express Js in this guide.
+keywords: Nodejs postgres tutorial, Node.js postgres tutorial, nodejs postgres, nodejs
+  express postgres, node.js express postgres example, nodejs postgres express tutorial,
+  Node js postgresql tutorial, node js postgres tutorial
 
 ---
 Node.js can be used efficiently with relational databases like PostgreSQL. In this post about Node.js PostgreSQL tutorial, we are going to build a REST API for Quotes step-by-step using Express Js.
@@ -25,36 +26,36 @@ Node.js can be used efficiently with relational databases like PostgreSQL. In th
 <nav class="toc">
 
 1. [Prerequisites](#prerequisites)
-1.  [Steps for Node.js PostgreSQL tutorial](#steps-for-node.js-postgresql-tutorial)
-    1.  [Setup Express with express generator](#setup-express-with-express-generator)
-        1.  [Delete the public folder](#delete-the-public-folder)
-        2.  [Delete unnecessary existing routes then create a new route for quotes](#delete-unnecessary-existing-routes-then-create-a-new-route-for-quotes)
-        3.  [Change index route to give out JSON](#change-index-route-to-give-out-json)
-    2.  [Setup PostgreSQL with quote table](#setup-postgresql-with-quote-table)
-    3.  [Link Node.js with Postgres](#link-node.js-with-postgres)
-    4.  [Show Quotes - GET API with pagination](#show-quotes---get-api-with-pagination)
-    5.  [Save a new quote - POST API for Node.js PostgreSQL tutorial](#save-a-new-quote---post-api-for-node.js-postgresql-tutorial)
-        1.  [Adding validation for creating quotes POST API](#adding-validation-for-creating-quotes-post-api)
-2.  [TLDR; quick rundown](#tldr%3B-quick-rundown)
-3.  [Conclusion](#conclusion)
+2. [Steps for Node.js PostgreSQL tutorial](#steps-for-node.js-postgresql-tutorial)
+   1. [Setup Express with express generator](#setup-express-with-express-generator)
+      1. [Delete the public folder](#delete-the-public-folder)
+      2. [Delete unnecessary existing routes then create a new route for quotes](#delete-unnecessary-existing-routes-then-create-a-new-route-for-quotes)
+      3. [Change index route to give out JSON](#change-index-route-to-give-out-json)
+   2. [Setup PostgreSQL with quote table](#setup-postgresql-with-quote-table)
+   3. [Link Node.js with Postgres](#link-node.js-with-postgres)
+   4. [Show Quotes - GET API with pagination](#show-quotes---get-api-with-pagination)
+   5. [Save a new quote - POST API for Node.js PostgreSQL tutorial](#save-a-new-quote---post-api-for-node.js-postgresql-tutorial)
+      1. [Adding validation for creating quotes POST API](#adding-validation-for-creating-quotes-post-api)
+3. [TLDR; quick rundown](#tldr%3B-quick-rundown)
+4. [Conclusion](#conclusion)
 
 </nav>
 
-You can read my previous tutorial to try [Node.js with MySQL](/blog/2020/11/nodejs-mysql-tutorial/). You should read this guide to use [Docker with Node.js](/blog/2020/11/nodejs-with-docker/), it is also a step-by-step guide. You can, of course, carry on with this Node.js with PostgreSQL tutorial :). 
+You can read my previous tutorial to try [Node.js with MySQL](/blog/2020/11/nodejs-mysql-tutorial/). You should read this guide to use [Docker with Node.js](/blog/2020/11/nodejs-with-docker/), it is also a step-by-step guide. You can, of course, carry on with this Node.js with PostgreSQL tutorial :).
 
 > For your convinience, each step has been carved out as a distinct pull reqeust so that you can follow the tutorial with ease.
 
 ## Prerequisites
 
 1. You have Node.js (preferably Node 14.x) installed and running on your machine (or Node.js running with a docker container).
-1. You are aware of how Node.js generally works and also have a bit of Express Js experience.
-1. Having some knowledge of Git and GitHub will be really useful.
-1. For the database we will use a free database on [ElephantSQL](https://www.elephantsql.com/), so please register and set up a free PostgreSQL database there. Of course, you should know how a relational database works.
-1. You are able to code using an IDE. I will be using VS Code as an editor but you are free to use any code editor of your choice for this Node.js PostgreSQL tutorial.
+2. You are aware of how Node.js generally works and also have a bit of Express Js experience.
+3. Having some knowledge of Git and GitHub will be really useful.
+4. For the database we will use a free database on [ElephantSQL](https://www.elephantsql.com/), so please register and set up a free PostgreSQL database there. Of course, you should know how a relational database works.
+5. You are able to code using an IDE. I will be using VS Code as an editor but you are free to use any code editor of your choice for this Node.js PostgreSQL tutorial.
 
 ## Steps for Node.js PostgreSQL tutorial
 
-We will be building a very simple REST API with Express Js that can send out some quotes. A quick refresher on what [REST APIs](https://www.mulesoft.com/resources/api/what-is-rest-api-design) are would be greatly helpful at this point. 
+We will be building a very simple REST API with Express Js that can send out some quotes. A quick refresher on what [REST APIs](https://www.mulesoft.com/resources/api/what-is-rest-api-design) are would be greatly helpful at this point.
 
 > It will be great to read about HTTP verbs and brush up on some cURL commands too. We will be using cURL to run the examples.
 
@@ -93,7 +94,7 @@ rm -rf public
 
 #### Delete unnecessary existing routes then create a new route for quotes
 
-At this juncture, we will delete the unnecessary users route found in `routes/users.js`. Consequently, we will add `routes/quotes.js` file that will have the following content:
+At this juncture, we will delete the unnecessary users' route found in `routes/users.js`. Consequently, we will add `routes/quotes.js` file that will have the following content:
 
 ``` js
 const express = require('express');
@@ -117,7 +118,7 @@ router.get('/', function(req, res, next) {
 module.exports = router;
 ```
 
-For now, it will give a static output of 1 quote as shown above. We will link up the quotes route in the `app.js` file like below:
+For now, it will give a static output of only 1 quote as shown above. We will link up the quotes route in the `app.js` file like below:
 
 ``` js
 var express = require('express');
@@ -194,11 +195,11 @@ CREATE TABLE quote (
 );
 ```
 
-Here is how it looks on Elephant SQL interface:
+Here is how it looks on the Elephant SQL interface:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/04create-table-elephant-sql.jpg" title="Create Quotes table on Elephant SQL interface" alt="Create Quotes table on Elephant SQL interface">
 
-This is a very simple table with 5 columns. The first one is the `id` which is a sequence and primary key. Then there are `quote` and `author` both are variable characters. 
+This is a very simple table with 5 columns. The first one is the `id` which is a sequence and primary key. Then there are `quote` and `author` both are variable characters.
 
 After that `created_at` and `updated_at` are both time stamps. There is a unique index added to the `quote` column so that we don’t have the same quote more than once. After the table is created we will fill up some quotes in the `quote` table executing the insert SQL below:
 
@@ -228,6 +229,7 @@ After you have inserted the 17 rows, if you run the following on the Elephant SQ
 ``` sql
 SELECT * FROM quote;
 ```
+
 You should see something similar to below:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/05select-elephant-sql.jpg" title="SELECT all from quote on Elephant SQL interface" alt="SELECT all from quote on Elephant SQL interface">
@@ -262,7 +264,7 @@ When you go to `http://localhost:3000/quotes` after starting the Express Js app,
 }
 ```
 
-Now we will replace this by fetching data from the PostgreSQL database on Elephant SQL. To do this, we will need to connect to the database. 
+Now we will replace this by fetching data from the PostgreSQL database on Elephant SQL. To do this, we will need to connect to the database.
 
 Let’s create a `config.js` file on the root level. This config file has the database credentials and other configs like below:
 
@@ -403,7 +405,7 @@ router.post('/', async function(req, res, next) {
 module.exports = router;
 ```
 
-For the time being, we will not add any code level validation. The database table `quote`  has the `quote` field required and 255 characters. So, if the quote is empty it will get a database level error. Unlike MySQL, PostgreSQL will give an error if the quote is longer than 255 characters. 
+For the time being, we will not add any code level validation. The database table `quote`  has the `quote` field required and 255 characters. So, if the quote is empty it will get a database level error. Unlike MySQL, PostgreSQL will give an error if the quote is longer than 255 characters.
 
 In a more real-life scenario, I would recommend using a validation library for these kinds of cases. For now, let’s add the `create` method in `/services/quotes.js` like below:
 
@@ -528,10 +530,10 @@ Nodemon is great for development.
 All the code shown above is in a public [GitHub repository](https://github.com/geshan/nodejs-posgresql), to quickly get started with what has already been built you can follow the steps below:
 
 1. Clone the repository with: `git clone git@github.com:geshan/nodejs-posgresql.git`
-1. Then run `cd nodejs-postgresql`
-1. Subsequently execute: `npm install && npm start`
-1. After that, hit: `https://localhost:3000/quotes` on your favorite browser
-1. You should see the following on your browser:
+2. Then run `cd nodejs-postgresql`
+3. Subsequently, execute: `npm install && npm start`
+4. After that, hit: `https://localhost:3000/quotes` on your favorite browser
+5. You should see the following on your browser:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/08quotes-page-1.jpg" title="Quotes on page 1" alt="Quotes on page 1">
 
