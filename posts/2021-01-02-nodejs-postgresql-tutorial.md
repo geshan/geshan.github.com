@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Node.js Postgresql tutorial: Build a simple REST API with Express step-by-step"
-date: 2021-01-02T22:45:35.000+11:00
+date: 2021-01-01T21:15:35.000+11:00
 comments: true
 tags:
 - Web Development
