@@ -1,15 +1,17 @@
 ---
 layout: post
-title: '5 useful PHPUnit Assertions you should start using today'
+title: 5 useful PHPUnit Assertions you should start using today
 date: 2021-01-03T21:32:45.000+11:00
 comments: true
 tags:
 - Web Development
 - PHP
 cover: "/images/phpunit-assertions/01phpunit-assertions.jpg"
-pagetitle: '5 useful PHPUnit Assertions you should start using now'
-description: In addition to assertEquals, you can use these ultra-handy PHPUnit assertions to make your life easier. Find out how.
+pagetitle: 5 useful PHPUnit Assertions you should start using now
+description: In addition to assertEquals, you can use these ultra-handy PHPUnit assertions
+  to make your life easier. Find out how.
 keywords: phpunit assertions, phpunit assertion, phpunit testing, php testing
+
 ---
 PHPUnit has been blowing away its competition for more than [5 years](https://trends.google.com/trends/explore?date=2016-01-01%202020-12-31&q=phpunit,phpspec,codeception,behat,atoum) now. With the use of the right PHPUnit assertions, you can get the most benefit out of PHPUnit. In this post, we will look into some popular and very useful PHPUnit assertions you should be using day to day in your PHPUnit tests. Let’s get cracking!
 
@@ -44,8 +46,7 @@ Currently, PHPUnit is at version [9.5](https://github.com/sebastianbergmann/phpu
 To know which PHPUnit assertions are used most in the projects I have worked with in the past years I ran the following command:
 
 ``` bash
-grep -rin ">assert" . | awk '{print $2}' | awk -F"[>(]" '{print $2}' \ 
-| sort | uniq -c | sort -nr
+grep -rin ">assert" . | awk '{print $2}' | awk -F"[>(]" '{print $2}' | sort | uniq -c | sort -nr
 ```
 
 > The above command should be run in your `tests` folder. It basically looks for `>assert*` in the code and sorts them, then counts the unique occurrences and again sorts at the end with most occurrences first.
