@@ -29,15 +29,15 @@ Around 11 years back I wrote this blog post "[10 things a tech student must know
 
 ## Why don't students get a tech job after the course?
 
-Let's face this, it is a mix of the education system and the individual student themselves. I studied my undergrad/bachelor's in tech in Kathmandu, Nepal, and my master's in tech too in the Netherlands. Surely, very different education systems and outlook on education. 
+Let's face this, it is a mix of the education system and the individual student themselves. I studied my undergrad/bachelor's in tech in Kathmandu, Nepal, and my master's in tech too in the Netherlands. Surely, very different education systems and outlook on education.
 
 One thing in common is both don't make the student an employment-ready product. On the individual side, don't do a course because your friend is doing it. Simple logic, first ask yourself where do you see yourself in 5 or 3 years then backtrack your way to reach there.
 
 ## How to fix this?
 
-I am no education expert or anything still I have worked like a decade in tech and in multiple countries by now. One thing is sure, skills and results are the primary and degrees are secondary. 
+I am no education expert or anything still I have worked like a decade in tech and in multiple countries by now. One thing is sure, skills and results are the primary and degrees are secondary.
 
-> Universities/colleges should try to bridge the gap between students and real market needs. 
+> Universities/colleges should try to bridge the gap between students and real market needs.
 
 I don't know of any university that will teach students let's say `git` , that you are going to use each day at work. That doesn't mean what is being taught is wrong :). Yes, I am ranting a bit here.
 
@@ -53,11 +53,11 @@ After all, my rants tirades let's focus on how you as a tech student can land a 
 
 ### 1. In-person networking
 
-Go to at least 1 [meetup](https://meetup.com/)/conference/training/events each month and add at least 2 new people on Linked In who can help you find a job. Not to mention message/email them after the meeting to build a relationship. Meetups are a great way to meet up with people who you would normally not meet. 
+Go to at least 1 [meetup](https://meetup.com/)/conference/training/events each month and add at least 2 new people on Linked In who can help you find a job. Not to mention message/email them after the meeting to build a relationship. Meetups are a great way to meet up with people who you would normally not meet.
 
-Depending on the city you are in like if you are in Sydney you could go to a tech meetup each week. If you are in Kathmandu you could catch a meetup each month. 
+Depending on the city you are in like if you are in Sydney you could go to a tech meetup each week. If you are in Kathmandu you could catch a meetup each month.
 
-> Going to a usually free meetup is beneficial in many ways, you learn new things by listening to people, you can network and build useful relationships. 
+> Going to a usually free meetup is beneficial in many ways, you learn new things by listening to people, you can network and build useful relationships.
 
 Don't underestimate the power of meeting people in the flesh or virtually in these COVID times.
 
@@ -65,37 +65,39 @@ So you are asking why would this person refer me? Right? The answer is simple `M
 
 ### 2. Use recruiter help
 
-In the starting, it should be you, emailing, and potentially calling tech recruiters. The idea is simple, it is a recruiter's job to find good candidates for tech roles. 
+In the starting, it should be you, emailing, and potentially calling tech recruiters. The idea is simple, it is a recruiter's job to find good candidates for tech roles.
 
-> Be open tell them you are looking for junior or starting jobs and try to find a match. 
+> Be open tell them you are looking for junior or starting jobs and try to find a match.
 
-Probably the recruiter knows a couple of openings where you could actually be a good fit. 
+Probably the recruiter knows a couple of openings where you could actually be a good fit.
 
 Depending on the city there are internships, graduate roles that are specifically targeted at fresh grads. You might need to run away from recruiters after you have some years of experience, but that is a different story. Also, be aware of things [tech recruiters](/blog/2019/01/things-tech-recruiters-look-for/ "Things tech recruiters look for in your resume and the first interview") look for in your [CV and first interview](/blog/2020/08/things-tech-recruiters-look-for-in-your-resume-first-interview-part-02/ "Things tech recruiters look for in your resume and the first interview part 2").
 
 ### 3. Contribute to open source
 
-I know many companies that will look at your Github profile first then go through your resume. So, `actions speak louder than words`. To begin with, you don't need to start contributing code. You can start by helping with documentation etc. 
+I know many companies that will look at your Github profile first then go through your resume. So, `actions speak louder than words`. To begin with, you don't need to start contributing code. You can start by helping with documentation etc.
 
-> There are lots of ways to give back to open source. [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com/) is starting in 2 days make good use of it. 
+> There are lots of ways to give back to open source. [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com/) is starting in 2 days make good use of it.
 
 So learning git and GitHub becomes a prerequisite for this step. If you are a tech student in their final semester and don't know git = you don't have a very bright future in tech :).
 
 ### 4. Make a list of companies with probable roles
 
-If you don't have a target how will you ever achieve it, if you have a target you can have plans to attain it. Make a list of companies and positions/roles that you want to work in when you finish your degree. 
+If you don't have a target how will you ever achieve it, if you have a target you can have plans to attain it. Make a list of companies and positions/roles that you want to work in when you finish your degree.
 
-> Towards the end of the course if you are not sure to pick backend or frontend or UI/UX or DevOps/SRE or data engineering or DBA or ... sorry but no one can help a confused person ;). 
+> Towards the end of the course if you are not sure to pick backend or frontend or UI/UX or DevOps/SRE or data engineering or DBA or ... sorry but no one can help a confused person ;).
+
+You should understand the differences between the [backend, frontend, and full-stack development](/blog/2020/02/difference-between-backend-frontend/) to make the right decision.
 
 If you see yourself as a front-end engineer at say Atlassian you need to work very hard for it. Another handy tip is to keep a spreadsheet of all the jobs you have applied for with dates to do a proper follow-up. It is not easy to get a call for an interview for less experienced candidates so check step 1 referral helps a lot here.
 
 ### 5. Learn a new tech thing each month
 
-Now as you have shortlisted companies and roles you want to work for you have obviously read the job descriptions. So you now know what skills the market and/or the company you aim to join are looking for. 
+Now as you have shortlisted companies and roles you want to work for you have obviously read the job descriptions. So you now know what skills the market and/or the company you aim to join are looking for.
 
-Start learning it, dedicate some hours each week/weekend and learn it. The best way to learn is to try to build your pet project, it could be anything that excites you. 
+Start learning it, dedicate some hours each week/weekend and learn it. The best way to learn is to try to build your pet project, it could be anything that excites you.
 
-> Don't just go through a course on `docker` and say yes I know docker. Show it running on a project and then you will actually learn it. 
+> Don't just go through a course on `docker` and say yes I know docker. Show it running on a project and then you will actually learn it.
 
 If you already know 7 out of 10 things the company will need to teach another junior software engineer, your chances of getting the job automatically become higher.
 
@@ -103,7 +105,7 @@ Are you not sure what to learn? or Think your college/university didn't teach yo
 
 ## Conclusion
 
-There are many other general things that you need to be good at like having a clear and impressive 1-page resume, having at least one project that is online. Like, having a basic knowledge of a breadth of things and a bit of depth in the area you want to work in,  knowing your skill, and going to the right area of tech also helps. 
+There are many other general things that you need to be good at like having a clear and impressive 1-page resume, having at least one project that is online. Like, having a basic knowledge of a breadth of things and a bit of depth in the area you want to work in,  knowing your skill, and going to the right area of tech also helps.
 
 > You need to do the above steps like 6-9 months before your course ends else doing things in haste and the very end will not help much.
 
