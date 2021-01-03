@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Do you git your code? Follow this simplified gitflow branching model to improve productivity"
-date: 2014-12-13 07:52:40 +04:00
+title: Do you git your code? Follow this simplified gitflow branching model to improve
+  productivity
+date: 2014-12-13T07:52:40.000+04:00
 comments: true
 tags:
- - git
- - Software Engineering
----
+- git
+- Software Engineering
 
+---
 Git or a similar VCS is the backbone for code collaboration in a multi-developers environment. When you follow a proper branch naming convention, git branching and merging can also be tied to an issue flow for better project management.
 
-Source code Version Control System (VCS) and automated testing open doors to other great software quality and delivery practices like continuous integration and automated deployment etc. Amongst various version control system software [git](http://git-scm.com) is a distributed system that is very popular and easy to use once you get used to it.
+Source code Version Control System (VCS) and automated testing open doors to other great software quality and delivery practices like continuous integration, and [automated deployment](/blog/2015/08/the-best-automated-deployment-tool-the-one-that-fits-your-needs/) etc. Amongst various version control system software [git](http://git-scm.com) is a distributed system that is very popular and easy to use once you get used to it.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
 
