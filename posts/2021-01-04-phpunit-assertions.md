@@ -8,7 +8,7 @@ tags:
 - PHP
 cover: "/images/phpunit-assertions/01phpunit-assertions.jpg"
 pagetitle: '5 useful PHPUnit Assertions you should start using now'
-description: In addition to your assertEquals, you can use these ultra-handy PHPUnit assertions to make your life easier. Find out how.
+description: In addition to assertEquals, you can use these ultra-handy PHPUnit assertions to make your life easier. Find out how.
 keywords: phpunit assertions, phpunit assertion, phpunit testing, php testing
 ---
 PHPUnit has been blowing away its competition for more than [5 years](https://trends.google.com/trends/explore?date=2016-01-01%202020-12-31&q=phpunit,phpspec,codeception,behat,atoum) now. With the use of the right PHPUnit assertions, you can get the most benefit out of PHPUnit. In this post, we will look into some popular and very useful PHPUnit assertions you should be using day to day in your PHPUnit tests. Let’s get cracking!
@@ -58,7 +58,7 @@ The medium project built with Symfony which is a REST API has 221 tests and 472 
 
 The numbers of asserts don’t add up to 221 because there are a lot of [PHPunit data providers](/blog/2014/02/using-phpunit-data-provider-for-less/) used in these tests.
 
-Still, `assertSame` and `assertEquals` make up almost 16% of the assertions used in this project. Recently we switched the code coverage driver to be [PCov](/blog/2020/11/phpunit-code-coverage-pcov/) instead of Xdebug. It made the test coverage much faster.
+Still, `assertSame` and `assertEquals` make up almost 16% of the assertions used in this project. Recently we switched the code coverage driver to be [PCov](/blog/2020/11/phpunit-code-coverage-pcov/) instead of Xdebug. It made the test coverage much faster. If you are interested, I had also blogged about [unit testing in Laravel](/blog/2015/07/getting-started-with-unit-testing-in-laravel/) in the past.
 
 ### Big project for counting PHPUnit Assertions
 
