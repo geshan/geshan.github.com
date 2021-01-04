@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "5 Things to consider when deploying a new major feature to production"
-date: 2015-08-01 14:29:19 +04:00
+title: 5 Things to consider when deploying a new major feature to production
+date: 2015-08-01T14:29:19.000+04:00
 comments: true
-tags: 
-  - deployment
-  - devops
-cover: /images/5-deployment-considerations/capistrano-deployment.png
-lastModified: 2020-05-01 11:03:22 +11:00
----
+tags:
+- deployment
+- devops
+cover: "/images/5-deployment-considerations/capistrano-deployment.png"
+lastModified: 2020-05-01T11:03:22.000+11:00
 
+---
 Getting code done for a feature from developer's machine to production in less time is a quality of efficient 
-tech/engineering teams. Automated deployment with tools like [capistrano](http://capistranorb.com/) or [fabric](http://www.fabfile.org/) makes deployment an easy task than a dreaded operation where you miss one step and then screw up on production. This post will highlight things to consider when you deploy a new major feature that involves some big code and database changes. 
+tech/engineering teams. [Automated deployment](/blog/2015/08/the-best-automated-deployment-tool-the-one-that-fits-your-needs/) with tools like [capistrano](http://capistranorb.com/) or [fabric](http://www.fabfile.org/) makes deployment an easy task than a dreaded operation where you miss one step and then screw up on production. This post will highlight things to consider when you deploy a new major feature that involves some big code and database changes. 
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/5-deployment-considerations/capistrano-deployment.png" title="Deployment success with Capistrano" alt="Deployment success with Capistrano">
 <!-- more -->
