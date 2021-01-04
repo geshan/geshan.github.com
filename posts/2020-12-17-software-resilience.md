@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Software Resilience: 7 must-have factors for healing from the unexpected"
+title: 'Software Resilience: 7 must-have factors for healing from the unexpected'
 date: 2020-12-17T22:45:35.000+11:00
 comments: true
 tags:
 - Software Engineering
 cover: "/images/software-resilience/01software-resilience.jpg"
 pagetitle: 'Software Resilience: 7 must-have factors for healing from the unexpected'
-description: Software resilience is a must-have quality for fault-tolerant software. Read this 2000+ word post to know more about the major factors to build resilient software systems.
-keywords: sofware resilience, resilient software, sofware resilience, highly resilient software
+description: Software resilience is a must-have quality for fault-tolerant software.
+  Read this 2000+ word post to know more about the major factors to build resilient
+  software systems.
+keywords: sofware resilience, resilient software, sofware resilience, highly resilient
+  software
 
 ---
 Software resilience is a must-have quality for any software that is scalable, performant, and fault-tolerant.
@@ -63,7 +66,7 @@ The point here is, even if this is a manual task it is very important for resili
 
 > But, if you can try out like 1% of the customers for 1 week, smoothen out any bugs with the new gateway integration it helps a lot and the blast radius is just 1% of the transactions.
 
-Slowly week by week you can go from 1 to 5 then to 10 and finally to 100 with full confidence. The same logic goes on having a [health check](https://microservices.io/patterns/observability/health-check-api.html) when deploying. If the health check fails the deployment is automatically rolled back. Depending on the services you use you can even do a gradual rollout meaning this particular version only get 2% of the traffic. [Gradual rollout](https://cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration) is supported by services like Google Cloud run on the infrastructure layer not the code layer.
+Slowly week by week you can go from 1 to 5 then to 10 and finally to 100 with full confidence. The same logic goes on having a [health check](https://microservices.io/patterns/observability/health-check-api.html) when deploying. If the health check fails the deployment is automatically rolled back. Depending on the services you use you can even do a gradual rollout meaning this particular version only get 2% of the traffic. [Gradual rollout](https://cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration) is supported by services like [Google Cloud run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) on the infrastructure layer not the code layer.
 
 Another important consideration for resilient software is a [deployment is not a release](/blog/2018/10/deployment-is-not-release/).
 
