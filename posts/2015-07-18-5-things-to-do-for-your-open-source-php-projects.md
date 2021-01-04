@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "5 Things to do for your open source PHP projects, a checklist"
-date: 2015-07-18 07:01:00 +04:00
+title: 5 Things to do for your open source PHP projects, a checklist
+date: 2015-07-18T07:01:00.000+04:00
 comments: true
-tags: 
- - Programming
- - FOSS
- - PHP
- - Software Engineering
+tags:
+- Programming
+- FOSS
+- PHP
+- Software Engineering
 facebook:
-   image: https://geshan.com.np/images/php-oss-checklist/example-foss.png
-cover: /images/php-oss-checklist/example-foss.png
----
+  image: https://geshan.com.np/images/php-oss-checklist/example-foss.png
+cover: "/images/php-oss-checklist/example-foss.png"
 
+---
 Open source software (oss) are very popular in the software world, be it the server serving your web pages or the language/framework your website/webapp or even mobile app is written on, it is highly likely that its based on an open source software. As programmers this sprint of giving back to the community and helping others in form of Free and open source software is amazing. There are many open source PHP projects as well from frameworks to small libraries. It is a difficult yet rewarding experience to lead/support an open source project. If you are thinking of starting an open source project or open sourcing some part(s) of your existing system, this post has a checklist to assist you with it.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/php-oss-checklist/example-foss.png" title="An example open source php project" alt="Example open source project">
@@ -72,4 +72,4 @@ your rescue. You can show the status of the issues as below to make all the inte
 
 ## Conclusion
 
-After checking all the items in the above checklist, be sure to be alert about issues and pull requests for the open source project. Successful open source project lead/members are quite alert and responsive to both issues created and pull requests sent to the project. You can use the data-provider example as a base template for writing your next open source project. Happy Coding.
+After checking all the items in the above checklist, be sure to be alert about issues and pull requests for the open source project. Successful open source project lead/members are quite alert and responsive to both issues created and [pull requests](/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/) sent to the project. You can use the data-provider example as a base template for writing your next open source project. Happy Coding.
