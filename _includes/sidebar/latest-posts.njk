@@ -5,7 +5,7 @@
     </div>
     <div id="recent_posts" class="list-group">
       {% for post in posts | reverse %}
-       <a class="list-group-item{% if post.url == page.url %} active{% endif %}" href="{{ post.url | url }}" title="{{ post.data.description }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      <a class="list-group-item{% if post.url == page.url %} active{% endif %}" href="{{ post.url | url }}" title="{{ post.data.description }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
       {% endfor %}
     </div>
 </section>

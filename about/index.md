@@ -52,12 +52,13 @@ I have a couple of side projects. I only do one side project a year to get it ov
 * Saved jobs
 * Applied jobs
 * Shows if company is known to sponsor work visa or not
+* Faceted search (search by multiple departments or work type)
 
 This side project has been a joint effort of more than two dozen people. I thank each and everyonne of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) github repo I started in 2018.
 
 ## I am also
 
-* running this blogs (currently on [Eleventy](https://www.11ty.dev/)) since 2007 (how many years? do the math on your own)
+* running this blog (currently on [Eleventy](https://www.11ty.dev/)) since 2007 -- how many years? do the math on your own ;)
 * a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
 * a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
 * mentoring and coaching people in their tech carrers, especially to find their first full-time tech role in Australia from mid 2018. Wanna chat? Send me an email (email address below).
