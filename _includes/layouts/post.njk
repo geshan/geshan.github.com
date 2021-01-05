@@ -10,7 +10,7 @@ templateClass: tmpl-post
     <header class="page-header">
     <h1 class="entry-title">{{ title }}</h1>
     <p class="meta text-muted">
-    {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute read)
+    {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
     </p>
     </header>
     <div class="entry-content clearfix">
@@ -19,7 +19,7 @@ templateClass: tmpl-post
     <footer>
         <p class="meta text-muted">
           <span class="glyphicon glyphicon-user"></span>
-          <span class="byline author vcard">Posted by <span class="fn">{{ metadata.author.name }}</span></span> | 
+          <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
           <span class="glyphicon glyphicon-calendar"></span>
           {% include "components/posted-date-time.njk" %}
           {% include "components/share.njk" %}
