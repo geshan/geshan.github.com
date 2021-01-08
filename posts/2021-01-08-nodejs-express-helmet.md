@@ -15,7 +15,7 @@ keywords: express helmet, helmet js, nodejs express helmet, express helmet js, e
   js helmet
 
 ---
-Security is everyone’s responsibility. Express Helmet secures your Node.js application from some obvious threats. While writing a Node.js [Express](https://expressjs.com/) application, always use [Helmet](https://github.com/helmetjs/helmet) to safeguard your application or API from usual security risks like XSS, Content Security Policy, and others. 
+Security is everyone’s responsibility. Express Helmet secures your Node.js application from some obvious threats. While writing a Node.js [Express](https://expressjs.com/) application, always use [Helmet](https://github.com/helmetjs/helmet) to safeguard your application or API from usual security risks like XSS, Content Security Policy, and others.
 
 In this post, we will see how we can add Helmet to an existing API and how it bolsters the security of the application. Let’s get started!
 
@@ -45,7 +45,7 @@ Background Photo by [Harley-Davidson](https://unsplash.com/@harleydavidson) on [
 
 ## Web application security
 
-Web application security is a pretty vast topic, people have [written](https://www.oreilly.com/library/view/web-application-security/9781492053101/) [books](https://leanpub.com/wasec) about it. For example, OWASP comes up with a yearly [top 10 web application security risks](https://owasp.org/www-project-top-ten/) where Injection (like SQL injection) and Cross-Site Scripting (XSS) usually make into the top 10 list. 
+Web application security is a pretty vast topic, people have [written](https://www.oreilly.com/library/view/web-application-security/9781492053101/) [books](https://leanpub.com/wasec) about it. For example, OWASP comes up with a yearly [top 10 web application security risks](https://owasp.org/www-project-top-ten/) where Injection (like SQL injection) and Cross-Site Scripting (XSS) usually make it into the top 10 list.
 
 > For example, with [Node.js and MySQL](/blog/2020/11/nodejs-mysql-tutorial/) you would want to use the [MySQL2](https://github.com/sidorares/node-mysql2) library vs [MySQL](https://github.com/mysqljs/mysql) library because it supports [prepared statements](https://github.com/sidorares/node-mysql2#using-prepared-statements) which can tackle SQL injection from the database level.
 
@@ -57,23 +57,23 @@ If you want to get your hands dirty with some Security stuff they have a long li
 
 ### Node.js Web application security
 
-Focusing on a web application built with Node.js and Express. A library like Helmet can help on setting the right response headers which are great for a more secure application. As Node.js has a built in web server it is easier for controlling the HTTP respone headers from Node.js itself than another web server like Apache or Nginx.
+Focusing on a web application built with Node.js and Express. A library like Helmet can help on setting the right response headers which are great for a more secure application. As Node.js has a built-in web server it is easier for controlling the HTTP response headers from Node.js itself than another web server like Apache or Nginx.
 
 If you are using Koa you can use [Koa Helmet](https://github.com/venables/koa-helmet) to add important response headers.
 
-> In case you are using other languages do consider the options available found in the [see also](https://helmetjs.github.io/see-also/) section of the Helmet js website. 
+> In case you are using other languages do consider the options available found in the [see also](https://helmetjs.github.io/see-also/) section of the Helmet js website.
 
-For instance, there is a [Secure Headers](https://github.com/BePsvPT/secure-headers) composer package for PHP and for Django there exists a pip package called [Django CSP](https://django-csp.readthedocs.io/en/latest/index.html).
+For instance, there is a [Secure Headers](https://github.com/BePsvPT/secure-headers) composer package for PHP, and for Django there exists a pip package called [Django CSP](https://django-csp.readthedocs.io/en/latest/index.html).
 
 ## Example Express Js application
 
 In this walkthrough, we will use the Currency API application which is [open source](https://github.com/geshan/currency-api/). It is a simple currency converter proxy API that gives the exchange rate from one currency to the other for a given date.
 
-I have used it for other examples too like the [faster docker build](/blog/2020/10/docker-build-example-faster-docker-build/) one. I have also used the same application for [docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) post. It is a simple API, let’s analyze the headers and security risks it poses without Helmet.
+I have used it for other examples too like the [faster docker builds](/blog/2020/10/docker-build-example-faster-docker-build/) one. I have also used the same application for [docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) post. It is a simple API, let’s analyze the headers and security risks it poses without Helmet.
 
 ## Express without Helmet Js
 
-Below is the screenshot of Header for the Currency API Node.js Express app without Helmet hosted on Vercel:
+Below is the screenshot of the Header for the Currency API Node.js Express app without Helmet hosted on Vercel:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/02express-without-helmet.jpg" title="Express without helmet does not have needed security HTTP Response Headers" alt="Express without helmet does not have needed security HTTP Response Headers">
 
@@ -97,7 +97,7 @@ We have seen that some Response headers are crucial for security. To get these e
 npm instal --save helmet
 ```
 
-After that we will require helmet in our `index.js` file and use it as a middleware like below:
+After that, we will require helmet in our `index.js` file and use it as a middleware like below:
 
 ``` js
 const bodyParser = require('body-parser');
@@ -114,21 +114,21 @@ You can view the changes as a [pull request](https://github.com/geshan/currency-
 
 As seen in the above code change, we have just used helmet with `app.use(helmet());` without any extra configs added. The good thing about Express Helmet is that it automatically adds 11 sub middlewares with sane default configs.
 
-> This may be one of the reasons that even the Express.js security best practices for production [recommends](https://expressjs.com/en/advanced/best-practice-security.html#use-helmet) to use helmet js. 
+> This may be one of the reasons that even the Express.js security best practices for production [recommends](https://expressjs.com/en/advanced/best-practice-security.html#use-helmet) to use helmet js.
 
-In addition to using Helmet it also mentions [securing cookies](https://expressjs.com/en/advanced/best-practice-security.html#use-cookies-securely) and other things.
+In addition to using Helmet, it also mentions [securing cookies](https://expressjs.com/en/advanced/best-practice-security.html#use-cookies-securely) and other things.
 
-Looking further, it's time to see what new response headers has Helmet added with default configuration:
+Looking further, it's time to see what new response headers has Helmet added with the default configuration:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/03express-with-helmet.jpg" title="Express with helmet has many needed security HTTP Response Headers" alt="Express with helmet has many needed security HTTP Response Headers">
 
-I had done a similar request last time but this time the `x-powered-by` response header is missing, thanks to Express Helmet. On the contrary Helmet has added some new hearers which are very useful from a security point of view. We will see further, what these headers are and analyze 4 of the main ones.
+I had done a similar request last time but this time the `x-powered-by` response header is missing, thanks to Express Helmet. On the contrary, Helmet has added some new hearers which are very useful from a security point of view. We will see further, what these headers are and analyze 4 of the main ones.
 
 ### Response headers for security
 
-By adding Helmet with default configuration we can see that the some new response headers have been added to our Currency API app’s response:
+By adding Helmet with default configuration we can see that some new response headers have been added to our Currency API app’s response:
 
-* [Content-security-policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) also known as CSP for short
+* [Content-security-policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is also known as CSP for short
 * [Expect-CT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect-CT) - CT is Certificate Transparency
 * [Referrer-Policy](https://web.dev/referrer-best-practices/#referer-and-referrer-policy-101)
 * [Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)
@@ -137,9 +137,9 @@ Let’s discuss these 4 in a bit more detail:
 
 #### Content Security Policy
 
-This header adds a layer of security by declaring which dynamic resources are allowed to load. It helps to mitigate Cross Site Scripting (XSS) and some forms of Click Jacking too. You can read more about [CSP](https://content-security-policy.com/).
+This header adds a layer of security by declaring which dynamic resources are allowed to load. It helps to mitigate Cross Site Scripting (XSS) and some forms of Click jacking too. You can read more about [CSP](https://content-security-policy.com/).
 
-For instance with a strict CSP you can block images from other websites Following is the value of the Header given by Helmet as default:
+For instance, with a strict CSP you can block images from other websites Following is the value of the Header given by Helmet as default:
 
 ```html
 content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
@@ -149,9 +149,9 @@ With the above policy, you can’t load a remote style as `style-src` is set to 
 
 #### Expect Certificate Transparency
 
-Expect-CT as the name suggests checks for misuse of certificates. When a site enables the [Expect-CT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect-CT) header, they are requesting that the browser check that any certificate for that site appears in public CT logs. 
+Expect-CT as the name suggests checks for misuse of certificates. When a site enables the [Expect-CT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect-CT) header, they are requesting that the browser check that any certificate for that site appears in public CT logs.
 
-Browsers ignore the Expect-CT header over HTTP; the header only has effect on HTTPS connections. So this is an explicit check by the browser that the given certificate for the website is a valid one as per [public logs](https://www.certificate-transparency.org/known-logs). Helmet adds `expect-ct: max-age=0` meaning the browser should expect the certificate to be valid.
+Browsers ignore the Expect-CT header over HTTP; the header only has an effect on HTTPS connections. So this is an explicit check by the browser that the given certificate for the website is a valid one as per [public logs](https://www.certificate-transparency.org/known-logs). Helmet adds `expect-ct: max-age=0` meaning the browser should expect the certificate to be valid.
 
 #### Referrer Policy
 
@@ -159,7 +159,7 @@ In simple terms, referrer policy defines what data should be picked up from the 
 
 #### Strict Transport Security
 
-This response header tells the browser that the website needs to be accessed using HTTPS not HTTP. It has `max-age` and `includeSubdomain` directives. Max-age tells the browser the time in seconds the browser should remember that the website should only be accessed using HTTPS. The `includeSubdomain` directive which is optional, tells this rule applies to site’s subdomains as well. Helmet adds the following:
+This response header tells the browser that the website needs to be accessed using HTTPS not HTTP. It has `max-age` and `includeSubdomain` directives. Max-age tells the browser the time in seconds the browser should remember that the website should only be accessed using HTTPS. The `includeSubdomain` directive which is optional, tells this rule applies to the site’s subdomains as well. Helmet adds the following:
 
 ```html
 strict-transport-security: max-age=15552000; includeSubDomains
@@ -183,11 +183,11 @@ As seen above, without the use of Express helmet it is missing important HTTP re
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/05express-after-helmet.jpg" title="Express after adding helmet got an amazing A on SecurityHeader.com" alt="Express after adding helmet got an amazing A SecurityHeader.com">
 
-So from a poor "D" before Express Helmet it jumped to a great "A" on Security Headers website.
+So from a poor "D" before Express Helmet, it jumped to a great "A" on Security Headers website.
 
 > This means Helmet is a must for every Node.js Express application for better security response headers.
 
-If you are building an Express js application and thinking of putting it on production make adding Helmet js part of your go to production checklist.
+If you are building an Express js application and thinking of putting it on production make adding Helmet js part of your go-to production checklist.
 
 ## Conclusion
 
@@ -195,4 +195,4 @@ Helmet is a great package for all Node.js Express applications.
 
 > It should be used with proper configurations so that the application is secure and still optimally permissive too.
 
-There are other factors than just response headers and for a better overall security we should focus also on other factors like secure cookies, latest and secure versions of the packages, etc.
+There are other factors than just response headers and for better overall security we should focus also on other factors like secure cookies, the latest and secure versions of the packages, etc.
