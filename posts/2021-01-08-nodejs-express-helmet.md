@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "Express Helmet: the must-have seatbelt for a secure Node.js application"
+title: 'Express Helmet: the must-have seatbelt for a secure Node.js application'
 date: 2021-01-08T22:30:22.000+11:00
 comments: true
 tags:
 - Web Development
 - NodeJs
 cover: "/images/express-helmet/01express-helmet.jpg"
-pagetitle: "Express Helmet js: the must-have seatbelt for a secure Node.js application"
-description: Secure your Node.js Express application with Helmet js by adding some essential response headers, read more to know how easy it is in this 1400+ words guide.
-keywords: express helmet, helmet js, nodejs express helmet, express helmet js, express js helmet
+pagetitle: 'Express Helmet js: the must-have seatbelt for a secure Node.js application'
+description: Secure your Node.js Express application with Helmet js by adding some
+  essential response headers, read more to know how easy it is in this 1400+ words
+  guide.
+keywords: express helmet, helmet js, nodejs express helmet, express helmet js, express
+  js helmet
 
 ---
 Security is everyone’s responsibility. Express Helmet secures your Node.js application from some obvious threats. While writing a Node.js [Express](https://expressjs.com/) application, always use [Helmet](https://github.com/helmetjs/helmet) to safeguard your application or API from usual security risks like XSS, Content Security Policy, and others. 
@@ -96,7 +99,7 @@ npm instal --save helmet
 
 After that we will require helmet in our `index.js` file and use it as a middleware like below:
 
-``` js/1,5
+``` js
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const exchangeRates = require('./src/exchangeRates');
