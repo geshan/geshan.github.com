@@ -193,7 +193,7 @@ As per its [pricing](https://zeet.co/pricing) page, we can run one project for f
 
 Given you have [registered](https://zeet.co/new) on to Zeet with GitHub and you are logged into Zeet, follow the steps below:
 
-* Fork the “https://github.com/geshan/nodejs-posgresql” repository to your GitHub account
+* Fork the `https://github.com/geshan/nodejs-posgresql` repository to your GitHub account
 * Go to Zeet, click the green “+ New Project” button on the top right of Zeet
 * Then click “GitHub” and click the green “Continue” button under the “Trial $0” option
 * After that, click “Continue” besides the “Nodejs-posgresql” repo that you have just forked and then click “Deploy Now” as seen below:
@@ -248,7 +248,8 @@ Some other services where you can host your Node.js application free/almost free
 
 1. Fly.io - pretty good, it is like CDN for the backend. [Free plan](https://fly.io/docs/about/pricing/) has 3 shared-cpu-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
 1. Google Cloud Run - You can host your Node.js app on Google Cloud Run as serverless containers. You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
-1.Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
+1. Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
+1. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is btter used to code collaborately than host a Node.js app or API.
 
 > You can host your Node.js App on all 3 of the big cloud providers AWS, Azure, and GCP and/or their function as a service (FAAS) serverless options or even on free-forever VM. But, they will ask for your credit-card.
 
