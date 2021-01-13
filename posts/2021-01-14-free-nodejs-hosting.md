@@ -77,7 +77,7 @@ Vercel is an amazing service, where you could host both your backend API and fro
 
 With serverless functions, the issues of cold start and losing application state comes into the picture.
 
-Zeet.co is another awesome service where neither the app sleeps if you don’t get requests for 30 minutes nor it is serverless.
+Zeet is another awesome service where neither the app sleeps if you don’t get requests for 30 minutes nor it is serverless.
 
 > The con here is you get only 1 app free but it gets 1 shared CPU and 1 GB of shared memory. 
 
