@@ -1,15 +1,20 @@
 ---
 layout: post
-title: "3 free node.js hosting services you should be using today (with step-by-step deployment examples)"
+title: 3 free Node.js hosting services you should be using today (with step-by-step
+  deployment examples)
 date: 2021-01-14T22:30:22.000+11:00
 comments: true
 tags:
 - Web Development
 - NodeJs
 cover: "/images/free-nodejs-hosting/01free-nodejs-hosting.jpg"
-pagetitle: "3 free node.js hosting services you should be using today (with step-by-step deployment examples)"
-description: Use these 3 completely free Node.js hosting services to host your Node.js application. Follow this 2000+ words guide to see how to deploy your Node.js app to these services.
-keywords: free node.js hosting, free node js hosting, node js free hosting, node.js free hosting
+pagetitle: 3 free Node.js hosting services you should be using today (with step-by-step
+  deployment examples)
+description: Use these 3 completely free Node.js hosting services to host your Node.js
+  application. Follow this 2000+ words guide to see how to deploy your Node.js app
+  to these services.
+keywords: free node.js hosting, free node js hosting, node js free hosting, node.js
+  free hosting
 
 ---
 Hosting Node.js applications is easy, finding a completely free Node.js hosting service that is reliable is not. In this post, we will discuss 3 hosting services where you can host your Node.js applications or API for free which you should start using now. We will also deploy a demo app step-by-step on each of these 3 platforms. I wished to have found more than 3 but finding even 3 was not very easy.
@@ -255,4 +260,4 @@ Hosting a small test project with Node.js should not be a hassle.
 
 > You should be able to do it easily with any of the above 3 services that give it absolutely free.
 
-You can also use the other services that give it for free but ask you to put down your credit card number.
+You can also use the other services that give it for free but ask you to put down your credit card number. The choice is yours!
