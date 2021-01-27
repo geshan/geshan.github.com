@@ -36,7 +36,7 @@ The optimally correct logging Node.js logging library can give you unprecedented
 ## Assumptions
 
 1. You are familiar with how Node.js works and can run node locally
-2. You can install npm libraries and have basic knowledge of package.json and npm CLI
+1. You can install npm libraries and have basic knowledge of package.json and npm CLI
 
 We will use Express.js as an example app to see code examples writing log to the console for all of the Node.js logging libraries in this post.
 
