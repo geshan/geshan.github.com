@@ -8,8 +8,11 @@ tags:
 - NodeJs
 cover: "/images/nodejs-logging-libraries/01nodejs-logging-library.jpg"
 pagetitle: 5 Node.js Logging libraries compared for you to make the optimal choice
-description: 5 Node.js logging libraries Wiston, bunyan, pino, loglevel, and npmlog contrasted in this post to help you make the right decision for the optimal node.js logging library. 
-keywords: nodejs logging library, node.js logging library, node js logging library, node.js logging, nodejs logging, node js logging, winston nodejs, bunyan nodejs
+description: 5 Node.js logging libraries Wiston, bunyan, pino, loglevel, and npmlog
+  contrasted in this post to help you make the right decision for the optimal node.js
+  logging library.
+keywords: nodejs logging library, node.js logging library, node js logging library,
+  node.js logging, nodejs logging, node js logging, winston nodejs, bunyan nodejs
 
 ---
 The optimally correct logging Node.js logging library can give you unprecedented insights into how your application is working. Having proper logging is equivalent to having a powerful telescope in a space with all your applications. Do you want to be able to see how your application behaves under load in production? In this post, we are going to analyze 5 popular Node.js logging libraries that can easily do the job for you.
@@ -33,7 +36,7 @@ The optimally correct logging Node.js logging library can give you unprecedented
 ## Assumptions
 
 1. You are familiar with how Node.js works and can run node locally
-1. You can install npm libraries and have basic knowledge of package.json and npm CLI
+2. You can install npm libraries and have basic knowledge of package.json and npm CLI
 
 We will use Express.js as an example app to see code examples writing log to the console for all of the Node.js logging libraries in this post.
 
@@ -43,9 +46,9 @@ For this post, we will evaluate 5 of the popular Node.js logging libraries avail
 
 ### Winston
 
-[Winston](https://www.npmjs.com/package/winston) is a popular logging library. It is designed to be simple and enables universal logging with support for multiple `transports`. Winston defines itself as “A logger for just about everything”. 
+[Winston](https://www.npmjs.com/package/winston) is a popular logging library. It is designed to be simple and enables universal logging with support for multiple `transports`. Winston defines itself as “A logger for just about everything”.
 
-With Winston we can route your logs to other services like [AWS cloud watch](https://www.npmjs.com/package/winston-cloudwatch), [graylog2](https://www.npmjs.com/package/@eximius/winston-graylog2), [logz.io](https://www.npmjs.com/package/winston-logzio) or even [Sematext Logsene](https://www.npmjs.com/package/winston-logsene). We can even add the express middleware to make [logging with Express](https://www.npmjs.com/package/express-winston) better with Winston.
+With Winston, we can route your logs to other services like [AWS cloud watch](https://www.npmjs.com/package/winston-cloudwatch), [graylog2](https://www.npmjs.com/package/@eximius/winston-graylog2), [logz.io](https://www.npmjs.com/package/winston-logzio), or even [Sematext Logsene](https://www.npmjs.com/package/winston-logsene). We can even add the express middleware to make [logging with Express](https://www.npmjs.com/package/express-winston) better with Winston.
 
 Below is a code example of Winston with Express using [express-winston middleware](https://github.com/bithavoc/express-winston):
 
@@ -99,7 +102,7 @@ The above code is also available as a [pull request](https://github.com/geshan/n
 
 ### Bunyan for Node.js logging
 
-[Bunyan](https://www.npmjs.com/package/bunyan) is another famous Node.js logging library. Bunyan is used by [Joyent](https://www.joyent.com/node-js/production/modules) in production. It defines itself as a simple and fast JSON logging library for Node.js services. 
+[Bunyan](https://www.npmjs.com/package/bunyan) is another famous Node.js logging library. Bunyan is used by [Joyent](https://www.joyent.com/node-js/production/modules) in production. It defines itself as a simple and fast JSON logging library for Node.js services.
 
 Bunyan advocates that logs should be in JSON format. Its features include a CLI for pretty-printing, serializers, and support for [multiple runtimes](https://github.com/trentm/node-bunyan#runtime-environments) in addition to Node.js like Webpack and Browserify.
 
@@ -149,7 +152,7 @@ The above code is also available as a [pull request](https://github.com/geshan/n
 
 [Pino](https://www.npmjs.com/package/pino) is a relatively popular Node.js logging library that marks itself as a “very low overhead Node.js logger”. It attributes [asynchronous logging](https://github.com/pinojs/pino/blob/HEAD/docs/asynchronous.md) to its fast performance. Pino claims to be over 5x faster than alternatives in many cases in its [benchmarks](https://github.com/pinojs/pino/blob/master/docs/benchmarks.md).
 
-Other features include [child loggers](https://github.com/pinojs/pino/blob/master/docs/child-loggers.md) and [support for multiple web frameworks](https://github.com/pinojs/pino/blob/master/docs/web.md). It has multiple core and community modules which helps to form a thriving [ecosystem](https://github.com/pinojs/pino/blob/master/docs/ecosystem.md). With Pino you can send the logs to many services by using proper transports like [MySQLl](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-mysql), [datadog](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-datadog), [AWS cloudwatch](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-cloudwatch) or [logfrare](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-logflare).
+Other features include [child loggers](https://github.com/pinojs/pino/blob/master/docs/child-loggers.md) and [support for multiple web frameworks](https://github.com/pinojs/pino/blob/master/docs/web.md). It has multiple core and community modules which helps to form a thriving [ecosystem](https://github.com/pinojs/pino/blob/master/docs/ecosystem.md). With Pino, you can send the logs to many services by using proper transports like [MySQL](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-mysql), [Datadog](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-datadog), [AWS cloud watch](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-cloudwatch), or [log flare](https://github.com/pinojs/pino/blob/master/docs/transports.md#pino-logflare).
 
 Below is an example of Pino with Express using [Express Pino logger](https://github.com/pinojs/express-pino-logger):
 
@@ -176,7 +179,7 @@ app.listen(port, () => {
 });
 ```
 
-It will send out an output as follows when we run the server with `node pino.js` and hit `http://localhost:3003/test/api` on the browser:
+It will send out output as follows when we run the server with `node pino.js` and hit `http://localhost:3003/test/api` on the browser:
 
 ``` bash
 Example app listening at http://localhost:3003
@@ -184,7 +187,7 @@ Example app listening at http://localhost:3003
 {"level":30,"time":1611695678817,"pid":32768,"hostname":"abcd","req":{"id":1,"method":"GET","url":"/api/test","headers":{"host":"localhost:3003","connection":"keep-alive","sec-ch-ua":"\"Google Chrome\";v=\"87\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"87\"","sec-ch-ua-mobile":"?0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-fetch-site":"none","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","accept-encoding":"gzip, deflate, br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","cookie":"a=b","if-none-match":"W/\"19-JzA5ewGlTSyvFTwS4fIYMkAu78Q\""},"remoteAddress":"::1","remotePort":63824},"res":{"statusCode":304,"headers":{"x-powered-by":"Express","etag":"W/\"19-JzA5ewGlTSyvFTwS4fIYMkAu78Q\""}},"responseTime":4,"msg":"request completed"}
 ```
 
-Similar to Bunyan, pino's default logs are also verbose. We can use [pino-pretty](https://github.com/pinojs/pino-pretty) CLI to make the logs prettier.
+Similar to Bunyan, Pino's default logs are also verbose. We can use [pino-pretty](https://github.com/pinojs/pino-pretty) CLI to make the logs prettier.
 
 The code example can be accessed as a [pull request](https://github.com/geshan/nodejs-logging/pull/4/files).
 
@@ -194,7 +197,7 @@ The code example can be accessed as a [pull request](https://github.com/geshan/n
 
 Loglevel seems to be easy to use and very convenient too. Its readme adds “This is a barebones reliable everyday logging library.” which does not do fancy things but does have core functionality you will actually use.
 
-Below is a very simple example of loglevel with Express server and no middleware:
+Below is a very simple example of Loglevel with Express server and no middleware:
 
 ``` js
 const express = require('express');
@@ -218,7 +221,7 @@ app.listen(port, () => {
 });
 ```
 
-It will show an output as follows when we run the execute the above code with `node loglevel.js` and hit `http://localhost:3004/test/api` on the browser:
+It will show output as follows when we run the execute the above code with `node loglevel.js` and hit `http://localhost:3004/test/api` on the browser:
 
 ``` bash
 Example app listening at http://localhost:3004
@@ -274,14 +277,13 @@ The above code is available as a [pull request](https://github.com/geshan/nodejs
 
 Below is a quick comparison of the Node.js logging libraries we have discussed till now, all data is collected on the last week of Jan-2021:
 
-|                   Node.js Logging Library                  | Downloads/week |                  Github Stars                 | Github Forks | First Release                                                                 |
-|:--------------------------------------------------:|:--------------:|:---------------------------------------------:|--------------|-------------------------------------------------------------------------------|
-|  [Winston](https://www.npmjs.com/package/winston)  |  5.05 million  | [16.7K](https://github.com/winstonjs/winston) | 1.5K         | [0.1.0](https://github.com/winstonjs/winston/tags?after=0.1.3) on 19-Jan-2011 |
-|   [Bunyan](https://www.npmjs.com/package/bunyan)   |  1.23 million  | [6.5K](https://github.com/trentm/node-bunyan) | 513          | [0.1.0](https://github.com/trentm/node-bunyan/tags?after=0.5.0) on 3-Feb-2012 |
-|     [Pino](https://www.npmjs.com/package/pino)     |   1.28 million  |     [6.6K](https://github.com/pinojs/pino)    | 439          | [0.2.0](https://github.com/pinojs/pino/tags?after=v0.4.2) on 6-Mar-2016       |
-| [LogLevel](https://www.npmjs.com/package/loglevel) | 9.12 million   | [1.9K](https://github.com/pimterry/loglevel)  | 154          | [0.1.0](https://github.com/pimterry/loglevel/tags?after=1.0.0) on 2-Apr-2013  |
-| [npmlog](https://www.npmjs.com/package/npmlog)     | 10.71 million  | [346](https://github.com/npm/npmlog)          | 53           | [0.1.0](https://github.com/npm/npmlog/tags?after=v1.0.0) on 6-Jun-2012        |
-
+| Node.js Logging Library | Downloads/week | Github Stars | Github Forks | First Release |
+| :---: | :---: | :---: | --- | --- |
+| Winston | 5.05 million | 16.7K | 1.5K | 0.1.0 on 19-Jan-2011 |
+| Bunyan | 1.23 million | 6.5K | 513 | 0.1.0 on 3-Feb-2012 |
+| Pino | 1.28 million | 6.6K | 439 | 0.2.0 on 6-Mar-2016 |
+| LogLevel | 9.12 million | 1.9K | 154 | 0.1.0 on 2-Apr-2013 |
+| npmlog | 10.71 million | 346 | 53 | 0.1.0 on 6-Jun-2012 |
 
 If we look at the download trends, [NPM trends](https://www.npmtrends.com/winston-vs-bunyan-vs-pino-vs-loglevel-vs-npmlog) paints a picture like below:
 
@@ -294,6 +296,7 @@ As per [npmcompare](https://npmcompare.com/compare/bunyan,loglevel,npmlog,pino,w
 ## Conclusion
 
 For an optimal logging and monitoring experience in Node.js, rather than going after the numbers, it might be best to choose the library that suits your needs.
+
 > Use the library that fits your purpose the best and utilize its addons or features that make the most sense to your use case.
 
-It would also be great if you follow some [logging best practices](/blog/2019/03/follow-these-logging-best-practices-to-get-the-most-out-of-application-level-logging-slides/) to reap the most benefits as they are a [software engineers’ best friend](/blog/2019/11/laracon-au-2019-overall-a-good-experience/#slides). I have been preaching about the [importance of logging](/blog/2015/08/importance-of-logging-in-your-applications/) for a long time now. Happy logging!
+It would also be great if you follow some [logging best practices](/blog/2019/03/follow-these-logging-best-practices-to-get-the-most-out-of-application-level-logging-slides/) to reap the most benefits as they are [software engineers’ best friend](/blog/2019/11/laracon-au-2019-overall-a-good-experience/#slides). I have been preaching about the [importance of logging](/blog/2015/08/importance-of-logging-in-your-applications/) for a long time now. Happy logging!
