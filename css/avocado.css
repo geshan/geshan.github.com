@@ -212,12 +212,14 @@ optgroup {
 
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
+    margin-bottom: 15px;
 }
 
 td,
 th {
-    padding: 0
+    padding: 10px 12px;
+    border: 1px solid #ddd;
 }
 
 @media print {
