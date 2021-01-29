@@ -277,13 +277,13 @@ The above code is available as a [pull request](https://github.com/geshan/nodejs
 
 Below is a quick comparison of the Node.js logging libraries we have discussed till now, all data is collected on the last week of Jan-2021:
 
-| Node.js Logging Library | Downloads/week | Github Stars | Github Forks | First Release |
-| :---: | :---: | :---: | --- | --- |
-| Winston | 5.05 million | 16.7K | 1.5K | 0.1.0 on 19-Jan-2011 |
-| Bunyan | 1.23 million | 6.5K | 513 | 0.1.0 on 3-Feb-2012 |
-| Pino | 1.28 million | 6.6K | 439 | 0.2.0 on 6-Mar-2016 |
-| LogLevel | 9.12 million | 1.9K | 154 | 0.1.0 on 2-Apr-2013 |
-| npmlog | 10.71 million | 346 | 53 | 0.1.0 on 6-Jun-2012 |
+|                   Feature/Service                  | Downloads/week |                  Github Stars                 | Github Forks | First Release                                                                 |
+|:--------------------------------------------------:|:--------------:|:---------------------------------------------:|--------------|-------------------------------------------------------------------------------|
+|  [Winston](https://www.npmjs.com/package/winston)  |  5.05 million  | [16.7K](https://github.com/winstonjs/winston) | 1.5K         | [0.1.0](https://github.com/winstonjs/winston/tags?after=0.1.3) on 19-Jan-2011 |
+|   [Bunyan](https://www.npmjs.com/package/bunyan)   |  1.23 million  | [6.5K](https://github.com/trentm/node-bunyan) | 513          | [0.1.0](https://github.com/trentm/node-bunyan/tags?after=0.5.0) on 3-Feb-2012 |
+|     [Pino](https://www.npmjs.com/package/pino)     |   1.28 millon  |     [6.6K](https://github.com/pinojs/pino)    | 439          | [0.2.0](https://github.com/pinojs/pino/tags?after=v0.4.2) on 6-Mar-2016       |
+| [LogLevel](https://www.npmjs.com/package/loglevel) | 9.12 million   | [1.9K](https://github.com/pimterry/loglevel)  | 154          | [0.1.0](https://github.com/pimterry/loglevel/tags?after=1.0.0) on 2-Apr-2013  |
+| [npmlog](https://www.npmjs.com/package/npmlog)     | 10.71 million  | [346](https://github.com/npm/npmlog)          | 53           | [0.1.0](https://github.com/npm/npmlog/tags?after=v1.0.0) on 6-Jun-2012        |
 
 If we look at the download trends, [NPM trends](https://www.npmtrends.com/winston-vs-bunyan-vs-pino-vs-loglevel-vs-npmlog) paints a picture like below:
 
