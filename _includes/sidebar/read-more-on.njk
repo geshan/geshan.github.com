@@ -10,5 +10,6 @@
         <a class="list-group-item{% if tagUrl == page.url %} active{% endif %}" href="{{ tagUrl}}" title="{{ tag }}"><span class="badge">{{ collections[ tag ] | length }}</span>{{ tag | lower }}</a>
       {%- endif -%}
     {%- endfor -%}
+    <a class="list-group-item{% if tagUrl == page.url %} active{% endif %}" href="/blog/categories/" title="All the categories"><span class="badge"></span>All categories</a>
     </div>
 </section>
