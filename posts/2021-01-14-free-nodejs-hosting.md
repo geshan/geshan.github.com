@@ -22,6 +22,7 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/01free-nodejs-hosting.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
 
 <!-- more -->
+
 ## Table of contents
 
 * [Free Node.js Hosting options](#free-node.js-hosting-options)
@@ -54,8 +55,8 @@ I will include 3+ other services that ask for credit cards or have pretty inexpe
 All 3 of these services that we are going to look at in the next sections. Before we dive into actually deploying our Node.js applications below are some prerequisites:
 
 1. You have a GitHub account and know how to fork repositories
-1. Your application code is available on GitHub
-1. You are able to add third-party applications to your GitHub account.
+2. Your application code is available on GitHub
+3. You are able to add third-party applications to your GitHub account.
 
 Time to start revealing our free Node.js hosting services:
 
@@ -79,7 +80,7 @@ With serverless functions, the issues of cold start and losing application state
 
 Zeet is another awesome service where neither the app sleeps if you don’t get requests for 30 minutes nor it is serverless.
 
-> The con here is you get only 1 app free but it gets 1 shared CPU and 1 GB of shared memory. 
+> The con here is you get only 1 app free but it gets 1 shared CPU and 1 GB of shared memory.
 
 Well, that is still better than the above two options if you only have only one [coding challenge](/blog/2020/09/take-home-coding-challenges-outshine-competition/) to deploy.
 
@@ -177,7 +178,7 @@ Each time you open a new pull request in that repository Vercel will give you a 
 
 On merge to master/main branch, it will auto-deploy the code to the main URL. You can use the [Vercel CLI](https://vercel.com/docs/cli) for re-deployments, setting up environment variables, and a host of other things.
 
-Both Heroku and Vercel have powerful CLI to make your life easier for deploying the apps and doing other things like having a look at the app logs from the CLI. 
+Both Heroku and Vercel have powerful CLI to make your life easier for deploying the apps and doing other things like having a look at the app logs from the CLI.
 
 Next, let's look at how Zeet compares to Heroku and Vercel.
 
@@ -217,7 +218,7 @@ Given you have [registered](https://zeet.co/new) on to Zeet with GitHub and you 
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/17nodejs-zeet-app-running.jpg" title="Node.js app running on Zeet" alt="Node.js app running on Zeet">
 
-* Next add `/quotes` to the URL and you should see something similar to the following:
+* Next, add `/quotes` to the URL and you should see something similar to the following:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/18nodejs-zeet-api-running.jpg" title="Node.js Quotes API running on Zeet" alt="Node.js Quotes API running on Zeet">
 
@@ -233,27 +234,28 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 
 Below is a quick comparison table for Heroku, Vercel, and Zeet.
 
-|                  Feature/Service                  |    CPU   |    Memory   | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
-|:-------------------------------------------------:|:--------:|:-----------:|------------------------|---------------------|--------------|
-|       [Heroku](https://www.heroku.com/free)       |    1x    |   512 MB    | After 30 mins          | No                  | 5            |
-| [Vercel](https://vercel.com/docs/platform/limits) |    N/A   |     1 GB    | No                     | Yes                 | Unlimited    |
-|          [Zeet](https://zeet.co/pricing)          | 1 Shared | 1 GB Shared | No                     | No                  | 1            |
+| Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
+| :---: | :---: | :---: | --- | --- | --- |
+| Heroku | 1x | 512 MB | After 30 mins | No | 5 |
+| Vercel | N/A | 1 GB | No | Yes | Unlimited |
+| Zeet | 1 Shared | 1 GB Shared | No | No | 1 |
 
-
-After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources. 
+After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
 ## Other options for free Node.js hosting
 
 Some other services where you can host your Node.js application free/almost free but you need to put your credit card are as follows:
 
-1. Fly.io - pretty good, it is like CDN for the backend. [Free plan](https://fly.io/docs/about/pricing/) has 3 shared-cpu-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
-1. Google Cloud Run - You can host your Node.js app on Google Cloud Run as serverless containers. You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
-1. Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
-1. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is btter used to code collaborately than host a Node.js app or API.
+1. Fly.io - Pretty good, it is like CDN for the backend. The [free plan](https://fly.io/docs/about/pricing/) has 3 shared-CPU-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
+2. Google Cloud Run - You can host your Node.js app on Google Cloud Run as serverless containers. You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
+3. Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
+4. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is better used to code collaboratively than host a Node.js app or API.
 
 > You can host your Node.js App on all 3 of the big cloud providers AWS, Azure, and GCP and/or their function as a service (FAAS) serverless options or even on free-forever VM. But, they will ask for your credit-card.
 
 You can even explore other cloud providers like IBM Cloud or Alibaba to host your Node.js app for $0 a month. I will leave the digging deeper part for you.
+
+If you are looking for windows hosting, this [Windows VPS Hosting Comparison](https://www.accuwebhosting.com/vps-hosting/windows) is great.
 
 ## Conclusion
 
