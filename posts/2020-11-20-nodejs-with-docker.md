@@ -353,6 +353,6 @@ There are some considerations you should be aware of:
 
 ## Conclusion
 
-Using Node.js on Docker is a rewardig exerience. If you want to upgrade Node.js, it is as simple as changing the version on the Docker file, rebuilding it and using it. Node.js is also great for [microservices](/blog/2020/11/nodejs-microservices/).
+Using Node.js on Docker is a rewarding experience. If you want to upgrade Node.js, it is as simple as changing the version on the Docker file, rebuilding it and using it. Node.js is also great for [microservices](/blog/2020/11/nodejs-microservices/).
 
 > If you want better developer experience and amazing scalability on production with ease, start using Node.js on docker today.
