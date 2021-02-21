@@ -595,7 +595,7 @@ As all the code is in a public [Github repository](https://github.com/geshan/nod
 
 You can look at the code and try to see how the whole thing is pieced together in this Node.js MySQL tutorial with Express Js for a quotes REST API. This API can act as a good base for a [Node.js microservice](/blog/2020/11/nodejs-microservices/).
 
-You can dockerize the REST API app following this step-by-step [tutorial](/blog/2020/11/nodejs-with-docker/). After that app is dockerized you can host it easily on something like Google Cloud Run. If you want a quick start testing ground without Docker, I would recommend [Glitch](https://glitch.com/).
+You can dockerize the REST API app following this step-by-step [tutorial](/blog/2020/11/nodejs-with-docker/). After that app is dockerized you can host it easily on something like [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). If you want a quick start testing ground without Docker, I would recommend [Glitch](https://glitch.com/). You can try 3 [Node.js free hosting](/blog/2021/01/free-nodejs-hosting/) options too.
 
 ## Conclusion
 
