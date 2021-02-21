@@ -16,7 +16,7 @@ lastModified: 2020-04-25T11:07:25.000+11:00
 ---
 If you have worked with software systems long enough you have surely worked with crons. Cron is a time-based task scheduler in UNIX-like operating systems. We use to run some task/script periodically, for example, every day at 9:30 AM.
 
-Setting up and running crons has changed in the past years from a crontab command to now running it on Kubernetes as CronJob, still, the basics remain the same and it is very important to monitor cron jobs. You don't want to wake up to some client not being paid because the CronJob did not run.
+Setting up and running crons has changed in the past years from a crontab command to now running it as a [Kubernetes Cron Job](/blog/2021/02/kubernetes-cron-job/), still, the basics remain the same and it is very important to monitor cron jobs. You don't want to wake up to some client not being paid because the CronJob did not run.
 
 This post is going to highlight one efficient bash trick which simplifies cron job monitoring. The solution is language and framework agnostic as it is done in the command itself. Let's dive deeper into this way to effectively monitor cron jobs. Learn how to monitor cron jobs the easy way.
 
