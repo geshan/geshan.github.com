@@ -60,7 +60,7 @@ It also works well with a big team where [Spotify](https://blog.risingstack.com/
 
 > 1% of the websites tracked by W3tech might seem a small number, but Node.js is popular in websites with high traffic as mentioned above.
 
-With high scalability in the picture, it becomes a lot easier to scale the application horizontally with Docker and Kubernetes. Using Docker with Node.js enables high scalability.
+With high [software scalability](/blog/2020/12/software-scalability/) in the picture, it becomes a lot easier to scale the application horizontally with Docker and Kubernetes. We can say thet, using Docker with Node.js enables high scalability.
 
 ## Assumptions for Docker with Node.js
 
