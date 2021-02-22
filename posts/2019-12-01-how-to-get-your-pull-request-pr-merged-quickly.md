@@ -66,7 +66,7 @@ This is one of the underutilized things I see in software engineering. The first
 
 > We deployed PayPal but it was accessible only to `myname@mycompany.com` for 2 days before being opened up to `*@mycompany.com` later to be opened up to all customers.
 
-With feature flags you can ship the files you need step by step but the only user for a given amount of time can be `you@yourcompany.com`. In this way, you can have smaller pull requests even for critical features and get your code tested on production gradually. Even in the above example of POST API, the last enable code could be shipped behind a feature flag and only when you have tested it well on production you can open it up to more people step by step.
+With [feature flags](/blog/2018/10/deployment-is-not-release/) you can ship the files you need step by step but the only user for a given amount of time can be `you@yourcompany.com`. In this way, you can have smaller pull requests even for critical features and get your code tested on production gradually. Even in the above example of POST API, the last enable code could be shipped behind a feature flag and only when you have tested it well on production you can open it up to more people step by step.
 
 ## Conclusion
 
