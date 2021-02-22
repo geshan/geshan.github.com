@@ -23,7 +23,7 @@ I was born and lived the majority of my life in Kathmandu, Nepal. I have lived a
 
 ## Day to day
 
-Day to day, I use mainly Javascript (Node.js) and PHP with MySQL database to translate business requirements into reliable, scalable, and resilient software.
+Day to day, I use mainly Javascript (Node.js) and PHP with MySQL database to translate business requirements into reliable, [scalable](/blog/2020/12/software-scalability/), and [resilient software](/blog/2020/12/software-resilience/) systems.
 
 ## Why This blog?
 
@@ -33,7 +33,7 @@ Another factor that motivates me to keep on publishing blog posts is the feedbac
 
 ## Public Speaking
 
-I have given [talks](/blog/categories/talks/) at tech conferences in the Middle East, Europe, United States, and Australia in the past years on topics ranging from ChatOps, Continous delivery to Microservices and Serverless containers. You can see a neatly organized [table](https://github.com/geshan/public-speaking) as a GitHub repo. I have also spoken at various meetups.
+I have given [talks](/blog/categories/talks/) at tech conferences in the Middle East, Europe, United States, and Australia in the past years on topics ranging from ChatOps, Continous delivery to Microservices and Serverless containers. You can see a neatly organized [table](https://github.com/geshan/public-speaking) as a GitHub repo. I have also spoken at various meetups too.
 
 ## Side Projects
 
