@@ -81,7 +81,7 @@ As software engineers, we always have to be conscious of the performance impact 
 
 Another aspect is the load the application will receive. For internal products, it will be predictable as the number of users or usage patterns will be clear. For an open to the whole world customer-facing application, you could potentially get millions of users in a day. This means those millisecond/microsecond optimizations will need some careful consideration for customer-facing applications compared to internal products.
 
-Similarly, the scalability of the application also comes into play at this point. Customer-facing applications will be provisioned more resources to make it more scalable as the load is difficult to predict. Usually, internal applications run on much fewer resources as they don’t get hit millions of times a day.
+Similarly, the [software scalability](/blog/2020/12/software-scalability/) of the application also comes into play at this point. Customer-facing applications will be provisioned more resources to make it more scalable as the load is difficult to predict. Usually, internal applications run on much fewer resources as they don’t get hit millions of times a day.
 
 ### Customer-facing applications are more security sensitive
 
