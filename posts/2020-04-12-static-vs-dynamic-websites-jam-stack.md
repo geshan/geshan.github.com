@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Static vs dynamic website with JAM stack website in between
-date: 2020-04-12T11:35:47Z
+date: 2020-04-12T11:35:47.000+00:00
 comments: true
 tags:
 - Web Development
@@ -12,7 +12,8 @@ description: This post explains the main differences between Static, dynamic and
   stack websites. It also covers the technical and cost aspects of all 3 options.
 keywords: static vs dynamic website, difference between static and dynamic web page,
   jamstack, jam stack,dynamic vs static website, static site generators
-lastModified: 2020-04-25 10:03:22 +11:00
+lastModified: 2020-04-25T10:03:22.000+11:00
+
 ---
 The web has been around for a while now. I have been building websites for 20 years now and I started by building static websites. Later I worked on many dynamic websites and web applications. This post is a quick rundown on the major difference between dynamic and static websites. There are some details about the JAM (Javascript API and Markup) stack. It also has some explanation of the technologies and costs associated with each of the 3 options.
 
@@ -56,7 +57,7 @@ The first [CERN](http://info.cern.ch/hypertext/WWW/TheProject.html) website is s
 
 ### Technical aspects of a static website
 
-Static websites from a technical point of view are just a collection of HTML and CSS files. It may have some client-side JavaScript. There would be no backend language or an external data store. For a purely static website a full-blown database dependent, CMS is also not in the scope. There are [Static Site Generators](https://www.staticgen.com/) that can help manage the content still deployment and Git is something technical to learn. The main advantages of a static website would be speed, security, and scalability.
+Static websites from a technical point of view are just a collection of HTML and CSS files. It may have some client-side JavaScript. There would be no backend language or an external data store. For a purely static website a full-blown database dependent, CMS is also not in the scope. There are [Static Site Generators](https://www.staticgen.com/) that can help manage the content still deployment and Git is something technical to learn. The main advantages of a static website would be speed, security, and [software scalability](/blog/2020/12/software-scalability/).
 
 ### Cost for running a static website
 
