@@ -97,7 +97,7 @@ Security is everyone’s responsibility. In no means or form, I am suggesting to
 
 As per my experience, I have never seen an internal application being A/B tested. The reason is simple: you can just go to the user and have a chat to come to a better decision. As the users are limited and within the same organization you can even ask the user to use a certain browser or software. Once, we deployed a go executable on like 10 photographers’ Mac to be able to upload images to S3 much faster. There was no need for an A/B test there. Another reason not to do A/B testing for internal products is the limited scale which will result in skewed results due to low volumes.
 
-There is a similar situation for using feature flags. It will be needed now and then but not all the time. I have also rarely witnessed gradual rollout like 1%  of the users for the first week, then 5% next week and slowly going to 100% on internal products.
+There is a similar situation for using [feature flags](/blog/2018/10/deployment-is-not-release/). It will be needed now and then but not all the time. I have also rarely witnessed gradual rollout like 1%  of the users for the first week, then 5% next week and slowly going to 100% on internal products.
 
 > On the contrary, for customer-facing applications especially for e-commerce A/B testing is like an agreed norm. Many times one user will see the checkout button “green” but another sure will see it “blue”.
 
