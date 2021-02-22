@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Career paths for to be tech graduates [Slides]"
-date: 2016-06-28 14:03:05 +04:00
+title: Career paths for to be tech graduates [Slides]
+date: 2016-06-28T14:03:05.000+04:00
 comments: true
 tags:
 - Misc
 - Talks
-cover: /images/career-paths-for-tech-grads/cptg-01.jpg
+cover: "/images/career-paths-for-tech-grads/cptg-01.jpg"
+
 ---
-
-
 After almost 2 years, I gave another talk to the students of Prime College. Last time it was "[Things I wished I knew while doing my tech bachelors](https://geshan.com.np/blog/2014/08/things-i-wished-i-knew-while-doing-my/)". This time it was **Career Paths for to be tech graduates**. I prepared the slides at 9 and was already presenting the talk at 11:15.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/career-paths-for-tech-grads/cptg-01.jpg" title="Career Paths for tech graduates the talk" alt="Career Paths for tech graduates the talk">
@@ -22,7 +21,7 @@ After almost 2 years, I gave another talk to the students of Prime College. Last
 
 ## Participants
 
-The students were from Bsc. CSIT and [BIM](https://en.wikipedia.org/wiki/Bachelor_in_Information_Management) of second and fourth semester. They were high on youth and not worried about their careers. As it was a short talk, I wanted the session to be interactive. I was trying to get more questions out of them. Some of them were shy to ask the questions so they came in later after the talk to have a chat with me.
+The students were from Bsc. CSIT and [BIM](https://edusanjal.com/course/bachelor-of-information-management-bim-tribhuvan-university/) of second and fourth semester. They were high on youth and not worried about their careers. As it was a short talk, I wanted the session to be interactive. I was trying to get more questions out of them. Some of them were shy to ask the questions so they came in later after the talk to have a chat with me.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/career-paths-for-tech-grads/cptg-02.jpg" title="Career Paths for tech graduates the participants" alt="Career Paths for tech graduates the participants">
 
