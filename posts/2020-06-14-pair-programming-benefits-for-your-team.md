@@ -21,7 +21,7 @@ There are proven benefits of pair programming you and your team can take advanta
 
 ## What is pair programming?
 
-Pair programming is believed to be an agile software development technique where two people write code together on a single machine. It is automatically a very collaborative and learning experience. There is a lot of communication between the pair as they need to plan and discuss the code on the fly.
+Pair programming is believed to be an [agile software development](/blog/2020/09/agile-software-development/) technique where two people write code together on a single machine. It is automatically a very collaborative and learning experience. There is a lot of communication between the pair as they need to plan and discuss the code on the fly.
 
 If you have not paired then you must try it once to know what it really feels like. Basically, imagine you are writing a single line of code and another software engineer is beside you thinking and guiding you through why and how for that line of code. It is a great activity for a pair of software engineers.
 
