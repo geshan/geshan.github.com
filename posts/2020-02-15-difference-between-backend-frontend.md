@@ -95,7 +95,7 @@ Typescript is [exploding in popularity](https://redmonk.com/jgovernor/2019/05/07
 
 Let's unfold my views about the "super stack" development work:
 
-* Super stack development work involves not only developing the feature/app (which is full-stack ish) on your (the developers') machine but deploying it and making it accessible and scalable.
+* Super stack development work involves not only developing the feature/app (which is full-stack ish) on your (the developers') machine but deploying it and making it accessible and [scalable](/blog/2020/12/software-scalability/).
 * This type of work encompasses knowing about the servers, cloud these days, and venturing into the [DevOps](https://www.atlassian.com/devops)/[SRE](https://landing.google.com/sre/) land.
 * Super stack work also includes thinking about security, employing your knowledge of things like the [OWASP top 10](https://owasp.org/www-project-top-ten/), and writing secure code.
 
