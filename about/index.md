@@ -41,7 +41,7 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 ### Nepal News English - 2019
 
-[Nepal News English](https://twitter.com/nepal_news_en) Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on Google Cloud Run. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 12.4 K followers.
+[Nepal News English](https://twitter.com/nepal_news_en) Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on [Google Cloud Run](blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) as serverless containers. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 12.6 K followers.
 
 ### AU Tech Jobs - 2020
 
