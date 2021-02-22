@@ -45,7 +45,7 @@ With each Docker container, you can be specific about how much resources you wan
 
 > For example, a simple Node JS app container/pod can run with like 128 MB memory and 0.25 CPU. As and when load increases run 5 pods in place of 2.
 
-This requires the application to be built with horizontal scalability in mind. That basically means storing no data on the file system. Treating containers like cattle, not pet helps scale horizontally. It also makes high availability of application an achievable task.
+This requires the application to be built with horizontal [software scalability](/blog/2020/12/software-scalability/) in mind. That basically means storing no data on the file system. Treating containers like cattle, not pet helps scale horizontally. It also makes high availability of application an achievable task.
 
 ### Security is baked in
 
