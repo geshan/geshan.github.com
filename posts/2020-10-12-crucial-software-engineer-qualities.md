@@ -65,7 +65,7 @@ The response can be as quick as a rollback or even write a quick fix to patch th
 
 ## Ace team players
 
-Being an ace team player is another crucial quality of a great software engineer. Engineering resilient software is a team sport and efficient software engineers know this fact very well. A great software engineer is an excellent mentor and a coachable mentee too.
+Being an ace team player is another crucial quality of a great software engineer. Engineering [resilient software](/blog/2020/12/software-resilience/) is a team sport and efficient software engineers know this fact very well. A great software engineer is an excellent mentor and a coachable mentee too.
 
 A great software engineer will always look out for the whole team. They will help engineers junior to him/her and not hesitate to learn from everyone. A valuable software engineer will logically help another teammate. This does not mean that software engineer will always leave their talk on hand, context switch, and help another engineer. This means given the task on hand is at a parkable state they will park it, then go and help the junior team member get unblocked.
 
