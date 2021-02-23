@@ -134,7 +134,7 @@ Node.js is fast because of the non-blocking IO and [event loop](https://Node.js.
 
 Node.js being event-based is a very good fit for microservices. With things like streams and real-time capabilities, choosing Node.js for your next microservice should be a no brainer.
 
-Fast is another subjective term. Node.js is fast but compared against what. On the other hand, scalability is a bit more objective. It can be measured in terms of response times and requests per second. Wallmart the world’s [125th website](https://www.alexa.com/siteinfo/walmart.com) in terms of traffic surely knows about high volumes and scalability. After a move to Node.js they [reportedly](https://blog.risingstack.com/how-enterprises-benefit-from-microservices-architectures/#walmartsuccessfullyrevitalizeditsfailingarchitecturewithmicroservices) survived 6 million page views per minute on a black Friday without downtime. That brings us to the next point, enterprise-ready.
+Fast is another subjective term. Node.js is fast but compared against what. On the other hand, [software scalability](/blog/2020/12/software-scalability/) is a bit more objective. It can be measured in terms of response times and requests per second. Wallmart the world’s [125th website](https://www.alexa.com/siteinfo/walmart.com) in terms of traffic surely knows about high volumes and scalability. After a move to Node.js they [reportedly](https://blog.risingstack.com/how-enterprises-benefit-from-microservices-architectures/#walmartsuccessfullyrevitalizeditsfailingarchitecturewithmicroservices) survived 6 million page views per minute on a black Friday without downtime. That brings us to the next point, enterprise-ready.
 
 ### Battle-tested and used at the enterprise scale
 
