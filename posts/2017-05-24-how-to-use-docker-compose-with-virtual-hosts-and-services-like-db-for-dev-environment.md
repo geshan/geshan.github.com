@@ -1,16 +1,18 @@
 ---
 layout: post
-title: "How to use docker compose with virtual hosts and shared services (like db) for dev environment"
-date: 2017-05-24 18:53:04 +04:00
+title: How to use docker compose with virtual hosts and shared services (like db)
+  for dev environment
+date: 2017-05-24T18:53:04.000+04:00
 comments: true
 tags:
 - Docker
 - devops
-cover: /images/docker-compose-vhost/docker-compose-vhost.jpg
-description: Learn how to use docker, docker compose with virtual hosts and shared services like a database on your dev environment easily.
+cover: "/images/docker-compose-vhost/docker-compose-vhost.jpg"
+description: Learn how to use docker, docker compose with virtual hosts and shared
+  services like a database on your dev environment easily.
 keywords: docker, docker compose, docker virtual host, docker compose virtual host
----
 
+---
 Docker as been immensely popular in the past years. If you are not using docker at least in your dev environment in 2017. You are surely missing out on some great advantages. Your new software engineer should start writing production-ready code in a matter of hours not days. All thanks to docker.  Along the same lines, this post will cover how you can set up docker for your dev environment with least friction and maximum productivity. It is an opinionated post. We migrated to this `external_links` [approach](https://docs.docker.com/compose/compose-file/#externallinks) so that we could run multiple projects/microservices that use the same db/services shared among them.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-compose-vhost/docker-compose-vhost.jpg" title="Docker compose with vhost and shared services" alt="Docker compose with vhost and shared services">
@@ -20,7 +22,7 @@ Docker as been immensely popular in the past years. If you are not using docker 
 ##  Context
 
 * This tutorial is generally agnostic of docker and docker-compose versions (I am using docker compose 1 syntax). I assume you have docker and docker-compose installed and know about them.
-* It uses external images like Nginx proxy for virtual host per project. Mysql db as shared external service. It could also have been mongo or redis or even rabbit mq. The main point is to use it as `external_link` in the docker compose file, so that it can be shared among projects.
+* It uses external images like Nginx proxy for virtual host per project. Mysql db as shared external service. It could also have been mongo or redis or even [RabbitMQ](/blog/2014/08/basic-overview-of-message-queues-rabbit/). The main point is to use it as `external_link` in the docker compose file, so that it can be shared among projects.
 * It uses a demo app which emulates the page visit/hit counter popular decades back with a [~30 liner Nodejs app](https://github.com/geshan/counter/blob/master/index.js) and Mysql db.
 * I would like to keep the description as concise as possible and in points to make it simple and clear. You should read the code of [sample counter project](https://github.com/geshan/counter) and sample mysql container's [docker-compose.yml](https://github.com/geshan/sample-mysql/blob/master/docker-compose.yml) well.
 * The goal is to grasp the concepts well and apply it to your current project. For example, you could start with replacing your local mysql install with a docker container.
