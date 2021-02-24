@@ -146,7 +146,7 @@ The following are other free services that will help you build your tech startup
 1. ForwardEmail - Great you have your domain but using a Gmail email won’t work best for your brand identity. Get your info@yourdomain.ml for free with [ForwardEmail](https://forwardemail.net/en) free plan.
 1. Free CDN - If you are serving images or static assets on your website or web application you can use [Statically](https://statically.io/) to get the CDN optimizations and benefits. Try it, it is free and unlimited too.
 
-If you know of any other services that can help a budding tech startup please do add it to the comments section.
+If you know of any other services that can help a [budding tech startup](/blog/2014/06/5-free-apps-to-bootstrap-your-budding/) please do add it to the comments section.
 
 ## Conclusion
 
