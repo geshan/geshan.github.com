@@ -85,7 +85,7 @@ Following is my understanding of [full-stack development](https://skillcrush.com
 * A task will qualify as a full-stack work when it involves things like adding a field to a database table, writing backend code, and changing frontend form and logic to deliver this new feature.
 * Being able to execute a full-stack task means knowing both sides of the stack to the point that it can be carried out. It will be great to consult more experienced team members to see if anything can be improved.
 
-The term "full-stack developer" seems over demanding to me, I have met a couple of people who are real full-stack developers, they are [mythical](https://stackoverflow.blog/2019/10/17/imho-the-mythical-fullstack-engineer/). Still, most of the software engineers I know "can" do full-stack tasks but identify themselves more as a backend or frontend engineer.
+The term "full-stack developer" seems over demanding to me, I have met a couple of people who are real [full-stack developers](https://youteam.io/blog/full-stack-software-developer-hiring/), they are [mythical](https://stackoverflow.blog/2019/10/17/imho-the-mythical-fullstack-engineer/). Still, most of the software engineers I know "can" do full-stack tasks but identify themselves more as a backend or frontend engineer.
 
 > Learning Javascript very well can give you an edge when doing full-stack work. Javascript is the only language that can be used both on the backend (NodeJs) and frontend (with segmentation on the framework side).
 
