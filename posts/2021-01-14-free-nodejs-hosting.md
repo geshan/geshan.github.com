@@ -190,6 +190,10 @@ Next, let's look at how Zeet compares to Heroku and Vercel.
 
 As per its [pricing](https://zeet.co/pricing) page, we can run one project for free with limited and shared resources. Time to dig more into Zeet:
 
+### Update: Mar 2021 - Zeet has started to charge
+
+Recently Zeet has deprecated its free plan and started to charge $5 for the single shared VM it used to provide free. I would recommend using [Qovery](https://www.qovery.com/pricing) as an alternative to Zeet which has a great free plan.
+
 #### Deploy Node.js Quotes API to Zeet
 
 Given you have [registered](https://zeet.co/new) on to Zeet with GitHub and you are logged into Zeet, follow the steps below:
