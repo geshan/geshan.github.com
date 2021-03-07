@@ -15,7 +15,7 @@ description: Read the 5 most compelling reasons to use serverless containers. No
 keywords: serverless containers, Google Cloud, Google Cloud Run, serverless, containers
 
 ---
-Google [Cloud Run](https://cloud.google.com/run/) makes deploying serverless containers a breeze. It has a fully managed serverless version, which gives huge scalability, high availability, and cost based on precise usage. Being serverless, there are no servers for you to manage. In addition to these awesome reasons, this post discusses 5 more compelling reasons to use serverless containers on Google Cloud Run for your next project.
+Google [Cloud Run](https://cloud.google.com/run/) makes deploying serverless containers a breeze. It has a fully managed serverless version, which gives [software scalability](/blog/2020/12/software-scalability/), high availability, and cost based on precise usage. Being serverless, there are no servers for you to manage. In addition to these awesome reasons, this post discusses 5 more compelling reasons to use serverless containers on Google Cloud Run for your next project.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/reasons-to-use-google-cloud-run/00reasons-to-use-cloud-run.jpg" title="5 compelling reasons to use Google Cloud Run" alt="5 compelling reasons to use Cloud Run">
 
