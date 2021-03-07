@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "LaraconEU 2016 was a great experience overall"
-date: 2016-08-25 05:59:03 +02:00
+title: LaraconEU 2016 was a great experience overall
+date: 2016-08-25T05:59:03.000+02:00
 comments: true
 tags:
 - Misc
 - Talks
 - Laravel
-cover: /images/laracon-eu-2016/laracon-eu.jpg
----
+cover: "/images/laracon-eu-2016/laracon-eu.jpg"
 
+---
 It all started with submitting my chatops talk to some open call for papers in April 2016. After giving the talk in CodeMotion Dubai, I felt chatops is a useful topic. Everyone working in software development can leverage it to make their life easier. My talk was a Laravel centered version of the same talk.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-eu-2016/laracon-eu.jpg" title="Laracon EU 2016" alt="Laracon EU 2016">
@@ -74,7 +74,7 @@ After that I attended the following talks for the day:
 
 1. How to avoid database migration hell - which was good
 1. Varnish For PHP Developers - that was a bit of too much code still good
-1. One Box Doesn't fit all - by Frank which was a different way at looking at scalability, still, it was a great talk.
+1. One Box Doesn't fit all - by Frank which was a different way at looking at [software scalability](/blog/2020/12/software-scalability/), still, it was a great talk.
 
 
 ### Conference Day 2
