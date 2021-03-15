@@ -48,7 +48,7 @@ Time to get our hands dirty with some example code, scroll a bit more to begin.
 
 ## Javascript array functions
 
-An array is a high-level, list-like object in JavaScript that can have a sequence of primitive data types like string, int, or even objects. The array functions that we are going to elaborate on later in this post are built-in functions. 
+An array is a high-level, list-like object in JavaScript that can have a sequence of primitive data types like string, int, or even objects. The array functions that we are going to elaborate on later in this post are built-in functions.
 
 We will use a simple array of objects from the programming-languages API as below:
 
@@ -150,7 +150,7 @@ const isFundayADay = days.includes("Funday");
 console.log(`Is Sunday a day? Answer: ${isSundayADay} -- Is Funday a day? Answer: ${isFundayADay}`);
 ```
 
-Looks like Sunday is a day but unfortunately `Funday` is not a day :). On a different note there can be an alias for `includes` called `contains` that does the same thing.
+Looks like Sunday is a day but unfortunately `Funday` is not a day :). On a different note, there can be an alias for `includes` called `contains` that does the same thing.
 
 ### Slice
 
@@ -171,11 +171,11 @@ const funkyDays = days.join('~');
 console.log(`Days are flowing in: ${funkyDays}`);
 ```
 
-If you have noticed we have used the `join` function in above examples as well. It is pretty similar to the [implode](https://www.php.net/manual/en/function.implode.php) function in PHP. Similar to join there is a [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) function that converts a string into an array.
+If you have noticed we have used the `join` function in the above examples as well. It is pretty similar to the [implode](https://www.php.net/manual/en/function.implode.php) function in PHP. Similar to join there is a [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) function that converts a string into an array.
 
 ### FIll
 
-The fill function available on JavaScript arrays changes all the elements in an array to a static value in the given range. If no range is provided it fills up the whole array with given value. Let's have a look at how it works:
+The fill function available on JavaScript arrays changes all the elements in an array to a static value in the given range. If no range is provided it fills up the whole array with the given value. Let's have a look at how it works:
 
 ``` js
 const allSaturdays = days.fill(“Saturday”);
