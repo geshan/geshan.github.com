@@ -6,6 +6,7 @@ comments: true
 tags:
 - Web Development
 - NodeJs
+- Javascript
 cover: "/images/javascript-memoization/01javascript-memoization.jpg"
 pagetitle: "Javascript memoization: a practical example for better HTTP performance"
 description: In this 1400+ words post you will learn a practical example of Javascript memoization to cache response of a function for better response times. Not a simple factorial or Fibonacci example.
