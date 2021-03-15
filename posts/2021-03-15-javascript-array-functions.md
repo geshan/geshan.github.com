@@ -58,7 +58,7 @@ An array is a high-level, list-like object in JavaScript that can have a sequenc
 We will use a simple array of objects from the programming-languages API as below:
 
 ``` js
-const programmingLanguages =[
+const programmingLanguages = [
   {"id": 1,"name": "JavaScript","released_year": 1995,"githut_rank": 1,"pypl_rank": 3},
   {"id": 2,"name": "Python","released_year": 1991,"githut_rank": 2,"pypl_rank": 1},
   {"id": 3,"name": "Java","released_year": 1995,"githut_rank": 3,"pypl_rank": 2},
