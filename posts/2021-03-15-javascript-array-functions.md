@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10 JavaScript array functions you should start using today"
+title: 10 JavaScript array functions you should start using today
 date: 2021-03-15T21:48:22.000+11:00
 comments: true
 tags:
@@ -8,9 +8,14 @@ tags:
 - Javascript
 - NodeJs
 cover: "/images/javascript-array-functions/01javascript-array-functions.jpg"
-pagetitle: "10 JavaScript array functions you should start using today"
-description: Use these 10 nifty JavaScript array functions to get your job done easily and efficiently. Some of them include map, filter, some, find, and sort. Read more about these handy methods.
-keywords: javascript array functions, javascript array methods, javascript map, javascript filter, javascript some, javascript find, javascript sort, javascript array, javascript includes, javascript contains, javascript fill, javascript join
+pagetitle: 10 JavaScript array functions you should start using today
+description: Use these 10 nifty JavaScript array functions to get your job done easily
+  and efficiently. Some of them include map, filter, some, find, and sort. Read more
+  about these handy methods.
+keywords: javascript array functions, javascript array methods, javascript map, javascript
+  filter, javascript some, javascript find, javascript sort, javascript array, javascript
+  includes, javascript contains, javascript fill, javascript join
+
 ---
 In JavaScript, we generally use arrays to represent data or manipulate data, so using JavaScript array functions is very helpful. For instance, if we query a database we will most likely get the rows as an array of objects. Where each object represents a row in the database.
 
