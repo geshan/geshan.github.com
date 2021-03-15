@@ -212,6 +212,10 @@ curl https://gist.githubusercontent.com/geshan/ecac791ab5ee78e7e680613dd915e520/
 
 There are other very useful JavaScript array functions like splice, shift, concat, values, etc. I would really recommend checking [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#browser_compatibility) before using these functions on the browser. In the case of Node.js, you can check the compatibility on [Node.green](https://node.green/#ES2015-built-ins-typed-arrays).
 
+You can try the above examples on [JsFiddle](https://jsfiddle.net/geshan/6cx8em0a/), or do a quick check below (their console is in beta right now):
+
+<script async src="//jsfiddle.net/geshan/6cx8em0a/1/embed/js,result/dark/"></script>
+
 In addition to making your JavaScript code efficient, if you want to make it fast try [JavaScript Memoization](/blog/2021/02/javascript-memoization/). Using [Nodemon](/blog/2021/02/nodemon/) for local Node.js development is also highly advisable.
 
 ## Conclusion
