@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript memoization: a practical example for better HTTP performance"
+title: 'Javascript memoization: a practical example for better HTTP performance'
 date: 2021-02-12T22:30:22.000+11:00
 comments: true
 tags:
@@ -8,9 +8,12 @@ tags:
 - NodeJs
 - Javascript
 cover: "/images/javascript-memoization/01javascript-memoization.jpg"
-pagetitle: "Javascript memoization: a practical example for better HTTP performance"
-description: In this 1400+ words post you will learn a practical example of Javascript memoization to cache response of a function for better response times. Not a simple factorial or Fibonacci example.
+pagetitle: 'Javascript memoization: a practical example for better HTTP performance'
+description: In this 1400+ words post you will learn a practical example of Javascript
+  memoization to cache response of a function for better response times. Not a simple
+  factorial or Fibonacci example.
 keywords: javascript memoization, javascript memoize, javascript memoize library
+
 ---
 Memoization is simply caching the output of a function so that the consequent calls just use the cached result eliminating any heavy computation. Memoization in Javascript can also yield amazing performance benefits, given it is implemented properly. Do you want to make your javascript code run much faster? In this post, we will have a look at a practical example of javascript memoization. Spoiler alert: you will not see a Fibonacci or factorial mentioned below.
 
@@ -63,7 +66,7 @@ We will take an example Quotes API and memoize the response which is a promise u
 
 On a similar note, the most popular one is mem (at least in my comparison), and P-memoize is the promise/asysc version of `mem`. Both mem and p-memoize are developed by the same developer. 
 
-As I have used p-memoize in the past I will stick with that one for this example. Our example currency converter API is [open source](https://github.com/geshan/nodejs-posgresql) and deployed on [Zeet](https://geshan-nodejs-posgresql.zeet.app/quotes). Please read more on [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) if you are interested to host your Node.js app for $0 a month.
+As I have used p-memoize in the past I will stick with that one for this example. Our example currency converter API is [open source](https://github.com/geshan/nodejs-posgresql) and deployed on Zeet. Please read more on [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) if you are interested to host your Node.js app for $0 a month.
 
 I have chosen Zeet because it is free and not serverless, so we will see a clear decrease in the response times after implementing memoization. Next, we will see how javascript memoization speeds up the response times.
 
