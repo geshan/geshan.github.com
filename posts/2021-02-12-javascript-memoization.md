@@ -66,9 +66,9 @@ We will take an example Quotes API and memoize the response which is a promise u
 
 On a similar note, the most popular one is mem (at least in my comparison), and P-memoize is the promise/asysc version of `mem`. Both mem and p-memoize are developed by the same developer. 
 
-As I have used p-memoize in the past I will stick with that one for this example. Our example currency converter API is [open source](https://github.com/geshan/nodejs-posgresql) and deployed on Zeet. Please read more on [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) if you are interested to host your Node.js app for $0 a month.
+As I have used p-memoize in the past I will stick with that one for this example. Our example currency converter API is [open source](https://github.com/geshan/nodejs-posgresql) and deployed on Heroku. Please read more on [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) if you are interested to host your Node.js app for $0 a month.
 
-I have chosen Zeet because it is free and not serverless, so we will see a clear decrease in the response times after implementing memoization. Next, we will see how javascript memoization speeds up the response times.
+I have chosen Heroku because it is free and not serverless, so we will see a clear decrease in the response times after implementing memoization. Next, we will see how javascript memoization speeds up the response times.
 
 ### Response times before javascript memoization
 
@@ -93,7 +93,7 @@ router.get('/', async function(req, res, next) {
 This is a simple Express.js route where we get the rows from `quotes.getMultiple`. In this case, it will run a [database query](https://github.com/geshan/nodejs-posgresql/blob/d51ef7298cba039130fe8bf98486ba32bf19ad7d/services/quotes.js#L7) on each call. Let’s have a quick look at the response times with this approach. We will run a simple load test with 2 requests per second for 30 seconds using [Vegeta load testing](/blog/2020/09/vegeta-load-testing-primer-with-examples/) tool. We can run a command as follow:
 
 ``` bash
-echo "GET https://geshan-nodejs-posgresql.zeet.app/quotes" | vegeta attack -duration=30s -rate=50 -output=results-veg-no-mem.bin && cat results-veg-no-mem.bin | vegeta plot --title="Quotes API before memozie" > quotes-api-before-memoize.html
+echo "GET https://nodejs-postgresql-try.herokuapp.com/quotes" | vegeta attack -duration=30s -rate=50 -output=results-veg-no-mem.bin && cat results-veg-no-mem.bin | vegeta plot --title="Quotes API before memozie" > quotes-api-before-memoize.html
 ``` 
 
 When the above Vegeta load test runs for 30 seconds, it will show us an output like below:
@@ -138,7 +138,7 @@ We can refer to the change in this [pull request](https://github.com/geshan/node
 When we run the same load test with 50 requests per second for 30 seconds with this change, it yields the following results:
 
 ``` bash
-echo "GET https://geshan-nodejs-posgresql-memoize.zeet.app/quotes" | vegeta attack -duration=30s -rate=50 -output=results-veg-mem.bin && cat results-veg-mem.bin | vegeta plot --title="Quotes API after memozie" > quotes-api-after-memoize.html
+echo "GET https://nodejs-postgresql-try.herokuapp.com/quotes" | vegeta attack -duration=30s -rate=50 -output=results-veg-mem.bin && cat results-veg-mem.bin | vegeta plot --title="Quotes API after memozie" > quotes-api-after-memoize.html
 ```
 
 It results in:
@@ -148,7 +148,7 @@ It results in:
 
 Here compared to the above load test, the fastest response time we got was ~157ms and the slowest one (probably the first one) was 1.05 s. Overall we clearly see a cut of 50-75 milliseconds for each request from the previous test. Another advantage we have is that the database is getting hit just once for 1500 (30*50) requests in the span of just 30 seconds.
 
-Similarly, the logs from Zeet for this branch deployment is as follows:
+Similarly, the logs for this branch deployment is as follows:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/javascript-memoization/04logs-after-javascript-memoization.jpg" title="Server logs after Javascipt Memoization - DB hit only once" alt="Server logs after Javascipt Memoization - DB hit only once">
 
