@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="{{ '/css/avocado.min.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <script src="https://cdn.jsdelivr.net/npm/flagsmith/index.js"></script>
     {%- include "components/ga.njk" -%}
     {%- include "components/sw.njk" -%}
   </head>
@@ -50,6 +51,7 @@
             <aside class="sidebar col-md-4">
                 {% include "sidebar/latest-posts.njk" %}
                 {% include "sidebar/read-more-on.njk" %}
+                {% include "sidebar/carbon.njk" %}
                 {% include "sidebar/side-projects.njk" %}
             </aside>
         </div><!-- div class row close -->
