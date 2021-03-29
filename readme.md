@@ -1,6 +1,6 @@
 # Geshan's Blog on Eleventy
 
-Moved from octopress to Eleventy
+Moved from octopress to Eleventy.
 
 ## Docker
 
