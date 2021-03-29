@@ -30,7 +30,7 @@
 <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}">
 <meta name="twitter:image:src" content="{{ coverImage | url | absoluteUrl(metadata.url) }}" />
 
-<link rel="canonical" href="{{ absolutePostUrl }}">
+<link rel="canonical" href="{{ canonical or absolutePostUrl }}">
 
 <meta property="fb:pages" content="30717799226" />
 <meta property="fb:app_id" content="106030259434380" />
