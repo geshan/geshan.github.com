@@ -5,7 +5,7 @@ templateClass: tmpl-page
 eleventyNavigation:
   key: About Me
   order: "3"
-date: 2021-03-24T12:20:00Z
+date: 2021-03-24T12:20:00.000+00:00
 cover: "/images/geshan.jpg"
 description: I am Geshan. I am a software engineer, with more than a decade of software
   engineering experience. I have been blogging since 2007.
@@ -45,7 +45,7 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 ### AU Tech Jobs - 2020
 
-[AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 50+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 1100 jobs listed. It's USPs include:
+[AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 50+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 1100 jobs listed. Its USPs include:
 
 * Job description summary for easy reading
 * Tag job as non-technical by using external categorization service
@@ -56,13 +56,15 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in 2018.
 
-## I am also
+## Publications
 
-* running this blog (currently on [Eleventy](https://www.11ty.dev/)) since 2007 -- how many years? do the math on your own ;)
-* a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
-* a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
-* mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below) or start the conversation on [MentorCruise](https://mentorcruise.com/mentor/GeshanManandhar/).
-* and recently SEO rookie :)
+A list of some of the articles I have written outside of this blog:
+
+* [How to send emails with Node.js using SendGrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/ "How to send emails with Node.js using SendGrid") - LogRocket, 2020
+* [Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX") - LogRocket, 2020
+* [Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io") - Fly.io, 2019
+* [Tail logs from multiple Kubernetes pods the easy way](https://theiconic.tech/tail-logs-from-multiple-kubernetes-pods-the-easy-way-71401b84d7f "Tail logs from multiple Kubernetes pods the easy way") - THE ICONIC tech blog, 2019
+* [Naming your microservices needs to be trivial, not cryptic](https://theiconic.tech/naming-your-microservices-needs-to-be-trivial-not-cryptic-288902e800e1 "Naming your microservices needs to be trivial, not cryptic") - THE ICONIC tech blog, 2018
 
 ## Feedback from colleagues
 
@@ -70,17 +72,17 @@ I have always strived to have a positive impact on the places I have work and th
 
 ### Max Antonov, Product Manager @ THE ICONIC - 2020
 
-> Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams. 
+> Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams.
 >
-> He is very professional in his work and will ensure that the job gets done with quality. His ability and motivation to solve the most challenging technical problems is inspiring. 
+> He is very professional in his work and will ensure that the job gets done with quality. His ability and motivation to solve the most challenging technical problems is inspiring.
 >
 > Geshan works hard to ensure his expertise stays relevant and that he's accomplishing his work in the best way possible.
 
 ### Mohammad (Moe) Torkainfar, Software Engineer @ THE ICONIC - 2020
 
-> Few people have the opportunity to discover silver bullet solutions on tech—but I did when I worked with Geshan. I had the pleasure of working with him for 6 months at THE ICONIC, collaborating on several project teams. 
+> Few people have the opportunity to discover silver bullet solutions on tech—but I did when I worked with Geshan. I had the pleasure of working with him for 6 months at THE ICONIC, collaborating on several project teams.
 >
-> I was particularly impressed by Geshan's ability to handle even the toughest complex issues in our squad. That skill often takes years to develop, but it seemed to come perfectly naturally to him. The seniority and wisdom helped us make our issues easier to understand, it is remarkable. Besides, the way that he's been looking at the problems showed me a new way of looking at the issues. 
+> I was particularly impressed by Geshan's ability to handle even the toughest complex issues in our squad. That skill often takes years to develop, but it seemed to come perfectly naturally to him. The seniority and wisdom helped us make our issues easier to understand, it is remarkable. Besides, the way that he's been looking at the problems showed me a new way of looking at the issues.
 >
 > Above all, his communication skills are incredible and I was impressed with his ability to move things forward, even if the issue depends on many things. Any person would be lucky to work with him and he earns my highest recommendation.
 
@@ -90,39 +92,49 @@ I have always strived to have a positive impact on the places I have work and th
 
 ### Alessandro (Alex) Nadalin, CTO @ Namshi - 2018
 
-> Geshan has been Namshi's Swiss Army knife over the past 6 years: a great team player, solid contributor and adaptive learner. 
+> Geshan has been Namshi's Swiss Army knife over the past 6 years: a great team player, solid contributor and adaptive learner.
 >
-> He joined the team and immediately embraced a new way of building software: service-oriented, with automated tests and built to last. His ability to adapt and embrace new challenges has been exceptional, and it was with a calm, receptive spirit that he tackled each and every challenge here at Namshi. 
+> He joined the team and immediately embraced a new way of building software: service-oriented, with automated tests and built to last. His ability to adapt and embrace new challenges has been exceptional, and it was with a calm, receptive spirit that he tackled each and every challenge here at Namshi.
 >
-> Over the past few years, he established himself as one of our top contributors, able to directly discuss approaches and solutions with stakeholders: he operated with a lot of autonomy as one of our most senior engineers, and never encountered major setbacks. There have been multiple instances when, faced with an impending issue, I would rely on Geshan to take over and save the day. I also appreciated the fact that I could have an open, honest conversation with him regarding scope, timelines, and challenges -- there was never a day when I felt I couldn't trust him. 
+> Over the past few years, he established himself as one of our top contributors, able to directly discuss approaches and solutions with stakeholders: he operated with a lot of autonomy as one of our most senior engineers, and never encountered major setbacks. There have been multiple instances when, faced with an impending issue, I would rely on Geshan to take over and save the day. I also appreciated the fact that I could have an open, honest conversation with him regarding scope, timelines, and challenges -- there was never a day when I felt I couldn't trust him.
 >
-> Dedicated and devoted to helping his teammates, he definitely left a mark on a few of our other engineers through knowledge-sharing and teamwork. 
+> Dedicated and devoted to helping his teammates, he definitely left a mark on a few of our other engineers through knowledge-sharing and teamwork.
 >
 > Would definitely recommend him to anyone looking for a solid software engineer with a knack for understanding the business side of the work.
 
 ### Alessandro (Cirpo) Cinelli, Head of Backend Engineering @ Namshi - 2016
 
-> I had the pleasure of working with Geshan while we were building the most successful fashion e-commerce in the Middle-East. He joined Namshi a year before me and his knowledge about the domain and his great communication skills helped me a lot to get up to speed with the environment. Other than being a good developer, Geshan has been a key role when drafting specifications or testing all the scenarios for a critical feature: he is a very precise and hard worker. 
+> I had the pleasure of working with Geshan while we were building the most successful fashion e-commerce in the Middle-East. He joined Namshi a year before me and his knowledge about the domain and his great communication skills helped me a lot to get up to speed with the environment. Other than being a good developer, Geshan has been a key role when drafting specifications or testing all the scenarios for a critical feature: he is a very precise and hard worker.
 >
 > I have always admired the fact that he stays very up to date with what goes around in the Tech world and constantly he tries to “give back” as much as possible to the community by speaking at conferences and organizing tech events in his home country. I really hope our paths will cross again in the future
 
 ### Halil Koklu, CTO @ Namshi - 2013
 
-> First joined as Senior Developer, Geshan quickly evolved into leading the new established Quality and Maintenance Team which is responsible for assuring quality and solving issues. Geshan is very committed strong developer and has deep knowledge of web technologies. 
+> First joined as Senior Developer, Geshan quickly evolved into leading the new established Quality and Maintenance Team which is responsible for assuring quality and solving issues. Geshan is very committed strong developer and has deep knowledge of web technologies.
 >
 > Geshan is blessed with a very humble but caring personality. Working for him was always a joy.
 
 ### Bibhusan Bista, CEO @ YoungInnovations - 2011
 
-> Geshan is a hard working individual with serious interest and aptitude for software development. At YoungInnovations, he played crucial role in development of appropriate systems and processes to ensure quality and efficiency in our projects. He was very interested in building capacity of the team. 
+> Geshan is a hard working individual with serious interest and aptitude for software development. At YoungInnovations, he played crucial role in development of appropriate systems and processes to ensure quality and efficiency in our projects. He was very interested in building capacity of the team.
 >
 > He was ahead of deadlines in most of the cases and paid attention to minute details of the projects he led. He would be an asset to any company he works for.
 
 ### Anjan Shrestha, Senior UX Designer @ YoungInnovations 2009
 
-> Geshan is a good programmer with great analytical and decision-making skills. He is no doubt one of the best well-planned and systematic person (as a worker) I have ever encountered. 
+> Geshan is a good programmer with great analytical and decision-making skills. He is no doubt one of the best well-planned and systematic person (as a worker) I have ever encountered.
 >
 > Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and posses great presentational skills.
+
+***
+
+## I am also
+
+* running this blog since 2007 -- how many years? do the math on your own ;). It is currently [11ty](https://www.11ty.dev/ "11ty or Eleventy").
+* a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
+* a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
+* mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
+* and recently SEO rookie :)
 
 ## Follow Me/this blog
 
