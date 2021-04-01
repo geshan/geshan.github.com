@@ -17,6 +17,18 @@ I have used a variety of software deployment tools in the last 20 years. From FT
 
 <!-- more -->
 
+## Table of contents
+
+* [What are software deployment tools?](#what-are-software-deployment-tools)
+* [When did my web journey start?](#when-did-my-web-journey-start)
+* [First software deployment tools - web interface and FTP in 2000 - 2008](#first-software-deployment-tools---web-interface-and-ftp-in-2000---2008)
+* [SSH, Git pull as software deployment tools 2008-2011](#ssh-git-pull-as-software-deployment-tools-2008-2011)
+* [Hello Capistrano circa 2012-2015](#hello-capistrano-circa-2012-2015)
+* [Docker is the way to go - 2016](#docker-is-the-way-to-go---2016)
+* [Kubernetes it is 2016-2021](#kubernetes-it-is-2016-2021)
+* [Quick recap](#quick-recap)
+* [How to choose your software deployment tool?](#how-to-choose-your-software-deployment-tool)
+* [Conclusion](#conclusion)
 ## What are software deployment tools?
 
 Software deployment tools have also been popularized as deployment automation tools in the last 8-10 years.
@@ -88,11 +100,11 @@ This worked pretty well, I would say it worked much better than using FTP as you
 
 Anyhow, this was a way we deployed till 2010 but I would not recommend anyone do it now in 2021.
 
-### Hello Capistrano circa 2012-2015
+## Hello Capistrano circa 2012-2015
 
 In 2012, I moved to a new country and joined a fashion E-commerce startup in U.A.E -- [Namshi](https://en-ae.namshi.com/). For the first time, I saw a proper automated deployment tool in action. It was not Capistrano, it was a custom-built CLI tool that had steps to select and the git branch or tag can be deployed live. Later we used [Capistrano](https://capistranorb.com/) in 2013 for one of the [Service Oriented Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture) “SOA” component we built in Symfony2. To be honest, I really liked how we deployed with Capistrano compared to FTP or login to server and run `git pull` or even this custom tool. It was a one command deploy, no selections no interruptions, with atomic deployments to any environment staging or production.
 
-Capistrano is opinionated but it had the [features](https://github.com/capistrano/capistrano/blob/master/README.md#features) sorted. 
+Capistrano is opinionated but it had the [features](https://github.com/capistrano/capistrano/blob/master/README.md#features) sorted.
 
 > The new version was built in a new folder and when it was ready to get traffic the symlink would be pointed to the latest release. After that, the server would be reloaded/restarted. So simple yet so effective. 
 
