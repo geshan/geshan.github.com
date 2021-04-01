@@ -20,7 +20,18 @@ In this post, we are going to see code examples of the native HTTPS module that 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-http-requests/01nodejs-http-requests.jpg" title="5 different ways to make HTTP requests with Node.js" alt="5 different ways to make HTTP requests with Node.js">
 
 <!-- more -->
+## Table of contents
 
+* [Prerequisites](#prerequisites)
+* [The example we will use](#the-example-we-will-use)
+* [Client options for HTTP requests in Node.js](#client-options-for-http-requests-in-nodejs)
+  * [Standard Node.js HTTP(S) module](#standard-nodejs-https-module)
+  * [Axios](#axios)
+  * [Got](#got)
+  * [SuperAgent](#superagent)
+  * [node-fetch](#node-fetch)
+* [A quick comparison of Node HTTP request methods](#a-quick-comparison-of-node-http-request-methods)
+* [Conclusion](#conclusion)
 
 ## Prerequisites
 
