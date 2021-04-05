@@ -8,8 +8,11 @@ tags:
 - devops
 cover: "/images/software-deployment-tools/01software-deployment-tools.jpg"
 pagetitle: How Software Deployment tools have changed in the past 20 years
-description: Read the journey from FTP to kubectl apply and chatops in the past 20 years where I share my software deployment tools' experience.
-keywords: software deployment tools, deployment tools, automated deployment tools, open source deployment tools
+description: Read the journey from FTP to kubectl apply and chatops in the past 20
+  years where I share my software deployment tools' experience.
+keywords: software deployment tools, deployment tools, automated deployment tools,
+  open source deployment tools
+
 ---
 I have used a variety of software deployment tools in the last 20 years. From FTP to deploying Docker containers on Kubernetes using a chatbot, I think I have seen the most of it. In this post, I will take you on a journey of web software deployment tools from 2001 to 2021, let’s get started!
 
@@ -122,7 +125,7 @@ We had happily used Capistrano for 3-4 years and then in 2015 came Docker. It di
 
 Docker was a paradigm shift and we were possibly one of the first teams in the MENA region to get our hands dirty with it.
 
-To keep the concerns clear, Docker is not an automated deployment tool per se. It is a software packaging software that lets you run your software consistently in all environments from dev to production creating a “general” parity. In turn, it makes software deployment a lot easier also because the build and deploy/run process is separated. Learn more about why you should [use Docker in development](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/) and how it has [changed software engineering](blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
+To keep the concerns clear, Docker is not an automated deployment tool per se. It is a software packaging software that lets you run your software consistently in all environments from dev to production creating a “general” parity. In turn, it makes software deployment a lot easier also because the build and deploy/run process is separated. Learn more about why you should [use Docker in development](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/) and how it has [changed software engineering](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/07docker-kubernetes.jpg" title="Docker and Kubernetes go hand in hand for a reliable software deployment experience" alt="Docker and Kubernetes go hand in hand for a reliable software deployment experience">
 
