@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Getting started with Laravel, MariaDB (MySQL) and docker, docker compose"
-date: 2015-10-24 11:49:48 +04:00
+title: Getting started with Laravel, MariaDB (MySQL) and docker, docker compose
+date: 2015-10-24T11:49:48.000+04:00
 comments: true
 tags:
 - Docker
 - PHP
 - Laravel
 - devops
-cover: /images/laravel-mysql-docker/laravel-mysql-docker.png
----
+cover: "/images/laravel-mysql-docker/laravel-mysql-docker.png"
 
+---
 "How do I get new team members contributing code to the project in a matter of minutes/hours not days?" is a common question heard in development teams. There are some ways to do, in my opinion [docker](http://docker.com) is one of the best.
 
 Docker enables using the same software stack in development, staging and production. You don't need to worry about the version of PHP, MYSQL or any other dependency with Docker. This post will be about Laravel and MariaDB (MySQL) with Docker for local development. It will also feature the use of docker-compose. We will use PHP 5.6 and MariaDB 10.1 with Laravel 5.1. This guide helps getting started with Laravel and Docker with a database.
@@ -263,5 +263,6 @@ You can carry on using the docker containers to replace your local Apache/Ngnix 
 > You can use this analogy that containers are cattle and virtual machines (VMs) are pets.
 
 Creating, deleting and reconstructing the containers should be easy, fast and seamless than VMs.
-If you want to speed up your development flow and help other team members contribute faster to the project
-opt for docker and docker-comopse. Happy Dockerizing and coding Laravel + PHP!
+If you want to speed up your development flow and help other team members contribute faster to the project opt for docker and docker-comopse. 
+
+You can even host your Laravel app using [serverless containers](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) on Google Cloud Run, this [guide](/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) will show you how to do it step-by-step. Happy Dockerizing and coding Laravel + PHP!
