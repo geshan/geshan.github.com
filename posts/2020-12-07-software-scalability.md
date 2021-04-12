@@ -212,7 +212,7 @@ The first level of caching can be done on the code level. One of the basic ways 
 
 > Memoization is a higher-order function that caches another function. It can turn some slow functions into fast ones. It saves the result of a function call after the first time to the cache, so if you call the function again with the same arguments, it will find it in the cache.
 
-You can have a look at a [Node.js Memoization](/blog/2020/11/nodejs-for-php-developers/#memoization-example) example where the server caches the response for 1 minute. Therefore, for 1 minute even if the data changes the client gets the same old data.
+You can have a look at a [Node.js Memoization](/blog/2020/11/nodejs-for-php-developers/#memoization-example) example where the server caches the response for 1 minute. Therefore, for 1 minute even if the data changes the client gets the same old data. You should read more about [javascript memoization](/blog/2021/02/javascript-memoization/).
 
 #### HTTP Caching for scalable software
 
