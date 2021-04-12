@@ -143,7 +143,7 @@ app.get('/api/products', async (req, res, next) => {
 });
 
 ```
-The clear advantage of this is less load on the datastore. For 1 minute, it will respond back with the same response for the same parameters. The output of the function `products.getMultiple` is cached in memory for a minute. This makes the responses very fast.
+The clear advantage of this is less load on the datastore. For 1 minute, it will respond back with the same response for the same parameters. The output of the function `products.getMultiple` is cached in memory for a minute. This makes the responses very fast. It is advisable to read more on [javascript memoization](/blog/2021/02/javascript-memoization/).
 
 #### Connection Pool example with MySQL
 
