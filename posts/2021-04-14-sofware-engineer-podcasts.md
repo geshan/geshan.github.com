@@ -7,10 +7,12 @@ tags:
 - Software Engineering
 cover: "/images/software-engineer-podcasts/01software-engineer-podcasts.jpg"
 pagetitle: Software Engineer podcasts you should not miss
-description: Listen to these 3 excellent software engineer podcasts to become a better software engineer.
-keywords: software engineer podcast, software engineer podcasts, software engineering podcast, software engineering podcasts
----
+description: Listen to these 3 excellent software engineer podcasts to become a better
+  software engineer.
+keywords: software engineer podcast, software engineer podcasts, software engineering
+  podcast, software engineering podcasts
 
+---
 If you are looking to level up without reading, software engineer podcasts can be an untapped avenue you should exploit now. I have been listening to podcasts geared towards software engineers for a long time now.
 
 Due to no commute in the past 12 months, I found new times and ways to listen to podcasts. Continuing the yearly posts about podcasts, in this post, I am going to recommend 3 software engineer podcasts you should subscribe to instantly.
@@ -66,4 +68,4 @@ There are surely other exceptional episodes in the In Depth podcast.
 
 As usual, I have listed 3 high-quality podcasts in terms of content, production, and the way guests are interviewed by the hosts. Similar to the previous blog posts about software engineer podcasts I have selected two technical podcasts and one non-technical but very useful podcast. I hope you liked it. 
 
-You can go through previous [software engineering podcast](/2020/09/software-engineering-podcasts-you-must-subscribe-to/) recommendations [too](/blog/2019/07/podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-4/). Enjoy listening to these amazing podcasts!
+You can go through previous [software engineering podcast](/blog//2020/09/software-engineering-podcasts-you-must-subscribe-to/) recommendations [too](/blog/2019/07/podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-4/). Enjoy listening to these amazing podcasts!
