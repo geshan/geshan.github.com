@@ -1,19 +1,21 @@
 ---
 layout: post
-title: "Getting started with debugging nodeJs applications with ndb"
-date: 2019-01-06 11:02:36 +11:00
+title: Getting started with debugging nodeJs applications with ndb
+date: 2019-01-06T11:02:36.000+11:00
 comments: true
 tags:
 - Javascript
 - NodeJs
 - Software Engineering
 pagetitle: Debugging nodejs applications using ndb step by step guide
-cover: /images/debugging-node-js/00ndb.png
-description: Debugging nodejs is a lot easier using ndb compared to node inspector with chrome node debugger. Learn more about browser independent debugging workflow.
-keywords: debugging nodejs, debugging node js, debugging node.js, debugging node js apps, debugging node js apps with ndb, ndb, nodejs ndb, ndb nodejs
-lastModified: 2020-04-25 11:05:22 +11:00
----
+cover: "/images/debugging-node-js/00ndb.png"
+description: Debugging nodejs is a lot easier using ndb compared to node inspector
+  with chrome node debugger. Learn more about browser independent debugging workflow.
+keywords: debugging nodejs, debugging node js, debugging node.js, debugging node js
+  apps, debugging node js apps with ndb, ndb, nodejs ndb, ndb nodejs
+lastModified: 2020-04-25T11:05:22.000+11:00
 
+---
 NodeJs was released almost 9 years ago. The [default debugging process](https://nodejs.org/api/debugger.html "Default nodejs debugging process") of NodeJs (read Node.js) is quite clumsy. You are already aware of the need to add `--inspect` to the node script with node inspector. It is also dependent on chrome. Then look at the proper web socket connection which is hard and debug using chrome node debugger. To be honest, it is a pain in the neck. 
 
 Finally, Google chrome labs has released ndb, which they say is "An improved debugging experience for Node.js, enabled by Chrome DevTools". It is a boon to debug a nodejs app.
@@ -56,7 +58,7 @@ yarn global add ndb
 
 You can also install and use it locally per app if you want. One thing I had to fix was to get the latest version of chrome as I saw some permission issues.
 
-### 2. Run the app with ndb (not node or nodemon)
+### 2. Run the app with ndb (not node or [nodemon](/blog/2021/02/nodemon/))
 
 For debugging nodejs applications using ndb you can directly run the nodejs app script with it rather than node. For example, if you were used to doing `node index.js` or ` nodemon index.js` in development. To debug your app you can run:
 
