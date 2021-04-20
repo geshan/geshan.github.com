@@ -68,4 +68,4 @@ There are surely other exceptional episodes in the In Depth podcast.
 
 As usual, I have listed 3 high-quality podcasts in terms of content, production, and the way guests are interviewed by the hosts. Similar to the previous blog posts about software engineer podcasts I have selected two technical podcasts and one non-technical but very useful podcast. I hope you liked it. 
 
-You can go through previous [software engineering podcast](/blog//2020/09/software-engineering-podcasts-you-must-subscribe-to/) recommendations [too](/blog/2019/07/podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-4/). Enjoy listening to these amazing podcasts!
+You can go through previous [software engineering podcast](/blog/2020/09/software-engineering-podcasts-you-must-subscribe-to/) recommendations [too](/blog/2019/07/podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-4/). Enjoy listening to these amazing podcasts!
