@@ -517,7 +517,7 @@ These changes are also reflected in a [pull request](https://github.com/geshan/n
 
 > On dev, I would highly recommend using [Nodemon](https://nodemon.io/) as it will restart the server on every file change.
 
-After you have nodemon installed globally you can run the app with the following command:
+After you have [nodemon](/blog/2021/02/nodemon/) installed globally you can run the app with the following command:
 
 ``` bash
 DEBUG=nodejs-postgresql:* nodemon bin/www 
