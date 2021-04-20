@@ -102,7 +102,7 @@ So currently it is 165 MB, hopefully, we can decrease its size too in this proce
 
 ## Solution with multi-stage docker build
 
-Now as we want to have dev dependencies and `nodemon` on dev builds and only production npm dependencies on production build, the docker related files have been modified as follows:
+Now as we want to have dev dependencies and [nodemon](/blog/2021/02/nodemon/) on dev builds and only production npm dependencies on production build, the docker related files have been modified as follows:
 
 ### Dockerfile with multi-stage build
 
