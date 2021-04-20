@@ -126,7 +126,7 @@ npm install -g nodemon; #if you don’t have nodemon installed
 nodemon bin/www
 ```
 
-After you run your application index (`bin/www` in this case) with nodemon it will restart the server on each file save. Below is an example of how it looks on server restarts on code change:
+After you run your application index (`bin/www` in this case) with [nodemon](/blog/2021/02/nodemon/) it will restart the server on each file save. Below is an example of how it looks on server restarts on code change:
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/06run-express-with-nodemon.jpg" title="Run Express with nodemon" alt="Running Node.js express with nodemon">
 
