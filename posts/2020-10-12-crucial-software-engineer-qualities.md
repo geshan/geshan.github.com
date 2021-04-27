@@ -61,7 +61,7 @@ Following true DevOps and SRE philosophy, a great software engineer will own the
 
 > If things break in something they have developed and deployed, they will be the first to respond.
 
-The response can be as quick as a rollback or even write a quick fix to patch the issue temporarily. They will come back to the issue and release a permanent solution to the issues introduced by the code they have added. Basically, great software engineers truly live by the philosophy of [you build it you run it](https://www.atlassian.com/incident-management/devops/you-built-it-you-run-it). They also make great [on-call](https://skeltonthatcher.com/2017/10/18/build-run-developers-also-call/) engineers.
+The response can be as quick as a rollback or even write a quick fix to patch the issue temporarily. They will come back to the issue and release a permanent solution to the issues introduced by the code they have added. Basically, great software engineers truly live by the philosophy of [you build it you run it](https://www.atlassian.com/incident-management/devops/you-built-it-you-run-it). They also make great on-call engineers too.
 
 ## Ace team players
 
