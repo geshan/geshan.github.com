@@ -12,7 +12,7 @@ description: In this post I will unfold my understanding of what makes a tech te
 keywords: software engineering, software company
 
 ---
-Every company is a [technology company](https://www.forbes.com/sites/forbestechcouncil/2017/01/23/why-every-company-is-a-technology-company/#62d4503657ae). A technology company without [great software engineers](/blog/2020/10/crucial-software-engineer-qualities/) and technical team is insignificant. In this post I will unfold my understanding of what makes a tech team competent in 4 levels with 6 main criteria and 25 sub criteria.
+Every company is a [technology company](https://www.wsj.com/articles/every-company-is-now-a-tech-company-1543901207). A technology company without [great software engineers](/blog/2020/10/crucial-software-engineer-qualities/) and technical team is insignificant. In this post I will unfold my understanding of what makes a tech team competent in 4 levels with 6 main criteria and 25 sub criteria.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/swtcm/swtcm.jpg" title="Software Companies Tech Competency Matrix" alt="Software Companies Tech Competency Matrix">
 
