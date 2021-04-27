@@ -18,7 +18,7 @@ Feature switch is a way to switch off or on a feature on a working software duri
 
 ## Why do a feature switch/flag?
 
-My first experience with the feature flag was when we had to deploy `PayPal` as a payment method. We wanted to be sure that it works without issues on production. How we did it then was to have a [feature flag](https://launchdarkly.com/featureflags.html) with a condition that the user email ends in `@namshi.com`.
+My first experience with the feature flag was when we had to deploy `PayPal` as a payment method. We wanted to be sure that it works without issues on production. How we did it then was to have a [feature flag](/blog/2018/10/deployment-is-not-release/) with a condition that the user email ends in `@namshi.com`.
 
 You can do a feature switch for various reasons, some of them are:
 
