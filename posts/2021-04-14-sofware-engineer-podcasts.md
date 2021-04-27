@@ -30,7 +30,7 @@ Due to no commute in the past 12 months, I found new times and ways to listen to
 
 ## [Staff Eng Podcast](https://podcast.staffeng.com/)
 
-Staff Eng has [stories](https://staffeng.com/stories) and guides for Staff plus engineers. The stories include engineers from companies like Dropbox, Stripe, Slack, and MailChimp to name a few. The [Staff Engineer book](https://staffeng.com/book) by [Wil Larson](https://lethain.com/``) is the main offering there but, recently they have started a podcast. Obviously, it is titled the [StaffEng podcast](https://podcast.staffeng.com/) hosted by David and Alex who are Staff plus engineers themselves.
+Staff Eng has [stories](https://staffeng.com/stories) and guides for Staff plus engineers. The stories include engineers from companies like Dropbox, Stripe, Slack, and MailChimp to name a few. The [Staff Engineer book](https://staffeng.com/book) by [Will Larson](https://lethain.com) is the main offering there but, recently they have started a podcast. Obviously, it is titled the [StaffEng podcast](https://podcast.staffeng.com/) hosted by David and Alex who are Staff plus engineers themselves.
 
 <img class="center" src="/images/generic/loading.gif" data-echo="/images/software-engineer-podcasts/02staff-eng-podcast.jpg" title="Staff Eng podcast features inteview with staff plus engineers" alt="Staff Eng podcast features inteview with staff plus engineers">
 
