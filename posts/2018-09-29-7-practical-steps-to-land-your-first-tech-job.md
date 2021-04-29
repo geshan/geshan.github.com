@@ -59,7 +59,7 @@ Depending on the city you are in like if you are in Sydney you could go to a tec
 
 > Going to a usually free meetup is beneficial in many ways, you learn new things by listening to people, you can network and build useful relationships.
 
-Don't underestimate the power of meeting people in the flesh or virtually in these COVID times.
+Don't underestimate the power of meeting people in the flesh or virtually in these COVID times. That can be a gateway to great [developer jobs](https://jooble.org/jobs-developer).
 
 So you are asking why would this person refer me? Right? The answer is simple `Many companies have referral bonus`. If they refer you and you get selected, get the job, complete your probation they get a certain sum of money. A win-win situation for all you, the referrer, and the company. Email, then call and ask for a coffee meeting is recommended before asking for a job referral. Of course not to mention you should have an amazing CV.
 
