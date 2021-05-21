@@ -17,7 +17,7 @@ keywords: jamstack tutorial, jamstack website, static site generators, jamstack,
 ---
 This JAMstack tutorial will show you how to create a JAMstack website with just clicks, no code and for $0. It will detail how to set up a JAMstack website step by step with 30+ screenshots and 2000+ words. It will involve using a git-based CMS service to edit your content easily. Let's get started.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/00jamstack-tutorial.jpg" title="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]" alt="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/00jamstack-tutorial.jpg" title="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]" alt="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]">
 
 <!-- more -->
 
@@ -95,7 +95,7 @@ The first step is to register on Github, If you already have a Github account sk
 
 Go to [https://github.com/join](https://github.com/join) and fill the details like below and yes complete the puzzle to prove that you are a human :) :
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/01register-on-github.jpg" title="First step is to register on Github" alt="First step is to register on Github. Github registration details">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/01register-on-github.jpg" title="First step is to register on Github" alt="First step is to register on Github. Github registration details">
 
 Then click "Create account"
 
@@ -103,7 +103,7 @@ Then click "Create account"
 
 After that scroll to the next page and click "Complete Setup"
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/02complete-steup-github.jpg" title="Complete Github Set up" alt="Complete your Github Set up">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/02complete-steup-github.jpg" title="Complete Github Set up" alt="Complete your Github Set up">
 
 If you want to choose other options, it is up to you but nothing is mandatory.
 
@@ -113,17 +113,17 @@ One more step is to verify your email, you will get an email for Github about re
 
 I promise you this is the only time you will need to verify your email, all other accounts have Github sign up Yay!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/03verify-email-github.jpg" title="Verify Github Email" alt="Verify your Github Email">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/03verify-email-github.jpg" title="Verify Github Email" alt="Verify your Github Email">
 
 After your email is verified you will see the blue notification on top of the page as below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/04email-verified-github.jpg" title="Github Email verified" alt="Your Github email is verified">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/04email-verified-github.jpg" title="Github Email verified" alt="Your Github email is verified">
 
 #### 1.4. See your Github profile page
 
 Just as a quick check, have a look at your Github profile.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/05github-profile.jpg" title="Your Github profile, looks pretty empty for now :)" alt="Your Github profile, looks pretty empty for now :)">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/05github-profile.jpg" title="Your Github profile, looks pretty empty for now :)" alt="Your Github profile, looks pretty empty for now :)">
 
 Carry on to register on Netlify.
 
@@ -135,19 +135,19 @@ Netlify will host your JAMstack website on its own Content Delivery Network (CDN
 
 Head on to the [Netlify registration page](https://app.netlify.com/signup) and click "Github":
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/06register-on-netlify.jpg" title="Netlify Signup Page" alt="Netlify Signup Page">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/06register-on-netlify.jpg" title="Netlify Signup Page" alt="Netlify Signup Page">
 
 #### 2.2. Register on Netlify with Github
 
 After you click the "Github" icon it will ask you to "Authorize netlify" on Github, so click the "Authorize netlify" button on the pop-up window.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/07register-on-nelify-with-github.jpg" title="Register on Nelify with Github" alt="Register on Nelify with Github">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/07register-on-nelify-with-github.jpg" title="Register on Nelify with Github" alt="Register on Nelify with Github">
 
 #### 2.3. Registered on Netlify
 
 Great! You have a Netlify account now.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/08nelify-registration-done.jpg" title="Registered on Netlify" alt="Registered on Netlify">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/08nelify-registration-done.jpg" title="Registered on Netlify" alt="Registered on Netlify">
 
 Leave the tab as it is or close it, Let get a new tab to register on Forestry.io.
 
@@ -159,19 +159,19 @@ Forestry is a git-based online Content Management System (CMS) service that make
 
 Here too just click the "Github" logo to carry on with the registration.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/09register-on-forestry.jpg" title="Forestry sign up page" alt="Forestry sign up page">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/09register-on-forestry.jpg" title="Forestry sign up page" alt="Forestry sign up page">
 
 #### 3.2. Register on Forestry with Github
 
 Similar to Netlify, click the green button to "Authorize forestryio", in the pop-up to complete the sign-up process.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/10register-on-forrestry-with-github.jpg" title="Register on Forestry with Github" alt="Register on Forestry with Github">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/10register-on-forrestry-with-github.jpg" title="Register on Forestry with Github" alt="Register on Forestry with Github">
 
 #### 3.3. Registration Success on Forestry
 
 Success! Your Forestry account is registered, let's go to the next step.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/11forestry-registration-success.jpg" title="Registered on Forestry.io" alt="Registered on Forestry.io">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/11forestry-registration-success.jpg" title="Registered on Forestry.io" alt="Registered on Forestry.io">
 
 ### 4. Register on Stackbit with Github
 
@@ -181,19 +181,19 @@ Stackbit is the magic glue that will cement all the other 3 services together to
 
 Click the "I agree to the terms and license" checkbox and then click on the "Github" logo. It will start the process to link up Stackbit with Github.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/12stackbit-registration.jpg" title="Stackbit login page" alt="Stackbit Login Page">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/12stackbit-registration.jpg" title="Stackbit login page" alt="Stackbit Login Page">
 
 #### 4.2. Authorize Stackbit on Github
 
 Similar to Forestry.io, click the "Authorize Stackbit App by Stackbit" green button to register on Stackbit with Github.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/13stackbit-register-with-github.jpg" title="Authorize Stackbit on Github" alt="Authorize Stackbit on Github">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/13stackbit-register-with-github.jpg" title="Authorize Stackbit on Github" alt="Authorize Stackbit on Github">
 
 #### 4.3. Stackbit registration done
 
 Great! The last registration is done too. Now we can build your website, woohoo!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/15stackbit-new-project-start.jpg" title="Stackbit Dashboard" alt="Stackbit Dashboard">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/15stackbit-new-project-start.jpg" title="Stackbit Dashboard" alt="Stackbit Dashboard">
 
 ### 5. Build your project
 
@@ -203,26 +203,26 @@ To build your project on Stackbit from the dashboard click "Build Your Project" 
 
 Click "Fresh" as your theme, it is a blog theme. If you want you can choose another theme as well, "Azimuth" is good for SAAS products. Let's go with Fresh for now, then click "Continue to site generation".
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/16stackbit-choose-fresh-theme.jpg" title="Choose Fresh as your website theme" alt="Choose Fresh as your website theme">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/16stackbit-choose-fresh-theme.jpg" title="Choose Fresh as your website theme" alt="Choose Fresh as your website theme">
 
 #### 5.2. Choose Hugo click continue to cms
 
 After that, click "Hugo", we are selecting Hugo as it claims to be the "[fastest](https://gohugo.io/)" static site generator.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/17stackbit-choose-hugo-ssg.jpg" title="Choose Hugo as the Static site generator for your website" alt="Choose Hugo as the Static site generator for your website">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/17stackbit-choose-hugo-ssg.jpg" title="Choose Hugo as the Static site generator for your website" alt="Choose Hugo as the Static site generator for your website">
 
 
 #### 5.3. Choose Forestry click connect accounts
 
 Next step is to choose the CMS, let's choose Forestry you have an account there already :)
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/18stackbit-choose-forestry-cms.jpg" title="Choose Forestry as the CMS on Stackbit" alt="Choose Forestry as the CMS on Stackbit">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/18stackbit-choose-forestry-cms.jpg" title="Choose Forestry as the CMS on Stackbit" alt="Choose Forestry as the CMS on Stackbit">
 
 #### 5.4. Add Project name
 
 Then it is time to name the project and connect your accounts, I have named it `jamstack-fresh`, name it as you want.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/19stackbit-name-project.jpg" title="Name the project on Stackbit" alt="Name the project on Stackbit">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/19stackbit-name-project.jpg" title="Name the project on Stackbit" alt="Name the project on Stackbit">
 
 For all the things to function correctly, you will need to connect Forestry and Github with Stackbit. Click the connect button beside Forestry to connect Forestry with Stackbit.
 
@@ -230,56 +230,56 @@ For all the things to function correctly, you will need to connect Forestry and 
 
 On the pop-up click the green "Authorize" to link up Stackbit and Forestry.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/20stackbit-forestry-connect.jpg" title="Connect Forestry with Stackbit" alt="Connect Forestry with Stackbit">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/20stackbit-forestry-connect.jpg" title="Connect Forestry with Stackbit" alt="Connect Forestry with Stackbit">
 
 After it is authorized correctly it will show the "Connected" checkbox on the page, as below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/21stackbit-forestry-connected.jpg" title="Connected Forestry to Stackbit" alt="Connected Forestry to Stackbit">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/21stackbit-forestry-connected.jpg" title="Connected Forestry to Stackbit" alt="Connected Forestry to Stackbit">
 
 #### 5.6. Connect Github to Stackbit
 
 Similar to Forestry, click the "Connect" button beside "Github" and click the green "Install" button to add Stackbit to your Github account.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/22stackbit-github-connect.jpg" title="Connect Github to Stackbit" alt="Connect your github account to stackbit">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/22stackbit-github-connect.jpg" title="Connect Github to Stackbit" alt="Connect your github account to stackbit">
 
 ---
 
 Great! now as both services are connected it is time to click "Create your project" as below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/23stackbit-both-connected.jpg" title="Both Github and Forestry are connected with Stackbit now" alt="Both Github and Forestry are connected with Stackbit now">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/23stackbit-both-connected.jpg" title="Both Github and Forestry are connected with Stackbit now" alt="Both Github and Forestry are connected with Stackbit now">
 
 
 #### 5.7. Wait for it to build and deploy
 
 We are getting close the, your website should be building at this point like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/24stackbit-deploying-fresh.jpg" title="Deploying the website" alt="Building and deploying the website">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/24stackbit-deploying-fresh.jpg" title="Deploying the website" alt="Building and deploying the website">
 
 ---
 
 After a couple of minutes, it should be deployed, it will show up as below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/25stackbit-deployed-fresh.jpg" title="Your website is deployed" alt="Website deployed on Netlify with Stackbit">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/25stackbit-deployed-fresh.jpg" title="Your website is deployed" alt="Website deployed on Netlify with Stackbit">
 
 
 #### 5.8. Claim website on Netlify - Authorize
 
 Now it is time to Claim your Netlify URL, Click the "Claim" button to do so.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/26stackbit-netlify-claim.jpg" title="Claim your Netlify URL" alt="Claim your Netlify URL">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/26stackbit-netlify-claim.jpg" title="Claim your Netlify URL" alt="Claim your Netlify URL">
 
 ---
 
 Great! now your URL has been claimed on Netlify too.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/27stackbit-netlify-success.jpg" title="Connected to Netlify successfully" alt="Connected to Netlify successfully">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/27stackbit-netlify-success.jpg" title="Connected to Netlify successfully" alt="Connected to Netlify successfully">
 
 
 #### 5.9. Click view website
 
 Hurray! Let's see your website live, click the "View Site" blue button, your site should open on a new tab and look like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/28fresh-working.jpg" title="Yes! your website is working" alt="Yes! your JAMstack website is working">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/28fresh-working.jpg" title="Yes! your website is working" alt="Yes! your JAMstack website is working">
 
 ### 6. Edit text on the website
 
@@ -289,20 +289,20 @@ Good news, your website is up on a URL like [https://jamstack-fresh-a9bfb.netlif
 
 Click on the "Home" link on the sidebar.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/29forestry-dashboard.jpg" title="Click on Home to left sidebar to start editing home page contents" alt="Click on Home to left sidebar to start editing home page contents of your JAMStack website following this JAMstack tutorial">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/29forestry-dashboard.jpg" title="Click on Home to left sidebar to start editing home page contents" alt="Click on Home to left sidebar to start editing home page contents of your JAMStack website following this JAMstack tutorial">
 
 #### 6.2. Go to Home, click hero section and edit text
 
 Then click on "Hero Section"
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/30forestry-home-edit.jpg" title="Click on home then Hero section to edit it" alt="Click on home then Hero section to edit it">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/30forestry-home-edit.jpg" title="Click on home then Hero section to edit it" alt="Click on home then Hero section to edit it">
 
 #### 6.3. Edit the text of home hero section like below
 
 Now edit the Title to something like "Welcome to JAMStack test" and the content to something like below.
 After that click on the "Save" at the top right and then go to the tab with your website open, it should start deploying now.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/31forestry-home-hero-edit.jpg" title="Edit the hero section of homepage" alt="Edit the hero section of homepage">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/31forestry-home-hero-edit.jpg" title="Edit the hero section of homepage" alt="Edit the hero section of homepage">
 
 As you might have figured out by now, there will be some mapping to do. Generally, it is easy to find the element you need to edit to get your desired result.
 
@@ -310,19 +310,19 @@ As you might have figured out by now, there will be some mapping to do. Generall
 
 The website will say "Publishing Site" like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/32site-deploying.jpg" title="Deploying the text changes to Netlify" alt="Deploying the text changes to Netlify">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/32site-deploying.jpg" title="Deploying the text changes to Netlify" alt="Deploying the text changes to Netlify">
 
 #### 6.5. Site deployed
 
 After like a minute it will say "Rebuild Successful" now its time to click "Refresh" or refresh the browser.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/33site-deployed.jpg" title="Website deployed with the text changes" alt="Website deployed with the text changes">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/33site-deployed.jpg" title="Website deployed with the text changes" alt="Website deployed with the text changes">
 
 #### 6.6. Changes Updated
 
 After you refresh you should see your changes, yes it is that easy to edit content.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/jamstack-tutorial/34site-content-changed.jpg" title="Website content updated to reflect the changes done" alt="Website content updated to reflect the changes done">
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/34site-content-changed.jpg" title="Website content updated to reflect the changes done" alt="Website content updated to reflect the changes done">
 
 Please check out the "Media" menu on the sidebar below the "Site" title and play around upload images. Add the images to your content. It is pretty easy.
 

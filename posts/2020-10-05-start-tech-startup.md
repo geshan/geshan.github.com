@@ -19,7 +19,7 @@ Learn how to start a tech startup with no money. You might think I am joking but
 
 The [$300 free credit](https://cloud.google.com/free) for 12 months is key to getting your startup off the ground for around 9-10 months. Let’s get started:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/01start-tech-startup.jpg" title="Start a tech startup for $0" alt="How to start a tech startup for $0 with Google Cloud Platform and other services">
+<img class="center" loading="lazy" src="/images/start-tech-startup/01start-tech-startup.jpg" title="Start a tech startup for $0" alt="How to start a tech startup for $0 with Google Cloud Platform and other services">
 
 <!-- more -->
 
@@ -64,7 +64,7 @@ Before we go deeper into the steps, these steps are going to be technical but no
 
 Your brand cannot exist without a domain name. This is where you might want to spend some money if you are more serious about your tech startup. Still, if you want to go the $0 path here is your option. You can register your domain at [FreeNom](https://freenom.com/) for $0. You can get domains ending with .ml, .tk, .ga, and.gq.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/02freenom.jpg" title="Freenom for domain at $0" alt="Freenom for free domain name">
+<img class="center" loading="lazy" src="/images/start-tech-startup/02freenom.jpg" title="Freenom for domain at $0" alt="Freenom for free domain name">
 
 The good things are you pay $0 and there is no competition as getting a .com or .net. The flip side is you don’t get a “standard” domain as such. The choice is yours, if you are on a strict budget with $0 I would suggest to get a .ml domain and brand your startup as a “Machine Learning” idea, it has the potential to sell too :).
 
@@ -72,7 +72,7 @@ The good things are you pay $0 and there is no competition as getting a .com or 
 
 The next step after you register the domain is to get a free [Cloudflare](https://www.cloudflare.com/) account. You can then use the DNS provided in your Cloud flare account at FreeNom to direct the website/web application traffic to where you want. In our case, we will like to redirect the brochure JAMStack to Netlify. The web application traffic will go our application hosted on Google Cloud Run. 
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/03cloudflare.jpg" title="Cloudflare for DNS, caching" alt="Use CloudFlare to manage DNS caching and security">
+<img class="center" loading="lazy" src="/images/start-tech-startup/03cloudflare.jpg" title="Cloudflare for DNS, caching" alt="Use CloudFlare to manage DNS caching and security">
 
 For now, be able to log in and “Add a site”. Then Google more about how to use cloud flare to linkup the traffic to respective services. On top of DNS management, you will also get things like caching and security for free with Cloud Flare. Again, I will leave you with more Googling to get all these configured correctly. You will also get free HTTPS with Cloudflare no need to wrangle with [certificates](https://letsencrypt.org/) and settings.
 
@@ -80,7 +80,7 @@ For now, be able to log in and “Add a site”. Then Google more about how to u
 
 Now as you have your basics setup, it is time to get your brochure JAMStack website up and running. You can follow this step-by-step [tutorial](/blog/2020/04/jamstack-tutorial-website-with-no-code-for-free/) to get you JAMStack website running without a line of code. The main glue here is [Stackbit](https://stackbit.com/). With the recent changes, you could directly go to Stackbit, select a theme, and deploy your website on Netlify. You will also get an easy to use CMS with WYSIWYG type editor that works not only for text but for images, layout, and configuration of your website.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/04stackbit.jpg" title="Stackbit for easy to edit JAMStack website" alt="Use stackbit for your brochure JAMStack website">
+<img class="center" loading="lazy" src="/images/start-tech-startup/04stackbit.jpg" title="Stackbit for easy to edit JAMStack website" alt="Use stackbit for your brochure JAMStack website">
 
 If your startup is a SAAS product I would recommend using the [Azimuth](https://app.stackbit.com/create?theme=azimuth) theme. It suits very well for SAAS products and with the click of a button, you can even change the color scheme.
 
@@ -90,7 +90,7 @@ After you have your brochure website running on Netlify with Stackbit. Configure
 
 If you just want to test your idea then you can stop here. With the brochure website, you can start gathering email addresses using [Nelify forms](https://www.netlify.com/products/forms/). Netlify forms free version has limits so please be aware of it, refer to the [Netlify Pricing page](https://www.netlify.com/pricing/). After that, you can figure out if people will pay and should I actually write for the tech startup.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/05netlify-forms.jpg" title="Netlify and Netlify forms" alt="Netlify and Netlify forms for getting user data">
+<img class="center" loading="lazy" src="/images/start-tech-startup/05netlify-forms.jpg" title="Netlify and Netlify forms" alt="Netlify and Netlify forms for getting user data">
 
 Take note that, for all the above services you have not even spent a penny. So you can run your experiment as long as you want. If you have already some code and some form of your tech startup working then proceed further to host it with GCP with serverless containers on Google Cloud Run.
 
@@ -101,7 +101,7 @@ Now is the time to get your Google Cloud Platform (GCP) account. This is where y
 
 We will be using serverless containers for your application deployed on Google Cloud Run. We opt for serverless containers because of the [cost](https://cloud.google.com/run/pricing) and other reasons. The other [reasons](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) mainly include no need to learn a new framework/paradigm and you can run any application as long as it can be containerized. You will also get free HTTPs and custom domain mapping to point the application back to the FreeNom domain.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/06cloud-run.jpg" title="Serverless containers on cloud run" alt="Serverless containers on cloud run">
+<img class="center" loading="lazy" src="/images/start-tech-startup/06cloud-run.jpg" title="Serverless containers on cloud run" alt="Serverless containers on cloud run">
 
 With Cloud run you get 2 million requests a month [free](https://cloud.google.com/run/pricing#tables). After that, it is 0.40 $ per million requests. Well, the math is not that simple but it is advertized like that for sure. Google cloud run is a lot easier to set up than a full-blown Kubernetes cluster with similar benefits. Know more about it in this [talk](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/).
 
@@ -109,7 +109,7 @@ With Cloud run you get 2 million requests a month [free](https://cloud.google.co
 
 To deploy your application, you will need to dockerize it. In this [step-by-step guide](/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) you will see how to deploy a Laravel application to Google Cloud Run Fully managed. Following similar steps, you can deploy any PHP application to Google Cloud Run. Just bear in mind that you choose a lower-cost region like us-central-1 so that you don’t burn the free credit fast.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/07cloud-run-costs.jpg" title="Cloud run costs for a small startup" alt="Cloud run costs for a small startup for last 90 days staging and prod both">
+<img class="center" loading="lazy" src="/images/start-tech-startup/07cloud-run-costs.jpg" title="Cloud run costs for a small startup" alt="Cloud run costs for a small startup for last 90 days staging and prod both">
 
 
 With my experience, currently, for an application with both staging and production workloads, it is costing us 10-20 cents a day. This is also going from our free credit.
@@ -118,7 +118,7 @@ With my experience, currently, for an application with both staging and producti
 
 Just having some code doesn’t make the application work, the heard of most applications is the data. You can store your data on Google Cloud SQL over MySQL or Postgres SQL. This will be your main money hogger. With the current MySQL [pricing], using two db-f1-micro it is costing us 88 cents a day. 44 cents per day for the staging database and the same for the production one. There is an automatic backup setup for the production one.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/start-tech-startup/08cloud-sql-costs.jpg" title="Cloud sql costs for a small startup" alt="Cloud sql costs for a small startup for last 90 days staging and prod both">
+<img class="center" loading="lazy" src="/images/start-tech-startup/08cloud-sql-costs.jpg" title="Cloud sql costs for a small startup" alt="Cloud sql costs for a small startup for last 90 days staging and prod both">
 
 To save cost, if you can live with a maximum of 5 connections at a time you can choose to use [remote mysql](https://remotemysql.com/). If you use remote MySQL for staging your daily cost for the database can come down to 44 cents a day.
 

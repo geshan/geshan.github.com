@@ -20,7 +20,7 @@ I had some time so I setup a survey to know the software engineering practices u
 The Infographic below covers details of Language, Framework, IDE, Company Size, Male to Female Ratio and some other data extracted from the responses. A special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) for helping me clean up and compile the data in a better way.
 <!-- more -->
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/sw-eng-np-infographics-part01/Software_Engineering_Nepal_Mid_2015_Part01.png" title="Software Engineering Practices in Nepal Infographics Part 1" alt="Software Engineering Practices in Nepal Infographics Part 1">
+<img class="center" loading="lazy" src="/images/sw-eng-np-infographics-part01/Software_Engineering_Nepal_Mid_2015_Part01.png" title="Software Engineering Practices in Nepal Infographics Part 1" alt="Software Engineering Practices in Nepal Infographics Part 1">
 
 You can view this infographics in [interactive](http://bit.ly/1EPE37N) mode too.
 

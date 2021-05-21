@@ -15,7 +15,7 @@ cover: "/images/laravel-mysql-docker/laravel-mysql-docker.png"
 
 Docker enables using the same software stack in development, staging and production. You don't need to worry about the version of PHP, MYSQL or any other dependency with Docker. This post will be about Laravel and MariaDB (MySQL) with Docker for local development. It will also feature the use of docker-compose. We will use PHP 5.6 and MariaDB 10.1 with Laravel 5.1. This guide helps getting started with Laravel and Docker with a database.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-mysql-docker/laravel-mysql-docker.png" title="Getting started with Laravel, MariaDB (MySQL) and docker, docker compose" alt="Getting started with Laravel, MariaDB (MySQL) and docker, docker compose">
+<img class="center" loading="lazy" src="/images/laravel-mysql-docker/laravel-mysql-docker.png" title="Getting started with Laravel, MariaDB (MySQL) and docker, docker compose" alt="Getting started with Laravel, MariaDB (MySQL) and docker, docker compose">
 
 <!-- more -->
 
@@ -121,7 +121,7 @@ All MYSQL/MariaDB data that would generally be stored in `/var/lib/mysql` will b
 This is done as docker containers don't have data persistence. This will keep the MySQL data persisted on the host machine which will be reused when the MySQL/MariaDB container is restarted. The folder structure should
 be like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-mysql-docker/folder-structure.png" title="Laravel, MariaDB (MySQL) and docker, docker compose folder structure" alt="Laravel, MariaDB (MySQL) and docker, docker compose folder structure">
+<img class="center" loading="lazy" src="/images/laravel-mysql-docker/folder-structure.png" title="Laravel, MariaDB (MySQL) and docker, docker compose folder structure" alt="Laravel, MariaDB (MySQL) and docker, docker compose folder structure">
 
 ### Create default sites-enabled
 
@@ -164,7 +164,7 @@ docker-compose build to build the images.
 
 After you run docker-compose up you will see output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-mysql-docker/docker-compose-up.png" title="Laravel, MariaDB (MySQL) and docker, docker compose up output" alt="Laravel, MariaDB (MySQL) and docker, docker compose up output">
+<img class="center" loading="lazy" src="/images/laravel-mysql-docker/docker-compose-up.png" title="Laravel, MariaDB (MySQL) and docker, docker compose up output" alt="Laravel, MariaDB (MySQL) and docker, docker compose up output">
 
 ### Fix permissions
 
@@ -240,7 +240,7 @@ describe users;
 
 You will get an output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-mysql-docker/users-table.png" title="Laravel, MariaDB (MySQL) and docker, docker compose users table" alt="Laravel, MariaDB (MySQL) and docker, docker compose users table">
+<img class="center" loading="lazy" src="/images/laravel-mysql-docker/users-table.png" title="Laravel, MariaDB (MySQL) and docker, docker compose users table" alt="Laravel, MariaDB (MySQL) and docker, docker compose users table">
 
 
 ### Stop docker containers
@@ -252,7 +252,7 @@ docker-compose stop
 ```
 on the project root and it will stop the containers like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-mysql-docker/docker-compose-stop.png" title="Laravel, MariaDB (MySQL) and docker, docker compose stop output" alt="Laravel, MariaDB (MySQL) and docker, docker compose stop output">
+<img class="center" loading="lazy" src="/images/laravel-mysql-docker/docker-compose-stop.png" title="Laravel, MariaDB (MySQL) and docker, docker compose stop output" alt="Laravel, MariaDB (MySQL) and docker, docker compose stop output">
 
 ## Next Steps
 

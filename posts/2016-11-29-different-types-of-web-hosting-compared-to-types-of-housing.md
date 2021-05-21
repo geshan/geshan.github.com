@@ -14,6 +14,6 @@ In the infographics below I will do a basic comparison between shared host, dedi
 
 <!-- more -->
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/web-host-as-housing/web-host-as-housing-med.png" title="Different types of web hosting compared to types of housing" alt="Different types of web hosting compared to types of housing">
+<img class="center" loading="lazy" src="/images/web-host-as-housing/web-host-as-housing-med.png" title="Different types of web hosting compared to types of housing" alt="Different types of web hosting compared to types of housing">
 
 > I hope this helps you to make the right choice about your hosting provider.

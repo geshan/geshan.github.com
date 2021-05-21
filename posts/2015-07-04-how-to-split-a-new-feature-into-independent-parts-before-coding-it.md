@@ -13,7 +13,7 @@ As software engineers, we always face a problem on how to break this task down t
 
 Sometimes the task description is a one-liner that you can interpret to anything of your liking. So, this post will help you solve this issue, where, given a task how do you plan to split it into **independent release ready** parts. Regardless of the language and framework, software design, and architecture play an important role in the life of your software, a strong base is needed to build a software system that will last longer.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/split-feature/strong-base.jpg" title="A strong base for longer lasting software system" alt="A strong base for longer lasting software system">
+<img class="center" loading="lazy" src="/images/split-feature/strong-base.jpg" title="A strong base for longer lasting software system" alt="A strong base for longer lasting software system">
 
 <!-- more -->
 
@@ -37,7 +37,7 @@ As an example, let's take Project X with project code PX as the project you are 
 
 Now after you are ready to do this task what should your next step be? Jump on your desk start writing code? Surely not. You need to organize and discuss each of your tasks and have a mindset to split it into independent release ready tasks first in your mind and best document it on something. So how do you do it then?
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/split-feature/un-tangle.jpg" title="Untangle and organize your task" alt="Untangle and organize your task">
+<img class="center" loading="lazy" src="/images/split-feature/un-tangle.jpg" title="Untangle and organize your task" alt="Untangle and organize your task">
 
 ### Think CRUD
 

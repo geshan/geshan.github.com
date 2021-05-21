@@ -17,7 +17,7 @@ There are multiple ways to make HTTP requests in Node.js. We can do so using the
 
 In this post, we are going to see code examples of the native HTTPS module that comes built-in with your Node.js installation as well as npm packages like Axios, Got, SuperAgent, and node-fetch. Let’s get cracking!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-http-requests/01nodejs-http-requests.jpg" title="5 different ways to make HTTP requests with Node.js" alt="5 different ways to make HTTP requests with Node.js">
+<img class="center" loading="lazy" src="/images/nodejs-http-requests/01nodejs-http-requests.jpg" title="5 different ways to make HTTP requests with Node.js" alt="5 different ways to make HTTP requests with Node.js">
 
 <!-- more -->
 ## Table of contents
@@ -99,7 +99,7 @@ As HTTPS is a standard Node.js module, there’s been no need for a `package.jso
 
 You can run the code simply with `node native-https.js`, provided you named the file `native-https.js`. It should show an output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-http-requests/02nodejs-code-output.jpg" title="Output of running Node.js native http module" alt="Output of running Node.js native http module">
+<img class="center" loading="lazy" src="/images/nodejs-http-requests/02nodejs-code-output.jpg" title="Output of running Node.js native http module" alt="Output of running Node.js native http module">
 
 You can use the same method to run all the other examples in this post; they will show a similar output as we print status code, date from response header, and the user ID and name from the response body.
 
@@ -282,7 +282,7 @@ Now it’s time to compare the four libraries that we just reviewed.
 
 Except for the HTTP/HTTPS standard Node module, all four other HTTP client libraries for Node.js are available as npm packages. Below is a quick view of their download statistics by week for the past six months, via [npm trends](https://www.npmtrends.com/axios-vs-got-vs-superagent-vs-node-fetch):
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-http-requests/03npm-trends.jpg" title="NPM trends of the 4 HTTP related NPM modules" alt="NPM trends of the 4 HTTP related NPM modules">
+<img class="center" loading="lazy" src="/images/nodejs-http-requests/03npm-trends.jpg" title="NPM trends of the 4 HTTP related NPM modules" alt="NPM trends of the 4 HTTP related NPM modules">
 
 In terms of weekly downloads, got was the most popular, and SuperAgent was the least popular in the past six months. Let’s scrutinize some other metrics for a better picture of popularity among these contenders thanks to the [comparison table](https://github.com/sindresorhus/got#comparison) on the Got GitHub repo:
 

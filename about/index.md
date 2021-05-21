@@ -13,7 +13,7 @@ description: I am Geshan. I am a software engineer, with more than a decade of s
 ---
 Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia serving THE ICONIC as a lead software engineer.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
+<img class="center" src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 
 I have a keen interest in REST architecture, microservices, and cloud computing. I am a language-agnostic software engineer who believes the value provided to the business is more important than the choice of language or framework.
 

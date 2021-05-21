@@ -17,7 +17,7 @@ keywords: docker with nodejs, nodejs on docker, docker nodejs, node dockerfile, 
 ---
 Both Docker and Node.js have risen in popularity in the past 5 years. Running Node.js on docker containers with docker-compose for local development is a great experience. In this step-by-step tutorial, we will look at how Node.js docker and docker-compose with multi-stage docker build work in sync. Time to get cracking.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg" title="Docker with Node.js and docker compose a step-by-step tutorial" alt="Docker with Node.js and docker compose">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg" title="Docker with Node.js and docker compose a step-by-step tutorial" alt="Docker with Node.js and docker compose">
 
 <!-- more -->
 
@@ -86,7 +86,7 @@ npx express-generator --view=pug express-app
 ```
 Notice that we are generating a web app not an API and using [pug](https://pugjs.org/api/getting-started.html) as the templating engine for the views. It should give you an output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/01setup-nodejs-express-with-generator.jpg" title="Generate Express.js with generator" alt="Output of Node.js Express generator">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/01setup-nodejs-express-with-generator.jpg" title="Generate Express.js with generator" alt="Output of Node.js Express generator">
 
 Now, let’s run the app to see how it looks on the browser, no Node.js on docker yet. To start the Node.js express application, please run the following commands:
 
@@ -97,11 +97,11 @@ DEBUG=express-app:* npm start
 ```
 After that, you should see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/02run-express.jpg" title="Run express with debug enabled" alt="Output of Express run with Debug">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/02run-express.jpg" title="Run express with debug enabled" alt="Output of Express run with Debug">
 
 Hit `http://localhost:3000` on a browser like Chrome to check if the app is running correctly. You should see something similar to this:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/03express-output.jpg" title="Express output on browser" alt="Express output on the browser">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/03express-output.jpg" title="Express output on browser" alt="Express output on the browser">
 
 When you hit the homepage on the browser, you will also see some logs on how long the request took to respond on the command line.
 
@@ -111,11 +111,11 @@ At this point, I have added it to git, if you want to view the code it is in thi
 
 You can edit the page to say something different like `Express on Docker` and `Let’s get started` or something of that sort. To do this we will need to edit 2 files, `/routes/index.js` and `views/index.pug`, like below. You can get the file changes in this [pull request](https://github.com/geshan/express-app/pull/2/files):
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/04nodejs-code-changes.jpg" title="Change some express code" alt="Change on some express node.js code">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/04nodejs-code-changes.jpg" title="Change some express code" alt="Change on some express node.js code">
 
 It shows up on the browser like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/05express-output-changes.jpg" title="Express code changes on the browser" alt="Code changes of Node.js express refected onn the browser">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/05express-output-changes.jpg" title="Express code changes on the browser" alt="Code changes of Node.js express refected onn the browser">
 
 #### 1.3 Add nodemon to monitor changes and reload
 
@@ -128,7 +128,7 @@ nodemon bin/www
 
 After you run your application index (`bin/www` in this case) with [nodemon](/blog/2021/02/nodemon/) it will restart the server on each file save. Below is an example of how it looks on server restarts on code change:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/06run-express-with-nodemon.jpg" title="Run Express with nodemon" alt="Running Node.js express with nodemon">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/06run-express-with-nodemon.jpg" title="Run Express with nodemon" alt="Running Node.js express with nodemon">
 
 At this stage, you have the generated Node.js express app running. It can also be run with nodemon to restart the Node.js server on every file save. Next stage is to use Node.js on docker. 
 
@@ -174,7 +174,7 @@ DOCKER_BUILDKIT=1 docker build -t nodejs-express-docker .
 
 It will take some time. After it is done you should see an output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/07docker-build-with-biuildkit.jpg" title="Docker build with Buildkit" alt="Docker build output with buildkit use">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/07docker-build-with-biuildkit.jpg" title="Docker build with Buildkit" alt="Docker build output with buildkit use">
 
 Time to run the docker image and see the output for Node.js with Docker on the browser. To do this run the following command:
 
@@ -215,7 +215,7 @@ docker stop nodejs_express
 
 Below is a recap of running the docker container, viewing logs and stopping it:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/08docker-run-simple.jpg" title="Docker run logs and stop" alt="Ouptut of docker run with logs and later stopping it">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/08docker-run-simple.jpg" title="Docker run logs and stop" alt="Ouptut of docker run with logs and later stopping it">
 
 This above simple dockerfile is also available as a [pull request](https://github.com/geshan/express-app/pull/3/files) for your convenience. At this juncture, we can proceed to make the Node.js dockerfile even better with [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/).
 
@@ -267,7 +267,7 @@ The main difference here from the above docker run command for Node.js with Dock
 
 The mulit-stage dockerfile for docker with Node.js can be found in this [pull request](https://github.com/geshan/express-app/pull/4/files). Below is a quick recap of the commands for Node.js docker multi-stage build:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/09docker-run-multi-stage.jpg" title="Docker run logs and stop with multi-stage" alt="Ouptut of docker run with logs and later stopping it for multi-stage Docker with Node.js">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/09docker-run-multi-stage.jpg" title="Docker run logs and stop with multi-stage" alt="Ouptut of docker run with logs and later stopping it for multi-stage Docker with Node.js">
 
 ### 3. Node.js Docker made better with docker-compose
 
@@ -317,14 +317,14 @@ COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build
 
 Here you see the output of the docker-compose build for docker with Node.js with BUILKIT in action:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/10nodejs-docker-compose-build.jpg" title="Node.js Docker compose build with build kit" alt="Ouptut of docker bulid with multi-stage docker file using buildkit">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/10nodejs-docker-compose-build.jpg" title="Node.js Docker compose build with build kit" alt="Ouptut of docker bulid with multi-stage docker file using buildkit">
 
 #### 3.2 Run the Docker with Node.js using docker compose up
 
 After the containers are built it can be easily run with `docker-compose up`.
 After the Node.js docker containers are built, it can be run with `docker-compose up` like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/11nodejs-docker-compose-up.jpg" title="Node.js Docker compose up" alt="Ouptut of Node.js docker compoase up and logs">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/11nodejs-docker-compose-up.jpg" title="Node.js Docker compose up" alt="Ouptut of Node.js docker compoase up and logs">
 
 The changes for docker-compose addition is in this [pull request](https://github.com/geshan/express-app/pull/5/files). This is how you can run Node.js on Docker which works very well for Developing as well as putting the containers in production environment.
 
@@ -339,7 +339,7 @@ All the code is in a public [github repository](https://github.com/geshan/expres
 1. Following that, hit `http://localhost:3000` on a browser
 1. You should see the following output on your browser:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-docker-docker-compose/05express-output-changes.jpg" title="Node.js Express code on the browser with docker and docker compose" alt="Node.js Express code on the browser with docker and docker compose">
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/05express-output-changes.jpg" title="Node.js Express code on the browser with docker and docker compose" alt="Node.js Express code on the browser with docker and docker compose">
 
 Enjoy! Now you can reverse engineer the `Dockerfile` and `docker-compose.yml` file. If you have any questions, search for specific thing like say `target` in this post.
 

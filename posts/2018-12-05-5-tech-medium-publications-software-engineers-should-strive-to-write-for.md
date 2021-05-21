@@ -16,7 +16,7 @@ lastModified: 2020-12-13T22:01:22Z
 ---
 Starting a tech blog has changed in the last few years. 10 years back starting a blog without your website, you had 2 options Blogger or Wordpress. Both gave you a free sub-domain. Things did not change much for quite some time, but in 2012 medium came with a storm. It gained a lot of traction with its simplistic interface in 2014-2015. With the publication feature, Medium makes it very easy for a group of writers to collaborate.  These days I would suggest most people start their blog on it.
 
-<img class="center" src="/images/generic/loading.gif" title="5 tech medium publication software engineers should strive to write for" alt="5 tech medium publication software engineers should strive to write for" data-echo="/images/5-tech-medium-publications/library.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="5 tech medium publication software engineers should strive to write for" alt="5 tech medium publication software engineers should strive to write for" data-echo="/images/5-tech-medium-publications/library.jpg">
 <!-- more -->
 
 ## Writing is tough, learning is essential

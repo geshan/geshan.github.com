@@ -14,7 +14,7 @@ keywords: what recruiters look for, tech recruiters, tech recruitment, tech jobs
 ---
 Applied to many jobs and haven't heard back? Not sure what is missing in your resume. Could not make that first impression in the initial interview? Then you must read forward. **In this post, three tech recruiters from Sydney's well-known companies unveil things they look for in a CV and points they evaluate in the initial interview**. You will know how to make that first impression with your CV and initial interview from a tech recruiter's view. As a bonus, there are tips for finding jobs in a pandemic, carry on reading.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/tech-recruitment-aus-part02/for-hire.jpg" title="Points tech recruiters look for in your cv and the first interview part" alt="For Hire meter">
+<img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/for-hire.jpg" title="Points tech recruiters look for in your cv and the first interview part" alt="For Hire meter">
 
 <!-- more -->
 
@@ -33,7 +33,7 @@ Let’s look at the answers from 3 tech recruiters from Canva, Domain, and Elmo.
 
 ### Jasmine Alderton (Domain) seeks for motivators and value alignment
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/tech-recruitment-aus-part02/01jasmine-alderton.jpg" title="Jasmine Alderton (Domain) seeks for motivator and value alignment" alt="Jasmine Alderton working at Domain as a Senior Technical Recruiter">
+<img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/01jasmine-alderton.jpg" title="Jasmine Alderton (Domain) seeks for motivator and value alignment" alt="Jasmine Alderton working at Domain as a Senior Technical Recruiter">
 
 [Jasmine Alderdon](https://www.linkedin.com/in/jasmine-alderton/) has been working for Domain as a Senior Technical Recruiter for more than a year. If you are new to Australia and have not heard about Domain.com, you must be living under a rock :). The same goes if you have been living here for long. [Domain](https://domain.com.au) is synonymous with Property listing for renting and buying here in Australia.
 
@@ -91,7 +91,7 @@ Jasmine has jotted down essential tips in her reply, from the tech interview han
 
 ### Scott Crowe (Canva) looks for relevant experience and technical capability
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/tech-recruitment-aus-part02/02scott-crowe.jpg" title="Scott Crowe (Canva) looks for relevant experience and technical capability" alt="Scott Crowe -- Lead recruiter at Canva">
+<img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/02scott-crowe.jpg" title="Scott Crowe (Canva) looks for relevant experience and technical capability" alt="Scott Crowe -- Lead recruiter at Canva">
 
 [Scott Crowe](https://www.linkedin.com/in/scottdcrowe/) is the lead recruiter at Canva for almost five years. [Canva](https://canva.com) is liberating, creating amazing graphics making it accessible and easy for masses to create striking graphics. As a [unicorn](https://about.canva.com/news/canva-raises-40m-round-earn-unicorn-title/) with more than 10 million users spread across 190 countries, Canva is a force to be reckoned with. You can even create an impressive CV using Canva. Another cherry on the cake is, Canva is [voted](https://www.smartcompany.com.au/people-human-resources/best-places-to-work-australia/) one of the best places to work. 
 
@@ -128,7 +128,7 @@ Scott was brief and to the point with his answers. Not following the “scatterg
 
 ### Olivia Spata (ELMO) appraises technical ability and behavioral aspects
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/tech-recruitment-aus-part02/03olivia-spata.jpg" title="Olivia Spata (ELMO) appraises technical ability and behavioral aspects" alt="Olivia Spata Technical HR Talent Consultant at ELMO">
+<img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/03olivia-spata.jpg" title="Olivia Spata (ELMO) appraises technical ability and behavioral aspects" alt="Olivia Spata Technical HR Talent Consultant at ELMO">
 
 [Olivia Spata](https://www.linkedin.com/in/olivia-spata-76b2a1124/) has been working at [ELMO](https://elmosoftware.com.au/) as Technical HR Talent Consultant for more than three years now. ELMO is one of the fastest-growing HR and payroll SAAS in the region with over 1400 clients across APAC. 
 

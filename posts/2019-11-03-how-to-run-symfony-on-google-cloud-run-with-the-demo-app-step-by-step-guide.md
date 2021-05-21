@@ -19,7 +19,7 @@ keywords: Symfony, PHP, Google Cloud, Google Cloud Run, Symfony Hosting, Symfony
 ---
 Symfony is without doubts one of the most [popular](https://raygun.com/blog/top-php-frameworks/) PHP frameworks. It has amazing flexibility and is written in an applaudable modular fashion. Some Symfony components even [power](https://symfony.com/projects/laravel) other prominent frameworks like Laravel. Running Symfony is a bit tricky at times, especially the [permissions](https://symfony.com/doc/current/setup/file_permissions.html) of the cache and logs folder, this blog post demystifies running the Symfony [Demo App](https://github.com/symfony/demo) in a docker container and hosting it serverless on [Google Cloud Run](https://cloud.google.com/run/).
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg" title="Get Symfony running on Google Cloud Run with the demo app" alt="Get Symfony running on Google Cloud Run with the demo app">
+<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg" title="Get Symfony running on Google Cloud Run with the demo app" alt="Get Symfony running on Google Cloud Run with the demo app">
 
 <!-- more -->
 
@@ -40,13 +40,13 @@ Before going to the steps, the repo is hosted on my [Github](https://github.com/
 
 Navigate to the open-source [Github](https://github.com/geshan/symfony-demo-google-cloud-run) repo. That is a very easy step, isn’t it? :)
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/symfony-on-google-cloud-run/01github-repo.jpg" title="Github repo with Symfony demo app dockerized and ready for Google Cloud Run" alt="Github repo with Symfony demo app dockerized and ready for Google Cloud Run">
+<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/01github-repo.jpg" title="Github repo with Symfony demo app dockerized and ready for Google Cloud Run" alt="Github repo with Symfony demo app dockerized and ready for Google Cloud Run">
 
 ### 2. Click on the Google Cloud button
 
 Then click on the `Run on Google Cloud` blue button, as shown below: 02google-cloud-button
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/symfony-on-google-cloud-run/02google-cloud-button.jpg" title="Just click the Google Cloud button and see it roll" alt="Just click the Google Cloud button and see it roll">
+<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/02google-cloud-button.jpg" title="Just click the Google Cloud button and see it roll" alt="Just click the Google Cloud button and see it roll">
 
 ### 3. Choose correct settings on Google cloud CLI
 
@@ -57,11 +57,11 @@ After that, given you are logged into your Google account and have Google cloud 
 
 Then wait for the container to be built and deployed, you can see my process below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/symfony-on-google-cloud-run/03deploy-symfony.jpg" title="Steps to deploy Symfony on Google Cloud Run" alt="Steps to deploy Symfony on Google Cloud Run">
+<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/03deploy-symfony.jpg" title="Steps to deploy Symfony on Google Cloud Run" alt="Steps to deploy Symfony on Google Cloud Run">
 
 If everything goes fine on your Google Cloud Shell, you will see HTTPs URL you can go to in order to see your Symfony demo app running like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/symfony-on-google-cloud-run/04symfony-running.jpg" title="Symfony running on Google Cloud Run" alt="Symfony running on Google Cloud Run">
+<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/04symfony-running.jpg" title="Symfony running on Google Cloud Run" alt="Symfony running on Google Cloud Run">
 
 One issue with this setup is that data will not be saved if you click around and add new posts. This happens because the data is saved in the SQLite file, as it is not persisted new containers get the old file and you get the same data pushed in the repo.
 

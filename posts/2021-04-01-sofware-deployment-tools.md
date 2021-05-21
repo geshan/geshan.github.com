@@ -16,7 +16,7 @@ keywords: software deployment tools, deployment tools, automated deployment tool
 ---
 I have used a variety of software deployment tools in the last 20 years. From FTP to deploying Docker containers on Kubernetes using a chatbot, I think I have seen the most of it. In this post, I will take you on a journey of web software deployment tools from 2001 to 2021, let’s get started!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/01software-deployment-tools.jpg" title="Software deployment can sometimes be similar to deploying the army" alt="Software deployment can sometimes be similar to deploying the army">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/01software-deployment-tools.jpg" title="Software deployment can sometimes be similar to deploying the army" alt="Software deployment can sometimes be similar to deploying the army">
 
 <!-- more -->
 
@@ -42,7 +42,7 @@ For this piece, I will be focused on deployment software that can deploy any for
 
 Let me try to explain what software deployment tools and what the triggering layers can be. Software deployment tools are the tools that are used to deploy a piece of software (mainly web software). For instance, Capistrano, Fabric, Docker run, Kubectl apply, and the likes. The triggering layers where these tools run are software like Jenkins, Bamboo, Github actions. Let’s get that thing straight. I would like to make the distinction clear visually below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/02software-deployment-tools.jpg" title="Software deployment tools and triggering tools are different" alt="Software deployment tools and triggering tools are different">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/02software-deployment-tools.jpg" title="Software deployment tools and triggering tools are different" alt="Software deployment tools and triggering tools are different">
 
 As you can see, we will be discussing the yellow part not the green part of the above diagram. So how did it all begin for me to deploy a website to a free web host, it was not “the cloud” in the early 2000s. I consider [automated deployment](https://geshan.com.np/blog/2015/10/4-pillars-of-a-solid-software-application-and-tools-to-support-it/#automated-deployment) a pillar of solid software development.
 
@@ -56,7 +56,7 @@ Back in 1999-2000 when people didn’t have an email address, I had websites run
 
 I looked into Archive.org and found a website I had deployed circa 2000. Of course, I am not going to embarrass myself sharing the website but I can tell you it had [marquee tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee), gifs, a couple of [Java Applets](https://en.wikipedia.org/wiki/Java_applet), and page counters. Below is a screenshot of archive.org for the above-mentioned anonymous website.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/03archive.jpg" title="Old website deployed with FTP since 2001" alt="Old website deployed with FTP since 2001">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/03archive.jpg" title="Old website deployed with FTP since 2001" alt="Old website deployed with FTP since 2001">
 
 Of course it was a [static site](https://geshan.com.np/blog/2020/04/static-vs-dynamic-websites-jam-stack/#static-website) with some HTML, JavaScript and CSS. And it was deployed either from a web interface or the reliable File Transfer Protocol (FTP) client.
 
@@ -68,7 +68,7 @@ My first encounter with a deployment tool was a web interface called file manage
 
 My best bet on a 33.6 kbps connection was to upload it with a web interface called `File Manager`.  The file manager in those days looked like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/04file-manager.jpg" title="File manager to upload files from early 2000s" alt="File manager to upload files from early 2000s">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/04file-manager.jpg" title="File manager to upload files from early 2000s" alt="File manager to upload files from early 2000s">
 
 Notice “Internet Explorer” which was the only popular browser back then. After using the file manager for some months I stumbled upon File Transfer Protocol (FTP) software.
 
@@ -78,7 +78,7 @@ FTP used to be an advanced thing back then.
 
 As usual, I would play safe and copy almost the whole website again when I had to deploy changes.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/05filezilla-ftp.jpg" title="Filezilla FTP client was popular in mid 2000s" alt="Filezilla FTP client was popular in mid 2000s">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/05filezilla-ftp.jpg" title="Filezilla FTP client was popular in mid 2000s" alt="Filezilla FTP client was popular in mid 2000s">
 
 I clearly remember in my first job as an Intern in 2007 I used fireFTP and Filezilla to copy Drupal files to the server. Even in my second job in 2008, I used SVN and FileZilla to copy PHP files to the server for a web application I was developing then.
 
@@ -115,7 +115,7 @@ We could deploy git branches or tag and to multiple stages; mainly staging and l
 
 Even now if you have 1 to under 10 VMs and want to deploy a web application I would say Capistrano is your best bet. There are other flavors in Ruby and PHP but the basic deployment idea introduced by Capistrano stays the same.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/06capistrano.jpg" title="Capistrano is still one of the best automated deployment tools if you deploy your software in VMs" alt="Capistrano is still one of the best automated deployment tools if you deploy your software in VMs">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/06capistrano.jpg" title="Capistrano is still one of the best automated deployment tools if you deploy your software in VMs" alt="Capistrano is still one of the best automated deployment tools if you deploy your software in VMs">
 
 Capistrano is the pioneer in deploying web software safely with minimal or no downtime. Many other software deployment tools have followed Capistrano’ss pursuit like [Mina](https://github.com/mina-deploy/mina), [deployer](https://deployer.org/), etc. Another less opinionated deployment tool is [Fabric](http://www.fabfile.org/). It is written in Python. By this time we had written tests for the apps we built, there was a good continuous integration (CI) process in place on Travis. The [Continuous Delivery](/blog/2017/08/adopt-a-painless-continuous-delivery-culture/) (CD) part was mainly done with the cap deploy.
 
@@ -127,7 +127,7 @@ Docker was a paradigm shift and we were possibly one of the first teams in the M
 
 To keep the concerns clear, Docker is not an automated deployment tool per se. It is a software packaging software that lets you run your software consistently in all environments from dev to production creating a “general” parity. In turn, it makes software deployment a lot easier also because the build and deploy/run process is separated. Learn more about why you should [use Docker in development](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/) and how it has [changed software engineering](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/07docker-kubernetes.jpg" title="Docker and Kubernetes go hand in hand for a reliable software deployment experience" alt="Docker and Kubernetes go hand in hand for a reliable software deployment experience">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/07docker-kubernetes.jpg" title="Docker and Kubernetes go hand in hand for a reliable software deployment experience" alt="Docker and Kubernetes go hand in hand for a reliable software deployment experience">
 
 I remember we were running less than 5 apps on Docker in production. I am not aware of the specifics but I suppose we were doing Docker pull and docker run as it was less than 10 containers.
 
@@ -135,7 +135,7 @@ Bear in mind, adding containers to your workflow does add more layers and compli
 
 In terms of advancing deployment triggers, we had a chatbot on Hipchat/Slack written with Hubot that cloud run `cap deploy` or `kubectl apply` or `helm install` on an AWS VM for us. This made deployment a much easier task.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/08chatops.jpg" title="Chatops is a great way to democratize software deployment process" alt="Chatops is a great way to democratize software deployment process">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/08chatops.jpg" title="Chatops is a great way to democratize software deployment process" alt="Chatops is a great way to democratize software deployment process">
 
 Later we started using Kubernetes in full swing.
 
@@ -164,7 +164,7 @@ If you see the trend, FTP was used for 7 years or more and Kubeclt is inching to
 
 Well by now I have written enough about how the software deployment tools and automated deployments tools have changed in the last 20 years. If you want to choose a software deployment tool for your team in 2021 below is an oversimplified flow chart that should help you:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-deployment-tools/09choose-deployment-tool.jpg" title="Choose a software deployment tool that fits your current need" alt="Choose a software deployment tool that fits your current need">
+<img class="center" loading="lazy" src="/images/software-deployment-tools/09choose-deployment-tool.jpg" title="Choose a software deployment tool that fits your current need" alt="Choose a software deployment tool that fits your current need">
 
 You can view a [larger version](/images/software-deployment-tools/09choose-deployment-tool-full.jpg) too.
 

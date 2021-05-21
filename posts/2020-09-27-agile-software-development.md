@@ -17,7 +17,7 @@ keywords: agile software development, agile software development methodology, wh
 ---
 Agile software development means different things to different people. In this post, we will define what agile software development is with a simple analogy that a five-year-old can understand. The analogy we will use is as straightforward as serving an apple to 4 kids. Yes, it will be that easy, let's get started:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/agile-software-development/01agile-software-development-apple.jpg" title="Agile software development Apple serving analogy" alt="Agile software development serve apple to 4 children analogy">
+<img class="center" loading="lazy" src="/images/agile-software-development/01agile-software-development-apple.jpg" title="Agile software development Apple serving analogy" alt="Agile software development serve apple to 4 children analogy">
 
 <!-- more -->
 
@@ -60,7 +60,7 @@ Then there are other principles discussing changes, delivery of software, collab
 
 Now let us move a bit away from agile software development and all the jargon that it entails. Allow me to introduce a very simple problem (a bit dramatized) which is a great analogy and example. The example here is to serve an apple to four hungry children.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/agile-software-development/02agile-software-development-apple.jpg" title="Agile software development an Apple serving analogy" alt="Agile software development serve an apple to 4 children analogy">
+<img class="center" loading="lazy" src="/images/agile-software-development/02agile-software-development-apple.jpg" title="Agile software development an Apple serving analogy" alt="Agile software development serve an apple to 4 children analogy">
 
 Imagine this, you have four hungry children and one apple. You need to serve that apple to these 4 children as a snack while the main course is on its way to be delivered. All four children only eat peeled, cut, and diced apple. How can you go about this issue?
 

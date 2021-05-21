@@ -23,7 +23,7 @@ Laravel has [soared](https://trends.google.com/trends/explore?date=2014-10-22%20
 
 [Google Cloud Run](https://cloud.google.com/run/) is serverless and fully managed by Google, you get super scale, billing by the second, HTTPs URL, and your own domain mapping. If you want to run stateless containers [Cloud run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/ "Why use serverless container on Google Cloud Run") is hands down the easiest way to do it. In this post, I will detail how to get your Laravel 6 app working on Google cloud run with Continuous Integration (CI).
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/00laravel6-on-gcr.jpg" title="Get Laravel 6 running on Google cloud run in minutes with CI" alt="Get Laravel 6 running on Google cloud run in minutes with CI">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/00laravel6-on-gcr.jpg" title="Get Laravel 6 running on Google cloud run in minutes with CI" alt="Get Laravel 6 running on Google cloud run in minutes with CI">
 
 <!-- more -->
 
@@ -58,19 +58,19 @@ I ran the following command to get the latest laravel:
 composer create-project --prefer-dist laravel/laravel laravel6-on-google-cloud-run
 ```
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/01install-laravel.jpg" title="Installing Laravel with composer" alt="Installing Laravel with composer">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/01install-laravel.jpg" title="Installing Laravel with composer" alt="Installing Laravel with composer">
 
 ### 2. Test it locally first
 
 Then run `cd laravel6-on-google-cloud-run` then `php artisan serve` to see if it is working, for me it was fine when I went to `http://localhost:8000` on a web browser. I had PHP 7.2 installed locally.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/02running-laravel.jpg" title="Running Laravel locally" alt="Running Laravel locally">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/02running-laravel.jpg" title="Running Laravel locally" alt="Running Laravel locally">
 
 ### 3. Create a new GitHub repo
 
 Create a new repository on Github like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/03github-repo.jpg" title="Creating a repo for Laravel on Github" alt="Creating a repo for Laravel on Github">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/03github-repo.jpg" title="Creating a repo for Laravel on Github" alt="Creating a repo for Laravel on Github">
 
 You can use any Git hosting provider, for this example I will be using [Github Actions](https://github.com/features/actions) to run tests and Github is the most popular git hosting too.
 
@@ -90,7 +90,7 @@ git push -u origin master
 
 #### After running the above commands I had this on my github repo
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/04initial-push.jpg" title="After the first push, repo looks like this" alt="After the first push, repo looks like this">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/04initial-push.jpg" title="After the first push, repo looks like this" alt="After the first push, repo looks like this">
 
 ### 5. Add full Laravel, open PR
 
@@ -112,11 +112,11 @@ After that merge your pull request. You can read more about getting your [pull r
 
 Now some fun part, after you merged your PR now Github knows that this is a Laravel project. Click on  `Actions` tab on your repo page and you should be able to see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/05github-actions.jpg" title="Click Actions tab to view options" alt="Click Actions tab to view options">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/05github-actions.jpg" title="Click Actions tab to view options" alt="Click Actions tab to view options">
 
 Click the `Set up this workflow` under `Laravel` then on the next page click `Start commit` button on the top right. After that add a commit message like below and click `Commit new file`.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/06gh-actions-ci.jpg" title="Add Laravel tests action" alt="Add Laravel tests action">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/06gh-actions-ci.jpg" title="Add Laravel tests action" alt="Add Laravel tests action">
 
 There you go, you have your CI setup. Laravel default tests will run on each git push now. Wasn't that easy? Thank Github for this great intelligence. No more creating `.myCIname.yml` file anymore :).
 
@@ -211,7 +211,7 @@ If you try to understand everything here it might be overwhelming, let me boil d
 4. To make things easy to run with a single command `docker-compose up` we are using docker-compose.
 5. Now as you have read this far, run `docker-compose up` on your root and then after everything runs go to `http://localhost:8080` to see that Laravel 6 is running locally on Docker. Below is my `docker-compose up` output towards the end:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/07docker-compose-output.jpg" title="Docker compose running Laravel with PHP 7.3 and Apache" alt="Docker-compose running Laravel with PHP 7.3 and Apache">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/07docker-compose-output.jpg" title="Docker compose running Laravel with PHP 7.3 and Apache" alt="Docker-compose running Laravel with PHP 7.3 and Apache">
 
 As Laravel is running fine with Docker, let's open a PR like [this](https://github.com/geshan/laravel6-on-google-cloud-run/pull/2/files) one to add Docker to our project. I ran the following commands on the root of the project before opening the Pull Request (PR):
 
@@ -243,7 +243,7 @@ git push origin docker
 
 As a bonus it will run the Laravel default test on the push, like you can see below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/08test-running-gh.jpg" title="On each push PHP unit test will run" alt="On each push PHP unit tests will run">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/08test-running-gh.jpg" title="On each push PHP unit test will run" alt="On each push PHP unit tests will run">
 
 Only the owner of the repo has access to the `Actions` tab so other people don't necessarily need to know the results of your test builds :).
 
@@ -272,7 +272,7 @@ Be careful and replace the last part with your repo's `HTTPs` URL, for example, 
 
 After you merge your Pull Request (PR), then go to your repo page and click on the `Run on Google Cloud` button.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/09cloud-run-button.jpg" title="Click on the blue button to deploy the app" alt="Click on the blue button to deploy the app">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/09cloud-run-button.jpg" title="Click on the blue button to deploy the app" alt="Click on the blue button to deploy the app">
 
 After that, given you are logged into your Google account and have Google cloud setup with 1 project, click "Proceed". You might need to wait a bit, Then
 
@@ -282,7 +282,7 @@ After that, given you are logged into your Google account and have Google cloud 
 
 If everything goes fine on your `Google Cloud Shell`, you will see HTTPs URL you can hit to see your Laravel app running like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
 
 What just happened above is:
 
@@ -294,7 +294,7 @@ What just happened above is:
 
 After you hit the URL you should see your app working on Google Cloud Run like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/11laravel-url.jpg" title="Laravel Running on Google Cloud Run" alt="Laravel Running on Google Cloud Run">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/11laravel-url.jpg" title="Laravel Running on Google Cloud Run" alt="Laravel Running on Google Cloud Run">
 
 If you want to deploy another version you can merge your PR to master and click the button again to deploy.
 
@@ -315,11 +315,11 @@ To run Laravel 6 on Google Cloud Run quickly follow the steps below:
 5. Select your region
 6. Wait and get the URL of your Laravel App as below, Enjoy!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/10laravel-running-gcr.jpg" title="Hit the given URL to see its running" alt="Hit the given URL to see its running">
 
 ***
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel6-on-google-cloud-run/11laravel-url.jpg" title="Laravel Running on Google Cloud Run" alt="Laravel Running on Google Cloud Run">
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/11laravel-url.jpg" title="Laravel Running on Google Cloud Run" alt="Laravel Running on Google Cloud Run">
 
 ## Conclusion
 

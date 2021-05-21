@@ -16,7 +16,7 @@ keywords: working as software engineer
 ---
 Working on software systems is usually a complex process if not a complicated one. In this post, I am going to highlight the key differences between working for internal software and customer-facing applications with examples related to E-commerce. I have worked with both internal products and customer-facing applications in the past 8 and a half years. Without further ado, let’s get started.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/internal-vs-customer-facing-apps/02ecommerce.jpg" title="Ecommerce summarized" alt="Difference between working as a software engineer on an internal product and customer-facing application in E-commerce companies">
+<img class="center" loading="lazy" src="/images/internal-vs-customer-facing-apps/02ecommerce.jpg" title="Ecommerce summarized" alt="Difference between working as a software engineer on an internal product and customer-facing application in E-commerce companies">
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ E-commerce has been around for decades now. I have worked for fashion e-commerce
 
 Either it is too much work to get things customized well or hammering the screw is not a path you want to choose for your business. Therefore, having custom-built solutions that can scale well with business demands is crucial for commercial success.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/internal-vs-customer-facing-apps/01ecommerce.jpg" title="Ecommerce someone buying online" alt="Working as a software engineer on internal product Vs a customer-facing one in E-commerce companies">
+<img class="center" loading="lazy" src="/images/internal-vs-customer-facing-apps/01ecommerce.jpg" title="Ecommerce someone buying online" alt="Working as a software engineer on internal product Vs a customer-facing one in E-commerce companies">
 
 ## Assumptions
 

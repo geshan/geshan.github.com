@@ -19,7 +19,7 @@ Security is everyone’s responsibility. Express Helmet secures your Node.js app
 
 In this post, we will see how we can add Helmet to an existing API and how it bolsters the security of the application. Let’s get started!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/01express-helmet.jpg" title="Use Helmet js to secure your Node.js Express app" alt="Use Helmet js to secure your Node.js Express app">
+<img class="center" loading="lazy" src="/images/express-helmet/01express-helmet.jpg" title="Use Helmet js to secure your Node.js Express app" alt="Use Helmet js to secure your Node.js Express app">
 
 <!-- more -->
 Background Photo by [Harley-Davidson](https://unsplash.com/@harleydavidson) on [Unsplash](https://unsplash.com/photos/ZZbniSDAGoU)
@@ -75,7 +75,7 @@ I have used it for other examples too like the [faster docker builds](/blog/2020
 
 Below is the screenshot of the Header for the Currency API Node.js Express app without Helmet hosted on Vercel:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/02express-without-helmet.jpg" title="Express without helmet does not have needed security HTTP Response Headers" alt="Express without helmet does not have needed security HTTP Response Headers">
+<img class="center" loading="lazy" src="/images/express-helmet/02express-without-helmet.jpg" title="Express without helmet does not have needed security HTTP Response Headers" alt="Express without helmet does not have needed security HTTP Response Headers">
 
 One of the things that caught my attention is the `x-powered-by` response header. I don’t think it adds any value to the client by knowing it is an Express app. On the contrary, if an attacker finds out we are using an old version of Express, the attacker will try to exploit any known vulnerability. This header will be removed by Helmet.
 
@@ -120,7 +120,7 @@ In addition to using Helmet, it also mentions [securing cookies](https://express
 
 Looking further, it's time to see what new response headers has Helmet added with the default configuration:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/03express-with-helmet.jpg" title="Express with helmet has many needed security HTTP Response Headers" alt="Express with helmet has many needed security HTTP Response Headers">
+<img class="center" loading="lazy" src="/images/express-helmet/03express-with-helmet.jpg" title="Express with helmet has many needed security HTTP Response Headers" alt="Express with helmet has many needed security HTTP Response Headers">
 
 I had done a similar request last time but this time the `x-powered-by` response header is missing, thanks to Express Helmet. On the contrary, Helmet has added some new hearers which are very useful from a security point of view. We will see further, what these headers are and analyze 4 of the main ones.
 
@@ -175,13 +175,13 @@ You can do a quick scan of your website’s security headers on [SecurityHeaders
 
 ### Before Express Helmet
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/04express-before-helmet.jpg" title="Express before adding helmet got a D on SecurityHeader.com" alt="Express before adding helmet got a D on SecurityHeader.com">
+<img class="center" loading="lazy" src="/images/express-helmet/04express-before-helmet.jpg" title="Express before adding helmet got a D on SecurityHeader.com" alt="Express before adding helmet got a D on SecurityHeader.com">
 
 As seen above, without the use of Express helmet it is missing important HTTP response headers like Content-Security-Policy, Referrer-Policy, and others. The score for the website at this point is a "D".
 
 ### After Express Helmet
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/express-helmet/05express-after-helmet.jpg" title="Express after adding helmet got an amazing A on SecurityHeader.com" alt="Express after adding helmet got an amazing A SecurityHeader.com">
+<img class="center" loading="lazy" src="/images/express-helmet/05express-after-helmet.jpg" title="Express after adding helmet got an amazing A on SecurityHeader.com" alt="Express after adding helmet got an amazing A SecurityHeader.com">
 
 So from a poor "D" before Express Helmet, it jumped to a great "A" on Security Headers website.
 

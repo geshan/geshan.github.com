@@ -13,7 +13,7 @@ keywords: software engineering, junior developer, software development, web deve
 
 Being a senior software developer is more about the mindset and pro-activeness. Technical skills can take you to a point then you will be stagnant. To grow you need to learn in tech field. Above was the context for my talk titled "Things I wished I knew as a junior developer".  
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/things-jr-dev/geshan-dn-meetup-4.jpg" title="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4" alt="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4">
+<img class="center" loading="lazy" src="/images/things-jr-dev/geshan-dn-meetup-4.jpg" title="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4" alt="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4">
 
 <!-- more -->
 
@@ -50,11 +50,11 @@ The video of the talk is below:
 
 There were lots of participants making it a really good opportunity to network.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/things-jr-dev/dn-meetup-4-participants.jpg" title="Participants at DN Meetup 4" alt="Participants at DN Meetup 4">
+<img class="center" loading="lazy" src="/images/things-jr-dev/dn-meetup-4-participants.jpg" title="Participants at DN Meetup 4" alt="Participants at DN Meetup 4">
 
 It was great meetup to attend, speak and moderate the panel discussion.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/things-jr-dev/dn-meetup-4-panelists.jpg" title="Open discussion panelists at DN Meetup 4" alt="Open discussion panelists at DN Meetup 4">
+<img class="center" loading="lazy" src="/images/things-jr-dev/dn-meetup-4-panelists.jpg" title="Open discussion panelists at DN Meetup 4" alt="Open discussion panelists at DN Meetup 4">
 
 If you are interested more about the meetup you can view the meetup report on [google docs](https://docs.google.com/document/d/1utAY2UyxNOzBKFbp8cfY4cbz6Np517_fVGO4VCVXdds/).
 

@@ -14,7 +14,7 @@ The process of getting a completed feature or bug fix code from the development 
 
 If you still use FTP at this time like [22%](http://bit.ly/sw-eng-np-pt3) of Nepali developers you really need to move on. In this post I will briefly mention some deployment tools and try to analyze their pros and cons. Still as the title reads the best automated deployment tool is the one that best fits your needs.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/deployment-tools/fabric-deployment.png" title="Automated Deployment demo" alt="Automated Deployment demo">
+<img class="center" loading="lazy" src="/images/deployment-tools/fabric-deployment.png" title="Automated Deployment demo" alt="Automated Deployment demo">
 <!-- more -->
 
 ## What is automated Deployment?

@@ -15,7 +15,7 @@ keywords: Laravel, PHP, Laracon, Laracon AU, Laracon AU 2019
 
 This is my second Laracon, the first one was [Laracon EU 2016](https://geshan.com.np/blog/2016/08/number-laraconeu-2016-was-a-great-experience-overall/) which was one of the best conferences I have ever attended and spoken at. This blog post is a rundown of the talks of the first day of Laracon AU 2019 with slides from my talk, carry on reading…
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-au-2019/01-laracon-au-2019.jpg" title="Laracon AU 2019 stage" alt="Laracon AU 2019 stage">
+<img class="center" loading="lazy" src="/images/laracon-au-2019/01-laracon-au-2019.jpg" title="Laracon AU 2019 stage" alt="Laracon AU 2019 stage">
 
 <!-- more -->
 
@@ -39,7 +39,7 @@ You can follow all the tweets/images at [#laraconau](https://twitter.com/search?
 
 I think my talk went pretty well too. There was no time or provision to ask a question which is Ok. Some people came in later to ask their queries about logging and how to get started. I consider that the talk was warmly received by the audience with some laughs and a lot of attention.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laracon-au-2019/02-laracon-au-2019.jpg" title="My talk about Logging at Laracon AU 2019" alt="My talk about Logging at Laracon AU 2019">
+<img class="center" loading="lazy" src="/images/laracon-au-2019/02-laracon-au-2019.jpg" title="My talk about Logging at Laracon AU 2019" alt="My talk about Logging at Laracon AU 2019">
 
 ## Slides
 

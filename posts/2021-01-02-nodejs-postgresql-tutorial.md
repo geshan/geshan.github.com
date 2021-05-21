@@ -17,7 +17,7 @@ keywords: Nodejs postgres tutorial, Node.js postgres tutorial, nodejs postgres, 
 ---
 Node.js can be used efficiently with relational databases like PostgreSQL. In this post about Node.js PostgreSQL tutorial, we are going to build a REST API for Quotes step-by-step using Express Js.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg" title="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step" alt="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg" title="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step" alt="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step">
 
 <!-- more -->
 
@@ -78,7 +78,7 @@ cd nodejs-posgresql && npm install && DEBUG=nodejs-posgresql:* npm start
 
 You should see something similar on your browser when you hit `http://localhost:3000` on it:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/02express.jpg" title="Express running on local at port 3000" alt="Express running on local at port 3000">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/02express.jpg" title="Express running on local at port 3000" alt="Express running on local at port 3000">
 
 The generated barebones Express Js app can be viewed in this [pull request](https://github.com/geshan/nodejs-posgresql/pull/1/files).
 
@@ -171,7 +171,7 @@ DEBUG=nodejs-postgresql:* npm start
 
 Then hit `http://localhost:3000/quotes` on the browser tab, you will see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/03quotes-static.jpg" title="Quotes API with static output" alt="Quotes API with static output">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/03quotes-static.jpg" title="Quotes API with static output" alt="Quotes API with static output">
 
 We will fetch the quotes from our PostgreSQL database in the next step.
 
@@ -197,7 +197,7 @@ CREATE TABLE quote (
 
 Here is how it looks on the Elephant SQL interface:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/04create-table-elephant-sql.jpg" title="Create Quotes table on Elephant SQL interface" alt="Create Quotes table on Elephant SQL interface">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/04create-table-elephant-sql.jpg" title="Create Quotes table on Elephant SQL interface" alt="Create Quotes table on Elephant SQL interface">
 
 This is a very simple table with 5 columns. The first one is the `id` which is a sequence and primary key. Then there are `quote` and `author` both are variable characters.
 
@@ -232,7 +232,7 @@ SELECT * FROM quote;
 
 You should see something similar to below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/05select-elephant-sql.jpg" title="SELECT all from quote on Elephant SQL interface" alt="SELECT all from quote on Elephant SQL interface">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/05select-elephant-sql.jpg" title="SELECT all from quote on Elephant SQL interface" alt="SELECT all from quote on Elephant SQL interface">
 
 You can find the init database SQL file in this [pull request](https://github.com/geshan/nodejs-posgresql/pull/3/files). As our database is set up and ready let’s proceed to link it up with the Node.js Express application.
 
@@ -381,7 +381,7 @@ The main change here in the `routes/quotes.js` file is the addition of quotes se
 
 Please take note that the quotes are already paginated, meaning `https://localhost:3000/quotes?page=2` will give out quotes 11-20 as it has 10 quotes per page in the config.js file. The output at this point for page 2 should look something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/06quotes-api-page-2.jpg" title="Quotes on page 2 fetched dynamically from the database table" alt="Quotes on page 2 fetched dynamically from the database table">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/06quotes-api-page-2.jpg" title="Quotes on page 2 fetched dynamically from the database table" alt="Quotes on page 2 fetched dynamically from the database table">
 
 Now let’s proceed to add the POST quote API which will insert a new quote on the database. As above, you can view all file changes for this step in this neatly organized [pull request](https://github.com/geshan/nodejs-posgresql/pull/5/files).
 
@@ -511,7 +511,7 @@ curl -i -X POST -H 'Accept: application/json' \
 
 It will show something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/07validation-working.jpg" title="Creating a quote without author will give a validation error" alt="Creating a quote without author will give a validation error">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/07validation-working.jpg" title="Creating a quote without author will give a validation error" alt="Creating a quote without author will give a validation error">
 
 These changes are also reflected in a [pull request](https://github.com/geshan/nodejs-posgresql/pull/7/files).
 
@@ -535,7 +535,7 @@ All the code shown above is in a public [GitHub repository](https://github.com/g
 4. After that, hit: `https://localhost:3000/quotes` on your favorite browser
 5. You should see the following on your browser:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-postgresql-tutorial/08quotes-page-1.jpg" title="Quotes on page 1" alt="Quotes on page 1">
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/08quotes-page-1.jpg" title="Quotes on page 1" alt="Quotes on page 1">
 
 ## Conclusion
 

@@ -15,7 +15,7 @@ cover: "/images/php-oss-checklist/example-foss.png"
 ---
 Open source software (oss) are very popular in the software world, be it the server serving your web pages or the language/framework your website/webapp or even mobile app is written on, it is highly likely that its based on an open source software. As programmers this sprint of giving back to the community and helping others in form of Free and open source software is amazing. There are many open source PHP projects as well from frameworks to small libraries. It is a difficult yet rewarding experience to lead/support an open source project. If you are thinking of starting an open source project or open sourcing some part(s) of your existing system, this post has a checklist to assist you with it.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/php-oss-checklist/example-foss.png" title="An example open source php project" alt="Example open source project">
+<img class="center" loading="lazy" src="/images/php-oss-checklist/example-foss.png" title="An example open source php project" alt="Example open source project">
 <!-- more -->
 
 ## Intro
@@ -68,7 +68,7 @@ Finally your project is being downloaded and used by other people and you are ge
 [HuBorad](https://huboard.com/geshan/dataprovider-example/) comes to
 your rescue. You can show the status of the issues as below to make all the interested people clear of what is happening in the form of a Agileish Kanban board:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/php-oss-checklist/huBoard.png" title="An example of issues on HuBoard" alt="Example of issues on HuBoard">
+<img class="center" loading="lazy" src="/images/php-oss-checklist/huBoard.png" title="An example of issues on HuBoard" alt="Example of issues on HuBoard">
 
 ## Conclusion
 

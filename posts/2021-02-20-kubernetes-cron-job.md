@@ -13,7 +13,7 @@ keywords: kubernetes cron job, kubernetes cron jobs, k8s cron job, k8s cron jobs
 ---
 Kubernetes is super effective on running cron jobs as well as other web application workloads. Kubernetes cron job is a special kind of Kubernetes job that runs on a time-based schedule. In this post, we will focus on how to run optimally configured cron jobs on Kubernetes.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/kubernetes-cron-job/01kubernetes-cron-job.jpg" title="Kubernetes cron jobs, lets configure them optimally" alt="Kubernetes cron jobs, lets configure them optimally">
+<img class="center" loading="lazy" src="/images/kubernetes-cron-job/01kubernetes-cron-job.jpg" title="Kubernetes cron jobs, lets configure them optimally" alt="Kubernetes cron jobs, lets configure them optimally">
 
 <!-- more -->
 
@@ -52,7 +52,7 @@ More time passes by and more apps are containerized, at this point we have 100s 
 
 The answer to all of the above Hows is a “container orchestrator”. Around 2015 there was a slight competition between Kubernetes, Docker Swarm, and Apache Mesos. By mid-2017, Kubernetes comfortably won the race to become the wildly popular de facto container orchestrator as per [Google Trends](https://trends.google.com/trends/explore?date=2015-01-01%202021-01-31&q=kubernetes,docker%20swarm,apache%20mesos) that we can see below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/kubernetes-cron-job/02kubernetes-cron-job-popularity.jpg" title="Kubernetes won the container orchestrator race in mid 2017" alt="Kubernetes won the container orchestrator race in mid 2017">
+<img class="center" loading="lazy" src="/images/kubernetes-cron-job/02kubernetes-cron-job-popularity.jpg" title="Kubernetes won the container orchestrator race in mid 2017" alt="Kubernetes won the container orchestrator race in mid 2017">
 
 Even though Kubernetes is flexible, powerful, and ultra-popular. There are some things [Kubernetes is not](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#what-kubernetes-is-not), it is better to know about them too. In today’s time, Kubernetes has become a well-established platform with a thriving ecosystem around it.
 
@@ -151,7 +151,7 @@ Sat Feb 20 2021 10:55:03 GMT+0000 (Coordinated Universal Time)
 
 Let’s recap the commands below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/kubernetes-cron-job/03kubernetes-cron-job-simple.jpg" title="Kubernetes cron job a simple example - not optimally configured" alt="Kubernetes cron job a simple example - not optimally configured">
+<img class="center" loading="lazy" src="/images/kubernetes-cron-job/03kubernetes-cron-job-simple.jpg" title="Kubernetes cron job a simple example - not optimally configured" alt="Kubernetes cron job a simple example - not optimally configured">
 
 In the next part, we will look at configuring the Kubernetes Cron Job optimally.
 
@@ -205,7 +205,7 @@ Let’s analyze some of the new configurations we have added and what do they do
 
 Below is a screenshot of reapplying the new definition and checking logs from a run from the new configs we added:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/kubernetes-cron-job/04kubernetes-cron-job-better.jpg" title="Kubernetes cron job a better example - optimally configured" alt="Kubernetes cron job a better example - optimally configured">
+<img class="center" loading="lazy" src="/images/kubernetes-cron-job/04kubernetes-cron-job-better.jpg" title="Kubernetes cron job a better example - optimally configured" alt="Kubernetes cron job a better example - optimally configured">
 
 A new command in the above image is:
 
@@ -228,7 +228,7 @@ We are asking Kubernetes to create a job with the name `print-date-try01. The na
 
 We can see an example of the above command as follows:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/kubernetes-cron-job/05kubernetes-cron-job-create-job.jpg" title="Kubernetes cron job a demo for create job which is very useful for testing cron jobs" alt="Kubernetes cron job a demo for create job which is very useful for testing cron jobs">
+<img class="center" loading="lazy" src="/images/kubernetes-cron-job/05kubernetes-cron-job-create-job.jpg" title="Kubernetes cron job a demo for create job which is very useful for testing cron jobs" alt="Kubernetes cron job a demo for create job which is very useful for testing cron jobs">
 
 As seen above the cron job even though scheduled for every 5th minute ran at `11:35:54` and `11:36:35` which is outside of its regular schedule. It was possible because we force ran the cron job on a need basis than waiting for the schedule. This command is very handy when testing Kubernetes cron jobs that are scheduled to run say every hour or every day.
 

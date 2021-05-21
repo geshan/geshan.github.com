@@ -15,7 +15,7 @@ keywords: phpunit assertions, phpunit assertion, phpunit testing, php testing
 ---
 PHPUnit has been blowing away its competition for more than [5 years](https://trends.google.com/trends/explore?date=2016-01-01%202020-12-31&q=phpunit,phpspec,codeception,behat,atoum) now. With the use of the right PHPUnit assertions, you can get the most benefit out of PHPUnit. In this post, we will look into some popular and very useful PHPUnit assertions you should be using day to day in your PHPUnit tests. Let’s get cracking!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-assertions/01phpunit-assertions.jpg" title="PHPUnit assertions you should start using now" alt="PHPUnit assertions you should start using now">
+<img class="center" loading="lazy" src="/images/phpunit-assertions/01phpunit-assertions.jpg" title="PHPUnit assertions you should start using now" alt="PHPUnit assertions you should start using now">
 
 <!-- more -->
 
@@ -59,7 +59,7 @@ I will be taking three projects, one small, the second one medium, and the third
 
 The small project built with Symfony as a REST API has only 104 tests and 306 PHPUnit assertions. The above command when executed on this project’s tests folder gave the following output:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-assertions/02phpunit-assertions-count-small.jpg" title="PHPUnit assertions count on a small project" alt="PHPUnit assertions count on a small project">
+<img class="center" loading="lazy" src="/images/phpunit-assertions/02phpunit-assertions-count-small.jpg" title="PHPUnit assertions count on a small project" alt="PHPUnit assertions count on a small project">
 
 > As we can see, the most popular PHPUnit assertion used in this project is `assertEquals` which is used 73 times.
 
@@ -69,7 +69,7 @@ After that, `assertSame` is used 51 times in this relatively small project. This
 
 The medium project built with Symfony which is a REST API has 221 tests and 472 PHPUnit assertions. The above command when run on its tests directory looks like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-assertions/03phpunit-assertions-count-medium.jpg" title="PHPUnit assertions count on a small project" alt="PHPUnit assertions count on a medium project">
+<img class="center" loading="lazy" src="/images/phpunit-assertions/03phpunit-assertions-count-medium.jpg" title="PHPUnit assertions count on a small project" alt="PHPUnit assertions count on a medium project">
 
 > We can clearly see that `assertSame` and `assertEquals` is used the most in this small project with 37 times each.
 
@@ -81,7 +81,7 @@ Still, `assertSame` and `assertEquals` make up almost 16% of the assertions used
 
 Next up is the big-sized project, it has both APIs and user interface. It has unit tests as well as some integration tests. This project has a whopping 5824 tests and 13975 PHPUnit assertions. When we run the above PHPUnit assertions counter command on this project’s tests folder it yields:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-assertions/04phpunit-assertions-count-large.jpg" title="PHPUnit assertions count on a large project" alt="PHPUnit assertions count on a large project">
+<img class="center" loading="lazy" src="/images/phpunit-assertions/04phpunit-assertions-count-large.jpg" title="PHPUnit assertions count on a large project" alt="PHPUnit assertions count on a large project">
 
 > Even here, `assertEquals` is still the most used PHPUnit assertion with 3145 occurrences.
 

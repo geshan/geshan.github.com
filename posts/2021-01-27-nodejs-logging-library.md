@@ -17,7 +17,7 @@ keywords: nodejs logging library, node.js logging library, node js logging libra
 ---
 The optimally correct logging Node.js logging library can give you unprecedented insights into how your application is working. Having proper logging is equivalent to having a powerful telescope in a space with all your applications. Do you want to be able to see how your application behaves under load in production? In this post, we are going to analyze 5 popular Node.js logging libraries that can easily do the job for you.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-logging-libraries/01nodejs-logging-library.jpg" title="5 node.js logging libraries compared" alt="5 node.js logging libraries compared">
+<img class="center" loading="lazy" src="/images/nodejs-logging-libraries/01nodejs-logging-library.jpg" title="5 node.js logging libraries compared" alt="5 node.js logging libraries compared">
 
 <!-- more -->
 
@@ -287,7 +287,7 @@ Below is a quick comparison of the Node.js logging libraries we have discussed t
 
 If we look at the download trends, [NPM trends](https://www.npmtrends.com/winston-vs-bunyan-vs-pino-vs-loglevel-vs-npmlog) paints a picture like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-logging-libraries/02nodejs-logging-libraries-downloads.jpg" title="5 node.js logging libraries downloads trend in past 1 year" alt="5 node.js logging libraries downloads trend in past 1 year">
+<img class="center" loading="lazy" src="/images/nodejs-logging-libraries/02nodejs-logging-libraries-downloads.jpg" title="5 node.js logging libraries downloads trend in past 1 year" alt="5 node.js logging libraries downloads trend in past 1 year">
 
 Even though npmlog has only 346 stars and 53 forks, it is reportedly downloaded more than 10 million times each week. In terms of GitHub stars, Winston has 3 times as many stars compared to the second one Bunyan with 513 stars. Winston is also the oldest library created on 30-Dec-2010 with the first release on 19-Jan-2011.
 

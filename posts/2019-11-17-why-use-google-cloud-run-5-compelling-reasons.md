@@ -17,7 +17,7 @@ keywords: serverless containers, Google Cloud, Google Cloud Run, serverless, con
 ---
 Google [Cloud Run](https://cloud.google.com/run/) makes deploying serverless containers a breeze. It has a fully managed serverless version, which gives [software scalability](/blog/2020/12/software-scalability/), high availability, and cost based on precise usage. Being serverless, there are no servers for you to manage. In addition to these awesome reasons, this post discusses 5 more compelling reasons to use serverless containers on Google Cloud Run for your next project.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/reasons-to-use-google-cloud-run/00reasons-to-use-cloud-run.jpg" title="5 compelling reasons to use Google Cloud Run" alt="5 compelling reasons to use Cloud Run">
+<img class="center" loading="lazy" src="/images/reasons-to-use-google-cloud-run/00reasons-to-use-cloud-run.jpg" title="5 compelling reasons to use Google Cloud Run" alt="5 compelling reasons to use Cloud Run">
 
 <!-- more -->
 
@@ -25,7 +25,7 @@ Google [Cloud Run](https://cloud.google.com/run/) makes deploying serverless con
 
 Function as a service (FAAS) has lots of advantages, still, there are some pain points too. A developer advocate at Google Cloud did a survey about `Serverless pain points`. Below is a summary of the results as presented at a conference in 2019.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/reasons-to-use-google-cloud-run/01serverless-issues.jpg" title="Serverless Pain points from a survey" alt="Serverless Pain points from a survey">
+<img class="center" loading="lazy" src="/images/reasons-to-use-google-cloud-run/01serverless-issues.jpg" title="Serverless Pain points from a survey" alt="Serverless Pain points from a survey">
 
 It is very clear that `Cold Starts` and `Vendor Lock-in` are the two big ones. In this post, later we will into how Cloud Run manages these two issues.
 

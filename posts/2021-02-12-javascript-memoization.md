@@ -17,7 +17,7 @@ keywords: javascript memoization, javascript memoize, javascript memoize library
 ---
 Memoization is simply caching the output of a function so that the consequent calls just use the cached result eliminating any heavy computation. Memoization in Javascript can also yield amazing performance benefits, given it is implemented properly. Do you want to make your javascript code run much faster? In this post, we will have a look at a practical example of javascript memoization. Spoiler alert: you will not see a Fibonacci or factorial mentioned below.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/javascript-memoization/01javascript-memoization.jpg" title="Javascript memoization for speed, performance and profit" alt="Javascript memoization for speed, performance and profit">
+<img class="center" loading="lazy" src="/images/javascript-memoization/01javascript-memoization.jpg" title="Javascript memoization for speed, performance and profit" alt="Javascript memoization for speed, performance and profit">
 
 <!-- more -->
 
@@ -98,7 +98,7 @@ echo "GET https://nodejs-postgresql-try.herokuapp.com/quotes" | vegeta attack -d
 
 When the above Vegeta load test runs for 30 seconds, it will show us an output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/javascript-memoization/02before-javascript-memoization.jpg" title="50 RPS for 30 seconds before javascript memoization" alt="50 RPS for 30 seconds before javascript memoization">
+<img class="center" loading="lazy" src="/images/javascript-memoization/02before-javascript-memoization.jpg" title="50 RPS for 30 seconds before javascript memoization" alt="50 RPS for 30 seconds before javascript memoization">
 
 As we can see, the fastest response we got was ~205 ms and the slowest one was 1.5 s. I deliberately did 50 requests per second. Those red dots are the 500 errors caused by the database connection issue.
 
@@ -143,14 +143,14 @@ echo "GET https://nodejs-postgresql-try.herokuapp.com/quotes" | vegeta attack -d
 
 It results in:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/javascript-memoization/03after-javascript-memoization.jpg" title="50 RPS for 30 seconds after javascript memoization" alt="50 RPS for 30 seconds after javascript memoization">
+<img class="center" loading="lazy" src="/images/javascript-memoization/03after-javascript-memoization.jpg" title="50 RPS for 30 seconds after javascript memoization" alt="50 RPS for 30 seconds after javascript memoization">
 
 
 Here compared to the above load test, the fastest response time we got was ~157ms and the slowest one (probably the first one) was 1.05 s. Overall we clearly see a cut of 50-75 milliseconds for each request from the previous test. Another advantage we have is that the database is getting hit just once for 1500 (30*50) requests in the span of just 30 seconds.
 
 Similarly, the logs for this branch deployment is as follows:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/javascript-memoization/04logs-after-javascript-memoization.jpg" title="Server logs after Javascipt Memoization - DB hit only once" alt="Server logs after Javascipt Memoization - DB hit only once">
+<img class="center" loading="lazy" src="/images/javascript-memoization/04logs-after-javascript-memoization.jpg" title="Server logs after Javascipt Memoization - DB hit only once" alt="Server logs after Javascipt Memoization - DB hit only once">
 
 As seen here, the first request hit the database rendering the log saying `Getting quotes from the db` then for the next one minute it would not hit the database. So all remaining 1499 requests in our load test got the memoized (cached) result for getting multiple quotes. The first two requests took ~320 ms and then after it took 0.5 ms to 2.4 ms, all thanks to memoization.
 

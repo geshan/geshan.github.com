@@ -16,7 +16,7 @@ keywords: vegeta load testing, vegeta load testing examples, vegeta load test, l
 ---
 Load testing is an important part of releasing a reliable API or application. Vegeta load testing will give you the confidence that the application will work well under a defined load. In this post, we will discuss how to use Vegeta for your load testing needs with some GET request examples. As it is just a go binary it is much easier to set up and use than you think, let's get started.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/01truck-load.jpg" title="Vegeta load testing analogy" alt="Loading a truck">
+<img class="center" loading="lazy" src="/images/vegeta-load-testing/01truck-load.jpg" title="Vegeta load testing analogy" alt="Loading a truck">
 
 <!-- more -->
 
@@ -108,7 +108,7 @@ So what just happened here?
 
 You can see a sample output below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/02vegeta-load-testing-text-output.jpg" title="Vegeta load testing text output" alt="Text output of 5 RPS for 5 seconds">
+<img class="center" loading="lazy" src="/images/vegeta-load-testing/02vegeta-load-testing-text-output.jpg" title="Vegeta load testing text output" alt="Text output of 5 RPS for 5 seconds">
 
 Vegeta load testing tool ran the attack of 25 requests spread over 5 seconds at 5 RPS. The minimum response time was 240 ms and the maximum was 510 ms with a 100% success rate. This means all the requests came back as a 200. Further, let's have a look at how we can see a more graphical output.
 
@@ -128,7 +128,7 @@ Let’s analyze how we used Vegeta for load testing httpbin.org here:
 4. Now this result is like a binary that can’t be read easily so the next thing is we read the contents of this binary file with `cat` and passed it to `vegeta plot` with a fancy title and filename to get the HTML file
 5. When we open the created HTML file we can see a graph like below in the HTML file:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/03vegeta-graph.jpg" title="Vegeta load testing graph output" alt="Graph output of 10 RPS for 30 seconds with Vegeta">
+<img class="center" loading="lazy" src="/images/vegeta-load-testing/03vegeta-graph.jpg" title="Vegeta load testing graph output" alt="Graph output of 10 RPS for 30 seconds with Vegeta">
 
 So we sent 300 requests and all of them came back with a 200, the max response time was 552 milliseconds. One of the fastest response times was 234 milliseconds. This gives us a clear picture that HTTP bin can easily handle 10 requests per second for 30 seconds.
 
@@ -162,7 +162,7 @@ GET http://httpbin.org/ip
 1. Now similar to the first example with the text output run this command in the folder the targets.txt file is created: `vegeta attack -duration=5s -rate=5 --targets=targets.txt | vegeta report --type=text`
 2. We will see a text output like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/vegeta-load-testing/04vegeta-multiple-urls.jpg" title="Vegeta load testing with multiple GET URLs output" alt="Text output of multiple GET URLs with Vegeta">
+<img class="center" loading="lazy" src="/images/vegeta-load-testing/04vegeta-multiple-urls.jpg" title="Vegeta load testing with multiple GET URLs output" alt="Text output of multiple GET URLs with Vegeta">
 
 As we have seen doing load testing on multiple URLs with Vegeta is a breeze. Vegeta load testing can easily be done for other HTTP verbs like POST and PUT. Please refer to Vegeta [docs](https://github.com/tsenart/vegeta#targets-with-custom-bodies).
 
