@@ -19,9 +19,9 @@ keywords: free node.js hosting, free node js hosting, node js free hosting, node
 ---
 Hosting Node.js applications is easy, finding a completely free Node.js hosting service that is reliable is not. In this post, we will discuss 3 hosting services where you can host your Node.js applications or API for free which you should start using now. We will also deploy a demo app step-by-step on each of these 3 platforms. I wished to have found more than 3 but finding even 3 was not very easy.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
 
 ## Table of contents
 

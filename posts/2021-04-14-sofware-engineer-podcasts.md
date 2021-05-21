@@ -17,9 +17,9 @@ If you are looking to level up without reading, software engineer podcasts can b
 
 Due to no commute in the past 12 months, I found new times and ways to listen to podcasts. Continuing the yearly posts about podcasts, in this post, I am going to recommend 3 software engineer podcasts you should subscribe to instantly.
 
-<img class="center" loading="lazy" src="/images/software-engineer-podcasts/01software-engineer-podcasts.jpg" title="Software Engineer podcasts you should not miss" alt="Software Engineer podcasts you should not miss">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/software-engineer-podcasts/01software-engineer-podcasts.jpg" title="Software Engineer podcasts you should not miss" alt="Software Engineer podcasts you should not miss">
 
 ## Table of contents
 

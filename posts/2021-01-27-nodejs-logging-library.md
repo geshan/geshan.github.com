@@ -17,9 +17,9 @@ keywords: nodejs logging library, node.js logging library, node js logging libra
 ---
 The optimally correct logging Node.js logging library can give you unprecedented insights into how your application is working. Having proper logging is equivalent to having a powerful telescope in a space with all your applications. Do you want to be able to see how your application behaves under load in production? In this post, we are going to analyze 5 popular Node.js logging libraries that can easily do the job for you.
 
-<img class="center" loading="lazy" src="/images/nodejs-logging-libraries/01nodejs-logging-library.jpg" title="5 node.js logging libraries compared" alt="5 node.js logging libraries compared">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-logging-libraries/01nodejs-logging-library.jpg" title="5 node.js logging libraries compared" alt="5 node.js logging libraries compared">
 
 ## Table of contents
 

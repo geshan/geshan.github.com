@@ -17,9 +17,10 @@ There are multiple ways to make HTTP requests in Node.js. We can do so using the
 
 In this post, we are going to see code examples of the native HTTPS module that comes built-in with your Node.js installation as well as npm packages like Axios, Got, SuperAgent, and node-fetch. Let’s get cracking!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/nodejs-http-requests/01nodejs-http-requests.jpg" title="5 different ways to make HTTP requests with Node.js" alt="5 different ways to make HTTP requests with Node.js">
 
-<!-- more -->
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
