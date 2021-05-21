@@ -21,7 +21,7 @@ In JavaScript, we generally use arrays to represent data or manipulate data, so 
 
 In this post, we will learn about 10 JavaScript array functions that are going to help you easily work with data in the JavaScript arrays. Let’s get started!
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/javascript-array-functions/01javascript-array-functions.jpg" title="10 JavaScript array functions you should know about" alt="10 JavaScript array functions you should start using today">
+<img class="center" loading="lazy" src="/images/javascript-array-functions/01javascript-array-functions.jpg" title="10 JavaScript array functions you should know about" alt="10 JavaScript array functions you should start using today">
 
 <!-- more -->
 

@@ -18,7 +18,7 @@ Again special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) for help
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
 <!-- more -->
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/sw-eng-np-infographics-part03/Software_Engineering_Nepal_Mid_2015_Part03.png" title="Software Engineering Practices in Nepal Infographics Part 3" alt="Software Engineering Practices in Nepal Infographics Part 3">
+<img class="center" loading="lazy" src="/images/sw-eng-np-infographics-part03/Software_Engineering_Nepal_Mid_2015_Part03.png" title="Software Engineering Practices in Nepal Infographics Part 3" alt="Software Engineering Practices in Nepal Infographics Part 3">
 
 You can view this infographics in [interactive](http://bit.ly/1IUFBmA) mode too.
 

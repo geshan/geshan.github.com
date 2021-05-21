@@ -22,7 +22,7 @@ Even with thinking more than typing SQL (Structured Query Language) we software 
 
 This is quite prevalent in software engineers who work in web applications. This post aims to enlighten you about the powers of SQL you might know but generally don't use.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/tea-lights.jpg" title="You can do it in SQL, stop writing extra code for that" alt="You can do it in SQL, stop writing extra code for that">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/tea-lights.jpg" title="You can do it in SQL, stop writing extra code for that" alt="You can do it in SQL, stop writing extra code for that">
 <!-- more -->
 
 ## TLDR;
@@ -33,7 +33,7 @@ This is quite prevalent in software engineers who work in web applications. This
 
 It will be easier to explain the superpowers of SQL putting it in action on an example. Below is a basic schema with 2 tables in MYSQL for a refunds microservice:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/refund-schema.png" title="You can do it in SQL- refund schema" alt="You can do it in SQL - refund schema example">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/refund-schema.png" title="You can do it in SQL- refund schema" alt="You can do it in SQL - refund schema example">
 
 There are 2 refunds and 7 related payments as example [data](http://sqlfiddle.com/#!9/b242d/5 "Try the example in sql fiddle").
 
@@ -60,7 +60,7 @@ FROM payment WHERE fk_item=2001;
 
 With current data, it will give 3 rows like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/01result-without-group.png" title="Result without grouping and aggregate function sum" alt="Result without grouping and aggregate function sum">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/01result-without-group.png" title="Result without grouping and aggregate function sum" alt="Result without grouping and aggregate function sum">
 
 With these 3 rows, we would loop over them. If it is cash accumulate it to cashBalance variable, if not sum it up to creditBalace variable. Rather than that it would be a lot easier (probably faster) to do in SQL like:
 
@@ -74,7 +74,7 @@ GROUP BY fk_item, is_cash;
 
 Resulting in:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/02result-with-grouping.png" title="Result with grouping and aggregate function sum" alt="Result with grouping and aggregate function sum">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/02result-with-grouping.png" title="Result with grouping and aggregate function sum" alt="Result with grouping and aggregate function sum">
 
 The result is easy now if you need the total refund for the item just change the GROUP BY to be on fk_item and it's done. For 2 and 3 records it won't feel significant. If there were say 20 refunds for that item, the first solution with a loop is writing more code with no gain.  Like sum, other SQL functions can be used too. Simple math operations like [sum](https://www.w3schools.com/sql/func_mysql_sum.asp "Sum in mysql"), multiply, [average](https://www.w3schools.com/sql/func_mysql_avg.asp "Average function in mysql") etc can be easy with SQL. This means no more loops.
 
@@ -90,7 +90,7 @@ WHERE fk_item = 2001;
 
 This results in:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/03result-group-concat.png" title="Result with group_concat" alt="Result with group_concat">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/03result-group-concat.png" title="Result with group_concat" alt="Result with group_concat">
 
 Now we know that item 2001 has been refunded twice for 2 refunds. It will be easy to explode the refund Ids with `,` and proceed with any related operation.
 
@@ -109,7 +109,7 @@ FROM refund;
 
 Resulting in:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/04result-concat-ws.png" title="Result with concat_ws" alt="Result with concat_ws">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/04result-concat-ws.png" title="Result with concat_ws" alt="Result with concat_ws">
 
 If this needs to be shown on the credit note document, for example, no extra code is needed to join the values again. SQL makes it one step easier again.
 
@@ -132,7 +132,7 @@ ORDER BY priority DESC
 
 The results are below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/do-it-in-sql/05result-priority-formula.png" title="Result with sorting based on custom formula" alt="Result with sorting based on custom formula">
+<img class="center" loading="lazy" src="/images/do-it-in-sql/05result-priority-formula.png" title="Result with sorting based on custom formula" alt="Result with sorting based on custom formula">
 
 With proper use of IF in SQL sorting by a custom priority formula is a lot easier than trying to do it with loops in code. Notice that even smaller amounts like 7.5 (750 cents) and 9.0 (900 cents) came to highest priority as these refund payment amounts were associated with premium customers.
 

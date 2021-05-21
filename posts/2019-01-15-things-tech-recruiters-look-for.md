@@ -17,7 +17,7 @@ Have you ever applied to many tech jobs that suit your experience and skill but 
 
 > After you know what the tech recruiters are looking for you can tailor your resume that lands you an interview.
 
-<img class="center" src="/images/generic/loading.gif" title="what recruiters look for" alt="what recruiters look for" data-echo="/images/tech-recruitment-aus/for-hire.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="what recruiters look for" alt="what recruiters look for" data-echo="/images/tech-recruitment-aus/for-hire.jpg">
 
 <!-- more -->
 
@@ -55,7 +55,7 @@ I asked the above 3 questions to Cloë Stanbridge (Safety Culture), James Richar
 
 ### Cloë Stanbridge (Safety Culture) looks for tech and soft skills
 
-<img class="center" src="/images/generic/loading.gif" title="Cloe from Safety Culture" alt="Cloe from Safety Culture" data-echo="/images/tech-recruitment-aus/cloe.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="Cloe from Safety Culture" alt="Cloe from Safety Culture" data-echo="/images/tech-recruitment-aus/cloe.jpg">
 
 [Cloë Stanbridge](https://www.linkedin.com/in/cloestanbridge/ "Cloë on LinkedIn") has been working for [Safety Culture](https://safetyculture.com/ "Safety culture website") for almost 2 years now. She is currently the Talent Acquisition manager there. Safety Culture's mission is "to help companies achieve safer and higher quality workplaces all around the world through innovative, low-cost mobile first products."
 
@@ -83,7 +83,7 @@ She was quite precise about the things she would look for in the CV and the cand
 
 ### James Richardson (Quantium) seeks alignment to JD and aptitude
 
-<img class="center" src="/images/generic/loading.gif" title="James, currently working at Quantium" alt="James, currently working at Quantium" data-echo="/images/tech-recruitment-aus/james.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="James, currently working at Quantium" alt="James, currently working at Quantium" data-echo="/images/tech-recruitment-aus/james.jpg">
 
 [James](https://www.linkedin.com/in/jamesrichardsonrecruitment/ "James on LinkedIn") has been associated with [Quantium](https://www.quantium.com/ "Quantium website") for almost 2 and a half years. Currently, he is the "Lead Recruitment Business Partner" at Quantium, he is also the co-organizer of [Node Sydney Meetup](https://www.meetup.com/node-sydney/ "Node Sydney Meetup group"). Quantium is a consulting firm working in multiple domains and has multiple products, with a focus on Data Science and Artificial Intelligence. With 4 office location in Australia, Quantium has a total of 9 offices all over the world.
 
@@ -119,7 +119,7 @@ He adds "Essentially, being an in-house recruiter is about credibility. We LOVE 
 
 ### Kevin Yoon values experience and ability to change
 
-<img class="center" src="/images/generic/loading.gif" title="Kevin, currently employed at Siteminder" alt="Kevin, currently employed at Siteminder" data-echo="/images/tech-recruitment-aus/kevin.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="Kevin, currently employed at Siteminder" alt="Kevin, currently employed at Siteminder" data-echo="/images/tech-recruitment-aus/kevin.jpg">
 
 [Kevin](https://www.linkedin.com/in/simplified/ "Kevin Yoon on LinkedIn") has been employed at [SiteMinder](https://www.siteminder.com/ "SiteMinder website") for the past 4 months as the "Talent Acquisition Lead - Tech & Product". SiteMinder is a SaaS company working in the hospitality industry with a focus on online booking and related things.
 

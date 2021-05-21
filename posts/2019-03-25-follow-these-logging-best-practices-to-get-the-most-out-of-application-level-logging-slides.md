@@ -21,7 +21,7 @@ Fully exploiting logs in case of any issues is very underrated. We as software e
 
 I had written about [logging](https://geshan.com.np/blog/2015/08/importance-of-logging-in-your-applications/) some years back too. This post is focused on best practices you can follow when logging from the application level and how it can help you as a software engineer.
 
-<img class="center" src="/images/generic/loading.gif" title="what recruiters look for" alt="what recruiters look for" data-echo="/images/logging-best-practices/logging-bp.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="what recruiters look for" alt="what recruiters look for" data-echo="/images/logging-best-practices/logging-bp.jpg">
 
 <!-- more -->
 

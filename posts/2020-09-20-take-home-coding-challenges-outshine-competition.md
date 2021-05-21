@@ -16,7 +16,7 @@ keywords: take-home coding challenges, take-home coding challenge, take-home cod
 ---
 Like it or not, your hiring process will most of the time involve take-home coding challenges. You can either perform poorly in it or excel. With the steps in this guide, you can surely outclass your competition in any take-home coding challenge. Follow on to find out how:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/take-home-coding-challenges/01take-home-coding-challenges.jpg" title="Take-home coding challenges: how to outperform your competition" alt="Take-home coding challenges code example">
+<img class="center" loading="lazy" src="/images/take-home-coding-challenges/01take-home-coding-challenges.jpg" title="Take-home coding challenges: how to outperform your competition" alt="Take-home coding challenges code example">
 
 <!-- more -->
 
@@ -70,7 +70,7 @@ Once the take-home coding challenge is broken down into smaller chunks, start wi
 
 Below is an example of the pull requests I made for a coding challenge:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/take-home-coding-challenges/02take-home-coding-challenge-pull-requests.jpg" title="Take-home coding challenges pull request example" alt="Take-home coding challenges pull requests example">
+<img class="center" loading="lazy" src="/images/take-home-coding-challenges/02take-home-coding-challenge-pull-requests.jpg" title="Take-home coding challenges pull request example" alt="Take-home coding challenges pull requests example">
 
 Keep your [pull request](/blog/2019/12/how-to-get-your-pull-request-pr-merged-quickly/) small. Work as if you are working in a team and review your own pull requests. Step by step PRs and logical commits will help you outdo your competition. This tells the evaluators a clear story of how you reached the solution.
 
@@ -104,7 +104,7 @@ You will want to know how to structure a readme, below is part of a readme I wro
 
 > The readme format below is tried and tested as I was called in for an interview. This worked very well.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/take-home-coding-challenges/03take-home-coding-challenge-readme.jpg" title="Take-home coding challenges pull readme example" alt="Take-home coding challenges pull readme example">
+<img class="center" loading="lazy" src="/images/take-home-coding-challenges/03take-home-coding-challenge-readme.jpg" title="Take-home coding challenges pull readme example" alt="Take-home coding challenges pull readme example">
 
 You can read the [full readme](https://gist.github.com/geshan/5abd1abdd886e126309477b048c579a3) to get an idea of what to write in a readme, how to structure it, and how to write it. I think the “Decisions and Tradeoffs” section was one of the most important sections of the readme.
 

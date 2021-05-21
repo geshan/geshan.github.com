@@ -15,7 +15,7 @@ keywords: small pull requests, small pull requests, smaller pull requests, pull 
 ---
 There are multiple ways to create small pull requests for a single task. This post discusses an easy way to do it which has no impact on production code. The steps are laid out in a way that small pull requests will be reviewed faster with no effect on production too. Let’s see how that happens with enable code last:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/small-pull-requests/01small-pull-requests.jpg" title="Create small pull requests by using enabler code last" alt="Create small pull requests by using enabler code last">
+<img class="center" loading="lazy" src="/images/small-pull-requests/01small-pull-requests.jpg" title="Create small pull requests by using enabler code last" alt="Create small pull requests by using enabler code last">
 
 <!-- more -->
 

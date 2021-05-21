@@ -17,7 +17,7 @@ keywords: nodejs microservices, microservices in node js, microservices node js,
 ---
 There are multiple good reasons to build Node.js microservices, this post discusses 5 of the potent ones. Node.js and microservices are a match made in modern software engineering heaven. Let’s analyze further why Node.js microservices makes more sense.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-microservices/01nodejs-microservices.jpg" title="Microservices in Node.js" alt="Create noejs microservices">
+<img class="center" loading="lazy" src="/images/nodejs-microservices/01nodejs-microservices.jpg" title="Microservices in Node.js" alt="Create noejs microservices">
 
 <!-- more -->
 

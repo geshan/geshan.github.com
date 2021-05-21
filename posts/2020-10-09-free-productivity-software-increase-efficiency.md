@@ -15,7 +15,7 @@ keywords: free productivity software, free productivity apps, free productivity 
 ---
 Being productive will mean different things to different people. In this post, I will list 5+ free productivity software that has helped me get more things done or get something done better. The top 3 free productivity software mentioned in this writeup deal with either time tracking or time management. Then, there is mention of other useful software that aids in your productivity.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-productivity-software/01productivity.jpg" title="Free productivity software to enhance your outcome" alt="Free productivity software to enhance your outcome">
+<img class="center" loading="lazy" src="/images/free-productivity-software/01productivity.jpg" title="Free productivity software to enhance your outcome" alt="Free productivity software to enhance your outcome">
 
 <!-- more -->
 
@@ -43,7 +43,7 @@ Without any doubts, the same thing applies to your time. If you cannot measure w
 
 To track your time, I would suggest manual tracking with the Toggl track software. Toggl has recently [diversified](https://toggl.com/blog/toggl-rebrand-toggltrack) and rebranded the time tracking as [Toggl Track](https://toggl.com/track/).
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-productivity-software/02toggl-track.jpg" title="Track your time with Toggl Track" alt="Toggl Website">
+<img class="center" loading="lazy" src="/images/free-productivity-software/02toggl-track.jpg" title="Track your time with Toggl Track" alt="Toggl Website">
 
 The idea is simple whenever you start working on something, you start the timer. You can name the task, pick a project, client, and add tags. When you finish stop the timer. This might sound mundane in the beginning. Over time you will get a gold mine of data on where your time was spent.
 
@@ -59,7 +59,7 @@ If you want something to work automatically in the background to start with. You
 
 Picture this, you need to schedule a meeting with a friend. You are in Sydney and your friend lives in Dubai. You start wondering should I do it at 8 AM or 5 PM Sydney time. Here is your answer: it is best to do it at 5 PM which is 10 AM in Dubai, how do I know this? Because [World Time Buddy](https://www.worldtimebuddy.com/) free productivity software gives us an easy to use interface to know this critical information.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-productivity-software/03world-time-buddy.jpg" title="What time will it be in future in that city - world time buddy helps you with it" alt="World time buddy website">
+<img class="center" loading="lazy" src="/images/free-productivity-software/03world-time-buddy.jpg" title="What time will it be in future in that city - world time buddy helps you with it" alt="World time buddy website">
 
 You can log in if you want to, even here a Google account is enough to log in. Another useful feature of World Time Buddy is the ability to share a selection as a [link](https://www.worldtimebuddy.com/?qm=1&lid=2147714,1283240,292223&h=2147714&date=2020-10-8&sln=17-17.5). Just click on the time block then click “Link To This Selection” and copy the link from the tab to share it.
 
@@ -75,7 +75,7 @@ There is also a [mobile app](https://www.worldtimebuddy.com/mobile-app) if you w
 
 Have you ever had to send a chain of emails with another person to find 30 mins of common free time? I have surely gone through this and it is not fun at all. Then I thought someone should have found a solution to this meeting scheduling madness and the answer was [Calendly](https://calendly.com/).
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-productivity-software/04calendly.jpg" title="Get over the meeting scheduling madness with Calendly" alt="Calendly website">
+<img class="center" loading="lazy" src="/images/free-productivity-software/04calendly.jpg" title="Get over the meeting scheduling madness with Calendly" alt="Calendly website">
 
 > You can sign up with your email for free and add meeting slots easily.
 
@@ -87,7 +87,7 @@ With the new integration like the [Zoom](https://calendly.com/pages/integrations
 
 Imagine this, You are reading a long document and thinking over and over again this could have been represented a lot better visually.  Or maybe you wanted to collaborate in real-time on a planning document or run a workshop with a much better visual feel than Google docs. The answer is [Miro](https://miro.com).
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-productivity-software/05miro.jpg" title="Work collaboratively for a distributed team in a visual form with Miro" alt="Miro website">
+<img class="center" loading="lazy" src="/images/free-productivity-software/05miro.jpg" title="Work collaboratively for a distributed team in a visual form with Miro" alt="Miro website">
 
 The free [plan](https://miro.com/pricing/) only gives you 3 boards. You can easily login with Google account and start creating real-time collaborative, visually appealing artifacts.
 
@@ -103,7 +103,7 @@ If you just want to use the mind map diagrams I would suggest having a look at [
 
 You want to upload that important PDF form on the website. You upload it but it gives you a size limit error. You can again go back to the scanner and scan the document in low resolution but there is an easier way. Just use [I Love PDF](https://www.ilovepdf.com/)’s compress PDF option and your 5 MB PDF is compressed to 3 MB file.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-productivity-software/06ilovepdf.jpg" title="Compress, split, merge PDF files with ILovePDf" alt="I Love PDF website">
+<img class="center" loading="lazy" src="/images/free-productivity-software/06ilovepdf.jpg" title="Compress, split, merge PDF files with ILovePDf" alt="I Love PDF website">
 
 I Love PDF has also come up with fully offline [desktop applications](https://www.ilovepdf.com/desktop). You can [split PDF](https://www.ilovepdf.com/split_pdf), [merge PDF](https://www.ilovepdf.com/merge_pdf), or even [edit it](https://www.ilovepdf.com/edit-pdf). There are a host of other features related to PDF files including [signing](https://www.ilovepdf.com/sign-pdf) a PDF file too.
 

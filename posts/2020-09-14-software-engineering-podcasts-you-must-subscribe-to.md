@@ -13,7 +13,7 @@ keywords: software engineering podcasts, software engineering podcast, software 
 ---
 Software Engineering podcasts have been my companion for a long time. I have listened to software engineer podcasts for more than a [decade](/blog/2009/02/3-drupal-podcasts-you-must-be-fool-to/). Software Engineering podcasts give you the latest news and views in a great format that is equally easy to consume too. You can also read the previous parts [1](/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/), [2](/blog/2016/05/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-2/), [3](/blog/2017/01/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-3/), and [4](/blog/2019/07/podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-4/). Here are the 3 podcasts all software engineers should subscribe to now:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-engineering-podcasts-part-05/01software-engineering-podcasts-mic.jpg" title="Software engineering podcasts you must subscribe to" alt="Software engineering podcasts mic">
+<img class="center" loading="lazy" src="/images/software-engineering-podcasts-part-05/01software-engineering-podcasts-mic.jpg" title="Software engineering podcasts you must subscribe to" alt="Software engineering podcasts mic">
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ Software Engineering podcasts have been my companion for a long time. I have lis
 
 Command line heroes is a gem of a podcast. The topics are well researched and in-depth. It covers a wide range of topics that are very relevant to all software engineers. I remember listening to the episode about [serverless](https://www.redhat.com/en/command-line-heroes/season-2/at-your-serverless) from Season 2. It was a breath of fresh air having comments from Saron, bytes from the archive, and great add-ons by multiple guests including Andrea Passwater.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-engineering-podcasts-part-05/02command-line-heroes.jpg" title="Software engineering podcast - Command line heroes" alt="Command line heroes Software engineering podcast">
+<img class="center" loading="lazy" src="/images/software-engineering-podcasts-part-05/02command-line-heroes.jpg" title="Software engineering podcast - Command line heroes" alt="Command line heroes Software engineering podcast">
 
 This [award-winning](https://www.shortyawards.com/11th/command-line-heroes) podcast defines itself as:
 
@@ -35,7 +35,7 @@ Saron has other podcasts too like [Coding Newbie](https://www.codenewbie.org/pod
 
 Developing up is an amazing software engineering podcast. The good aspect of this podcast is it focused on the non-technical side of our careers. I think having great soft skills is crucial to do a software engineering job well as well as indispensable to climb up the career ladder. I remember the episode pretty well where Mike and Karl talk about [public speaking](https://www.developingup.com/episodes/43). It was definitely a great one among others.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-engineering-podcasts-part-05/03developing-up.jpg" title="Software engineering podcast - Developing Up" alt="Developing up Software engineering podcast">
+<img class="center" loading="lazy" src="/images/software-engineering-podcasts-part-05/03developing-up.jpg" title="Software engineering podcast - Developing Up" alt="Developing up Software engineering podcast">
  
 Developing up describes itself as:
 
@@ -51,7 +51,7 @@ As usual, for the third software engineering podcast, I have something that is m
 
 One episode I remember pretty well is the chat between [Dave and Umer](https://saasclub.io/podcast/clickfunnels-self-funded-saas-startup/) about ClickFunnels. Dave describes the ClickFunnels journey and how it made millions of dollars.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-engineering-podcasts-part-05/04saas-podcast.jpg" title="Software engineering podcast - The SAAS Podcast" alt="The SAAS podcast Software engineering podcast">
+<img class="center" loading="lazy" src="/images/software-engineering-podcasts-part-05/04saas-podcast.jpg" title="Software engineering podcast - The SAAS Podcast" alt="The SAAS podcast Software engineering podcast">
 
 The SAAS podcast defines itself as:
 

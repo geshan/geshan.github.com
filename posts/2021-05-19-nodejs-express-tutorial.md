@@ -15,7 +15,7 @@ keywords: nodejs express, node.js express, node.js express.js, nodejs express tu
 ---
 Express Js is one of the most popular Node.js frameworks. In this Node.js Express tutorial, we will build a mock landing page that can collect the email addresses of people interested to be notified of the launch of our imaginary podcast about headphones. Let’s get started.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/01nodejs-express-tutorial.jpg" title="Node.js express tutoral to build a simple 1 page website" alt="Node.js express tutoral to build a simple 1 page website">
+<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/01nodejs-express-tutorial.jpg" title="Node.js express tutoral to build a simple 1 page website" alt="Node.js express tutoral to build a simple 1 page website">
 
 <!-- more -->
 
@@ -36,7 +36,7 @@ Express Js is one of the most popular Node.js frameworks. In this Node.js Expres
 
 For this guide, we are building a simple one-pager landing page for an imaginary podcast about headphones. The website is called “Eventually podcast”. It is going to look something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/02eventually-podcast.jpg" title="We are building an imaginary podcast wait list with Node.js and Express" alt="We are building an imaginary podcast wait list with Node.js and Express">
+<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/02eventually-podcast.jpg" title="We are building an imaginary podcast wait list with Node.js and Express" alt="We are building an imaginary podcast wait list with Node.js and Express">
 
 We will be converting a very useful and popular responsive HTML template called [Eventually](https://html5up.net/eventually) by [HTML5UP](https://html5up.net/). Thanks to the amazing creator [AJ](https://twitter.com/ajlkn) for providing such outstanding templates for free.
 
@@ -65,7 +65,7 @@ npm init -y
 ``` 
 After running `npm init -y` it should look like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/03npm-init-y.jpg" title="Result of npm init -y for Node.js express tutorial" alt="Result of npm init -y for Node.js express tutorial">
+<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/03npm-init-y.jpg" title="Result of npm init -y for Node.js express tutorial" alt="Result of npm init -y for Node.js express tutorial">
 
 Great! We have our package.json in the folder. Next up we will install express js and pug.
 
@@ -83,7 +83,7 @@ This will add express and pug as dependencies in our `package.json` file.
 
 At this point, we will [download](https://html5up.net/eventually/download) the Eventually template from HTML5UP. Then we can extract the zip file. It will have a folder structure and files like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/04assets-structure.jpg" title="Folder and file structure for the assets in the downloaded Eventually template" alt="Folder and file structure for the assets in the downloaded Eventually template">
+<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/04assets-structure.jpg" title="Folder and file structure for the assets in the downloaded Eventually template" alt="Folder and file structure for the assets in the downloaded Eventually template">
 
 We will add 2 folders on the root level of our Express js project `views` and `public` with:
 
@@ -111,7 +111,7 @@ touch views/index.pug
 
 At this juncture your folder and file structure for the project will look similar to the following:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/05project-structure.jpg" title="Folder and file structure of the project with public and views" alt="Folder and file structure of the project with public and views">
+<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/05project-structure.jpg" title="Folder and file structure of the project with public and views" alt="Folder and file structure of the project with public and views">
 
 Of course, there will be `package.json` and `package-lock.json` as we have already installed Express and Pug in an earlier step. Subsequently, we will fill up the two Pug view files. I used [HTML to Pug](https://html-to-pug.com/) online tool to convert the HTML from the template to be Pug. Our `layout.pug` file should look like below:
 
@@ -221,11 +221,11 @@ To test the app, we can run `node index.js`, to make things easier we can add a 
 
 Now we can run the app with either `node index.js` or `npm start`, which would yield and output as follows:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/06npm-start.jpg" title="Output of NPM start, express server listening at port 3000" alt="Output of NPM start, express server listening at port 3000">
+<img class="center" src="/images/nodejs-express-tutorial/06npm-start.jpg" loading="lazy" title="Output of NPM start, express server listening at port 3000" alt="Output of NPM start, express server listening at port 3000">
 
 After that, we can check how the app looks at `http://localhost:3000` on the browser of your choice. It should look something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/07express-pug-running.jpg" title="Output of the basic application running with Node.js Express and Pug" alt="Output of the basic application running with Node.js Express and Pug">
+<img class="center" src="/images/nodejs-express-tutorial/07express-pug-running.jpg" loading="lazy" title="Output of the basic application running with Node.js Express and Pug" alt="Output of the basic application running with Node.js Express and Pug">
 
 To make local testing easier we can surely add other helpful NPM packages like [nodemon](/blog/2021/02/nodemon/) and [browser sync](https://browsersync.io/). Those are good to have enhancements.
 
@@ -245,7 +245,7 @@ To run this app quickly, you can follow these steps given you have Node.js runni
 1. npm start
 1. Navigate to `http://localhost:3000` on your browser to see the output as follows.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-express-tutorial/07express-pug-running.jpg" title="Output of the basic application running with Node.js Express and Pug" alt="Output of the basic application running with Node.js Express and Pug">
+<img class="center" src="/images/nodejs-express-tutorial/07express-pug-running.jpg" loading="lazy" title="Output of the basic application running with Node.js Express and Pug" alt="Output of the basic application running with Node.js Express and Pug">
 
 ## Conclusion
 

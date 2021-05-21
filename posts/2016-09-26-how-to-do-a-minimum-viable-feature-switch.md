@@ -12,7 +12,7 @@ cover: "/images/feature-switch/feature-switch.jpg"
 ---
 Feature switch is a way to switch off or on a feature on a working software during runtime. We can use configuration or condition to achieve this. Feature switch is also known as feature flag, [feature toggle](/blog/2018/10/deployment-is-not-release/ "Deploying without releasing with Feature toggle"), and conditional feature. In this post, I will reveal why to do [feature switch](https://en.wikipedia.org/wiki/Feature_toggle) and how to do it with a simple if condition.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/feature-switch/feature-switch.jpg" title="Minimum viable feature switch, with code example" alt="Minimum viable feature switch, with code example">
+<img class="center" loading="lazy" src="/images/feature-switch/feature-switch.jpg" title="Minimum viable feature switch, with code example" alt="Minimum viable feature switch, with code example">
 
 <!-- more -->
 

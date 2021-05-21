@@ -10,7 +10,7 @@ cover: /images/speaker-resources/speaker.jpg
 
 I do not consider myself an experienced speaker. I have [spoken](https://geshan.com.np/blog/categories/talks/) at a couple of conferences and some meetups in the past years. I have to learn lots of technical and non-technical things to become a better speaker. Still, I would like to share some resources that will help new and experienced speakers.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/speaker-resources/speaker.jpg" title="Some resources for conference speakers" alt="Some resources for conference speakers">
+<img class="center" loading="lazy" src="/images/speaker-resources/speaker.jpg" title="Some resources for conference speakers" alt="Some resources for conference speakers">
 
 <!-- more -->
 
@@ -24,7 +24,7 @@ You will be happy to know that some conferences also cover travel and hotel cost
 
 Now, as you are excited to submit your ideas in the form of papers let's see where you can submit them.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/speaker-resources/cfp.jpg" title="Call for papers for a tech conference" alt="Call for papers for a tech conference">
+<img class="center" loading="lazy" src="/images/speaker-resources/cfp.jpg" title="Call for papers for a tech conference" alt="Call for papers for a tech conference">
 
 Below are some of the websites that inform you about Call For Papers (CFP):
 

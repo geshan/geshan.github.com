@@ -17,7 +17,7 @@ When I first thought about taking a social media break I thought it would be dif
 
 In this post, we will look at how to take a social media break in 4 steps where you have more chances of becoming successful at it.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/social-media-break/01social-media-break.jpg" title="Social Media Break" alt="How to take a social media break and win at it">
+<img class="center" loading="lazy" src="/images/social-media-break/01social-media-break.jpg" title="Social Media Break" alt="How to take a social media break and win at it">
 
 <!-- more -->
 
@@ -157,13 +157,13 @@ Another app I discovered a month back in preparation for this social media break
 
 They will call you back one way or the other. For instance, Instagram sent me an email after a week of no activity like below asking me to come back:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/social-media-break/02instagram.jpg" title="Come back to instagram please" alt="Instagram come back email">
+<img class="center" loading="lazy" src="/images/social-media-break/02instagram.jpg" title="Come back to instagram please" alt="Instagram come back email">
 
 But I was not going back :). You will need to be more disciplined and determined to make it a success. Below are a couple of screenshots of my notifications piling up in the last 31 days:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/social-media-break/03linkedin.jpg" title="My linked in notification over flowing" alt="Linked In notificaitons">
+<img class="center" loading="lazy" src="/images/social-media-break/03linkedin.jpg" title="My linked in notification over flowing" alt="Linked In notificaitons">
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/social-media-break/04facebook.jpg" title="Facebook notificaiton" alt="Facebook thinks people will not have 20+ notifications">
+<img class="center" loading="lazy" src="/images/social-media-break/04facebook.jpg" title="Facebook notificaiton" alt="Facebook thinks people will not have 20+ notifications">
 
 My messages are clear because of Rambox and Messenger app :).
 

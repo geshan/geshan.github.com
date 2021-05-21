@@ -17,7 +17,7 @@ On 1-Apr-2016 For [CodeMotion Dubai 2016](http://dubai2016.codemotionworld.com/)
 1. How we do chatOps at Namshi
 1. How you can start chatOps in minutes
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/chatops/chatops-hubot.jpg" title="Embrace chatOps, stop installing deployment software [Slides and Video]" alt="Embrace chatOps, stop installing deployment software [Slides and Video]">
+<img class="center" loading="lazy" src="/images/chatops/chatops-hubot.jpg" title="Embrace chatOps, stop installing deployment software [Slides and Video]" alt="Embrace chatOps, stop installing deployment software [Slides and Video]">
 (Illustration by Anjan Shrestha - AnjHero.me)
 
 This post has the slides and the video of the whole talk. 
@@ -25,11 +25,11 @@ This post has the slides and the video of the whole talk.
 I liked the overall experience of being a conference  speaker :). 
 I think the audience also had something new to fiddle around with by the end of the talk.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/chatops/speaker.jpg" title="Speaker at Codemotion Dubai 2016" alt="Speaker at Codemotion Dubai 2016">
+<img class="center" loading="lazy" src="/images/chatops/speaker.jpg" title="Speaker at Codemotion Dubai 2016" alt="Speaker at Codemotion Dubai 2016">
 
 The speaker lineup for day 1 was very good:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/chatops/codemodubai-speakers-day-1.jpg" title="Codemotion Dubai 2016 Speaker lineup" alt="Codemotion Dubai 2016 Speaker lineup">
+<img class="center" loading="lazy" src="/images/chatops/codemodubai-speakers-day-1.jpg" title="Codemotion Dubai 2016 Speaker lineup" alt="Codemotion Dubai 2016 Speaker lineup">
 
 For all the other news and views check the [#codemodubai](https://twitter.com/hashtag/codemodubai?src=hash) hash tag on twitter 
 and on [facebook](https://www.facebook.com/codemotiondubai/).
@@ -46,7 +46,7 @@ Just a summary:
 1. Have a useful links slide that you can show towards the end while answering questions.
 1. Content is king. Image intensive or text intensive slides matter less than the real content you want to deliver.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/chatops/chatops-talk.jpg" title="Embrace chatOps, stop installing deployment software [Slides and Video]" alt="Embrace chatOps, stop installing deployment software [Slides and Video]">
+<img class="center" loading="lazy" src="/images/chatops/chatops-talk.jpg" title="Embrace chatOps, stop installing deployment software [Slides and Video]" alt="Embrace chatOps, stop installing deployment software [Slides and Video]">
 
 ### Slides
 

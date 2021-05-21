@@ -18,7 +18,7 @@ keywords: Nodejs mysql tutorial, Node.js mysql tutorial, nodejs mysql, nodejs ex
 ---
 Node.js and MySQL mix very well together. In this Node.js MySQL tutorial, we will look into how to get started with both of them step-by-step to build REST API for quotes using Express js.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial.jpg" title="Node.js MySQL step-by-step tutorial" alt="Node.js MySQL tutorial step-by-step to build a quotes REST API with Express js">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial.jpg" title="Node.js MySQL step-by-step tutorial" alt="Node.js MySQL tutorial step-by-step to build a quotes REST API with Express js">
 
 <!-- more -->
 
@@ -70,7 +70,7 @@ To set up express, we will use the express-generator. You can generate an expres
 npx express-generator --no-view --git nodejs-mysql
 ```
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/01express-generator-output.jpg" title="Generate Express.js with generator" alt="Output of Node.js Express generator without view and with git ignore">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/01express-generator-output.jpg" title="Generate Express.js with generator" alt="Output of Node.js Express generator without view and with git ignore">
 
 To quickly check the output execute the following:
 
@@ -80,7 +80,7 @@ cd nodejs-mysql && npm install && DEBUG=nodejs-mysql:* npm start
 
 You should see the below output on your browser:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/02express-running.jpg" title="Express running on the browser" alt="Default express output on the browser">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/02express-running.jpg" title="Express running on the browser" alt="Default express output on the browser">
 
 The generated basic express app can be seen in this [pull request](https://github.com/geshan/nodejs-mysql/pull/1/files).
 
@@ -169,7 +169,7 @@ DEBUG=nodejs-mysql:* npm start
 
 You should see the below when you hit `http://localhost:3000/quotes` on your browser:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/03quotes-static-output.jpg" title="Quotes API with static output" alt="Quotes API static output for Node.js MySQL tutorial using Express js">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/03quotes-static-output.jpg" title="Quotes API with static output" alt="Quotes API static output for Node.js MySQL tutorial using Express js">
 
 
 ### Setup MySQL with quote table
@@ -354,11 +354,11 @@ DEBUG=nodejs-mysql:* nodemon bin/www
 
 When you hit `http://localhost:3000` on the browser, you should see a similar output or lots of `JSON` on the browser:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/04quotes-dynamic-output.jpg" title="Quotes API with dynamic output from DB" alt="Quotes API dynamic output for Node.js MySQL tutorial using Express js from DB table quote">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/04quotes-dynamic-output.jpg" title="Quotes API with dynamic output from DB" alt="Quotes API dynamic output for Node.js MySQL tutorial using Express js from DB table quote">
 
 If you go back and check your console where you ran `nodemon` you should be able to see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/05nodemon-output.jpg" title="Nodemon output for quotes API" alt="Quotes API nodemon output for Node.js MySQL tutorial using Express js">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/05nodemon-output.jpg" title="Nodemon output for quotes API" alt="Quotes API nodemon output for Node.js MySQL tutorial using Express js">
 
 If you change any file the server will restart because of nodemon. In the next step of this Node.js MySQL tutorial with express js, we will paginate the results 10 quotes on the page. If you want to see the code changes we did to get the quotes from the database it is here in this [pull request](https://github.com/geshan/nodejs-mysql/pull/4/files).
 
@@ -441,7 +441,7 @@ The only change here is we are passing the `page` query parameter to the `getMul
 
 If you run the app and hit the browser with `http://localhost:3000/quotes?page=2` you will see 5 quotes like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/06pagination-output.jpg" title="Nodemon output for quotes API pagination" alt="Quotes API pagination output for Node.js MySQL tutorial using Express js">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/06pagination-output.jpg" title="Nodemon output for quotes API pagination" alt="Quotes API pagination output for Node.js MySQL tutorial using Express js">
 
 So what happened here, the main change is in the way we construct the `SELECT` query. Depending on the page number we calculate an offset and pass a different query:
 
@@ -568,7 +568,7 @@ curl -i -X POST -H 'Accept: application/json' -H 'Content-type: application/json
 
 Below is the output of both cURL commands:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/07curl-output.jpg" title="cURL output for quotes API pagination" alt="Quotes API cURL for POST output of Node.js MySQL tutorial using Express js">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/07curl-output.jpg" title="cURL output for quotes API pagination" alt="Quotes API cURL for POST output of Node.js MySQL tutorial using Express js">
 
 Depending on the configs and the database records you might get a `duplicate entry` error. Just change the quote to something different and try. The code changes for the POST quote API is in this [pull request](https://github.com/geshan/nodejs-mysql/pull/6/files).
 
@@ -591,7 +591,7 @@ As all the code is in a public [Github repository](https://github.com/geshan/nod
 1. Then hit `https://localhost:3000/quote` on your favorite browser
 1. You should see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-mysql-tutorial/04quotes-dynamic-output.jpg" title="Quotes API with dynamic output from DB" alt="Quotes API dynamic output for Node.js MySQL tutorial using Express js from DB table quote">
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/04quotes-dynamic-output.jpg" title="Quotes API with dynamic output from DB" alt="Quotes API dynamic output for Node.js MySQL tutorial using Express js from DB table quote">
 
 You can look at the code and try to see how the whole thing is pieced together in this Node.js MySQL tutorial with Express Js for a quotes REST API. This API can act as a good base for a [Node.js microservice](/blog/2020/11/nodejs-microservices/).
 

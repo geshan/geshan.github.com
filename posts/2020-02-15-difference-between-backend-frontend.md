@@ -18,7 +18,7 @@ I looked at archive.org and found a website I put live in 2001, which means I ha
 
 Coming back to the topic, this is an “oversimplified” guide to showing the difference between backend, frontend, full-stack, and (in my own terms) super stack development of course, with a web development focus. Let’s get started.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/backend-vs-frontend/01person-screens.jpg" title="Backend vs Frontend vs Full-stack vs Super Stack development" alt="Difference between backend, frontend, full-stack and super stack development">
+<img class="center" loading="lazy" src="/images/backend-vs-frontend/01person-screens.jpg" title="Backend vs Frontend vs Full-stack vs Super Stack development" alt="Difference between backend, frontend, full-stack and super stack development">
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ Anyways, the most common things software engineers build are websites and web ap
 
 Yes, there is going to be a lot of oversimplification for this blog post. If I go into a lot of detail it will confuse many people and I want this piece to be beginner-friendly. So to start with below is my understanding of backend, frontend, full-stack, and super stack development:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/backend-vs-frontend/02backend-frontend.jpg" title="Backend, Frontend, Full-stack, and Super Stack oversimplified" alt="Backend, Frontend, Full-stack, and Super Stack oversimplified">
+<img class="center" loading="lazy" src="/images/backend-vs-frontend/02backend-frontend.jpg" title="Backend, Frontend, Full-stack, and Super Stack oversimplified" alt="Backend, Frontend, Full-stack, and Super Stack oversimplified">
 
 From the above image, it is pretty clear, blue thing (light and dark both) are frontend, green (+ some yellow the DB) is backend stuff. Orange is representing full stack and the bottom yellow line indicates super stack development. Let’s go into more details for each of them below:
 

@@ -15,7 +15,7 @@ keywords: docker build example, faster docker build, slow docker build, fast doc
 ---
 In this post, we will see a docker build example of a node js API application starting from slow and ending up in a \~10x faster build. I have already talked about the [reasons to use docker for development environment](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/). I have also mentioned [how docker changed the way we software engineers work](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) and [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/) in past posts. For this one let’s focus on the docker build example with faster build in mind.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/01faster-docker-build.jpg" title="Go from slow to fast docker build with example" alt="Whale as docker mascot">
+<img class="center" loading="lazy" src="/images/docker-build-example/01faster-docker-build.jpg" title="Go from slow to fast docker build with example" alt="Whale as docker mascot">
 
 <!-- more -->
 
@@ -61,7 +61,7 @@ time docker build -t node-14-first-bad-cache-no-buildkit .
 
 The `time` [command](https://www.computerhope.com/unix/utime.htm) is prefixed to the `docker build` command so that we know the time it takes for the docker build command to finish. Below is how long it took:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/02docker-build-bad-cache-no-buildkit.jpg" title="First docker build without buildkit and no thoughts on caching" alt="Docker build example output without buildkit and has bad caching">
+<img class="center" loading="lazy" src="/images/docker-build-example/02docker-build-bad-cache-no-buildkit.jpg" title="First docker build without buildkit and no thoughts on caching" alt="Docker build example output without buildkit and has bad caching">
 
 > As seen above it took 57.17 seconds.
 
@@ -73,7 +73,7 @@ Docker build has recently added [BUILDKIT](https://docs.docker.com/develop/devel
 time DOCKER_BUILDKIT=1 docker build -t node-14-second-bad-cache-with-buildkit .
 ```
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/03docker-build-bad-cache-with-buildkit.jpg" title="Second docker build with buildkit but no thoughts on caching" alt="Docker build example output with buildkit but has bad caching">
+<img class="center" loading="lazy" src="/images/docker-build-example/03docker-build-bad-cache-with-buildkit.jpg" title="Second docker build with buildkit but no thoughts on caching" alt="Docker build example output with buildkit but has bad caching">
 
 As you can see the build time is less than half of the previous build without buildkit.
 
@@ -109,7 +109,7 @@ You can have a look at the diff between these two docker files [here](https://gi
 time DOCKER_BUILDKIT=1 docker build -t node-14-third-good-cache-with-buildkit .
 ```
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/04docker-build-good-cache-with-buildkit.jpg" title="Third docker build with buildkit and good caching" alt="Docker build example output with buildkit and has good caching">
+<img class="center" loading="lazy" src="/images/docker-build-example/04docker-build-good-cache-with-buildkit.jpg" title="Third docker build with buildkit and good caching" alt="Docker build example output with buildkit and has good caching">
 
 ### Is docker build fast after code change?
 
@@ -121,7 +121,7 @@ time DOCKER_BUILDKIT=1 docker build -t node-14-fourth-good-cache-file-change-wit
 
 > The build took only 6.01 seconds, thanks to great cache usage by docker and use of buildkit.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/docker-build-example/05docker-build-good-cache-with-bk-code-change.jpg" title="Fourth docker build with buildkit and good caching after code change" alt="Docker build example output with buildkit and has good caching after code change">
+<img class="center" loading="lazy" src="/images/docker-build-example/05docker-build-good-cache-with-bk-code-change.jpg" title="Fourth docker build with buildkit and good caching after code change" alt="Docker build example output with buildkit and has good caching after code change">
 
 Even though the code changed but the NPM modules were cached making the build complete in mere 6 seconds. The same principles apply for exploiting docker build cache. It can be applied to PHP with composer.json and composer.lock file or any other language. Always think of the previous command run and how can it be cached better.
 

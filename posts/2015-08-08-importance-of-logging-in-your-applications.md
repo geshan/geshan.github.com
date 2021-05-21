@@ -11,7 +11,7 @@ cover: /images/logging-importance/logging-code.png
 
 "This feature we deployed last week was working fine till yesterday now I have no idea why is it not working!" This is like a typical sentence you hear from developers when there is no logging in place. It can be to a great extent solved by having automated tests, still having logging and monitoring gives you a different viewpoint. In this post I am going to reveal the importance of having logs for your code and monitoring your code to cut down the firefighting time for bugs and errors by huge margins.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/logging-importance/logging-code.png" title="Code for logging success or failure" alt="Code for logging success or failure">
+<img class="center" loading="lazy" src="/images/logging-importance/logging-code.png" title="Code for logging success or failure" alt="Code for logging success or failure">
 <!-- more -->
 
 ## The Problem
@@ -69,7 +69,7 @@ You can use SAAS applications with free plan to rescue yourself from this situat
 
 Logentries gives you a central cloud logging and with it's free plan you can send up to 5 GB of data each month and the data is retained for 7 days. It allows multiple user access even for free plan. So even if your application is relatively big you can still send around 166 MB of log data data each day to them and view it in almost real-time with a web interface. You can also search logs, only **feature that I feel is lacking is sorting of logs** in the interface. It has advanced search features as well which can be useful if you have lots of logs.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/logging-importance/logentries.png" title="Logging to logentries.com" alt="Logging to logentries.com">
+<img class="center" loading="lazy" src="/images/logging-importance/logentries.png" title="Logging to logentries.com" alt="Logging to logentries.com">
 
 #### [Loggly.com](http://loggly.com)
 

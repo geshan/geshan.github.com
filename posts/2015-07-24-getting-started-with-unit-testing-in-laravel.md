@@ -14,14 +14,14 @@ cover: /images/laravel-unit-tests/laravel-popularity.png
 
 Automated Testing an application is kind of a puzzle given the choice of methodologies (TDD, BDD...), frameworks etc there is no clear direction on how to test an application. Same applies for any PHP application, where you have many frameworks, methods and styles to choose from. In this blog post I will shed some light on how to get started with "Unit" testing in a Laravel application. Laravel has gained lots of popularity in the past years may be due to its simplicity, ease of use, clear documentation and availability of packages/libraries. 
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-popularity.png" title="Laravel is very popular" alt="Laravel is very popular">
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/laravel-popularity.png" title="Laravel is very popular" alt="Laravel is very popular">
 <!-- more -->
 
 ## Introduction 
 
 A general issue with PHP Frameworks is that for framework code they always use unit testing and in the documentation for applications using the framework they document and support using functional testing. It makes sense in a way that the framework code is general and the application code is specific but it should also be clearly mentioned that the code can be tested in a unit test fashion and not only on how it is rendered in a browser. Same goes for laravel the framework tests are [Unit](https://github.com/laravel/framework/blob/5.1/tests/View/ViewBladeCompilerTest.php) test and the documentation for application tests are for [functional](http://laravel.com/docs/5.1/testing) test.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-testing-doc.png" title="Laravel application testing doc" alt="Laravel application testing doc">
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/laravel-testing-doc.png" title="Laravel application testing doc" alt="Laravel application testing doc">
 
 ## Qualities of Unit tests
 
@@ -35,7 +35,7 @@ Unit tests should test only one method or be focus on one class and not take int
 
 The above 5 characteristics make it easy to setup and super fast when you run as there are no external dependencies like a database or file system.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-unit-tests.png" title="Laravel unit tests" alt="Laravel unit tests">
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/laravel-unit-tests.png" title="Laravel unit tests" alt="Laravel unit tests">
 
 ## More on Unit testing
 
@@ -52,7 +52,7 @@ In case of Laravel, you can follow your own structure and make the controllers v
 
 We will structure the Laravel application as:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/laravel-unit-test-structure.png" title="Laravel unit test application structure" alt="Laravel unit test application structure">
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/laravel-unit-test-structure.png" title="Laravel unit test application structure" alt="Laravel unit test application structure">
 
 For the above case we will do the following to achieve unit testing with a structure having Service as below:
  
@@ -120,7 +120,7 @@ You can have a look on how I did it with the [github commits](https://github.com
 
 **The full running app with tests is available as an open source repository on [github](https://github.com/geshan/laravel-unit-test-example/).**
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/running-laravel-app.png" title="Running Laravel app with PHP server" alt="Running Laravel app with PHP server">
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/running-laravel-app.png" title="Running Laravel app with PHP server" alt="Running Laravel app with PHP server">
 
 ### Tip
 
@@ -130,7 +130,7 @@ I found using `gulp tdd` quite interesting, specially as the tests were super fa
 All I needed to do was change the provided gulp file with `mix.phpUnit();` and run `gulp tdd` then on each change my tests would automatically run and I would see the green or red desktop notification too. Quite handy.
 </blockquote>
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/laravel-unit-tests/tests-green-gulp.png" title="Handy gulp tdd for Laravel" alt="Handy gulp tdd for Laravel">
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/tests-green-gulp.png" title="Handy gulp tdd for Laravel" alt="Handy gulp tdd for Laravel">
 
 ## Choice of Tools and services
 

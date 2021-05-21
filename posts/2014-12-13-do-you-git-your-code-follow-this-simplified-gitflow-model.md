@@ -13,7 +13,7 @@ Git or a similar VCS is the backbone for code collaboration in a multi-developer
 
 Source code Version Control System (VCS) and automated testing open doors to other great software quality and delivery practices like continuous integration, and [automated deployment](/blog/2015/08/the-best-automated-deployment-tool-the-one-that-fits-your-needs/) etc. Amongst various version control system software [git](http://git-scm.com) is a distributed system that is very popular and easy to use once you get used to it.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
+<img class="center" loading="lazy" src="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
 
 <!-- more -->
 The full [gitflow](hhttp://nvie.com/posts/a-successful-git-branching-model/) has 3 perpetual branches develop, release and master. Tickets/Issues can be grouped to release from develop. This in turn creates difficulty when tracing the ticket that caused any problem when it occurs.

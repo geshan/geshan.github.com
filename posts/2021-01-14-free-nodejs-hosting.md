@@ -19,7 +19,7 @@ keywords: free node.js hosting, free node js hosting, node js free hosting, node
 ---
 Hosting Node.js applications is easy, finding a completely free Node.js hosting service that is reliable is not. In this post, we will discuss 3 hosting services where you can host your Node.js applications or API for free which you should start using now. We will also deploy a demo app step-by-step on each of these 3 platforms. I wished to have found more than 3 but finding even 3 was not very easy.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/01free-nodejs-hosting.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
 
 <!-- more -->
 
@@ -109,15 +109,15 @@ You will need a [free account](https://signup.heroku.com/) on Heroku to get star
 * Then click “Deploy App”
 * Wait for a minute or two and it will build and deploy the app like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/02nodejs-heroku.jpg" title="Deploy a Node.js API on Heroku from its interface" alt="Deploy a Node.js API on Heroku from its interface">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/02nodejs-heroku.jpg" title="Deploy a Node.js API on Heroku from its interface" alt="Deploy a Node.js API on Heroku from its interface">
 
 * After that click the “View” button, you should see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/03nodejs-app-on-heroku.jpg" title="Node.js API running on Heroku" alt="Node.js API running on Heroku">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/03nodejs-app-on-heroku.jpg" title="Node.js API running on Heroku" alt="Node.js API running on Heroku">
 
 * Add `/quotes` to the URL and you should see the quotes in JSON format as follows:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/04nodejs-quotes-api-on-heroku.jpg" title="Node.js Quotes API running on Heroku" alt="Node.js Quotes API running on Heroku">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/04nodejs-quotes-api-on-heroku.jpg" title="Node.js Quotes API running on Heroku" alt="Node.js Quotes API running on Heroku">
 
 Wasn’t that easy, there you have the quotes API built with Node.js and Express running on the first free Node.js hosting platform: Heroku.
 
@@ -143,38 +143,38 @@ After you have [registered](https://vercel.com/signup) with Vercel and are logge
 * Click on the blue “Deploy” button
 * Give it a name in the Vercel UI like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/05nodejs-vercel-linkup.jpg" title="Link up Node.js App Github Repo with Vercel" alt="Link up Node.js App Github Repo with Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05nodejs-vercel-linkup.jpg" title="Link up Node.js App Github Repo with Vercel" alt="Link up Node.js App Github Repo with Vercel">
 
 * And click "Continue"
 * You can create your own repo on Github from the screen below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/06nodejs-vercel-create-repo.jpg" title="Create Github Repo within Vercel for Node.js free hosting" alt="Create Github Repo within Vercel for Node.js free hosting">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/06nodejs-vercel-create-repo.jpg" title="Create Github Repo within Vercel for Node.js free hosting" alt="Create Github Repo within Vercel for Node.js free hosting">
 
 * After that, select the root as the project’s source code, then click “Continue”
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/07nodejs-vercel-project-root.jpg" title="Choose root as the project source code in Vercel" alt="Choose root as the project source code in Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/07nodejs-vercel-project-root.jpg" title="Choose root as the project source code in Vercel" alt="Choose root as the project source code in Vercel">
 
 * Subsequently, click deploy in the next screen:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/08nodejs-vercel-deploy.jpg" title="Deploy the app on Vercel with Deploy button" alt="Deploy the app on Vercel with Deploy button">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/08nodejs-vercel-deploy.jpg" title="Deploy the app on Vercel with Deploy button" alt="Deploy the app on Vercel with Deploy button">
 
 * It will build and deploy the app and you will see a screen like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/09nodejs-vercel-deployed.jpg" title="The app is deployed on Vercel" alt="The app is deployed on Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/09nodejs-vercel-deployed.jpg" title="The app is deployed on Vercel" alt="The app is deployed on Vercel">
 
 * Now, click the “Visit” button, you should see something like the following:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/10nodejs-vercel-app-running.jpg" title="The app is running on Vercel" alt="The app is running on Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/10nodejs-vercel-app-running.jpg" title="The app is running on Vercel" alt="The app is running on Vercel">
 
 * Add `/quotes` to the URL and you should see the quotes in a JSON format like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/11nodejs-vercel-api-running.jpg" title="The quotes API is running on Vercel" alt="The quotes API is running on Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/11nodejs-vercel-api-running.jpg" title="The quotes API is running on Vercel" alt="The quotes API is running on Vercel">
 
 This is set up very well now, you should go to the app’s settings page if you want to tweak anything. You can add environment variables and do other things in the settings. You can even look at the function’s logs.
 
 Each time you open a new pull request in that repository Vercel will give you a deploy preview URL which is very handy. You can see how it looks like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/12nodejs-vercel-deploy-preview.jpg" title="Vercel deploy preview on GitHub pull request" alt="Vercel deploy preview on GitHub pull request">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/12nodejs-vercel-deploy-preview.jpg" title="Vercel deploy preview on GitHub pull request" alt="Vercel deploy preview on GitHub pull request">
 
 On merge to master/main branch, it will auto-deploy the code to the main URL. You can use the [Vercel CLI](https://vercel.com/docs/cli) for re-deployments, setting up environment variables, and a host of other things.
 
@@ -203,32 +203,32 @@ Given you have [registered](https://zeet.co/new) on to Zeet with GitHub and you 
 * Then click “GitHub” and click the green “Continue” button under the “Trial $0” option
 * After that, click “Continue” besides the “Nodejs-posgresql” repo that you have just forked and then click “Deploy Now” as seen below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/13nodejs-zeet-deploy-now.jpg" title="Deploy Node.js app to Zeet" alt="Deploy Node.js app to Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/13nodejs-zeet-deploy-now.jpg" title="Deploy Node.js app to Zeet" alt="Deploy Node.js app to Zeet">
 
 * Subsequently, choose “Node.js 14” on “Build Method” and click “Save” as follows:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/14nodejs-zeet-commands.jpg" title="Node.js app to deploy on Zeet" alt="Node.js app to deploy on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/14nodejs-zeet-commands.jpg" title="Node.js app to deploy on Zeet" alt="Node.js app to deploy on Zeet">
 
 * Give it some time to build and deploy, after that, you will see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/15nodejs-zeet-deployed.jpg" title="Node.js app deployed on Zeet" alt="Node.js app deployed on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/15nodejs-zeet-deployed.jpg" title="Node.js app deployed on Zeet" alt="Node.js app deployed on Zeet">
 
 * If you click the green "Visit" button, it will not work now. There is one small config left. Click on “Settings” then click on the “Networking” link on the left then set the "Port" to be `3000` as seen below, after that click “Save” on the bottom right as seen below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/16nodejs-zeet-port.jpg" title="Configure right port for the Node.js app on Zeet" alt="Configure right port for the Node.js app on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/16nodejs-zeet-port.jpg" title="Configure right port for the Node.js app on Zeet" alt="Configure right port for the Node.js app on Zeet">
 
 * This should redeploy the App, if you go back to the “Deployments” tap it should be deploying/deployed.
 * Consequently, click the “Visit” button again you should see something like below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/17nodejs-zeet-app-running.jpg" title="Node.js app running on Zeet" alt="Node.js app running on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/17nodejs-zeet-app-running.jpg" title="Node.js app running on Zeet" alt="Node.js app running on Zeet">
 
 * Next, add `/quotes` to the URL and you should see something similar to the following:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/18nodejs-zeet-api-running.jpg" title="Node.js Quotes API running on Zeet" alt="Node.js Quotes API running on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/18nodejs-zeet-api-running.jpg" title="Node.js Quotes API running on Zeet" alt="Node.js Quotes API running on Zeet">
 
 Like Vercel, Zeet also provides a deploy preview URL on each pull request. I have a feeling they wanted to compete Zeit with Zeet :), if you know what I mean. Below is a preview of how the deploy perview URL looks like as a comment in your pull reqeust:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/free-nodejs-hosting/19nodejs-zeet-deploy-preview.jpg" title="Node.js App deploy preview on Zeet" alt="Node.js App deploy preview on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/19nodejs-zeet-deploy-preview.jpg" title="Node.js App deploy preview on Zeet" alt="Node.js App deploy preview on Zeet">
 
 Anyway if you want to deploy your own app you will need to delete this demo app and add your own app. Zeet only allows 1 free app. They have more demos in their [GitHub account](https://github.com/zeet-demo). Zeet does not have a CLI app which is good I suppose as it wants to keep things simple and clean.
 

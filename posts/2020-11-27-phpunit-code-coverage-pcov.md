@@ -17,7 +17,7 @@ keywords: phpunit code coverage, phpunit coverage, phpunit test coverage, pcov, 
 ---
 PHPUnit is the de-facto testing library for PHP. With the use of pcov you can speed up PHPUnit code coverage by 2-5 times for PHP 7.0+ application. In this post, we will compare the results of an experiment I did on Laravel framework tests. The tests were run without coverage, then with Xdebug coverage, and finally with pcov all on Github actions. Pcov took half the time to run the PHPUnit tests with code coverage compared to Xdebug, let’s go to the numbers.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-code-coverage-pcov/01faster-phpunit-code-coverage.jpg" title="Faster PHPUnit code coverage with pcov" alt="Faster PHPUnit code coverage with pcov">
+<img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/01faster-phpunit-code-coverage.jpg" title="Faster PHPUnit code coverage with pcov" alt="Faster PHPUnit code coverage with pcov">
 
 <!-- more -->
 
@@ -69,7 +69,7 @@ To keep things simple, I forked the Laravel/framework Github [repo](https://gith
 
 You can view the details of that test run in this [Gitub Actions page](https://github.com/geshan/framework/runs/1458355879?check_suite_focus=true), below is a quick screenshot.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-code-coverage-pcov/02phpunit-tests-without-coverage.jpg" title="Laravel Framwork PHPUnit tests without code coverage" alt="Laravel Framwork PHPUnit tests without code coverage took 33 seconds">
+<img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/02phpunit-tests-without-coverage.jpg" title="Laravel Framwork PHPUnit tests without code coverage" alt="Laravel Framwork PHPUnit tests without code coverage took 33 seconds">
 
 ### Run PHPUnit code coverage with XDebug
 
@@ -89,7 +89,7 @@ With Xdebug code coverage I did a couple more runs to see if the time taken to r
 
 I am only checking the time for the `Execute tests` task. You can view the screeshot below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-code-coverage-pcov/03phpunit-tests-with-xdebug.jpg" title="Laravel Framwork PHPUnit tests with Xdebug code coverage" alt="Laravel Framwork PHPUnit tests with Xdebug code coverage took 2 mins 34 seconds">
+<img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/03phpunit-tests-with-xdebug.jpg" title="Laravel Framwork PHPUnit tests with Xdebug code coverage" alt="Laravel Framwork PHPUnit tests with Xdebug code coverage took 2 mins 34 seconds">
 
 The code coverage was reported as below, with 75.65% of the lines covered and 68.90% of the methods covered by PHPUnit Code coverage using Xdebug.
 
@@ -103,7 +103,7 @@ The changes I made are in this [pull request](https://github.com/geshan/framewor
 
 Again this is for the `Execute tests` task as seen below:
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/phpunit-code-coverage-pcov/04phpunit-tests-with-pcov.jpg" title="Laravel Framwork PHPUnit tests with Pcov code coverage" alt="Laravel Framwork PHPUnit tests with Pcov code coverage took only 1 min 17 seconds">
+<img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/04phpunit-tests-with-pcov.jpg" title="Laravel Framwork PHPUnit tests with Pcov code coverage" alt="Laravel Framwork PHPUnit tests with Pcov code coverage took only 1 min 17 seconds">
 
 Same as Xdebug the PHPUnit Code Coverage was reported as 75.65% of the lines and 68.90% of the methods covered by Pcov. You can see other test runs in the [Actions tab](https://github.com/geshan/framework/actions) of my Laravel Framework fork.
 

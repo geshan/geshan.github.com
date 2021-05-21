@@ -18,7 +18,7 @@ lastModified: 2020-04-23T10:00:22.000+11:00
 
 Docker is a software and a company too. It tried to build a broader ecosystem but [Kubernetes](https://kubernetes.io/) stole the thunder along the way keeping [swarm](https://docs.docker.com/engine/swarm/) at bay. This post is not about how some Docker tools are not popular. It is about how Docker has changed the way we work in the past 5 years.
 
-<img class="center" src="/images/generic/loading.gif" title="4 ways Docker changed the way software engineers work in past 5 years" alt="4 ways Docker changed the way software engineers work in past 5 years" data-echo="/images/4-ways-docker/docker-whale.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="4 ways Docker changed the way software engineers work in past 5 years" alt="4 ways Docker changed the way software engineers work in past 5 years" data-echo="/images/4-ways-docker/docker-whale.jpg">
 <!-- more -->
 
 ## TLDR;

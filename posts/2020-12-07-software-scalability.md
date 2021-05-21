@@ -19,7 +19,7 @@ Software scalability is an interesting issue to have. Making software scalable c
 
 We will discuss more on how to write software (software development) and how you run the software (operations) to make the software scalable. For beginners, [cost and scalability](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9) are generally proportional, let’s get cracking.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-scalability/01software-scalability.jpg" title="Software scalability factors to consider" alt="Software scalability dev and ops factors to consider to meet high demands">
+<img class="center" loading="lazy" src="/images/software-scalability/01software-scalability.jpg" title="Software scalability factors to consider" alt="Software scalability dev and ops factors to consider to meet high demands">
 
 <!-- more -->
 ## Table of contents
@@ -164,11 +164,11 @@ After the sale period ends you scale down the DB to a db.m5.large and things are
 
 As this is important let’s explain it visually below:  PS: pardon my bad designing skills :)
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-scalability/02vertical-scaling-software-scalability.jpg" title="Vertical scalability with beefing up resource on the same machine for software scalability" alt="Vertical scalability with beefing up resource on the same machine for software scalability">
+<img class="center" loading="lazy" src="/images/software-scalability/02vertical-scaling-software-scalability.jpg" title="Vertical scalability with beefing up resource on the same machine for software scalability" alt="Vertical scalability with beefing up resource on the same machine for software scalability">
 
 ---
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/software-scalability/03horizontal-scaling-software-scalability.jpg" title="Horizontal scalability with load balancer for software scalability" alt="Horizontal scalability with load balancer for software scalability">
+<img class="center" loading="lazy" src="/images/software-scalability/03horizontal-scaling-software-scalability.jpg" title="Horizontal scalability with load balancer for software scalability" alt="Horizontal scalability with load balancer for software scalability">
 
 This is the part where [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/) shine. You can package your workload into lightweight containers and Kubernetes can manage horizontal scaling, rolling deployment, etc for those containers. Docker has [changed the way we software engineers’ work](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) in the past years.
 

@@ -10,7 +10,7 @@ tags:
 
 I was in Kathmandu,Nepal for a week at the end of November and this time I talked about how to become a better software company technically at [YIPL](http://yipl.com.np) on 24-Nov-2014.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/better-tech-co/better-tech-co.jpg" title="Better Software Company Talk" alt="Better Software Company Talk">
+<img class="center" loading="lazy" src="/images/better-tech-co/better-tech-co.jpg" title="Better Software Company Talk" alt="Better Software Company Talk">
 
 Generally the software scene in Nepal is good, a handful are working at big scale with hundreds of software engineers and many are small with some developers. A thing I noticed talking with developers is that mostly is only about **making things work**. The need to follow a proper release cycle with [gitflow](http://bit.ly/1xy61E6), or even follow a defined issue flow and testing it in multiple environments is not felt.
 

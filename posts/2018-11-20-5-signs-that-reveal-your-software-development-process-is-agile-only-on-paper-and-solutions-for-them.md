@@ -14,7 +14,7 @@ lastModified: 2020-04-23 11:00:22 +11:00
 
 Agility comes with practice not putting big words on paper. Using Jira does not make your software development process agile. Saying we do "scrum" is not being agile. Being agile is having an agile mindset and putting it into practice everyday. It is about thinking about the value you deliver to the customer and how to do it better.  This post will also unveil these 5 signs and how to solve these issues. The signs and solutions will concern multiple roles like Product Manager, Software engineer etc.
 
-<img class="center" src="/images/generic/loading.gif" title="5 signs that reveal your company is agile only on paper and solutions for them" alt="5 signs that reveal your company is agile only on paper and solutions for them" data-echo="/images/5-signs-agile-on-paper/board.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="5 signs that reveal your company is agile only on paper and solutions for them" alt="5 signs that reveal your company is agile only on paper and solutions for them" data-echo="/images/5-signs-agile-on-paper/board.jpg">
 <!-- more -->
 
 ## TLDR;
@@ -50,7 +50,7 @@ Have a clear point by point "Definition of Ready" and "Definition of Done". This
 
 Agile software development is always about delivering value to the customer. The value in the form of working software not a pile of documents. If there a story like "As a customer service manager I need to know who created a refund so that I can track and audit refunds in future". This task might entail adding a "created_by" field in the refunds table for instance. But this should not result in having a "story" that says "Add created_by field in the refunds table". Of course, it can be a task/subtask as part of the main story. The main story delivers value but this database task is something that aids the process.
 
-<img class="center" src="/images/generic/loading.gif" title="5 signs that reveal your company is agile only on paper and solutions for them" alt="5 signs that reveal your company is agile only on paper and solutions for them" data-echo="/images/5-signs-agile-on-paper/story.jpg">
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="5 signs that reveal your company is agile only on paper and solutions for them" alt="5 signs that reveal your company is agile only on paper and solutions for them" data-echo="/images/5-signs-agile-on-paper/story.jpg">
 
 ### Solution
 

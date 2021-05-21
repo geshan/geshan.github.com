@@ -18,7 +18,7 @@ keywords: node js for php, node js for php developers, nodejs for php, node.js f
 ---
 While the popularity of Node.js is [increasing](https://trends.google.com/trends/explore?date=2019-11-12%202020-11-12&q=%2Fm%2F060kv,%2Fm%2F0bbxf89), PHP’s traction is going [down](https://i.ibb.co/0XjJCRC/W3Tech.png). With that context, this post is going to elaborate on 5 must-know practical aspects of using Node.js for PHP developers. These will be things no-one talks or writes about, time to get going.
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-for-php-developers/01nodejs-for-php-developers.jpg" title="Node.js for PHP developers practical aspects" alt="Node.js for PHP developers practical aspects with code examples">
+<img class="center" loading="lazy" src="/images/nodejs-for-php-developers/01nodejs-for-php-developers.jpg" title="Node.js for PHP developers practical aspects" alt="Node.js for PHP developers practical aspects with code examples">
 
 <!-- more -->
 
@@ -208,7 +208,7 @@ Jumping even multiple major versions in Node.js is a seamless experience. Upgrad
 
 In my personal experience, I have upgraded Node.js microservices from versions 0.12 to 4 in the past. Recently I upgraded an application from Node.js 10 to 14. All of my Node.js major version upgrades have been easy. 
 
-<img class="center" src="/images/generic/loading.gif" data-echo="/images/nodejs-for-php-developers/02node-10-to-14.jpg" title="Upgrading node 10 to 14 is easy" alt="Node.js for PHP developers, upgrading Node.js from version 10 to 14 is seamless" style="min-height: 100px;">
+<img class="center" loading="lazy" src="/images/nodejs-for-php-developers/02node-10-to-14.jpg" title="Upgrading node 10 to 14 is easy" alt="Node.js for PHP developers, upgrading Node.js from version 10 to 14 is seamless" style="min-height: 100px;">
 
 Some minor package.json changes were the only small issues I encountered. After deployment, there were rarely any issues related to code compatibility. As an added bonus, the performance was usually better upgrading the major versions.
 
