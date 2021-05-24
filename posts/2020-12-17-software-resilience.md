@@ -66,7 +66,7 @@ The point here is, even if this is a manual task it is very important for resili
 
 > But, if you can try out like 1% of the customers for 1 week, smoothen out any bugs with the new gateway integration it helps a lot and the blast radius is just 1% of the transactions.
 
-Slowly week by week you can go from 1 to 5 then to 10 and finally to 100 with full confidence. The same logic goes on having a [health check](https://microservices.io/patterns/observability/health-check-api.html) when deploying. If the health check fails the deployment is automatically rolled back. Depending on the services you use you can even do a gradual rollout meaning this particular version only get 2% of the traffic. [Gradual rollout](https://cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration) is supported by services like [Google Cloud run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) on the infrastructure layer not the code layer.
+Slowly week by week you can go from 1 to 5 then to 10 and finally to 100 with full confidence. The same logic goes on having a [health check](https://microservices.io/patterns/observability/health-check-api.html) when deploying. If the health check fails the deployment is automatically rolled back. Depending on the services, you can even do a gradual rollout meaning this particular version only get 2% of the traffic. [Gradual rollout](https://cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration) is supported by services like [Google Cloud run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) on the infrastructure layer not the code layer.
 
 Another important consideration for resilient software is a [deployment is not a release](/blog/2018/10/deployment-is-not-release/).
 
@@ -98,7 +98,7 @@ External systems can be slow and you don't have control over their response time
 
 This unblocked the person doing quality checks and putting the items in a box to be shipped to the customer. While the box was traveling from the QC station to the packing station the shipment would be created and the shipping label could be printed. Even though it took some seconds for the box to go from QC to the packing station it was enough for us to create the shipment. If some shipments failed there was an easy option to retry that would call the courier on demand.
 
-The moral of the story, always add relevant timeouts and fail fast. As per need give away for the use to retry when needed. Timeouts are very [important](https://itnext.io/why-i-like-go-http-client-as-a-java-developer-676ea1e698b4).
+The moral of the story, always add relevant timeouts and fail fast. As per need give a way for the user to retry manually when needed. Timeouts are very [important](https://itnext.io/why-i-like-go-http-client-as-a-java-developer-676ea1e698b4).
 
 ### Fallback
 
