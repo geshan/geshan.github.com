@@ -9,8 +9,10 @@ tags:
 - NodeJs
 cover: "/images/nodejs-redis/01nodejs-redis.jpg"
 pagetitle: How to use Node.js with Redis caching to speed up HTTP responses
-description: Follow this step-by-step tutorial to add cache to an existing Node.js API for consistent and faster response times.
-keywords: node.js redis, nodejs redis, node js redis, nodejs redis tutorial, redis node.js, redis node js
+description: Follow this step-by-step tutorial to add cache to an existing Node.js
+  API for consistent and faster response times.
+keywords: node.js redis, nodejs redis, node js redis, nodejs redis tutorial, redis
+  node.js, redis node js
 
 ---
 HTTP responses can be sped up with Node.js and Redis caching. In this post, we will see how we can do this by adding a Redis cache to an existing Node.js API that uses the Postgres database. Lets get cracking!
@@ -23,11 +25,11 @@ HTTP responses can be sped up with Node.js and Redis caching. In this post, we w
 
 * [Prerequisites](#prerequisites)
 * [Introduction](#introduction)
-* [Add Redis to the Node.js Express Quotes API](#add-redis-to-the-nodejs-express-quotes-api)
+* [Add Redis to the Node.js Express Quotes API](#add-redis-to-the-node.js-express-quotes-api)
   * [Adding the Redis wrapper](#adding-the-redis-wrapper)
 * [Add get quotes by author route](#add-get-quotes-by-author-route)
 * [Add cache to get quotes by author](#add-cache-to-get-quotes-by-author)
-* [How fast is the Node.js Redis cache?](#how-fast-is-the-nodejs-redis-cache)
+* [How fast is the Node.js Redis cache?](#how-fast-is-the-node.js-redis-cache)
 * [Some other things to consider](#some-other-things-to-consider)
 * [Conclusion](#conclusion)
 
