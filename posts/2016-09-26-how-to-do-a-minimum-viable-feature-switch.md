@@ -50,6 +50,8 @@ There is a simple `Checkout` service that has a `calculateTotal` method. It calc
 
 The feature flag/switch code is in lines 21-23. It checks if the payment method is `PayPal` and email does not end with `@gmail.com`. The `endsWith` the method in Laravel [helpers](https://laravel.com/docs/5.3/helpers#method-ends-with) came in handy to do it. So `PayPal` is only available if your email ends in `@gmail.com`. You can check this [pull request](https://github.com/geshan/laravel-unit-test-example/pull/4/files) for full changes and related tests.
 
+If you are looking for a full-on [feature flag management](https://flagsmith.com/cloud/) service FlagSmith is one of the best I have seen. They have [reamote configs](https://flagsmith.com/use-cases/) and very handy [integrations](https://flagsmith.com/integrations/) with other servivces like DataDog, New Relic, Slack, etc.
+ 
 ### Turn it off
 
 So let's assume, that you tested `PayPal` intensively on your production environment. When you are satisfied you just remove the condition and fix the related tests and you are done. Deploy again do a final round of testing and you have `PayPal` on production, all your customers can use it after that.
