@@ -16,8 +16,7 @@ keywords: life changing startup
 ---
 Most often than not, the success of any project (or start-up) is measured in terms of the money it has earned or its potential to earn money in the next few years. We rarely see the human aspect of the gain. In this post, I am going to discuss how a side project/mini startup -- [AU Tech Jobs](https://autechjobs.ml) helped at least 6 people land full-time tech jobs from casual non-tech roles and how it has changed their lives in more positive ways during this looming pandemic.
 
-<img class="center" loading="lazy" src="/images/life-changing-startup/01autechjobs-app.jpg" title="AU Tech Jobs - a life changing startup" alt="AU Tech Jobs - a life changing startup">
-<!-- more -->
+<img class="center" loading="lazy" src="/images/life-changing-startup/01autechjobs-app.jpg" title="AU Tech Jobs - a life-changing startup" alt="AU Tech Jobs - a life-changing startup"> <!-- more -->
 
 ## Table of contents
 
@@ -109,13 +108,15 @@ They also get to work in something they truly like, not something they do just t
 
 Of course, not all people who contribute to AU Tech Jobs landed full-time tech jobs. A couple of them did land 3-4 interviews but it did not convert to a job offer. Some of them did not pay much heed to the suggestions provided :). Still, I wish success and good luck to all of them.
 
+The project has surely slowed down in the past months as most contributors have full-time tech jobs now. We have burnt some money at \~$1 a day, thanks to Google Cloud Platform's clear pricing and that money has also come from my Google Developer Expert credit. We have gained around a user a day for the past 340 ish days, not a great number but relatively good for the 0 marketing dollars spent.
+
 ## Timeline
 
 Below is a quick timeline of the people I have helped land full-time tech jobs in the past 3 years. These are mostly Nepalese tech students who did their bachelor’s or masters here in Australia. So effectively they have spent 25% (6 out of 24 years) of their life in computer-related studies. They have the skills to get lucrative tech jobs. Some of them also had some years of full-time work experience back in Nepal.  If I can help them with their CV or refer them to a company in my network I will surely do it.
 
 <img class="center" loading="lazy" src="/images/life-changing-startup/03timeline.jpg" title="Timeline of people I have helped land first or second full-time tech job in the past 3 years" alt="Timeline of people I have helped land first or second full-time tech job in the past 3 years">
 
-You can view the interacive [timeline](https://time.graphics/line/480450) too.
+You can view the interactive [timeline](https://time.graphics/line/480450) too.
 
 I have not got any money to help all these people, but yes I have got a great sense of satisfaction and happiness when I hear someone landed a full-time tech job. I have referred them to lots of positions. I have filled out reference forms or taken calls for being a reference.
 
