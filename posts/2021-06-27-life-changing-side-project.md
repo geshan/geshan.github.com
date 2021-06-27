@@ -19,6 +19,18 @@ Most often than not, the success of any project (or start-up) is measured in ter
 <img class="center" loading="lazy" src="/images/life-changing-startup/01autechjobs-app.jpg" title="AU Tech Jobs - a life changing startup" alt="AU Tech Jobs - a life changing startup">
 <!-- more -->
 
+## Table of contents
+
+* [How AU Tech Jobs started](#how-au-tech-jobs-started)
+* [Getting more hands in the game](#getting-more-hands-in-the-game)
+* [That soft launch](#that-soft-launch)
+* [Joiners and leavers](#joiners-and-leavers)
+* [First success story](#first-success-story)
+* [Other success stories followed](#other-success-stories-followed)
+* [Not all rosy stories](#not-all-rosy-stories)
+* [Timeline](#timeline)
+* [Conclusion](#conclusion)
+
 ## How AU Tech Jobs started
 
 Towards the end of [2019](https://twitter.com/geshan/status/1209020866035638272?lang=en), I become a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan-manandhar) (GDE) for Google Cloud Platform (GCP) which landed me $500 credit for GCP. I had a [side project](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgeshan.com.np%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=nepal_news_en&tw_p=followbutton) running since 2019 and a fraction of the credit was used for that side project. I had this idea to make a job aggregator, with a simple problem to solve.
