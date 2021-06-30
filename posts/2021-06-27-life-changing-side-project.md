@@ -80,7 +80,7 @@ Our beloved, SB, who had contributed really well to AU Tech Jobs,was the first p
 
 In just 3-4 months he really stood out and gave his level best to not only get the tasks for AU Tech Jobs frontend done but also lead the team in his own right.
 
-It was a happy and sad moment for the team, when he moved on. Happy because this was a life-changing moment for him where he said goodbye to odd hours at his old job, needing to be onsite during a pandemic, and didn't have to do a job he did not love anymore. 
+It was a happy and sad moment for the team, when he moved on. Happy because this was a life-changing moment for him where he said goodbye to odd hours at his old job, needing to be onsite during a pandemic. 
 
 We were sad because his new full time job meant that he would have to leave our project too. Plus, h and BA were the dynamic duo taking the front end of AU Tech Jobs forward. Looking back I think we were happier than sad :).
 
