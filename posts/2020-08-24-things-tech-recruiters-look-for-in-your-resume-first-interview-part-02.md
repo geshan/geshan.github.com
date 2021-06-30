@@ -1,16 +1,21 @@
 ---
 layout: post
-title: "Things tech recruiters look for in your resume and the first interview part 2"
-date: 2020-08-24 13:20:29 +11:00
+title: Things tech recruiters look for in your resume and the first interview part
+  2
+date: 2020-08-24T13:20:29.000+11:00
 comments: true
 tags:
 - Technology
 - Misc
 - Jobs
-pagetitle: How to make that first impression with your CV and initial interview, tech recruiters' view
-cover: /images/tech-recruitment-aus-part02/for-hire.jpg
-description: In this 1975+ words blog post, read the views of these 3 in-house tech recruiters, save your resume from being ignored by internal tech recruiters in Australia. Get your CV and first impression sorted to land that tech role.
+pagetitle: How to make that first impression with your CV and initial interview, tech
+  recruiters' view
+cover: "/images/tech-recruitment-aus-part02/for-hire.jpg"
+description: In this 1975+ words blog post, read the views of these 3 in-house tech
+  recruiters, save your resume from being ignored by internal tech recruiters in Australia.
+  Get your CV and first impression sorted to land that tech role.
 keywords: what recruiters look for, tech recruiters, tech recruitment, tech jobs
+
 ---
 Applied to many jobs and haven't heard back? Not sure what is missing in your resume. Could not make that first impression in the initial interview? Then you must read forward. **In this post, three tech recruiters from Sydney's well-known companies unveil things they look for in a CV and points they evaluate in the initial interview**. You will know how to make that first impression with your CV and initial interview from a tech recruiter's view. As a bonus, there are tips for finding jobs in a pandemic, carry on reading.
 
@@ -123,7 +128,7 @@ My most important tip would be, **keep your head up and know that things will ge
 
 ---
 
-Scott was brief and to the point with his answers. Not following the “scattergun approach” might be the best takeaway from his replies.
+Scott was brief and to the point with his answers. Not following the “scattergun approach” might be the best takeaway from his replies. If want to create great resumes, please do checkout [canva resumes](https://www.canva.com/resumes/).
 
 
 ### Olivia Spata (ELMO) appraises technical ability and behavioral aspects
