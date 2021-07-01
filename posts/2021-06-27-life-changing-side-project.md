@@ -66,7 +66,7 @@ This project fulfilled many purposes at once. For job seekers, it acted as an op
 
 Like any other idea, start-up, or side project, We also had some joiners and  leavers. The  leavers were the ones who would  bag a full-time tech job during the pandemic. On top of it, they were already battling a visa situation, which made this success even more worthwhile.
 
-> As it is pretty clear, thathere in Australia if you don’t have a permanent residency (PR) or Australian citizenship your chance of landing a job is automatically at least halved.
+> As it is pretty clear, here in Australia if you don’t have a permanent residency (PR) or Australian citizenship your chance of landing a job is automatically at least halved.
 
 And then without money to make ends meet, the motivation to contribute to a project could also dwindle with time.
 
@@ -74,9 +74,9 @@ Getting a full time job is an entirely different ball game when you are an immig
 
 ## First success story
 
-Our beloved, SB, who had contributed really well to AU Tech Jobs,was the first person to join the team and  was living here in Australia.   At that time, he was employed with an Aged Care center.   He was sharpening his programming and frontend software engineering skills with React like a lion devouring his kill.
+Our beloved, SB, who had contributed really well to AU Tech Jobs,was the first person to join the team and was living here in Australia. At that time, he was employed with an Aged Care center. He was sharpening his programming and frontend software engineering skills with React like a lion devouring his kill.
 
-> Against all odds of visa, not having worked in tech before he bagged a full-time job in Brisbane.
+> Against all odds of visa, not having worked in tech before he bagged a full-time coding job in Brisbane.
 
 In just 3-4 months he really stood out and gave his level best to not only get the tasks for AU Tech Jobs frontend done but also lead the team in his own right.
 
@@ -108,7 +108,7 @@ You can read some success stories on this [blog post](https://autechjobs.ml/blog
 
 Of course, not all people who contribute to AU Tech Jobs landed better full-time tech jobs. A couple of them did land 3-4 interviews but it did not convert to a job offer. However, each journey is individual and depends on individual capacity to learn and grow. Some of them did not pay much heed to the suggestions provided :). Still, I wish success and good luck to all of them.
 
-The project has surely slowed down in the past months as most contributors have full-time tech jobs now. We have burnt some money at \~$1 a day, thanks to Google Cloud Platform's clear pricing and that money has also come from my Google Developer Expert credit. We have gained around a user a day for the past 340 ish days, not a great number but relatively good for the 0 marketing dollars spent.
+The project has surely slowed down in the past months as most contributors have full-time tech jobs now. We have burnt some money at ~$1 a day, thanks to Google Cloud Platform's clear pricing and that money has also come from my Google Developer Expert credit. We have gained around a user a day for the past 340 ish days, not a great number but relatively good for the 0 marketing dollars spent.
 
 ## Timeline
 
