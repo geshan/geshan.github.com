@@ -133,7 +133,7 @@ I remember we were running less than 5 apps on Docker in production. I am not aw
 
 Bear in mind, adding containers to your workflow does add more layers and complications in the CI/CD process. There will be a need to have a container registry like DockerHub, AWS ECR, or Google Container Registry. A builder will be needed to build images before they can be deployed and run. And after sometime when the number of running containers grow you will need a container orchestrator like Kubernetes. 
 
-In terms of advancing deployment triggers, we had a chatbot on Hipchat/Slack written with Hubot that cloud run `cap deploy` or `kubectl apply` or `helm install` on an AWS VM for us. This made deployment a much easier task.
+In terms of advancing deployment triggers, we had a chatbot on Hipchat/Slack written with Hubot that can run `cap deploy` or `kubectl apply` or `helm install` on an AWS VM for us. This made deployment a much easier task.
 
 <img class="center" loading="lazy" src="/images/software-deployment-tools/08chatops.jpg" title="Chatops is a great way to democratize software deployment process" alt="Chatops is a great way to democratize software deployment process">
 
