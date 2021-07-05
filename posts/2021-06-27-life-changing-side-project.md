@@ -128,7 +128,7 @@ If you can please do it.
 
 ## Conclusion
 
-I have worked as a software engineer for the past 15 years in 4 countries across 3 continents. I think I know some things about how to architect and build scalable and resilient software.
+I have worked as a software engineer for the past 15 years in 4 countries across 3 continents. I think I know some things about how to architect and build scalable and [resilient software](/blog/2020/12/software-resilience/).
 
 > If I can teach the software engineering best practices and trends to these young people and help them land a full-time tech job probably that is one of the best forms of giving back to the community.
 
