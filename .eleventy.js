@@ -8,6 +8,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const blogTools = require("eleventy-plugin-blog-tools");
 const htmlmin = require("html-minifier");
 const pluginPWA = require("eleventy-plugin-pwa");
+const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -15,6 +16,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(blogTools);
   eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
+
+  eleventyConfig.addPlugin(pluginTailwindCSS, {
+    src: "style/tailwind.css",
+    dest: "css",
+    keepFolderStructure: false,
+    minify: true
+    // See below for other available options
+});
 
   eleventyConfig.setDataDeepMerge(true);
 
