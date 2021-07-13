@@ -346,7 +346,7 @@ I think this is the right time to install `nodemon`, I would recommend to instal
 npm install -g nodemon #you might need sudo depending on your config
 ```
 
-With nodemon, you can restart the Node.js server on each code change, which is very helpful while developing. You can run the app now with `nodemon` like below to check the result on a browser:
+With [nodemon](/blog/2021/02/nodemon/), you can restart the Node.js server on each code change, which is very helpful while developing. You can run the app now with `nodemon` like below to check the result on a browser:
 
 ``` bash
 DEBUG=nodejs-mysql:* nodemon bin/www
