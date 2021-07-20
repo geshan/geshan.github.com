@@ -9,8 +9,10 @@ tags:
 - NodeJs
 cover: "/images/nodejs-express-tutorial/01nodejs-express-tutorial.jpg"
 pagetitle: Node.js Express tutorial to build a 1 page website step-by-step
-description: Follow this step-by-step tutorial to build a simple 1 page website with Node.js Express and templating with Pug.
-keywords: nodejs express, node.js express, node.js express.js, nodejs express tutorial, express tutorial, express tutorial nodejs
+description: Follow this step-by-step tutorial to build a simple 1 page website with
+  Node.js Express and templating with Pug.
+keywords: nodejs express, node.js express, node.js express.js, nodejs express tutorial,
+  express tutorial, express tutorial nodejs
 
 ---
 Express Js is one of the most popular Node.js frameworks. In this Node.js Express tutorial, we will build a mock landing page that can collect the email addresses of people interested to be notified of the launch of our imaginary podcast about headphones. Let’s get started.
@@ -233,7 +235,7 @@ To make local testing easier we can surely add other helpful NPM packages like [
 
 This is just scratching the surface. If you want to change how the form submission behavior works you can look into the [form submission](https://github.com/geshan/nodejs-express-tutorial/blob/master/public/assets/js/main.js#L141) part in the main.js file and change it to call an internal API or external route. All the code is available as an [open source](https://github.com/geshan/nodejs-express-tutorial) repository on Github for your convenience. 
 
-The application has a [docker file](https://github.com/geshan/nodejs-express-tutorial/blob/master/Dockerfile) if you want to quickly run it locally or deploy it to something like [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). You can dig more about [Node.js and Docker](/blog/2020/11/nodejs-with-docker/) if you want. I have also deployed the application on [Qovery](https://main-eventua-a14nhm0hngan6b2y-gtw.qovery.io/) for quickly testing how it looks, if you want to deploy it yourself you can choose from any of the 3 [free nodejs hosting](/blog/2021/01/free-nodejs-hosting/) services.
+The application has a [docker file](https://github.com/geshan/nodejs-express-tutorial/blob/master/Dockerfile) if you want to quickly run it locally or deploy it to something like [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). You can dig more about [Node.js and Docker](/blog/2020/11/nodejs-with-docker/) if you want. I have also deployed the application on Qovery for quickly testing how it looks, if you want to deploy it yourself you can choose from any of the 3 [free nodejs hosting](/blog/2021/01/free-nodejs-hosting/) services.
 
 ## TLDR; need a quick run
 
