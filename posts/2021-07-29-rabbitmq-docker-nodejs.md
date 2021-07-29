@@ -60,7 +60,7 @@ Currently, it is under [VMWare](https://www.vmware.com/au/company/acquisitions/r
 
 {% youtube "deG25y_r6OY" %}
 
-Next up, we will run RabbitMQ with Docker and docker-compose with its management console. It is good to know that on a production class system, it would be better to use a managed RabbitMQ like [CloudAMQP](​​https://www.cloudamqp.com/) or [Amazon MQ](https://aws.amazon.com/amazon-mq/). For the purpose of this tutorial, we will set up RabbitMQ with docker and docker-compose.
+Next up, we will run RabbitMQ with Docker and docker-compose with its management console. It is good to know that on a production class system, it would be better to use a managed RabbitMQ like [CloudAMQP](https://www.cloudamqp.com/) or [Amazon MQ](https://aws.amazon.com/amazon-mq/). For the purpose of this tutorial, we will set up RabbitMQ with docker and docker-compose.
 
 ## Prerequisites
 
@@ -135,7 +135,9 @@ For your reference, the above docker-compose file can be viewed in this [pull re
 
 We will be using a hypothetical example of sending emails and create a dummy [Work queue](https://www.rabbitmq.com/tutorials/tutorial-two-javascript.html) scenario. A work queue is a simple queue where messages can be processed by multiple consumers and the consumers can be scaled up and down depending on the length of the queue.
 
-For instance, if the e-commerce website is getting too many orders between 7 PM and 9 PM then there may be 10 consumers to process the task to send emaisl. At wee hours of like 2 AM and 4 AM there might be just 1 consumer because the number of orders is very low at that time. Next up, we will look at the Node.js code to publish the message to the RabbitMQ exchange with a routing key. Keep in mind, in a real-life scenario the publishing could be done by an application written in a different language.
+> For instance, if the e-commerce website gets many orders between 7 PM and 9 PM then there may be 10 consumers to process the task to send emails. At wee hours of like 2 AM and 4 AM there might be just 1 consumer because the number of orders is very low at that time. 
+
+Next up, we will look at the Node.js code to publish the message to the RabbitMQ exchange with a routing key. Keep in mind, in a real-life scenario the publishing could be done by an application written in a different language.
 
 ## Publish a message to RabbitMQ using Node.js
 
