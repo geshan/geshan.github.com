@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use RabbitMQ and Node.js with Docker and Docker-compose"
+title: How to use RabbitMQ and Node.js with Docker and Docker-compose
 date: 2021-07-29T22:42:35.000+11:00
 comments: true
 tags:
@@ -9,9 +9,11 @@ tags:
 - NodeJs
 - RabbitMQ
 cover: "/images/rabbitmq-docker-nodejs/01rabbitmq-docker-nodejs.jpg"
-pagetitle: "How to use RabbitMQ and Node.js with Docker and Docker-compose"
-description: Learn how to use RabbitMQ with Node.js publisher and consumer, set up easily with Docker and Docker-compose step-by-step for better productivity.
+pagetitle: How to use RabbitMQ and Node.js with Docker and Docker-compose
+description: Learn how to use RabbitMQ with Node.js publisher and consumer, set up
+  easily with Docker and Docker-compose step-by-step for better productivity.
 keywords: rabbitmq docker, rabbitmq node.js, rabbitmq node, rabbitmq nodejs
+
 ---
 Using RabbitMQ with Node.js to offload the things to process in the background is very useful. Adding Docker and docker-compose in that mix for local development makes setting up RabbitMQ and node.js a breeze. In this post, we will explore how to set up RabbitMQ and Node.js with docker and docker-compose using a dummy send email example, let's get rolling!
 
@@ -227,11 +229,13 @@ async function processMessage(msg) {
 
 Let’s look at what the code for this `consumer.js` file is doing. First, we are requiring the `amqplib` and defining the amqpUrl to connect to the RabbitMQ server. Then we have another IIFE that is async as well. Consequently, we set up a connection and a channel. This time we specify a [prefetch](https://www.cloudamqp.com/blog/how-to-optimize-the-rabbitmq-prefetch-count.html) count of 10, that tells how many messages are being pulled in by the consumer at the same time. Subsequently, we specify the queue to which the consumer will listen to which is `user.sign_up_email` in this example. 
 
-Next up, we have a listener that listens for any `SIGINT. It is usually the `CTRL+C` behing hit on the keyboard or any other way the process is about to be killed. On `SIGINT` we do the housekeeping of closing the channel and connection before exiting the process.
+Next up, we have a listener that listens for any `SIGINT`. It is usually the `CTRL+C` behing hit on the keyboard or any other way the process is about to be killed. On `SIGINT` we do the housekeeping of closing the channel and connection before exiting the process.
 
-After that, we make sure the queue exists and then start consuming the message when it arrives on the queue. Message processing is just a console.log for now. The other part we do is we `ack` the message which tells RabbitMQ that the message was successfully processed. Another option is to [nack](https://www.rabbitmq.com/nack.html) the message which informs RabbitMQ that the message was not processed successfully and depending on the configuration it can be re-queued or sent to a [dead letter queue](https://www.rabbitmq.com/dlx.html).
+After that, we make sure the queue exists and then start consuming the message when it arrives on the queue. Message processing is just a console.log for now. Reading the tutorial I wrote about [sending emails with Node.js and Sendgrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/) would be helpful at this point. The other part we do is we `ack` the message which tells RabbitMQ that the message was successfully processed. 
 
-The other code is self-explanatory. The consumer code is available in this [pull request](https://github.com/geshan/nodejs-rabbitmq-docker/pull/3/files). Consequently, we will run the Node.js code in a docker container.
+Another option is to [nack](https://www.rabbitmq.com/nack.html) the message which informs RabbitMQ that the message was not processed successfully and depending on the configuration it can be re-queued or sent to a [dead letter queue](https://www.rabbitmq.com/dlx.html).
+
+The other code is self-explanatory. You can even try our [Node.js with docker](/blog/2020/11/nodejs-with-docker/) for an Express JS app. The consumer code is available in this [pull request](https://github.com/geshan/nodejs-rabbitmq-docker/pull/3/files). Consequently, we will run the Node.js code in a docker container.
 
 ## Set up Docker and Docker compose for Node.js
 
