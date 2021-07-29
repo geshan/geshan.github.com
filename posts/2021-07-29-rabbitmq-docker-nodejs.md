@@ -342,6 +342,12 @@ The above command will publish 15 messages to the queue with a bash loop. These 
 
 <img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/08nodejs-consumer-processing-messages.jpg" title="Node.js consumer processing messages published by the publisher" alt="Node.js consumer processing messages published by the publisher">
 
+While the messages are procssed by the consumers, the RabbitMQ management console screen for that queue will look like the below:
+
+<img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/09rabbitmq-messages-consumed.gif" title="Node.js consumer processing messages visible in RabbitMQ management console" alt="Node.js consumer processing messages visible in RabbitMQ management console">
+
+There was a spike of 15 incoming messages and the green line in the graph shows that all of them were processed and sucessfully acked. Another thing visible on that screen is, there is only 1 consumer on the queue with prefetch count 10 as we set in the config.
+
 We have successfully tested publishing and consuming messages on RabbitMQ with Node.js running on Docker and Docker Compose.
 
 ## Conclusion
