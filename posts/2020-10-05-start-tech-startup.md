@@ -41,7 +41,7 @@ The [$300 free credit](https://cloud.google.com/free) for 12 months is key to ge
 
 ## How to start a tech startup
 
-You have an idea for a tech startup in your mind for some time. You have fiddled around and maybe have a proof of concept or even a minimum viable product ([MVP](https://fonsekainnovations.com/what-does-mvp-mean/)) ready. Now it is time to get your startup out to the world. Or following the [lean startup methodology](http://theleanstartup.com/principles) you want to see if there is a demand for your product. You also want to know if people are willing to pay for this type of service.
+You have an idea for a tech startup in your mind for some time. You have fiddled around and maybe have a proof of concept or even a minimum viable product [MVP](https://www.productplan.com/glossary/minimum-viable-product/) ready. Now it is time to get your startup out to the world. Or following the [lean startup methodology](http://theleanstartup.com/principles) you want to see if there is a demand for your product. You also want to know if people are willing to pay for this type of service.
 
 For both the above cases, you will need a brand name and a working website or web application. This guide will help you get up and running at $0 stitching together the GCP products and other free services.
 
