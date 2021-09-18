@@ -9,8 +9,12 @@ tags:
 - NodeJs
 cover: "/images/nodejs-web-scraping/01nodejs-web-scraping.jpg"
 pagetitle: The final guide to web scraping with Node.js
-description: Learn how to scrape any webpage with or without Javascript rendering using Node.js. This tutorial will be the only guide you need to start web scraping with Node.js successfully.
-keywords: web scraping node.js, node.js web scraping, node web scraping, web scapring node
+description: Learn how to scrape any webpage with or without Javascript rendering
+  using Node.js. This tutorial will be the only guide you need to start web scraping
+  with Node.js successfully.
+keywords: web scraping node.js, node.js web scraping, node web scraping, web scapring
+  node
+
 ---
 Web scraping is the process of extracting data from a website in an automated way and Node.js can be used for web scraping. Even though other languages and frameworks are more popular for web scraping, Node.js can be utilized well to do the job too. In this post, we will learn how to do web scraping with Node.js for websites that don’t need and need Javascript to load. Let’s get started!
 
@@ -20,11 +24,11 @@ Web scraping is the process of extracting data from a website in an automated wa
 
 ## Table of contents
 
-* [Web scraping the dos and don’ts](#web-scraping-the-dos-and-donts)
+* [Web scraping the dos and don’ts](#web-scraping-the-dos-and-don'ts)
 * [Prerequisites](#prerequisites)
-* [Web scraping with Node.js the simple example](#web-scraping-with-nodejs-the-simple-example)
-  * [Axios and Cheerio for Node.js web scraping](#axios-and-cheerio-for-nodejs-web-scraping)
-* [Node.js web scraping rendering JavaScript](#nodejs-web-scraping-rendering-javascript)
+* [Web scraping with Node.js the simple example](#web-scraping-with-node.js-the-simple-example)
+  * [Axios and Cheerio for Node.js web scraping](#axios-and-cheerio-for-node.js-web-scraping)
+* [Node.js web scraping rendering JavaScript](#node.js-web-scraping-rendering-javascript)
   * [Puppeteer for web scraping](#puppeteer-for-web-scraping)
 * [Conclusion](#conclusion)
 
@@ -157,6 +161,7 @@ All the working code is available as a [Github repository](https://github.com/ge
 In addition to scraping just one page, we could get all the links and loop through (or even better promise.all) the pages but at that point, it would be a full-on spider than just web page scraping.
 
 Another alternative to Puppeteer is [Playwright](https://playwright.dev/). It is similar to puppeteer and has a similar API, the advantage is it supports multiple [browsers](https://playwright.dev/docs/why-playwright#support-for-all-browsers) like Firefox and Safari. On top of it, you can also use other languages like [Python](https://playwright.dev/python/docs/intro/), [Java](https://playwright.dev/java/docs/intro/) and [.Net](https://playwright.dev/dotnet/docs/intro/) not just javascript. The headless recorder plugin can generate a good starting script for both Puppeteer and Playwright so you can get a very good starting point if you are not well versed in writing such automation scripts.
+
 ## Conclusion
 
 We saw how to scrape web pages with Node.js for both types of web pages that don’t require JavaScipt to render meaningful HTML and that requires JavaScript. Using your browser’s inspect tool and some URL pattern matching will surely help you scraper web pages much better.
