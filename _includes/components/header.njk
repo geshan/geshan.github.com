@@ -49,7 +49,7 @@
               "
             >
               <div class="flex-shrink-0 flex items-center md:mr-5">
-                <a class="flex items-center" href="/">
+                <a class="flex items-center" href="./index.html">
                   <img
                     class="block h-6 w-auto mr-3"
                     src="/images/theme/geshan-g.svg"
@@ -66,9 +66,8 @@
               <div class="hidden sm:block sm:ml-6 lg:ml-10">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  {%- for entry in collections.all | eleventyNavigation %}
-                    <a
-                    href="{{ entry.url | url }}"
+                  <a
+                    href="./listing.html"
                     class="
                       text-midgrey
                       px-3
@@ -76,12 +75,36 @@
                       text-lg
                       hover:text-purple
                       font-leading font-bold
-                      {% if entry.url == page.url %} active{% endif %}
                     "
                     aria-current="page"
-                    >{{ entry.title }}</a>
-                  {%- endfor %}
-                                   
+                    >Posts</a
+                  >
+
+                  <a
+                    href="#"
+                    class="
+                      text-midgrey
+                      px-3
+                      py-2
+                      text-lg
+                      hover:text-purple
+                      font-leading font-bold
+                    "
+                    >About</a
+                  >
+
+                  <a
+                    href="#"
+                    class="
+                      text-midgrey
+                      px-3
+                      py-2
+                      text-lg
+                      hover:text-purple
+                      font-leading font-bold
+                    "
+                    >Newsletter</a
+                  >
                 </div>
               </div>
             </div>
@@ -109,7 +132,6 @@
               >
                 <span class="sr-only">View notifications</span>
                 <!-- Heroicon name: outline/bell -->
-                <a href="/atom.xml">
                 <svg
                   class="h-6 w-6"
                   viewBox="0 0 25 26"
@@ -125,7 +147,6 @@
                     fill="black"
                   />
                 </svg>
-                </a>
               </button>
             </div>
           </div>
