@@ -19,11 +19,13 @@ keywords: javascript array functions, javascript array methods, javascript map, 
 ---
 In JavaScript, we generally use arrays to represent data or manipulate data, so using JavaScript array functions is very helpful. For instance, if we query a database we will most likely get the rows as an array of objects. Where each object represents a row in the database.
 
+<!-- more -->
+
 In this post, we will learn about 10 JavaScript array functions that are going to help you easily work with data in the JavaScript arrays. Let’s get started!
 
 <img class="center" loading="lazy" src="/images/javascript-array-functions/01javascript-array-functions.jpg" title="10 JavaScript array functions you should know about" alt="10 JavaScript array functions you should start using today">
 
-<!-- more -->
+
 
 ## Table of contents
 
