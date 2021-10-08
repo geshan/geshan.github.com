@@ -13,10 +13,9 @@ keywords: tech career advice
 
 ---
 Finding and following great tech career advice can pave the way for your promotion to the next level. In this post, we will discuss 7 amazing pieces of content by equally amazing people that can act as a key to unlock the door to the next level of your career, let’s get started!
+<!-- more -->
 
 <img class="center" loading="lazy" src="/images/tech-career-advice/01tech-career-advice.jpg" title="Tech career advice you should follow now" alt="Tech career advice you should follow now">
-
-<!-- more -->
 
 More than once, I have found myself referring to similar content to people who come to me for tech career advice. The general questions are: I want to advance to the next level, my manager doesn’t push me enough, etc. My general response to these concerns are:
 
