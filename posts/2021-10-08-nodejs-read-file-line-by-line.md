@@ -200,7 +200,7 @@ lineReader.eachLine('broadband.sql', function(line, last) {
 
 First, we require the line reader module then call the `eachLine` function passing the filename (or file path) as the first parameter. The second parameter is a callback function that has the line and the last variables. Subsequently, we log the line from the file available in the line variable.
 
-Next up, if we find the last variable to be true which indicates we have reached the end of the file we log the `Last line printed` message and also print out the approximate memory used to read the file line by line. This code is also available as a [pull request](https://github.com/geshan/nodejs-readfile-line-by-line/pull/6/files) for your reference. 
+Next up, if we find the last variable to be true which indicates we have reached the end of the file we log the `Last line printed` message and also print out the approximate memory used to read the file line by line. This code is also available as a [pull request](https://github.com/geshan/nodejs-readfile-line-by-line/pull/6/files) for your reference.
 
 We can run this code by executing:
 
@@ -222,9 +222,9 @@ If you want to restart your Node.js script on each change try out [Nodemon](/blo
 
 There are other options to read file line by line with Node.js. There is a very popular NPM module called [readline](https://www.npmjs.com/package/readline) but due to the name collision with the native Node.js module, it has been renamed to [Line By LIne](https://www.npmjs.com/package/linebyline) now. It works very similarly to the native readline module.
 
-Other less popular but available options are, [file readline](https://www.npmjs.com/package/file-readline) and [readlines-ng](https://npmjs.com/package/readlines-ng).
+Other less popular but available options are, [file readline](https://www.npmjs.com/package/file-readline) and [readlines-ng](https://npmjs.com/package/readlines-ng). Both of them are NPM modules but they were downloaded around 3 times each last week.
 
-For further processing of file contents, using these [JavaScript array functions](/blog/2021/03/javascript-array-functions/) would be very helpful. Both of them are NPM modules but they are downloaded around 3 times each week. This takes us to a quick comparison of these available options.
+For further processing of file contents, using these [JavaScript array functions](/blog/2021/03/javascript-array-functions/) would be very helpful. This takes us to a quick comparison of these available options.
 
 ## Quick comparison
 
