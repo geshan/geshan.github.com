@@ -8,7 +8,7 @@ templateClass: tmpl-post
 <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
 <article class="hentry">
     <header class="page-header">
-    <h1 class="entry-title">{{ title }}</h1>
+    <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
     <p class="meta text-muted">
     {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
     </p>
