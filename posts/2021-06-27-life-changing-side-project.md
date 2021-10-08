@@ -16,6 +16,8 @@ keywords: life changing startup
 ---
 Most often than not, the success of any project (or start-up) is measured in terms of current and potential profits. We often overlook human growth which is even more fulfilling. In this post, I am going to discuss how a side project/mini startup -- [AU Tech Jobs](https://autechjobs.ml) helped at least 6 people, all immigrants, land full-time tech jobs from casual non-tech roles and how it has changed their lives in more positive ways during this looming pandemic.
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/life-changing-startup/01autechjobs-app.jpg" title="AU Tech Jobs - a life-changing startup" alt="AU Tech Jobs - a life-changing startup"> <!-- more -->
 
 ## Table of contents
