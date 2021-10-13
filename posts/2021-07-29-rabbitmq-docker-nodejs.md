@@ -36,7 +36,7 @@ Using RabbitMQ with Node.js to offload the things to process in the background i
 
 ## Why use async processing
 
-Before going deeper into using RabbitQM with Node.js using Docker and Docker compose, let’s discuss why we need async processing first. Imagine this, you run an e-commerce store. As the customer has placed an order, there is a need to send an order confirmation email or SMS. 
+Before going deeper into using RabbitQM with Node.js using Docker and Docker compose, let’s discuss why we need async processing first. Imagine this, you run an e-commerce store. As the customer has placed an order, there is a need to send an order confirmation email or SMS.
 
 > Let’s say if the email service provider has a downtime of 2 minutes should the checkout process be blocked? The answer is no.
 
@@ -44,7 +44,7 @@ Similarly, if there are 10 orders in the same second, should the customer wait l
 
 These are typical examples where async processing or processing things in the background that don’t slow down and/or block the main operation is very useful. In the above example, the critical path is to be able to checkout, the e-commerce website can function without the email being sent but can’t earn if the order is not taken. All of these kinds of operations like sending an email, resizing a picture (which is resource-heavy too) can be set up as async tasks.
 
-Pushing secondary tasks in the background also provides us with better [software scalability](/blog/2020/12/software-scalability/) and [software resilience](/blog/2020/12/software-resilience/). 
+Pushing secondary tasks in the background also provides us with better [software scalability](/blog/2020/12/software-scalability/) and [software resilience](/blog/2020/12/software-resilience/).
 
 > For async and/or later processing if tasks are pushed into a queue multiple workers can perform the task making it easy to scale horizontally. Along the same lines, if the task depends on a third party and if that service is down or slow it does not block the primary and critical operation. Which leads to more resilient software.
 
@@ -56,7 +56,7 @@ You can also listen to a [talk](/blog/2014/08/basic-overview-of-message-queues-r
 
 > In plain English, RabbitMQ is a software written in Erlang based on Advanced Message Queuing Protocol (AMQP), that provides a way to manage messages using exchanges and routing keys to put them in the right queues to be consumed by consumers.
 
-Currently, it is under [VMWare](https://www.vmware.com/au/company/acquisitions/rabbitmq.html). To further understand how exchanges, routing keys, and queues work in RabbitMQ please watch the video below: 
+Currently, it is under [VMWare](https://www.vmware.com/au/company/acquisitions/rabbitmq.html). To further understand how exchanges, routing keys, and queues work in RabbitMQ please watch the video below:
 
 {% youtube "deG25y_r6OY" %}
 
@@ -67,10 +67,10 @@ Next up, we will run RabbitMQ with Docker and docker-compose with its management
 Below are some prerequisites before we delve deeper into commands and code:
 
 1. Docker and docker-compose should be installed and running on your machine. I am using Docker version 20.10.2 and Docker-compose version 1.27.4 on a Mac.
-1. Node.js should be installed and running locally or on a docker container. The latest LTS like Node.js 16 is preferred.
-1. A general understanding of how Node.js and Docker work is expected.
-1. Knowledge using npm commands is very helpful to follow this tutorial better.
-1. Some basic knowledge of how message queues work will be helpful but not required.
+2. Node.js should be installed and running locally or on a docker container. The latest LTS like Node.js 16 is preferred.
+3. A general understanding of how Node.js and Docker work is expected.
+4. Knowledge using npm commands is very helpful to follow this tutorial better.
+5. Some basic knowledge of how message queues work will be helpful but not required.
 
 Time to jump into the commands and some Node.js code now.
 
@@ -103,7 +103,7 @@ networks:
     driver: bridge
 ```
 
-Let’s quickly see what the docker-compose file is doing. First, we specify a service called `rabbitmq` that uses an image from Dockerhub. The image is RabbitMQ 3.8 with management plugin alpine edition. Next, we name the container `rabbitmq`. 
+Let’s quickly see what the docker-compose file is doing. First, we specify a service called `rabbitmq` that uses an image from Dockerhub. The image is RabbitMQ 3.8 with management plugin alpine edition. Next, we name the container `rabbitmq`.
 
 After that, we expose local port 5673 to container port 5672 and local port 15673 to container port 15672 respectively. RabbitMQ runs on port 5672 and the management console web UI runs on port number 15672 of the container, we are mapping it to different local ports just to keep it different.
 
@@ -127,15 +127,15 @@ If we provide the username `guest` with password `guest` and hit login, we will 
 
 <img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/04rabbitmq-mgmt-overview.jpg" title="RabbitMQ managemment overview running locally with docker and docker compose" alt="RabbitMQ managemment overview running locally with docker and docker compose">
 
-As seen in the above video, this is the dashboard that gives us a way to configure RabbitMQ as well as see what's happening in the queues and the exchanges. We can click around and see there are some exchanges already set up out of the box but there are no queues. 
+As seen in the above video, this is the dashboard that gives us a way to configure RabbitMQ as well as see what's happening in the queues and the exchanges. We can click around and see there are some exchanges already set up out of the box but there are no queues.
 
-For your reference, the above docker-compose file can be viewed in this [pull request](https://github.com/geshan/nodejs-rabbitmq-docker/pull/1) too. Next up, we will write a simple publisher that publishes a message to a queue with a [direct exchange](https://www.rabbitmq.com/tutorials/amqp-concepts.html#exchange-direct). 
+For your reference, the above docker-compose file can be viewed in this [pull request](https://github.com/geshan/nodejs-rabbitmq-docker/pull/1) too. Next up, we will write a simple publisher that publishes a message to a queue with a [direct exchange](https://www.rabbitmq.com/tutorials/amqp-concepts.html#exchange-direct).
 
 ## Send Email example
 
 We will be using a hypothetical example of sending emails and create a dummy [Work queue](https://www.rabbitmq.com/tutorials/tutorial-two-javascript.html) scenario. A work queue is a simple queue where messages can be processed by multiple consumers and the consumers can be scaled up and down depending on the length of the queue.
 
-> For instance, if the e-commerce website gets many orders between 7 PM and 9 PM then there may be 10 consumers to process the task to send emails. At wee hours of like 2 AM and 4 AM there might be just 1 consumer because the number of orders is very low at that time. 
+> For instance, if the e-commerce website gets many orders between 7 PM and 9 PM then there may be 10 consumers to process the task to send emails. At wee hours of like 2 AM and 4 AM there might be just 1 consumer because the number of orders is very low at that time.
 
 Next up, we will look at the Node.js code to publish the message to the RabbitMQ exchange with a routing key. Keep in mind, in a real-life scenario the publishing could be done by an application written in a different language.
 
@@ -148,7 +148,7 @@ npm init -y
 npm i --save amqplib
 ```
 
-At this point there should be After that we will create a file called `publisher.js` with the following contents:
+At this point, there should be After that we will create a file called `publisher.js` with the following contents:
 
 ```js
 const amqplib = require('amqplib');
@@ -182,11 +182,11 @@ const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5673';
 })();
 ```
 
-Time to recap what the above code is doing. First, we get the `amqplib` library and define the `amqpUrl` which first tries to get it from the environment variable `AMQP_URL` if not found, it defaults to localhost port 5763. Next, we have an Immediately Invoked Function Expression (IIFE) which is async to support [await calls](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await). In this function, we get a connection to the RabbitMQ server and then create a channel for our communication. 
+Time to recap what the above code is doing. First, we get the `amqplib` library and define the `amqpUrl` which first tries to get it from the environment variable `AMQP_URL` if not found, it defaults to localhost port 5763. Next, we have an Immediately Invoked Function Expression (IIFE) which is async to support [await calls](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await). In this function, we get a connection to the RabbitMQ server and then create a channel for our communication.
 
-After that, we make sure that the exchange exists and the queue exists too. We also specify that the queue is durable, which means the queue will remain intact if the RabbitMQ server restarts. If they don’t exist they will be created. Subsequently, we bind the exchange and the queue with the routing key. As our example is about emails, we are creating an exchange for user sign-up and a queue for user sign-up emails. 
+After that, we make sure that the exchange exists and the queue exists too. We also specify that the queue is durable, which means the queue will remain intact if the RabbitMQ server restarts. If they don’t exist they will be created. Subsequently, we bind the exchange and the queue with the routing key. As our example is about emails, we are creating an exchange for user sign-up and a queue for user sign-up emails.
 
-Consequently, we construct a simple JSON message with id, email, and name and then publish it to the exchange with the routing key. The exchange as seen in the above video takes care of putting the message in the right queue. In case of an error, we print it on the console and we have the “finally” part that executes all the time. It will close the channel and connection and at the end we have the process exit call to kill the publisher process. 
+Consequently, we construct a simple JSON message with id, email, and name and then publish it to the exchange with the routing key. The exchange as seen in the above video takes care of putting the message in the right queue. In case of an error, we print it on the console and we have the “finally” part that executes all the time. It will close the channel and connection and at the end we have the process exit call to kill the publisher process.
 
 The code for the publisher and related NPM files are available in this [pull request](https://github.com/geshan/nodejs-rabbitmq-docker/pull/2/files). Next up, we will add the code for the consumer which will process the message.
 
@@ -229,11 +229,11 @@ async function processMessage(msg) {
 })();
 ```
 
-Let’s look at what the code for this `consumer.js` file is doing. First, we are requiring the `amqplib` and defining the amqpUrl to connect to the RabbitMQ server. Then we have another IIFE that is async as well. Consequently, we set up a connection and a channel. This time we specify a [prefetch](https://www.cloudamqp.com/blog/how-to-optimize-the-rabbitmq-prefetch-count.html) count of 10, that tells how many messages are being pulled in by the consumer at the same time. Subsequently, we specify the queue to which the consumer will listen to which is `user.sign_up_email` in this example. 
+Let’s look at what the code for this `consumer.js` file is doing. First, we are requiring the `amqplib` and defining the amqpUrl to connect to the RabbitMQ server. Then we have another IIFE that is async as well. Consequently, we set up a connection and a channel. This time we specify a [prefetch](https://www.cloudamqp.com/blog/how-to-optimize-the-rabbitmq-prefetch-count.html) count of 10, that tells how many messages are being pulled in by the consumer at the same time. Subsequently, we specify the queue to which the consumer will listen to which is `user.sign_up_email` in this example.
 
 Next up, we have a listener that listens for any `SIGINT`. It is usually the `CTRL+C` behing hit on the keyboard or any other way the process is about to be killed. On `SIGINT` we do the housekeeping of closing the channel and connection before exiting the process.
 
-After that, we make sure the queue exists and then start consuming the message when it arrives on the queue. Message processing is just a console.log for now. Reading the tutorial I wrote about [sending emails with Node.js and Sendgrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/) would be helpful at this point. The other part we do is we `ack` the message which tells RabbitMQ that the message was successfully processed. 
+After that, we make sure the queue exists and then start consuming the message when it arrives on the queue. Message processing is just a console.log for now. Reading the tutorial I wrote about [sending emails with Node.js and Sendgrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/) would be helpful at this point. The other part we do is we `ack` the message which tells RabbitMQ that the message was successfully processed.
 
 Another option is to [nack](https://www.rabbitmq.com/nack.html) the message which informs RabbitMQ that the message was not processed successfully and depending on the configuration it can be re-queued or sent to a [dead letter queue](https://www.rabbitmq.com/dlx.html).
 
@@ -265,11 +265,11 @@ COPY ./*.js ./
 CMD ["node", "consumer.js"]
 ```
 
-We are using the latest Node.js LTS 16 with the alpine version as it is smaller than the options at around [38 MB](https://hub.docker.com/layers/node/library/node/16-alpine/images/sha256-7f50c56fc6adbc28be74bc416dae55fdf0f835bba87fb7b1ad08c7db807f0cb7?context=explore). Next, we set the `WORKDIR` to `/src` and then copy the package.json and package-lock.json file to the “workdir” `/src`. 
+We are using the latest Node.js LTS 16 with the alpine version as it is smaller than the options at around [38 MB](https://hub.docker.com/layers/node/library/node/16-alpine/images/sha256-7f50c56fc6adbc28be74bc416dae55fdf0f835bba87fb7b1ad08c7db807f0cb7?context=explore). Next, we set the `WORKDIR` to `/src` and then copy the package.json and package-lock.json file to the “workdir” `/src`.
 
 Consequently, we start defining the “production” stage where we set `NODE_ENV` to production and run `npm ci` to get all the npm dependencies as defined in the lock file. To make better use of the docker build cache, only after running the npm ci we copy all the `.js` files to the work dir. Then we put the `CMD` as “node consumer.js” to run the consumer in production.
 
-After the production stage, we define the dev stage in the Dockerfile. Here it is different from the production one, we first install bash. After that, we pull in [wait-for-it](https://github.com/vishnubob/wait-for-it) bash script because we want to wait for the RabbitMQ server to be running before the consumer tries to connect to it. Subsequently, we make it executable with `chmod +x wait-for-it.sh`. 
+After the production stage, we define the dev stage in the Dockerfile. Here it is different from the production one, we first install bash. After that, we pull in [wait-for-it](https://github.com/vishnubob/wait-for-it) bash script because we want to wait for the RabbitMQ server to be running before the consumer tries to connect to it. Subsequently, we make it executable with `chmod +x wait-for-it.sh`.
 
 Next, we set the `NODE_ENV` to be “development” for this stage. Then we run `npm install` to get all the npm dependencies, if there were any dev dependencies like jest for testing it would have been pulled in too. Towards the end, we copy all the `js` files to `/src` and run the consumer.
 
