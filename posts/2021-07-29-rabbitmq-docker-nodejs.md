@@ -192,7 +192,7 @@ The code for the publisher and related NPM files are available in this [pull req
 
 ## Consume messages with Node.js
 
-To consume the published message there can be multiple consumers. If there are multiple consumers, messages will be distributed with a round-robin algorithm. Below is the Node.js code for consuming RabbitMQ messages as consumers.js file:
+To consume the published message there can be multiple consumers. If there are multiple consumers, messages will be distributed with a round-robin algorithm. Below is the Node.js code for consuming RabbitMQ messages as consumer.js file:
 
 ```js
 const amqplib = require('amqplib');
@@ -229,7 +229,7 @@ async function processMessage(msg) {
 })();
 ```
 
-Let’s look at what the code for this `consumer.js` file is doing. First, we are requiring the `amqplib` and defining the amqpUrl to connect to the RabbitMQ server. Then we have another IIFE that is async as well. Consequently, we set up a connection and a channel. This time we specify a [prefetch](https://www.cloudamqp.com/blog/how-to-optimize-the-rabbitmq-prefetch-count.html) count of 10, that tells how many messages are being pulled in by the consumer at the same time. Subsequently, we specify the queue to which the consumer will listen to which is `user.sign_up_email` in this example.
+Let’s look at the code for this `consumer.js` file is doing. First, we are requiring the `amqplib` and defining the amqpUrl to connect to the RabbitMQ server. Then we have another IIFE that is async as well. Consequently, we set up a connection and a channel. This time we specify a [prefetch](https://www.cloudamqp.com/blog/how-to-optimize-the-rabbitmq-prefetch-count.html) count of 10, which tells how many messages are being pulled in by the consumer at the same time. Subsequently, we specify the queue to which the consumer will listen to which is `user.sign_up_email` in this example.
 
 Next up, we have a listener that listens for any `SIGINT`. It is usually the `CTRL+C` behing hit on the keyboard or any other way the process is about to be killed. On `SIGINT` we do the housekeeping of closing the channel and connection before exiting the process.
 
@@ -267,7 +267,7 @@ CMD ["node", "consumer.js"]
 
 We are using the latest Node.js LTS 16 with the alpine version as it is smaller than the options at around [38 MB](https://hub.docker.com/layers/node/library/node/16-alpine/images/sha256-7f50c56fc6adbc28be74bc416dae55fdf0f835bba87fb7b1ad08c7db807f0cb7?context=explore). Next, we set the `WORKDIR` to `/src` and then copy the package.json and package-lock.json file to the “workdir” `/src`.
 
-Consequently, we start defining the “production” stage where we set `NODE_ENV` to production and run `npm ci` to get all the npm dependencies as defined in the lock file. To make better use of the docker build cache, only after running the npm ci we copy all the `.js` files to the work dir. Then we put the `CMD` as “node consumer.js” to run the consumer in production.
+Consequently, we start defining the “production” stage where we set `NODE_ENV` to production and run `npm ci` to get all the npm dependencies as defined in the lock file. To make better use of the docker build-cache, only after running the npm ci we copy all the `.js` files to the work dir. Then we put the `CMD` as “node consumer.js” to run the consumer in production.
 
 After the production stage, we define the dev stage in the Dockerfile. Here it is different from the production one, we first install bash. After that, we pull in [wait-for-it](https://github.com/vishnubob/wait-for-it) bash script because we want to wait for the RabbitMQ server to be running before the consumer tries to connect to it. Subsequently, we make it executable with `chmod +x wait-for-it.sh`.
 
@@ -348,7 +348,7 @@ While the messages are procssed by the consumers, the RabbitMQ management consol
 
 <img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/09rabbitmq-messages-consumed.gif" title="Node.js consumer processing messages visible in RabbitMQ management console" alt="Node.js consumer processing messages visible in RabbitMQ management console">
 
-There was a spike of 15 incoming messages and the green line in the graph shows that all of them were processed and sucessfully acked. Another thing visible on that screen is, there is only 1 consumer on the queue with prefetch count 10 as we set in the config.
+There was a spike of 15 incoming messages and the green line in the graph shows that all of them were processed and sucessfully acked. Another thing visible on that screen is, there is only 1 consumer on the queue with a prefetch count of 10 as we set in the config.
 
 We have successfully tested publishing and consuming messages on RabbitMQ with Node.js running on Docker and Docker Compose.
 
