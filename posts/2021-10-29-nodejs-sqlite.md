@@ -21,11 +21,11 @@ Node.js can be used very well with relational databases and SQLite is no excepti
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
-* [SQLite and Node.js](#sqlite-and-nodejs)
+* [SQLite and Node.js](#sqlite-and-node.js)
 * [Setup SQLite database with Quote table](#setup-sqlite-database-with-quote-table)
 * [Setup Express with Better SQLite 3](#setup-express-with-better-sqlite-3)
 * [Get Quotes API with pagination](#get-quotes-api-with-pagination)
-* [Post API to save a new quote with Node.js SQLite](#post-api-to-save-a-new-quote-with-nodejs-sqlite)
+* [Post API to save a new quote with Node.js SQLite](#post-api-to-save-a-new-quote-with-node.js-sqlite)
 * [Next steps](#next-steps)
 * [TLDR quick start](#tldr-quick-start)
 * [Conclusion](#conclusion)
@@ -37,7 +37,7 @@ Before we dive into the code, below are some good to have prerequisites:
 1. You have a general working knowledge of Node.js and Express Js.
 1. You have Node.js (preferably latest LTS) running on your machine or on have [Docker with Node.js](/blog/2020/11/nodejs-with-docker/) running
 1. SQLite is installed and running on your system, you can get it from [here](https://www.sqlite.org/download.html) and try `sqlite3 --version` after it is installed.
-1. Any prior experience what the SQLite database would be helpful but not essential.
+1. Any prior experience with the SQLite database would be helpful but not essential.
 1. Some git experience will be good to have.
 
 In the next stop of this Node.js SQLite tutorial, we will set up the database.
