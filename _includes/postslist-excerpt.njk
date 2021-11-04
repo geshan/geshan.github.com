@@ -1,22 +1,32 @@
 <div class="blog-index">
   {% for post in postslist | reverse %}
     <article class="post">
-      <header class="page-header"><h2 class="entry-title">
+      <header class="page-header">
+      <h2 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
         <a href="{{ post.url }}">
           {{ post.data.title }}
         </a>
-        </h2><p class="meta text-muted text-uppercase"> 
+      </h2>
+        <p class="meta text-muted text-uppercase"> 
           <span class="glyphicon glyphicon-calendar">
           </span>
           {% set date = post.date %}
           {% include "components/posted-date-time.njk" %}
-          | <a href="{{post.url}}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a></p>
+          . X min read
+        </p>
       </header>
-      <div class="entry-content clearfix">
+      <div class="mt-6 font-reading font-normal text-midblack leading-7">
         {% excerptMore post %}
       </div>
       <footer>
-        <a class="btn btn-default" href="{{ post.url }}">Read on →</a>
+        <a class="
+                  flex
+                  items-center
+                  font-semibold
+                  text-purple text-xl
+                  cursor-pointer
+                  mt-4
+        " href="{{ post.url }}">Read post</a>
       </footer>
     </article>
   {% endfor %}

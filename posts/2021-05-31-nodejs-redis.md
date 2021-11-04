@@ -16,10 +16,9 @@ keywords: node.js redis, nodejs redis, node js redis, nodejs redis tutorial, red
 
 ---
 HTTP responses can be sped up with Node.js and Redis caching. In this post, we will see how we can do this by adding a Redis cache to an existing Node.js API that uses the Postgres database. Lets get cracking!
+<!-- more -->
 
 <img class="center" loading="lazy" src="/images/nodejs-redis/01nodejs-redis.jpg" title="Redis settings on redis labs" alt="Redis settings on redis labs">
-
-<!-- more -->
 
 ## Table of contents
 
