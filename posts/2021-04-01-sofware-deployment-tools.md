@@ -15,10 +15,11 @@ keywords: software deployment tools, deployment tools, automated deployment tool
 
 ---
 I have used a variety of software deployment tools in the last 20 years. From FTP to deploying Docker containers on Kubernetes using a chatbot, I think I have seen the most of it. In this post, I will take you on a journey of web software deployment tools from 2001 to 2021, let’s get started!
+<!-- more -->
 
 <img class="center" loading="lazy" src="/images/software-deployment-tools/01software-deployment-tools.jpg" title="Software deployment can sometimes be similar to deploying the army" alt="Software deployment can sometimes be similar to deploying the army">
 
-<!-- more -->
+
 
 ## Table of contents
 
