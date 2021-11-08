@@ -37,7 +37,7 @@ It should have the following characteristics:
 
 ## Good to have features
 
-Some good to have features for automated deployment tools are:
+Some good to have features for [automated deployment tools](/blog/2021/04/sofware-deployment-tools/) are:
 
 * It should be able to deploy the same code in multiple servers
 * Each deployment should be done from a given branch/tag/commit of a Version Control System (VCS) like git
