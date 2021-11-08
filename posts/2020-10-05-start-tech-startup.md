@@ -25,19 +25,19 @@ The [$300 free credit](https://cloud.google.com/free) for 12 months is key to ge
 
 ## Table of contents
 
-1.  [How to start a tech startup](#how-to-start-a-tech-startup)
-2.  [Considerations](#considerations)
-3.  [Steps](#steps)
-    1.  [Domain Name](#domain-name)
-    2.  [DNS, security and caching](#dns%2C-security-and-caching)
-    3.  [The brochure site](#the-brochure-site)
-    4.  [Cement them together](#cement-them-together)
-    5.  [Time for Google Cloud Platform (GCP)](#time-for-google-cloud-platform-(gcp))
-    6.  [Dockerize your application](#dockerize-your-application)
-    7.  [Database](#database)
-    8.  [Other GCP services](#other-gcp-services)
-    9.  [Other free services](#other-free-services)
-4.  [Conclusion](#conclusion)
+1. [How to start a tech startup](#how-to-start-a-tech-startup)
+2. [Considerations](#considerations)
+3. [Steps](#steps)
+   1. [Domain Name](#domain-name)
+   2. [DNS, security and caching](#dns%2C-security-and-caching)
+   3. [The brochure site](#the-brochure-site)
+   4. [Cement them together](#cement-them-together)
+   5. [Time for Google Cloud Platform (GCP)](#time-for-google-cloud-platform-(gcp))
+   6. [Dockerize your application](#dockerize-your-application)
+   7. [Database](#database)
+   8. [Other GCP services](#other-gcp-services)
+   9. [Other free services](#other-free-services)
+4. [Conclusion](#conclusion)
 
 ## How to start a tech startup
 
@@ -47,12 +47,12 @@ For both the above cases, you will need a brand name and a working website or we
 
 ## Considerations
 
-1. You will need to register for a new GCP account and bag your [$300 credit](https://cloud.google.com/free) that should be used by 12 months.
-1. You will have to register for other services as you follow along with the guide.
-1. The aim is to run your staging and production applications for ~ $1 a day, so the $300 will last for just over 9.5 months.
-1. After that you will need to find a way to generate money or get more Google Cloud Platform (GCP) credits like from [Google for startups](https://cloud.google.com/developers/startups) or some [other](https://www.joinffl.com/cloud-credits) way.
-1. For this guide we will consider having a brochure JAMstack website hosted on Netlify  
-1. The web application will be hosted on Google Cloud Run with the MYSQL database on Google Cloud SQL.
+1. You will need to register for a new GCP account and bag your [$300 credit](https://cloud.google.com/free) that should be used by 3 months.
+2. You will have to register for other services as you follow along with the guide.
+3. The aim is to run your staging and production applications for \~ $1 a day, so the $300 will last for just over 9.5 months.
+4. After that, you will need to find a way to generate money or get more Google Cloud Platform (GCP) credits like from [Google for startups](https://cloud.google.com/developers/startups) or some [other](https://www.joinffl.com/cloud-credits) way.
+5. For this guide, we will consider having a brochure JAMstack website hosted on Netlify
+6. The web application will be hosted on Google Cloud Run with the MYSQL database on Google Cloud SQL.
 
 It is time to dive deeper into the steps:
 
@@ -70,11 +70,11 @@ The good things are you pay $0 and there is no competition as getting a .com or 
 
 ### DNS, security and caching
 
-The next step after you register the domain is to get a free [Cloudflare](https://www.cloudflare.com/) account. You can then use the DNS provided in your Cloud flare account at FreeNom to direct the website/web application traffic to where you want. In our case, we will like to redirect the brochure JAMStack to Netlify. The web application traffic will go our application hosted on Google Cloud Run. 
+The next step after you register the domain is to get a free [Cloudflare](https://www.cloudflare.com/) account. You can then use the DNS provided in your Cloud flare account at FreeNom to direct the website/web application traffic to where you want. In our case, we will like to redirect the brochure JAMStack to Netlify. The web application traffic will go our application hosted on Google Cloud Run.
 
 <img class="center" loading="lazy" src="/images/start-tech-startup/03cloudflare.jpg" title="Cloudflare for DNS, caching" alt="Use CloudFlare to manage DNS caching and security">
 
-For now, be able to log in and “Add a site”. Then Google more about how to use cloud flare to linkup the traffic to respective services. On top of DNS management, you will also get things like caching and security for free with Cloud Flare. Again, I will leave you with more Googling to get all these configured correctly. You will also get free HTTPS with Cloudflare no need to wrangle with [certificates](https://letsencrypt.org/) and settings.
+For now, be able to log in and “Add a site”. Then Google more about how to use cloud flare to link up the traffic to respective services. On top of DNS management, you will also get things like caching and security for free with Cloud Flare. Again, I will leave you with more Googling to get all these configured correctly. You will also get free HTTPS with Cloudflare no need to wrangle with [certificates](https://letsencrypt.org/) and settings.
 
 ### The brochure site
 
@@ -98,7 +98,6 @@ Take note that, for all the above services you have not even spent a penny. So y
 
 Now is the time to get your Google Cloud Platform (GCP) account. This is where you will need to search for your credit card. Even though you will not be charged but Google will take in your credit card details.
 
-
 We will be using serverless containers for your application deployed on Google Cloud Run. We opt for serverless containers because of the [cost](https://cloud.google.com/run/pricing) and other reasons. The other [reasons](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) mainly include no need to learn a new framework/paradigm and you can run any application as long as it can be containerized. You will also get free HTTPs and custom domain mapping to point the application back to the FreeNom domain.
 
 <img class="center" loading="lazy" src="/images/start-tech-startup/06cloud-run.jpg" title="Serverless containers on cloud run" alt="Serverless containers on cloud run">
@@ -111,12 +110,11 @@ To deploy your application, you will need to dockerize it. In this [step-by-step
 
 <img class="center" loading="lazy" src="/images/start-tech-startup/07cloud-run-costs.jpg" title="Cloud run costs for a small startup" alt="Cloud run costs for a small startup for last 90 days staging and prod both">
 
-
 With my experience, currently, for an application with both staging and production workloads, it is costing us 10-20 cents a day. This is also going from our free credit.
 
 ### Database
 
-Just having some code doesn’t make the application work, the heard of most applications is the data. You can store your data on Google Cloud SQL over MySQL or Postgres SQL. This will be your main money hogger. With the current MySQL [pricing], using two db-f1-micro it is costing us 88 cents a day. 44 cents per day for the staging database and the same for the production one. There is an automatic backup setup for the production one.
+Just having some code doesn’t make the application work, the heard of most applications is the data. You can store your data on Google Cloud SQL over MySQL or Postgres SQL. This will be your main money hogger. With the current MySQL \[pricing\], using two db-f1-micro it is costing us 88 cents a day. 44 cents per day for the staging database and the same for the production one. There is an automatic backup setup for the production one.
 
 <img class="center" loading="lazy" src="/images/start-tech-startup/08cloud-sql-costs.jpg" title="Cloud sql costs for a small startup" alt="Cloud sql costs for a small startup for last 90 days staging and prod both">
 
@@ -141,10 +139,10 @@ Of course, GCP has a plethora of services but don’t get into the analysis para
 The following are other free services that will help you build your tech startup:
 
 1. Github - Github has a [free team plan](https://github.blog/2020-04-14-github-is-now-free-for-teams/) so don’t forget to exploit it. With 2000 minutes for [Github Actions](https://github.com/features/actions) you can use it as your CI/CD pipeline too.
-1. Trello / Asana - Depending on your project/product management flavor you can use [Trello](https://trello.com/) or [Asana](https://asana.com/) free version to manage your product development.
-1. CodeClimate - To keep a tab on the health of your code you can use CodeClimate [free plan](https://codeclimate.com/quality/pricing/) with 4 seats. This will be a boon for your tech startup’s code quality.
-1. ForwardEmail - Great you have your domain but using a Gmail email won’t work best for your brand identity. Get your info@yourdomain.ml for free with [ForwardEmail](https://forwardemail.net/en) free plan.
-1. Free CDN - If you are serving images or static assets on your website or web application you can use [Statically](https://statically.io/) to get the CDN optimizations and benefits. Try it, it is free and unlimited too.
+2. Trello / Asana - Depending on your project/product management flavor you can use [Trello](https://trello.com/) or [Asana](https://asana.com/) free version to manage your product development.
+3. CodeClimate - To keep a tab on the health of your code you can use CodeClimate [free plan](https://codeclimate.com/quality/pricing/) with 4 seats. This will be a boon for your tech startup’s code quality.
+4. ForwardEmail - Great you have your domain but using a Gmail email won’t work best for your brand identity. Get your info@yourdomain.ml for free with [ForwardEmail](https://forwardemail.net/en) free plan.
+5. Free CDN - If you are serving images or static assets on your website or web application you can use [Statically](https://statically.io/) to get the CDN optimizations and benefits. Try it, it is free and unlimited too.
 
 If you know of any other services that can help a [budding tech startup](/blog/2014/06/5-free-apps-to-bootstrap-your-budding/) please do add it to the comments section.
 
