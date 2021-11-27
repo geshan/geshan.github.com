@@ -19,6 +19,16 @@ If you have worked in building software for some years, possibly more than once 
 <!-- more -->
 
 
+## Table of contents
+
+* [What is a stable software product?](#what-is-a-stable-software-product)
+    * [Example stable product](#example-stable-product)
+    * [Feature completeness is a must for a stable product](#feature-completeness-is-a-must-for-a-stable-product)
+* [Qualities of a new software project](#qualities-of-a-new-software-project)
+    * [Example new feature](#example-new-feature)
+    * [Fail fast and iterate is the key to success in a new project](#fail-fast-and-iterate-is-the-key-to-success-in-a-new-project)
+* [Conclusion](#conclusion)
+
 ## What is a stable software product?
 
 Before we go deeper into the mental makeup for a stable software product let's define what we mean by that. A stable software product is a form of software that has multiple concurrent users and could be made up of numerous subsystems working together. Some of these subsystems can be old but they serve the purpose and make the business money. For example, the public-facing website of an established e-commerce retailer is surely a stable software product. The customers interact with it each day and some customers buy things using it daily. If there is any bug on the critical path of buying a product it would generally be solved within hours if not days. 
