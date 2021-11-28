@@ -11,13 +11,24 @@ renderData:
   title: Posts on Geshan's Blog Page {{ pagination.pageNumber + 1  }}
   description: "More posts on Geshan's Blog, page {{ pagination.pageNumber + 1  }} among many pages"
 ---
+
+<section>
+  <div class="mt-20 max-w-6xl mx-auto pb-8 md:px-4 sm:px-4 px-4">
+    <div class="grid-cols-12 grid">      
+              <div
+          class="col-span-12 md:col-span-12 mx-auto sm:mr-auto">
 {% set postslist = pagination.items | reverse %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist-excerpt.njk" %}
-<ul class="pager">
-    {% if pagination.href.previous %}<li class="previous"><a href="{{ pagination.href.previous }}">←&nbsp;Newer</a></li>{% endif %}
-    <li><a href="/blog/archives">Timeline</a></li>
-    {% if pagination.href.next %}<li class="next"><a href="{{ pagination.href.next }}">Older&nbsp;→</a></li>{% endif %}
-</ul>
-
+        </div>
+<div>
+  <div class="pager">
+    {% if pagination.href.previous %}<button class="previous"><a href="{{ pagination.href.previous }}">←&nbsp;Newer</a></button>{% endif %}
+    <button href="/blog/archives">Timeline</button>
+    {% if pagination.href.next %}<button href="{{ pagination.href.next }}">Older&nbsp;→</button>{% endif %}
+</div>
 <p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>
+</div>
+    </section>
+  </div>
+  

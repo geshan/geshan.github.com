@@ -1,33 +1,64 @@
-<div class="blog-index">
-  {% for post in postslist | reverse %}
-    <article class="post">
-      <header class="page-header">
-      <h2 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
-        <a href="{{ post.url }}">
-          {{ post.data.title }}
-        </a>
-      </h2>
-        <p class="meta text-muted text-uppercase"> 
-          <span class="glyphicon glyphicon-calendar">
-          </span>
-          {% set date = post.date %}
-          {% include "components/posted-date-time.njk" %}
-          . X min read
-        </p>
-      </header>
-      <div class="mt-6 font-reading font-normal text-midblack leading-7">
-        {% excerptMore post %}
+<section>
+  <div class="mt-20 max-w-6xl mx-auto pb-8 md:px-4 sm:px-4 px-4">
+    <div class="grid-cols-12 grid">
+      <div class="col-span-12 md:col-span-8 mb-20">
+        <div>
+          <h1 class="text-7xl font-bold text-darkpurple">Blog Posts</h1>
+          <p class="mt-6 text-midgrey text-2xl font-medium font-leading">
+            I write about software engineering technical articles around programming, best practises and trending tech stacks.
+            <span class="underline text-purple">
+              <a href="#">Subscribe to my newsletter</a>
+            </span>
+            to make sure you don't miss anything.
+          </p>
+        </div>
       </div>
-      <footer>
-        <a class="
-                  flex
-                  items-center
-                  font-semibold
-                  text-purple text-xl
-                  cursor-pointer
-                  mt-4
-        " href="{{ post.url }}">Read post</a>
-      </footer>
-    </article>
-  {% endfor %}
-</div>
+      <div class="col-span-12 md:col-span-7">
+        {% for post in postslist | reverse %}
+          <div class="mb-14">
+            <span class=" background-lightbg mr-2 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1
+                text-md border-gray-300 cursor-pointer hover:border-gray-400 ">
+              nodejs</span>
+            <span class=" background-lightbg mr-2 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1
+                text-md border-gray-300 cursor-pointer hover:border-gray-400 ">
+              javascript</span>
+            <h3 class="font-leading font-bold text-3xl text-darkpurple pt-3">
+              {{ post.data.title }}
+            </h3>
+            <span class="text-lg text-darkgrey mt-1">
+              {% set date = post.date %}
+              {% include "components/posted-date-time.njk" %} . X min read</span>
+            <p class="mt-6 font-reading font-normal text-midblack leading-7">
+              {% excerptMore post %}
+            </p>
+            <a class="
+                                                                          flex
+                                                                          items-center
+                                                                          font-semibold
+                                                                          text-purple text-xl
+                                                                          cursor-pointer
+                                                                          mt-4
+                                                                        " href="{{ post.url }}">Read post<svg class="ml-2" width="20" height="21" viewbox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.8077 3.91786C11.0047 3.72102 11.2717 3.61044 11.5501 3.61044C11.8285 3.61044 12.0955 3.72102 12.2924
+                    3.91786L18.5924 10.2179C18.7893 10.4148 18.8999 10.6818 18.8999 10.9602C18.8999 11.2386 18.7893 11.5057 18.5924
+                    11.7026L12.2924 18.0026C12.0944 18.1938 11.8292 18.2997 11.5539 18.2973C11.2786 18.2949 11.0152 18.1845 10.8205
+                    17.9898C10.6259 17.7951 10.5154 17.5317 10.513 17.2564C10.5106 16.9811 10.6165 16.7159 10.8077 16.5179L15.3154
+                    12.0102H3.1501C2.87162 12.0102 2.60455 11.8996 2.40764 11.7027C2.21072 11.5058 2.1001 11.2387 2.1001 10.9602C2.1001
+                    10.6817 2.21072 10.4147 2.40764 10.2178C2.60455 10.0208 2.87162 9.91021 3.1501 9.91021H15.3154L10.8077 5.40256C10.6109
+                    5.20566 10.5003 4.93863 10.5003 4.66021C10.5003 4.38179 10.6109 4.11477 10.8077 3.91786Z"
+                  fill="#6B48E7"/>
+              </svg>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+              <div
+          class="col-span-12 md:col-span-5 mt-20 mx-auto sm:mr-auto">
+          <!-- advertisment -->
+          <img src="/images/carbon-add.png" alt="carbon advertisment"/>
+        </div>
+    </section>
+  </div>

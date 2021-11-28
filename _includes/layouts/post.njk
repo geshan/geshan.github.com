@@ -38,7 +38,7 @@ templateClass: tmpl-post
               class="
                 background-lightbg
                 mr-2
-                mb-4
+                mb-2
                 rounded
                 border-2
                 bg-gray-100
@@ -58,7 +58,7 @@ templateClass: tmpl-post
               class="
                 background-lightbg
                 mr-2
-                mb-4
+                mb-2
                 rounded
                 border-2
                 bg-gray-100
@@ -79,7 +79,7 @@ templateClass: tmpl-post
       <p class="meta text-muted">
       {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
       </p>
-      <div class="mt-7">
+      <div class="mt-7" id="article-main">
           {{ content | safe }}
       </div>
       <div> 
