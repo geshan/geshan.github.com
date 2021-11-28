@@ -6,6 +6,26 @@ templateClass: tmpl-post
 {% set logoUrl %}{{ "images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %}
 {% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
+    <!-- breadcrumbs -->
+    <div class="mt-12 text-lg max-w-6xl mx-auto md:px-4 sm:px-4 px-0">
+      <ul class="flex items-center">
+        <li class="text-gray-400 pr-1 flex items-center">
+          <a class="hover:cursor-pointer" href="./index.html">Home</a>
+        </li>
+        <li class="flex items-center">
+          <img src="/images/caret-right.svg" alt="caret right" />
+        </li>
+        <li class="text-gray-400 pr-1 flex items-center">
+          <a class="hover:cursor-pointer" href="./lisitng.html">Posts</a>
+        </li>
+        <li class="flex items-center">
+          <img src="/images/caret-right.svg" alt="caret right" />
+        </li>
+        <li class="text-purple pr-1 flex items-center">
+          {{ title }}
+        </li>
+      </ul>
+    </div>
 <article class="hentry">
     <header class="page-header">
     <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
@@ -16,7 +36,7 @@ templateClass: tmpl-post
     <div class="entry-content clearfix">
         {{ content | safe }}
     </div>
-    <footer>
+    <footer> 
         <p class="meta text-muted">
           <span class="glyphicon glyphicon-user"></span>
           <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
