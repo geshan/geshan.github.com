@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/detail.njk
 templateClass: tmpl-post
 ---
 {% set coverImage %}{{ cover or metadata.defaultCoverImage }}{% endset %}
@@ -26,34 +26,87 @@ templateClass: tmpl-post
         </li>
       </ul>
     </div>
-<article class="hentry">
-    <header class="page-header">
-    <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
-    <p class="meta text-muted">
-    {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
-    </p>
-    </header>
-    <div class="entry-content clearfix">
-        {{ content | safe }}
+    <!-- blog article -->
+<div class="mt-12 max-w-6xl mx-auto pb-8 md:px-4 sm:px-4 px-0 relative">
+  <div class="grid-cols-12 grid gap-15">
+
+    <!-- article left -->
+    <div class="col-span-12 md:col-span-7">
+                <!-- bread crumbs -->
+          <div class="flex">
+            <span
+              class="
+                background-lightbg
+                mr-2
+                mb-4
+                rounded
+                border-2
+                bg-gray-100
+                font-semibold
+                text-darkgrey
+                hover:text-purple
+                px-3
+                py-1
+                text-md
+                border-gray-300
+                cursor-pointer
+                hover:border-gray-400
+              "
+              >nodejs</span
+            >
+            <span
+              class="
+                background-lightbg
+                mr-2
+                mb-4
+                rounded
+                border-2
+                bg-gray-100
+                font-semibold
+                text-darkgrey
+                hover:text-purple
+                px-3
+                py-1
+                text-md
+                border-gray-300
+                cursor-pointer
+                hover:border-gray-400
+              "
+              >javascript</span
+            >
+          </div>
+      <h1 class="text-7xl font-bold text-darkpurple pb-3">{{ title }}</h1>
+      <p class="meta text-muted">
+      {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
+      </p>
+      <div class="mt-7">
+          {{ content | safe }}
+      </div>
+      <div> 
+          <p class="meta text-muted">
+            <span class="glyphicon glyphicon-user"></span>
+            <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
+            <span class="glyphicon glyphicon-calendar"></span>
+            {% include "components/posted-date-time.njk" %}
+            {% include "components/share.njk" %}
+          </p>
+          <ul class="meta text-muted pager">
+              {% if prevPost.url %}
+                <li class="previous"><a href="{{ prevPost.url }}" title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
+              {% endif %}
+              {% if nextPost.url %}
+                <li class="next"><a href="{{ nextPost.url }}" title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
+              {% endif %}
+          </ul>
+      </div>
+      <div>
+        {% include "components/disqus.njk" %}
+      </div>
     </div>
-    <footer> 
-        <p class="meta text-muted">
-          <span class="glyphicon glyphicon-user"></span>
-          <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
-          <span class="glyphicon glyphicon-calendar"></span>
-          {% include "components/posted-date-time.njk" %}
-          {% include "components/share.njk" %}
-        </p>
-        <ul class="meta text-muted pager">
-            {% if prevPost.url %}
-              <li class="previous"><a href="{{ prevPost.url }}" title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
-            {% endif %}
-            {% if nextPost.url %}
-              <li class="next"><a href="{{ nextPost.url }}" title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
-            {% endif %}
-        </ul>
-    </footer>
-</article>
-<section>
-    {% include "components/disqus.njk" %}
-</section>
+    <!-- article right -->
+    <div class="col-span-12 md:col-span-5 mt-20 mx-auto sm:mr-auto">
+      <!-- advertisment -->
+      <img src="/images/carbon-add.png" alt="carbon advertisment" />
+    </div>
+  </div>
+</div>
