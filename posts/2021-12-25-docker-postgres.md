@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Postgres with Docker and Docker compose a step by step guide for beginners"
+title: Postgres with Docker and Docker compose a step-by-step guide for beginners
 date: 2021-12-25T22:37:55.000+11:00
 comments: true
 tags:
 - Software Engineering
 - Docker
 cover: "/images/docker-postgres/01docker-postgres.jpg"
-pagetitle: "Postgres with Docker and Docker compose a step by step guide for beginners"
-description: "Learn how to setup and run PostgreSQL with docker and docker-compose in this step by step tutorial"
+pagetitle: Postgres with Docker and Docker compose a step-by-step guide for beginners
+description: Learn how to set up and run PostgreSQL with docker and docker-compose
+  in this step-by-step tutorial. It also shows how to add Postgres to an existing
+  project.
 keywords: docker postgres, postgres docker, docker postgresql, postgresql docker
 
 ---
@@ -184,7 +186,7 @@ volumes:
 
 This file looks somewhat similar to the above docker-compose file but below are the main differences.
 
-The first one is, here we use `- ./db/init.sql:/docker-entrypoint-initdb.d/create_tables.sql` on line number 13. We are doing this to create the `quotes` table and fill up the data as seen in this [SQL file](https://github.com/geshan/nodejs-posgresql/blob/master/db/init.sql). This is the way to run [initialization scripts](https://github.com/docker-library/docs/tree/master/postgres#initialization-scripts) for Postgres with docker. This is an idempotent operation, if the data directory is filled up the `init.sql` file won't be executed again to prevent data overriding.
+The first one is, here we use `- ./db/init.sql:/docker-entrypoint-initdb.d/create_tables.sql` on line number 13. We are doing this to create the `quotes` table and fill up the data as seen in this [SQL file](https://github.com/geshan/nodejs-posgresql/blob/master/db/init.sql). This is the way to run [initialization scripts](https://github.com/docker-library/docs/tree/master/postgres#initialization-scripts) for Postgres with docker. This is an idempotent operation, if the data directory is filled up the `init.sql` file won't be executed again to prevent data overriding. If we want to force override the data we will need to delete the docker volume after a `docker volume inspect`.
 
 Next, we define a new service called `api` which builds the local `Dockerfile` with target `production` and names it `quotes-api`. After that, it has a `depends_on` definition on the `db` container which is our Postgres container. 
 
