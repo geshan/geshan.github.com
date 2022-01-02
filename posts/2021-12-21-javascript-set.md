@@ -16,6 +16,8 @@ JavaScript Sets are a new type of object (with ES6) that allows creating a colle
 
 <img class="center" loading="lazy" src="/images/javascript-set/01javascript-set.jpg" title="JavaScript Set a how to use it guide for beginners" alt="JavaScript Set a how to use it guide for beginners">
 
+<!-- more -->
+
 ## Table of Contents
 
   * [Table of Contents](#table-of-contents)
