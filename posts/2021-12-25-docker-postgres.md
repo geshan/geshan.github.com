@@ -20,6 +20,8 @@ Running Postgres with Docker and docker-compose makes it very easy to run and ma
 
 <img class="center" loading="lazy" src="/images/docker-postgres/01docker-postgres.jpg" title="Use Postgres with Docker and docker-compose easily" alt="Use Postgres with Docker and docker-compose easily">
 
+<!-- more -->
+
 ## Table of contents
 
 * [Why use Postgres with docker for local development](#why-use-postgres-with-docker-for-local-development)
