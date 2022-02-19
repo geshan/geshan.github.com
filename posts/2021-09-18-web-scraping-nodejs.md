@@ -160,7 +160,7 @@ All the working code is available as a [Github repository](https://github.com/ge
 
 In addition to scraping just one page, we could get all the links and loop through (or even better promise.all) the pages but at that point, it would be a full-on spider than just web page scraping.
 
-Another alternative to Puppeteer is [Playwright](https://playwright.dev/). It is similar to puppeteer and has a similar API, the advantage is it supports multiple [browsers](https://playwright.dev/docs/why-playwright#support-for-all-browsers) like Firefox and Safari. On top of it, you can also use other languages like [Python](https://playwright.dev/python/docs/intro/), [Java](https://playwright.dev/java/docs/intro/) and [.Net](https://playwright.dev/dotnet/docs/intro/) not just javascript. The headless recorder plugin can generate a good starting script for both Puppeteer and Playwright so you can get a very good starting point if you are not well versed in writing such automation scripts.
+Another alternative to Puppeteer is [Playwright](https://playwright.dev/). It is similar to puppeteer and has a similar API, the advantage is it supports multiple [browsers](https://playwright.dev/docs/why-playwright#support-for-all-browsers) like Firefox and Safari. The headless recorder plugin can generate a good starting script for both Puppeteer and Playwright so you can get a very good starting point if you are not well versed in writing such automation scripts.
 
 ## Conclusion
 
