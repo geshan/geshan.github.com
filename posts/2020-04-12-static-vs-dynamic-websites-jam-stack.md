@@ -69,7 +69,7 @@ On one hand, the static website seems to be simple but they are restrictive and 
 
 > With a JAM stack website proprely configured with a [headless CMS](https://www.sanity.io/blog/headless-cms-explained), adding or editing content would be easy and relatively fast.
 
-[Take shape](https://www.takeshape.io/) (taken from JAMStack.org [examples](https://jamstack.org/examples/)) is a JAM Stack website example, hosted on Amazon S3.
+[Take shape](https://www.takeshape.io/) (taken from JAMStack.org examples) is a JAM Stack website example, hosted on Amazon S3.
 
 ### JAM stack ingredients
 
