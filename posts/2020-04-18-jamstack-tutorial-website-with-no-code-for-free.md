@@ -331,7 +331,7 @@ Please check out the "Media" menu on the sidebar below the "Site" title and play
 Here are some of the further steps you can take to enhance your new web presence:
 
 1. Please read through the [Forestry Product Tour](https://forestry.io/docs/quickstart/tour/) to know other things like adding an image from the media library and doing other changes. You will need to fiddle around with Forestry. It would be great to check the Forestry documentation for [Managing Content](https://forestry.io/docs/editing/) and [Media Library](https://forestry.io/docs/editing/media-library/), it is easy.
-1. You can get a free top-level domain like a .tk, .ml, .cf or .gq for free. So you can have **mywebsite.gq** free from [Freenom](https://www.freenom.com/). If you want a .com try another domain registrar like [NameCheap](https://www.namecheap.com/).
+1. You can get a free top-level domain like a .tk, .ml, .cf or .gq for free. So you can have **mywebsite.gq** free from [Freenom](https://www.freenom.com/en/index.html?lang=en). If you want a .com try another domain registrar like [NameCheap](https://www.namecheap.com/).
 1. You can then configure [Custom Domain in netlify](https://docs.netlify.com/domains-https/custom-domains/) to get it working on the domain name you registered.
 1. If you are serious about your website or blog try to optimize it better for SEO, for this you will need some coding and help from someone who knows Go lang and has worked with Hugo.
 1. If you want to move out from medium to your JAMstack website you can try Stackbit [medium importer](https://github.com/stackbit/stackbit-medium-importer).
