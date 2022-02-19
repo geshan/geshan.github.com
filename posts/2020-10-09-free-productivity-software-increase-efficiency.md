@@ -39,7 +39,7 @@ Peter Drucker once [wrote](https://hbr.org/2010/10/what-cant-be-measured), “Wh
 
 > If you can’t measure it, you can’t improve it.
 
-Without any doubts, the same thing applies to your time. If you cannot measure where you spend your time you can never improve and manage it. Time is the most scarce resource. You could earn back money if you lost it but if time has passed it can’t be gained back. So start tracking your time.
+Without any doubt, the same thing applies to your time. If you cannot measure where you spend your time you can never improve and manage it. Time is the most scarce resource. You could earn back money if you lost it but if time has passed it can’t be gained back. So start tracking your time.
 
 To track your time, I would suggest manual tracking with the Toggl track software. Toggl has recently [diversified](https://toggl.com/blog/toggl-rebrand-toggltrack) and rebranded the time tracking as [Toggl Track](https://toggl.com/track/).
 
@@ -47,7 +47,7 @@ To track your time, I would suggest manual tracking with the Toggl track softwar
 
 The idea is simple whenever you start working on something, you start the timer. You can name the task, pick a project, client, and add tags. When you finish stop the timer. This might sound mundane in the beginning. Over time you will get a gold mine of data on where your time was spent.
 
-I use a dedicated [desktop](https://toggl.com/track/toggl-desktop/) and a [mobile](https://toggl.com/track/mobile-time-tracking-app/) app. You can get started with the [chrome extension](https://chrome.google.com/webstore/detail/toggl-track-productivity/oejgccbfbmkkpaidnkphaiaecficdnfn) or the [web app](https://toggl.com/track/login/) if a dedicated app feels like an early commitment. You can easily login with your Google Account and get started in seconds.
+I use a dedicated [desktop](https://toggl.com/track/toggl-desktop/) and a [mobile](https://toggl.com/track/mobile-time-tracking-app/) app. You can get started with the [chrome extension](https://chrome.google.com/webstore/detail/toggl-track-productivity/oejgccbfbmkkpaidnkphaiaecficdnfn) or the [web app](https://toggl.com/track/login/) if a dedicated app feels like an early commitment. You can easily log in with your Google Account and get started in seconds.
 
 > Trust me, you will not regret tracking time. It can even be used for a basis to discuss achievement in your performance review.
 
@@ -57,7 +57,7 @@ If you want something to work automatically in the background to start with. You
 
 ### World Time Buddy
 
-Picture this, you need to schedule a meeting with a friend. You are in Sydney and your friend lives in Dubai. You start wondering should I do it at 8 AM or 5 PM Sydney time. Here is your answer: it is best to do it at 5 PM which is 10 AM in Dubai, how do I know this? Because [World Time Buddy](https://www.worldtimebuddy.com/) free productivity software gives us an easy to use interface to know this critical information.
+Picture this, you need to schedule a meeting with a friend. You are in Sydney and your friend lives in Dubai. You start wondering should I do it at 8 AM or 5 PM Sydney time. Here is your answer: it is best to do it at 5 PM which is 10 AM in Dubai, how do I know this? Because [World Time Buddy](https://www.worldtimebuddy.com/) free productivity software gives us an easy-to-use interface to know this critical information.
 
 <img class="center" loading="lazy" src="/images/free-productivity-software/03world-time-buddy.jpg" title="What time will it be in future in that city - world time buddy helps you with it" alt="World time buddy website">
 
@@ -89,7 +89,7 @@ Imagine this, You are reading a long document and thinking over and over again t
 
 <img class="center" loading="lazy" src="/images/free-productivity-software/05miro.jpg" title="Work collaboratively for a distributed team in a visual form with Miro" alt="Miro website">
 
-The free [plan](https://miro.com/pricing/) only gives you 3 boards. You can easily login with Google account and start creating real-time collaborative, visually appealing artifacts.
+The free [plan](https://miro.com/pricing/) only gives you 3 boards. You can easily log in with a Google account and start creating real-time collaborative, visually appealing artifacts.
 
 The [templates](https://miro.com/templates/) are the heart of Miro. I frequently use the [mind map](https://miro.com/templates/mind-map/) template to explain some concepts. The clarity a mind map provides cannot be achieved by just text. If you are \[starting a new startup\] the [Customer journey map](https://miro.com/templates/customer-journey-map/) template can be used to explore uncharted territories.
 
@@ -101,7 +101,7 @@ If you just want to use the mind map diagrams I would suggest having a look at [
 
 ### I Love PDF
 
-You want to upload that important PDF form on the website. You upload it but it gives you a size limit error. You can again go back to the scanner and scan the document in low resolution but there is an easier way. Just use [I Love PDF](https://www.ilovepdf.com/)’s compress PDF option and your 5 MB PDF is compressed to 3 MB file.
+You want to upload that important PDF form on the website. You upload it but it gives you a size limit error. You can again go back to the scanner and scan the document in low resolution but there is an easier way. Just use [I Love PDF](https://www.ilovepdf.com/)’s compress PDF option and your 5 MB PDF is compressed to a 3 MB file.
 
 <img class="center" loading="lazy" src="/images/free-productivity-software/06ilovepdf.jpg" title="Compress, split, merge PDF files with ILovePDf" alt="I Love PDF website">
 
@@ -115,7 +115,7 @@ I think ILovePDF is one of the best free productivity software out there. If you
 
 There are some other free productivity software that I find very useful, below are three of those:
 
-* [Microsoft todo](https://todo.microsoft.com) - My favorite todo list [Wunderlist](https://www.wunderlist.com/) converted to Microsoft todo. To my surprise, I have started to like it.
+* [Microsoft todo](https://todo.microsoft.com) - My favorite to-do list Wunderlist converted to Microsoft todo. To my surprise, I have started to like it.
 * [Buffer](https://buffer.com) - Buffer Publish is one of the easiest ways to schedule your social media posts. On the free account, you can queue up to 10 posts for 1 user over 3 social accounts.
 * [Photopea](https://www.photopea.com/) - I have used photoshop in the distant past and can do some image resizing these days. This is where Photopea helps a lot.
 
