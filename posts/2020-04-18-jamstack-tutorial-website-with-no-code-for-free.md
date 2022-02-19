@@ -334,7 +334,7 @@ Here are some of the further steps you can take to enhance your new web presence
 1. You can get a free top-level domain like a .tk, .ml, .cf or .gq for free. So you can have **mywebsite.gq** free from [Freenom](https://www.freenom.com/). If you want a .com try another domain registrar like [NameCheap](https://www.namecheap.com/).
 1. You can then configure [Custom Domain in netlify](https://docs.netlify.com/domains-https/custom-domains/) to get it working on the domain name you registered.
 1. If you are serious about your website or blog try to optimize it better for SEO, for this you will need some coding and help from someone who knows Go lang and has worked with Hugo.
-1. If you want to move out from medium to your JAMstack website you can try Stackbit [medium import](https://www.stackbit.com/medium/).
+1. If you want to move out from medium to your JAMstack website you can try Stackbit [medium importer](https://github.com/stackbit/stackbit-medium-importer).
 
 ## Caveats
 
