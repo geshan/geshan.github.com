@@ -8,8 +8,10 @@ tags:
 - Docker
 cover: "/images/mysql-docker-compose/01mysql-docker-compose.jpg"
 pagetitle: How to use MySQL with Docker and Docker compose a beginners guide
-description: Learn how to set up and run MySQL with docker and docker-compose in this step-by-step tutorial. It also shows how to add MySQL to an existing project.
+description: Learn how to set up and run MySQL with docker and docker-compose in this
+  step-by-step tutorial. It also shows how to add MySQL to an existing project.
 keywords: docker mysql, mysql docker, docker compose mysql, mysql docker compose
+
 ---
 MySQL is one of the [most popular](https://db-engines.com/en/system/MySQL) relational databases of all time. Using MySQL with Docker and docker-compose makes it very easy and fast to test out any changes in any application using MySQL as the database. In this tutorial, we will detail how to use MySQL with Docker and docker-compose step-by-step keeping things easy to comprehend. Let’s get rolling!
 
@@ -247,7 +249,7 @@ volumes:
 ```
 This docker-compose.yml file looks like a longer version of the above file. The main differences include:
 
-Adding the API service which uses the `Dockerfile` included in the project. We will build the `API` service with the target production. As per your interest, you can read more about [docker multi-stage builds](blog/2019/11/how-to-use-docker-multi-stage-build/) which explains the use of build target.
+Adding the API service which uses the `Dockerfile` included in the project. We will build the `API` service with the target production. As per your interest, you can read more about [docker multi-stage builds](/blog/2019/11/how-to-use-docker-multi-stage-build/) which explains the use of build target.
 
 Next up, we indicate to docker-compose that the API depends on the DB container. After that, we map the host port `3000` to the container port `3000` as the Express.js app with Node.js runs on port `3000`.
 
