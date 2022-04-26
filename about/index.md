@@ -11,7 +11,7 @@ description: I am Geshan. I am a software engineer, with more than a decade of s
   engineering experience. I have been blogging since 2007.
 
 ---
-Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia serving THE ICONIC as a lead software engineer.
+Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia working at SimplyWallSt as a senior software engineer.
 
 <img class="center" src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 
@@ -23,7 +23,7 @@ I was born and lived the majority of my life in Kathmandu, Nepal. I have lived a
 
 ## Day to day
 
-Day to day, I use mainly Javascript (Node.js) and PHP with MySQL database to translate business requirements into reliable, [scalable](/blog/2020/12/software-scalability/), and [resilient software](/blog/2020/12/software-resilience/) systems.
+Day to day, I use mainly Javascript (Typescript/Node.js) and PHP with MySQL/Postgres database to translate business requirements into reliable, [scalable](/blog/2020/12/software-scalability/), and [resilient software](/blog/2020/12/software-resilience/) systems.
 
 ## Why This blog?
 
