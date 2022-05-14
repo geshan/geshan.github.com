@@ -8,13 +8,15 @@ tags:
 - Docker
 cover: "/images/docker-commands/01docker-commands.jpg"
 pagetitle: 10 useful Docker commands to get things done with a real-life example
-description: Learn how to use 10 useful docker commands in this intro guide like run, exec, logs and cp to get more done with Docker.
-keywords: docker command, docker commands, docker run, docker exec, docker logs, docker images, docker ps
+description: Learn how to use 10 useful docker commands in this intro guide like run,
+  exec, logs and cp to get more done with Docker.
+keywords: docker command, docker commands, docker run, docker exec, docker logs, docker
+  images, docker ps
 
 ---
 Docker packages software applications into containers making them easy to build, test, and ship (deploy). In this post we will look into some useful docker commands you should know about with real-life examples. Let’s get rolling!
 
-<img class="center" loading="lazy" src="/images/docker-commands/01docker-commands.jpg" title="Append contents to a file using Node.js" alt="Append contents to a file using Node.js">
+<img class="center" loading="lazy" src="/images/docker-commands/01docker-commands.jpg" title="10 useful docker commands" alt="10 useful docker commands">
 
 <!-- more -->
 
