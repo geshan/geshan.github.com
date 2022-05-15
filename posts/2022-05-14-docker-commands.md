@@ -165,7 +165,7 @@ One useful command to remove intermediate images or images that were not success
 ```bash
 docker rmi -f $(docker images -f "dangling=true" -q)
 ```
-This uses the `docker rmi` command used to remove images with docker images that are dangling, meaning they were not pulled or built successfully.
+This uses the `docker rmi` command used to remove images with docker images that are dangling, meaning they were not pulled or built successfully. The above command is similar to `docker image prune -a`. You can read more aout docker image prune on it's official [docs](https://docs.docker.com/engine/reference/commandline/image_prune/). It is simpler and platform agnostic.
 
 Now, as we know the image is pulled and available locally we can run the MySQL image in the subsequent section.
 
