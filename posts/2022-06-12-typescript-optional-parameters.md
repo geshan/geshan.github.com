@@ -10,10 +10,12 @@ tags:
 - Javascript
 cover: "/images/typescript-optional-parameters/01typescript-optional-parameters.jpg"
 pagetitle: How to use TypeScript optional parameters with example code
-description: Learn how to use optional paramters in typescript function with a simple yet useful example in this post.
-keywords: typescript optional paramaters, optional parameters typescript, typescirpt function optional parameters, optional paramters in typescript
----
+description: Learn how to use optional paramters in typescript function with a simple
+  yet useful example in this post.
+keywords: typescript optional paramaters, optional parameters typescript, typescirpt
+  function optional parameters, optional paramters in typescript
 
+---
 TypeScript is a superset of JavaScript that has climbed up in [popularity](https://trends.google.com/trends/explore?date=today%205-y&q=%2Fm%2F0n50hxv) in the past few years. In this post, we will learn how to use optional parameters in Typescirpt functions, let’s get started!
 
 <img class="center" loading="lazy" src="/images/typescript-optional-parameters/01typescript-optional-parameters.jpg" title="TypeScript optional parameters with example code" alt="TypeScript optional parameters with example code">
@@ -80,6 +82,8 @@ console.log(getFullName('John', 'Doe'));
 console.log(getFullName('John', 'Doe', 'MiddleName'));
 ```
 
+> The `?` after the middle name indicates the TS compiler it is an optional parameter.
+
 We will also need to create a `tsconfig.json` file with the following contents:
 
 ```json
@@ -141,4 +145,8 @@ There is a couple of extra spaces when only the first name and last name are pri
 
 ## Conclusion
 
-In this useful guide, we saw how to use optional parameters in Typescript function with a simple yet practical example. I hope it has helped you unravel how optional and default parameters work in TypeScript, keep learning!
+In this useful guide, we saw how to use optional parameters in Typescript function with a simple yet practical example. 
+
+> I hope it has helped you unravel how optional and default parameters work in TypeScript, 
+
+keep learning!
