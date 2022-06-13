@@ -147,6 +147,6 @@ There is a couple of extra spaces when only the first name and last name are pri
 
 In this useful guide, we saw how to use optional parameters in Typescript function with a simple yet practical example. 
 
-> I hope it has helped you unravel how optional and default parameters work in TypeScript, 
+> I hope it has helped you unravel how optional and default parameters work in TypeScript. 
 
-keep learning!
+Keep learning!
