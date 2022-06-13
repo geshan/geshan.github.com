@@ -16,7 +16,7 @@ keywords: typescript optional paramaters, optional parameters typescript, typesc
   function optional parameters, optional paramters in typescript
 
 ---
-TypeScript is a superset of JavaScript that has climbed up in [popularity](https://trends.google.com/trends/explore?date=today%205-y&q=%2Fm%2F0n50hxv) in the past few years. In this post, we will learn how to use optional parameters in Typescirpt functions, let’s get started!
+TypeScript is a superset of JavaScript that has climbed up in [popularity](https://trends.google.com/trends/explore?date=today%205-y&q=%2Fm%2F0n50hxv) in the past few years. In this post, we will learn how to use optional parameters in TypeScript functions, let’s get started!
 
 <img class="center" loading="lazy" src="/images/typescript-optional-parameters/01typescript-optional-parameters.jpg" title="TypeScript optional parameters with example code" alt="TypeScript optional parameters with example code">
 
@@ -34,10 +34,10 @@ TypeScript is a superset of JavaScript that has climbed up in [popularity](https
 
 For this tutorial we will use a simple yet useful example of getting the full name, the rules are:
 
-* If the middle name is provided full name has middle name included
-* In case the name has only first and last name the full name will not have middle name included.
+* If the middle name is provided full name has the middle name included
+* In case the name has only first and last name the full name will not have the middle name included.
 
-It can be coded as below in both JavaScript and TypeScirpt as we will see in the next section as well as how optional parameters make it easy to get the desired output minimzing errors in TypeScript.
+It can be coded as below in both JavaScript and TypeScirpt as we will see in the next section as well as how optional parameters make it easy to get the desired output minimizing errors in TypeScript.
 
 ## Optional parameters in JavaScirpt
 
@@ -65,7 +65,7 @@ John Doe
 John MiddleName Doe
 ```
 
-So in ES6 Javascript there isn’t a way to make a function parameter required, this is how JavaScript works as it is a bit too flexible. That is a reason why we can use TypeScript to add types as well as make the function parameters required, let’s look at the same example with TypeScript. We can use [nodemon](/blog/2021/02/nodemon/) to compile and execute the script on save. We can also use [docker with Node.js](​​/blog/2020/11/nodejs-with-docker/) to deploy the compiled code easily.
+So in ES6 Javascript, there isn’t a way to make a function parameter required, this is how JavaScript works as it is a bit too flexible. That is a reason why we can use TypeScript to add types as well as make the function parameters required, let’s look at the same example with TypeScript. We can use [nodemon](/blog/2021/02/nodemon/) to compile and execute the script on save. We can also use [docker with Node.js](​​/blog/2020/11/nodejs-with-docker/) to deploy the compiled code easily.
 
 ## Optional parameters with TypeScript
 
@@ -111,9 +111,9 @@ John MiddleName Doe
 Let us quickly go through what the above script does:
 
 1. The `getFullName` function takes 3 parameters, `firstName`, `lastName` and `middleName` where only `middleName` is optional.
-1. If there is `middleName` is passed the function will print the full name with middle name else it will only be first name and last name.
+1. If there is `middleName` is passed the function will print the full name with the middle name else it will only be first name and last name.
 1. Line 6 if uncommented will stop the compilation process with the error `An argument for 'lastName' was not provided.` as the last name is a required parameter by default.
-1. Line 7 and 8 will work where the first valid call will log `John Doe` without middle name and the second call will log `John MiddleName Doe` with the optional parameter of middle name passed.
+1. Line 7 and 8 will work where the first valid call will log `John Doe` without a middle name and the second call will log `John MiddleName Doe` with the optional parameter of the middle name passed.
 
 You can try the above code in the [TypeScript playground](https://www.typescriptlang.org/play) and fiddle around with it or use [this](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAcwKZQGIgDbYHICGAtqgBTAwBOAzlISQFyK2UxjIA0i2Bt9qTFm06IiMACbjsqfgH5BUVuwCUiAN4AoRIggJaiULn6IAvKIlSZxVIlmIABgBI1FGnWsBfRM7GTp-L2cePk97RCYnFyoQkkC1YPdY+wBuRC1ESnQQSiRDfGtkjQ8NDQB6Ut0wajhpADpsOGRSNEwcfJJSAHIAKTgACzBO5WVU8p04IgAHGGlEVEpKOEpEAFpEAEEkAkpkEBIwKAMlxE6E-k7EAHdeRDA4Q8nFgDcJVHFajUrquoamlqwjNYur0Bp0uJ0ACJwVBDEafPQ1VD1RrNdAA9pkHr9QbgqEw8EAWQs-mssMKQA) one.
 
@@ -132,7 +132,7 @@ console.log(getFullName('John', 'Doe'));
 console.log(getFullName('John', 'Doe', 'MiddleName'));
 ```
 
-The above function looks pretty similar the main different is, the `middleName` is set as a default value of empty stirng if not provided. This has a similar output as seen below:
+The above function looks pretty similar the main difference is, that the `middleName` is set as a default value of an empty string if not provided. This has a similar output as seen below:
 
 
 ```bash
@@ -145,7 +145,7 @@ There is a couple of extra spaces when only the first name and last name are pri
 
 ## Conclusion
 
-In this useful guide, we saw how to use optional parameters in Typescript function with a simple yet practical example. 
+In this useful guide, we saw how to use optional parameters in the TypeScript function with a simple yet practical example.
 
 > I hope it has helped you unravel how optional and default parameters work in TypeScript. 
 
