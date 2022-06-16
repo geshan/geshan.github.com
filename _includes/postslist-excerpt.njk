@@ -1,4 +1,4 @@
-<div class="blog-index">
+<div class="blog-index md:w-8/12 w-11/12 mx-auto">
   {% for post in postslist | reverse %}
     <article class="post">
       <header class="page-header">
@@ -15,7 +15,7 @@
           . X min read
         </p>
       </header>
-      <div class="mt-6 font-reading font-normal text-midblack leading-7">
+      <div class="mt-6 font-reading font-normal text-midblack leading-7 ">
         {% excerptMore post %}
       </div>
       <footer>

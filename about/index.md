@@ -7,14 +7,18 @@ eleventyNavigation:
   order: "3"
 date: 2021-03-24T12:20:00.000+00:00
 cover: "/images/geshan.jpg"
-description: I am Geshan. I am a software engineer, with more than a decade of software
+description:
+  I am Geshan. I am a software engineer, with more than a decade of software
   engineering experience. I have been blogging since 2007.
-
 ---
+
+<div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80'>
+<p class='text-2xl px-4 my-auto text-white '>
 Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia serving THE ICONIC as a lead software engineer.
-
-<img class="center" src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
-
+</p>
+<img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
+</div>
+<div class='mt-10'>
 I have a keen interest in REST architecture, microservices, and cloud computing. I am a language-agnostic software engineer who believes the value provided to the business is more important than the choice of language or framework.
 
 ## Consciously evolving
@@ -47,12 +51,12 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 [AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 50+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 1100 jobs listed. Its USPs include:
 
-* Job description summary for easy reading
-* Tag job as non-technical by using external categorization service
-* Saved jobs
-* Applied jobs
-* Shows if the company is known to sponsor work visa or not
-* Faceted search (search by multiple departments or work type)
+- Job description summary for easy reading
+- Tag job as non-technical by using external categorization service
+- Saved jobs
+- Applied jobs
+- Shows if the company is known to sponsor work visa or not
+- Faceted search (search by multiple departments or work type)
 
 This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in 2018.
 
@@ -60,11 +64,11 @@ This side project has been a joint effort of more than two dozen people. I thank
 
 A list of some of the articles I have written outside of this blog:
 
-* [How to send emails with Node.js using SendGrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/ "How to send emails with Node.js using SendGrid") - LogRocket, 2020
-* [Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX") - LogRocket, 2020
-* [Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io") - Fly.io, 2019
-* [Tail logs from multiple Kubernetes pods the easy way](https://theiconic.tech/tail-logs-from-multiple-kubernetes-pods-the-easy-way-71401b84d7f "Tail logs from multiple Kubernetes pods the easy way") - THE ICONIC tech blog, 2019
-* [Naming your microservices needs to be trivial, not cryptic](https://theiconic.tech/naming-your-microservices-needs-to-be-trivial-not-cryptic-288902e800e1 "Naming your microservices needs to be trivial, not cryptic") - THE ICONIC tech blog, 2018
+- [How to send emails with Node.js using SendGrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/ "How to send emails with Node.js using SendGrid") - LogRocket, 2020
+- [Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX") - LogRocket, 2020
+- [Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io") - Fly.io, 2019
+- [Tail logs from multiple Kubernetes pods the easy way](https://theiconic.tech/tail-logs-from-multiple-kubernetes-pods-the-easy-way-71401b84d7f "Tail logs from multiple Kubernetes pods the easy way") - THE ICONIC tech blog, 2019
+- [Naming your microservices needs to be trivial, not cryptic](https://theiconic.tech/naming-your-microservices-needs-to-be-trivial-not-cryptic-288902e800e1 "Naming your microservices needs to be trivial, not cryptic") - THE ICONIC tech blog, 2018
 
 ## Feedback from colleagues
 
@@ -126,20 +130,22 @@ I have always strived to have a positive impact on the places I have work and th
 >
 > Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and posses great presentational skills.
 
-***
+---
 
 ## I am also
 
-* running this blog since 2007 -- how many years? do the math on your own ;). It is currently [11ty](https://www.11ty.dev/ "11ty or Eleventy").
-* a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
-* a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
-* mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
-* and recently SEO rookie :)
+- running this blog since 2007 -- how many years? do the math on your own ;). It is currently [11ty](https://www.11ty.dev/ "11ty or Eleventy").
+- a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
+- a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
+- mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
+- and recently SEO rookie :)
 
 ## Follow Me/this blog
 
-* You can find me posting techy things on [Twitter](https://twitter.com/geshan), [Linked In](https://linkedin.com/in/geshan), and [Facebook page](https://facebook.com/geshanblog) for this blog.
-* You can follow this blog on [Telegram](https://t.me/geshanblog) too.
-* I also happen to be on [Github](https://github.com/geshan) and [Stack Overflow](https://stackoverflow.com/users/112849/geshan).
+- You can find me posting techy things on [Twitter](https://twitter.com/geshan), [Linked In](https://linkedin.com/in/geshan), and [Facebook page](https://facebook.com/geshanblog) for this blog.
+- You can follow this blog on [Telegram](https://t.me/geshanblog) too.
+- I also happen to be on [Github](https://github.com/geshan) and [Stack Overflow](https://stackoverflow.com/users/112849/geshan).
 
 You can reach me by email at geshan\[at\]gmail\[dot\]com. I am also open to link exchanges for this blog :).
+
+</div>
