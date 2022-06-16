@@ -14,10 +14,14 @@ renderData:
 {% set postslist = pagination.items | reverse %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist-excerpt.njk" %}
-<ul class="pager">
-    {% if pagination.href.previous %}<li class="previous"><a href="{{ pagination.href.previous }}">←&nbsp;Newer</a></li>{% endif %}
-    <li><a href="/blog/archives">Timeline</a></li>
-    {% if pagination.href.next %}<li class="next"><a href="{{ pagination.href.next }}">Older&nbsp;→</a></li>{% endif %}
+<div class='pager-container md:w-8/12 w-11/12 mx-auto mt-4 '>
+<ul class="pager flex content-center justify-center ">
+    {% if pagination.href.previous %}<li class="previous list-none mr-3 inline-block"><a href="{{ pagination.href.previous }}" class='bg-purple bg-opacity-80 hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 rounded-md text-white text-justify' >←&nbsp;Newer</a></li>{% endif %}
+    <li class='list-none mr-3 inline-block' ><a href="/blog/archives" class='bg-purple bg-opacity-80 hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 rounded-md text-white text-justify' >Timeline</a></li>
+    {% if pagination.href.next %}<li class="next list-none mr-3 inline-block "><a href="{{ pagination.href.next }}"
+     class='bg-purple bg-opacity-80 hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 rounded-md text-white text-justify'>Older&nbsp;→</a></li>{% endif %}
 </ul>
+<p class='mt-16'>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>
+</div>
 
-<p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>
+
