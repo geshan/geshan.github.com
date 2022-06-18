@@ -31,13 +31,13 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               {%- for entry in collections.all | eleventyNavigation %}
                 <a href="{{ entry.url | url }}" class="
-                                                                                            text-midgrey
+                                                                                          
                                                                                             px-3
                                                                                             py-2
                                                                                             text-lg
                                                                                             hover:text-purple
                                                                                             font-leading font-bold
-                                                                                            {% if entry.url == page.url %} active{% endif %}
+                                                                                            {% if entry.url == page.url %} text-purple {% else %} text-midgrey{% endif %}
                                                                                           " aria-current="page">{{ entry.title }}</a>
               {%- endfor %}
             </div>
