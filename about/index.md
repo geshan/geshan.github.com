@@ -71,12 +71,14 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 <span class='text-darkpurple underline underline-offset-4 font-semibold'>[AU Tech Jobs](https://autechjobs.ml/)</span> is a tech job aggregator that collects jobs from 50+ companies. Currently, the <span class='text-darkpurple underline underline-offset-4 font-semibold'>[app](https://app.autechjobs.ml/)</span> has over 1100 jobs listed. Its USPs include:
 
-- Job description summary for easy reading
-- Tag job as non-technical by using external categorization service
-- Saved jobs
-- Applied jobs
-- Shows if the company is known to sponsor work visa or not
-- Faceted search (search by multiple departments or work type)
+<ul class='list-disc pl-5'>
+  <li>Job description summary for easy reading</li>
+  <li>Tag job as non-technical by using external categorization service</li>
+  <li>Saved jobs</li>
+  <li>Applied jobs</li>
+  <li>Shows if the company is known to sponsor work visa or not</li>
+  <li>Faceted search (search by multiple departments or work type)</li>
+</ul>
 
 This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship)</span> GitHub repo I started in 2018.
 
