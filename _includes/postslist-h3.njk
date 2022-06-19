@@ -12,7 +12,7 @@
                         <time datetime="{{ date | getSitemapDate }}" data-updated="true">
                             <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
                                 {{ post.date | displayDate }} |
-                                (about a {{ helpers.getReadingTime(post.templateContent) }} minute read)
+                                {{ helpers.getReadingTime(post.templateContent) }} minute read
                             </time>
                         </time>
                         
