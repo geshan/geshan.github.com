@@ -101,7 +101,8 @@ A list of some of the articles I have written outside of this blog:
 
 I have always strived to have a positive impact on the places I have work and the people I work with. Some feedback I have received include:
 
-<div>
+<div class=" bg-gray-100 rounded-md mt-2 flex flex-col items-center justify-center px-5 py-5">
+<div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Max Antonov, Product Manager @ THE ICONIC - 2020</h2>
 
@@ -112,7 +113,7 @@ I have always strived to have a positive impact on the places I have work and th
 > Geshan works hard to ensure his expertise stays relevant and that he's accomplishing his work in the best way possible.
 
 </div>
-<div>
+<div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Mohammad (Moe) Torkainfar, Software Engineer @ THE ICONIC - 2020</h2>
 
@@ -123,14 +124,14 @@ I have always strived to have a positive impact on the places I have work and th
 > Above all, his communication skills are incredible and I was impressed with his ability to move things forward, even if the issue depends on many things. Any person would be lucky to work with him and he earns my highest recommendation.
 
 </div>
-<div>
+<div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Ruslan Umyarov, Software Engineer @ THE ICONIC - 2019</h2>
 
 > Geshan is a solid professional, strong communicator and a very nice person. He knows the value of not only developing good solutions but also teaching and inspiring people.
 
 </div>
-<div>
+<div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Alessandro (Alex) Nadalin, CTO @ Namshi - 2018</h2>
 
@@ -145,7 +146,7 @@ I have always strived to have a positive impact on the places I have work and th
 > Would definitely recommend him to anyone looking for a solid software engineer with a knack for understanding the business side of the work.
 
 </div>
-<div>
+ <div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Alessandro (Cirpo) Cinelli, Head of Backend Engineering @ Namshi - 2016</h2>
 
@@ -154,7 +155,7 @@ I have always strived to have a positive impact on the places I have work and th
 > I have always admired the fact that he stays very up to date with what goes around in the Tech world and constantly he tries to “give back” as much as possible to the community by speaking at conferences and organizing tech events in his home country. I really hope our paths will cross again in the future
 
 </div>
-<div>
+ <div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Halil Koklu, CTO @ Namshi - 2013</h2>
 
@@ -163,7 +164,7 @@ I have always strived to have a positive impact on the places I have work and th
 > Geshan is blessed with a very humble but caring personality. Working for him was always a joy.
 
 </div>
-<div>
+<div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Bibhusan Bista, CEO @ YoungInnovations - 2011</h2>
 
@@ -172,7 +173,7 @@ I have always strived to have a positive impact on the places I have work and th
 > He was ahead of deadlines in most of the cases and paid attention to minute details of the projects he led. He would be an asset to any company he works for.
 
 </div>
-<div>
+<div class="w-full mx-auto rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
 <h2 class='text-2xl mt-5 font-bold  text-darkpurple'>Anjan Shrestha, Senior UX Designer @ YoungInnovations 2009</h2>
 
@@ -181,7 +182,7 @@ I have always strived to have a positive impact on the places I have work and th
 > Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and posses great presentational skills.
 
 </div>
-
+</div>
 </div>
 <div class='my-5'>
 
