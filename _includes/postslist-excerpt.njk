@@ -1,6 +1,6 @@
 <div class="blog-index md:w-7/12 w-11/12 mx-auto">
   {% for post in postslist | reverse %}
-    <article class="post">
+    <article class="post mb-5">
       <header class="page-header">
       <h2 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
         <a href="{{ post.url }}">
@@ -12,7 +12,7 @@
           </span>
           {% set date = post.date %}
           {% include "components/posted-date-time.njk" %}
-          . X min read
+          . {{ helpers.getReadingTime(post.templateContent) }} minute read
         </p>
       </header>
       <div class="mt-6 font-reading font-normal text-midblack leading-7 ">
@@ -25,7 +25,7 @@
                   font-semibold
                   text-purple text-xl
                   cursor-pointer
-                  mt-4
+                  mt-3
         " href="{{ post.url }}">Read post</a>
       </footer>
     </article>
