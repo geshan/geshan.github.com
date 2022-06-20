@@ -24,6 +24,7 @@
             <div>
               {{ content | safe }}
             </div>
+            {% if page.url == '/' %}
             <!-- section top newsletter -->
             <section class="bg-lightbg">
               <div class=" mt-24 max-w-6xl mx-auto py-8 md:px-8 text-left sm:text-center px-4 ">
@@ -129,6 +130,7 @@
               </div>
             </section>
             {% include "sidebar/latest-posts.njk" %}
+            {% endif %}
           {# {% include "sidebar/read-more-on.njk" %} #}
             {# {% include "sidebar/side-projects.njk" %}
                                      <div>

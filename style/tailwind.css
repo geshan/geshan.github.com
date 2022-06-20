@@ -1,4 +1,267 @@
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+/** tailwind over-rides */
+
+h1,
+h2 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: large;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  --tw-text-opacity: 1;
+  color: rgba(46, 41, 109, var(--tw-text-opacity));
+}
+
+h1 > a.direct-link,
+h2 > a.direct-link,
+h3 > a.direct-link,
+h4 > a.direct-link,
+h5 > a.direct-link {
+  display: none;
+}
+h1:hover a.direct-link,
+h2:hover a.direct-link,
+h3:hover a.direct-link,
+h4:hover a.direct-link,
+h5:hover a.direct-link {
+  display: inline;
+}
+
+/**share things */
+span.share-icons {
+  margin-left: 15px;
+}
+span.sharing-common {
+  color: #fff;
+  height: 52px;
+  width: 52px;
+  font-size: 28px;
+  line-height: 52px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+span.fb-color {
+  background-color: #4e4990;
+}
+span.pi-color {
+  background-color: #dc0000;
+}
+span.li-color {
+  background-color: #0067b1;
+}
+span.twitter-color {
+  background-color: #0098f4;
+}
+span.tg-color {
+  background-color: #0088cc;
+}
+span.wa-color {
+  background-color: #25d366;
+}
+h3.comments {
+  clear: both;
+}
+
+/* code highlight */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: 0 0;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  color: #708090;
+}
+.token.punctuation {
+  color: #f8f8f2;
+}
+.token.namespace {
+  opacity: 0.7;
+}
+.token.constant,
+.token.deleted,
+.token.property,
+.token.symbol,
+.token.tag {
+  color: #f92672;
+}
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+  color: #a6e22e;
+}
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.operator,
+.token.url,
+.token.variable {
+  color: #f8f8f2;
+}
+.token.atrule,
+.token.attr-value,
+.token.class-name,
+.token.function {
+  color: #e6db74;
+}
+.token.keyword {
+  color: #66d9ef;
+}
+.token.important,
+.token.regex {
+  color: #fd971f;
+}
+.token.bold,
+.token.important {
+  font-weight: 700;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+
+/* carbon */
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+#carbonads {
+  display: flex;
+  max-width: 330px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+}
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+#carbonads a:hover {
+  color: inherit;
+}
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#carbonads .carbon-wrap {
+  display: flex;
+}
+.carbon-img {
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+.carbon-img img {
+  display: block;
+}
+.carbon-text {
+  font-size: 13px;
+  padding: 10px;
+  line-height: 1.5;
+  text-align: left;
+}
+.carbon-poweredby {
+  display: block;
+  padding: 8px 10px;
+  background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 5px,
+      hsla(0, 0%, 0%, 0.025) 5px,
+      hsla(0, 0%, 0%, 0.025) 10px
+    )
+    hsla(203, 11%, 95%, 0.4);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+
+/* copy to clipboard */
+.copy-code-button {
+  color: #272822;
+  background-color: #fff;
+  border-color: #272822;
+  border: 2px solid;
+  border-radius: 3px 3px 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: 2px;
+  margin-bottom: -10px;
+  padding: 3px 8px;
+  font-size: 0.8em;
+}
+.copy-code-button:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.copy-code-button:focus {
+  background-color: #e6e6e6;
+  outline: 0;
+}
+.copy-code-button:active {
+  background-color: #d9d9d9;
+}
+.highlight pre {
+  margin: 0;
+}
