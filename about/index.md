@@ -13,91 +13,64 @@ description:
 ---
 
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80'>
-<p class='text-2xl px-4 my-auto text-white '>
+<p class='cover-description text-2xl px-4 my-auto text-white '>
 Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia serving THE ICONIC as a lead software engineer.
 </p>
 <img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 </div>
-<div class='mt-10 text-lg '>
-<p>
-I have a keen interest in REST architecture, microservices, and cloud computing. I am a language-agnostic software engineer who believes the value provided to the business is more important than the choice of language or framework.</p>
-<p class='mt-5'>
 
- <h2 class='text-2xl font-bold text-darkpurple'>Consciously evolving</h2>
+I have a keen interest in REST architecture, microservices, and cloud computing. I am a language-agnostic software engineer who believes the value provided to the business is more important than the choice of language or framework.
+
+## Consciously evolving
 
 I was born and lived the majority of my life in Kathmandu, Nepal. I have lived and worked in the Netherlands, U.A.E, and Australia. This multi-cultural experience has enriched my life in various aspects. It has also given me chances to work on software systems of varying scale that millions of customers have used, benefitted from, and can rely upon.
 
-</p>
-<p class='mt-5'>
+## Day to day
 
-<h2 class='text-2xl font-bold text-darkpurple'>Day to day</h2>
+Day to day, I use mainly Javascript (Typescript/Node.js) and PHP with MySQL/Postgres database to translate business requirements into reliable, [scalable](/blog/2020/12/software-scalability/), and [resilient software](/blog/2020/12/software-resilience/) systems.
 
-Day to day, I use mainly Javascript (Node.js) and PHP with MySQL database to translate business requirements into reliable, <span class='text-darkpurple underline underline-offset-4 font-semibold'>[scalable](/blog/2020/12/software-scalability/)</span>, and <span class='text-darkpurple underline underline-offset-4 font-semibold'>[resilient software](/blog/2020/12/software-resilience/)</span> systems.
-
-</p>
-<p class='mt-5'>
-
- <h2 class='text-2xl font-bold text-darkpurple'>Why This blog? </h2>
+## Why This blog?
 
 I have been blogging since 2007, I blog about things I have learned, things I want to share, or just something I want to rant about :). The best feeling is when you are stuck on something you Google for a solution and you end up finding your own blog post written some years back. That feeling is priceless.
 
 Another factor that motivates me to keep on publishing blog posts is the feedback you get from people. I have been told that the person was looking for something technical and found one of my blog posts. The person added, it helped to solve the issue or learn something new. This also gives me a sense of immense satisfaction.
 
-</p>
-<p class='mt-5'>
+## Public Speaking
 
-<h2 class='text-2xl font-bold text-darkpurple'>Public Speaking</h2>
+I have given [talks](/blog/categories/talks/) at tech conferences in the Middle East, Europe, United States, and Australia in the past years on topics ranging from ChatOps, Continous delivery to Microservices and Serverless containers. You can see a neatly organized [table](https://github.com/geshan/public-speaking) as a GitHub repo. I have also spoken at various meetups too.
 
-I have given <span class='text-darkpurple underline underline-offset-4 font-semibold'>[talks](/blog/categories/talks/)</span> at tech conferences in the Middle East, Europe, United States, and Australia in the past years on topics ranging from ChatOps, Continous delivery to Microservices and Serverless containers. You can see a neatly organized <span class='text-darkpurple underline underline-offset-4 font-semibold'>[table](https://github.com/geshan/public-speaking)</span> as a GitHub repo. I have also spoken at various meetups too.
-
-</p>
-<p class='mt-5'>
-
-<h2 class='text-2xl font-bold text-darkpurple'>Side Projects</h2>
+## Side Projects
 
 I have a couple of side projects. I only do one side project a year to get it over the line:):
 
-</p>
-<p class='mt-5'>
+### Nepal News English - 2019
 
-<h2 class='text-2xl font-bold text-darkpurple'>Nepal News English - 2019</h2>
+[Nepal News English](https://twitter.com/nepal_news_en) Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) as serverless containers. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 12.6 K followers.
 
-<span class='text-darkpurple underline underline-offset-4 font-semibold'>[Nepal News English](https://twitter.com/nepal_news_en)</span> Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/)</span> as serverless containers. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 12.6 K followers.
+### AU Tech Jobs - 2020
 
-<p>
-<p class='mt-5'>
+[AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 50+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 1100 jobs listed. Its USPs include:
 
-<h2 class='text-2xl font-bold text-darkpurple'>AU Tech Jobs - 2020</h2>
+- Job description summary for easy reading
+- Tag job as non-technical by using external categorization service
+- Saved jobs
+- Applied jobs
+- Shows if the company is known to sponsor work visa or not
+- Faceted search (search by multiple departments or work type)
 
-<span class='text-darkpurple underline underline-offset-4 font-semibold'>[AU Tech Jobs](https://autechjobs.ml/)</span> is a tech job aggregator that collects jobs from 50+ companies. Currently, the <span class='text-darkpurple underline underline-offset-4 font-semibold'>[app](https://app.autechjobs.ml/)</span> has over 1100 jobs listed. Its USPs include:
+This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in 2018.
 
-<ul class='list-disc pl-5'>
-  <li>Job description summary for easy reading</li>
-  <li>Tag job as non-technical by using external categorization service</li>
-  <li>Saved jobs</li>
-  <li>Applied jobs</li>
-  <li>Shows if the company is known to sponsor work visa or not</li>
-  <li>Faceted search (search by multiple departments or work type)</li>
-</ul>
-
-This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship)</span> GitHub repo I started in 2018.
-
-</p>
-<p class='mt-5'>
-
-<h2 class='text-2xl font-bold text-darkpurple'>Publications</h2>
+## Publications
 
 A list of some of the articles I have written outside of this blog:
 
-- <span class='text-darkpurple underline underline-offset-4 font-semibold'>[How to send emails with Node.js using SendGrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/ "How to send emails with Node.js using SendGrid")</span> - LogRocket, 2020
-- <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX")</span> - LogRocket, 2020
-- <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io")</span> - Fly.io, 2019
-- <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Tail logs from multiple Kubernetes pods the easy way](https://theiconic.tech/tail-logs-from-multiple-kubernetes-pods-the-easy-way-71401b84d7f "Tail logs from multiple Kubernetes pods the easy way")</span> - THE ICONIC tech blog, 2019
-- <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Naming your microservices needs to be trivial, not cryptic](https://theiconic.tech/naming-your-microservices-needs-to-be-trivial-not-cryptic-288902e800e1 "Naming your microservices needs to be trivial, not cryptic")</span> - THE ICONIC tech blog, 2018
-</p>
-<div>
+- [How to send emails with Node.js using SendGrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/ "How to send emails with Node.js using SendGrid") - LogRocket, 2020
+- [Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX") - LogRocket, 2020
+- [Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io") - Fly.io, 2019
+- [Tail logs from multiple Kubernetes pods the easy way](https://theiconic.tech/tail-logs-from-multiple-kubernetes-pods-the-easy-way-71401b84d7f "Tail logs from multiple Kubernetes pods the easy way") - THE ICONIC tech blog, 2019
+- [Naming your microservices needs to be trivial, not cryptic](https://theiconic.tech/naming-your-microservices-needs-to-be-trivial-not-cryptic-288902e800e1 "Naming your microservices needs to be trivial, not cryptic") - THE ICONIC tech blog, 2018
 
-<h2 class='text-2xl mt-5 font-bold text-darkpurple'>Feedback from colleagues</h2>
+## Feedback from colleagues
 
 I have always strived to have a positive impact on the places I have work and the people I work with. Some feedback I have received include:
 
@@ -184,22 +157,21 @@ I have always strived to have a positive impact on the places I have work and th
 </div>
 </div>
 </div>
-<div class='my-5'>
 
-<h2 class='text-2xl  font-bold mt-5 text-darkpurple'>I am also</h2>
+---
 
-- running this blog since 2007 -- how many years? do the math on your own ;). It is currently <span class='text-darkpurple underline underline-offset-4 font-semibold'>[11ty](https://www.11ty.dev/ "11ty or Eleventy")</span>.
-- a <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar)</span> (GDE) for Google Cloud since Dec 2019
-- a <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp)</span> since Apr 2019
+## I am also
+
+- running this blog since 2007 -- how many years? do the math on your own ;). It is currently [11ty](https://www.11ty.dev/ "11ty or Eleventy").
+- a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
+- a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
 - mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
 - and recently SEO rookie :)
 
-<h2 class='text-2xl font-bold mt-5 text-darkpurple'>Follow Me/this blog</h2>
+## Follow Me/this blog
 
-- You can find me posting techy things on <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Twitter](https://twitter.com/geshan)</span>, <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Linked In](https://linkedin.com/in/geshan)</span>, and <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Facebook page](https://facebook.com/geshanblog)</span> for this blog.
-- You can follow this blog on <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Telegram](https://t.me/geshanblog)</span> too.
-- I also happen to be on <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Github](https://github.com/geshan)</span> and <span class='text-darkpurple underline underline-offset-4 font-semibold'>[Stack Overflow](https://stackoverflow.com/users/112849/geshan)</span>.
+- You can find me posting techy things on [Twitter](https://twitter.com/geshan), [Linked In](https://linkedin.com/in/geshan), and [Facebook page](https://facebook.com/geshanblog) for this blog.
+- You can follow this blog on [Telegram](https://t.me/geshanblog) too.
+- I also happen to be on [Github](https://github.com/geshan) and [Stack Overflow](https://stackoverflow.com/users/112849/geshan).
 
-You can reach me by email at <span class='text-darkpurple underline underline-offset-4 font-semibold'>geshan@gmail.com</span>. I am also open to link exchanges for this blog :).
-
-</div>
+You can reach me by email at <a href='mailto:geshan@gmail.com' target='_blank'>geshan@gmail.com</a>. I am also open to link exchanges for this blog :).

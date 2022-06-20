@@ -5,16 +5,16 @@
 
 h1,
 h2 {
-  font-size: xx-large;
+  font-size: xxx-large;
   font-weight: bold;
 }
 h3 {
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
 }
 
 h4 {
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -43,34 +43,45 @@ h5:hover a.direct-link {
 
 /**share things */
 span.share-icons {
-  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: fixed;
+  left: 10px;
+  top: 320px;
 }
 span.sharing-common {
-  color: #fff;
+  color: #9d9d9d;
+  background-color: #f5f5f5;
   height: 52px;
   width: 52px;
   font-size: 28px;
   line-height: 52px;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  border-radius: 12px;
 }
-span.fb-color {
-  background-color: #4e4990;
+span.sharing-common:hover {
+  color: white;
 }
-span.pi-color {
+span.fb-color:hover {
+  background-color: #1e51bf;
+}
+span.pi-color:hover {
   background-color: #dc0000;
 }
-span.li-color {
+span.li-color:hover {
   background-color: #0067b1;
 }
-span.twitter-color {
+span.twitter-color:hover {
   background-color: #0098f4;
 }
-span.tg-color {
+span.tg-color:hover {
   background-color: #0088cc;
 }
-span.wa-color {
+span.wa-color:hover {
   background-color: #25d366;
 }
 h3.comments {
@@ -264,4 +275,46 @@ pre[class*="language-"] {
 }
 .highlight pre {
   margin: 0;
+}
+.entry-content p {
+  font-size: 18px;
+}
+.entry-content img {
+  margin: 30px auto;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 769px) {
+  span.share-icons {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: initial;
+    margin-top: 16px;
+  }
+}
+.entry-content ul,
+.entry-content ol {
+  padding-left: 25px;
+  font-size: 18px;
+}
+.entry-content ul li,
+.entry-content ol li {
+  list-style: disc;
+}
+.entry-content li::marker {
+  color: #4c3fe4;
+}
+.entry-content > div > .cover-description {
+  font-size: 22px;
+}
+.entry-content > div > img {
+  border-radius: 50%;
+}
+.hentry ul,
+.hentry p {
+  font-size: 18px;
+}
+.hentry footer {
+  width: 100%;
+  margin: 10px 0;
 }

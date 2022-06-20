@@ -4,33 +4,34 @@ title: 4 ways to read file line by line in Node.js
 date: 2021-10-08T21:30:35.000+11:00
 comments: true
 tags:
-- Software Engineering
-- Javascript
-- NodeJs
+  - Software Engineering
+  - Javascript
+  - NodeJs
 cover: "/images/nodejs-read-file-line-by-line/01nodejs-read-file-line-by-line.jpg"
 pagetitle: 4 ways to read file line by line in Node.js
 description: Learn how to read file line by line in Node.js with sync and async methods using native and NPM modules.
 keywords: nodejs read file line by line, read file line by line nodejs, node.js read file line by line, read file line by line node.js
-
 ---
-There are multiple ways to read a file line by line with Node.js. In Node.js files can be read in sync way or in an async way. With the async path, it is possible to read large files without loading all the content of the file into memory. 
+
+There are multiple ways to read a file line by line with Node.js. In Node.js files can be read in sync way or in an async way. With the async path, it is possible to read large files without loading all the content of the file into memory.
 
 <!-- more -->
 
 Reading the whole file at once will make the process memory intensive. With the ability to load and read a file line by line it enables us to stop the process at any step as per need. In this post, we will look into 3 ways to read a file line by line using Node.js with memory usage comparison.
 
 <img class="center" loading="lazy" src="/images/nodejs-read-file-line-by-line/01nodejs-read-file-line-by-line.jpg" title="4 ways to read file line by line with Node.js" alt="4 ways to read file line by line with Node.js">
+
 ## Table of contents
 
-* [Prerequisites](#prerequisites)
-* [The test file](#the-test-file)
-* [Read file sync](#read-file-sync)
-* [Readline](#readline)
-* [N-readlines](#n-readlines)
-* [Line reader](#line-reader)
-* [Other options](#other-options)
-* [Quick comparison](#quick-comparison)
-* [Conclusion](#conclusion)
+- [Prerequisites](#prerequisites)
+- [The test file](#the-test-file)
+- [Read file sync](#read-file-sync)
+- [Readline](#readline)
+- [N-readlines](#n-readlines)
+- [Line reader](#line-reader)
+- [Other options](#other-options)
+- [Quick comparison](#quick-comparison)
+- [Conclusion](#conclusion)
 
 ## Prerequisites
 
@@ -52,17 +53,17 @@ For all of the trail runs below we will use a 90 MB [SQL dump file](https://gith
 We can possibly read the file in a synchronous way, meaning loading the whole 90 MB file in memory and loop through it. But, as we will load the whole file first before reading any lines from it the memory consumption will surely be more than 90 MB. Here is a quick example for reading the file line by line but in a not very performant sync way:
 
 ```js
-const fs = require('fs');
+const fs = require("fs");
 
-const allFileContents = fs.readFileSync('broadband.sql', 'utf-8');
-allFileContents.split(/\r?\n/).forEach(line =>  {
+const allFileContents = fs.readFileSync("broadband.sql", "utf-8");
+allFileContents.split(/\r?\n/).forEach((line) => {
   console.log(`Line from file: ${line}`);
 });
 const used = process.memoryUsage().heapUsed / 1024 / 1024;
 console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`);
-``` 
+```
 
-As we are using the `fs` module which is a native one, there is no need to install any new NPM module. In the above code, we are reading the while file synchronously then looping through each line one by one and printing it to the console with a `console.log`. 
+As we are using the `fs` module which is a native one, there is no need to install any new NPM module. In the above code, we are reading the while file synchronously then looping through each line one by one and printing it to the console with a `console.log`.
 
 After the looping is done we print out the approximate memory usage. This code can be found in this [pull request](https://github.com/geshan/nodejs-readfile-line-by-line/pull/2) for your reference. If we run this script with a time prefix as below:
 
@@ -82,31 +83,33 @@ Next, we will look at a more performant async way of reading a file line by line
 
 ## Readline
 
-[Readline](https://nodejs.org/api/readline.html) is a native Node.js module so there is no need to install a new NPM module to use it. It can be used to read files line by line by reading one line at a time from any readable stream. We will be using the on method with the `line` [event](https://nodejs.org/api/readline.html#readline_event_line) which is emitted when the input stream receives an end-of-line input `\n, \r,` or `\r\n`. 
+[Readline](https://nodejs.org/api/readline.html) is a native Node.js module so there is no need to install a new NPM module to use it. It can be used to read files line by line by reading one line at a time from any readable stream. We will be using the on method with the `line` [event](https://nodejs.org/api/readline.html#readline_event_line) which is emitted when the input stream receives an end-of-line input `\n, \r,` or `\r\n`.
 
 Below is the code example of readline with a readable stream:
 
 ```js
-const events = require('events');
-const fs = require('fs');
-const readline = require('readline');
+const events = require("events");
+const fs = require("fs");
+const readline = require("readline");
 
 (async function processLineByLine() {
   try {
     const rl = readline.createInterface({
-      input: fs.createReadStream('broadband.sql'),
-      crlfDelay: Infinity
+      input: fs.createReadStream("broadband.sql"),
+      crlfDelay: Infinity,
     });
 
-    rl.on('line', (line) => {
+    rl.on("line", (line) => {
       console.log(`Line from file: ${line}`);
     });
 
-    await events.once(rl, 'close');
+    await events.once(rl, "close");
 
-    console.log('Reading file line by line with readline done.');
+    console.log("Reading file line by line with readline done.");
     const used = process.memoryUsage().heapUsed / 1024 / 1024;
-    console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`);
+    console.log(
+      `The script uses approximately ${Math.round(used * 100) / 100} MB`
+    );
   } catch (err) {
     console.error(err);
   }
@@ -140,23 +143,23 @@ N-readline is a [NPM module](https://www.npmjs.com/package/n-readlines) that wil
 Below is an example of how to use N-readline to read a file line by line after installing it with `npm i --save n-readlines`:
 
 ```js
-const nReadlines = require('n-readlines');
-const broadbandLines = new nReadlines('broadband.sql');
+const nReadlines = require("n-readlines");
+const broadbandLines = new nReadlines("broadband.sql");
 
 let line;
 let lineNumber = 1;
 
-while (line = broadbandLines.next()) {
-    console.log(`Line ${lineNumber} has: ${line.toString('ascii')}`);
-    lineNumber++;
+while ((line = broadbandLines.next())) {
+  console.log(`Line ${lineNumber} has: ${line.toString("ascii")}`);
+  lineNumber++;
 }
 
-console.log('end of file.');
+console.log("end of file.");
 const used = process.memoryUsage().heapUsed / 1024 / 1024;
 console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`);
 ```
 
-In the above code, first, we require the `n-readlines` module and we instantiate it with our `broadband.sql` file which is 90 MBs. Other [options](https://github.com/nacholibre/node-readlines#new-readlinesfd-options) like `readChunk`  and `newLineCharacter` can be passed in as the second parameter in `new nReadlines` but we go with the default.
+In the above code, first, we require the `n-readlines` module and we instantiate it with our `broadband.sql` file which is 90 MBs. Other [options](https://github.com/nacholibre/node-readlines#new-readlinesfd-options) like `readChunk` and `newLineCharacter` can be passed in as the second parameter in `new nReadlines` but we go with the default.
 
 Consequently, we define two variables `line` and `lineNumber`. Line variable will hold the string for each line of the file and the `lineNumber` will hold the line number from 1 to the number of lines the file has.
 
@@ -185,14 +188,16 @@ Line reader [NPM module](https://www.npmjs.com/package/line-reader) defines itse
 Below is the working example of reading our relatively big 90 MB SQL file with line reader, we installed it with `npm i --save line-reader` and then created the following file:
 
 ```js
-const lineReader = require('line-reader');
+const lineReader = require("line-reader");
 
-lineReader.eachLine('broadband.sql', function(line, last) {
+lineReader.eachLine("broadband.sql", function (line, last) {
   console.log(`Line from file: ${line}`);
-  if(last) {
-    console.log('Last line printed.');
+  if (last) {
+    console.log("Last line printed.");
     const used = process.memoryUsage().heapUsed / 1024 / 1024;
-    console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`);
+    console.log(
+      `The script uses approximately ${Math.round(used * 100) / 100} MB`
+    );
   }
 });
 ```
