@@ -65,7 +65,7 @@ John Doe
 John MiddleName Doe
 ```
 
-So in ES6 Javascript, there isn’t a way to make a function parameter required, this is how JavaScript works as it is a bit too flexible. That is a reason why we can use TypeScript to add types as well as make the function parameters required, let’s look at the same example with TypeScript. We can use [nodemon](/blog/2021/02/nodemon/) to compile and execute the script on save. We can also use [docker with Node.js](​​/blog/2020/11/nodejs-with-docker/) to deploy the compiled code easily.
+So in ES6 Javascript, there isn’t a way to make a function parameter required, this is how JavaScript works as it is a bit too flexible. That is a reason why we can use TypeScript to add types as well as make the function parameters required, let’s look at the same example with TypeScript. We can use [nodemon](/blog/2021/02/nodemon/) to compile and execute the script on save. We can also use [docker with Node.js](/blog/2020/11/nodejs-with-docker/) to deploy the compiled code easily.
 
 ## Optional parameters with TypeScript
 
