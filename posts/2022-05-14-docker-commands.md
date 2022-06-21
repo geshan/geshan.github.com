@@ -56,7 +56,7 @@ In the consequent section, we will brief about the example we are going to use t
 
 ## Example
 
-Before diving deeper into the examples, it would be best to know that Docker is beneficial when used in the [local development environment](blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/). It would be safe to say that docker has changed how software engineers work in the [past decade years](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) after releasing in 2013.
+Before diving deeper into the examples, it would be best to know that Docker is beneficial when used in the [local development environment](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/). It would be safe to say that docker has changed how software engineers work in the [past decade years](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) after releasing in 2013.
 
 All the commands run for the example used have been run on a Mac (M1 pro chip) with Docker version 20.10.13, build a224086. We will run the MySQL server locally as an example to know and understand the useful docker commands. In the next section, we will start with the commands and get our hands dirty.
 
@@ -389,7 +389,7 @@ In addition to the above 10+ command, there are many other useful docker command
 
 Surely, there are many handy docker commands that can help you get things done. Some of them are [info](https://docs.docker.com/engine/reference/commandline/info/), [inspect](https://docs.docker.com/engine/reference/commandline/inspect/), [history](https://docs.docker.com/engine/reference/commandline/history/), [network](https://docs.docker.com/engine/reference/commandline/network/), [restart](https://docs.docker.com/engine/reference/commandline/restart/), [top](https://docs.docker.com/engine/reference/commandline/top/), and [build](https://docs.docker.com/engine/reference/commandline/build/).
 
-You can learn about how to [build docker images faster](/blog/2020/10/docker-build-example-faster-docker-build/) to save time on building Docker images with BUILDKIT and better docker layer caching. Similarly, [Docker multi-stage build](https://geshan.com.np/blog/2019/11/how-to-use-docker-multi-stage-build/) is also a super useful feature to get your docker image sizes down. And then docker-compose is another sea to swim in :).
+You can learn about how to [build docker images faster](/blog/2020/10/docker-build-example-faster-docker-build/) to save time on building Docker images with BUILDKIT and better docker layer caching. Similarly, [Docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) is also a super useful feature to get your docker image sizes down. And then docker-compose is another sea to swim in :).
 
 ## Conclusion
 
