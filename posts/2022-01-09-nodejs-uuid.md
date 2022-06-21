@@ -9,8 +9,10 @@ tags:
 - Javascript
 cover: "/images/nodejs-uuid/01nodejs-uuid.jpg"
 pagetitle: 3 efficient ways to generate UUID in Node.js
-description: Learn how to generate UIUD in Node.js with one Native module and two NPM packages in this useful tutorial.
+description: Learn how to generate UIUD in Node.js with one Native module and two
+  NPM packages in this useful tutorial.
 keywords: nodejs uuid, uuid nodejs, node.js uuid, uuid node.js
+
 ---
 Universally Unique Identifier (UUID) is very useful. In Node.js there are many ways to generate a UUID. One of them is with a native module and others are using NPM packages. UUID can be very useful as reliable unique identifiers. In this post, you will learn how to generate a UUID using Node.js and briefly understand when and why to use them. Let’s get started!
 
@@ -58,7 +60,7 @@ Just with the order id which is an autoincrement integer your competitor, possib
 
 Baseline, whenever you need to hide your autoincerment ID it is best to use a random number or pattern that is hard if not impossible to guess. Or you can opt to use an UUID. If you want to read more about UUID feel free to read the wiki page which explains [UUID4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) too.
 
-If you are interested in doing other things with Node.js, please do browse [reading file line by line with Node.js](/blog/2021/10/nodejs-read-file-line-by-line/). Using [nodemon](​​/blog/2021/02/nodemon/) with these code examples will help too.
+If you are interested in doing other things with Node.js, please do browse [reading file line by line with Node.js](/blog/2021/10/nodejs-read-file-line-by-line/). Using [nodemon](/blog/2021/02/nodemon/) with these code examples will help too.
 
 In the consequent part, you will learn 3 methods to generate a UUD in Node.js regardless of any framework you use.
 
