@@ -1,14 +1,15 @@
 <div>
   <nav class="bg-white">
     <div class="max-w-6xl mx-auto sm:py-3 sm:px-4">
-      <div class="relative flex items-center justify-between h-16">
+      <div class="relative flex items-center justify-evenly h-16">
         <div
           class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <button
             type="button"
-            class=" inline-flex items-center mobile-menu-button justify-center p-2 rounded-md text-gray-400 hover:text-white
-              hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white "
+            class=" inline-flex items-center mobile-menu-button justify-center p-2 rounded-md text-purple
+            focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white "
+            onClick="mobileView()";
             aria-controls="mobile-menu"
             aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -73,14 +74,16 @@
       </div>
     </div>
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden mobile-menu hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1 md:flex">
-        <a
-          href="#"
-          class=" text-gray-400 px-3 py-2 text-sm font-medium hover:text-purple-600 font-leading block "
-          aria-current="page">Posts</a>
-        <a href="#" class=" text-gray-400 px-3 py-2 text-sm font-medium hover:text-purple-600 font-leading block ">About</a>
-        <a href="#" class=" text-gray-400 px-3 py-2 text-sm font-medium hover:text-purple-600 font-leading block ">Newsletter</a>
+    <div class="mobile-menu hidden absolute w-full top-0 h-full z-10 bg-purple bg-opacity-95 flex-row justify-between content-center md:hidden ">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/" class=" px-3 py-2 text-2xl font-medium text-white font-leading block ">Home</a>
+        <a href="/posts/1/" class=" px-3 py-2 text-2xl font-medium text-white font-leading block ">Posts</a>
+        <a href="/blog/archives/" class=" px-3 py-2 text-2xl font-medium text-white font-leading block ">Timeline</a>
+        <a href="https://newsletter.geshan.com.np/" target='_blank' class=" px-3 py-2 text-2xl font-medium text-white font-leading block ">Newsletter</a>
+        <a href="/about/" class=" px-3 py-2 text-2xl font-medium text-white font-leading block ">About</a>
+      </div>
+      <div class='close-btn mr-6 cursor-pointer' onClick='mobileView()'>
+        <h3 class='text-white text-4xl text-center cursor-pointer ' >x</h3>
       </div>
     </div>
   </nav>
