@@ -12,7 +12,7 @@ description:
   engineering experience. I have been blogging since 2007.
 ---
 
-<div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80'>
+<div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80 mb-3'>
 <p class='cover-description text-2xl px-4 my-auto text-white '>
 Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience. Currently, I am living in Sydney, Australia serving THE ICONIC as a lead software engineer.
 </p>

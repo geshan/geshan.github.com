@@ -40,6 +40,11 @@ h4:hover a.direct-link,
 h5:hover a.direct-link {
   display: inline;
 }
+div > div > article > div > p > a,
+div > div > article > div > ul> li > a,
+div > div > article > ul > li > a{
+  color: #4c3fe4;
+}
 
 /**share things */
 span.share-icons {

@@ -12,7 +12,7 @@
           </span>
           {% set date = post.date %}
           {% include "components/posted-date-time.njk" %}
-          . {{ helpers.getReadingTime(post.templateContent) }} minute read
+          <span class='text-darkgrey'>. {{ helpers.getReadingTime(post.templateContent) }} minute read</span>
         </p>
       </header>
       <div class="mt-6 font-reading font-normal text-midblack leading-7 ">
@@ -26,7 +26,7 @@
                   text-purple text-xl
                   cursor-pointer
                   mt-3
-        " href="{{ post.url }}">Read post</a>
+        " href="{{ post.url }}">Read post <span class='ml-4 mt-1'>→</span> </a>
       </footer>
     </article>
   {% endfor %}
