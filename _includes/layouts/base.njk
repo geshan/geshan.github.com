@@ -6,6 +6,7 @@
     <link href="/atom.xml" rel="alternate" title="{{ metadata.title }}" type="application/atom+xml">
     <title>{{ pagetitle or renderData.title or title or metadata.title }}</title>
 
+    <link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/tw.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/avocado.min.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
