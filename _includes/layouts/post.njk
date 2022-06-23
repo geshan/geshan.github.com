@@ -26,10 +26,10 @@ templateClass: tmpl-post
         </p>
         <ul class="meta text-muted pager my-6 flex md:flex-row flex-col justify-evenly">
             {% if prevPost.url %}
-              <li class="previous bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full rounded-md text-white text-justify"><a href="{{ prevPost.url }}" title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
+              <li class="previous bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full rounded-md text-white text-justify"><a href="{{ prevPost.url }}" class='block text-left w-full' title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
             {% endif %}
             {% if nextPost.url %}
-              <li class="next bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full md:ml-10 ml-0 mt-4 md:mt-0 rounded-md text-white text-justify"><a href="{{ nextPost.url }}" title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
+              <li class="next bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full md:ml-10 ml-0 mt-4 md:mt-0 rounded-md text-white text-justify"><a href="{{ nextPost.url }}" class='block text-right w-full' title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
             {% endif %}
         </ul>
     </footer>
