@@ -100,6 +100,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("excerptMore", require("./_custom/excerptMore"));
 
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy({ "root": "/" });
