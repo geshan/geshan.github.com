@@ -251,7 +251,7 @@ pre[class*="language-"] {
 /* copy to clipboard */
 .copy-code-button {
   background-color: white;
-  background-image: url('../images/CopyBtn.png');
+  background-image: url('../images/theme/copy-btn.png');
   border-radius: 6px;
   display: block;
   margin-left: auto;
@@ -268,7 +268,7 @@ pre[class*="language-"] {
   cursor: pointer;
 }
 .copied{
-  background-image: url('../images/CopiedBtn.png');
+  background-image: url('../images/theme/copied-button.png');
 }
 .highlight pre {
   margin: 0;
