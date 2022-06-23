@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 must-have qualities of a great software engineer
-date: 2020-10-12T21:20:25.000+11:00
+date: 2020-10-12T10:20:25Z
 comments: true
 tags:
 - Software Engineering
@@ -23,7 +23,7 @@ There are many qualities of a great software engineer that will make you stand o
 
 With no doubt, a great software engineer writes working, testable and maintainable code. Numerous technical skills will be required to differentiate yourself as a great software engineer. Writing clean code, debugging bugs, and following standard are some of these technical skills.
 
-Some opine [positive attitude and communication skills](https://www.scalablepath.com/blog/7-qualities-that-differentiate-a-good-programmer-from-a-great-programmer/) as must-have qualities of a great software engineer. Another [post](https://devskiller.com/qualities-great-developer/) points to curiosity and a love of learning to be essential to be an efficient software engineer. You can find a [great software engineer](https://distantjob.com/blog/is-eastern-europe-a-good-source-of-software-engineering-talent/) in Eastern Europe too if you are looking for one.
+Some opine [positive attitude and communication skills](https://www.scalablepath.com/blog/7-qualities-that-differentiate-a-good-programmer-from-a-great-programmer/) as must-have qualities of a great software engineer. Another [post](https://devskiller.com/qualities-great-developer/) points to curiosity and a love of learning to be essential to be an efficient software engineer. You can find a [great software engineer](https://distantjob.com/blog/is-eastern-europe-a-good-source-of-software-engineering-talent/) in [Eastern Europe](https://qubit-labs.com/it-outsourcing-eastern-europe-destinations/) too if you are looking for one.
 
 For this post, we are more concerned than just the hard skills needed to prove yourself as a valuable software engineer. Let’s proceed to the software engineer qualities you need to work on to set you up for success:
 
