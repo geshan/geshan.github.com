@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
 	"name" : "Geshan's Blog",
 	"short_name" : "Geshan's Blog",
   "description" : "A blog about software engineering, devops and web development.",
@@ -8,7 +9,7 @@
 	"orientation" : "portrait",
 	"lang" : "English",
   "background_color" : "#fff",
-  "theme_color": "#fff",
+  "theme_color": "#6947E7",
   "icons": [
     {
       "src": "\/images\/favicons\/favicon-16x16.png",
@@ -20,7 +21,8 @@
       "src": "\/images\/favicons\/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image\/png",
-      "density": "2.0"
+      "density": "2.0",
+      "purpose": "any maskable"
     },
     {
       "src": "\/images\/favicons\/android-chrome-192x192.png",
