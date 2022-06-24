@@ -5,9 +5,16 @@ renderData:
   title: Categories
   description: "Categories and tags on this blog"
 ---
-<h1>Categories</h1>
 
-{% for tag in collections.tagList | sort %}
-  {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-{% endfor %}
+<article role="article" class='md:w-7/12 w-11/12 mx-auto mt-4' >
+  <header class="page-header">
+    <h1 class="text-7xl font-bold text-darkpurple ">Categories</h1>
+  </header>
+  <div class='grid grid-cols-2 md:grid-cols-3 gap-6 mt-10'>
+    {% for tag in collections.tagList | sort %}
+      {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="tag mt-6 font-reading font-normal text-midblack w-9/12 border-b-2 border-gray-400 hover:border-purple ">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</article>
+
