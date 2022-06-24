@@ -332,13 +332,14 @@ pre[class*="language-"] {
   -webkit-filter: grayscale(0%);
 }
 
-div > div > article > div > div > details{
+div > details{
   margin-left: 8px;
   margin-bottom: 10px;
 }
-div > div > article > div > div > details > summary{
+div > details > summary{
   font-size: 16px;
   color:#4c3fe4;
+  cursor: pointer;
 }
 
 /* Mobile CSS */
