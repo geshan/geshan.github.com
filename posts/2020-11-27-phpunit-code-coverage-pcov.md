@@ -17,9 +17,9 @@ keywords: phpunit code coverage, phpunit coverage, phpunit test coverage, pcov, 
 ---
 PHPUnit is the de-facto testing library for PHP. With the use of pcov you can speed up PHPUnit code coverage by 2-5 times for PHP 7.0+ application. In this post, we will compare the results of an experiment I did on Laravel framework tests. The tests were run without coverage, then with Xdebug coverage, and finally with pcov all on Github actions. Pcov took half the time to run the PHPUnit tests with code coverage compared to Xdebug, let’s go to the numbers.
 
-<img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/01faster-phpunit-code-coverage.jpg" title="Faster PHPUnit code coverage with pcov" alt="Faster PHPUnit code coverage with pcov">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/01faster-phpunit-code-coverage.jpg" title="Faster PHPUnit code coverage with pcov" alt="Faster PHPUnit code coverage with pcov">
 
 ## Save time on CI builds
 

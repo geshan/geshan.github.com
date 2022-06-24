@@ -13,10 +13,11 @@ Let rebuild #Nepal, do what you can. As a software professional from past 6 year
 Below is the Part 3 of the Software Engineering Practices in Nepal Infographics. This time the visual info covers
 system admin/devOps department, deployment culture, Continuous Integration (CI) and Continuous Delivery (CI), virtual environment, communication tool, log and server monitoring and other interesting facts from the survey. 
 
+<!-- more -->
+
 Again special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) for helping me clean up and compile the data in a better way and the pretty [Ansubha Manandhar](http://bit.ly/ansu-blog)helping us group and compile the data into percentages, thank you for that.
 
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
-<!-- more -->
 
 <img class="center" loading="lazy" src="/images/sw-eng-np-infographics-part03/Software_Engineering_Nepal_Mid_2015_Part03.png" title="Software Engineering Practices in Nepal Infographics Part 3" alt="Software Engineering Practices in Nepal Infographics Part 3">
 

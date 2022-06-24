@@ -14,9 +14,10 @@ keywords: docker redis, redis docker, docker-compose redis, redis docker-compose
 ---
 Redis is an open-source in-memory datastore used as a database, cache, and even a message broker. Redis can be used easily with docker and docker-compose for local development as a cache to a web application. In this post, we will set up Redis with docker and docker-compose, where Redis will be used as a cache for a Node.js/Express.js REST API with PostgreSQL as the main database, let’s get started!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/redis-docker/01redis-docker.jpg" title="Use Redis with Docker and docker-compose easily" alt="Use Redis with Docker and docker-compose easily">
 
-<!-- more -->
 
 ## Table of contents
 

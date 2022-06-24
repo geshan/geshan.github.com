@@ -16,9 +16,9 @@ keywords: take-home coding challenges, take-home coding challenge, take-home cod
 ---
 Like it or not, your hiring process will most of the time involve take-home coding challenges. You can either perform poorly in it or excel. With the steps in this guide, you can surely outclass your competition in any take-home coding challenge. Follow on to find out how:
 
-<img class="center" loading="lazy" src="/images/take-home-coding-challenges/01take-home-coding-challenges.jpg" title="Take-home coding challenges: how to outperform your competition" alt="Take-home coding challenges code example">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/take-home-coding-challenges/01take-home-coding-challenges.jpg" title="Take-home coding challenges: how to outperform your competition" alt="Take-home coding challenges code example">
 
 ## What are take-home coding challenges?
 

@@ -17,9 +17,9 @@ keywords: jamstack tutorial, jamstack website, static site generators, jamstack,
 ---
 This JAMstack tutorial will show you how to create a JAMstack website with just clicks, no code and for $0. It will detail how to set up a JAMstack website step by step with 30+ screenshots and 2000+ words. It will involve using a git-based CMS service to edit your content easily. Let's get started.
 
-<img class="center" loading="lazy" src="/images/jamstack-tutorial/00jamstack-tutorial.jpg" title="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]" alt="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/jamstack-tutorial/00jamstack-tutorial.jpg" title="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]" alt="JAMstack tutorial to create a JAMstack website with just clicks and no code at all [Step by step]">
 
 ## Prerequisites
 

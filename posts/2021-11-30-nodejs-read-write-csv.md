@@ -15,9 +15,10 @@ keywords: node.js read csv, node.js write csv, nodejs read csv, nodejs write csv
 ---
 Comma-separated values more commonly known as CSV has been used for a long time as a standard text-based way to represent and transfer data. There are many ways to read and write CSV files in Node.js. In this post, we will learn how to read a CSV and write a CSV file using Node.js in an efficient way. Let’s get rolling.
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/nodejs-read-write-csv/01nodejs-read-write-csv.jpg" title="How to read and write CSV files with Node.js efficiently using Fast CSV" alt="How to read and write CSV files with Node.js efficiently using Fast CSV">
 
-<!-- more -->
 
 ## Table of contents
 

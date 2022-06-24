@@ -11,9 +11,9 @@ cover: /images/wercker/wercker-talk.jpg
 ---
 On 7-Mar-2016 I did a short talk titled "The best CI/CD service is free (till now), lets use it" at [Namshi](http://namshi.com). It was a quick rundown of [Wercker](https://app.wercker.com/) CI (Continuous Integration) features and how it works.
 
-<img class="center" loading="lazy" src="/images/wercker/wercker-talk.jpg" title="Wercker CI the best CI-CD service is free till now, use it" alt="Wercker CI the best CI-CD service is free till now, use it">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/wercker/wercker-talk.jpg" title="Wercker CI the best CI-CD service is free till now, use it" alt="Wercker CI the best CI-CD service is free till now, use it">
 
 We are currently using [Travis CI](https://travis-ci.com/) for running our tests and our own open source
 [Roger](https://github.com/namshi/roger) app to build docker images. The main objectives of the talk were:

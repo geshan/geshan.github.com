@@ -18,9 +18,10 @@ keywords: web scraping node.js, node.js web scraping, node web scraping, web sca
 ---
 Web scraping is the process of extracting data from a website in an automated way and Node.js can be used for web scraping. Even though other languages and frameworks are more popular for web scraping, Node.js can be utilized well to do the job too. In this post, we will learn how to do web scraping with Node.js for websites that don’t need and need Javascript to load. Let’s get started!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/nodejs-web-scraping/01nodejs-web-scraping.jpg" title="Web scraping with Nodejs for webpages that need or do not need JavaScript to render" alt="Web scraping with Nodejs for webpages that need or do not need JavaScript to render">
 
-<!-- more -->
 
 ## Table of contents
 

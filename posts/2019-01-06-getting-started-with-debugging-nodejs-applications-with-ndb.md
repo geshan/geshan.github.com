@@ -22,9 +22,9 @@ Finally, Google chrome labs has released ndb, which they say is "An improved deb
 
 I am going to show a step by step process of debugging nodejs application with [ndb](https://github.com/GoogleChromeLabs/ndb "ndb github page"). In other words, you will learn how to debug a nodejs application using ndb. Below you can see it in action, let's roll up your sleeves and get started:
 
-<img class="center" loading="lazy" src="/images/generic/loading.gif" title="debugging nodeJs applications" alt="debugging nodeJs applications" data-echo="/images/debugging-node-js/00ndb.png">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="debugging nodeJs applications" alt="debugging nodeJs applications" data-echo="/images/debugging-node-js/00ndb.png">
 
 ## Prerequisites for debugging nodejs application
 

@@ -15,11 +15,11 @@ description: In this 1400+ words post you will learn a practical example of Java
 keywords: javascript memoization, javascript memoize, javascript memoize library
 
 ---
-Memoization is simply caching the output of a function so that the consequent calls just use the cached result eliminating any heavy computation. Memoization in Javascript can also yield amazing performance benefits, given it is implemented properly. Do you want to make your javascript code run much faster? In this post, we will have a look at a practical example of javascript memoization. Spoiler alert: you will not see a Fibonacci or factorial mentioned below.
-
-<img class="center" loading="lazy" src="/images/javascript-memoization/01javascript-memoization.jpg" title="Javascript memoization for speed, performance and profit" alt="Javascript memoization for speed, performance and profit">
+Memoization is simply caching the output of a function so that the consequent calls just use the cached result eliminating any heavy computation. Memoization in Javascript can also yield amazing performance benefits, given it is implemented properly. Do you want to make your javascript code run much faster? In this post, we will have a look at a practical example of javascript memoization. Spoiler alert: you will not see a Fibonacci or factorial mentioned in this post.
 
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/javascript-memoization/01javascript-memoization.jpg" title="Javascript memoization for speed, performance and profit" alt="Javascript memoization for speed, performance and profit">
 
 ## Table of contents
 

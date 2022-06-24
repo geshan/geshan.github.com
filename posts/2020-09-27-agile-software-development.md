@@ -15,11 +15,11 @@ keywords: agile software development, agile software development methodology, wh
   is agile software development
 
 ---
-Agile software development means different things to different people. In this post, we will define what agile software development is with a simple analogy that a five-year-old can understand. The analogy we will use is as straightforward as serving an apple to 4 kids. Yes, it will be that easy, let's get started:
-
-<img class="center" loading="lazy" src="/images/agile-software-development/01agile-software-development-apple.jpg" title="Agile software development Apple serving analogy" alt="Agile software development serve apple to 4 children analogy">
+Agile software development means different things to different people. In this post, we will define what agile software development is with a simple analogy that a five-year-old can understand. The analogy we will use is as straightforward as serving an apple to 4 kids. Yes, it will be that easy, let's get started!
 
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/agile-software-development/01agile-software-development-apple.jpg" title="Agile software development Apple serving analogy" alt="Agile software development serve apple to 4 children analogy">
 
 ## What is agile software development?
 

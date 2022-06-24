@@ -15,10 +15,9 @@ keywords: nodejs append to file, node.js append to file, nodejs append file, nod
 ---
 Node.js can be used for a multitude of things, file handling is one of them. In this post, we will learn how to append to a file using Node.js. It can be done with callback, promise (async/await) as well as in a sync way, let’s get going!
 
+<!-- more -->
 
 <img class="center" loading="lazy" src="/images/nodejs-append-to-file/01nodejs-append-to-file.jpg" title="Append contents to a file using Node.js" alt="Append contents to a file using Node.js">
-
-<!-- more -->
 
 ## Table of contents
 

@@ -15,9 +15,9 @@ keywords: docker build example, faster docker build, slow docker build, fast doc
 ---
 In this post, we will see a docker build example of a node js API application starting from slow and ending up in a \~10x faster build. I have already talked about the [reasons to use docker for development environment](/blog/2018/10/why-use-docker-3-reasons-from-a-development-perspective/). I have also mentioned [how docker changed the way we software engineers work](https://geshan.com.np/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/) and [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/) in past posts. For this one let’s focus on the docker build example with faster build in mind.
 
-<img class="center" loading="lazy" src="/images/docker-build-example/01faster-docker-build.jpg" title="Go from slow to fast docker build with example" alt="Whale as docker mascot">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/docker-build-example/01faster-docker-build.jpg" title="Go from slow to fast docker build with example" alt="Whale as docker mascot">
 
 ## Information before jumping in
 

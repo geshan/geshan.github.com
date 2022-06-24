@@ -15,9 +15,9 @@ keywords: pair programming, pair program, pair programming benefits, benefits of
 ---
 There are proven benefits of pair programming you and your team can take advantage of. I have been pair programming here and there for some years now. I have pair programmed with engineers senior to me as well as software engineers junior to me. Every time while pair programming I have learned something new from the other person regardless of my colleague’s programming experience. I believe you and your team can also reap these rewards of pair programming, let’s get started.
 
-<img class="center" loading="lazy" src="/images/pair-programming-benefits/01pair-programming-benefits.jpg" title="Pair programming in action" alt="Pair programming in action">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/pair-programming-benefits/01pair-programming-benefits.jpg" title="Pair programming in action" alt="Pair programming in action">
 
 ## What is pair programming?
 

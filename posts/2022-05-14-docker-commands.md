@@ -16,9 +16,9 @@ keywords: docker command, docker commands, docker run, docker exec, docker logs,
 ---
 Docker packages software applications into containers making them easy to build, test, and ship (deploy). In this post we will look into some useful docker commands you should know about with real-life examples. Let’s get rolling!
 
-<img class="center" loading="lazy" src="/images/docker-commands/01docker-commands.jpg" title="10 useful docker commands" alt="10 useful docker commands">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/docker-commands/01docker-commands.jpg" title="10 useful docker commands" alt="10 useful docker commands">
 
 ## Table of contents
 

@@ -13,9 +13,9 @@ keywords: Docker, Devops, Why use docker, Software Engineering
 
 Docker has been popular in the technology space in the past 5 years is an understatement. It has [exploded](https://trends.google.com/trends/explore?date=2013-09-08%202018-10-08&q=%2Fm%2F0wkcjgj) in usage and popularity in half a decade. Containers have taken us by storm. Newer applications without containerization feel like it is missing something. Docker has stood out to be the king in the container arena. This post details the reasons to use Docker for your development environment.
 
-<img class="center" loading="lazy" src="/images/why-docker/whale.jpg" title="Why use docker? 3 reasons from a development perspective" alt="Why use docker? 3 reasons from a development perspective">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/why-docker/whale.jpg" title="Why use docker? 3 reasons from a development perspective" alt="Why use docker? 3 reasons from a development perspective">
 
 ## TLDR;
 

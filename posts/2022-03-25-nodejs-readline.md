@@ -15,9 +15,9 @@ keywords: nodejs readline, readline nodejs, node.js readline, readline node.js
 ---
 Node.js can be used for multiple purposes, creating a Command Line Interface (CLI) app is one of them. With the Node.js Readline native module, we can create CLI apps. In this post, we will learn how to create a basic Node.js CLI app using the latest Readline on Node 17 with promises and async/await. Let’s get started!
 
-<img class="center" loading="lazy" src="/images/nodejs-readline/01nodejs-readline.jpg" title="Using Node.js readline to create simple CLI app" alt="Using Node.js readline to create simple CLI app">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-readline/01nodejs-readline.jpg" title="Using Node.js readline to create simple CLI app" alt="Using Node.js readline to create simple CLI app">
 
 ## Table of contents
 

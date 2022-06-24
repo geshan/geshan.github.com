@@ -17,9 +17,9 @@ lastModified: 2020-04-25T10:03:22.000+11:00
 ---
 The web has been around for a while now. I have been building websites for 20 years now and I started by building static websites. Later I worked on many dynamic websites and web applications. This post is a quick rundown on the major difference between dynamic and static websites. There are some details about the JAM (Javascript API and Markup) stack. It also has some explanation of the technologies and costs associated with each of the 3 options.
 
-<img class="center" loading="lazy" src="/images/static-vs-dynamic-website/01static-vs-dynamic-vs-jam-stack.jpg" title="Static vs dynamic website, JAM stack in between with tech and cost considerations" alt="Static vs dynamic website, JAM stack in between with tech and cost considerations">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/static-vs-dynamic-website/01static-vs-dynamic-vs-jam-stack.jpg" title="Static vs dynamic website, JAM stack in between with tech and cost considerations" alt="Static vs dynamic website, JAM stack in between with tech and cost considerations">
 
 ## Prerequisites
 

@@ -19,9 +19,9 @@ keywords: Symfony, PHP, Google Cloud, Google Cloud Run, Symfony Hosting, Symfony
 ---
 Symfony is without doubts one of the most [popular](https://raygun.com/blog/top-php-frameworks/) PHP frameworks. It has amazing flexibility and is written in an applaudable modular fashion. Some Symfony components even [power](https://symfony.com/projects/laravel) other prominent frameworks like Laravel. Running Symfony is a bit tricky at times, especially the [permissions](https://symfony.com/doc/current/setup/file_permissions.html) of the cache and logs folder, this blog post demystifies running the Symfony [Demo App](https://github.com/symfony/demo) in a docker container and hosting it serverless on [Google Cloud Run](https://cloud.google.com/run/).
 
-<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg" title="Get Symfony running on Google Cloud Run with the demo app" alt="Get Symfony running on Google Cloud Run with the demo app">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/00symfony-on-gcr.jpg" title="Get Symfony running on Google Cloud Run with the demo app" alt="Get Symfony running on Google Cloud Run with the demo app">
 
 ## Prerequisites
 

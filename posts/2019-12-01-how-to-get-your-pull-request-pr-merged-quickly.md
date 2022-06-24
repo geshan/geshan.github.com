@@ -14,9 +14,9 @@ lastModified: 2020-04-25T11:09:28.000+11:00
 ---
 Have you ever faced a call to completely redesign your code in one of your pull requests? I have and then thought what are the ways to avoid this. Call it a pull request or merge request, basically, it is a set of changes you want to go ahead and merge to the main branch to deploy to production and complete your task. This post is going to highlight a semi silver bullet to get your pull requests merged faster :), carry on reading.
 
-<img class="center" loading="lazy" src="/images/pull-request-merge/pull-request-merge-fast.jpg" title="How to get your pull request (PR) approved and merged quickly" alt="How to get your pull request (PR) approved and merged quickly">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/pull-request-merge/pull-request-merge-fast.jpg" title="How to get your pull request (PR) approved and merged quickly" alt="How to get your pull request (PR) approved and merged quickly">
 
 ## Introduction
 

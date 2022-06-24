@@ -14,9 +14,9 @@ keywords: hiring, tech hiring, retain talent, retain tech talent
 ---
 Sometimes I feel that the software company ([YIPL](http://younginnovations.com.np/ourstory)) we started a decade back is turning into a software engineer factory. We take in fresh grads or junior software engineers, train them, mentor them. When they get the skills after 6-9 months and are ready to be productive to the company they move to a bigger and technically [better software company](/blog/2014/12/how-to-become-a-better-software-company-technically-slides-and-video/). This is a common story in Kathmandu Tech Scene. I am not blaming people moving jobs in tech but I think, there is a fundamental flaw in the process and system itself. In this blog post I will unveil a tech hiring funnel we follow for a few tech startups in Kathmandu. It will also contain some of my thoughts on how to retain tech talent by converting the funnel into an hour glass.
 
-<img class="center" loading="lazy" src="/images/tech-hiring-funnel-hour-glass/tech-hiring-funnel-hourglass.jpg" title="Convert your tech hiring funnel into an hour glass, retain tech talent" alt="Convert your tech hiring funnel into an hour glass, retain tech talent">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/tech-hiring-funnel-hour-glass/tech-hiring-funnel-hourglass.jpg" title="Convert your tech hiring funnel into an hour glass, retain tech talent" alt="Convert your tech hiring funnel into an hour glass, retain tech talent">
 
 I am not a hiring manager or recruiter. Below is my own experience of some years trying to source and retain tech talents mainly in Kathmandu, Nepal. I feel, these processes can be applied to any hire many tech roles anywhere in the world.
 

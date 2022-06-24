@@ -18,9 +18,10 @@ Docker has shot up in [popularity over the years](https://trends.google.com/tren
 
 Running Postgres with Docker and docker-compose makes it very easy to run and maintain especially in a development environment. In this post, we will look into how to run and use Postgres with Docker and Docker compose step-by-step keeping things simple and easy. Let’s get started!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/docker-postgres/01docker-postgres.jpg" title="Use Postgres with Docker and docker-compose easily" alt="Use Postgres with Docker and docker-compose easily">
 
-<!-- more -->
 
 ## Table of contents
 

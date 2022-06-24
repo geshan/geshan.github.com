@@ -12,6 +12,8 @@ cover: /images/chatops/chatops-hubot.jpg
 
 On 1-Apr-2016 For [CodeMotion Dubai 2016](http://dubai2016.codemotionworld.com/) conference I talked about chatOps at Namshi. The main topics of the talk were:
 
+<!-- more -->
+
 1. What is chatOps?
 1. Why do chatOps?
 1. How we do chatOps at Namshi
@@ -21,7 +23,7 @@ On 1-Apr-2016 For [CodeMotion Dubai 2016](http://dubai2016.codemotionworld.com/)
 (Illustration by Anjan Shrestha - AnjHero.me)
 
 This post has the slides and the video of the whole talk. 
-<!-- more -->
+
 I liked the overall experience of being a conference  speaker :). 
 I think the audience also had something new to fiddle around with by the end of the talk.
 

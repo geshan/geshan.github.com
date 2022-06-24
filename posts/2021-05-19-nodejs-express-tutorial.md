@@ -17,9 +17,9 @@ keywords: nodejs express, node.js express, node.js express.js, nodejs express tu
 ---
 Express Js is one of the most popular Node.js frameworks. In this Node.js Express tutorial, we will build a mock landing page that can collect the email addresses of people interested to be notified of the launch of our imaginary podcast about headphones. Let’s get started.
 
-<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/01nodejs-express-tutorial.jpg" title="Node.js express tutoral to build a simple 1 page website" alt="Node.js express tutoral to build a simple 1 page website">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-express-tutorial/01nodejs-express-tutorial.jpg" title="Node.js express tutoral to build a simple 1 page website" alt="Node.js express tutoral to build a simple 1 page website">
 
 ## Table of contents
 

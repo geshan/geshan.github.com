@@ -13,9 +13,9 @@ keywords: beginner software engineer, software engineer, software engineer tip
 ---
 Most of the tutorials you have read or watched until now usually do one thing, spoon-feeding. This is "OK" to learn a new thing but not good when you need to `solve` a task. A task usually involves reaching a goal by overcoming a problem. This post unveils the most important "tip" for all beginner software engineers.
 
-<img class="center" loading="lazy" src="/images/generic/loading.gif" title="The most important tip for beginner software engineers is" alt="The most important tip for beginner software engineers is" data-echo="/images/tip-beginner-sw-eng/puzzle.jpg">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="The most important tip for beginner software engineers is" alt="The most important tip for beginner software engineers is" data-echo="/images/tip-beginner-sw-eng/puzzle.jpg">
 
 ## TL;DR
 

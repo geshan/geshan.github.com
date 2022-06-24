@@ -15,9 +15,10 @@ keywords: nodejs sqlite, node.js sqlite, node.js sqlite tutorial, nodejs sqlite 
 ---
 Node.js can be used very well with relational databases and SQLite is no exception. In this post, we will build a simple REST API for Quotes step-by-step with SQLite and Node.js using the Express Js framework step-by-step.
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/nodejs-sqlite/01nodejs-sqlite.jpg" title="Build Node.js SQLite REST API with Express js" alt="Build Node.js SQLite REST API with Express js">
 
-<!-- more -->
 ## Table of contents
 
 * [Prerequisites](#prerequisites)

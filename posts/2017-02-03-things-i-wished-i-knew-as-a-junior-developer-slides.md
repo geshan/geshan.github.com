@@ -13,9 +13,9 @@ keywords: software engineering, junior developer, software development, web deve
 
 Being a senior software developer is more about the mindset and pro-activeness. Technical skills can take you to a point then you will be stagnant. To grow you need to learn in tech field. Above was the context for my talk titled "Things I wished I knew as a junior developer".  
 
-<img class="center" loading="lazy" src="/images/things-jr-dev/geshan-dn-meetup-4.jpg" title="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4" alt="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/things-jr-dev/geshan-dn-meetup-4.jpg" title="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4" alt="Me speaking about Things I wished I knew as a junior developer at DN Meetup 4">
 
 ## Main points
 

@@ -13,9 +13,9 @@ cover: /images/php-dev-meetup-16/php-dev-meetup-16.jpg
 
 I had given a talk in the PHP Developers Nepal meetup #14 in Aug 2014 about [Rabbit Mq and Symfony](https://geshan.com.np/blog/2014/08/basic-overview-of-message-queues-rabbit/). This time the [meetup](http://developers-nepal.github.io/php/meetups/25-Jun-2016/) took place at Prime College today. There were 2 regular talks for this meetup and one 5 minute lightening talk about the community. For this 16th installment, we did an open discussion for the first time. The topic of open discussion was "Does automated deployment and DevOps add value to the organization?". It was the highlight of the event.
 
-<img class="center" loading="lazy" src="/images/php-dev-meetup-16/php-dev-meetup-16.jpg" title="PHP Dev Meetup 16 Open Panel discussion on DevOps" alt="PHP Dev Meetup 16 Open Panel discussion on DevOps">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/php-dev-meetup-16/php-dev-meetup-16.jpg" title="PHP Dev Meetup 16 Open Panel discussion on DevOps" alt="PHP Dev Meetup 16 Open Panel discussion on DevOps">
 
 ## How did it all unfold
 

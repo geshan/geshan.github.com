@@ -18,9 +18,9 @@ keywords: typescript optional paramaters, optional parameters typescript, typesc
 ---
 TypeScript is a superset of JavaScript that has climbed up in [popularity](https://trends.google.com/trends/explore?date=today%205-y&q=%2Fm%2F0n50hxv) in the past few years. In this post, we will learn how to use optional parameters in TypeScript functions, let’s get started!
 
-<img class="center" loading="lazy" src="/images/typescript-optional-parameters/01typescript-optional-parameters.jpg" title="TypeScript optional parameters with example code" alt="TypeScript optional parameters with example code">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/typescript-optional-parameters/01typescript-optional-parameters.jpg" title="TypeScript optional parameters with example code" alt="TypeScript optional parameters with example code">
 
 ## Table of contents
 

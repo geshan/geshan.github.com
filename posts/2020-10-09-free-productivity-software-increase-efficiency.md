@@ -15,9 +15,9 @@ keywords: free productivity software, free productivity apps, free productivity 
 ---
 Being productive will mean different things to different people. In this post, I will list 5+ free productivity software that has helped me get more things done or get something done better. The top 3 free productivity software mentioned in this writeup deal with either time tracking or time management. Then, there is mention of other useful software that aids in your productivity.
 
-<img class="center" loading="lazy" src="/images/free-productivity-software/01productivity.jpg" title="Free productivity software to enhance your outcome" alt="Free productivity software to enhance your outcome">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/free-productivity-software/01productivity.jpg" title="Free productivity software to enhance your outcome" alt="Free productivity software to enhance your outcome">
 
 ## Introduction
 

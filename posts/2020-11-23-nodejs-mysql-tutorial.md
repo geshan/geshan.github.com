@@ -18,9 +18,9 @@ keywords: Nodejs mysql tutorial, Node.js mysql tutorial, nodejs mysql, nodejs ex
 ---
 Node.js and MySQL mix very well together. In this Node.js MySQL tutorial, we will look into how to get started with both of them step-by-step to build REST API for quotes using Express js.
 
-<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial.jpg" title="Node.js MySQL step-by-step tutorial" alt="Node.js MySQL tutorial step-by-step to build a quotes REST API with Express js">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial.jpg" title="Node.js MySQL step-by-step tutorial" alt="Node.js MySQL tutorial step-by-step to build a quotes REST API with Express js">
 
 ## Table of contents
 

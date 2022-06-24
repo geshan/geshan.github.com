@@ -13,9 +13,9 @@ keywords: software engineering podcasts, software engineering podcast, software 
 ---
 Software Engineering podcasts have been my companion for a long time. I have listened to software engineer podcasts for more than a [decade](/blog/2009/02/3-drupal-podcasts-you-must-be-fool-to/). Software Engineering podcasts give you the latest news and views in a great format that is equally easy to consume too. You can also read the previous parts [1](/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/), [2](/blog/2016/05/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-2/), [3](/blog/2017/01/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-3/), and [4](/blog/2019/07/podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-4/). Here are the 3 podcasts all software engineers should subscribe to now:
 
-<img class="center" loading="lazy" src="/images/software-engineering-podcasts-part-05/01software-engineering-podcasts-mic.jpg" title="Software engineering podcasts you must subscribe to" alt="Software engineering podcasts mic">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/software-engineering-podcasts-part-05/01software-engineering-podcasts-mic.jpg" title="Software engineering podcasts you must subscribe to" alt="Software engineering podcasts mic">
 
 ## [Command Line Heroes (from Redhat) by Saron Yitbarek](https://www.redhat.com/en/command-line-heroes)
 

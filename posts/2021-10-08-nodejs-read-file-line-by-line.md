@@ -17,9 +17,10 @@ There are multiple ways to read a file line by line with Node.js. In Node.js fil
 
 Reading the whole file at once will make the process memory intensive. With the ability to load and read a file line by line it enables us to stop the process at any step as per need. In this post, we will look into 3 ways to read a file line by line using Node.js with memory usage comparison.
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/nodejs-read-file-line-by-line/01nodejs-read-file-line-by-line.jpg" title="4 ways to read file line by line with Node.js" alt="4 ways to read file line by line with Node.js">
 
-<!-- more -->
 
 ## Table of contents
 

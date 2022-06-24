@@ -15,7 +15,9 @@ Do you write at least 10 lines of code a day in any programming language? Do you
 
 I have seen teams fall into this trap of git conflicts when they start using git and some type of [gitflow](https://geshan.com.np/blog/2014/12/do-you-git-your-code-follow-this-simplified-gitflow-model/). Merging branches to the main branch becomes a pain when there are git conflicts. In this post, I am going to reveal 3 simple rules to avoid git conflicts.
 
-<img class="center" loading="lazy" src="/images/3-rules-git-conflict/git-conflict.png" title="3 simple rules for less or no git conflicts" alt="3 simple rules for less or no git conflicts"> <!-- more -->
+<!-- more -->
+
+<img class="center" loading="lazy" src="/images/3-rules-git-conflict/git-conflict.png" title="3 simple rules for less or no git conflicts" alt="3 simple rules for less or no git conflicts">
 
 ## Assumption
 
