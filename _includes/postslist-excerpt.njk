@@ -10,7 +10,7 @@
           </span>
           {% set date = post.date %}
           {% include "components/posted-date-time.njk" %}
-          . <span class='text-darkgrey'>{{ helpers.getReadingTime(post.templateContent) }}
+          . <span class='text-darkgrey'>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
       </header>
       <div class="entry-content clearfix">
         {% excerptMore post %}
