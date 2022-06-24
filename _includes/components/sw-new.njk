@@ -6,10 +6,10 @@
 <meta name="msapplication-starturl" content="/index.html" />
 <meta name="theme-color" content="#6947E7"/>
 
-{%- if helpers.getEnv() != "dev" -%}
 <script>
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js");
+    window.addEventListener("load", function() {
+      navigator.serviceWorker.register("/sw.js");
+    });
   }
 </script>
-{%- endif -%}
