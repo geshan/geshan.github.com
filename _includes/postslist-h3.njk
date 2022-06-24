@@ -11,8 +11,7 @@
                     <p class="meta text-muted"> <span class="glyphicon glyphicon-calendar"></span>
                     <time datetime="{{ date | getSitemapDate }}" data-updated="true">
                         <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
-                            {{ post.date | displayDate }} |
-                            (about a {{ helpers.getReadingTime(post.templateContent) }} minute read)
+                            {{ post.date | displayDate }} . {{ helpers.getReadingTime(post.templateContent) }} min read
                         </time>
                     </time>
                     

@@ -10,7 +10,7 @@ templateClass: tmpl-post
     <header class="page-header">
     <h1 class="entry-title">{{ title }}</h1>
     <p class="meta text-muted">
-    {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
+    {% include "components/posted-date-time.njk" %} . {{ helpers.getReadingTime(content) }} min read
     </p>
     </header>
     <div class="entry-content clearfix">

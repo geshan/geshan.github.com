@@ -1,8 +1,7 @@
 {% if date %}
 <time datetime="{{ date | getSitemapDate }}" data-updated="true">
     <time class="entry-date" datetime="{{ date | getSitemapDate }}">
-      <span class="date">
-        <i class="fas fa-calendar-alt" title="Posted at"></i>
+      <span class="date">        
         {{ date | displayDateOnly }}
       </span>
     </time>
