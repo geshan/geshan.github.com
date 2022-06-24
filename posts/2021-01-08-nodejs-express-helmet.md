@@ -19,9 +19,10 @@ Security is everyone’s responsibility. Express Helmet secures your Node.js app
 
 In this post, we will see how we can add Helmet to an existing API and how it bolsters the security of the application. Let’s get started!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/express-helmet/01express-helmet.jpg" title="Use Helmet js to secure your Node.js Express app" alt="Use Helmet js to secure your Node.js Express app">
 
-<!-- more -->
 Background Photo by [Harley-Davidson](https://unsplash.com/@harleydavidson) on [Unsplash](https://unsplash.com/photos/ZZbniSDAGoU)
 
 ## Table of contents

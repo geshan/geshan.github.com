@@ -16,8 +16,9 @@ products on [Product Hunt](http://www.producthunt.com/) and think how would they
 amazing products. If you are planning to build your software product, this post will unfold why
 you should make your web Application Programming Interface (API) working first.
 
-<img class="center" loading="lazy" src="/images/product-http-api/rest-json.jpg" title="JSON APIs" alt="JSON APIs">
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/product-http-api/rest-json.jpg" title="JSON APIs" alt="JSON APIs">
 
 ## Introduction
 

@@ -12,9 +12,9 @@ cover: /images/testing-types/software-testing.jpg
 
 Tests check that the code does what it is expected to do. It also gives confidence to the software engineer that the code  works as intended. This equates to less or no bugs in the software. You must have heard about lots of types of automated software tests. There is unit testing, integration testing, functional testing, acceptance testing, smoke testing etc. As per Guru99's [post](http://www.guru99.com/types-of-software-testing.html) there are more than 100 types of software testing. In this post I am going to categorize automated software tests into two, the fast ones and not fast ones.
 
-<img class="center" loading="lazy" src="/images/testing-types/software-testing.jpg" title="There are only two types of automated software tests, fast ones and not fast ones" alt="There are only two types of automated software tests, fast ones and not fast ones">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/testing-types/software-testing.jpg" title="There are only two types of automated software tests, fast ones and not fast ones" alt="There are only two types of automated software tests, fast ones and not fast ones">
 
 ### How do you distinguish between slow and fast tests? 
 

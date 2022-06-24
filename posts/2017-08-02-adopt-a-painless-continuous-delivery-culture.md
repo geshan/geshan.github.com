@@ -15,9 +15,9 @@ Your work responsibilities boil down to 2 things, either add value to customers 
 Value to the business is always more important than the latest technical fad. If a feature is done (production
 ready) but not deployed to production it is an opportunity loss for the business.
 
-<img class="center" loading="lazy" src="/images/continuous-delivery/geshan-devops--days-pdx-2017.jpg" title="Adopt a painless continuous delivery culture, add more business value [Slides]" alt="Adopt a painless continuous delivery culture, add more business value [Slides]">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/continuous-delivery/geshan-devops--days-pdx-2017.jpg" title="Adopt a painless continuous delivery culture, add more business value [Slides]" alt="Adopt a painless continuous delivery culture, add more business value [Slides]">
 
 Below are the slides of my talk titled "Adopt a painless continuous delivery culture, add more business value" given today at [DevOpsDays Portland 2017](https://www.devopsdays.org/events/2017-portland/program/):
 

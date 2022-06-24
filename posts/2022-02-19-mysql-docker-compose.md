@@ -15,9 +15,9 @@ keywords: docker mysql, mysql docker, docker compose mysql, mysql docker compose
 ---
 MySQL is one of the [most popular](https://db-engines.com/en/system/MySQL) relational databases of all time. Using MySQL with Docker and docker-compose makes it very easy and fast to test out any changes in any application using MySQL as the database. In this tutorial, we will detail how to use MySQL with Docker and docker-compose step-by-step keeping things easy to comprehend. Let’s get rolling!
 
-<img class="center" loading="lazy" src="/images/mysql-docker-compose/01mysql-docker-compose.jpg" title="Use MySQL with Docker and docker-compose easily" alt="Use MySQL with Docker and docker-compose easily">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/mysql-docker-compose/01mysql-docker-compose.jpg" title="Use MySQL with Docker and docker-compose easily" alt="Use MySQL with Docker and docker-compose easily">
 
 ## Table of contents
 

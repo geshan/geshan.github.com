@@ -17,10 +17,11 @@ In the past months, I was tweeting some insightful and enlightening software eng
 
 I browsed through my twitter timeline and collected them in one place. 
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/10-quotes/code-html-small.jpg" title="10 software engineering proverbs-quotes I came up with in past months" alt="10 software engineering proverbs-quotes I came up with in past months">
 
 ## Here are the quotes with visuals :
-<!-- more -->
 
 ***
 

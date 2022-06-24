@@ -16,9 +16,9 @@ keywords: nodejs uuid, uuid nodejs, node.js uuid, uuid node.js
 ---
 Universally Unique Identifier (UUID) is very useful. In Node.js there are many ways to generate a UUID. One of them is with a native module and others are using NPM packages. UUID can be very useful as reliable unique identifiers. In this post, you will learn how to generate a UUID using Node.js and briefly understand when and why to use them. Let’s get started!
 
-<img class="center" loading="lazy" src="/images/nodejs-uuid/01nodejs-uuid.jpg" title="How to generate UUID with Node.js" alt="How to generate UUID with Node.js">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-uuid/01nodejs-uuid.jpg" title="How to generate UUID with Node.js" alt="How to generate UUID with Node.js">
 
 ## Table of contents
 

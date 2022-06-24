@@ -11,9 +11,10 @@ cover: /images/3-podcasts/3-podcasts-sw-eng.jpg
 
 I have been listening to podcasts since years now, though it has not been continuous. I remember listening to Lullabot podcast 7 years back in 2008. Some podcasts have good content and sound quality. Some podcasts start with a great intro music and their sound quality disappoints. In this post, I will mention 3 amazing podcasts I have been listening in past months. Every software engineer/developer should listen to them. They have great content and sound quality in all the episodes.
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/3-podcasts/3-podcasts-sw-eng.jpg" title="3 podcasts every software engineer should subscribe to" alt="3 podcasts every software engineer should subscribe to">
 (Background image Copyright [Santosh Manandhar](https://www.facebook.com/san.supertramp))
-<!-- more -->
 
 ## [Full Stack Radio](http://www.fullstackradio.com/)
 

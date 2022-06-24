@@ -13,9 +13,9 @@ keywords: kubernetes cron job, kubernetes cron jobs, k8s cron job, k8s cron jobs
 ---
 Kubernetes is super effective on running cron jobs as well as other web application workloads. Kubernetes cron job is a special kind of Kubernetes job that runs on a time-based schedule. In this post, we will focus on how to run optimally configured cron jobs on Kubernetes.
 
-<img class="center" loading="lazy" src="/images/kubernetes-cron-job/01kubernetes-cron-job.jpg" title="Kubernetes cron jobs, lets configure them optimally" alt="Kubernetes cron jobs, lets configure them optimally">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/kubernetes-cron-job/01kubernetes-cron-job.jpg" title="Kubernetes cron jobs, lets configure them optimally" alt="Kubernetes cron jobs, lets configure them optimally">
 
 ## Table of contents
 

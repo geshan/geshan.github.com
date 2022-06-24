@@ -12,10 +12,12 @@ It has already been a month that the devastating earthquake hit Nepal. I hope li
 
 Below is final the Part 4 of the Software Engineering Practices in Nepal Infographics. In this edition the information reveals Project Management Methodology and Software, testing frameworks and mobile apps all extracted out from the survey data.
 
+<!-- more -->
+
 Special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) and [Ansubha Manandhar](http://bit.ly/ansu-blog) for this edition too, for your help in data normalization, filtering and grouping.
 
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
-<!-- more -->
+
 
 <img class="center" loading="lazy" src="/images/sw-eng-np-infographics-part04/Software_Engineering_Nepal_Mid_2015_Part04.png" title="Software Engineering Practices in Nepal Infographics Part 4" alt="Software Engineering Practices in Nepal Infographics Part 4">
 

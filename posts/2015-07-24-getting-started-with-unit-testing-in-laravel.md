@@ -14,8 +14,9 @@ cover: /images/laravel-unit-tests/laravel-popularity.png
 
 Automated Testing an application is kind of a puzzle given the choice of methodologies (TDD, BDD...), frameworks etc there is no clear direction on how to test an application. Same applies for any PHP application, where you have many frameworks, methods and styles to choose from. In this blog post I will shed some light on how to get started with "Unit" testing in a Laravel application. Laravel has gained lots of popularity in the past years may be due to its simplicity, ease of use, clear documentation and availability of packages/libraries. 
 
-<img class="center" loading="lazy" src="/images/laravel-unit-tests/laravel-popularity.png" title="Laravel is very popular" alt="Laravel is very popular">
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/laravel-unit-tests/laravel-popularity.png" title="Laravel is very popular" alt="Laravel is very popular">
 
 ## Introduction 
 

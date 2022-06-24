@@ -15,9 +15,9 @@ keywords: repost blog, blog, content
 ---
 If blogging is one of your goals for 2020 you are reading the right blog post. Setting goals for a new year is a lot better than resolutions as goal setting is proactive whereas resolutions give out a reactive connotation. Anyhow, in this post we are going to find out about websites where you should repost your tech blog content that will fetch more audience to your content and will not hamper the Search Engine Optimisation (SEO) of your website.
 
-<img class="center" loading="lazy" src="/images/repost-blog/repost-blog.jpg" title="Repost your tech blog, get a larger audience without hurting SEO" alt="4 websites to repost your tech blog content to get a bigger audience without hurting SEO">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/repost-blog/repost-blog.jpg" title="Repost your tech blog, get a larger audience without hurting SEO" alt="4 websites to repost your tech blog content to get a bigger audience without hurting SEO">
 
 ## Assumptions
 

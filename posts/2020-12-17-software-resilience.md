@@ -22,9 +22,9 @@ The ability of software to heal from unexpected events is software resilience. T
 
 In this post, we will look into some aspects that you need to be careful to have software resilience.
 
-<img class="center" loading="lazy" src="/images/software-resilience/01software-resilience.jpg" title="Software resilience factors to consider" alt="Software resilience  factors to consider to heal from the unexpected">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/software-resilience/01software-resilience.jpg" title="Software resilience factors to consider" alt="Software resilience  factors to consider to heal from the unexpected">
 
 ## Table of Contents
 

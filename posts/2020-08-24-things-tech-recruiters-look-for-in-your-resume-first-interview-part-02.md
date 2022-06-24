@@ -19,9 +19,9 @@ keywords: what recruiters look for, tech recruiters, tech recruitment, tech jobs
 ---
 Applied to many jobs and haven't heard back? Not sure what is missing in your resume. Could not make that first impression in the initial interview? Then you must read forward. **In this post, three tech recruiters from Sydney's well-known companies unveil things they look for in a CV and points they evaluate in the initial interview**. You will know how to make that first impression with your CV and initial interview from a tech recruiter's view. As a bonus, there are tips for finding jobs in a pandemic, carry on reading.
 
-<img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/for-hire.jpg" title="Points tech recruiters look for in your cv and the first interview part" alt="For Hire meter">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/for-hire.jpg" title="Points tech recruiters look for in your cv and the first interview part" alt="For Hire meter">
 
 Let's jump directly to the main thing, what do recruiters look for in the CV and the first interview. The following were the question for this time (as a follow up of the [last post](https://geshan.com.np/blog/2019/01/things-tech-recruiters-look-for/)): 
 

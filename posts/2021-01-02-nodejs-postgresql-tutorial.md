@@ -17,9 +17,9 @@ keywords: Nodejs postgres tutorial, Node.js postgres tutorial, nodejs postgres, 
 ---
 Node.js can be used efficiently with relational databases like PostgreSQL. In this post about Node.js PostgreSQL tutorial, we are going to build a REST API for Quotes step-by-step using Express Js.
 
-<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg" title="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step" alt="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg" title="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step" alt="Node.js postgresql tutorial to build a quotes REST API using Express step-by-step">
 
 ## Table of contents
 

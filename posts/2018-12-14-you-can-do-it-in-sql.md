@@ -22,8 +22,10 @@ Even with thinking more than typing SQL (Structured Query Language) we software 
 
 This is quite prevalent in software engineers who work in web applications. This post aims to enlighten you about the powers of SQL you might know but generally don't use.
 
-<img class="center" loading="lazy" src="/images/do-it-in-sql/tea-lights.jpg" title="You can do it in SQL, stop writing extra code for that" alt="You can do it in SQL, stop writing extra code for that">
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/do-it-in-sql/tea-lights.jpg" title="You can do it in SQL, stop writing extra code for that" alt="You can do it in SQL, stop writing extra code for that">
+
 
 ## TLDR;
 

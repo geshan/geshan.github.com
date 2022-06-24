@@ -23,9 +23,9 @@ Laravel has [soared](https://trends.google.com/trends/explore?date=2014-10-22%20
 
 [Google Cloud Run](https://cloud.google.com/run/) is serverless and fully managed by Google, you get super scale, billing by the second, HTTPs URL, and your own domain mapping. If you want to run stateless containers [Cloud run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/ "Why use serverless container on Google Cloud Run") is hands down the easiest way to do it. In this post, I will detail how to get your Laravel 6 app working on Google cloud run with Continuous Integration (CI).
 
-<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/00laravel6-on-gcr.jpg" title="Get Laravel 6 running on Google cloud run in minutes with CI" alt="Get Laravel 6 running on Google cloud run in minutes with CI">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/laravel6-on-google-cloud-run/00laravel6-on-gcr.jpg" title="Get Laravel 6 running on Google cloud run in minutes with CI" alt="Get Laravel 6 running on Google cloud run in minutes with CI">
 
 ## Prerequisites
 

@@ -19,9 +19,9 @@ Learn how to start a tech startup with no money. You might think I am joking but
 
 The [$300 free credit](https://cloud.google.com/free) for 12 months is key to getting your startup off the ground for around 9-10 months. Let’s get started:
 
-<img class="center" loading="lazy" src="/images/start-tech-startup/01start-tech-startup.jpg" title="Start a tech startup for $0" alt="How to start a tech startup for $0 with Google Cloud Platform and other services">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/start-tech-startup/01start-tech-startup.jpg" title="Start a tech startup for $0" alt="How to start a tech startup for $0 with Google Cloud Platform and other services">
 
 ## Table of contents
 

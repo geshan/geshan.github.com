@@ -17,9 +17,10 @@ keywords: rabbitmq docker, rabbitmq node.js, rabbitmq node, rabbitmq nodejs
 ---
 Using RabbitMQ with Node.js to offload the things to process in the background is very useful. Adding Docker and docker-compose in that mix for local development makes setting up RabbitMQ and node.js a breeze. In this post, we will explore how to set up RabbitMQ and Node.js with docker and docker-compose using a dummy send email example, let's get rolling!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/01rabbitmq-docker-nodejs.jpg" title="Step by step tutorial on RabbitMQ with Node.js using Docker and Docker compose" alt="Step by step tutorial on RabbitMQ with Node.js using Docker and Docker compose">
 
-<!-- more -->
 
 ## Table of contents
 

@@ -15,9 +15,9 @@ keywords: jest beforeeach, beforeeach jest
 ---
 Jest is one of the most popular testing frameworks in JavaScript. In this post, we will delve into using Jest beforeEach properly to make unit testing better with JavaScript, let’s get going!
 
-<img class="center" loading="lazy" src="/images/jest-beforeeach/01jest-beforeeach.jpg" title="Jest before each with code example" alt="Jest before each with code example">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/jest-beforeeach/01jest-beforeeach.jpg" title="Jest before each with code example" alt="Jest before each with code example">
 
 ## Table of contents
 

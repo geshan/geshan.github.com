@@ -15,11 +15,11 @@ keywords: docker with nodejs, nodejs on docker, docker nodejs, node dockerfile, 
   compose
 
 ---
-Both Docker and Node.js have risen in popularity in the past 5 years. Running Node.js on docker containers with docker-compose for local development is a great experience. In this step-by-step tutorial, we will look at how Node.js docker and docker-compose with multi-stage docker build work in sync. Time to get cracking.
-
-<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg" title="Docker with Node.js and docker compose a step-by-step tutorial" alt="Docker with Node.js and docker compose">
+Both Docker and Node.js have risen in popularity in the past 5 years. Running Node.js on docker containers with docker-compose for local development is a great experience. In this step-by-step tutorial, we will look at how Node.js docker and docker-compose with multi-stage docker build work in sync. Time to get cracking!
 
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg" title="Docker with Node.js and docker compose a step-by-step tutorial" alt="Docker with Node.js and docker compose">
 
 ## Table of contents
 

@@ -14,9 +14,9 @@ keywords: software engineering, software podcast
 Podcasts open up a new horizon for learning, it is easier than reading and you can do it while commuting. This is a part 3 in the series (do check part [1](https://geshan.com.np/blog/2015/10/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to/) and
 [2](https://geshan.com.np/blog/2016/05/3-podcasts-every-software-engineer-slash-developer-should-subscribe-to-part-2/)) of podcasts you must subscribe to and listen to as a software engineer. Same as the last 2 times the 3 podcasts listed below have superb content and amazing sound quality too. Below is the list:
 
-<img class="center" loading="lazy" src="/images/3-podcasts-part-3/3-podcasts-sw-eng-part-03.jpg" title="3 podcasts every software engineer should subscribe to - part 3" alt="3 podcasts every software engineer should subscribe to - part 3">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/3-podcasts-part-3/3-podcasts-sw-eng-part-03.jpg" title="3 podcasts every software engineer should subscribe to - part 3" alt="3 podcasts every software engineer should subscribe to - part 3">
 
 ## [To Be Continuous by Heavybit](http://www.heavybit.com/library/podcasts/to-be-continuous/)
 

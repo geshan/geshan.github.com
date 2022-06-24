@@ -14,9 +14,9 @@ keywords: "software engineer mindset"
 ---
 If you have worked in building software for some years, possibly more than once the work has been either "some changes" on an existing project or a completely new greenfield project. Already working a.k.a brownfield products have users using it whereas new projects don't have the volume of users till it goes fully on production in some way. In this post, we will evaluate the differences in the mindset software engineers need to have for a stable software product vs a new greenfield project. Let's get started!
 
-<img class="center" loading="lazy" src="/images/software-engineer-mindset/01software-engineer-mindset.jpg" title="Software engineer mindset differences needed for working on a stable software product vs a new feature/project" alt="Software engineer mindset differences needed for working on a stable software product vs a new feature/project">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/software-engineer-mindset/01software-engineer-mindset.jpg" title="Software engineer mindset differences needed for working on a stable software product vs a new feature/project" alt="Software engineer mindset differences needed for working on a stable software product vs a new feature/project">
 
 
 ## Table of contents

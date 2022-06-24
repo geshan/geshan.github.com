@@ -16,9 +16,9 @@ keywords: vegeta load testing, vegeta load testing examples, vegeta load test, l
 ---
 Load testing is an important part of releasing a reliable API or application. Vegeta load testing will give you the confidence that the application will work well under a defined load. In this post, we will discuss how to use Vegeta for your load testing needs with some GET request examples. As it is just a go binary it is much easier to set up and use than you think, let's get started.
 
-<img class="center" loading="lazy" src="/images/vegeta-load-testing/01truck-load.jpg" title="Vegeta load testing analogy" alt="Loading a truck">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/vegeta-load-testing/01truck-load.jpg" title="Vegeta load testing analogy" alt="Loading a truck">
 
 ## What is Load testing?
 

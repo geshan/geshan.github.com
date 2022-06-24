@@ -16,9 +16,9 @@ keywords: phpunit assertions, phpunit assertion, phpunit testing, php testing
 ---
 PHPUnit has been blowing away its competition for more than [5 years](https://trends.google.com/trends/explore?date=2016-01-01%202020-12-31&q=phpunit,phpspec,codeception,behat,atoum) now. With the use of the right PHPUnit assertions, you can get the most benefit out of PHPUnit. In this post, we will look into some popular and very useful PHPUnit assertions you should be using day to day in your PHPUnit tests. Let’s get cracking!
 
-<img class="center" loading="lazy" src="/images/phpunit-assertions/01phpunit-assertions.jpg" title="PHPUnit assertions you should start using now" alt="PHPUnit assertions you should start using now">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/phpunit-assertions/01phpunit-assertions.jpg" title="PHPUnit assertions you should start using now" alt="PHPUnit assertions you should start using now">
 
 ## Table of contents
 

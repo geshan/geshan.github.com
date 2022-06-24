@@ -15,9 +15,9 @@ keywords: software engineer qualities
 ---
 There are many qualities of a great software engineer that will make you stand out. Among them, these 3 are crucial for you to become a great software engineer and leave the competition behind. Surely technical qualities matter a lot to be counted as a superior software engineer. On the other hand, this post is geared towards the non-technical aspects of software engineering.
 
-<img class="center" loading="lazy" src="/images/software-engineer-skills/01great-software-engineer.jpg" title="Crucial qualities of a great software engineer" alt="Softwrae engineer coding">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/software-engineer-skills/01great-software-engineer.jpg" title="Crucial qualities of a great software engineer" alt="Softwrae engineer coding">
 
 ## Software engineer qualities to work on
 

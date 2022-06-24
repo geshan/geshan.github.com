@@ -17,9 +17,9 @@ When I first thought about taking a social media break I thought it would be dif
 
 In this post, we will look at how to take a social media break in 4 steps where you have more chances of becoming successful at it.
 
-<img class="center" loading="lazy" src="/images/social-media-break/01social-media-break.jpg" title="Social Media Break" alt="How to take a social media break and win at it">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/social-media-break/01social-media-break.jpg" title="Social Media Break" alt="How to take a social media break and win at it">
 
 ## Table of contents
 

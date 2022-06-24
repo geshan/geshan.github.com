@@ -14,8 +14,9 @@ keywords: SQL, Docker, Microservices, Review, Blog, Git
 ---
 I have never done this in the past 11 years of blogging, this time it is going to be different. I am listing the 5 most viewed posts from this blog in 2018. All posts are not from 2018 but they have been viewed more than the others. I am using my Google Analytics stats to compile this list. So, here I present the most popular blog posts of 2018 on [Geshan.com.np](https://geshan.com.np "Geshan blog"):
 
-<img class="center" loading="lazy" src="/images/top-5-2018/everest.jpg" title="5 most viewed posts of 2018 a recap" alt="5 most viewed posts of 2018 a recap">
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/top-5-2018/everest.jpg" title="5 most viewed posts of 2018 a recap" alt="5 most viewed posts of 2018 a recap">
 
 ## 1. [You Can Do It in SQL, Stop Writing Extra Code for That](https://geshan.com.np/blog/2018/12/you-can-do-it-in-sql/ "A post on doing things in sql instead of code")
 

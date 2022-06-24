@@ -15,9 +15,9 @@ keywords: Beginner software engineer, software engineer, job
 ---
 "If you hate your job, take a loan and you will start liking it". I don't remember where I read this but this sounds convincing. Now think of the tech job market worldwide, saying it is growing would be an understatement, it is booming. Still, why don't fresh graduates not get a job when they pass out of universities? Let's have a closer look at this issue and try to help technology students get a job as soon as their course finishes.
 
-<img class="center" loading="lazy" src="/images/5-steps-first-tech-job/first-tech-job-a.jpg" title="5 practical steps to land your first tech job" alt="5 practical steps to land your first tech job">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/5-steps-first-tech-job/first-tech-job-a.jpg" title="5 practical steps to land your first tech job" alt="5 practical steps to land your first tech job">
 
 ## TLDR;
 

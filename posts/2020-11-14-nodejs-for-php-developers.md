@@ -18,9 +18,9 @@ keywords: node js for php, node js for php developers, nodejs for php, node.js f
 ---
 While the popularity of Node.js is [increasing](https://trends.google.com/trends/explore?date=2019-11-12%202020-11-12&q=%2Fm%2F060kv,%2Fm%2F0bbxf89), PHP’s traction is going [down](https://i.ibb.co/0XjJCRC/W3Tech.png). With that context, this post is going to elaborate on 5 must-know practical aspects of using Node.js for PHP developers. These will be things no-one talks or writes about, time to get going.
 
-<img class="center" loading="lazy" src="/images/nodejs-for-php-developers/01nodejs-for-php-developers.jpg" title="Node.js for PHP developers practical aspects" alt="Node.js for PHP developers practical aspects with code examples">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/nodejs-for-php-developers/01nodejs-for-php-developers.jpg" title="Node.js for PHP developers practical aspects" alt="Node.js for PHP developers practical aspects with code examples">
 
 ## Table of contents
 

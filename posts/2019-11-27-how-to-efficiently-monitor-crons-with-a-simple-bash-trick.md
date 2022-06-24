@@ -20,9 +20,9 @@ Setting up and running crons has changed in the past years from a crontab comman
 
 This post is going to highlight one efficient bash trick which simplifies cron job monitoring. The solution is language and framework agnostic as it is done in the command itself. Let's dive deeper into this way to effectively monitor cron jobs. Learn how to monitor cron jobs the easy way.
 
-<img class="center" loading="lazy" src="/images/monitor-crons/monitor-crons.jpg" title="Use a bash trick to efficiently monitor cron jobs" alt="Use a bash trick to efficiently monitor cron jobs">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/monitor-crons/monitor-crons.jpg" title="Use a bash trick to efficiently monitor cron jobs" alt="Use a bash trick to efficiently monitor cron jobs">
 
 ## Monitoring Crons is important
 

@@ -18,9 +18,9 @@ I looked at archive.org and found a website I put live in 2001, which means I ha
 
 Coming back to the topic, this is an “oversimplified” guide to showing the difference between backend, frontend, full-stack, and (in my own terms) super stack development of course, with a web development focus. Let’s get started.
 
-<img class="center" loading="lazy" src="/images/backend-vs-frontend/01person-screens.jpg" title="Backend vs Frontend vs Full-stack vs Super Stack development" alt="Difference between backend, frontend, full-stack and super stack development">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/backend-vs-frontend/01person-screens.jpg" title="Backend vs Frontend vs Full-stack vs Super Stack development" alt="Difference between backend, frontend, full-stack and super stack development">
 
 ## Introduction
 

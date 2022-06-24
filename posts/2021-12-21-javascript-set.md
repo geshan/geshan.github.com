@@ -14,9 +14,10 @@ keywords: javascript set, set javascript, nodejs set
 ---
 JavaScript Sets are a new type of object (with ES6) that allows creating a collection of unique values. The values stored in a set can either be primitives like strings or integers or more complex types like arrays or objects. In this post, we will look into how to use Sets from a beginner’s point of view, let’s get started!
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/javascript-set/01javascript-set.jpg" title="JavaScript Set a how to use it guide for beginners" alt="JavaScript Set a how to use it guide for beginners">
 
-<!-- more -->
 
 ## Table of Contents
 

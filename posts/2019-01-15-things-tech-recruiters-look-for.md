@@ -17,9 +17,9 @@ Have you ever applied to many tech jobs that suit your experience and skill but 
 
 > After you know what the tech recruiters are looking for you can tailor your resume that lands you an interview.
 
-<img class="center" loading="lazy" src="/images/generic/loading.gif" title="what recruiters look for" alt="what recruiters look for" data-echo="/images/tech-recruitment-aus/for-hire.jpg">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/generic/loading.gif" title="what recruiters look for" alt="what recruiters look for" data-echo="/images/tech-recruitment-aus/for-hire.jpg">
 
 2019 started less than 3 weeks ago and I have seen many new tech roles open up. You can also read through [practical step to land a tech job](https://geshan.com.np/blog/2018/09/7-practical-steps-to-land-your-first-tech-job/ "Steps to land your first tech job") and get an edge over your competition on your job hunt. I have also compiled a [list](https://github.com/geshan/au-companies-providing-work-visa-sponsorship "Companies in Austalia providing visa sponsorship for tech roles") of companies in Australia that provide work visa sponsorship. Of course, it depends a lot on the role and the candidate too. 
 

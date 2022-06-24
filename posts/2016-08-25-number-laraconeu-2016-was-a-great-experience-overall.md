@@ -12,9 +12,9 @@ cover: "/images/laracon-eu-2016/laracon-eu.jpg"
 ---
 It all started with submitting my chatops talk to some open call for papers in April 2016. After giving the talk in CodeMotion Dubai, I felt chatops is a useful topic. Everyone working in software development can leverage it to make their life easier. My talk was a Laravel centered version of the same talk.
 
-<img class="center" loading="lazy" src="/images/laracon-eu-2016/laracon-eu.jpg" title="Laracon EU 2016" alt="Laracon EU 2016">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/laracon-eu-2016/laracon-eu.jpg" title="Laracon EU 2016" alt="Laracon EU 2016">
 
 ## Talk Accepted - Woo hoo!
 

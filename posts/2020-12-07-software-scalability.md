@@ -19,9 +19,10 @@ Software scalability is an interesting issue to have. Making software scalable c
 
 We will discuss more on how to write software (software development) and how you run the software (operations) to make the software scalable. For beginners, [cost and scalability](https://medium.com/@i.gorton/six-rules-of-thumb-for-scaling-software-architectures-a831960414f9) are generally proportional, let’s get cracking.
 
+<!-- more -->
+
 <img class="center" loading="lazy" src="/images/software-scalability/01software-scalability.jpg" title="Software scalability factors to consider" alt="Software scalability dev and ops factors to consider to meet high demands">
 
-<!-- more -->
 ## Table of contents
 
 1.  [What is software scalability](#what-is-software-scalability)

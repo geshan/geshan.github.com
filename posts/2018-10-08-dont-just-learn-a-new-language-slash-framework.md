@@ -12,9 +12,9 @@ keywords: Beginner software engineer, learning, software engineering
 
 “For the things we have to learn before we can do them, we learn by doing them.” ― Aristotle, The Nicomachean Ethics. Imagine you already read 3 books about cycling. Then someone gave you a cycle and asked to ride it, will you be able to ride it? The simple answer is "No". It is not about how much have you read about cycling or how many videos did you watch about it. It is about getting on a cycle, balancing on it, learning the feet, hands and eye co-ordination. Same goes for learning a new tech skill, a new language or framework.
 
-<img class="center" loading="lazy" src="/images/language-framework-learn/cycle.jpg" title="Dont just learn a new language framework, implement it as a running open source project" alt="Dont just learn a new language framework, implement it as a running open source project">
-
 <!-- more -->
+
+<img class="center" loading="lazy" src="/images/language-framework-learn/cycle.jpg" title="Dont just learn a new language framework, implement it as a running open source project" alt="Dont just learn a new language framework, implement it as a running open source project">
 
 Now if you think how will I do this new project I don't even know language 'X' or framework 'Y' stop complaining. Maybe you are a new starter in tech or coding but you need to know how to learn new things. The best way to learn something new is by doing it. 
 
