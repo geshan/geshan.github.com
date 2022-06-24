@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Blog
+  key: Posts
   order: 1
 pagination:
     data: collections.latestPosts
@@ -21,3 +21,5 @@ renderData:
 </ul>
 
 <p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>
+
+{# include "components/pagination.njk" #}
