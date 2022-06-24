@@ -16,7 +16,7 @@ templateClass: tmpl-post
     <div class="entry-content clearfix mt-5">
         {{ content | safe }}
     </div>
-    <footer class='md:w-8/12 w-11/12 mx-auto mt-4'>
+    <footer class='md:w-7/12 w-11/12 mx-auto mt-4'>
         <p class="meta text-muted">
           <span class="glyphicon glyphicon-user"></span>
           <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
@@ -34,6 +34,6 @@ templateClass: tmpl-post
         </ul>
     </footer>
 </article>
-<section class='md:w-8/12 w-11/12 mx-auto mt-4'>
+<section class='md:w-7/12 w-11/12 mx-auto mt-4'>
     {% include "components/disqus.njk" %}
 </section>

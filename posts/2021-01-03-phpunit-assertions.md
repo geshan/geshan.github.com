@@ -21,19 +21,19 @@ PHPUnit has been blowing away its competition for more than [5 years](https://tr
 
 ## Table of contents
 
-* [PHPUnit Assertions to know about](#phpunit-assertions-to-know-about)
-* [Analyzing PHPUnit Assertions usage in a small, medium, and large project](#analyzing--phpunit-assertions-usage-in-a-small-medium-and-large-project)
-  * [Small Project with PHPUnit Assertions](#small-project-with-phpunit-assertions)
-  * [Medium project for PHPUnit Assertions count](#medium-project-for-phpunit-assertions-count)
-  * [Big project for counting PHPUnit Assertions](#big-project-for-counting-phpunit-assertions)
-* [Anatomy of PHPUnit assertions](#anatomy-of-phpunit-assertions)
-* [Some PHPUnit assertions you must start using today](#some-phpunit-assertions-you-must-start-using-today)
-  * [assertJsonStringEqualsJsonString](#assertjsonstringequalsjsonstring)
-  * [assertMatchesRegularExpression or assertRegExp](#assertmatchesregularexpression-or-assertregexp)
-  * [assertStringContainsString](#assertstringcontainsstring)
-  * [assetEqualsWithDelta](#assetequalswithdelta)
-  * [assertArrayHasKey](#assertarrayhaskey)
-* [Conclusion](#conclusion)
+1. [PHPUnit Assertions to know about](#phpunit-assertions-to-know-about)
+2. [Analyzing PHPUnit Assertions usage in a small, medium, and large project](#analyzing--phpunit-assertions-usage-in-a-small-medium-and-large-project)
+    1. [Small Project with PHPUnit Assertions](#small-project-with-phpunit-assertions)
+    2. [Medium project for PHPUnit Assertions count](#medium-project-for-phpunit-assertions-count)
+    3. [Big project for counting PHPUnit Assertions](#big-project-for-counting-phpunit-assertions)
+3. [Anatomy of PHPUnit assertions](#anatomy-of-phpunit-assertions)
+4. [Some PHPUnit assertions you must start using today](#some-phpunit-assertions-you-must-start-using-today)
+    1. [assertJsonStringEqualsJsonString](#assertjsonstringequalsjsonstring)
+    2. [assertMatchesRegularExpression or assertRegExp](#assertmatchesregularexpression-or-assertregexp)
+    3. [assertStringContainsString](#assertstringcontainsstring)
+    4. [assetEqualsWithDelta](#assetequalswithdelta)
+    5. [assertArrayHasKey](#assertarrayhaskey)
+5. [Conclusion](#conclusion)
 
 ## PHPUnit Assertions to know about
 

@@ -23,7 +23,6 @@ Node.js can be used efficiently with relational databases like PostgreSQL. In th
 
 ## Table of contents
 
-<nav class="toc">
 
 1. [Prerequisites](#prerequisites)
 2. [Steps for Node.js PostgreSQL tutorial](#steps-for-node.js-postgresql-tutorial)
@@ -39,7 +38,6 @@ Node.js can be used efficiently with relational databases like PostgreSQL. In th
 3. [TLDR; quick rundown](#tldr%3B-quick-rundown)
 4. [Conclusion](#conclusion)
 
-</nav>
 
 You can read my previous tutorial to try [Node.js with MySQL](/blog/2020/11/nodejs-mysql-tutorial/). You should read this guide to use [Docker with Node.js](/blog/2020/11/nodejs-with-docker/), it is also a step-by-step guide. You can, of course, carry on with this Node.js with PostgreSQL tutorial :).
 
