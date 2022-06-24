@@ -99,13 +99,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode("excerptMore", require("./_custom/excerptMore"));
 
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy({ "root": "/" });
-  eleventyConfig.addPassthroughCopy("admin-blog");
-
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath && outputPath.endsWith(".html") ) {
       try {
@@ -176,6 +169,13 @@ module.exports = function(eleventyConfig) {
 
     await workbox.generateSW(options);
   });
+
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy({ "root": "/" });
+  eleventyConfig.addPassthroughCopy("admin-blog");
 
   return {
     templateFormats: [
