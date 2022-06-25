@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/nodejs-web-scraping/01nodejs-web-scraping.jpg"
 pagetitle: The final guide to web scraping with Node.js
 description: Learn how to scrape any webpage with or without Javascript rendering

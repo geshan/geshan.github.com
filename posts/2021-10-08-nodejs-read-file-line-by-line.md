@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/nodejs-read-file-line-by-line/01nodejs-read-file-line-by-line.jpg"
 pagetitle: 4 ways to read file line by line in Node.js
 description: Learn how to read file line by line in Node.js with sync and async methods using native and NPM modules.

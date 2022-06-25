@@ -5,7 +5,7 @@ date: 2020-11-20T20:15:25.000+11:00
 comments: true
 tags:
 - Web Development
-- NodeJs
+- Node.js
 cover: "/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg"
 pagetitle: How to use Docker with Node.js a step-by-step tutorial
 description: Follow this 2000+ word step-by-step tutorial to use Docker with Node.js
