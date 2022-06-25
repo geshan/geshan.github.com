@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/nodejs-express-tutorial/01nodejs-express-tutorial.jpg"
 pagetitle: Node.js Express tutorial to build a 1 page website step-by-step
 description: Follow this step-by-step tutorial to build a simple 1 page website with

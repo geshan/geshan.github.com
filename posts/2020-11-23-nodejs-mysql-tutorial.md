@@ -6,7 +6,7 @@ date: 2020-11-23T23:15:25.000+11:00
 comments: true
 tags:
 - Web Development
-- NodeJs
+- Node.js
 cover: "/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial-full.jpg"
 pagetitle: 'Node.js MySQL tutorial: a step-by-step getting started guide with Express
   js REST API'

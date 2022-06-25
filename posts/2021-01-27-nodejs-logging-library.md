@@ -5,7 +5,7 @@ date: 2021-01-27T22:30:22.000+11:00
 comments: true
 tags:
 - Web Development
-- NodeJs
+- Node.js
 cover: "/images/nodejs-logging-libraries/01nodejs-logging-library.jpg"
 pagetitle: 5 Node.js Logging libraries compared for you to make the optimal choice
 description: 5 Node.js logging libraries Wiston, bunyan, pino, loglevel, and npmlog
