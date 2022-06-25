@@ -16,7 +16,7 @@ module.exports = {
     return process.env.ELEVENTY_ENV || 'production';
   },
   getMetaDescription(content) {
-    let contentBody = content.match(/<div\s+class="entry-content clearfix mt-5">[\S\s]*?<\/div>/gi);
+    const contentBody = content.match(/<div\s+class="entry-content clearfix mt-5">[\S\s]*?<\/div>/gi);
     return contentBody[0].replace(/(<([^>]+)>)/ig,"")
             .replace('"', '').replace(/\n/g,' ').trim().substring(0, 142) + '...';
   },
