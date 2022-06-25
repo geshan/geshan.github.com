@@ -341,6 +341,10 @@ div > details > summary{
   color:#4c3fe4;
   cursor: pointer;
 }
+#scrollDiv{
+  left: 0;
+  transition: all ease-in-out 0.5s;
+}
 
 /* Mobile CSS */
 @media only screen and (max-width: 769px) {
