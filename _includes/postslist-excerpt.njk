@@ -1,6 +1,6 @@
 <div class="blog-index md:w-7/12 w-11/12 mx-auto">
   {% for post in postslist | reverse %}
-    <article class="post mb-5">
+    <article class="post mb-6">
       <header class="page-header">
       <h2 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
         <a href="{{ post.url }}">
@@ -12,9 +12,10 @@
           </span>
           {% set date = post.date %}
           {% include "components/posted-date-time.njk" %}
-          . <span class='text-darkgrey'>{{ helpers.getReadingTime(post.templateContent) }} minute read</span>
+          . <span class='text-darkgrey'>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
         </p>
       </header>
+      {% include 'components/post-tags.njk' %}
       <div class="mt-6 font-reading font-normal text-midblack leading-7 ">
         {% excerptMore post %}
       </div>
