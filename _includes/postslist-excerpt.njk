@@ -1,6 +1,7 @@
 <div class="blog-index md:w-7/12 w-11/12 mx-auto">
   {% for post in postslist | reverse %}
-    <article class="post mb-5">
+    <article class="post mb-14">
+    {% include 'components/posts-tags.njk' %}
       <header class="page-header">
       <h2 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
         <a href="{{ post.url }}">

@@ -21,6 +21,8 @@
         <div class="mb-14">
            <div id="recent_posts" class="list-group">
               {% for post in posts | reverse %}
+              <article class="post mb-14">
+                {% include 'components/posts-tags.njk' %}
                 <h3 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
                   <a class="list-group-item{% if post.url == page.url %} active{% endif %}" href="{{ post.url | url }}" title="{{ post.data.description }}">
                     {% if post.data.title %}
@@ -53,6 +55,7 @@
                 fill="#6B48E7"/>
             </svg>
           </a>
+          </article>
           {% endfor %}
           </div>
         </div>

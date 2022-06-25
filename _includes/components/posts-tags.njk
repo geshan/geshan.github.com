@@ -1,0 +1,10 @@
+<div class='h-10'>
+  {%- for tag in collections.tagList | sort -%}
+    {% if (loop.index <= 2) %}
+        {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
+        <a href='{{ tagUrl }}' title="{{ tag }}" class=" background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 ">
+          {{ tag | lower }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>

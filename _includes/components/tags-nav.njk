@@ -6,7 +6,7 @@
     {% for tag in collections.tagList | sort %}
       {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
       <li class='mr-1 ml-5'>
-       <a href="{{ tagUrl | url }}" class="tag font-reading font-normal text-midgrey px-2 py-1 border-2 rounded-md border-darkgrey bg-gray-100 hover:text-purple hover:border-purple whitespace-nowrap h-full">{{ tag }}</a>
+       <a href="{{ tagUrl | url }}" class="tag background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap h-full">{{ tag }}</a>
       </li>
     {% endfor %}
     </ul>
