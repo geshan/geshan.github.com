@@ -7,7 +7,7 @@
           Popular topics
         </h2>
         <div class="mt-12 flex flex-wrap">
-            {%- set allowedTags = ['node.js', 'javascript', 'docker', 'talks', 'google cloud run', 'php'] -%}
+            {%- set allowedTags = ['node.js', 'javascript', 'docker', 'talks', 'google cloud run', 'php', 'testing', 'logging', 'git'] -%}
             {%- for tag in collections.tagList | sort -%}
               {%- if tag | lower in allowedTags -%}
                 {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
