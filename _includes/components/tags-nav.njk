@@ -1,0 +1,16 @@
+<div class='flex flex-row justify-center items-center h-16 border-t-2 border-gray-200 shadow-md -mt-6 mb-12 w-screen'>
+    <button type='button' id='leftBtn' onclick='scrollLft()' class='absolute z-10 top-28 left-1 text-white bg-purple border-white hover:text-purple hover:bg-white hover:border-purple rounded-full h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 text-center' >
+      ←
+      </button>
+    <ul id='scrollDiv' class=' flex items-center justify-center absolute h-12'>
+    {% for tag in collections.tagList | sort %}
+      {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
+      <li class='mr-1 ml-5'>
+       <a href="{{ tagUrl | url }}" class="tag font-reading font-normal text-midgrey px-2 py-1 border-2 rounded-md border-darkgrey bg-gray-100 hover:text-purple hover:border-purple whitespace-nowrap h-full">{{ tag }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+     <button type='button' id='rightBtn' onclick='scrollRight()' class='absolute top-28 right-1 text-white bg-purple border-white hover:text-purple hover:bg-white hover:border-purple rounded-full h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 text-center' >
+      →
+      </button>
+  </div>

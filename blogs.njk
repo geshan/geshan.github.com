@@ -11,6 +11,9 @@ renderData:
   title: Posts on Geshan's Blog Page {{ pagination.pageNumber + 1  }}
   description: "More posts on Geshan's Blog, page {{ pagination.pageNumber + 1  }} among many pages"
 ---
+<div class='md:block hidden mx-auto mt-4 mb-16'>
+{% include 'components/tags-nav.njk' %}
+</div>
 <div class='md:w-7/12 w-11/12 mx-auto mt-4 mb-16'>
     <h1 class='text-7xl font-bold text-darkpurple' >Blog Posts</h1>
     <p class='mt-6 md:w-9/12 font-reading font-normal text-darkgrey leading-7'>I write about software engineering technical articles around programming, best practises and trending tech stacks. <a href='https://newsletter.geshan.com.np/' target='_blank' class='text-purple underline'>Subscribe to my newsletter</a> to make sure you don't miss anything.</p>
