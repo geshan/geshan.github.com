@@ -21,8 +21,7 @@
         <div class="mb-14">
            <div id="recent_posts" class="list-group">
               {% for post in posts | reverse %}
-              <article class="post mb-14">
-                {% include 'components/posts-tags.njk' %}
+              <article class="post mb-6">
                 <h3 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
                   <a class="list-group-item{% if post.url == page.url %} active{% endif %}" href="{{ post.url | url }}" title="{{ post.data.description }}">
                     {% if post.data.title %}
@@ -38,7 +37,8 @@
                                 {{ post.data.date | displayDateOnly }} |
                                 {{ helpers.getReadingTime(post.templateContent) }} minute read
                             </time></span>
-                <p class="mt-6 font-reading font-normal text-midblack leading-7">
+                {% include 'components/posts-tags.njk' %}
+                <p class="mt-3 font-reading font-normal text-midblack leading-7">
                  {{ post.data.description }}
                 </p>
                 <a class=" flex items-center font-semibold text-purple text-xl cursor-pointer mt-4 mb-6 " href="{{ post.url | url }}">Read post<svg class="ml-2" width="20" height="21" viewbox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
