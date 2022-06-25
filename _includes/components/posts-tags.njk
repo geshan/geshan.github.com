@@ -1,10 +1,12 @@
 <div class='h-10 mt-3'>
   {%- for tag in post.data.tags -%}
-    {% if tag !== 'posts' %}
+    {% if (loop.index <= 4) %}
+     {% if tag !== 'posts' %}
         {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
         <a href='{{ tagUrl }}' title="{{ tag }}" class=" background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 ">
           {{ tag | lower }}
         </a>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </div>
