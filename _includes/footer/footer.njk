@@ -4,15 +4,11 @@
         <div class="pb-0 sm:pb-2">
             {% set lastPost = collections.posts | head(-1) %}
             <ul class="flex">
+                {%- for entry in collections.all | eleventyNavigation %}
                 <li class=" text-white hover:text-gray-300 text-lg pr-4 cursor-pointer font-semibold ">
-                    <a href="#">Home</a>
+                    <a href="#">{{ entry.title }}</a>
                 </li>
-                <li class=" text-white hover:text-gray-300 text-lg pr-4 cursor-pointer font-semibold ">
-                    <a href="#">Posts</a>
-                </li>
-                <li class=" text-white hover:text-gray-300 text-lg cursor-pointer font-semibold ">
-                    <a href="#">Newsletter</a>
-                </li>
+              {%- endfor %}
             </ul>
         </div>
         <div class="order-first md:order-none pb-0 sm:pb-2">

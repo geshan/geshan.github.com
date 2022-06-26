@@ -6,17 +6,21 @@ templateClass: tmpl-post
 {% set logoUrl %}{{ "images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %}
 {% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
-<article class="hentry md:w-7/12 w-11/12 mx-auto mt-4">
+{% if page.url != '/about/' %}
+  <div class="grid-cols-12 grid gap-15">
+    <div class="col-span-12 md:col-span-9">
+{% endif %}
+  <article class="hentry md:w-7/12 w-11/12 mx-auto mt-4">
     <header class="page-header">
-    <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
-    <p class="meta text-muted">
-    {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
-    </p>
+      <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
+      <p class="meta text-muted">
+      {% include "components/posted-date-time.njk" %} | (about a {{ helpers.getReadingTime(content) }} minute <i class="fas fa-glasses" title="read"></i>)
+      </p>
     </header>
     <div class="entry-content clearfix mt-5">
         {{ content | safe }}
     </div>
-    <footer class='md:w-7/12 w-11/12 mx-auto mt-4'>
+      <footer class='md:w-7/12 w-11/12 mx-auto mt-4'>
         <p class="meta text-muted">
           <span class="glyphicon glyphicon-user"></span>
           <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
@@ -32,8 +36,17 @@ templateClass: tmpl-post
               <li class="next bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full md:ml-10 ml-0 mt-4 md:mt-0 rounded-md text-white text-justify"><a href="{{ nextPost.url }}" class='block text-right w-full' title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
             {% endif %}
         </ul>
-    </footer>
-</article>
-<section class='md:w-7/12 w-11/12 mx-auto mt-4'>
-    {% include "components/disqus.njk" %}
-</section>
+      </footer>
+    </article>
+    <section class='md:w-7/12 w-11/12 mx-auto mt-4'>
+        {% include "components/disqus.njk" %}
+    </section>
+{% if page.url != '/about/' %}
+  </div>
+    <div class="col-span-12 md:col-span-3 mt-20 mx-auto w-full h-screen relative top-96 sm:mr-auto">
+        <!-- advertisment -->
+         {% include "sidebar/carbon.njk" %}
+         {% include "sidebar/read-more-on.njk" %}
+    </div>
+  </div>
+{% endif %}
