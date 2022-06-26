@@ -7,8 +7,8 @@ templateClass: tmpl-post
 {% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
   <div class="grid-cols-12 grid gap-15">
-    <div class="col-span-12 md:col-span-9">
-  <article class="hentry md:w-7/12 w-11/12 mx-auto mt-4">
+    <div class="col-span-12 md:col-span-8">
+  <article class="hentry md:w-9/12 w-11/12 mx-auto mt-4">
     <header class="page-header">
       <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
       <p class="meta text-muted">
@@ -36,11 +36,11 @@ templateClass: tmpl-post
         </ul>
       </footer>
     </article>
-    <section class='md:w-7/12 w-11/12 mx-auto mt-4'>
+    <section class='md:w-9/12 w-11/12 mx-auto mt-4'>
         {% include "components/disqus.njk" %}
     </section>
   </div>
-    <div class="col-span-12 md:col-span-3 mx-auto w-full md:h-screen md:relative my-6 md:top-96 flex flex-col justify-center items-center">
+    <div class="col-span-12 md:col-span-4 mx-auto w-full md:h-screen md:relative my-6 md:top-96 flex flex-col justify-center items-center md:items-start">
         <!-- advertisment -->
          {% include "sidebar/carbon.njk" %}
          {% include "sidebar/read-more-on.njk" %}
