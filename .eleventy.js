@@ -8,6 +8,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const blogTools = require("eleventy-plugin-blog-tools");
 const htmlmin = require("html-minifier");
 const workbox = require("workbox-build");
+const { execSync } = require("child_process");
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -168,6 +170,8 @@ module.exports = function(eleventyConfig) {
     };
 
     await workbox.generateSW(options);
+    console.log('Building tailwind');
+    console.log(execSync("npm run build:tailwind").toString());
   });
 
   eleventyConfig.addPassthroughCopy("images");

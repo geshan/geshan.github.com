@@ -22,7 +22,7 @@
                   </a>
                 </h3>
                 <span class="text-lg text-darkgrey mt-1"> <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
-                                {{ post.data.date | displayDateOnly }} |
+                                {{ post.data.date | displayDateOnly }} .
                                 {{ helpers.getReadingTime(post.templateContent) }} min read
                             </time></span>
                 <p class="mt-6 font-reading font-normal text-midblack leading-7">
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div
-        class="col-span-12 md:col-span-6 mt-20 mx-auto w-full sm:mr-auto">
+        class="col-span-12 md:col-span-6 mt-20 ml-20 w-full sm:mr-auto">
         <!-- advertisment -->
          {% include "sidebar/carbon.njk" %}
          {% include "sidebar/read-more-on.njk" %}
