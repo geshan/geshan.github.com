@@ -156,7 +156,6 @@ I have always strived to have a positive impact on the places I have work and th
 
 </div>
 </div>
-</div>
 
 ---
 
