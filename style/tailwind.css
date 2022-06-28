@@ -343,7 +343,7 @@ div > details > summary{
   cursor: pointer;
 }
 #scrollDiv{
-  left: 0;
+  left: 40px;
   transition: all ease-in-out 0.5s;
 }
 
