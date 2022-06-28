@@ -1,15 +1,24 @@
-
-<section class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Read more on</h3></div>
-    <div class="list-group">
+<section class="panel panel-default w-8/12">
+  <div class="panel-heading mb-2">
+    <h3 class="panel-title">Read more on</h3>
+  </div>
+  <div class="list-group flex flex-col justify-center content-center ">
     {%- set allowedTags = ['devops', 'misc', 'software engineering', 'talks', 'web development'] -%}
-    {%- for tag in collections.tagList | sort  -%}
+    {%- for tag in collections.tagList | sort -%}
       {%- if tag | lower in allowedTags -%}
-      {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
-        <a class="list-group-item{% if tagUrl == page.url %} active{% endif %}" href="{{ tagUrl}}" title="{{ tag }}"><span class="badge">{{ collections[ tag ] | length }}</span>{{ tag | lower }}</a>
+        {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
+        <div class='flex'>
+          <a class="list-group-item{% if tagUrl == page.url %} active{% endif %} mb-5 border-b-2 border-darkgrey hover:border-purple font-reading font-normal text-midblack w-full text-base " href="{{ tagUrl }}" title="{{ tag }}">
+            {{ tag | lower }}
+              <span class="badge inline-block bg-indigo-500 px-2 py-1 rounded-full text-white mb-2 float-right">{{ collections[ tag ] | length }}</span>
+          </a>
+        </div>
       {%- endif -%}
     {%- endfor -%}
-    <a class="list-group-item{% if tagUrl == page.url %} active{% endif %}" href="/blog/categories/" title="All the categories"><span class="badge"></span>All categories</a>
-    </div>
+    <a
+      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-reading font-normal text-midblack "
+      href="/blog/categories/"
+      title="All the categories">
+      <span class="badge"></span>All categories</a>
+  </div>
 </section>

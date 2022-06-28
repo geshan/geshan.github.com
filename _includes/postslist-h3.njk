@@ -1,26 +1,25 @@
-
 <div class="entry-content">
     <div id="blog-archives" class="category">
         {% set postslist = postslist | reverse %}
         {% for post in postslist %}
-        {%- if loop.index == 1  or postslist[ loop.index0 - 1 ].year != post.year -%} <h2>{{ post.year }}</h2> {%- endif -%}
-                <article class="page-header">
-                    <h3>
-                        <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-                    </h3>
-                    <p class="meta text-muted"> <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="{{ date | getSitemapDate }}" data-updated="true">
-                        <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
-                            {{ post.date | displayDate }} . {{ helpers.getReadingTime(post.templateContent) }} min read
+        {%- if loop.index == 1  or postslist[ loop.index0 - 1 ].year != post.year -%} <h2 class='text-xl font-medium text-purple px-2 py-1 first:mt-5 mt-8 rounded-md border-2 border-purple w-24 text-center'>{{ post.year }}</h2> {%- endif -%}
+                    <article onclick='location.href="{{ post.url | url }}"' class="page-header ml-4 mt-5 flex flex-col pb-2 pl-2 cursor-pointer ">
+                        <h3 class='text-lg cursor-pointer w-fit border-b-2 border-teal hover:border-gray-500' >
+                            <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+                        </h3>
+                        <p class="meta text-muted text-sm cursor-pointer "> <span class="glyphicon glyphicon-calendar"></span>
+                        <time datetime="{{ date | getSitemapDate }}" data-updated="true">
+                            <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
+                                {{ post.date | displayDate }} .
+                                {{ helpers.getReadingTime(post.templateContent) }} min read
+                            </time>
                         </time>
-                    </time>
-                    
-                    <span class="glyphicon glyphicon-tags">
-                    </span>&nbsp; 
-                    <span class="categories">
-                    </span>
-                </article>
-
+                        
+                        <span class="glyphicon glyphicon-tags">
+                        </span>&nbsp; 
+                        <span class="categories">
+                        </span>
+                    </article>
         {% endfor %}
     </div>
 </div>

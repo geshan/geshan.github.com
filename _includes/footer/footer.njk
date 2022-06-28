@@ -1,8 +1,21 @@
-<footer role="contentinfo">
-    <div class="container">
-        <div>
-          {% set lastPost = collections.posts | head(-1) %}
-            <p class="text-muted credits"> Copyright © {{ lastPost[0].year }} - Geshan Manandhar</p>
+<footer class="bg-darkpurple mt-24 sm:px-4">
+    <div class=" max-w-6xl mx-auto flex flex-col md:flex-row sm:flex-col justify-between items-center sm:items-center
+            md:items-center py-10 ">
+        <div class="pb-0 sm:pb-2">
+            {% set lastPost = collections.posts | head(-1) %}
+            <ul class="flex">
+                {%- for entry in collections.all | eleventyNavigation %}
+                <li class=" text-white hover:text-gray-300 text-lg pr-4 cursor-pointer font-semibold ">
+                    <a href="#">{{ entry.title }}</a>
+                </li>
+              {%- endfor %}
+            </ul>
+        </div>
+        <div class="order-first md:order-none pb-0 sm:pb-2">
+            <img src="/images/theme/geshan-g-footer.svg" alt="geshan logo"/>
+        </div>
+        <div class="pb-0 sm:pb-2">
+            <span class="text-white text-lg pr-4 font-normal">Copyright © {{ lastPost[0].year }} Geshan Manandhar.</span>
         </div>
     </div>
 </footer>

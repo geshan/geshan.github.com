@@ -16,8 +16,8 @@ renderData:
   description: "You can read more about {{ tag }} on Geshan.com.np"
 permalink: /blog/categories/{{ tag | slug }}/
 ---
-<article role="article">
-  <header class="page-header"><h1 class="entry-title"> Category: {{tag}}</h1></header>
+<article role="article" class='md:w-7/12 w-11/12 mx-auto mt-4'>  
+<header class="page-header"><h1 class="entry-title"> Category: {{tag}}</h1></header>
   {% set postslist = collections[ tag ] %}
   {% include "postslist-h3.njk" %}
   <p>See <a href="{{ '/blog/categories/' | url }}">all categories</a>.</p>

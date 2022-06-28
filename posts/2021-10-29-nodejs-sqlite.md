@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/nodejs-sqlite/01nodejs-sqlite.jpg"
 pagetitle: "Node.js SQLite: Build a simple REST API with Express step-by-step"
 description: Learn how build a REST API with Node.js and SQLite using Express js step by step using Quotes as an example following this tutorial.

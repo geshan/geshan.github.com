@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 - RabbitMQ
 cover: "/images/rabbitmq-docker-nodejs/01rabbitmq-docker-nodejs.jpg"
 pagetitle: How to use RabbitMQ and Node.js with Docker and Docker-compose

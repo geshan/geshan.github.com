@@ -1,0 +1,88 @@
+<div>
+  <nav class="bg-white">
+    <div class="max-w-6xl mx-auto sm:py-3 sm:px-4">
+      <div class="relative flex items-center justify-evenly h-16">
+        <div
+          class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button
+            type="button"
+            class=" inline-flex items-center mobile-menu-button justify-center p-2 rounded-md text-purple
+            focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white "
+            onClick="mobileView()";
+            aria-controls="mobile-menu"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+        <div class=" flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
+          <div class="flex-shrink-0 flex items-center md:mr-5">
+            <a class="flex items-center" href="/">
+              <img class="block h-6 w-auto mr-3" src="/images/theme/geshan-g.svg" alt="Geshan G"/>
+              <img class="hidden sm:hidden lg:block md:block w-52" src="/images/theme/geshan-name.svg" alt="geshan logo name"/>
+            </a>
+          </div>
+          <!-- nav links -->
+          <div class="hidden sm:block sm:ml-6 lg:ml-10">
+            <div
+              class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              {%- for entry in collections.all | eleventyNavigation %}
+                <a href="{{ entry.url | url }}" class="
+                                                                                          
+                                                                                            px-3
+                                                                                            py-2
+                                                                                            text-lg
+                                                                                            hover:text-purple
+                                                                                            font-leading font-bold
+                                                                                            {% if entry.url == page.url %} text-purple {% else %} text-midgrey{% endif %}
+                                                                                          " aria-current="page">{{ entry.title }}</a>
+              {%- endfor %}
+            </div>
+          </div>
+        </div>
+        <div class=" absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 ">
+          <button class=" text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800
+              focus:ring-white ">
+            <span class="sr-only">View notifications</span>
+            <!-- Heroicon name: outline/bell -->
+            <a href="/atom.xml" title="subscribe via RSS">
+              <svg class="h-6 w-6" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.25 4.25C5.91848 4.25 5.60054 4.3817 5.36612 4.61612C5.1317 4.85054 5 5.16848 5 5.5C5 5.83152 5.1317 6.14946 5.36612
+                    6.38388C5.60054 6.6183 5.91848 6.75 6.25 6.75C13.1537 6.75 18.75 12.3463 18.75 19.25C18.75 19.5815 18.8817 19.8995
+                    19.1161 20.1339C19.3505 20.3683 19.6685 20.5 20 20.5C20.3315 20.5 20.6495 20.3683 20.8839 20.1339C21.1183 19.8995 21.25
+                    19.5815 21.25 19.25C21.25 10.9663 14.5337 4.25 6.25 4.25Z"
+                  fill="black"/>
+                <path
+                  d="M5 11.75C5 11.4185 5.1317 11.1005 5.36612 10.8661C5.60054 10.6317 5.91848 10.5 6.25 10.5C8.57064 10.5 10.7962 11.4219
+                    12.4372 13.0628C14.0781 14.7038 15 16.9294 15 19.25C15 19.5815 14.8683 19.8995 14.6339 20.1339C14.3995 20.3683 14.0815
+                    20.5 13.75 20.5C13.4185 20.5 13.1005 20.3683 12.8661 20.1339C12.6317 19.8995 12.5 19.5815 12.5 19.25C12.5 17.5924 11.8415
+                    16.0027 10.6694 14.8306C9.49732 13.6585 7.9076 13 6.25 13C5.91848 13 5.60054 12.8683 5.36612 12.6339C5.1317 12.3995 5
+                    12.0815 5 11.75ZM3.75 19.25C3.75 18.587 4.01339 17.9511 4.48223 17.4822C4.95107 17.0134 5.58696 16.75 6.25 16.75C6.91304
+                    16.75 7.54893 17.0134 8.01777 17.4822C8.48661 17.9511 8.75 18.587 8.75 19.25C8.75 19.913 8.48661 20.5489 8.01777
+                    21.0178C7.54893 21.4866 6.91304 21.75 6.25 21.75C5.58696 21.75 4.95107 21.4866 4.48223 21.0178C4.01339 20.5489 3.75
+                    19.913 3.75 19.25Z"
+                  fill="black"/>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu, show/hide based on menu state. -->
+   <div class="mobile-menu hidden absolute w-full top-0 h-full z-10 bg-purple bg-opacity-95 flex-row justify-between content-center md:hidden border-2 border-transparent ">
+      <div class="px-2 pt-2 pb-3 space-y-1 m-auto w-full text-center  ">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <a href="{{ entry.url | url }}" class="px-3 py-2 text-2xl font-medium text-white font-leading block w-full" aria-current="page">{{ entry.title }}</a>
+        {%- endfor %}
+      </div>
+      <div class='close-btn cursor-pointer absolute right-6 ' onClick='mobileView()'>
+        <h3 class='text-white text-4xl text-center cursor-pointer ' >x</h3>
+      </div>
+    </div>
+  </nav>
+</div>

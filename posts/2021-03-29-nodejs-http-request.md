@@ -7,7 +7,7 @@ canonical: "https://blog.logrocket.com/5-ways-to-make-http-requests-in-node-js/"
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/nodejs-http-requests/01nodejs-http-requests.jpg"
 pagetitle: 5 different ways to make HTTP requests with Node.js
 description: Make HTTP requests in Node.js using the native module as well as npm packages like Axios, Got, SuperAgent, and node-fetch easily.

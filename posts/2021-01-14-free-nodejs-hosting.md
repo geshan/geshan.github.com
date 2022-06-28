@@ -6,7 +6,7 @@ date: 2021-01-14T22:30:22.000+11:00
 comments: true
 tags:
 - Web Development
-- NodeJs
+- Node.js
 cover: "/images/free-nodejs-hosting/01free-nodejs-hosting.jpg"
 pagetitle: 3 free Node.js hosting services you should be using today (with step-by-step
   deployment examples)
