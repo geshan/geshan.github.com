@@ -42,7 +42,8 @@ h5:hover a.direct-link {
 }
 div > div > article > div > p > a,
 div > div > article > div > ul> li > a,
-div > div > article > ul > li > a{
+div > div > article > ul > li > a,
+p > a {
   color: #4c3fe4;
 }
 
