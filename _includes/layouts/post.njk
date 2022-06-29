@@ -12,9 +12,10 @@ templateClass: tmpl-post
     <header class="page-header">
       <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
       <p class="meta text-muted">
-      {% include "components/posted-date-time.njk" %} . {{ helpers.getReadingTime(content) }} min read
+      {% include "components/posted-date-time.njk" %} . <span class='text-darkgrey'>{{ helpers.getReadingTime(content) }} min read</span>
       </p>
     </header>
+    {% include "components/post-tags.njk" %}
     <div class="entry-content clearfix mt-5">
         {{ content | safe }}
     </div>
