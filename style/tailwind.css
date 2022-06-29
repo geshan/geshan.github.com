@@ -347,6 +347,28 @@ div > details > summary{
   transition: all ease-in-out 0.5s;
 }
 
+/* Blockquotes */
+blockquote{
+  padding: 20px;
+  position: relative;
+}
+blockquote > p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #251F54;
+  font-weight: 700;
+}
+blockquote > p:first-child:before{
+  content: '';
+  background-image: url('../images/theme/quote.svg');
+  height: 23px;
+  width:26px;
+  position: absolute;
+  top:10px;
+  left:40px;
+}
+
 /* Mobile CSS */
 @media only screen and (max-width: 769px) {
   span.share-icons {
@@ -359,5 +381,8 @@ div > details > summary{
   .homepage-icons img{
     filter: none;
     -webkit-filter: grayscale(0%);
+  }
+  blockquote > p:first-child:before{
+    left: 24px;
   }
 }

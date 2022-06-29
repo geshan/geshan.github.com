@@ -6,7 +6,7 @@
             <ul class="flex">
                 {%- for entry in collections.all | eleventyNavigation %}
                 <li class=" text-white hover:text-gray-300 text-lg pr-4 cursor-pointer font-semibold ">
-                    <a href="#">{{ entry.title }}</a>
+                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
               {%- endfor %}
             </ul>
