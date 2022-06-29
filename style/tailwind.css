@@ -397,6 +397,6 @@ table {
     -webkit-filter: grayscale(0%);
   }
   blockquote > p:first-child:before{
-    left: 24px;
+    left: 5px;
   }
 }
