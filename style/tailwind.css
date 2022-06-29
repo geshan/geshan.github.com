@@ -374,8 +374,8 @@ table, td, th {
   text-align: center;
   padding: 7px;
 }
-th{
-  border: 4px solid #4c3fe4 ;
+table tr:nth-of-type(even) {
+  background-color:rgba(232, 230, 230, 0.942);
 }
 table {
   margin: 0 auto;
