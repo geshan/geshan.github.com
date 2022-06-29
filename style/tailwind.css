@@ -369,6 +369,20 @@ blockquote > p:first-child:before{
   left:40px;
 }
 
+table, td, th {
+  border: 2px solid #4c3fe4 ;
+  text-align: center;
+  padding: 7px;
+}
+th{
+  border: 4px solid #4c3fe4 ;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 6px;
+}
+
 /* Mobile CSS */
 @media only screen and (max-width: 769px) {
   span.share-icons {
