@@ -37,6 +37,9 @@ module.exports = {
       inset: {
         "-30": "-8rem",
       },
+      gridTemplateRows: {
+        '10': 'repeat(10, minmax(0, 1fr))',
+      }
     },
   },
   plugins: [],

@@ -6,17 +6,19 @@ templateClass: tmpl-post
 {% set logoUrl %}{{ "images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %}
 {% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
-<article class="hentry">
+<div class=" max-w-6xl py-3 px-4 mx-auto grid-cols-12 grid gap-15">
+    <div class="col-span-12 md:col-span-8">
+  <article class="hentry w-11/12 md:w-full mx-auto mt-4">
     <header class="page-header">
-    <h1 class="entry-title">{{ title }}</h1>
-    <p class="meta text-muted">
-    {% include "components/posted-date-time.njk" %} . {{ helpers.getReadingTime(content) }} min read
-    </p>
+      <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
+      <p class="meta text-muted">
+      {% include "components/posted-date-time.njk" %} . {{ helpers.getReadingTime(content) }} min read
+      </p>
     </header>
-    <div class="entry-content clearfix">
+    <div class="entry-content clearfix mt-5">
         {{ content | safe }}
     </div>
-    <footer>
+      <footer class='md:w-9/12 w-11/12 mt-4'>
         <p class="meta text-muted">
           <span class="glyphicon glyphicon-user"></span>
           <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
@@ -24,16 +26,24 @@ templateClass: tmpl-post
           {% include "components/posted-date-time.njk" %}
           {% include "components/share.njk" %}
         </p>
-        <ul class="meta text-muted pager">
+        <ul class="meta text-muted pager my-6 flex md:flex-row flex-col justify-evenly">
             {% if prevPost.url %}
-              <li class="previous"><a href="{{ prevPost.url }}" title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
+              <li class="previous bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full rounded-md text-white text-justify"><a href="{{ prevPost.url }}" class='block text-left w-full' title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
             {% endif %}
             {% if nextPost.url %}
-              <li class="next"><a href="{{ nextPost.url }}" title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
+              <li class="next bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full md:ml-10 ml-0 mt-4 md:mt-0 rounded-md text-white text-justify"><a href="{{ nextPost.url }}" class='block text-right w-full' title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
             {% endif %}
         </ul>
-    </footer>
-</article>
-<section>
-    {% include "components/disqus.njk" %}
-</section>
+      </footer>
+    </article>
+    <section class='w-11/12 md:w-full mx-auto mt-4'>
+        {% include "components/disqus.njk" %}
+    </section>
+  </div>
+    <div class="col-span-12 md:col-span-4 w-full md:h-screen md:relative mt-10 flex flex-col items-center md:items-start md:ml-6 md:top-32">
+        <!-- advertisment -->
+         {% include "sidebar/read-more-on.njk" %}
+         {% include "sidebar/side-projects.njk" %}
+         {% include "sidebar/carbon.njk" %}
+    </div>
+  </div>

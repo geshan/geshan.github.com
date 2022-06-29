@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/nodejs-redis/01nodejs-redis.jpg"
 pagetitle: How to use Node.js with Redis caching to speed up HTTP responses
 description: Follow this step-by-step tutorial to add cache to an existing Node.js

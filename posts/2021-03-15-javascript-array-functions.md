@@ -6,7 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
-- NodeJs
+- Node.js
 cover: "/images/javascript-array-functions/01javascript-array-functions.jpg"
 pagetitle: 10 JavaScript array functions you should start using today
 description: Use these 10 nifty JavaScript array functions to get your job done easily

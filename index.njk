@@ -1,27 +1,96 @@
 ---
-layout: layouts/post.njk
+layout: layouts/home.njk
 title: Geshan's Blog
 templateClass: tmpl-home
-date: 2020-04-10T19:21:25.000+00:00
+date: 2022-06-29T19:21:25.000+00:00
 ---
+    <!-- section top intro -->
+    <section
+      class="
+        mt-24
+        md:max-w-3xl
+        xl:max-w-6xl
+        mx-auto
+        sm:max-w-xl
+        text-center
+        sm:text-left
+        px-4
+        md:px-0
+      "
+    >
+      <div class="grid-cols-12 grid">
+        <div class="sm:col-span-10 col-span-12">
+          <div>
+            <h1 class="text-5xl sm:text-7xl font-bold text-darkpurple">
+              👋 I’m Geshan, Senior Software Engineer and a speaker.
+            </h1>
+            <p class="mt-6 text-midgrey text-2xl">
+              I have more than 15+ years of professional software engineering experience, currently
+              located in Sydney, Australia serving
+              <span class="underline font-bold text-darkpurple"
+                >Simply Wall St</span
+              >
+              as a senior software engineer. I am a Google Developer
+              Expert and I have actively participated as a speaker in:
+            </p>
+          </div>
+          <div class="mt-8">
+  <ul class="flex items-center homepage-icons">
+    <li class="mr-5">
+      <img
+        class="w-138 h-auto"
+        src="/images/theme/laracon-amsterdam.png"
+        alt="laracon EU Amsterdam 2016 logo"
+      />
+    </li>
 
-<p>Hi, I am Geshan. I am a software engineer, with more than a decade of software engineering experience.
-Currently, I am living in Sydney, Australia serving SimplyWallSt as a senior software engineer. Thanks for
-coming to my blog.</p>
+    <li class="mr-5">
+      <img
+        class="w-90 h-auto"
+        src="/images/theme/dev-days.png"
+        alt="Devops Days Portland 2017"
+      />
+    </li>
 
-<div style="display:none;" class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-  <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/images/geshan.jpg" alt="Face">
-  <div class="text-center space-y-2 sm:text-left">
-    <div class="space-y-0.5">
-      <p class="text-lg text-black font-semibold font-leading">
-        Geshan Manandhar
-      </p>
-      <p class="text-slate-500 font-medium font-reading">
-        Senior Software Engineer
-      </p>
-    </div>
-  </div>
-</div>
+    <li class="mr-5">
+      <img
+        class="w-75 h-auto"
+        src="/images/theme/dev-days-newcastle.png"
+        alt="Devops Days New Castle 2018"
+      />
+    </li>
 
-{%- include "components/popular.njk" -%}
-<p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the timeline</a>.</p>
+    <li>
+      <img
+        class="w-222 h-auto"
+        src="/images/theme/google-developer-expert.png"
+        alt="Google developer expert 2019"
+      />
+    </li>
+  </ul>
+
+  <ul class="flex items-center justify-center sm:justify-start homepage-icons ">
+    <li class="mr-5">
+      <img
+        class="w-68 h-auto"
+        src="/images/theme/laracon.png"
+        alt="Laracon AU 2019"
+      />
+    </li>
+
+    <li>
+      <img
+        class="w-249 h-auto"
+        src="/images/theme/serverless-days.png"
+        alt="Serverless Days Sydney 2019"
+      />
+    </li>
+  </ul>
+
+            <p class="mt-6 text-midgrey text-2xl"> and more. I am a technical writer too, blogging since 2007.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+{%- include "components/subscribe-nl-new.njk" -%}

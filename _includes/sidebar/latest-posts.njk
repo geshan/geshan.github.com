@@ -1,11 +1,65 @@
 {% set posts = collections.posts | head(-5) %}
-<section class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Recent Posts</h3>
+<section>
+  <div class="mt-20 max-w-6xl mx-auto pb-8 md:px-4 sm:px-4 px-4">
+    <div class="grid-cols-12 grid gap-15">
+      <div class="col-span-12 md:col-span-6">
+        <h2 class="font-leading font-bold text-5xl text-darkpurple pb-12">
+          Recently published
+        </h2>
+        <!-- recent posting  -->
+        <div class="mb-14">
+           <div id="recent_posts" class="list-group">
+              {% for post in posts | reverse %}
+                <h3 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
+                  <a class="list-group-item{% if post.url == page.url %} active{% endif %}" href="{{ post.url | url }}" title="{{ post.data.description }}">
+                    {% if post.data.title %}
+                    {{ post.data.title }}
+                    {% else %}
+                    <code>
+                      {{ post.url }}
+                    </code>
+                      {% endif %}
+                  </a>
+                </h3>
+                <span class="text-lg text-darkgrey mt-1"> <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
+                                {{ post.data.date | displayDateOnly }} .
+                                {{ helpers.getReadingTime(post.templateContent) }} min read
+                            </time></span>
+                <p class="mt-6 font-reading font-normal text-midblack leading-7">
+                 {{ post.data.description }}
+                </p>
+                <a class=" flex items-center font-semibold text-purple text-xl cursor-pointer mt-4 mb-6 " href="{{ post.url | url }}">Read post<svg class="ml-2" width="20" height="21" viewbox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.8077 3.91786C11.0047 3.72102 11.2717 3.61044 11.5501 3.61044C11.8285 3.61044 12.0955 3.72102 12.2924
+                  3.91786L18.5924 10.2179C18.7893 10.4148 18.8999 10.6818 18.8999 10.9602C18.8999 11.2386 18.7893 11.5057 18.5924
+                  11.7026L12.2924 18.0026C12.0944 18.1938 11.8292 18.2997 11.5539 18.2973C11.2786 18.2949 11.0152 18.1845 10.8205
+                  17.9898C10.6259 17.7951 10.5154 17.5317 10.513 17.2564C10.5106 16.9811 10.6165 16.7159 10.8077 16.5179L15.3154
+                  12.0102H3.1501C2.87162 12.0102 2.60455 11.8996 2.40764 11.7027C2.21072 11.5058 2.1001 11.2387 2.1001 10.9602C2.1001
+                  10.6817 2.21072 10.4147 2.40764 10.2178C2.60455 10.0208 2.87162 9.91021 3.1501 9.91021H15.3154L10.8077 5.40256C10.6109
+                  5.20566 10.5003 4.93863 10.5003 4.66021C10.5003 4.38179 10.6109 4.11477 10.8077 3.91786Z"
+                fill="#6B48E7"/>
+            </svg>
+          </a>
+          {% endfor %}
+          </div>
+        </div>
+        <div>
+          <a
+            class=" rounded border-2 w-full text-center font-semibold uppercase text-darkgrey hover:text-purple hover:border-purple
+              py-3 text-base border-gray-300 cursor-pointer block "
+            href="/posts/1/">
+            view all posts
+          </a>
+        </div>
+      </div>
+      <div
+        class="col-span-12 md:col-span-6 mt-10 md:mt-0 md:ml-20 w-10/12 sm:mr-auto">
+        <!-- advertisment -->
+         {% include "sidebar/carbon.njk" %}
+         {% include "sidebar/read-more-on.njk" %}
+      </div>
     </div>
-    <div id="recent_posts" class="list-group">
-      {% for post in posts | reverse %}
-      <a class="list-group-item{% if post.url == page.url %} active{% endif %}" href="{{ post.url | url }}" title="{{ post.data.description }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-      {% endfor %}
-    </div>
+  </div>
 </section>

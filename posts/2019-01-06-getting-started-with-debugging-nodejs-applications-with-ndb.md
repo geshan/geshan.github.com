@@ -5,7 +5,7 @@ date: 2019-01-06T11:02:36.000+11:00
 comments: true
 tags:
 - Javascript
-- NodeJs
+- Node.js
 - Software Engineering
 pagetitle: Debugging nodejs applications using ndb step by step guide
 cover: "/images/debugging-node-js/00ndb.png"
