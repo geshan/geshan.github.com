@@ -7,18 +7,18 @@
     {%- for tag in collections.tagList | sort -%}
       {%- if tag | lower in allowedTags -%}
         {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
-        <div class='flex'>
           <a class="list-group-item{% if tagUrl == page.url %} active{% endif %} mb-5 border-b-2 border-darkgrey hover:border-purple font-reading font-normal text-midblack w-full text-base " href="{{ tagUrl }}" title="{{ tag }}">
             {{ tag | lower }}
               <span class="badge inline-block bg-indigo-500 px-2 py-1 rounded-full text-white mb-2 float-right">{{ collections[ tag ] | length }}</span>
           </a>
-        </div>
+       
       {%- endif -%}
     {%- endfor -%}
     <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-reading font-normal text-midblack "
+      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-reading font-normal text-midblack border-b-2 border-darkgrey hover:border-purple pb-2 mb-5"
       href="/blog/categories/"
       title="All the categories">
       <span class="badge"></span>All categories</a>
+      
   </div>
 </section>
