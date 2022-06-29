@@ -7,7 +7,7 @@ pagination:
     data: collections.latestPosts
     size: 5
 permalink: "/posts/{{ pagination.pageNumber + 1  }}/index.html"
-renderData:
+eleventyComputed:
   title: "Posts on Geshan's Blog Page {{ pagination.pageNumber + 1  }}"
   description: "More posts on Geshan's Blog, page {{ pagination.pageNumber + 1  }} among many pages"
 ---
