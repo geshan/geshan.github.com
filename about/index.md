@@ -7,14 +7,13 @@ eleventyNavigation:
   order: "3"
 date: 2022-06-29T21:20:00.000+00:00
 cover: "/images/geshan.jpg"
-description:
-  I am Geshan. I am a software engineer, with more than a 15+ years of software
+description: I am Geshan. I am a software engineer, with more than 15+ years of software
   engineering experience. I have been blogging since 2007.
----
 
+---
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80 mb-3'>
 <p class='cover-description text-2xl px-4 my-auto text-white '>
-Hi, I am Geshan. I am a software engineer, with more than a 15+ years of software engineering experience. Currently, I am living in Sydney, Australia serving Simply Wall St as a senior software engineer.
+Hi, I am Geshan. I am a software engineer, with more than 15 years of software engineering experience. Currently, I am living in Sydney, Australia serving Simply Wall St as a senior software engineer.
 </p>
 <img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 </div>
