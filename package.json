@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf _site",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
+    "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "dev:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-001.css --watch",
     "dev:eleventy": "npx @11ty/eleventy --serve",
