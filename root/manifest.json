@@ -9,7 +9,7 @@
 	"orientation" : "portrait",
 	"lang" : "English",
   "background_color" : "#fff",
-  "theme_color": "#6947E7",
+  "theme_color": "#6947E7",  
   "icons": [
     {
       "src": "\/images\/favicons\/favicon-16x16.png",

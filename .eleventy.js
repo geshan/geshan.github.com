@@ -156,10 +156,15 @@ module.exports = function(eleventyConfig) {
         cacheId: 'sw',
         skipWaiting: true,
         clientsClaim: true,
+        cleanupOutdatedCaches: true,
         swDest: `_site/sw.js`,  // TODO change public to match your dir.output
         globDirectory: '_site',  // TODO change public to match your dir.output
         globPatterns: [
             '**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
+            '**/**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
+            '**/**/**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
+            '**/**/**/**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
+            'manifest.json'
         ],
         runtimeCaching: [
             {
