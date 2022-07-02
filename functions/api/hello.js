@@ -9,5 +9,5 @@ export async function onRequestGet(context) {
     data, // arbitrary space for passing data between middlewares
   } = context;
 
-  return new Response({message: `Hello, world! - from ${request.cf.city}`});
+  return new Response(`Hello, world! - from ${request.cf.city}`);
 }
