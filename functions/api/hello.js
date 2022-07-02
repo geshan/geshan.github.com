@@ -9,5 +9,12 @@ export async function onRequestGet(context) {
     data, // arbitrary space for passing data between middlewares
   } = context;
 
-  return new Response(`Hello, world! - from ${request.cf.city}`);
+  const json = JSON.stringify(request.cf, null, 2);
+
+
+  return new Response(json, {
+    headers: {
+      'content-type': 'application/json;charset=UTF-8',
+    },
+  });
 }
