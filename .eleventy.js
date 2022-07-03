@@ -168,7 +168,7 @@ module.exports = function(eleventyConfig) {
         ],
         runtimeCaching: [
             {
-            urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+            urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json|css)$/,
             handler: `StaleWhileRevalidate`,
             },
         ],
