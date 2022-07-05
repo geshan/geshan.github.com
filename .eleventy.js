@@ -157,6 +157,7 @@ module.exports = function(eleventyConfig) {
         skipWaiting: true,
         clientsClaim: true,
         offlineGoogleAnalytics: true,
+        ignoreURLParametersMatching: [/\/api\//, /^utm_/, /^fbclid$/],
         swDest: `_site/sw.js`,  // TODO change public to match your dir.output
         globDirectory: '_site',  // TODO change public to match your dir.output
         globPatterns: [
