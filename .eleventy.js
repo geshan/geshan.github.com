@@ -156,25 +156,28 @@ module.exports = function(eleventyConfig) {
         cacheId: 'sw',
         skipWaiting: true,
         clientsClaim: true,
-        cleanupOutdatedCaches: true,
+        offlineGoogleAnalytics: true,
         swDest: `_site/sw.js`,  // TODO change public to match your dir.output
         globDirectory: '_site',  // TODO change public to match your dir.output
         globPatterns: [
             '**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
-            '**/**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
-            '**/**/**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
-            '**/**/**/**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
-            'manifest.json'
         ],
         runtimeCaching: [
             {
             urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json|css)$/,
             handler: `StaleWhileRevalidate`,
             },
+            {
+              urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
+              handler: `StaleWhileRevalidate`,
+            },
         ],
     };
 
-    await workbox.generateSW(options);
+    const genSW = await workbox.generateSW(options);
+    const size = (genSW.size / 1048576).toFixed(2);
+    console.log(`${genSW.count} files will be precached, totaling ${size} MB.`);
+
     console.log('Building tailwind');
     console.log(execSync("npm run build:tailwind").toString());
   });
