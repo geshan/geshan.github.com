@@ -9,8 +9,10 @@ tags:
 - Node.js
 cover: "/images/javascript-promise-all/01javascript-promise-all.jpg"
 pagetitle: How to use JavaScript Promise.all with real-life code example
-description: Learn how to use JavaScript Promise.all with a real-life Axios API get call code example compared to a sequential call.
+description: Learn how to use JavaScript Promise.all with a real-life Axios API get
+  call code example compared to a sequential call.
 keywords: javascript promise all, promise all
+
 ---
 Async execution and promises are not easy to understand in any language and JavaScript is no exception. In this post, we will dissect how JavaScript Promise.all function works visually and with a real-life code example, let’s get started!
 
@@ -149,7 +151,7 @@ We will save the file as `sequential-requests.js` and run it with `time node seq
 <img class="center" loading="lazy" src="/images/javascript-promise-all/03sequential-calls.jpg" title="Javascript sequentially calling API endpoints" alt="Javascript sequentially calling API endpoints">
 <center>
 
-[view larger image](/images/javascript-promise-all/03sequential-calls.jpg-full.jpg)
+[view larger image](/images/javascript-promise-all/03sequential-calls-full.jpg)
 
 </center>
 
