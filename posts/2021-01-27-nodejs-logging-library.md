@@ -102,7 +102,7 @@ The above code is also available as a [pull request](https://github.com/geshan/n
 
 ### Bunyan for Node.js logging
 
-[Bunyan](https://www.npmjs.com/package/bunyan) is another famous Node.js logging library. Bunyan is used by [Joyent](https://www.joyent.com/node-js/production/modules) in production. It defines itself as a simple and fast JSON logging library for Node.js services.
+[Bunyan](https://www.npmjs.com/package/bunyan) is another famous Node.js logging library. Bunyan is used by [Joyent](https://www.joyent.com) in production. It defines itself as a simple and fast JSON logging library for Node.js services.
 
 Bunyan advocates that logs should be in JSON format. Its features include a CLI for pretty-printing, serializers, and support for [multiple runtimes](https://github.com/trentm/node-bunyan#runtime-environments) in addition to Node.js like Webpack and Browserify.
 
