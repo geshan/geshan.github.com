@@ -94,6 +94,11 @@ h3.comments {
   clear: both;
 }
 
+code, kbd, pre, samp {
+  font-size: 0.95rem;
+  background-color: #f1f3f5;
+}
+
 /* code highlight */
 code[class*="language-"],
 pre[class*="language-"] {
@@ -280,7 +285,9 @@ pre[class*="language-"] {
   margin: 0;
 }
 .entry-content p {
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .entry-content img {
   margin: 30px auto;
@@ -306,7 +313,7 @@ pre[class*="language-"] {
 }
 .hentry ul,
 .hentry p {
-  font-size: 18px;
+  font-size: 20px;
 }
 .hentry footer {
   width: 100%;
