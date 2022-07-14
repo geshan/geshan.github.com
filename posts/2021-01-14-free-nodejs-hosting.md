@@ -7,7 +7,7 @@ comments: true
 tags:
 - Web Development
 - Node.js
-cover: "/images/free-nodejs-hosting/01free-nodejs-hosting.jpg"
+cover: "/images/free-nodejs-hosting/01free-nodejs-hosting-new.jpg"
 pagetitle: 3 free Node.js hosting services you should be using today (with step-by-step
   deployment examples)
 description: Use these 3 completely free Node.js hosting services to host your Node.js
@@ -21,7 +21,7 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 
 <!-- more -->
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting-new.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
 
 ## Table of contents
 
@@ -34,8 +34,8 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
     * [Deploy Node.js Quotes API to Heroku](#deploy-node.js-quotes-api-to-heroku)
   * [Vercel](#vercel)
     * [Deploy Node.js Quotes API on Vercel](#deploy-node.js-quotes-api-on-vercel)
-  * [Zeet](#zeet)
-    * [Deploy Node.js Quotes API to Zeet](#deploy-node.js-quotes-api-to-zeet)
+  * [Cyclic](#cyclic)
+    * [Deploy Node.js Quotes API to Cyclic](#deploy-node.js-quotes-api-to-cyclic)
 * [Quick comparison of Free Node.js hosting services](#quick-comparison-of-free-node.js-hosting-services)
 * [Other options for free Node.js hosting](#other-options-for-free-node.js-hosting)
 * [Conclusion](#conclusion)
@@ -62,7 +62,7 @@ Time to start revealing our free Node.js hosting services:
 
 ## Free Node.js hosting services
 
-The free Node.js hosting services are Heroku (free tier), Vercel (hobby free forever plan), and Zeet. All these services can host your Node.js application for $0 a month a.k.a. absolutely and completely free. You don't even need to add a credit card for backup or safety reasons. But there are strings attached, as discussed next.
+The free Node.js hosting services are Heroku (free tier), Vercel (hobby free forever plan), and Cyclic. All these services can host your Node.js application for $0 a month a.k.a. absolutely and completely free. You don't even need to add a credit card for backup or safety reasons. But there are strings attached, as discussed next.
 
 ## Issues with these services
 
@@ -78,7 +78,7 @@ Vercel is an amazing service, where you could host both your backend API and fro
 
 With serverless functions, the issues of cold start and losing application state comes into the picture.
 
-Zeet is another awesome service where neither the app sleeps if you don’t get requests for 30 minutes nor it is serverless.
+Cyclic is another awesome service where the app does not sleep if you don’t get requests for 30 minutes. It is serverless and a great wrapper on top of multiple AWS services.
 
 > The con here is you get only 1 app free but it gets 1 shared CPU and 1 GB of shared memory.
 
@@ -180,69 +180,56 @@ On merge to master/main branch, it will auto-deploy the code to the main URL. Yo
 
 Both Heroku and Vercel have powerful CLI to make your life easier for deploying the apps and doing other things like having a look at the app logs from the CLI.
 
-Next, let's look at how Zeet compares to Heroku and Vercel.
+Next, let's look at how Cyclic compares to Heroku and Vercel.
 
-### Zeet
+### Cyclic
 
-[Zeet](https://zeet.co) brands itself as the easiest way to deploy. It supports both code from Github or a public docker container. Zeet is not as popular as either Heroku or Vercel but it packs a punch with its simplicity quotient.
+[Cyclic](https://www.cyclic.sh/) aims to be a servive that offers full stack services for free. It is a serverless wrapper built very well on top of [AWS](https://docs.cyclic.sh/docs/overview/architecture). As it says on its website
 
-> As Zeet doesn’t run serverless functions or sleep in 30 mins it looks like a promising option to host just one app for free.
+> Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline.
 
-As per its [pricing](https://zeet.co/pricing) page, we can run one project for free with limited and shared resources. Time to dig more into Zeet:
+As mentioned its [pricing](https://www.cyclic.sh/pricing) page, which has a self claimed `generous free tier` we can deploy apps which can be invoked 100K times in a month. It also has some hard and soft limits mentioined in the [limits](https://docs.cyclic.sh/docs/overview/limits) page.
 
-### Update: Mar 2021 - Zeet has started to charge
+#### Deploy Node.js Quotes API to Cyclic
 
-Recently Zeet has deprecated its free plan and started to charge $5 for the single shared VM it used to provide free. I would recommend using [Qovery](https://www.qovery.com/pricing) as an alternative to Zeet which has a great free plan.
-
-#### Deploy Node.js Quotes API to Zeet
-
-Given you have [registered](https://zeet.co/new) on to Zeet with GitHub and you are logged into Zeet, follow the steps below:
+Given you have [registered](https://app.cyclic.sh/api/login) on to Cyclic with GitHub and you are logged in, follow the steps below:
 
 * Fork the `https://github.com/geshan/nodejs-posgresql` repository to your GitHub account
-* Go to Zeet, click the green “+ New Project” button on the top right of Zeet
-* Then click “GitHub” and click the green “Continue” button under the “Trial $0” option
-* After that, click “Continue” besides the “Nodejs-posgresql” repo that you have just forked and then click “Deploy Now” as seen below:
+* Go to your fork and click the "Deploy to cyclic" navy blue button
+* You will be asked to connect Cyclic with GitHub, you can approve the repo as below
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/13nodejs-zeet-deploy-now.jpg" title="Deploy Node.js app to Zeet" alt="Deploy Node.js app to Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/20cyclic-link.jpg" title="Link your GitHub with Cyclic vai its app" alt="Link your GitHub with Cyclic vai its app">
 
-* Subsequently, choose “Node.js 14” on “Build Method” and click “Save” as follows:
+* Subsequently, Cyclic will build and deploy the app and show you "You're Live!" in a couple of minutes maximum, when the process is done as follows:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/14nodejs-zeet-commands.jpg" title="Node.js app to deploy on Zeet" alt="Node.js app to deploy on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/21cyclic-live.jpg" title="Your app is live with Cyclic" alt="Your app is live with Cyclic">
 
-* Give it some time to build and deploy, after that, you will see something like below:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/15nodejs-zeet-deployed.jpg" title="Node.js app deployed on Zeet" alt="Node.js app deployed on Zeet">
+* Now we can click on the "Go to nodejs-posgresql Dashboard" button. It will take us to the overview page like below:
 
-* If you click the green "Visit" button, it will not work now. There is one small config left. Click on “Settings” then click on the “Networking” link on the left then set the "Port" to be `3000` as seen below, after that click “Save” on the bottom right as seen below:
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/22cyclic-app-overview.jpg" title="Your app overview on Cyclic" alt="Your app overview on Cyclic">
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/16nodejs-zeet-port.jpg" title="Configure right port for the Node.js app on Zeet" alt="Configure right port for the Node.js app on Zeet">
+* To view the working app click the "App URL" link, which will show something like:
 
-* This should redeploy the App, if you go back to the “Deployments” tap it should be deploying/deployed.
-* Consequently, click the “Visit” button again you should see something like below:
-
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/17nodejs-zeet-app-running.jpg" title="Node.js app running on Zeet" alt="Node.js app running on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/23cyclic-homepage.jpg" title="Our app main page working on Cyclic" alt="Our app main page working on Cyclic">
 
 * Next, add `/quotes` to the URL and you should see something similar to the following:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/18nodejs-zeet-api-running.jpg" title="Node.js Quotes API running on Zeet" alt="Node.js Quotes API running on Zeet">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/24cyclic-quotes.jpg" title="Node.js Quotes API running on Cyclic" alt="Node.js Quotes API running on Cyclic">
 
-Like Vercel, Zeet also provides a deploy preview URL on each pull request. I have a feeling they wanted to compete Zeit with Zeet :), if you know what I mean. Below is a preview of how the deploy perview URL looks like as a comment in your pull reqeust:
-
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/19nodejs-zeet-deploy-preview.jpg" title="Node.js App deploy preview on Zeet" alt="Node.js App deploy preview on Zeet">
-
-Anyway if you want to deploy your own app you will need to delete this demo app and add your own app. Zeet only allows 1 free app. They have more demos in their [GitHub account](https://github.com/zeet-demo). Zeet does not have a CLI app which is good I suppose as it wants to keep things simple and clean.
+---
 
 There you have it, the same Node.js API deployed on all 3 free Node.js hosting services without even needing to reach your wallet for your credit card.
 
 ## Quick comparison of Free Node.js hosting services
 
-Below is a quick comparison table for Heroku, Vercel, and Zeet.
+Below is a quick comparison table for Heroku, Vercel, and Cyclic.
 
 | Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
 | :---: | :---: | :---: | --- | --- | --- |
 | Heroku | 1x | 512 MB | After 30 mins | No | 5 |
 | Vercel | N/A | 1 GB | No | Yes | Unlimited |
-| Zeet | 1 Shared | 1 GB Shared | No | No | 1 |
+| Cyclic | N/A | 1 GB | No | Yes | Multiple |
 
 After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
@@ -250,16 +237,16 @@ After that contrast, let’s look at some other options that are free but still 
 
 Some other services where you can host your Node.js application free/almost free but you need to put your credit card are as follows:
 
+1. Railway.app - [Railway](https://railway.app/pricing) is a great service with free $5 a month. We can even run a database on Railway without adding a credit card.
 1. Fly.io - Pretty good, it is like CDN for the backend. The [free plan](https://fly.io/docs/about/pricing/) has 3 shared-CPU-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
-2. Google Cloud Run - You can host your Node.js app on [Google Cloud Run](https://cloud.google.com/run) as [serverless containers](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
-3. Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
-4. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is better used to code collaboratively than host a Node.js app or API.
+1. Google Cloud Run - You can host your Node.js app on [Google Cloud Run](https://cloud.google.com/run) as [serverless containers](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
+1. Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
+1. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is better used to code collaboratively than host a Node.js app or API.
 
 > You can host your Node.js App on all 3 of the big cloud providers AWS, Azure, and GCP and/or their function as a service (FAAS) serverless options or even on free-forever VM. But, they will ask for your credit-card.
 
 You can even explore other cloud providers like IBM Cloud or Alibaba to host your Node.js app for $0 a month. I will leave the digging deeper part for you.
 
-If you are looking for windows hosting, this [Windows VPS Hosting Comparison](https://www.accuwebhosting.com/vps-hosting/windows) is great.
 
 ## Conclusion
 
