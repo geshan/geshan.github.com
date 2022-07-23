@@ -1,14 +1,14 @@
 ---
 layout: post
-title: JavaScript: Return multiple values from a function call with code examples
+title: "JavaScript: Return multiple values from a function call with code examples"
 date: 2022-07-23T22:52:35.000+11:00
 comments: true
 tags:
 - Javascript
 - Software Engineering
 cover: "/images/javascript-return-multiple-values/01javascript-return-multiple-values.jpg"
-pagetitle: JavaScript: Return multiple values from a function call with code examples
-description: Find out how I run one of the world's top 370K website for free. Quick answer Cloudflare free plan, full details in the post.
+pagetitle: "JavaScript: Return multiple values from a function call with code examples"
+description: Learn how to return multiple values from a function in JavaScript using an array and an object in this tutorial.
 keywords: run world's top website for free, top website free
 
 ---
@@ -95,7 +95,7 @@ console.log(`${fullName} is ${age} years old.`);
 ```
 If you notice the square brackets `[fullName, age]`, that is the destructuring part which makes naming the values on the first and second index of the array possible. So in the above code, the value on the first index is named `fullName` and the value in the second one is named `age`. These two well-defined variables make it very easy to understand the multiple values returned by the `getPersonalData` function.
 
- If you want to get unique values from an array you can try [JavaScript set](/blog/2021/12/javascript-set/). In the process, you can also learn about other [javascript array functions](/blog/2021/03/javascript-array-functions/) like map, filter, and find. The next section will include the same result with an object to return multiple values from a function.
+ If you want to get unique values from an array you can try [JavaScript set](/blog/2021/12/javascript-set/). In the process, you can also learn about other [JavaScript array functions](/blog/2021/03/javascript-array-functions/) like map, filter, and find. The next section will include the same result with an object to return multiple values from a function.
 
 ## Return multiple values using an object
 
@@ -131,11 +131,11 @@ console.log(`${fullName} is ${age} years old.`);
 
 Same as above the `{fullName, age}` is used to destructure the object in this example. Here, the variable names match the property of the object which makes it easier to comprehend.
 
-You can view all the code examples in this [GitHub repository]. For your convenience, you can quickly fiddle around with the code examples on [JsFiddle](https://jsfiddle.net/geshan/3nojub9q/10/) too.
+You can view all the code examples in this [GitHub repository](https://github.com/geshan/javascript-return-mutiple-values). For your convenience, you can quickly fiddle around with the code examples on [JsFiddle](https://jsfiddle.net/geshan/3nojub9q/10/) too.
 
 ## Code on JsFiddle
 
-Below is the running code example of Js fiddle, be sure to view the console to see the output of the code examples:
+Below is the running code example of Js fiddle, be sure to view the console on your browser to see the output of the code examples when you switch to the result tab:
 
 <script async src="//jsfiddle.net/geshan/3nojub9q/10/embed/js,result/"></script>
 
