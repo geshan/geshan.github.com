@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I run one of the world’s top 370K websites for exactly $0 a month
+title: How I run one of the world’s top 370K websites for free
 date: 2022-07-22T22:39:45.000+11:00
 comments: true
 tags:
@@ -8,7 +8,8 @@ tags:
 - Misc
 cover: "/images/worlds-top-370k-website/01run-top-website-free.jpg"
 pagetitle: How I run one of the world’s top 370K websites for exactly $0 a month
-description: Find out how I run one of the world's top 370K website for free. Quick answer Cloudflare free plan, full details in the post.
+description: Find out how I run one of the world's top 370K website for free. Quick
+  answer Cloudflare free plan, full details in the post.
 keywords: run world's top website for free, top website free
 
 ---
@@ -26,32 +27,31 @@ Ok, I have said it, this blog you are reading is one of the top 370K websites in
 * [Cost for the domain name - free](#cost-for-the-domain-name---free)
 * [Fees paid to host code - $0](#fees-paid-to-host-code---0)
 * [JAM stack website - no servers no database](#jam-stack-website---no-servers-no-database)
-    * [Browse offline with PWA](#browse-offline-with-pwa)
-    * [Content editing](#content-editing)
+  * [Browse offline with PWA](#browse-offline-with-pwa)
+  * [Content editing](#content-editing)
 * [All in on the Cloudflare free plan](#all-in-on-the-cloudflare-free-plan)
-    * [Other Cloudflare services](#other-cloudflare-services)
+  * [Other Cloudflare services](#other-cloudflare-services)
 * [Traffic increase turning point - SEO](#traffic-increase-turning-point---seo)
 * [Top million site lists](#top-million-site-lists)
 * [Conclusion](#conclusion)
-
 
 ## The main points
 
 Below are the main points if you don’t want to read the long explanation in this blog post:
 
 1. The domain for this blog “Geshan.com.np” was registered in Jan-2008 and has no recurring cost as all `*.*.np` domains are [free](https://register.com.np/terms-and-conditions) of cost.
-1. This blog is a JAM stack (essentially static) website generated with Eleventy and hosted on Cloudflare pages for exactly $0 a month. It used to be on GitHub pages for free and would cost nothing if hosted on Netlify too.
-1. As this is primarily a static website (HTML, CSS, and some JavaScript - mostly vanilla), there is no database, no server, no image hosting, or S3 bucket equating to 0 recurring operational costs. On the flip side, this blog is a PWA where you can browse all/most of the content offline.
-1. I am a Cloudflare fan (a bigger fan of their free plan) and exploit all the FREE services they provide like DNS, email mapping (which is in beta), SSL, caching, etc. Yes, you can email me at me@geshan.com.np :). As soon as they have a new setting or feature I go and turn it on for example [early hints](https://blog.cloudflare.com/early-hints/).
-1. The code for my blog is fully open source and available on [GitHub](​​https://github.com/geshan/geshan.github.com) for which I pay $ 0 every year.
-1. In terms of popularity, [Similarweb](https://www.similarweb.com/website/geshan.com.np) says my blog is in the world’s most popular 370K websites - in Jul-2022 at the time of writing this.
-1. The main turning point for traffic was in Q4-2020 when I changed from writing about things I liked to topics people search for on Google. SEO and pull marketing work much better.
+2. This blog is a JAM stack (essentially static) website generated with Eleventy and hosted on Cloudflare pages for exactly $0 a month. It used to be on GitHub pages for free and would cost nothing if hosted on Netlify too.
+3. As this is primarily a static website (HTML, CSS, and some JavaScript - mostly vanilla), there is no database, no server, no image hosting, or S3 bucket equating to 0 recurring operational costs. On the flip side, this blog is a PWA where you can browse all/most of the content offline.
+4. I am a Cloudflare fan (a bigger fan of their free plan) and exploit all the FREE services they provide like DNS, email mapping (which is in beta), SSL, caching, etc. Yes, you can email me at me@geshan.com.np :). As soon as they have a new setting or feature I go and turn it on for example [early hints](https://blog.cloudflare.com/early-hints/).
+5. The code for my blog is fully open source and available on [GitHub](​​https://github.com/geshan/geshan.github.com) for which I pay $ 0 every year.
+6. In terms of popularity, [Similarweb](https://www.similarweb.com/website/geshan.com.np) says my blog is in the world’s most popular 370K websites - in Jul-2022 at the time of writing this.
+7. The main turning point for traffic was in Q4-2020 when I changed from writing about things I liked to topics people search for on Google. SEO and pull marketing work much better.
 
 The primary takeaway here is:
 
 > Don’t spend money on your side projects and be consistent in your writing frequency.
 
-Another thing to consider while starting to blog is getting your own domain name, be it paid like a `.com` for $7 a year or a free one do it. I have seen bloggers claiming “millions” of page views on Medium, which is good but you don’t know when Medium makes changes in its policy or starts losing traffic. 
+Another thing to consider while starting to blog is getting your own domain name, be it paid like a `.com` for $7 a year or a free one do it. I have seen bloggers claiming “millions” of page views on Medium, which is good but you don’t know when Medium makes changes in its policy or starts losing traffic.
 
 Build your own corner on the internet, maybe get started with something like Hashnode.dev for free but always do it on your own domain name piecing together free services like Cloudflare and Hash node. Of course, you can keep posting to places like Medium, Hackernoon, and others by [cross posting](/blog/2019/12/repost-your-tech-blog/).
 
@@ -61,7 +61,7 @@ Let’s figure out what components are used to run this blog for $0 a month, not
 
 Let’s begin with the domain name. A domain name is one of the first things you will need to get your blog up and running. To the surprise of many people (me included), Nepal was way ahead of the curve and used to give `*.np` domains for free and Mercantile (the first ISP of Nepal) makes it free up till now. The best part is there is no renewal involved as long as you get it by providing them with your passport or citizenship as an individual.
 
-> The main point here is, that my blog’s domain `Geshan.com.np` was registered in Jan-2008. I did not have to pay a rupee to get it registered and don’t pay anything now as well. 
+> The main point here is, that my blog’s domain `Geshan.com.np` was registered in Jan-2008. I did not have to pay a rupee to get it registered and don’t pay anything now as well.
 
 That's exactly 0 recurring costs for the domain. If you want to get a free domain you can try Freenom.com, you won’t get a `.com` or `net` but can utilize a `.ml` or `.gq`. Next up we will discuss code hosting.
 
@@ -87,7 +87,6 @@ This blog is a [Progressive Web App](https://developer.mozilla.org/en-US/docs/We
 
 Another way to do it will be to browse the blog for some time like a couple of minutes, turn off the wi-fi/mobile data and continue browsing. Most of the pages and blogs will work as normal with images. That is the power of PWA, I can work on making it a full-on mobile app and submit it to app stores but I have not felt the need to do it till now.
 
-
 ### Content editing
 
 Even though the website is static changing it is pretty easy. In case I need to fix a typo or make a small change, I use [Forestry’s](https://forestry.io/) free plan to do it from the browser. It can also be done with [Netlify CMS](https://www.netlifycms.org/).
@@ -96,7 +95,7 @@ In the next section, we will understand how I host this JAM stack website.
 
 ## All in on the Cloudflare free plan
 
-This blog leverages most of the Cloudflare “free” plan services to give you the reader a fast and performant experience. I moved the blog’s hosting form GitHub pages to [Cloudflare pages](https://pages.cloudflare.com/) in [Nov-2021](https://github.com/geshan/geshan.github.com/pull/303). The reason was simple Cloudflare pages has great performance on its [vast global network](https://www.cloudflare.com/en-gb/network/), the bandwidth is unlimited and the build times are also generous. With the [wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) things are very easy if I need to manage anything. My blog gets readers from almost every country in the world so using Cloudflare helps to get them the content faster from the Edge.
+This blog leverages most of the Cloudflare “free” plan services to give you the reader a fast and performant experience. I moved the blog’s hosting from GitHub pages to [Cloudflare pages](https://pages.cloudflare.com/) in [Nov-2021](https://github.com/geshan/geshan.github.com/pull/303). The reason was simple Cloudflare pages has great performance on its [vast global network](https://www.cloudflare.com/en-gb/network/), the bandwidth is unlimited and the build times are also generous. With the [wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) things are very easy if I need to manage anything. My blog gets readers from almost every country in the world so using Cloudflare helps to get them the content faster from the Edge.
 
 ### Other Cloudflare services
 
@@ -104,7 +103,7 @@ I use other Cloudflare services too like the DNS for this website is managed wit
 
 <img class="center" loading="lazy" src="/images/worlds-top-370k-website/02cloudflare.jpg" title="Running Geshan.com.np with and on Cloudflare pages" alt="Running Geshan.com.np with and on Cloudflare pages">
 
-I also check some of the analytics provided by Cloudflare but my main source of stats is Google Analytics. I have not felt the need to use Cloudflare workers but I have dabbled a bit with the Pages functions, especially the [geo location](https://developers.cloudflare.com/workers/examples/geolocation-hello-world/) part.
+I also check some of the analytics provided by Cloudflare but my main source of stats is Google Analytics. I have not felt the need to use Cloudflare workers but I have dabbled a bit with the Pages functions, especially the [geolocation](https://developers.cloudflare.com/workers/examples/geolocation-hello-world/) part.
 
 > To sum up, this blog is hosted on Cloudflare pages with unlimited bandwidth. It uses Cloudflare to manage DNS, caching, SSL and security. All that for exactly $0 a month.
 
@@ -117,7 +116,7 @@ I wrote 1 blog post a month in 2019, totaling 14 blog posts. Let’s say the pag
 
 > I used to write for what I wanted earlier, then I started to write for what people searched for and what I wanted.
 
-This doesn't mean I only write SEO focused posts. But now I do like a rough 80:20 rule, with 20% what I want to write without SEO focus stuff. Visually it would look like the below:
+This doesn't mean I only write SEO-focused posts. But now I do like a rough 80:20 rule, with 20% of what I want to write without SEO focus stuff. Visually it would look like the below:
 
 <img class="center" loading="lazy" src="/images/worlds-top-370k-website/05seo.jpg" title="What people search for and what I want to write about" alt="What people search for and what I want to write about">
 
@@ -133,32 +132,32 @@ Both of them have almost similar total pageviews for their lifetime, first one i
 
 As you can see there was a massive spike when the post reached the first page of hacker news. Then the big drop and it never got any more traction. Most of my blog posts before Q4 of 2020 had a similar fate.
 
-There was an initial bump in views due to social media shares and some push marketing and on 2-3 days the page views fall flat. Now, let's look at a page with a lot of SEO focus and research that actually landed on the first page of Google search results for a some keywords:
+There was an initial bump in views due to social media shares and some push marketing and on 2-3 days the page views fall flat. Now, let's look at a page with a lot of SEO focus and research that actually landed on the first page of Google search results for some keywords:
 
 <img class="center" loading="lazy" src="/images/worlds-top-370k-website/04nodejs-postgres-post.jpg" title="Page views for Nodejs postgresql blog post" alt="Page views for Nodejs postgresql blog post">
 
 Even here there is the initial high of page views and then it falls off. The good part here is for more than one year now this post gets consistent views each day. Why? Because it ranks on the first page of Google search results for some keywords.
 
-> This is the switch that made my blog's traffic increase 5x in 3 years where now ~85% of the traffic comes from Search engines, mainly Google.
+> This is the switch that made my blog's traffic increase 5x in 3 years where now \~85% of the traffic comes from Search engines, mainly Google.
 
 Let's look at how being on the top million website lists helps in the next section.
 
 ## Top million site lists
 
-There are multiple sources that list the top 1 million websites in the world. There is the [majestic million](https://majestic.com/reports/majestic-million) list, [tranco](https://tranco-list.eu/) list, and[Cisco Umbrella top 1 million](http://s3-us-west-1.amazonaws.com/umbrella-static/index.html) list to name some. This blog ranks on almost all of these and at multiple places. Among the lists which one is the most reliable is a [debatable](https://www.domaintools.com/resources/blog/mirror-mirror-on-the-wall-whos-the-fairest-website-of-them-all) discussion.
+There are multiple sources that list the top 1 million websites in the world. There is the [majestic million](https://majestic.com/reports/majestic-million) list, [Tranco](https://tranco-list.eu/) list, and [Cisco Umbrella top 1 million](http://s3-us-west-1.amazonaws.com/umbrella-static/index.html) list to name some. This blog ranks on almost all of these and at multiple places. Among the lists which one is the most reliable is a [debatable](https://www.domaintools.com/resources/blog/mirror-mirror-on-the-wall-whos-the-fairest-website-of-them-all) discussion.
 
-At the time of writing, on the Majestic million, this blog ranks at 892K. On the [tranco list](https://tranco-list.eu/api/ranks/domain/geshan.com.np) it ranks at 485K and Similar web ranks this blog as one of the world’s top 370K websites. There used to be a [top million](https://web.archive.org/web/20220501054146/https://www.alexa.com/topsites) list from Alexa but Alexa is closing down now. This domain also ranks at 122k on Domcop’s top [10 million websites](https://www.domcop.com/top-10-million-websites). 
+At the time of writing, on the Majestic million, this blog ranks at 892K. On the [Tranco list](https://tranco-list.eu/api/ranks/domain/geshan.com.np), it ranks at 485K[,](https://tranco-list.eu/api/ranks/domain/geshan.com.np) and Similar web ranks this blog as one of the world’s top 370K websites. There used to be a [top million](https://web.archive.org/web/20220501054146/https://www.alexa.com/topsites) list from Alexa but Alexa is closing down now. This domain also ranks at 122k on Domcop’s top [10 million websites](https://www.domcop.com/top-10-million-websites).
 
 > The average of the above 4 numbers will be 457.25K, so if the title is a bit misleading be it :).
 
-As per Siteefy, there are [200 million active websites](https://siteefy.com/how-many-websites-are-there/) in the world out of the 1.17 billion domains registered. 
+As per Siteefy, there are [200 million active websites](https://siteefy.com/how-many-websites-are-there/) in the world out of the 1.17 billion domains registered.
 
-> Therefore being anywhere in the top 1 million websites, takes the website in the elite 0.5% of the world’s active websites. 
+> Therefore being anywhere in the top 1 million websites, takes the website in the elite 0.5% of the world’s active websites.
 
-It is surely not a small feat, especially for a one-person blog. I will not be giving out exact numbers, if you want you can check the [SimilarWeb’s free analysis](https://www.similarweb.com/website/geshan.com.np/) for this website or do a bit more research on the SEO tool of your choice which will guess the numbers for you.
+It is surely not a small feat, especially for a one-person blog. I will not be giving out exact numbers, if you want you can check [SimilarWeb’s free analysis](https://www.similarweb.com/website/geshan.com.np/) for this website or do a bit more research on the SEO tool of your choice which will guess the numbers for you.
 
-## Conclusion 
+## Conclusion
 
 You have found out how this blog runs for $0 a month with primarily a static website hosted on Cloudflare pages. The code is open source on GitHub and there are no servers or databases to power this website it is sent to your browser from the Edge with Cloudflare's massive global network.
 
-You also learned that SEO and pull marketing works much better to get sustainable traffic to the website or single post. There are multiple top million website lists available and all of them differ in how they measure traffic and popularity. If you want to get good traffic to your blog or website first write great posts and then do the marketing then the other way round. Best of luck! 
+You also learned that SEO and pull marketing works much better to get sustainable traffic to the website or single post. There are multiple top million website lists available and all of them differ in how they measure traffic and popularity. If you want to get good traffic to your blog or website first write great posts and then do the marketing then the other way round. Best of luck!
