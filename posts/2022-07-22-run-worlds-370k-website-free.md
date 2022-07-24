@@ -7,11 +7,9 @@ tags:
 - Software Engineering
 - Misc
 cover: "/images/worlds-top-370k-website/01run-top-website-free.jpg"
-pagetitle: How I run one of the world’s top 370K websites for exactly $0 a month
-description: Find out how I run one of the world's top 370K website for free. Quick
-  answer Cloudflare free plan, full details in the post.
+pagetitle: How I run one of the world’s top 370K websites for free
+description: Find out how I run one of the world's top 370K website for $0. Quick answer Cloudflare free plan, full details in the post.
 keywords: run world's top website for free, top website free
-
 ---
 Years back, being in the top 1 million websites worldwide was one of the gaols for this blog when I saw that on Alexa.com. I am not sure when that milestone was hit, it looks like it was before [2019](https://web.archive.org/web/20190731210538/https://www.alexa.com/siteinfo/geshan.com.np) as per Web archive.
 
