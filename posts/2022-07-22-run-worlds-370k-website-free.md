@@ -43,7 +43,7 @@ Below are the main points if you don’t want to read the long explanation in th
 2. This blog is a JAM stack (essentially static) website generated with Eleventy and hosted on Cloudflare pages for exactly $0 a month. It used to be on GitHub pages for free and would cost nothing if hosted on Netlify too.
 3. As this is primarily a static website (HTML, CSS, and some JavaScript - mostly vanilla), there is no database, no server, no image hosting, or S3 bucket equating to 0 recurring operational costs. On the flip side, this blog is a PWA where you can browse all/most of the content offline.
 4. I am a Cloudflare fan (a bigger fan of their free plan) and exploit all the FREE services they provide like DNS, email mapping (which is in beta), SSL, caching, etc. Yes, you can email me at me@geshan.com.np :). As soon as they have a new setting or feature I go and turn it on for example [early hints](https://blog.cloudflare.com/early-hints/).
-5. The code for my blog is fully open source and available on [GitHub](​​https://github.com/geshan/geshan.github.com) for which I pay $ 0 every year.
+5. The code for my blog is fully open source and available on [GitHub](https://github.com/geshan/geshan.github.com) for which I pay $ 0 every year.
 6. In terms of popularity, [Similarweb](https://www.similarweb.com/website/geshan.com.np) says my blog is in the world’s most popular 370K websites - in Jul-2022 at the time of writing this.
 7. The main turning point for traffic was in Q4-2020 when I changed from writing about things I liked to topics people search for on Google. SEO and pull marketing work much better.
 
