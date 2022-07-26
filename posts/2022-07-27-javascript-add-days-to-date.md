@@ -18,7 +18,7 @@ There are several use cases to add days to a date in JavaScript. For instance to
 
 <img class="center" loading="lazy" src="/images/javascript-add-days-to-date/01javascript-add-days-to-date.jpg" title="How to add days to date in JavaScript" alt="How to add days to date in JavaScript">
 
-# Table of contents
+## Table of contents
 
 * [JavaScript date object](#javascript-date-object)
 * [Add date with setDate](#add-date-with-setdate)
