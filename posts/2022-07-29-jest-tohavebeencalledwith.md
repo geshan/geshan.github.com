@@ -18,6 +18,15 @@ Jest is the [most used](https://2021.stateofjs.com/en-US/libraries/testing/) Jav
 
 <img class="center" loading="lazy" src="/images/jest-tohavebeencalledwith/01jest-tohavebeencalledwith.jpg" title="How to add days to date in JavaScript" alt="How to add days to date in JavaScript">
 
+## Table of contents
+
+* [Prerequisites](#prerequisites)
+* [Get books by subject example](#get-books-by-subject-example)
+* [Jest tests for the script](#jest-tests-for-the-script)
+    * [Jest toHaveBeenCalledWith primitive types](#jest-tohavebeencalledwith-primitive-types)
+    * [Jest toHaveBeenCalledWith partial array and object](#jest-tohavebeencalledwith-partial-array-and-object)
+    * [Jest toHaveBeenCalledWith multiple parameters](#jest-tohavebeencalledwith-multiple-parameters)
+* [Conclusion](#conclusion)
 
 ## Prerequisites
 
@@ -194,7 +203,7 @@ Similarly, the `pluckTitles` function is also spied on to respond with canned va
 The focus of this tutorial is on `toHaveBeenCalledWith`. Next, the usage of toHaveBeenCalledWith for primary data types is covered.
 
 
-### Jest toHaveBeenCalledWith basic types
+### Jest toHaveBeenCalledWith primitive types
 
 To have been called within Jest checks that the function/mock has been called with some defined parameters. It can be used with [primitive data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#javascript_types) like string, integer, etc. For instance:
 
@@ -202,9 +211,9 @@ To have been called within Jest checks that the function/mock has been called wi
 expect(getSpy).toHaveBeenCalledWith('https://openlibrary.org/subjects/javascript.json');
 expect(getSpy).toHaveBeenCalledWith(expect.stringContaining('openlibrary.org'));
 ```
-Here the get method on Axios is expected to have been called with a string of `'https://openlibrary.org/subjects/javascript.json`. Another way to do it can be to only check part of the string like `expect.stringContaining('openlibrary.org');`  expects the parameter to contain `openlibrary.org`. It would have also passed if `ht/openlibrary.org?a=b` was used. You can make the [stringContainig](https://jestjs.io/docs/expect#expectstringcontainingstring) checks as strict or lenient as you want.
+Here the get method on Axios is expected to have been called with a string of `https://openlibrary.org/subjects/javascript.json`. Another way to do it can be to only check part of the string like `expect.stringContaining('openlibrary.org');`  expects the parameter to contain `openlibrary.org`. It would have also passed if `ht/openlibrary.org?a=b` was used. You can make the [stringContainig](https://jestjs.io/docs/expect#expectstringcontainingstring) checks as strict or lenient as you want.
 
-If the function has been called more than once then the `toHaveBeenNthCalledWith` and `toHaveBeenLastCalledWith` can be used. If the function has been called 3 times and you want to validate the parameters for the second call it will be `toHaveBeenNthCalledWith(2, ‘<your-param-here`>’)` as seen above in the test with the nonexisting subject `'asdfj'`. Next, you will learn how to test a partial array and object using Jest toHaveBeenCalledWith.
+If the function has been called more than once then the `toHaveBeenNthCalledWith` and `toHaveBeenLastCalledWith` can be used. If the function has been called 3 times and you want to validate the parameters for the second call it will be `toHaveBeenNthCalledWith(2, '<your-param-here>')` as seen above in the test with the nonexisting subject `'asdfj'`. Next, you will learn how to test a partial array and object using Jest toHaveBeenCalledWith.
 
 ### Jest toHaveBeenCalledWith partial array and object
 
