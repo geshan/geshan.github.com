@@ -44,11 +44,11 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 ### Nepal News English - 2019
 
-[Nepal News English](https://twitter.com/nepal_news_en) Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) as serverless containers. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 12.6 K followers.
+[Nepal News English](https://twitter.com/nepal_news_en) Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) as serverless containers. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 14.4 K followers.
 
 ### AU Tech Jobs - 2020
 
-[AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 50+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 1100 jobs listed. Its USPs include:
+[AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 95+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 2700 jobs listed. Its USPs include:
 
 - Job description summary for easy reading
 - Tag job as non-technical by using external categorization service
@@ -57,7 +57,7 @@ I have a couple of side projects. I only do one side project a year to get it ov
 - Shows if the company is known to sponsor work visa or not
 - Faceted search (search by multiple departments or work type)
 
-This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in 2018.
+This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in late 2018.
 
 ## Publications
 
@@ -164,7 +164,7 @@ I have always strived to have a positive impact on the places I have work and th
 - a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
 - a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
 - mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
-- and recently SEO rookie :)
+- and a SEO rookie :)
 
 ## Follow Me/this blog
 
@@ -172,4 +172,4 @@ I have always strived to have a positive impact on the places I have work and th
 - You can follow this blog on [Telegram](https://t.me/geshanblog) too.
 - I also happen to be on [Github](https://github.com/geshan) and [Stack Overflow](https://stackoverflow.com/users/112849/geshan).
 
-You can reach me by email at <a href='mailto:geshan@gmail.com' target='_blank'>geshan@gmail.com</a>. I am also open to link exchanges for this blog :).
+You can reach me by email at geshan[at]gmail[dot]com. I am also open to link exchanges for this blog but please DO NOT contact me for any guest posts.
