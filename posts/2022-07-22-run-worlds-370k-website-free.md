@@ -8,10 +8,12 @@ tags:
 - Misc
 cover: "/images/worlds-top-370k-website/01run-top-website-free.jpg"
 pagetitle: How I run one of the world’s top 370K websites for free
-description: Find out how I run one of the world's top 370K website for $0. Quick answer Cloudflare free plan, full details in the post.
+description: Find out how I run one of the world's top 370K website for $0. Quick
+  answer Cloudflare free plan, full details in the post.
 keywords: run world's top website for free, top website free
+
 ---
-Years back, being in the top 1 million websites worldwide was one of the gaols for this blog when I saw that on Alexa.com. I am not sure when that milestone was hit, it looks like it was before [2019](https://web.archive.org/web/20190731210538/https://www.alexa.com/siteinfo/geshan.com.np) as per Web archive.
+Years back, being in the top 1 million websites worldwide was one of the goals for this blog when I saw that on Alexa.com. I am not sure when that milestone was hit, it looks like it was before [2019](https://web.archive.org/web/20190731210538/https://www.alexa.com/siteinfo/geshan.com.np) as per Web archive.
 
 Ok, I have said it, this blog you are reading is one of the top 370K websites in the world as per [Similarweb](https://i.ibb.co/RQpMvCk/Screen-Shot-2022-07-22-at-9-57-16-pm.png). In this post, I will peel the layers on how I run this blog absolutely free. Yes, you heard it right, this “popular” blog 😊 runs for exactly $0 a month and has no recurring operating cost whatsoever. Let's get into the details!
 
@@ -65,7 +67,7 @@ That's exactly 0 recurring costs for the domain. If you want to get a free domai
 
 ## Fees paid to host code - $0
 
-My blog is fully open source and currently generate with [Eleventy](https://www.11ty.dev/). You can see the source code on [Github](https://github.com/geshan/geshan.github.com). I moved my blog to Eleventy from Octorpress in [Apr-2020](https://github.com/geshan/geshan.github.com/pull/146) and it has been great to work with. The blog used to be on Blogspot from 2007-2014 and then on Octopress from 2014-2020.
+My blog is fully open source and currently generated with [Eleventy](https://www.11ty.dev/). You can see the source code on [Github](https://github.com/geshan/geshan.github.com). I moved my blog to Eleventy from Octorpress in [Apr-2020](https://github.com/geshan/geshan.github.com/pull/146) and it has been great to work with. The blog used to be on Blogspot from 2007-2014 and then on Octopress from 2014-2020.
 
 > From the cost viewpoint, this blog’s code is open and hosted on GitHub for which I pay $0/month.
 
@@ -77,7 +79,7 @@ This blog is essentially a collection of HTML, CSS and some vanilla JavaScript w
 
 > Given this blog is primarily a [static website](/blog/2020/04/static-vs-dynamic-websites-jam-stack/#static-website) there are no servers or databases to manage or host, meaning it is all free for me.
 
-This has many advantages like the website can be hosted on CDN which makes it super fast. It is virtually unhackable, by that I mean the code is open and there is no database so no SQL injection or any other vulnerability. Another great advantage is using offline with Progressive Web Application (PWA).
+This has many advantages like the website can be hosted on CDN which makes it super fast. It is virtually unhackable, by that I mean the code is open and there is no database so no SQL injection or any other vulnerability. Another great advantage is the ability to read this blog offline with Progressive Web Application (PWA).
 
 ### Browse offline with PWA
 
