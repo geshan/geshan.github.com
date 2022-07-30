@@ -5,6 +5,7 @@ date: 2022-07-29T23:15:42.000+11:00
 comments: true
 tags:
 - Javascript
+- Jest
 - Software Engineering
 cover: "/images/jest-tohavebeencalledwith/01jest-tohavebeencalledwith.jpg"
 pagetitle: "Using Jest toHaveBeenCalledWith for testing primitive data types and partial objects"
