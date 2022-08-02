@@ -51,7 +51,6 @@ Well the question is always there do you write test first or code first, IMHO wh
 Just writing tests will not be enough if it does not run on each push to the version control system (VCS) like git. So if you get fast feedback on what your new code did to the existing or new tests that would be very helpful to decide if your code in form of a Pull Request (PR) can be merged to the main branch (generally master. It is very important for open source so as to maintain stability and not break the application of anyone using your open source code. Bonuspoints if you submit the code coverage report to above mentioned code analysis services. Here too you have mainly 2 choices both of them are free for open source projects:
 
 * [Travis CI](https://travis-ci.org/geshan/dataprovider-example) - The most popular continuous integration, fast and easy to integrate with any project.
-* [Shippable CI](https://shippable.com) - A new player based on docker. Good and easy to integrate but can't show test runs even for open source projects.
 
 There are lots of other CI services these days and most of them are free for open source projects, still I think Travis
 makes a good choice for open source projects. The decision is yours again.

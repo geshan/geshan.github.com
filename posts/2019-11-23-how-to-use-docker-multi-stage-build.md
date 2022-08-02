@@ -29,7 +29,7 @@ This post discussed how you can exploit `docker multi-stage build` to build opti
 
 ## Docker multi-stage builds intro
 
-Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a [294 MB](https://microbadger.com/images/golang) Golang 1.13 official image (123 MB even with Alpine) can be just as big as the go executable of your application.
+Docker multi-stage build lets us build docker images in stages with multiple `FROM` statements. Files can be copied from one stage to another. A very good example would be how a 294 MB Golang 1.13 official image (123 MB even with Alpine) can be just as big as the go executable of your application.
 
 As Golang is compiled and gives out an executable binary, the first stage can be compiling it and the second stage can be an alpine image (5 MB) just to run that executable.
 

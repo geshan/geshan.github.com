@@ -38,7 +38,7 @@ Having a culture of code review always helps. If someone else can check your cod
 
 Having automated tests is important. Opt for the test type that matches your team's current skill set. Unit testing are good to have. Writing testable code and giving team members the skill to do unit testing is an investment. Best way to approach unit testing will be grab the low hanging fruit. It will be better to start with Smoke Tests or basic functional tests. Doing a web application on each push/deployment? Check that all pages respond with a 200 HTTP response.
 
-Step by step add more tests and time for your team members to gain more skills. As soon as you have some form of automated tests, wire it up with a [Continuous Integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration) service. Some good options are [Travis CI](https://travis-ci.com), [Wercker](https://app.wercker.com/), [Shippable CI](http://shippable.com).
+Step by step add more tests and time for your team members to gain more skills. As soon as you have some form of automated tests, wire it up with a [Continuous Integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration) service. Some good options are [Travis CI](https://travis-ci.com), [Wercker](https://app.wercker.com/).
 
 ## Automated Deployment
 
