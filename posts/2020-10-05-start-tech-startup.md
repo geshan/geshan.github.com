@@ -62,7 +62,7 @@ Before we go deeper into the steps, these steps are going to be technical but no
 
 ### Domain Name
 
-Your brand cannot exist without a domain name. This is where you might want to spend some money if you are more serious about your tech startup. Still, if you want to go the $0 path here is your option. You can register your domain at [FreeNom](https://freenom.com/) for $0. You can get domains ending with .ml, .tk, .ga, and.gq.
+Your brand cannot exist without a domain name. This is where you might want to spend some money if you are more serious about your tech startup. Still, if you want to go the $0 path here is your option. You can register your domain at [FreeNom](https://freenom.com/) for $0. You can get domains ending with .ml, .tk, .ga, and gq.
 
 <img class="center" loading="lazy" src="/images/start-tech-startup/02freenom.jpg" title="Freenom for domain at $0" alt="Freenom for free domain name">
 

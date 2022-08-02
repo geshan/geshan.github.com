@@ -114,7 +114,7 @@ Domain was a relatively easy website as it renders the full HTML with server-sid
 
 These types of Single Page Applications (SPA) will need a real or [headless browser](https://en.wikipedia.org/wiki/Headless_browser) to execute the JavaScript on the page and get the HTML to the scraper as if it would work for a browser. Let’s use Puppeteer to scrape the job titles from Workable’s jobs page.
 
-[Puppeteer](https://github.com/puppeteer/puppeteer) is a Node library that provides a high-level API to control Chrome or Chromium. It runs headless (no GUI) by default but can run on full GUI mode too. It can be used for a lot of other things than just rendering JavaScript to assist in scraping. It can be used to generate screenshots or PDFs, fill up forms, use for automated testing, etc. Speaking of testing, there are only two [types of automated tests](//blog/2016/03/there-are-only-two-types-of-automated-software-tests/) fast ones and not fast ones.
+[Puppeteer](https://github.com/puppeteer/puppeteer) is a Node library that provides a high-level API to control Chrome or Chromium. It runs headless (no GUI) by default but can run on full GUI mode too. It can be used for a lot of other things than just rendering JavaScript to assist in scraping. It can be used to generate screenshots or PDFs, fill up forms, use for automated testing, etc. Speaking of testing, there are only two [types of automated tests](/blog/2016/03/there-are-only-two-types-of-automated-software-tests/) fast ones and not fast ones.
 
 ### Puppeteer for web scraping
 

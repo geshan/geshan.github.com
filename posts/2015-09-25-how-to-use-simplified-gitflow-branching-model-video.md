@@ -21,8 +21,6 @@ Just knowing git and all team members pushing code to the main branch (master) i
 
 <center><iframe src="//www.slideshare.net/slideshow/embed_code/42503092" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></center>
 
-You can also view the [interactive slides](http://bit.ly/1KzaNbj).
-
 ## Video
 
 {% youtube "nwM2U-38JP8" %}
