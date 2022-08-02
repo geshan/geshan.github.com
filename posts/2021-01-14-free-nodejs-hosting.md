@@ -240,7 +240,6 @@ Some other services where you can host your Node.js application free/almost free
 1. Railway.app - [Railway](https://railway.app/pricing) is a great service with free $5 a month. We can even run a database on Railway without adding a credit card.
 1. Fly.io - Pretty good, it is like CDN for the backend. The [free plan](https://fly.io/docs/about/pricing/) has 3 shared-CPU-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
 1. Google Cloud Run - You can host your Node.js app on [Google Cloud Run](https://cloud.google.com/run) as [serverless containers](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
-1. Openode.io - If you have an open-source project you can ask them for a [free plan](https://www.openode.io/pricing). The cheapest plan with 50MB of memory is just $0.75 a month.
 1. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is better used to code collaboratively than host a Node.js app or API.
 
 > You can host your Node.js App on all 3 of the big cloud providers AWS, Azure, and GCP and/or their function as a service (FAAS) serverless options or even on free-forever VM. But, they will ask for your credit-card.
