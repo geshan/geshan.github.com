@@ -10,8 +10,10 @@ tags:
 - Software Engineering
 cover: "/images/jest-beforeeach/01jest-beforeeach.jpg"
 pagetitle: How to use Jest beforeEach to write better unit tests with example code
-description: Learn how to use Jest beforeEach to write better unit tests looking at given practial code example
+description: Learn how to use Jest beforeEach to write better unit tests looking at
+  given practial code example
 keywords: jest beforeeach, beforeeach jest
+
 ---
 Jest is one of the most popular testing frameworks in JavaScript. In this post, we will delve into using Jest beforeEach properly to make unit testing better with JavaScript, let’s get going!
 
@@ -169,7 +171,10 @@ describe('HnClient', () => {
   });
 });
 ```
-We have written only one test for the `getLatestStories` method the happy path of getting data back from the HN Algolia API. We have instantiated the system under test (SUT) here as `hnClient` and used it later in the test. Doing it in the before each doesn’t really help us till now. 
+We have written only one test for the `getLatestStories` method the happy path of getting data back from the HN Algolia API. [Jest spyOn](https://meticulous.ai/blog/how-to-use-jest-spyon/) has been used to spy on the log so that logs will be supressed and not visible on the console.
+
+We have instantiated the system under test (SUT) here as `hnClient` and used it later in the test. Doing it in the before each doesn’t really help us till now.
+
 Some assertions like `toBe` are pretty similar to [PHPUnit assertions](/blog/2021/01/phpunit-assertions/#some-phpunit-assertions-you-must-start-using-today) if you are familiar with them.
 
 Lets add another test to see the milage we get from jest beforeEach:
