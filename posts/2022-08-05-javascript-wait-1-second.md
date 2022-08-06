@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "How to wait 1 second in JavaScript (using setTimeout, Promise, and Delay)"
+title: How to wait 1 second in JavaScript (using setTimeout, Promise, and Delay)
 date: 2022-08-05T23:30:32.000+11:00
 comments: true
 tags:
 - Javascript
 - Software Engineering
 cover: "/images/javascript-wait-1-second/01javascript-wait-1-second.jpg"
-pagetitle: "How to wait 1 second in JavaScript (using setTimeout, Promise, and Delay)"
-description: Learn how to wait 1 second in Javascript with setTimeout, promise (async/await) and the Delay NPM package in this easy to follow guide with code examples.
+pagetitle: How to wait 1 second in JavaScript (using setTimeout, Promise, and Delay)
+description: Learn how to wait 1 second in Javascript with setTimeout, promise (async/await)
+  and the Delay NPM package in this easy to follow guide with code examples.
 keywords: javascript wait 1 second, javascript wait 5 seconds, javascirpt wait
 
 ---
@@ -76,7 +77,7 @@ function wait(milliseconds){
 })();
 ``` 
 
-The above code prints the Name and username of the 5 most active GitHub users in the US as per commits top. In the code, a `wait` function is added which returns a promise that is resolved after given milliseconds which enables the waiting. An async IIFE function is used to use await even though top-level await is available in node with some flags and `.mjs` file.
+The above code prints the Name and username of the 5 most active GitHub users in the US as per commits top. In the code, a `wait` function is added which returns a promise that is resolved after given milliseconds which enables the waiting. An async IIFE function is used to use await even though top-level await is available in node with some flags and `.mjs` file. You can also use [Javascript promise all](/blog/2022/07/javascript-promise-all/) to send the requests concurrently but it will make the rate limit problem worse.
 
 In the loop after calling the API with `fetch` for each user, it will wait for 1 second before the next iteration. This is another way to delay the execution of JavsScript code using promise with async/await. When you run the code on a browser you will see something like the below:
 
