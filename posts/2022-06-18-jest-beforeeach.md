@@ -171,7 +171,7 @@ describe('HnClient', () => {
   });
 });
 ```
-We have written only one test for the `getLatestStories` method the happy path of getting data back from the HN Algolia API. [Jest spyOn](https://meticulous.ai/blog/how-to-use-jest-spyon/) has been used to spy on the log so that logs will be supressed and not visible on the console.
+We have written only one test for the `getLatestStories` method the happy path of getting data back from the HN Algolia API. [Jest spyOn](https://meticulous.ai/blog/how-to-use-jest-spyon/) has been used to spy on the log so that logs will be supressed and not visible on the console. You can also learn about [Jest toHaveBeenCalledWith](/blog/2022/07/jest-tohavebeencalledwith/) to understand it better.
 
 We have instantiated the system under test (SUT) here as `hnClient` and used it later in the test. Doing it in the before each doesn’t really help us till now.
 
