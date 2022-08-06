@@ -24,7 +24,7 @@ This post discussed how you can exploit `docker multi-stage build` to build opti
 
 ## Prerequisites
 
-* You are aware of docker and know the basic docker commands like build, exec
+* You are aware of docker and know the basic [docker commands](/blog/2022/05/docker-commands/) like build, exec
 * You know about docker-compose (not a necessity)
 
 ## Docker multi-stage builds intro
