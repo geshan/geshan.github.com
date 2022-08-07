@@ -184,7 +184,7 @@ Next, let's look at how Cyclic compares to Heroku and Vercel.
 
 ### Cyclic
 
-[Cyclic](https://www.cyclic.sh/) aims to be a servive that offers full stack services for free. It is a serverless wrapper built very well on top of [AWS](https://docs.cyclic.sh/docs/overview/architecture). As it says on its website
+[Cyclic](https://app.cyclic.sh/#/join/geshan) aims to be a servive that offers full stack services for free. It is a serverless wrapper built very well on top of [AWS](https://docs.cyclic.sh/docs/overview/architecture). As it says on its website
 
 > Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline.
 
@@ -192,7 +192,7 @@ As mentioned its [pricing](https://www.cyclic.sh/pricing) page, which has a self
 
 #### Deploy Node.js Quotes API to Cyclic
 
-Given you have [registered](https://app.cyclic.sh/api/login) on to Cyclic with GitHub and you are logged in, follow the steps below:
+Given you have [registered](https://app.cyclic.sh/#/join/geshan) on to Cyclic with GitHub and you are logged in, follow the steps below:
 
 * Fork the `https://github.com/geshan/nodejs-posgresql` repository to your GitHub account
 * Go to your fork and click the "Deploy to cyclic" navy blue button
