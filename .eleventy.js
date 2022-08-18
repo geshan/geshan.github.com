@@ -181,6 +181,8 @@ module.exports = function(eleventyConfig) {
 
     console.log('Building tailwind');
     console.log(execSync("npm run build:tailwind").toString());
+    console.log('Building pagefind search index');
+    console.log(execSync("npm run build:pagefind").toString());
   });
 
   eleventyConfig.addPassthroughCopy("images");

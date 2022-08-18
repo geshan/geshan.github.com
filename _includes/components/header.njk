@@ -51,6 +51,15 @@
                 <input class="form-control border-2 border-gray-400 py-1 px-2 mr-4 rounded-md" type="text" name="q" placeholder="Search" label="search">
               </div>
             </form>
+
+            <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+            <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+            <div id="search"></div>
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    new PagefindUI({ element: "#search" });
+                });
+            </script>
           <button class=" text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800
               focus:ring-white ">
             <span class="sr-only">View notifications</span>
