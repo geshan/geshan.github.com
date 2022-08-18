@@ -21,9 +21,9 @@ Node.js is the defacto JavaScript runtime for the backend. In this post, you wil
 ## Table of contents
 
 * [Not comparing with other languages](#not-comparing-with-other-languages)
-* [Node.js and its popularity](#nodejs-and-its-popularity)
+* [Node.js and its popularity](#node.js-and-its-popularity)
 * [Deno - flips No-De on its head](#deno---flips-no-de-on-its-head)
-* [Bun the Node.js alternative from the future](#bun-the-nodejs-alternative-from-the-future)
+* [Bun the Node.js alternative from the future](#bun-the-node.js-alternative-from-the-future)
 * [Conclusion](#conclusion)
 
 
