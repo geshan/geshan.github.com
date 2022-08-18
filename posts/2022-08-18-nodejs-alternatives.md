@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node.js alternatives with Javascript, exploring Deno and Bun (includes code examples)
+title: 'Node.js alternatives: Exploring Deno and Bun (with code examples)'
 date: 2022-08-18T23:25:32.000+11:00
 comments: true
 tags:
@@ -8,9 +8,11 @@ tags:
 - Javascript
 - Software Engineering
 cover: "/images/nodejs-alternatives/01nodejs-alternatives.jpg"
-pagetitle: Node.js alternatives with Javascript, exploring Deno and Bun (includes code examples)
-description: Learn about 2 Node.js alternatives in JavaScript sphere, Deno and Bun with a simple code example.
+pagetitle: 'Node.js alternatives: Exploring Deno and Bun (with code examples)'
+description: Learn about 2 Node.js alternatives in JavaScript sphere, Deno and Bun
+  with a simple code example.
 keywords: node.js alternative, node.js alternatives, nodejs alternative, nodejs alternatives
+
 ---
 Node.js is the defacto JavaScript runtime for the backend. In this post, you will learn about newer Node.js alternatives Deno and Bun with a simple Joke API code example and how to host it. Let's get started!
 
@@ -86,7 +88,7 @@ app.listen(port, () => {
 
 As seen above, creating a basic web server is very easy with Node.js. The above code sends a random joke among the 10 in the array for each new request. You can easily deploy the above app in one of the 3 [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) services.
 
-The above code is in this [GitHub](https://github.com/geshan/nodejs-express-jokes-api) repository for your reference and you can view the running app on [Cyclic](https://nodejs-jokes-api.cyclic.app/api/joke).
+The above code is in this [GitHub](https://github.com/geshan/nodejs-express-jokes-api) repository for your reference and you can view the running app on [Cyclic](https://nodejs-jokes-api.cyclic.app/api/joke). The code example is taken from Fresh framework's boilerplate.
 
 With that code in mind, in the consequent section, you will learn about Deno as the first Node.js alternative in the JavaScript space.
 
