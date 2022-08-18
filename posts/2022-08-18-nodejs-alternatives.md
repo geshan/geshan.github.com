@@ -18,6 +18,15 @@ Node.js is the defacto JavaScript runtime for the backend. In this post, you wil
 
 <img class="center" loading="lazy" src="/images/nodejs-alternatives/01nodejs-alternatives.jpg" title="Node.js alternatives - Deno and Bun with simple code example" alt="Node.js alternatives - Deno and Bun with simple code example">
 
+## Table of contents
+
+* [Not comparing with other languages](#not-comparing-with-other-languages)
+* [Node.js and its popularity](#nodejs-and-its-popularity)
+* [Deno - flips No-De on its head](#deno---flips-no-de-on-its-head)
+* [Bun the Node.js alternative from the future](#bun-the-nodejs-alternative-from-the-future)
+* [Conclusion](#conclusion)
+
+
 ## Not comparing with other languages 
 
 JavaScript is a peculiar language, it has its own share of quirks and issues. It is the only language that can be natively used for both backend and frontend software development. Desktop applications can be written in JavaScript with Electron. JavaScript is the language of the web that the browsers speak and Node.js was released in mid-2009, it has been exploited very well on the server side too in the past 13 years.
