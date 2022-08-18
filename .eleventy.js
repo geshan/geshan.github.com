@@ -161,11 +161,11 @@ module.exports = function(eleventyConfig) {
         swDest: `_site/sw.js`,  // TODO change public to match your dir.output
         globDirectory: '_site',  // TODO change public to match your dir.output
         globPatterns: [
-            '**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}',
+            '**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json,pagefind,pf_index,pf_fragment,pf_meta}',
         ],
         runtimeCaching: [
             {
-            urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json|css)$/,
+            urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json|css,pagefind,pf_index,pf_fragment,pf_meta)$/,
             handler: `StaleWhileRevalidate`,
             },
             {
