@@ -78,6 +78,19 @@ I have always strived to have a positive impact on the places I have work and th
 <div class=" bg-gray-100 rounded-md mt-2 flex flex-col items-center justify-center px-5 py-5">
 <div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
 
+<h2 class='text-2xl mt-5 font-bold text-darkpurple'>Anupal Sharma, Senior Software Engineer @ THE ICONIC - 2021</h2>
+
+> Geshan is an awesome person and engineer as well. He always there when you need him and try to help as much he can. 
+>
+> I have worked with him from last 6 months and am really glad to have him in my squad to work together, finding solutions, expressing both ways, and for great suggestions on improving myself both on technical and personal levels.
+>
+> He always comes with great mind set to resolve the problem with effective solutions. He is pretty good at understanding the problem and solving it with step by step approach which i really like and learned along with him.
+>
+> You would never retreat working with Geshan and will always learn something new from him.
+
+</div>
+<div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
+
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Max Antonov, Product Manager @ THE ICONIC - 2020</h2>
 
 > Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams.
