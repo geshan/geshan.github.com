@@ -7,8 +7,8 @@ eleventyNavigation:
   order: "3"
 date: 2022-06-29T21:20:00.000+00:00
 cover: "/images/geshan.jpg"
-description: I am Geshan. I am a software engineer, with more than 15+ years of software
-  engineering experience. I have been blogging since 2007.
+description: I am Geshan. I am a software engineer, with 15+ years of software engineering
+  experience. I have been blogging since 2007.
 
 ---
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80 mb-3'>
@@ -63,7 +63,9 @@ This side project has been a joint effort of more than two dozen people. I thank
 
 A list of some of the articles I have written outside of this blog:
 
-- [How to send emails with Node.js using SendGrid](https://blog.logrocket.com/how-to-send-emails-with-node-js-using-sendgrid/ "How to send emails with Node.js using SendGrid") - LogRocket, 2020
+- [How to use Jest spyOn with React.js and Fetch (includes step-by-step code example)](https://meticulous.ai/blog/how-to-use-jest-spyon/) - Meticulous, 2022
+- [5 compelling reasons to work for Simply Wall St Tech](https://medium.com/simplywallst/5-compelling-reasons-to-work-for-simply-wall-st-tech-49ab9878b283) - Simply Wall St. tech blog, 2022
+- [How to Get Started with Prisma ORM for Node.js and PostgreSQL](https://blog.appsignal.com/2021/07/21/how-to-get-started-with-prisma-orm-for-nodejs-and-postgresql.html) - AppSignal, 2021
 - [Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX") - LogRocket, 2020
 - [Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io") - Fly.io, 2019
 - [Tail logs from multiple Kubernetes pods the easy way](https://theiconic.tech/tail-logs-from-multiple-kubernetes-pods-the-easy-way-71401b84d7f "Tail logs from multiple Kubernetes pods the easy way") - THE ICONIC tech blog, 2019
