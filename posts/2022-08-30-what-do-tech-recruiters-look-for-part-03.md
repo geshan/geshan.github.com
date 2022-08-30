@@ -221,7 +221,22 @@ Then the rest I would want to be exceptionally good if this is off. There is so 
 
 > To be transparent on this, don't apply for a software engineer role and then tell me when I ask, that my ideal next role is a PM.
 
-If it is a means to get where you want then it is fine, but be crystal clear about it. 
+If it is a means to get where you want then it is fine, but be crystal clear about it.
+
+#### What would be your most important tip to job seekers while we are going through this difficult macroeconomic situation in 2022? 
+
+Some of the questions you should be asking yourself in this scenario are:
+
+* Do I believe in the product/service?
+* Is there going to be a product, or is it a dream?
+* If there is a product/service, would I buy it? Can I see value in it? 
+* Is there already a market? Who are their clients? Do they have clients?
+
+It's easy to get caught up in watching all this content, office parties, holidays and above market salaries. 
+
+> They do a great job at selling themselves, no doubt this will change and have to readjust. 
+
+Look at the housing market, it's not sustainable. Again do your research, if it sounds too good to be true, well think about it. Also consider how long will the company last if it is burning a lot of cash.
 
 *****
 
