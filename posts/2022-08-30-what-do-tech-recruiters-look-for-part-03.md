@@ -1,13 +1,15 @@
 ---
 layout: post
-title: 'Things tech recruiters look for in your resume and first interview part 3'
+title: Things tech recruiters look for in your resume and first interview part 3
 date: 2022-08-30T23:27:32.000+11:00
 comments: true
 tags:
 - Misc
 cover: "/images/tech-recruiters/01tech-recruiters.jpg"
-pagetitle: 'Things tech recruiters look for in your resume and first interview part 3'
-description: Save your resume from landing in the black hole. Learn what tech recruiters in Australia look for in your resume and first interview.
+pagetitle: Things tech recruiters look for in your resume and first interview part
+  3
+description: Save your resume from landing in the black hole. Learn what tech recruiters
+  in Australia look for in your resume and first interview.
 keywords: what tech recruiters look for, tech recruiters
 
 ---
@@ -38,7 +40,7 @@ For this part, the questions that were sent to the three recruiters were as foll
 
 ## The Answers
 
-This time the three tech recruiters are from Atlassian, Harrison.ai, and Squiz. Surely some of the known brands in the Aussie tech landscape.
+This time the three tech recruiters are from Atlassian, Harrison, and Squiz. Surely some of the well known brands in the Aussie tech landscape.
 
 ### Eli (Atlassian) looks for projects led and delivered
 
@@ -80,7 +82,7 @@ And a bonus one:
 
 #### What would be your most important tip to job seekers while we are going through this difficult macroeconomic situation in 2022? 
 
-My main tip would be to never stop applying. Continue to upskill yourself. Engage with a career coach like Careeryscoaching.com, to help you with your resume and interviewing skills, so when the time comes you can put your best foot forward. 
+My main tip would be to never stop applying. Continue to upskill yourself. Engage with a career coach like [Careersycoaching.com](https://www.careersycoaching.com/), to help you with your resume and interviewing skills, so when the time comes you can put your best foot forward. 
 
 > Learn what the high-in-demand skills are and most importantly, network using LinkedIn. 
 
