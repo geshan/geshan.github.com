@@ -160,4 +160,4 @@ Share your thoughts and experience of finding a job in Australia. Have you found
 
 ---
 
-PS: I did a [part 2](https://geshan.com.np/blog/2020/08/things-tech-recruiters-look-for-in-your-resume-first-interview-part-02/) of this :)
+PS: I did a [part 2](/blog/2020/08/things-tech-recruiters-look-for-in-your-resume-first-interview-part-02/) of this :) in 2020 and and [part 3](/blog/2022/08/what-do-tech-recruiters-look-for-part-03/) in 2022. Those parts have inteviews from internal tech recruiters from Atlassian, Domain, Canva and other companies.

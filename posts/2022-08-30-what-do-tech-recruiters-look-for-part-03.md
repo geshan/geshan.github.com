@@ -251,4 +251,6 @@ There you have it, you have read all the juicy detail of how tech recruiters loo
 
 I should indicate that being ghosted by some recruiters while trying to compile this was not fun. Still, I understand that the economic climate is not congenial, many companies are in hiring freeze mode and some had to execute unfortunate layoffs too. 
 
+If you have read this far, you would also be intrested in [Part 1](/blog/2019/01/things-tech-recruiters-look-for/) from 2019 and [Part 2](/blog/2020/08/things-tech-recruiters-look-for-in-your-resume-first-interview-part-02/) from 2020 of this converations where I interviewed internal tech recruiters from Safety Culture, Site Minder, Domain and Canva.
+
 With all the useful insider information about the ins and outs of tech recruitment, I hope you can make your job search journey a bit easier. Get ahead on the applying and Application Tracking System (ATS) filters and queues. Best of luck!
