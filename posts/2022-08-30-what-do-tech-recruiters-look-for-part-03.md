@@ -48,7 +48,7 @@ This time the three tech recruiters are from Atlassian, Harrison, and Squiz. Sur
 
 Eli Gündüz has been working as a tech recruiter for almost 10 years now. He has been working for Atlassian for the past 7 months. Atlassian is the only publicly listed tech unicorn from Sydney and if you don’t know Atlassian you surely love to hate Jira :).
 
-Eli has helped over 400 people find tech jobs that are not better paying but also well-balanced and fulfilling as per his [LinkedIn](https://au.linkedin.com/in/eligunduz) profile. Fun fact from his Linkedin page, he did kickboxing for 9 years.
+Eli has helped over 400 people find tech jobs that are not just better paying but also well-balanced and fulfilling as per his [LinkedIn](https://au.linkedin.com/in/eligunduz) profile. Fun fact from his Linkedin page, he did kickboxing for 9 years.
 
 > At the time of writing Atlassian has more than 90 [openings](https://www.atlassian.com/company/careers/all-jobs?team=&location=Australia&search=) in Sydney/Australia and 40+ of them are Engineering, IT, PM and SRE roles.
 
