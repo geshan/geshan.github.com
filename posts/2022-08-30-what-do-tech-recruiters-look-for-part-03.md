@@ -50,7 +50,7 @@ Eli Gündüz has been working as a tech recruiter for almost 10 years now. He ha
 
 Eli has helped over 400 people find tech jobs that are not better paying but also well-balanced and fulfilling as per his [LinkedIn](https://au.linkedin.com/in/eligunduz) profile. Fun fact from his Linkedin page, he did kickboxing for 9 years.
 
-> At the time of writing Atlassian has more than 90 openings in Sydney/Australia and 20+ of them are Engineering roles.
+> At the time of writing Atlassian has more than 90 [openings](https://www.atlassian.com/company/careers/all-jobs?team=&location=Australia&search=) in Sydney/Australia and 40+ of them are Engineering, IT, PM and SRE roles.
 
 Eli voiced his opinions about the above question in the following way:
 
