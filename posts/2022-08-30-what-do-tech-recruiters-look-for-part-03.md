@@ -95,7 +95,7 @@ Those were some excellent advice and tips from Eli, next, we have Pam from Harri
 
 ### Pam (Harrison.ai) focuses on the previous workplaces and tech stacks used
 
-<img class="center" loading="lazy" src="/images/tech-recruiters/03pam.jpg" title="Pam from Harrison focuses on the previous workplaces and tech stacks used" alt="Pam from Harrison focuses on the previous workplaces and tech stacks used">
+<img class="center" loading="lazy" src="/images/tech-recruiters/03pam02.jpg" title="Pam from Harrison focuses on the previous workplaces and tech stacks used" alt="Pam from Harrison focuses on the previous workplaces and tech stacks used">
 
 Pam Stevenson has 10 years of recruiting experience working across agencies and in-house Talent teams for the likes of Google and Commonwealth Bank. After joining scale-up world 2.5 years ago as Head of Talent at Harrison.ai, Pam is loving the fast-paced change and opportunity to do impactful work in AI Healthcare. She cares deeply about people and mentions her love of connecting talent with meaningful career opportunities in her [LinkedIn profile](https://au.linkedin.com/in/pamela-stevenson-32070028). 
 
@@ -172,52 +172,53 @@ Those were some very detailed and useful answers by Pam. They were really helpfu
 
 <img class="center" loading="lazy" src="/images/tech-recruiters/04adam.jpg" title="Adam from Squiz seeks passion and confidence" alt="Adam from Squiz seeks passion and confidence">
 
-Adam Cicchetti is a talent acquisition business partner at Squiz for the past 2 months. [Squiz](https://www.squiz.net/about) is a 20+ years old multinational company that provides both products and services to build enterprise-grade websites, portals, intranets, and digital apps. Adam has been involved in talent acquisition and recruitment since 2004 as per his [Linkedin profile](https://www.linkedin.com/in/adamsydneyitrec/).
+Adam Cicchetti is a talent acquisition business partner at Squiz for the past 2 months. [Squiz](https://www.squiz.net/about) is a 20+ years old multinational company that provides both SaaS products and services to build enterprise-grade websites, portals, intranets, and digital apps. Adam has been involved in talent acquisition and recruitment since 2004 as per his [Linkedin profile](https://www.linkedin.com/in/adamsydneyitrec/).
 
-Adam is good at creating a buzz by selling the organisation and role. With the wealth of experience of being in the field for more than 17 years, he surely knows the nooks and corners of recruitment. 
+Adam is good at creating a buzz by selling the organisation and role. With the wealth of experience of being in the field for more than 17 years, he surely knows the nooks and corners of recruitment.
 
 > At the time of writing Squiz had more than 20 open roles in Australia on their [careers page](https://www.squiz.net/about/careers).
 
 Being multinational, Squiz also had open roles in other countries like the UK and New Zealand.
+
 Below is Adam’s point of view on the topics of this blog post:
 
 #### How many resumes/candidate profiles do you go through in a day usually? 
 
-This really varies on the level and seniority of the roles I am working on at the time. If the tech is in high demand mainly the tech stack. This will dictate the volume of applicants. It can be anything from 50-150 resumes per day. Then there are profiles on LinkedIn. It's a mix of both resumes and LinkedIn profiles. 
+This really varies on the level/seniority of the roles I am working on at the time. If the tech is in high demand it will dictate the volume of applicants. It can be anything from 50-150 resumes per day. Then there are profiles on LinkedIn. It's generally a mix of both resumes and LinkedIn profiles.
 
 #### What are the things you look for in a resume sent for a technical role?
 
-This is where you'll find recruiters differ. 
+This is where you'll find recruiters differ. Keep in mind with so many resumes to review these initial steps are very quick. More of a scan than a full read. Once my interest is spiked and there is enough there I will take the time to go back through and read in detail.
 
-> Candidates should put enough that it spikes interest and not too much that I have to book my afternoon out to read it.  
+> Candidates should put enough that it spikes interest and not too much that I have to book my afternoon out to read it.
 
-Essentially, make it clear and easy to read. It is best to put things in bullet point form.
+Essentially, make it clear and easy to read. It is best to put things in bullet point form. Within reason I will still try and read between the lines and do a little deciphering.
 
-My process in a rough order is something like the below:
+My process in rough order is something like the below:
 
-I do a quick scan for the technology, i.e. React or Node. I want to be clear about the technology you were working on or are responsible for. 
+I do a quick scan for the technology, i.e. React or Node. I want to be clear about the technology you were working on or are responsible for.
 
-> Then I peek into the tenure coupled with any visible career progression. For instance, moving from intern to software engineer or to senior software engineer is a good thing. 
+> Then I look at the tenure coupled with any visible career progression. For instance, moving from intern to software engineer or to senior software engineer etc is a good thing.
 
-Coupled with it, another thing I look for is, did you jump roles a lot? The last few years have made this area more flexible due to Covid and the changing economic climate.
+Coupled with this, scanning the tenure of the various roles, did you jump roles a lot? The last few years have made this area more flexible due to Covid and the changing economic climate.
 
-For the role itself that you were in, does the resume explain in a quick summary of what you actually did? In job descriptions, I would further look for the purpose of the role, and the type of company like product vs services. 
+For the role itself that you were in, does the resume explain in a quick summary what you actually did? When describing the role and the tasks responsible for, is it clear. I would further look for the purpose of the role, and the type of company - such as product vs services.
 
-> Make the resume easy for the reviewer to understand. I don't have time to go off and Google things or even look at other team members' profiles. 
+> Make the resume easy for the reviewer to understand. I don't have time to go off and Google things or even look at other team members' profiles.
 
-At the same time, I'm looking at how it's worded with a focus on spelling, and grammar. I ask myself does it make sense? Finally, to a lesser degree, I have a look at the visa/work rights and salary details if I've asked for them.
+At the same time, I'm looking at how it's worded with a focus on spelling and grammar. I ask myself does it make sense? Finally, to a lesser degree, I have a look at the visa/work rights and salary details if I've asked for them.
 
 #### What are the top 3 things you evaluate in a candidate when conducting the first interview? 
 
-1. Cultural fit/communication skills - The way you explain your work history is important. I am looking for pointers like the level of passion you demonstrate and confidence in your answers. 
+1. Cultural fit/communication skills - The way you explain your work history is important. I am looking for pointers like the level of passion you demonstrate and confidence in your answers.
 
 > Not everyone is loud and outspoken. But you still pick up how they will work with your team and company based on the conversation. This is key.
 
-Then the rest I would want to be exceptionally good if this is off. There is so much about not hiring for culture fit if you want diversity. This is about whether can I see you communicating and working with the team in your way. Bring yourself as you are but still be a fit. The main analysis here is will this way work with our team/company?
+The rest would want to be exceptionally good if this is off. There is so much about not hiring for culture fit if you want diversity. This isn’t about hiring the same type of person over and over again, this about whether I can see you working with the team and broader company in ‘your way’. Bring yourself as you are but still be a fit to a certain degree. Different opinions, different styles and ways of working are welcomed. The main analysis here is will the way you work and communicate work with our team/company? 
 
-2. The tech - I will notice the way the candidate tells me about what they did. How do they define their role in the team and what was the purpose of their role and the team. How does that align with us, and is it transferable or aligned to what we do? It's not about 100% fit but how can the candidate build bridges in technologies?
+2. The tech - I will notice the way the candidate tells me about what they did. How do they define their role in the team and what was the purpose of their role and the team. How does that align with us, and is it transferable or aligned to what we do? It's not about 100% fit.
 
-3. Being clear on what you are looking for next - Knowing what you want to do next and why you want to do that is crucial. What does it look like, the tech, responsibilities, type of company, etc is very important for the candidate to be happy if hired. It is again about the passion and motivation for the craft and the role.
+3. Being clear on what you are looking for next - Knowing what you want to do next and why you want to do that is crucial. What does it look like, the tech, responsibilities, type of company, etc is very important for the candidate to be happy if hired. It is again about the passion and motivation for the craft and the role. This can also give insight into if we can offer that career path and possible longevity.
 
 > To be transparent on this, don't apply for a software engineer role and then tell me when I ask, that my ideal next role is a PM.
 
@@ -241,7 +242,6 @@ Look at the housing market, it's not sustainable. Again do your research, if it 
 *****
 
 Those were some helpful answers by Adam. If you are applying for your next role, make sure your resume and communication are crystal clear not muddy. 
-
 
 ## Conclusion
 
