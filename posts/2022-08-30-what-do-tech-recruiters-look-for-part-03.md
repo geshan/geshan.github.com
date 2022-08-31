@@ -82,7 +82,7 @@ And a bonus one:
 
 #### What would be your most important tip to job seekers while we are going through this difficult macroeconomic situation in 2022? 
 
-My main tip would be to never stop applying. Continue to upskill yourself. Engage with a career coach like [Careersycoaching.com](https://www.careersycoaching.com/), to help you with your resume and interviewing skills, so when the time comes you can put your best foot forward. 
+My main tip would be to never stop applying. Continue to upskill yourself. You can also engage with me via [Careersycoaching.com](https://www.careersycoaching.com/) if you want extra support on your career. I can  help you with writing a resume that will stand out and improve your interviewing muscle,  so when the time comes you can put your best foot forward.
 
 > Learn what the high-in-demand skills are and most importantly, network using LinkedIn. 
 
@@ -97,13 +97,13 @@ Those were some excellent advice and tips from Eli, next, we have Pam from Harri
 
 <img class="center" loading="lazy" src="/images/tech-recruiters/03pam.jpg" title="Pam from Harrison focuses on the previous workplaces and tech stacks used" alt="Pam from Harrison focuses on the previous workplaces and tech stacks used">
 
-Pamela (Pam) Stevenson has been working with [Harrison.ai](https://harrison.ai/) for 2.5 years now as the Head of Talent. Before that, she used to recruit Network engineers and SREs for Google. She mentions connecting talent with meaningful career opportunities that have a positive impact on the world in her [LinkedIn profile](https://au.linkedin.com/in/pamela-stevenson-32070028). 
+Pam Stevenson has 10 years of recruiting experience working across agencies and in-house Talent teams for the likes of Google and Commonwealth Bank. After joining scale-up world 2.5 years ago as Head of Talent at Harrison.ai, Pam is loving the fast-paced change and opportunity to do impactful work in AI Healthcare. She cares deeply about people and mentions her love of connecting talent with meaningful career opportunities in her [LinkedIn profile](https://au.linkedin.com/in/pamela-stevenson-32070028). 
 
-Pam has been doing tech recruiting for almost 9 years now and from my personal experience, I can say she is one of the best tech recruiters out there. She explains the things she looks for in candidates in this [video](https://www.youtube.com/watch?v=8wKmMh_-6eQ) as well.
+From my personal experience, I can say she is one of the best tech recruiters out there. She explains the things she looks for in candidates in this [video](https://www.youtube.com/watch?v=8wKmMh_-6eQ) as well.
 
-> At the time of writing, [Harrison](https://harrison.ai/careers/) (and its other sister brands like Annalise.ai and Franklin.ai) has over 20 roles open and many of them were tech roles.
+> At the time of writing, [Harrison](https://harrison.ai/careers/) (and its joint ventures, Annalise.ai and Franklin.ai) has over 30 roles open and many of them are tech roles.
 
-Harrison and its sister brand are in an innovative sector, using AI for healthcare, radiology, and pathology to diagnose diseases early.
+Harrison.ai and its ventures operate in the pioneering MedTech sector, creating AI software for various healthcare domains including radiology and pathology that will help save millions of patient lives through early detection and more accurate diagnoses.
 
 She has expressed her views about the above questions as follows:
 
