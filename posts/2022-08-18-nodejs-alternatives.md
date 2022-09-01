@@ -190,7 +190,7 @@ The code doesn’t look much different from Node.js or Deno and it also uses the
 Thereby, it was wrapped into a container using the following `Dockerfile`:
 
 ```bash
-FROM jarredsumner/bun:edge
+FROM jarredsumner/bun:0.1.10
 
 COPY http.js /app/http.js
 
@@ -199,7 +199,7 @@ EXPOSE 8080
 CMD ["bun", "run", "/app/http.js"]
 ```
 
-And then deployed to Google Cloud Run as a [serverless container](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). It was also difficult to build the Dockerfile when a `bun install` was run. It would hit the `qemu: uncaught target signal 4 (Illegal instruction) - core dumped` which I did not dig much to solve. You can view the code in this [GitHub](https://github.com/geshan/bun-try) repository. Bun has a new version on [Dockerhub](https://hub.docker.com/layers/bun/jarredsumner/bun/0.1.10/images/sha256-6086d9abf20da82398f7e20a2f7948e5f5c42096658314612f2afe47a72be74d?context=explore).
+And then deployed to Google Cloud Run as a [serverless container](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/). It was also difficult to build the Dockerfile when a `bun install` was run. It would hit the `qemu: uncaught target signal 4 (Illegal instruction) - core dumped` which I did not dig much to solve. You can view the code in this [GitHub](https://github.com/geshan/bun-try) repository. Bun has a new version on [Dockerhub](https://hub.docker.com/layers/bun/jarredsumner/bun/0.1.10/images/sha256-6086d9abf20da82398f7e20a2f7948e5f5c42096658314612f2afe47a72be74d?context=explore). Here is the Bun Jokes API running on Render with the above Dockerfile, you can [try it out](https://bun-http.onrender.com/joke).
 
 Now as a Node.js alternative, Bun is also not ready to be used in production. It is great that bun has all the batteries included like a transpiler, package manager, bundler, and task runner but it is too early to bet.
 
@@ -207,4 +207,8 @@ Bun does make bold claims like `bun install` is 20x faster than `yarn` and `bun 
 
 ## Conclusion
 
-You have learned about two new Node.js alternatives Deno and Bun. For the time being, both of them have a lot of ground to cover to really be as dominant as Node.js. Deno looks very promising as a Node.js alternative but Bun though claiming to be super fast needs to work on more compatibility and also docker build issues. Happy Coding!
+You have learned about two new Node.js alternatives Deno and Bun. For the time being, both of them have a lot of ground to cover to really be as dominant as Node.js. 
+
+> Deno looks very promising as a Node.js alternative but Bun though claiming to be super fast needs to work on more compatibility and also docker build issues. 
+
+Happy Coding!
