@@ -1,13 +1,16 @@
 ---
 layout: post
-title: 101 software engineering realities you must be aware of (especially as a junior engineer)
+title: 101 software engineering realities you must be aware of (especially as a junior
+  engineer)
 date: 2022-09-09T23:27:32.000+11:00
 comments: true
 tags:
 - Software Engineering
 cover: "/images/software-engineering-realities/01software-engineering-realities.jpg"
-pagetitle: 101 software engineering realities you must be aware of (especially as a junior engineer)
-description: 101 things I have learned since 2007 about software engineering and web development from languges to testing and DevOps.
+pagetitle: 101 software engineering realities you must be aware of (especially as
+  a junior engineer)
+description: 101 things I have learned since 2007 about software engineering and web
+  development from languges to testing and DevOps.
 keywords: software engineering realities
 
 ---
@@ -26,7 +29,7 @@ I have been writing code in some form for more than 20 years now. I have been a 
 * [Navigating new codebases](#navigating-new-codebases)
 * [Databases](#databases)
 * [Testing](#testing)
-* [Software Deployment/Release](#software-deploymentrelease)
+* [Software Deployment/Release](#software-deployment%2Frelease)
 * [DevOps/SRE](#devopssre)
 * [Side projects](#side-projects)
 * [Misc](#misc)
@@ -130,7 +133,7 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. Deployment tools will come and go, making the deployment atomic, and easy to rollback is the main catch here.
 1. Your work is not done after releasing it on production and testing a couple of times. If you can set up a dashboard or other way to track the progress for a big feature, that helps the stakeholder greatly. Tweak the definition of done for some tasks, that's fine.
 1. [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often). Also follow that in code, when code works make a commit so that you can go back to that state if needed.
-1. Move fast break (few) things (behind feature flags) – :) -- Origially attributed to [Mark Zukerberg](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over).
+1. Move fast break (few) things (behind feature flags) – :) -- Originally attributed to [Mark Zukerberg](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over).
 
 ## DevOps/SRE
 
