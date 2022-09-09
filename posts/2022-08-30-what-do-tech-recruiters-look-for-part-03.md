@@ -86,7 +86,9 @@ My main tip would be to never stop applying. Continue to upskill yourself. You c
 
 > Learn what the high-in-demand skills are and most importantly, network using LinkedIn. 
 
-Connect with your peers and potential hiring managers. Invest time in your LinkedIn profile. If you have a job, don't quit. You never know when there is a role available. 
+Connect with your peers and potential hiring managers. Invest time in your LinkedIn profile. If you have a job, don't quit. You never know when there is a role available.
+
+The thoughts above are mine and don't represent the policies or opinions of Atlassian. If you like to read more about our engineering interview process please visit our [candidate resource hub](https://www.atlassian.com/company/careers/resources/interviewing/how-to-nail-your-engineering-interview). 
 
 *****
 
