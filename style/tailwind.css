@@ -300,9 +300,12 @@ pre[class*="language-"] {
   padding-left: 25px;
   font-size: 22px;
 }
-.entry-content ul li,
-.entry-content ol li {
+.entry-content ul li
+{
   list-style: disc;
+}
+.entry-content ol li {
+  list-style: auto;
 }
 .entry-content li::marker {
   color: #4c3fe4;
@@ -350,6 +353,10 @@ div > details > summary {
   font-size: 22px;
   color: #4c3fe4;
   cursor: pointer;
+}
+div > details > ul li a {
+  font-size: 22px;
+  color: #4c3fe4;
 }
 #scrollDiv {
   left: 40px;
