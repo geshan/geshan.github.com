@@ -54,7 +54,7 @@ Let’s look at the case when all the input promises of a Promise.all pass, how 
 
 <img class="center" loading="lazy" src="/images/javascript-promise-all/02javascript-promise-all-visualized.gif" title="Javascript Promise.all visualized" alt="Javascript Promise.all visualized">
 
-This is taken from the [Promise.all visualized](https://dangen-effy.github.io/Promise-all-visualized/index.html) page. As seen above, only when the last promise in the iterable promises is fulfilled does the aggregate result of Promise.all get resolved. In contrast, `Promise.race` would have been resolved as soon as the first promise was resolved. 
+This is taken from the Promise.all visualized page. As seen above, only when the last promise in the iterable promises is fulfilled does the aggregate result of Promise.all get resolved. In contrast, `Promise.race` would have been resolved as soon as the first promise was resolved. 
 
 > So, it would be safe to say that `Promise.all` will take as long a the slowest promise to resolve and fail fast as soon as the first promise in the array fails.
 
