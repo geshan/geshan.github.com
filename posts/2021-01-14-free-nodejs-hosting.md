@@ -7,7 +7,7 @@ comments: true
 tags:
 - Web Development
 - Node.js
-cover: "/images/free-nodejs-hosting/01free-nodejs-hosting-new.jpg"
+cover: "/images/free-nodejs-hosting/01free-nodejs-hosting-new02.jpg"
 pagetitle: 3 free Node.js hosting services you should be using today (with step-by-step
   deployment examples)
 description: Use these 3 completely free Node.js hosting services to host your Node.js
@@ -21,7 +21,7 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 
 <!-- more -->
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting-new.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting-new02.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
 
 ## Table of contents
 
@@ -30,8 +30,8 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 * [Free Node.js hosting services](#free-node.js-hosting-services)
 * [Issues with these services](#issues-with-these-services)
 * [Free Node.js hosting platforms to deploy your app](#free-node.js-hosting-platforms-to-deploy-your-app)
-  * [Heroku](#heroku)
-    * [Deploy Node.js Quotes API to Heroku](#deploy-node.js-quotes-api-to-heroku)
+  * [Render](#render)
+    * [Deploy Node.js Quotes API to Render](#deploy-node.js-quotes-api-to-render)
   * [Vercel](#vercel)
     * [Deploy Node.js Quotes API on Vercel](#deploy-node.js-quotes-api-on-vercel)
   * [Cyclic](#cyclic)
@@ -62,15 +62,13 @@ Time to start revealing our free Node.js hosting services:
 
 ## Free Node.js hosting services
 
-The free Node.js hosting services are Heroku (free tier), Vercel (hobby free forever plan), and Cyclic. All these services can host your Node.js application for $0 a month a.k.a. absolutely and completely free. You don't even need to add a credit card for backup or safety reasons. But there are strings attached, as discussed next.
+The free Node.js hosting services are Render (free tier), Vercel (hobby free forever plan), and Cyclic. All these services can host your Node.js application for $0 a month a.k.a. absolutely and completely free. You don't even need to add a credit card for backup or safety reasons. But there are strings attached, as discussed next.
 
 ## Issues with these services
 
-Heroku free dynos sleep if they are inactive for 30 minutes.
+Render apps sleep if they are inactive for 15 minutes.
 
-> There is a workaround called [Kaffeine](https://kaffeine.herokuapp.com/) that calls your Heroku service every 30 minutes.
-
-Or you can use something like Cron-Job.org to ping your Heroku service every 20 minutes to keep it awake. Heroku has a maximum of 5 applications available on the free tier.
+Or you can use something like Cron-Job.org to ping your Render service every 10 minutes to keep it awake. Render apps might take up to 30 seconds to respond after sleeping.
 
 Vercel is an amazing service, where you could host both your backend API and frontend application in the same repository. It focuses more on the frontend side of things.
 
@@ -80,52 +78,52 @@ With serverless functions, the issues of cold start and losing application state
 
 Cyclic is another awesome service where the app does not sleep if you don’t get requests for 30 minutes. It is serverless and a great wrapper on top of multiple AWS services.
 
-> The con here is you get only 1 app free but it gets 1 shared CPU and 1 GB of shared memory.
-
 Well, that is still better than the above two options if you only have only one [coding challenge](/blog/2020/09/take-home-coding-challenges-outshine-competition/) to deploy.
 
 ## Free Node.js hosting platforms to deploy your app
 
 Ok, let’s cut the rant and get to deploying a demo application. For this illustration I will use A [node.js Express API](/blog/2021/01/nodejs-postgresql-tutorial/) that talks with a PostgreSQL database on [ElephantSQL](https://www.elephantsql.com/).
 
-This is a simple quotes API and you can find the code open-source on [Github](https://github.com/geshan/nodejs-posgresql). Time to see this app hosted for free on Heroku.
+This is a simple quotes API and you can find the code open-source on [Github](https://github.com/geshan/nodejs-posgresql). Time to see this app hosted for free on Render.
 
-### Heroku
+### Render
 
-[Heroku](https://heroku.com) is a salesforce company and one of the first Platform-as-a-service (PaaS) companies that made it big, really big. It has been around since 2007, and it has evolved and adapted well to the changing technology landscape in the past 15 years. We can host multiple languages as Heroku Dynos and Node.js is definitely one of them.
+[Render](https://render.com?utm_source=geshan.com.np) is a relatively new company that used to provide only static hosting for free. Now it provides an array of free servcies including Node.js and Docker hosting. The [pricing](https://render.com/pricing?utm_source=geshan.com.np) page lists static site, services, PostgreSQL and Redis for free. There is a catch for PostgreSQL though, it runs free for 90 days only.
 
-> Heroku even 11 years back in 2010 was more like throw me your app and I will run it for you, this was before Docker and containers were a thing.
+> Render has one of the smoothest developer experience and deploy the Node.js app was a breeze.
 
-Now in 2021, they have a host of services, and luckily the Free plan is still alive on their [pricing](https://www.heroku.com/pricing) page. Time to proceed to how you can deploy the demo app on Heroku:
+It also has comprehensive [docs](https://render.com/docs?utm_source=geshan.com.np) to help you deploy not only Node.js apps for free but a host of other languages and frameworks. Some other things you can deploy on Render are Python, Go, PHP (Laravel) and Docker.
 
-#### Deploy Node.js Quotes API to Heroku
+#### Deploy Node.js Quotes API to Render
 
-You will need a [free account](https://signup.heroku.com/) on Heroku to get started. After you have registered, please follow the steps below to run your Node.js app on Heroku:
+You will need a [free account](https://dashboard.render.com/?utm_source=geshan.com.np) on Render to get started. After you have registered with your preferred method like Github or Email, please follow the steps below to run your Node.js app on Render:
 
-* Login to your Heroku account
-* Go to: [https://github.com/geshan/nodejs-posgresql](https://github.com/geshan/nodejs-posgresql)
-* Click on the “Deploy to Heroku” button
-* On the Heroku “Create New App” page give the app a name like `nodejs-heroku-try` or something that is available
-* Then click “Deploy App”
-* Wait for a minute or two and it will build and deploy the app like below:
+* Login to your Render account
+* On the Dashboard under "Web Services" click "New Web Service" as seen below:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/02nodejs-heroku.jpg" title="Deploy a Node.js API on Heroku from its interface" alt="Deploy a Node.js API on Heroku from its interface">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/02render-new-service.jpg" title="Add a new Render servcie" alt="Add a new Render servcie">
 
-* After that click the “View” button, you should see something like below:
+* Then paste `https://github.com/geshan/nodejs-posgresql` at the bottom on the next screen and click "Continue" as seen here:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/03nodejs-app-on-heroku.jpg" title="Node.js API running on Heroku" alt="Node.js API running on Heroku">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/03-render-service-url.jpg" title="Add GitHub repo URL for the Render service" alt="Add GitHub repo URL for the Render service">
 
-* Add `/quotes` to the URL and you should see the quotes in JSON format as follows:
+* After that on the next page, type in `nodejs-postgresql` as the Name of the app, select the Environment as "Node".
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/04nodejs-quotes-api-on-heroku.jpg" title="Node.js Quotes API running on Heroku" alt="Node.js Quotes API running on Heroku">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/04render-app-name.jpg" title="Add a name for the Render web service" alt="Add a name for the Render web service">
 
-Wasn’t that easy, there you have the quotes API built with Node.js and Express running on the first free Node.js hosting platform: Heroku.
+* On the same page, make sure the build command is `npm install` and the start command is `npm start`. Also make sure the plan is `Free`. Then click the blue button at the end of the page "Create Web Service"
 
-It did not run magically though, the settings were already present on the repo in the [app.json](https://github.com/geshan/nodejs-posgresql/blob/master/app.json) file. This tells Heroku how to deploy the app. For a real-life app, we will need to set the correct environment variable mainly secrets like database credentials properly.
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05render-app-command.jpg" title="Configure build and start command for Render web service" alt="Configure build and start command for Render web service">
 
-To make it better you can Fork the repository and connect [Github as a deployment method](https://devcenter.heroku.com/articles/github-integration) for Heroku.
+* It will take a some minutes to build and deploy, you will see an output like the below:
 
-Furthermore, you can set up [Pipelines](https://devcenter.heroku.com/articles/pipelines) to create staging and production environments in Heroku. You can also use the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) for more control over your apps. I leave further exploration to you. Next, let’s look at how to deploy the same application on Vercel.
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/06render-app-deployed.jpg" title="Render web service deployment successful" alt="Render web service deployment successful">
+
+* Your application's URL will be visible under the name of the app, click it to check if your app is running. If you click the app while it is being deployed the first time, it will come back with a `404` response. It will take some time to come alive. Then if you hit `<YOUR-APP-URL>/quotes` you will see something like:
+
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/07render-app-running.jpg" title="Render web service Up and running successfully" alt="Render web service Up and running successfully">
+
+That was easy to get your Node.js app up and running pretty fast. Next, let’s look at how to deploy the same application on Vercel.
 
 ### Vercel
 
@@ -178,9 +176,9 @@ Each time you open a new pull request in that repository Vercel will give you a 
 
 On merge to master/main branch, it will auto-deploy the code to the main URL. You can use the [Vercel CLI](https://vercel.com/docs/cli) for re-deployments, setting up environment variables, and a host of other things.
 
-Both Heroku and Vercel have powerful CLI to make your life easier for deploying the apps and doing other things like having a look at the app logs from the CLI.
+Vercel has a powerful CLI to make your life easier for deploying the apps and doing other things like having a look at the app logs from the CLI.
 
-Next, let's look at how Cyclic compares to Heroku and Vercel.
+Next, let's look at how Cyclic compares to Render and Vercel.
 
 ### Cyclic
 
@@ -223,11 +221,11 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 
 ## Quick comparison of Free Node.js hosting services
 
-Below is a quick comparison table for Heroku, Vercel, and Cyclic.
+Below is a quick comparison table for Render, Vercel, and Cyclic.
 
 | Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
 | :---: | :---: | :---: | --- | --- | --- |
-| Heroku | 1x | 512 MB | After 30 mins | No | 5 |
+| Render | N/A | N/A | After 15 mins | No | 5 |
 | Vercel | N/A | 1 GB | No | Yes | Unlimited |
 | Cyclic | N/A | 1 GB | No | Yes | Multiple |
 
@@ -244,8 +242,7 @@ Some other services where you can host your Node.js application free/almost free
 
 > You can host your Node.js App on all 3 of the big cloud providers AWS, Azure, and GCP and/or their function as a service (FAAS) serverless options or even on free-forever VM. But, they will ask for your credit-card.
 
-You can even explore other cloud providers like IBM Cloud or Alibaba to host your Node.js app for $0 a month. I will leave the digging deeper part for you.
-
+You can even explore other cloud providers like IBM Cloud or Alibaba to host your Node.js app for $0 a month. Heroku will sunset it's free plan soon. I will leave the digging deeper part for you.
 
 ## Conclusion
 
