@@ -8,8 +8,10 @@ tags:
 - Javascript
 cover: "/images/npm-concurrently/01npm-concurrently.jpg"
 pagetitle: How to run multiple NPM commands simultaneously using concurrently
-description: Use concurrently to run two or more NPM commands simultaneously following this step-by-step tutorial. You can also add the script as part of you package.json. 
-keywords: npm concurrenlty, concurrently npm, multiple npm commands, parallel npm commands
+description: Use concurrently to run two or more NPM commands simultaneously following
+  this step-by-step tutorial. You can also add the script as part of you package.json.
+keywords: npm concurrenlty, concurrently npm, multiple npm commands, parallel npm
+  commands
 
 ---
 Two or more NPM commands can be run simultaneously with the NPM concurrently package. A simple use case for this can be when you want to run the server and the client in parallel for a JavaScript project. In this post, you will learn how to use the concurrently NPM package for running two or more NPM commands simultaneously, let's get going!
@@ -75,7 +77,7 @@ The first command to run the react build step each time a file changes:
 The above command translates to the following NPM script:
 
 ```bash
-"build:watch": "run-when-changed --watch \"src/*.js\" --exec \"npm run build\"",
+"build:watch": "run-when-changed --watch 'src/*.js' --exec 'npm run build'",
 ```
 
 The requirement is to re-run the build (not use npm start) for the dev server. There is an [issue](https://github.com/facebook/create-react-app/issues/1070) on GitHub CRA repository to do this. A simple solution is to use the `run-when-changed` NPM package like above and get it done.
@@ -199,7 +201,7 @@ The yarn variant will be `yarn install concurrently`. Then you can use `concurre
 
 ```bash
 ## command to start dev server with build watch
-"start:dev": "concurrently \"npm run build:watch\" \"npm run start:cf\""
+"start:dev": "concurrently 'npm run build:watch' 'npm run start:cf'"
 ```
 
 To package.json’s `scirpts` sections. Now to run both `bulid:watch` and `start:cf` simultaneously you can easily run `npm run start:dev` which will show something like:
@@ -208,7 +210,7 @@ To package.json’s `scirpts` sections. Now to run both `bulid:watch` and `start
 npm run start:dev
 
 > geo-weather@0.1.0 start:dev
-> concurrently "npm run build:watch" "npm run start:cf"
+> concurrently 'npm run build:watch' 'npm run start:cf'
 
 [0] 
 [0] > geo-weather@0.1.0 build:watch
