@@ -47,7 +47,7 @@ Before we dive into the code, below are some prerequisites
 
 1. You have Node.js (preferably the latest LTS version) and NPM node running on your machine
 1. Instaling NPM modules is known to you
-1. Any prior knowledge or experience of web scraping, CSS selectors, or Xpath will be helpful.
+1. Any prior knowledge or experience of [web scraping](https://en.vpnwelt.com/web-scraping-tools/), CSS selectors, or Xpath will be helpful.
 
 Let’s get started with some code now.
 
@@ -56,6 +56,8 @@ Let’s get started with some code now.
 Websites and webpages can basically be divided into two broad categories. The first segment doesn’t need JavaScript rendering to show most of the content of the webpage, and the second needs Javascript execution to render any of its content. The first group of websites is much easier to scrape because the HTML rendered is almost the same for a browser that can execute Javascript compared to a bot that cannot execute JavaScript.
 
 The second set of websites are mainly the Single Page Applications (SPA) that are built with JavaScript framework/libraries like React which need JavaScript execution to show any relevant content. We will see an example later for this class of websites. For now, we will dive into an example that doesn’t need any Javascript execution to get the meaningful contents of the website. For this simple example, we will use Axios and Cheerio to scrape a property listing website called Domain.com,au to check how many rental properties are listed for a given postal code.
+
+You can use [Bright data](https://brightdata.grsm.io/gva84uxcbadg) to scarpe data from multiple sources. It also has proxy to make web scraping even more easier.
 
 ### Axios and Cheerio for Node.js web scraping
 
