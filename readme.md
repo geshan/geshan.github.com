@@ -1,6 +1,6 @@
 # Geshan's Blog on Eleventy
 
-Moved from octopress to Eleventy.
+Moved from octopress to Eleventy. Hosted on Cloudflare pages.
 
 ## Docker
 
@@ -17,4 +17,3 @@ Run this:
 ```
 rm -rf _site && ELEVENTY_ENV=production npx eleventy --serve
 ```
-
