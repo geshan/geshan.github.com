@@ -26,7 +26,7 @@ It is taken for granted that you do the basics correctly like having a optimally
 
 ## 1. Check and maintain Code Quality
 
-Just writing code that works might not be ideal for an open source project, also because the code you write can be read by anyone and used by anyone checking coding standard and code quality become a must. If you want to check your coding standard you can do it locally with [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer), fix coding standard issues with [PHP CS Fixer](http://cs.sensiolabs.org/). For other local tools you can check [PHP QA tools](http://phpqatools.org/). In case you want a continuous integration service you can use [Style CI](https://styleci.io/) which will check your coding standard matches PSR-2 or not on each push. It is free for open source projects.
+Just writing code that works might not be ideal for an open source project, also because the code you write can be read by anyone and used by anyone checking coding standard and code quality become a must. If you want to check your coding standard you can do it locally with [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer), fix coding standard issues with [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer). For other local tools you can check [PHP QA tools](http://phpqatools.org/). In case you want a continuous integration service you can use [Style CI](https://styleci.io/) which will check your coding standard matches PSR-2 or not on each push. It is free for open source projects.
 
 In case of the code quality, there are many providers to choose from and again all of them are free to use for open source projects. They love open source software as we do too. Below is the list of some providers I have used/tried out:
 

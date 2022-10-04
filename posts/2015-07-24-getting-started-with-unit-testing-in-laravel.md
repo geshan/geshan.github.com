@@ -139,7 +139,7 @@ For testing with Laravel I would recommend the following tools:
 
 1. [PHPUnit](https://phpunit.de/) Framework, even though BDD with [PHPSpec](http://www.phpspec.net) is getting some traction but only a handful of frameworks or systems are using PHPSpec. PHPUnit is still very popular.
 1. For mocking use [Mockery](https://github.com/padraic/mockery), here as well [Prophecy](https://github.com/phpspec/prophecy) looks like a better option but then you will have issues with mocking static methods of eloquent models in case of Laravel.
-1. Unit testing with PHP is a puzzle and Continuous Integration (CI) is the missing piece, there by if you are doing an open source project I would suggest [Travis CI](https://travis-ci.org/) which costs nothing and for a private project [Shippable](http://shippable.com) is a good CI service for free.
+1. Unit testing with PHP is a puzzle and Continuous Integration (CI) is the missing piece, there by if you are doing an open source project I would suggest [Travis CI](https://travis-ci.org/) which costs nothing and for a private project [Github Actions](https://github.com/features/actions) is a good CI service for free.
 
 ## Conclusion
 
