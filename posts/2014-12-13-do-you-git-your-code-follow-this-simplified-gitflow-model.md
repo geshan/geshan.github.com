@@ -18,7 +18,7 @@ Source code Version Control System (VCS) and automated testing open doors to oth
 <img class="center" loading="lazy" src="/images/simplified-gitflow/simple-git-flow.jpg" title="Simplified git-flow" alt="Simplified git-flow">
 
 
-The full [gitflow](hhttp://nvie.com/posts/a-successful-git-branching-model/) has 3 perpetual branches develop, release and master. Tickets/Issues can be grouped to release from develop. This in turn creates difficulty when tracing the ticket that caused any problem when it occurs.
+The full [gitflow](http://nvie.com/posts/a-successful-git-branching-model/) has 3 perpetual branches develop, release and master. Tickets/Issues can be grouped to release from develop. This in turn creates difficulty when tracing the ticket that caused any problem when it occurs.
 
 Simplified gitflow has only one perpetual branch master which decreases the complexity, only one ticket can be deployed and tested in any given environment like staging or production. When only one ticket is deployed on a given environment, it is very easy to trace a problem if it occurs. As the full gitflow, master is the stable branch which can be deployed to production anytime.
 

@@ -32,8 +32,8 @@ In case of the code quality, there are many providers to choose from and again a
 
 * [CodeClimate](https://codeclimate.com/github/geshan/pdepend-analyzer) - Very good service, ranks your code in a GPA of 4. Has good code analysis and reports.
 * [Scrutinizer CI](https://scrutinizer-ci.com/g/geshan/dataprovider-example/) - Great code analysis, ranks your code in a scale of 10. Extensive settings and code reports.
-* [Sensiolabs Insight](https://insight.sensiolabs.com/projects/56ff09b2-7954-4cb2-a6da-6af863775107) - Great code analysis, ranks your code with medals. Quite extensive code reports.
-* [Codacy](https://www.codacy.com/app/geshan/dataprovider-example/dashboard) - Good code analysis, ranks your code with A, B, C, D scale. Good settings and code reports.
+* [Sensiolabs Insight](https://insight.symfony.com/) - Great code analysis, ranks your code with medals. Quite extensive code reports.
+* [Codacy](https://www.codacy.com/) - Good code analysis, ranks your code with A, B, C, D scale. Good settings and code reports.
 
 As an example I am using a project with just 2 PHP files so you can see how powerful and deep the analysis for the code is for each of the above services. Which one to choose from the above, the choice is yours :)
 

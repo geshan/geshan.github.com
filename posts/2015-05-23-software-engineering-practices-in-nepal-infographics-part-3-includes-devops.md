@@ -15,7 +15,7 @@ system admin/devOps department, deployment culture, Continuous Integration (CI) 
 
 <!-- more -->
 
-Again special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) for helping me clean up and compile the data in a better way and the pretty [Ansubha Manandhar](http://bit.ly/ansu-blog)helping us group and compile the data into percentages, thank you for that.
+Again special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) for helping me clean up and compile the data in a better way and the pretty Ansubha Manandhar helping us group and compile the data into percentages, thank you for that.
 
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
 
