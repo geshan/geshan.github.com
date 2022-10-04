@@ -221,7 +221,7 @@ The above common is mapped to `jest –coverage` and as jest has a built-in code
 
 <img class="center" loading="lazy" src="/images/jest-beforeeach/03jest-beforeeach-code-cov.jpg" title="Example output for Jest BeforeEach test code coverage" alt="Jest before each code coverage">
 
-You can find the full code of this project in this [GitHub repository](​​https://github.com/geshan/simple-hn-client) and the most important parts of the example in this [pull request](​​https://github.com/geshan/simple-hn-client/pull/2/files).
+You can find the full code of this project in this [GitHub repository](https://github.com/geshan/simple-hn-client) and the most important parts of the example in this [pull request](https://github.com/geshan/simple-hn-client/pull/2/files).
 
 
 ## Conclusion
