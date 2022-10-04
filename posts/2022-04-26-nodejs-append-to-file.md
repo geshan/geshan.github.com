@@ -9,8 +9,10 @@ tags:
 - Javascript
 cover: "/images/nodejs-append-to-file/01nodejs-append-to-file.jpg"
 pagetitle: How to append contents to a file using Node.js
-description: Learn how to append text to a file using Node.js with callback, promise (async-await) and sync way in this easy to follow tutorial with code examples.
-keywords: nodejs append to file, node.js append to file, nodejs append file, nodejs file append
+description: Learn how to append text to a file using Node.js with callback, promise
+  (async-await) and sync way in this easy to follow tutorial with code examples.
+keywords: nodejs append to file, node.js append to file, nodejs append file, nodejs
+  file append
 
 ---
 Node.js can be used for a multitude of things, file handling is one of them. In this post, we will learn how to append to a file using Node.js. It can be done with callback, promise (async/await) as well as in a sync way, let’s get going!
@@ -37,7 +39,7 @@ Before diving deeper into the code, below are some requirements and/or nice to h
 1. Prior understanding of Node.js and how its event loop works would be advantageous.
 1. Knowledge of callback, promise (async-await), and sync calls in Node.js will be useful to follow along with the code examples.
 
-The code examples are available on a public [GitHub repository](​​https://github.com/geshan/nodejs-append-to-file) for your reference. You can also check out [Node.js read file line by line](/blog/2021/10/nodejs-read-file-line-by-line/) if that helps to read the file used in this tutorial. In the subsequent section, we will start getting our hands dirty with the code.
+The code examples are available on a public [GitHub repository](https://github.com/geshan/nodejs-append-to-file) for your reference. You can also check out [Node.js read file line by line](/blog/2021/10/nodejs-read-file-line-by-line/) if that helps to read the file used in this tutorial. In the subsequent section, we will start getting our hands dirty with the code.
 
 ## Ways to append to a file in Node.js
 
