@@ -31,7 +31,7 @@ Christophe Limpalair hosts Scale your code podcast. A new episode usually arrive
 
 <img class="center" loading="lazy" src="/images/3-podcasts-part-2/scale-your-code-podcast.jpg" title="Scale your code podcast" alt="Scale your code podcast">
 
-## [Scurm Master Toolbox](http://www.scrum-master-toolbox.com/category/podcast/)
+## [Scurm Master Toolbox](http://www.scrum-master-toolbox.com/)
 
 Scrum master toolbox podcast is another daily podcast with a theme for each weekday. Vasco Duarte hosts this podcast. He conducts the interviews with ease and a purpose to get the best out of his guests. Regardless of you do scrum or not this will help you in your career. Software engineers are solution providers. Understanding team dynamics, product management and change management is important in our work life.
 

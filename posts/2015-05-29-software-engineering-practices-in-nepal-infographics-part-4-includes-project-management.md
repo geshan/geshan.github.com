@@ -14,7 +14,7 @@ Below is final the Part 4 of the Software Engineering Practices in Nepal Infogra
 
 <!-- more -->
 
-Special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) and [Ansubha Manandhar](http://bit.ly/ansu-blog) for this edition too, for your help in data normalization, filtering and grouping.
+Special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) and Ansubha Manandhar for this edition too, for your help in data normalization, filtering and grouping.
 
 **Data for the infographics is taken from this [survey](http://bit.ly/nep-dev-survey) response, I kindly request you to fill it.**
 

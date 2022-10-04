@@ -83,7 +83,7 @@ Generally other tools are based on Capistrano style deployment, some say they ar
 
 ## What next
 
-If you are already doing automated deployment you can look at making it even easier, like deploying from a Chat interface like Hipchat or Slack. It is termed as [ChatOps](http://blog.flowdock.com/2014/11/11/chatops-devops-with-hubot/) where one can instruct a bot to deploy an application. If you don't want to go the chat path, you can even build a web interface to trigger deployments like [Samson](https://developer.zendesk.com/blog/introducing-samson-a-web-interface-for-deployments) by Zendesk.
+If you are already doing automated deployment you can look at making it even easier, like deploying from a Chat interface like Hipchat or Slack. It is termed as ChatOps where one can instruct a bot to deploy an application. If you don't want to go the chat path, you can even build a web interface to trigger deployments like [Samson](https://developer.zendesk.com/blog/introducing-samson-a-web-interface-for-deployments) by Zendesk.
 
 If you have your tests running you can even explore continuous delivery.
 

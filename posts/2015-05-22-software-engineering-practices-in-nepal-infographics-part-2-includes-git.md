@@ -22,7 +22,7 @@ popularity of Versioin Control System (VCS), VCS hosting, Operating System (OS),
 interesting facts from the survey. 
 
 Again special thanks to [Ashish Singh](http://bit.ly/ashish-singh-blog) for helping 
-me clean up and compile the data in a better way. And this time even [Ansubha Manandhar](http://bit.ly/ansu-blog) rolled up
+me clean up and compile the data in a better way. And this time even Ansubha Manandhar rolled up
 her sleeves and helped us group and compile the data into percentages, thank you for that.
 
 **Data for this infographics is taken from this [survey](http://bit.ly/nep-dev-survey), I kindly request you to fill it.**

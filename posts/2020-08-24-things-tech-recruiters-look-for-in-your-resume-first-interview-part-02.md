@@ -178,6 +178,6 @@ I would like to **heartily thank all of the recruiters** who took time out of th
 
 > I wish you all the best for your job hunt in Australia and hope you crack that first tech role or move to a better job with these tips.
 
-There is [Part 1](/blog/2019/01/things-tech-recruiters-look-for/) from 2019 and [Part 3](/blog/2022/08/what-do-tech-recruiters-look-for-part-03/) from 2022 of this conversation with recruiters from Safety Culture, Siteminder, Atlassian and Harrion.ai. You should read them too.
+There is [Part 1](/blog/2019/01/things-tech-recruiters-look-for/) from 2019 and [Part 3](/blog/2022/08/what-do-tech-recruiters-look-for-part-03/) from 2022 of this conversation with recruiters from Safety Culture, Siteminder, Atlassian and Harrison.ai. You should read them too.
 
 Share your thoughts and experience in finding a job in Australia. Have you found a role that makes you happy? If you are looking for a single place to find many tech roles in Australia, please [register](https://auth.autechjobs.ml/login) at [AU Tech Jobs](https://autechjobs.ml/). See you there!
