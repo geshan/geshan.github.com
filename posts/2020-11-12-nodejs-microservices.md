@@ -57,7 +57,7 @@ This is a solid sign of [Atwood’s law](https://en.wikipedia.org/wiki/Jeff_Atwo
 
 > Any application that can be written in JavaScript, will eventually be written in JavaScript.
 
-So Node.js enables us to write server-side applications in a [non-blocking](https://Node.js.org/en/docs/guides/blocking-vs-non-blocking/) way and in a single thread. You can read more about Node.js being single-threaded or not in this [piece](https://medium.com/better-programming/is-node-js-really-single-threaded-7ea59bcc8d64). Next, examine the pros and cons of Node.js and how it helps for Node.js microservices.
+So Node.js enables us to write server-side applications in a [non-blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/) way and in a single thread. You can read more about Node.js being single-threaded or not in this [piece](https://medium.com/better-programming/is-node-js-really-single-threaded-7ea59bcc8d64). Next, examine the pros and cons of Node.js and how it helps for Node.js microservices.
 
 ## Node.js pros and cons
 
@@ -65,7 +65,7 @@ As Bjarne Stroustrup (known for inventing C++) very well [said](https://www.good
 
 > There are only two kinds of languages: the ones people complain about and the ones nobody uses.
 
-Without doubts, Node.js is also a language runtime that a lot of people use and complain about. Funny enough you can use C++ addons in [Node.js](https://Node.js.org/api/addons.html). The video below summarizes the history as well as pros and cons of Node.js in an unambiguous way:
+Without doubts, Node.js is also a language runtime that a lot of people use and complain about. Funny enough you can use C++ addons in [Node.js](https://nodejs.org/api/addons.html). The video below summarizes the history as well as pros and cons of Node.js in an unambiguous way:
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/2gQG4cFjahw' frameborder='0' allowfullscreen></iframe></div>
 
@@ -75,7 +75,7 @@ It boils down to Node.js is fast, lightweight, performant, and scaleable. It als
 
 Node.js is very well suited for microservices.
 
-From Node.js about [page](https://Node.js.org/en/about/):
+From Node.js about [page](https://nodejs.org/en/about/):
 
 > HTTP is a first-class citizen in Node.js, designed with streaming and low latency in mind. This makes Node.js well suited for the foundation of a web library or framework.
 > It is great for decoupled applications as you can use lots of npm modules to sew up a great microservice. Node.js is fast and its event-based nature makes it a great choice even for real-time applications.
@@ -94,7 +94,7 @@ As [reported](http://highscalability.com/blog/2013/12/11/using-nodejs-paypal-dou
 
 ### Built-in web server for Node.js Microservices
 
-Node.js has a built-in [web server](https://Node.js.org/api/http.html#http_http_createserver_options_requestlistener). You don't have to wrangle with another Nginx or Apache. You can also happily say goodbye to things like [FPM](https://www.php.net/manual/en/install.fpm.php) as Node.js is essentially single-threaded. You might want to use [PM2](https://pm2.keymetrics.io/) to manage the process.
+Node.js has a built-in [web server](https://nodejs.org/api/http.html#http_http_createserver_options_requestlistener). You don't have to wrangle with another Nginx or Apache. You can also happily say goodbye to things like [FPM](https://www.php.net/manual/en/install.fpm.php) as Node.js is essentially single-threaded. You might want to use [PM2](https://pm2.keymetrics.io/) to manage the process.
 
 > Most likely you will not even need to deal with the HTTP library of Node.js. As it will be abstracted by the framework you use.
 
@@ -104,7 +104,7 @@ Node.js also handles multiple requests and responses very easily. This also make
 
 ### Node.js Microservices elevate developer happiness
 
-Developer happiness is a subjective matter affected by [multiple factors](https://stackoverflow.blog/2020/02/27/the-eight-factors-of-happiness-for-developers/). The Node.js [user survey report of 2018](https://Node.js.org/en/user-survey-report/) states:
+Developer happiness is a subjective matter affected by [multiple factors](https://stackoverflow.blog/2020/02/27/the-eight-factors-of-happiness-for-developers/). The Node.js [user survey report of 2018](https://nodejs.org/en/user-survey-report/) states:
 
 > Node.js is continuing to have a positive impact on users particularly around developer productivity and satisfaction; when asked to describe Node.js, respondents use mostly positive terms like – “fast”, “easy”, “awesome”, “powerful”, “flexible” and even “fun”.
 
@@ -128,7 +128,7 @@ Recently I upgraded a microservice from Node.js 8 to Node.js version 14. The upg
 
 ### Node Js is fast and scalable
 
-Node.js is fast because of the non-blocking IO and [event loop](https://Node.js.org/en/docs/guides/event-loop-timers-and-nexttick/). With Node.js you can easily put things in the background which doesn’t come out of the box in languages like PHP. PHP for instance executes code sequentially.
+Node.js is fast because of the non-blocking IO and [event loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/). With Node.js you can easily put things in the background which doesn’t come out of the box in languages like PHP. PHP for instance executes code sequentially.
 
 > Where as in Noddejs you could get a request, respond that the task is scheduled and put the task in the background to be executed.
 
