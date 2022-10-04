@@ -94,7 +94,7 @@ With that code in mind, in the consequent section, you will learn about Deno as 
 
 ## Deno - flips No-De on its head
 
-Deno flips the word No-De. It is created by the same person who created Node.js - Ryan Dahl. As per [him](​​https://www.youtube.com/watch?v=HjdJzNoT_qg), it is the next generation of Node.js with a focus on security, speed, and other features in a single executable. 
+Deno flips the word No-De. It is created by the same person who created Node.js - Ryan Dahl. As per [him](https://www.youtube.com/watch?v=HjdJzNoT_qg), it is the next generation of Node.js with a focus on security, speed, and other features in a single executable. 
 
 As per the official [Deno](https://deno.land/) website:
 
