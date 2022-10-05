@@ -44,11 +44,11 @@ Step by step add more tests and time for your team members to gain more skills. 
 
 Finished feature should reach production from developer's machine in less time. It will be possible using automated deployment using latest tools. Are you using File Transfer Protocol (FTP) in 2015? You should stop it now, the first step towards automation for a FTP user is use [GitFTP](http://git-ftp.github.io/git-ftp/). It is an automated way to get the changed files to server than copying it over a FTP client.
 
-Do one step deployment and least human work. Tools like [Capistrano](http://capistranorb.com/), [Fabric](http://www.fabfile.org/), [Rocketeer](http://rocketeer.autopergamene.eu/) are used for automated deployment process. To sum it up, [the best deployment tool is... the one that fits your needs](https://geshan.com.np/blog/2015/08/the-best-automated-deployment-tool-the-one-that-fits-your-needs/).
+Do one step deployment and least human work. Tools like [Capistrano](http://capistranorb.com/), [Fabric](http://www.fabfile.org/), [Rocketeer](http://rocketeer.autopergamene.eu/) are used for automated deployment process. To sum it up, [the best deployment tool is... the one that fits your needs](/blog/2015/08/the-best-automated-deployment-tool-the-one-that-fits-your-needs/).
 
 ## Logging with Monitoring
 
-Logs are the only way your software application talks back to you. Gather all your system, application logs and make it accessible via a web interface. Follow the logging [standard](https://tools.ietf.org/html/rfc5424) and use free SAAS to render your logs in a readable way that gives you value. If dog is a man’s best friend, log is a developer’s best friend. Understand and exploit [the importance of logging in your software application](https://geshan.com.np/blog/2015/08/importance-of-logging-in-your-applications/).
+Logs are the only way your software application talks back to you. Gather all your system, application logs and make it accessible via a web interface. Follow the logging [standard](https://tools.ietf.org/html/rfc5424) and use free SAAS to render your logs in a readable way that gives you value. If dog is a man’s best friend, log is a developer’s best friend. Understand and exploit [the importance of logging in your software application](/blog/2015/08/importance-of-logging-in-your-applications/).
 
 Just having logs is not enough, view your logs after each change. Always check your logs after each deployment to track any suspicious activity. You can use [Logentries](http://logentries.com) or [Loggly](http://loggly.com) for cloud logging.  
 
