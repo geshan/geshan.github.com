@@ -23,7 +23,7 @@ This JAMstack tutorial will show you how to create a JAMstack website with just 
 
 ## Prerequisites
 
-If JAMstack is something new for you have a look at my previous post detailing [what is JAMstack](https://geshan.com.np/blog/2020/04/static-vs-dynamic-websites-jam-stack/#jam-stack-with-a-cms) and some of its technical aspects. For this tutorial following are the prerequisites:
+If JAMstack is something new for you have a look at my previous post detailing [what is JAMstack](/blog/2020/04/static-vs-dynamic-websites-jam-stack/#jam-stack-with-a-cms) and some of its technical aspects. For this tutorial following are the prerequisites:
 
 1. You must have a working email address (a no brainier, still good to be explicit).
 1. Knowledge of markdown would be beneficial.

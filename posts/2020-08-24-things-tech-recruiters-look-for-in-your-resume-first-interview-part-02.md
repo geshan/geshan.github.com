@@ -23,7 +23,7 @@ Applied to many jobs and haven't heard back? Not sure what is missing in your re
 
 <img class="center" loading="lazy" src="/images/tech-recruitment-aus-part02/for-hire.jpg" title="Points tech recruiters look for in your cv and the first interview part" alt="For Hire meter">
 
-Let's jump directly to the main thing, what do recruiters look for in the CV and the first interview. The following were the question for this time (as a follow up of the [last post](https://geshan.com.np/blog/2019/01/things-tech-recruiters-look-for/)): 
+Let's jump directly to the main thing, what do recruiters look for in the CV and the first interview. The following were the question for this time (as a follow up of the [last post](/blog/2019/01/things-tech-recruiters-look-for/)): 
 
 ## The questions
 

@@ -44,7 +44,7 @@ Let me try to explain what software deployment tools and what the triggering lay
 
 <img class="center" loading="lazy" src="/images/software-deployment-tools/02software-deployment-tools.jpg" title="Software deployment tools and triggering tools are different" alt="Software deployment tools and triggering tools are different">
 
-As you can see, we will be discussing the yellow part not the green part of the above diagram. So how did it all begin for me to deploy a website to a free web host, it was not “the cloud” in the early 2000s. I consider [automated deployment](https://geshan.com.np/blog/2015/10/4-pillars-of-a-solid-software-application-and-tools-to-support-it/#automated-deployment) a pillar of solid software development.
+As you can see, we will be discussing the yellow part not the green part of the above diagram. So how did it all begin for me to deploy a website to a free web host, it was not “the cloud” in the early 2000s. I consider [automated deployment](/blog/2015/10/4-pillars-of-a-solid-software-application-and-tools-to-support-it/#automated-deployment) a pillar of solid software development.
 
 Also, I will not be mentioning infrastructure provisioning and infrastructure as code tools like Ansible, Puppet, Salt and Terraform. They belong to another class of tools that are not used for web software deployment automation.
 
@@ -58,7 +58,7 @@ I looked into Archive.org and found a website I had deployed circa 2000. Of cour
 
 <img class="center" loading="lazy" src="/images/software-deployment-tools/03archive.jpg" title="Old website deployed with FTP since 2001" alt="Old website deployed with FTP since 2001">
 
-Of course it was a [static site](https://geshan.com.np/blog/2020/04/static-vs-dynamic-websites-jam-stack/#static-website) with some HTML, JavaScript and CSS. And it was deployed either from a web interface or the reliable File Transfer Protocol (FTP) client.
+Of course it was a [static site](/blog/2020/04/static-vs-dynamic-websites-jam-stack/#static-website) with some HTML, JavaScript and CSS. And it was deployed either from a web interface or the reliable File Transfer Protocol (FTP) client.
 
 ## First software deployment tools - web interface and FTP in 2000 - 2008
 
