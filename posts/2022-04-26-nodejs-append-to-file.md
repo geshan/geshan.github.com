@@ -160,7 +160,7 @@ Then it will show the following output:
 
 <img class="center" loading="lazy" src="/images/nodejs-append-to-file/04nodejs-append-to-file-sync.jpg" title="Append contents to a file using Node.js in a sync way" alt="Append contents to a file using Node.js in a sync way">
 
-If you want to write or append multiple times better use a stream. An example of using stream can be seen in the [Node.js CSV](https://geshan.com.np/blog/2021/11/nodejs-read-write-csv/#write-csv-in-node.js-with-fast-csv) post.
+If you want to write or append multiple times better use a stream. An example of using stream can be seen in the [Node.js CSV](/blog/2021/11/nodejs-read-write-csv/#write-csv-in-node.js-with-fast-csv) post.
 
 ## Conclusion
 
