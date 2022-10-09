@@ -2,5 +2,17 @@ User-agent: *
 Disallow: /blog/categories/*
 Disallow: /blog/posts/*
 Disallow: /rabbitmq-talk/*
+Disallow: /cdn-cgi/*
+Disallow: /simplified-gitflow-slides/*
+Disallow: /nodejs-for-php-developers/*
+Disallow: /blog/2011/09/europe-travel-of-past-year-amsterdam/*
+Disallow: /blog/2014/12/so-you-build-websites/*
+Disallow: /blog/2014/01/most-popular-brands-people-on-facebook/*
+Disallow: /blog/2015/08/importance-of-logging-in-/*
+Disallow: /callback/*
+Disallow: /blog/2007/*
+Disallow: /blog/2008/*
+Disallow: /blog/2009/*
+Disallow: /blog/2010/*
 
 Sitemap: https://geshan.com.np/sitemap.xml 
