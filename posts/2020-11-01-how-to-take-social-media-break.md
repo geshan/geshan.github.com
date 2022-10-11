@@ -71,7 +71,7 @@ With the desktop app, you can also track how much time you are spending on the w
 
 If you decide to do it, keep in mind that  If a YouTuber can take a social media break and succeed at it, you can surely do it. For inspiration, check it out below:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/9z8_YhWoq2o' frameborder='0' allowfullscreen></iframe></div>
+{% youtube "9z8_YhWoq2o" %}
 
 ## Assumptions and goals
 
