@@ -114,7 +114,7 @@ On line 8 we define a timeout of 5 seconds and attached it to `ac.abort()` call 
 
 Most things remain the same as the above example, the change is in the catch part. Here we check if the code of the error thrown is `ABORT_ERR`, in that case, we change the message to show using console the log to be the timeout message. While logging the error object if the code is not `ABORT_ERR` we log the whole error object else we log nothing. Other parts of the code stay the same as the above simple example. The above example with timeout can be referenced as a GitHub [file](https://github.com/geshan/nodejs-readline/blob/master/readline.js) too.
 
-Node.js readline can also be used to [read file line by line with Node.js](/blog/2021/10/nodejs-read-file-line-by-line/) but the above usage seems better suited.
+Node.js readline can also be used to [read file line by line with Node.js](/blog/2021/10/nodejs-read-file-line-by-line/) but the above usage seems better suited. You can colorize and format your CLI output with [NPM chalk](/blog/2022/10/npm-chalk/) module.
 
 ## Conclusion
 
