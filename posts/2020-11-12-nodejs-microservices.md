@@ -67,7 +67,7 @@ As Bjarne Stroustrup (known for inventing C++) very well [said](https://www.good
 
 Without doubts, Node.js is also a language runtime that a lot of people use and complain about. Funny enough you can use C++ addons in [Node.js](https://nodejs.org/api/addons.html). The video below summarizes the history as well as pros and cons of Node.js in an unambiguous way:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/2gQG4cFjahw' frameborder='0' allowfullscreen></iframe></div>
+{% youtube "2gQG4cFjahw" %}
 
 It boils down to Node.js is fast, lightweight, performant, and scaleable. It also has lots of packages on npm. On the flip side, it is not great for CPU intensive programs due to blocking the event loop. Well, the video suggests “immature tools” but that can be said for most languages.
 
