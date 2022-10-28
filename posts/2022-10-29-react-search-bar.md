@@ -18,6 +18,18 @@ React is the [most popular](https://2021.stateofjs.com/en-US/libraries/front-end
 
 <img class="center" loading="lazy" src="/images/react-search-bar/01react-search-bar.jpg" title="Add React search bar to an existing React app" alt="Add React search bar to an existing React app">
 
+## Table of contents
+
+* [Popularity of React](#popularity-of-react)
+* [Prerequisites](#prerequisites)
+* [Existing React App - HackerNews](#existing-react-app---hackernews)
+    * [Structure of components](#structure-of-components)
+* [Add React search bar component](#add-react-search-bar-component)
+* [Wire up React search bar component](#wire-up-react-search-bar-component)
+* [Test the search bar component](#test-the-search-bar-component)
+* [Conclusion](#conclusion)
+
+
 ## Popularity of React
 
 In the past 5 years, people have searched for React a lot on Google [compared to Vue.js or Angular](https://trends.google.com/trends/explore?date=2017-10-01%202022-10-28&q=%2Fg%2F11c0vmgx5d,%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9). In addition to that, the state of JS survey result of 2021 puts React as the [most used](https://2021.stateofjs.com/en-US/libraries/front-end-frameworks/) JavaScript framework for the past 6 years. It is also the one with the most awareness among software engineers for 3 years in a row since 2019. 
