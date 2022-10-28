@@ -309,8 +309,8 @@ pre[class*="language-"] {
 }
 .entry-content p {
   font-size: 22px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 .entry-content img {
   margin: 30px auto;
