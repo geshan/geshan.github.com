@@ -201,6 +201,27 @@ pre[class*="language-"] {
   cursor: help;
 }
 
+.token.deleted {
+  background-color: hsl(350deg 100% 88% / 47%);
+}
+.token.inserted {
+  background-color: hsl(120deg 73% 75% / 35%);
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+}
+
 /* carbon */
 #carbonads {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -288,8 +309,8 @@ pre[class*="language-"] {
 }
 .entry-content p {
   font-size: 22px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .entry-content img {
   margin: 30px auto;

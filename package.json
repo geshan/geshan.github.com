@@ -7,9 +7,9 @@
     "watch": "eleventy --watch",
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "dev:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-004.css --watch",
+    "dev:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-005.css --watch",
     "dev:eleventy": "npx @11ty/eleventy --serve",
-    "build:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-004.css --minify",
+    "build:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-005.css --minify",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "dev": "npm-run-all clean --parallel dev:*",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy"
