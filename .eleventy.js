@@ -116,6 +116,7 @@ module.exports = function(eleventyConfig) {
       }
     }
 
+    console.log(`minifier`);
     return content;
   });
 
