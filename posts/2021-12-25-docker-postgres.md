@@ -51,7 +51,7 @@ Before we dive into some CLI commands and a bit of code below are some prerequis
 3. An intermediate understanding of how relational databases work, especially PostgreSQL would be highly beneficial.
 4. We will use an existing application/API with [Node.js and Postgres](/blog/2021/01/nodejs-postgresql-tutorial/) replacing a remote Postgres with a local one running with Docker and Docker compose, so it would be advisable to read the previous post about it.
 
-Given the prerequisites have been mentioned we can move forward to the next section where we will run some docker commands. Get those itchy fingers ready now.
+Given the prerequisites have been mentioned we can move forward to the next section where we will run some [docker commands](/blog/2022/05/docker-commands/). Get those itchy fingers ready now.
 
 ## Postgres with Docker
 

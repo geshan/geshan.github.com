@@ -61,7 +61,7 @@ mkdir /tmp/mysql-data
 docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=ANSKk08aPEDbFjDO -e MYSQL_DATABASE=testing -p 3306:3306 -it mysql:8.0
 ```
 
-Let’s analyze the command we just ran to run MySQL with docker. First, we created a directory called `mysql-data` in `/tmp` to store the data of MySQL. Then we ran a `docker run` command with:
+Let’s analyze the command we just ran to run MySQL with docker. First, we created a directory called `mysql-data` in `/tmp` to store the data of MySQL. Then we ran a [docker run command](/blog/2022/05/docker-commands/#docker-run) with:
 
 * `--name` to name the container `basic-mysql`
 * `--rn` to remove the container when it is stopped
@@ -159,7 +159,7 @@ volumes:
 The above docker-compose file has the following things to comprehend:
 
 1. It uses the docker-compose file [version 3.8](https://docs.docker.com/compose/compose-file/compose-file-v3/), one of the latest ones.
-1. Consequently, we define` db` as a service, each [service](https://docs.docker.com/compose/compose-file/compose-file-v3/#service-configuration-reference) will be equivalent to a new docker run command
+1. Consequently, we define` db` as a service, each [service](https://docs.docker.com/compose/compose-file/compose-file-v3/#service-configuration-reference) will be equivalent to a new [docker run command](/blog/2022/05/docker-commands/#docker-run)
 1. Subsequently, we point docker-compose to use the official MySQL 8.0 image for this DB service.
 1. The `cap_add` set to `SYS_NICE` [suppresses](https://stackoverflow.com/a/55706057) some not useful error messages.
 1. Next up we ask docker-compose to always restart this container if it fails.
