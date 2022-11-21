@@ -15,7 +15,7 @@ keywords: run world's top website for free, top website free
 ---
 Years back, being in the top 1 million websites worldwide was one of the goals for this blog when I saw that on Alexa.com. I am not sure when that milestone was hit, it looks like it was before [2019](https://web.archive.org/web/20190731210538/https://www.alexa.com/siteinfo/geshan.com.np) as per Web archive.
 
-Ok, I have said it, this blog you are reading is one of the top 370K websites in the world as per [Similarweb](https://i.ibb.co/RQpMvCk/Screen-Shot-2022-07-22-at-9-57-16-pm.png). In this post, I will peel the layers on how I run this blog absolutely free. Yes, you heard it right, this “popular” blog 😊 runs for exactly $0 a month and has no recurring operating cost whatsoever. Let's get into the details!
+Ok, I have said it, this blog you are reading is one of the top 370K websites in the world as per [Similarweb](https://i.ibb.co/cFjBYXN/geshan-com-np-rank-jul-22.jpg). In this post, I will peel the layers on how I run this blog absolutely free. Yes, you heard it right, this “popular” blog 😊 runs for exactly $0 a month and has no recurring operating cost whatsoever. Let's get into the details!
 
 <!-- more -->
 
