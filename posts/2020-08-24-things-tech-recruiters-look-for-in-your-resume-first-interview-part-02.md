@@ -65,7 +65,7 @@ Try to keep your resume to no more than 3 pages and include links to any website
 
 The [Tech Lead](https://www.youtube.com/watch?v=xpaz7nrNmXA) talks about getting exposure to projects which you can talk about on your resume, and I always encourage people to check out the 
 
-> [Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/resume), which has got so much useful information in preparing for your job search!
+> [Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook), which has got so much useful information in preparing for your job search!
 
 #### What are the top 3 things you evaluate in a candidate when conducting the first interview?
 
