@@ -41,7 +41,7 @@ Peter Drucker once [wrote](https://hbr.org/2010/10/what-cant-be-measured), “Wh
 
 Without any doubt, the same thing applies to your time. If you cannot measure where you spend your time you can never improve and manage it. Time is the most scarce resource. You could earn back money if you lost it but if time has passed it can’t be gained back. So start tracking your time.
 
-To track your time, I would suggest manual tracking with the Toggl track software. Toggl has recently [diversified](https://toggl.com/blog/toggl-rebrand-toggltrack) and rebranded the time tracking as [Toggl Track](https://toggl.com/track/).
+To track your time, I would suggest manual tracking with the Toggl track software. Toggl has recently diversified and rebranded the time tracking as [Toggl Track](https://toggl.com/track/).
 
 <img class="center" loading="lazy" src="/images/free-productivity-software/02toggl-track.jpg" title="Track your time with Toggl Track" alt="Toggl Website">
 
