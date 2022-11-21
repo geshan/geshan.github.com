@@ -9,8 +9,10 @@ tags:
 - Web Development
 cover: "/images/axios-timeout/01axios-timeout.jpg"
 pagetitle: Using Axios timeout to make your application more efficient
-description: In this tutorial, learn how use Axios timeout to make your app efficient, performant and resilient to external API failures.
+description: In this tutorial, learn how use Axios timeout to make your app efficient,
+  performant and resilient to external API failures.
 keywords: axios timeout, timeout axios, axios timeouts
+
 ---
 Axios is one of the most popular JavaScript libraries to do HTTP requests. It is an HTTP client available for both the browser and Node.js. Setting Axios timeout properly makes your application perform efficiently even when the called API/URL is not responding in a timely manner. In this post, you will learn about Axios, its configs, and how to set Axios timeout properly to not hamper your application’s performance. Let’s get going.
 
@@ -110,7 +112,7 @@ It is a very simple Express API. You start by requiring express and instantiatin
 
 Next, you add the home route `/` that responds with a stock JSON of `{“message”: “alive”}`. After that, another route is added `/api/mock-response-time/:milliseconds` where the caller will pass the number of milliseconds it wants the server to wait before sending a response back. As mentioned, the server will take some more time than the wait because of DNS, network, and other factors.
 
-Finally your start the server with `app.listen` on the port and log that the server has started. The above code is available for your reference as a [GitHub repository](​​https://github.com/geshan/slow-api). It has also been deployed on Render (one of the [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) services) at https://slow-api.onrender.com . You will call this a simple but useful endpoint to test out Axios timeout next. 
+Finally your start the server with `app.listen` on the port and log that the server has started. The above code is available for your reference as a [GitHub repository](https://github.com/geshan/slow-api). It has also been deployed on Render (one of the [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) services) at https://slow-api.onrender.com . You will call this a simple but useful endpoint to test out Axios timeout next. 
 
 ### Axios timeout in action
 
