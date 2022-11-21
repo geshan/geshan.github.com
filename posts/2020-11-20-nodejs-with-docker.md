@@ -263,7 +263,7 @@ To run the Node.js docker image and attach to its logs, you can run the followin
 docker run --rm --name nodejs_express_ms -d -p 3000:3000 -v "$(pwd)":/src nodejs-express-docker-multi-stage && docker logs -f nodejs_express_ms
 ```
 
-The main difference here from the above docker run command for Node.js with Docker is `-v "$(pwd)":/src`. As we want the server to restart on every file change the current directory is mounted on the docker container’s work dir. With this on each change the sever will restart for Node.js on docker. 
+The main difference here from the above [docker run command](/blog/2022/05/docker-commands/#docker-run) for Node.js with Docker is `-v "$(pwd)":/src`. As we want the server to restart on every file change the current directory is mounted on the docker container’s work dir. With this on each change the sever will restart for Node.js on docker. 
 
 The mulit-stage dockerfile for docker with Node.js can be found in this [pull request](https://github.com/geshan/express-app/pull/4/files). Below is a quick recap of the commands for Node.js docker multi-stage build:
 

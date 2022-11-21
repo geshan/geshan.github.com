@@ -18,6 +18,7 @@ Will you use a gun to kill a fly? The answer is NO. The same thing goes when you
 <img class="center" loading="lazy" src="/images/microservice-code/lego.jpg" title="Do not code your microservice like a monolith, keep it maintainable not over-engineered" alt="Do not code your microservice like a monolith, keep it maintainable not over-engineered">
 
 ## TLDR;
+
 > Microservices are small software systems. You can safely ditch MVC. Say no to ORM and also not take the design pattern baggage for microservices. Focus on code performance, readability, and maintainability not some old rules and patterns. Those patterns were made when people were not doing microservices.
 
 
@@ -52,7 +53,7 @@ Just try this, explain how an ORM related insert code works VS how a simple and 
 
 ## Design patterns might be a baggage
 
-I am not saying that you don't need to learn about [software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern). You should know about SOLID, law of Demeter, factory pattern, strategy pattern, singleton, adapter pattern etc. Well, most of these make sense if you do object-oriented programming right? What if you write a microservice in Node JS that is 1k lines of code spread across ~7 files. It does one small slice of the business function. All these patterns become nice to know stuff at that point.
+I am not saying that you don't need to learn about [software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern). You should know about SOLID, law of Demeter, factory pattern, strategy pattern, singleton, adapter pattern etc. Well, most of these make sense if you do object-oriented programming right? What if you write a [Node.js microservice](/blog/2020/11/nodejs-microservices/) that is 1k lines of code spread across ~7 files. It does one small slice of the business function. All these patterns become nice to know stuff at that point.
 
 Design Patterns are relevant for a code base that is already big and in the next 6-12 months is going to be bigger, your usual monolith. They can turn out to be "extra baggage" for a service that is 100s of lines of code now and will become 1000s of lines of code in the next 6-12 months. We never foresee it to be bigger than that because to do that other part we will have another microservice. So keep your microservice code fat free and well tested.
 
