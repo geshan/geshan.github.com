@@ -67,7 +67,7 @@ To keep things simple, I forked the Laravel/framework Github [repo](https://gith
 
 > Opening the pull requests ran the tests without PHPUnit code coverage and it took `33 seconds` to run the tests consuming `257MB` of memory.
 
-You can view the details of that test run in this [Gitub Actions page](https://github.com/geshan/framework/runs/1458355879?check_suite_focus=true), below is a quick screenshot.
+You can view the details of that test run in the screenshot below.
 
 <img class="center" loading="lazy" src="/images/phpunit-code-coverage-pcov/02phpunit-tests-without-coverage.jpg" title="Laravel Framwork PHPUnit tests without code coverage" alt="Laravel Framwork PHPUnit tests without code coverage took 33 seconds">
 
@@ -85,7 +85,7 @@ I made those changes in 2 places in the `tests.yml` file and that resulted in th
 
 With Xdebug code coverage I did a couple more runs to see if the time taken to run the test vary by much. It was generally the same.
 
-> In one of the runs of [code coverage with Xdebug](https://github.com/geshan/framework/runs/1458520731?check_suite_focus=true) took `2 mins 34 seconds` and consumed `395 MB` of memory.
+> In one of the runs of code coverage with Xdebug, it took `2 mins 34 seconds` and consumed `395 MB` of memory.
 
 I am only checking the time for the `Execute tests` task. You can view the screeshot below:
 
