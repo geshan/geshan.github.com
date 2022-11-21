@@ -29,7 +29,7 @@ On the other hand, as Donald G. Reinertsen mentions in his book The [principles 
 
 > Smaller batch sizes also reduce risk and overhead. Thereby, small pull requests also have the same effect.
 
-As per [Github's Octoverse 2020 Productivity report](https://octoverse.github.com/static/github-octoverse-2020-productivity-report.pdf) on page 5, the first `key finding` is:
+As per [Github's Octoverse 2020 Productivity report](https://octoverse.github.com/2020/), one of the first `key finding` is:
 
 > Small pull requests drive innovation and productivity
 
