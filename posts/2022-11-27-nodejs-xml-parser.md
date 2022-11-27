@@ -9,8 +9,10 @@ tags:
 - Web Development
 cover: "/images/nodejs-xml-parser/01nodejs-xml-parser.jpg"
 pagetitle: A beginner’s guide to parse and create XML with Node.js
-description: In this tutorial, learn how validate and parse XML with Node.js. You will also know about creating a XML file with Node.js
+description: In this tutorial, learn how validate and parse XML with Node.js. You
+  will also know about creating a XML file with Node.js
 keywords: nodejs xml parser, node.js xml parser, nodejs xml, nodejs xml build
+
 ---
 Writing and parsing XML files with Node.js might not be one of the first things that strike your mind. On the contrary, the Fast XML parser has millions of downloads per week on NPM. In this post, you will learn how to validate and parse XML with Node.js. You will also learn to generate an XML file from JavaScript objects. Let's get started!
 
@@ -318,7 +320,7 @@ You used the `fast-xml-parser` library to wrangle the XML and JavaScript objects
 
 > The most popular one among them in terms of downloads is `XML-JS` with 14.7 million downloads per week. For comparison, React has 16.8 million downloads per week. 
 
-Below is a quick comparison of the downloads XML parsing libraries have on NPM:
+Below is a quick comparison of the downloads per week from [NPM Trends](https://npmtrends.com/fast-xml-parser-vs-xml-js-vs-xml-to-json-vs-xml2js-vs-xml2json) for some XML parsing libraries:
 
 <img class="center" loading="lazy" src="/images/nodejs-xml-parser/05nodejs-xml-compare.jpg" title="Comparing different Node.js XML parser libraries available on NPM on their weekly downloads count" alt="Comparing different Node.js XML parser libraries available on NPM on their weekly downloads count">
 
