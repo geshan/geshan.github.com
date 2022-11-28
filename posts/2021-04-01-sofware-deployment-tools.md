@@ -97,7 +97,7 @@ We used to SSH into our servers and our deployment process was more like this:
 1. Make sure the latest changes are on master, then execute `git pull origin master` on the website folder
 1. As per need restart the server (it used to be Apache as far as I remember, as we mostly did PHP development back then).
 
-This worked pretty well, I would say it worked much better than using FTP as you don’t need to remember which files to copy and the process was mostly Ok unless you faced [git conflicts](/2016/04/3-simple-rules-for-less-or-no-git-conflicts/) and stuff like that. Looking back I would have written a [Fabric](http://www.fabfile.org/) script that did it as an atomic task, if anything failed it would stop the deployment.
+This worked pretty well, I would say it worked much better than using FTP as you don’t need to remember which files to copy and the process was mostly Ok unless you faced [git conflicts](/blog/2016/04/3-simple-rules-for-less-or-no-git-conflicts/) and stuff like that. Looking back I would have written a [Fabric](http://www.fabfile.org/) script that did it as an atomic task, if anything failed it would stop the deployment.
 
 > Looks like a lot of other developers were doing this git pull thing even in 2018, opening up the .git [security hole](https://www.zdnet.com/article/almost-400k-websites-risk-hacking-data-theft-via-open-git-repos-researcher-warns/).
 
