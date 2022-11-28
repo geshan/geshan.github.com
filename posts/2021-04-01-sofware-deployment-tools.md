@@ -28,7 +28,7 @@ I have used a variety of software deployment tools in the last 20 years. From FT
 * [SSH, Git pull as software deployment tools 2008-2011](#ssh-git-pull-as-software-deployment-tools-2008-2011)
 * [Hello Capistrano circa 2012-2015](#hello-capistrano-circa-2012-2015)
 * [Docker is the way to go - 2016](#docker-is-the-way-to-go---2016)
-* [Kubernetes it is 2016-2021](#kubernetes-it-is-2016-2021)
+* [Kubernetes it is 2016-2023](#kubernetes-it-is-2016-2023)
 * [Quick recap](#quick-recap)
 * [How to choose your software deployment tool?](#how-to-choose-your-software-deployment-tool)
 * [Conclusion](#conclusion)
@@ -139,7 +139,7 @@ In terms of advancing deployment triggers, we had a chatbot on Hipchat/Slack wri
 
 Later we started using Kubernetes in full swing.
 
-## Kubernetes it is 2016-2021
+## Kubernetes it is 2016-2023
 
 As far as I remember 2016 was a turning point. Our senior DevOps engineer did an internal talk to introduce Kubernetes to the tech team. It made little sense than on what was the power of Kubernetes.
 
@@ -156,7 +156,7 @@ So to recap the software deployment tools I have used in the past 20 years are:
 * 2001 - 2008 - Web interface and File Transfer Protocol (FTP) clients
 * 2009 - 2011 - SSH and git pull :)
 * 2012 - 2015 - Capistrano and a few Fabric scripts
-* 2016 - 2021 - Kubectl apply with Docker and Kubernetes, some Helm between 2016-2018
+* 2016 - 2023 - Kubectl apply with Docker and Kubernetes, some Helm between 2016-2018 and again in 2022
 
 If you see the trend, FTP was used for 7 years or more and Kubeclt is inching towards beating it. It is just a matter of time Kubectl will be used the longest as I don’t see it changing any time soon.
 
@@ -172,6 +172,6 @@ You can view a [larger version](/images/software-deployment-tools/09choose-deplo
 
 [Deployment is not a release](/blog/2018/10/deployment-is-not-release/), always separate your deployment which is a technical task from release which is a business operation. This is the main point, if you use a full-on feature flag SAAS or just an if-else in code to do this it is up to you.
 
-> In 2021, if your team uses FTP/Capistrano to deploy web software and the business makes thousands of dollars a month your team is a lot better than “modern” teams using Docker containers, Kubernetes, etc and burning thousands of dollars a month. 
+> In 2023, if your team uses FTP/Capistrano to deploy web software and the business makes thousands of dollars a month your team is a lot better than “modern” teams using Docker containers, Kubernetes, etc and burning thousands of dollars a month. 
 
 The goal is to make money and happy customers software and software deployment tools are just means to achieve that goal. Choose what helps you reach business goals, not the latest fad. Happy deploying!
