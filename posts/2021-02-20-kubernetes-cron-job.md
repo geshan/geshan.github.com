@@ -76,7 +76,7 @@ Next, we will look into a simple Kubernetes cron job example.
 
 ### Kubernetes cron job a simple example
 
-We will try a simple Kubernetes cron job example on [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/). At the time of writing Kind version 0.9.0 starts a Kubernetes cluster of version 1.19.1. Below is our simple Kubernetes cron file that uses node:14-alipine image to print the current date.
+We will try a simple Kubernetes cron job example on [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/). At the time of writing Kind version 0.9.0 starts a Kubernetes cluster of version 1.19.1. Below is our simple Kubernetes cron file that uses node:18-alpine image to print the current date.
 
 ``` yaml
 apiVersion: batch/v1beta1
@@ -91,7 +91,7 @@ spec:
         spec:
           containers:
           - name: print-date
-            image: node:14-alpine
+            image: node:18-alpine
             imagePullPolicy: IfNotPresent
             args:
             - -e
@@ -105,7 +105,7 @@ Let’s analyze this simple, not so well configure Cronjob.yaml file in detail:
 1. This is a type of `CronJob` Kubernetes resource/workload
 1. We have named the cron job `print-date`
 1. The Kubernetes cron job is scheduled to execute every 5 minutes -- `*/5 * * * *`
-1. We are using the `node:14-alpine` image which will be taken from docker hub by default
+1. We are using the `node:18-alpine` image which will be taken from docker hub by default
 1. `IfNotPresent` image pull policy is the default one. It causes the [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) to pull an image if it does not already exist.
 1. Then we pass in `-e` for eval` and `console.log` to print the current date as string. As the command for the node container is `node` this will print the current date and time.
 1. The container will be restarted on failure as per the above-defined [restart policy](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy).
@@ -182,7 +182,7 @@ spec:
         spec:
           containers:
           - name: print-date
-            image: node:14-alpine
+            image: node:18-alpine
             imagePullPolicy: IfNotPresent
             args:
             - -e

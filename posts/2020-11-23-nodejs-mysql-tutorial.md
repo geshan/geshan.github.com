@@ -10,7 +10,7 @@ tags:
 cover: "/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial-full.jpg"
 pagetitle: 'Node.js MySQL tutorial: a step-by-step getting started guide with Express
   js REST API'
-description: Follow this 2500+ word step-by-step tutorial to learn Node.js and MySQL
+description: Follow this step-by-step tutorial to learn Node.js and MySQL
   together. You will build a REST API for quotes using Express Js in this guide.
 keywords: Nodejs mysql tutorial, Node.js mysql tutorial, nodejs mysql, nodejs express
   mysql, node.js express mysql example, nodejs mysql express tutorial
@@ -50,10 +50,10 @@ If you are starting a new project don't blindly use a NoSQL like Mongo DB. This 
 
 ## Prerequisites for Node.js MySQL tutorial
 
-1. You have Node.js installed on your machine (or a docker container that can run Node.js). We will be using Node.js version 12 and npm 6.14.
+1. You have Node.js installed on your machine (or a docker container that can run Node.js). We will be using Node.js version 18 and npm 8.6.
 1. You are familiar with how Node.js works generally and also know about Node.js frameworks. We will use Express js for this guide.
 1. Some git knowledge would be really helpful
-1. You have access to a MySQL instance either running locally or remotely. I would suggest using [remote MySQL](https://remotemysql.com/). You should know how RDBMS works.
+1. You have access to a MySQL instance either running locally or remotely. I would suggest using [remote MySQL](https://remotemysql.com/) or [PlanetScale](https://planetscale.com/). You should know how RDBMS works.
 1. You can code with an IDE, I will be using VS code but you can use any editor or IDE for this Node.js MySQL tutorial.
 
 ## Node.js MySQL tutorial steps
