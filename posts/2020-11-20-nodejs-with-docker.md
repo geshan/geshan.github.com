@@ -8,8 +8,8 @@ tags:
 - Node.js
 cover: "/images/nodejs-docker-docker-compose/00nodejs-docker-docker-compose.jpg"
 pagetitle: How to use Docker with Node.js a step-by-step tutorial
-description: Follow this 2000+ word step-by-step tutorial to use Docker with Node.js
-  using best practices like BUILDKIT and caching with docker compose.
+description: Follow this step-by-step tutorial to use Docker with Node.js using best
+  practices like BUILDKIT and caching with docker compose.
 keywords: docker with nodejs, nodejs on docker, docker nodejs, node dockerfile, node.js
   docker, nodejs dockerfile, docker node js development, docker compose, nodejs docker
   compose
@@ -67,7 +67,7 @@ With high [software scalability](/blog/2020/12/software-scalability/) in the pic
 1. You have some familiarity with using Node.js (express js or any other framework)
 1. You have some experience using Docker (local development, production environments preferred)
 1. I am using Docker version 19.03.13 and docker-compose version 1.27.4, I hope you have similar versions.
-1. For the first part of this tutorial, we will use Node.js 8 + with npm and [npx](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/) installed.
+1. For the first part of this tutorial, we will use Node.js 18 with npm and [npx](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/) installed.
 
 ## Steps
 
