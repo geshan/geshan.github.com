@@ -245,7 +245,7 @@ The other code is self-explanatory. You can even try our [Node.js with docker](/
 To set up a well-formed docker file that uses [multistage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/) utilizing the docker cache to make the [docker build fast](/blog/2020/10/docker-build-example-faster-docker-build/), we will use the following docker file:
 
 ```bash
-FROM node:16-alpine as base
+FROM node:18-alpine as base
 WORKDIR /src
 COPY package*.json ./
 
@@ -266,7 +266,7 @@ COPY ./*.js ./
 CMD ["node", "consumer.js"]
 ```
 
-We are using the latest Node.js LTS 16 with the alpine version as it is smaller than the options at around [38 MB](https://hub.docker.com/layers/node/library/node/16-alpine/images/sha256-7f50c56fc6adbc28be74bc416dae55fdf0f835bba87fb7b1ad08c7db807f0cb7?context=explore). Next, we set the `WORKDIR` to `/src` and then copy the package.json and package-lock.json file to the “workdir” `/src`.
+We are using the latest Node.js LTS 18 with the alpine version as it is smaller than the options at around [50 MB](https://hub.docker.com/layers/library/node/18-alpine/images/sha256-67373bd5d90ea600cb5f0fa58d7a5a4e6ebf50b6e05c50c1d1cc22df5134db43?context=explore). Next, we set the `WORKDIR` to `/src` and then copy the package.json and package-lock.json file to the “workdir” `/src`.
 
 Consequently, we start defining the “production” stage where we set `NODE_ENV` to production and run `npm ci` to get all the npm dependencies as defined in the lock file. To make better use of the docker build-cache, only after running the npm ci we copy all the `.js` files to the work dir. Then we put the `CMD` as “node consumer.js” to run the consumer in production.
 

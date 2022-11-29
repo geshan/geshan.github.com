@@ -98,7 +98,7 @@ To be honest, in 2020 you can easily use [async await](https://developer.mozilla
 
 Another Pro Tip:
 
-> Even Node.js versions are [LTS](https://nodejs.org/en/about/releases/), odd ones are not. So use Node 14 or 16 not 13 or 15 in production.
+> Even Node.js versions are [LTS](https://nodejs.org/en/about/releases/), odd ones are not. So use Node 16 or 18 not 15 or 17 in production.
 
 Going a bit deeper into non-sequential execution, promises and the power it has plays an important role here. The ability to do concurrent things is great in Node.js and javascript in general.
 
@@ -248,7 +248,7 @@ Also notice the [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi
 Now it's time to have a look at a Node.js [Dockerfile](https://github.com/geshan/currency-api/blob/master/Dockerfile).
 
 ``` bash
-FROM node:14-alpine as base
+FROM node:18-alpine as base
 
 WORKDIR /src
 COPY package.json package-lock.json /src/

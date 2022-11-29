@@ -38,7 +38,7 @@ Reading the whole file at once will make the process memory intensive. With the 
 
 Before jumping to the code, below are some of the prerequisites to follow along with the provided code examples:
 
-1. Having Node.js 10+ (preferably the latest LTS Node 16) running on your machine/test environment is required. You can even use [Node.js on docker](/blog/2020/11/nodejs-with-docker/) for it.
+1. Having Node.js 14+ (preferably the latest LTS Node 18) running on your machine/test environment is required. You can even use [Node.js on docker](/blog/2020/11/nodejs-with-docker/) for it.
 1. Knowledge of how to install NPM modules would be necessary.
 1. Any prior understanding of streams and how they work would be helpful.
 1. Any knowledge of [Node’s event-based architecture](https://www.freecodecamp.org/news/understanding-node-js-event-driven-architecture-223292fcbc2d/) will be good to have.

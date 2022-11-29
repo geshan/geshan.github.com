@@ -38,7 +38,7 @@ There are many reasons you would want your Docker containers to build faster, he
 Let’s look at the docker below, this innocent-looking docker file is taken from a [Node Js API](https://github.com/geshan/currency-api/commit/1bfa57939bb7647d9350a7445d223e4c0789f112). It has one major issue we will uncover as we proceed:
 
 ``` bash
-FROM node:14-alpine
+FROM node:18-alpine
 
 WORKDIR /src
 COPY . /src
@@ -88,7 +88,7 @@ Ok, there is a major issue in our previous docker file. The docker cache is bust
 Our code changes almost every time but the npm modules we pull in change infrequently. So we can safely cache the npm modules as below:
 
 ``` bash
-FROM node:14-alpine
+FROM node:18-alpine
 WORKDIR /src
 COPY package.json package-lock.json /src/
 

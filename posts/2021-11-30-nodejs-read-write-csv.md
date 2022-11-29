@@ -55,7 +55,7 @@ Similarly, CSVs are great to export data out of some tables/reports. They act as
 
 There are multiple NPM packages to read and/or write CSV files with Node.js. The most popular one is [Fast CSV](https://github.com/C2FO/fast-csv), it is a mix of [fast-csv/parse](https://c2fo.io/fast-csv/docs/parsing/getting-started) to read CSV files and [fast-csv/format](https://c2fo.io/fast-csv/docs/formatting/getting-started) to format and write CSV files. Some other options include [csv-parser](https://github.com/mafintosh/csv-parser), [csv-writer](https://github.com/ryu1kn/csv-writer), [neat-csv](https://github.com/sindresorhus/neat-csv) and [csv](https://github.com/adaltas/node-csv) to name some. Details about the popularity in terms of download is discussed towards the end of this piece. It would be a good time to take a refresher on how to [read file line by line in node.js](/blog/2021/10/nodejs-read-file-line-by-line/) if that interests you. 
 
-All the code below will be run on Node 14 and it is expected that you know how to install npm packages with npm install. Let’s look at how to use Fast CSV to read an existing CSV file with Node.js next.
+All the code below will be run on Node 18 and it is expected that you know how to install npm packages with npm install. Let’s look at how to use Fast CSV to read an existing CSV file with Node.js next.
 
 ## Fast CSV to read CSV files in Node.js
 

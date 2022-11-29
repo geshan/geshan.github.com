@@ -145,7 +145,7 @@ We will start with a simple dockerfile and move on to a multi-stage one. We will
 Below is the simple Node Dockerfile for the express application:
 
 ``` bash
-FROM node:14-alpine
+FROM node:18-alpine
 
 WORKDIR /src
 COPY package.json package-lock.json /src/
@@ -160,7 +160,7 @@ CMD ["node", "bin/www"]
 
 The dockerfile is simple. It is:
 
-* using `node:14-alpine` as the starting point. We are using alpine because it is a small and secure base image for docker containers.
+* using `node:18-alpine` as the starting point. We are using alpine because it is a small and secure base image for docker containers.
 * We first copy package.json and lock file to the WORKDIR `/src` to exploit docker’s build caching
 * Then we run `npm install --production` to get only the needed application dependencies from npm
 * After that our application code is copied to `/src`
@@ -230,7 +230,7 @@ We will create 3 stages from the above simple dockerfile. The stages will be as 
 Below is the modified dockerfile:
 
 ``` bash
-FROM node:14-alpine as base
+FROM node:18-alpine as base
 
 WORKDIR /src
 COPY package.json package-lock.json /src/
