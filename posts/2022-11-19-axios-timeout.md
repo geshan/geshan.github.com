@@ -170,7 +170,7 @@ res => {
 
 You first started by requiring Axios. In lines 3-15 you have overloaded the `console.log` function to include the time elapsed between calls. For instance, if the first `console.log` is called and the next `console.log` is called after one second it will append the first one with `0.00` and the second one with `1.00`. It has been taken from this old [gist](https://gist.github.com/mikelehen/5398652).
 
-Next, you add two Axios Interceptors. Interceptors help you intercept the request and response objects and manipulate them before they are handled. The first will intercept the request and add the `requestStartedAt` value as the current time. It will add a log on the request with the time it was initiated. This will be used later to calculate the time it took to get the response back. 
+Next, you add two [Axios Interceptors](/blog/2022/12/axios-interceptors/). Interceptors help you intercept the request and response objects and manipulate them before they are handled. The first will intercept the request and add the `requestStartedAt` value as the current time. It will add a log on the request with the time it was initiated. This will be used later to calculate the time it took to get the response back. 
 
 Then you add another interceptor to the response. This interceptor gets the current time and subtracts it from the requested stated time which results in the duration of time it took for the response to be received. It logs the time for the response to be fetched in milliseconds. The second interceptor on the response handles the case for both valid/successful status response of 200-299 or invalid status codes like 4XX and 5XX. For the error case, it logs with `console.error` and throws back the response.
 
