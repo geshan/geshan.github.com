@@ -24,6 +24,7 @@ Due to no commute in the past 12 months, I found new times and ways to listen to
 
 ## Table of contents
 
+* [I have listened to them](#i-have-listed-to-them)
 * [Software Engineer podcasts 2022](#software-engineer-podcasts-2022)
     * [Compressed FM](#compressed-fm)
     * [FSJam Podcast](#fsjam-podcast)
@@ -55,6 +56,14 @@ Due to no commute in the past 12 months, I found new times and ways to listen to
     * [Startups for the rest of us](#startups-for-the-rest-of-us)
 * [Conclusion](#conclusion)
 
+
+## I have listed to them
+
+A picture is worth a thousand words, here is a screenshot from Jun-2022 for all the podcasts I have listend to since 2017, I will let you be the judge :)
+
+<img class="center" loading="lazy" src="/images/software-engineer-podcasts/podcast-history.jpg" title="Listened to a lot of podcasts since 2017" alt="Listened to a lot of podcasts since 2017">
+
+I wished I had more evidience, anyhow let's go to the list of 25 podcasts below:
 
 ## Software Engineer podcasts 2022
 
@@ -104,6 +113,7 @@ Some other amazing podcasts are:
 * [Changelog Podcast](https://changelog.com/podcast)
 * [JAMStack Radio](https://www.heavybit.com/library/podcasts/jamstack-radio)
 * [Serverless chats](https://www.serverlesschats.com/)
+* [The Stackoverflow podcast](https://stackoverflow.blog/podcast/)
 
 I could proably go on and on :).
 
