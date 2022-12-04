@@ -37,7 +37,7 @@ Due to no commute in the past 12 months, I found new times and ways to listen to
     * [DevDiscuss](#devdiscuss)
     * [In Depth Podcast](#in-depth-podcast)
 * [Software Engineering podcasts from 2020](#software-engineering-podcasts-from-2020)
-* [Command Line Heroes (from Redhat) by Saron Yitbarek](#command-line-heroes-from-redhat-by-saron-yitbarek)
+    * [Command Line Heroes (from Redhat) by Saron Yitbarek](#command-line-heroes-from-redhat-by-saron-yitbarek)
     * [Developing Up By Mike Miles](#developing-up-by-mike-miles)
     * [The SAAS Podcast by Umer Khan](#the-saas-podcast-by-umer-khan)
 * [Podcasts I started listening to in 2019](#podcasts-i-started-listening-to-in-2019)
@@ -163,7 +163,7 @@ There are surely other exceptional episodes in the In Depth podcast.
 
 Some great software engineering podcats I have listened to in 2020 include:
 
-## Command Line Heroes (from Redhat) by Saron Yitbarek
+### Command Line Heroes (from Redhat) by Saron Yitbarek
 
 [Command line heroes](https://www.redhat.com/en/command-line-heroes) is a gem of a podcast. The topics are well researched and in-depth. It covers a wide range of topics that are very relevant to all software engineers. I remember listening to the episode about [serverless](https://www.redhat.com/en/command-line-heroes/season-2/at-your-serverless) from Season 2. It was a breath of fresh air having comments from Saron, bytes from the archive, and great add-ons by multiple guests including Andrea Passwater.
 
