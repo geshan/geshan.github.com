@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 20+ Software Engineering podcasts you should not miss
+title: 20+ Software Engineering podcasts you should subscribe to now
 date: 2021-04-14T23:42:35.000+11:00
 comments: true
 tags:
@@ -247,7 +247,7 @@ This is a podcast by [HeavyBit](https://www.heavybit.com/library/) which has mor
 
 ### Mixergy by Andrew
 
-Another admirable podcast is [Mixergy]((https://mixergy.com/interviews/)) hosted by Andrew Warner. With over a 1000 interviews with proven entrepreneurs, he knows how to ask the right questions. Andrew sometimes elicits such insightful information out of his guest. It is intriguing how he does it. 
+Another admirable podcast is [Mixergy](https://mixergy.com/interviews/) hosted by Andrew Warner. With over a 1000 interviews with proven entrepreneurs, he knows how to ask the right questions. Andrew sometimes elicits such insightful information out of his guest. It is intriguing how he does it. 
 
 If you ever want to learn how to interview people this is one podcast you can't afford do miss. He generally interviews tech entrepreneurs. The interviews usually last like an hour. You even as a software engineer get to know important things about how to run a business.
 
