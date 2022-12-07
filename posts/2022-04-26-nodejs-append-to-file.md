@@ -125,7 +125,7 @@ That will yield output like the below when we check the contents of the file:
 
 <img class="center" loading="lazy" src="/images/nodejs-append-to-file/03nodejs-append-to-file-promise.jpg" title="Append contents to a file using Node.js with Promise and async-await" alt="Append contents to a file using Node.js with Promise and async-await">
 
-The promise-based API is possibly the efficient and easy-to-write way to append contents to a file using Node.js. Next up, we will see a sync append to file example.
+The promise-based API is possibly the efficient and easy-to-write way to append contents to a file using Node.js. If you want to append contents to multiple files at once you can use [JavaScript Promise.all](/blog/2022/07/javascript-promise-all/). Next up, we will see a sync append to file example.
 
 ### Sync file append using Node.js
 

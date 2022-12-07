@@ -98,7 +98,7 @@ In the above code, first, we require both [Axios](https://github.com/axios/axios
 
 Inside the function, we get the arguments from the command line if any. Then we set the `postCode` as the third argument from the command like `node axios-cheerio.js 2100`, in the above code, the `postCode` will be set to 2100.
 
-Subsequently, we set the URL to be the domain’s URL for finding rental properties in a given postcode. After that we call the URL to get its HTML using Axios, we do an await to unwrap the promise. Once we have the response, we pass it to cheerio with cheerio load to parse the response body. Consequently, as we have the full HTML we use Cheerio’s easy Jquery like API to parse out the text for the strong HTML tag inside the H1 tag which has a value like `217 properties`. Then finally we print the message and add more strings to show output on the console.
+Subsequently, we set the URL to be the domain’s URL for finding rental properties in a given postcode. After that we call the URL to get its HTML using Axios, we do an await to unwrap the promise. Once we have the response, we pass it to cheerio with cheerio load to parse the response body. Consequently, as we have the full HTML we use Cheerio’s easy Jquery like API to parse out the text for the strong HTML tag inside the H1 tag which has a value like `217 properties`. Then finally we print the message and add more strings to show output on the console. If we wanted to scrape multple URLs at once that can be achieve with [JavaScript Promise.all](/blog/2022/07/javascript-promise-all/).
 
 In case of any error, we just log the error message. The script when run with `node axios-cheerio.js 2100` gives the following output:
 

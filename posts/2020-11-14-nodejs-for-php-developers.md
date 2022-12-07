@@ -104,7 +104,7 @@ Going a bit deeper into non-sequential execution, promises and the power it has 
 
 #### Node.js promises possibilities
 
-Promises being [asynchronous](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises), you can run them concurrently. There are ways to do it. You could race 3 promises and get the results from the fastest one. You can even do `promise.all` where if one promise is rejected, it stops the whole operation. Please read more about `Promise.race`, `promise.all` and `promise.any` in this [great comparison](https://sung.codes/blog/2019/05/18/promise-race-vs-promise-any-and-promise-all-vs-promise-allsettled/).
+Promises being [asynchronous](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises), you can run them concurrently. There are ways to do it. You could race 3 promises and get the results from the fastest one. You can even do [promise.all](/blog/2022/07/javascript-promise-all/) where if one promise is rejected, it stops the whole operation. Please read more about `Promise.race`, `promise.all` and `promise.any` in this [great comparison](https://sung.codes/blog/2019/05/18/promise-race-vs-promise-any-and-promise-all-vs-promise-allsettled/).
 
 With that in mind, you can try other NPM libraries to [limit](https://github.com/sindresorhus/p-limit) promise concurrency or even [filter](https://github.com/sindresorhus/p-filter) through promises concurrently. You can do some of it with [ReactPHP](https://reactphp.org/). But it is not included in the native PHP, not even in [PHP 8](https://stitcher.io/blog/new-in-php-8). This is something new to wrap your head around in Node.js for PHP developers.
 

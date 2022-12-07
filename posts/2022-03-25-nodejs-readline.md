@@ -69,13 +69,13 @@ Then, inside the try we declare a new constant called `answer` that waits for th
 
 Towards the end, if there is an error it is caught in the `catch` section and logged. Similarly, the readline interface is closed in the `finally` section. Last we exit out of the process with the `process.exit(1)`.
 
-The code can be seen in the [pull reques](https://github.com/geshan/nodejs-readline/pull/4/files)t too. If you are looking for an ESM style import syntax version of the above example, please have a look at this [file](https://github.com/geshan/nodejs-readline/blob/master/readline-basic.mjs) with top-level async-await.
+The code can be seen in the [pull reques](https://github.com/geshan/nodejs-readline/pull/4/files)t too. If you are looking for an ESM style import syntax version of the above example, please have a look at this [file](https://github.com/geshan/nodejs-readline/blob/master/readline-basic.mjs) with top-level async-await. You can utilize [JavaScript Promise.all](/blog/2022/07/javascript-promise-all/) if you want to read multiple files at once.
 
 In the next section, we will look at a similar example with timeout added to it where the answer is expected within X seconds from the user. Let’s see how that is done.
 
 ## Readline example with timeout
 
-The above basic example is good for simple tasks. Let’s say if we need to give the user a specific time for instance 5 seconds before the user can answer `4x4`, we can do it easily using `AbortController`. Below is an example of the same single question waiting for an answer but it will stop if the answer is not provided in 5 seconds:
+The above basic example is good for simple tasks. Let’s say if we need to give the user a specific time for instance 5 seconds before the user can answer `4x4`, we can do it easily using `AbortController`. You can also check out other ways to [wait in JavaScript](/blog/2022/08/javascript-wait-1-second/). Below is an example of the same single question waiting for an answer but it will stop if the answer is not provided in 5 seconds:
 
 ```js
 const readline = require('readline/promises');

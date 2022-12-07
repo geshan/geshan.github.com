@@ -50,7 +50,7 @@ The magic of Node.js is in the event loop, the simplest definition of the event 
 
 Node.js has become very popular in the [past 10 years](https://trends.google.com/trends/explore?date=2012-01-05%202022-08-16&q=%2Fm%2F0bbxf89). It has become an in-demand technology for any kind of project, for instance you can create a Desktop app with [Electron](https://www.electronjs.org/). The slack app you might be familiar with is also an Electron app.
 
-With its features like speed, performance, and scalability, creating [Node.js microservices](/blog/2020/11/nodejs-microservices/) is also a popular use case.
+With its features like speed, performance, and scalability, creating [Node.js microservices](/blog/2020/11/nodejs-microservices/) is also a popular use case to write JavaScript code on the server. JavaScript developers have loved Node.js for more than a decade now.
 
 Let’s look at a simple Joke API built with Express (the most popular Node.js framework) to get a taste of what Node.js code looks like:
 
@@ -156,7 +156,7 @@ Which is not very descriptive, so it also adds:
 
 So it would be fair to say Bun is the real full stack JavaScript toolchain that has a bundler, transpiler, package manager (npm client), task runner, and everything in between. It is said to focus on 3 things, speed, new levels of performance, and being a great and complete tool.
 
-It is written in [Zig](https://ziglang.org/) programming language and claims to run 60.24 queries per second for an SQLite app compared to 23.28 QPS for a Node 18 app with better-sqlite3. You can listen to Jarred about Zig, performance focus, and other things on this [podcast](https://podrocket.logrocket.com/bun) about Bun.
+It is written in [Zig](https://ziglang.org/) programming language and claims to run 60.24 queries per second for an SQLite app compared to 23.28 QPS for a Node 18 app with better-sqlite3. You can listen to Jarred about Zig, performance focus, and other things on this [podcast](https://podrocket.logrocket.com/bun) about Bun. You can install bun with `curl https://bun.sh/install | bash` and start using it.
 
 Let’s have a look at some Bun code for the above Joke API:
 
@@ -209,6 +209,8 @@ Bun does make bold claims like `bun install` is 20x faster than `yarn` and `bun 
 
 You have learned about two new Node.js alternatives Deno and Bun. For the time being, both of them have a lot of ground to cover to really be as dominant as Node.js. 
 
-> Deno looks very promising as a Node.js alternative but Bun though claiming to be super fast needs to work on more compatibility and also docker build issues. 
+> Deno looks very promising as a Node.js alternative but Bun though claiming to be super fast needs to work on more compatibility and also docker build issues.
+
+In the current situation both Deno and Bun don't have the firepower to replace Node any time soon.
 
 Happy Coding!

@@ -49,7 +49,7 @@ EXPOSE 8080
 CMD ["node", "index.js"]
 ```
 
-`RUN npm ci` is another better [option](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable "NPM ci a better option") in place of `RUN npm install --production`
+`RUN npm ci` is another better [option](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable "NPM ci a better option") in place of `RUN npm install --production`. If you want to use something else in place of Node.js it would be good to explore a couple of [Node.js alternatives](/blog/2022/08/nodejs-alternatives/).
 
 ### Let's use the regular docker build
 
