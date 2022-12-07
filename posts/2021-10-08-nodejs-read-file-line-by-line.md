@@ -237,7 +237,7 @@ It will be better to choose the popular ones and the one most recently updated i
 
 > The downloads for both file readline and readlines ng are around 3 per week compared to 46K and 56K for line reader and n-readlines respectively.
 
-Make an informed choice for better support if you need it.
+Make an informed choice for better support if you need it. In case you want to read multiple files at once you can use [JavaScript Promise.all](/blog/2022/07/javascript-promise-all/) to get the job done.
 
 In terms of memory and CPU usage all methods except of the first `fs.readfilesync`, all other stream or callback based options consumed under 10 MB or memoery and finished before 10 seconds with 70-94% CPU usage. Read file sync consumed 225 MB of memory for a 90 MB file.
 

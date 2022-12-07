@@ -101,7 +101,7 @@ In case you are using Node 15+, the above behavior can be achieved using timers 
 
 ## Sleep with timers in Node 15+
 
-If you are using Node.js 15+, [timers/promises](https://nodejs.org/api/timers.html#timers-promises-api) can be utilized to put in setTimeout as a promise to delay the execution. The same result can be achieved using `setTimeout` from timers/promises as:
+If you are using Node.js 15+, [timers/promises](https://nodejs.org/api/timers.html#timers-promises-api) can be utilized to put in setTimeout as a promise to delay the execution. The same result can be achieved using `setTimeout` from timers/promises to wait Node.js process as:
 
 ```js
 const {setTimeout} = require('timers/promises');
