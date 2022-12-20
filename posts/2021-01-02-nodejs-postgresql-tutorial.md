@@ -379,7 +379,7 @@ module.exports = router;
 
 The main change here in the `routes/quotes.js` file is the addition of quotes service. After that, the `/quotes` is getting the quotes dynamically using the added quotes service.
 
-Please take note that the quotes are already paginated, meaning `https://localhost:3000/quotes?page=2` will give out quotes 11-20 as it has 10 quotes per page in the config.js file. The output at this point for page 2 should look something like below:
+Please take note that the quotes are already paginated, meaning `https://localhost:3000/quotes?page=2` will give out quotes 11-20 as it has 10 quotes per page in the config.js file. You can also represent the quotes as a [TypeScript Record](/blog/2022/12/typescript-record/) Type which makes it easier to find by Id. The output at this point for page 2 should look something like below:
 
 <img class="center" loading="lazy" src="/images/nodejs-postgresql-tutorial/06quotes-api-page-2.jpg" title="Quotes on page 2 fetched dynamically from the database table" alt="Quotes on page 2 fetched dynamically from the database table">
 
