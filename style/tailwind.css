@@ -451,3 +451,12 @@ table {
     left: 5px;
   }
 }
+
+/* Responsive Google Slides, Vimeo, Twitch */
+iframe[src*="docs.google.com"],
+iframe[src*="player.vimeo.com"],
+iframe[src*="player.twitch.tv"]{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
