@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to use Next.js with Docker and Docker compose a beginners guide
+title: How to use Next.js with Docker and Docker compose a beginner's guide
 date: 2023-01-08T23:47:55.000+11:00
 comments: true
 tags:
@@ -8,8 +8,9 @@ tags:
 - Javascript
 - Web Development
 cover: "/images/nextjs-docker/01nextjs-docker.jpg"
-pagetitle: How to use Next.js with Docker and Docker compose a beginners guide
-description: In this tutorial, learn how to use Next.js with docker with a step-by-step example.
+pagetitle: How to use Next.js with Docker and Docker compose a beginner's guide
+description: In this tutorial, learn how to use Next.js with docker with a step-by-step
+  example.
 keywords: nextjs docker, docker nextjs, next.js docker, docker next.js
 
 ---
