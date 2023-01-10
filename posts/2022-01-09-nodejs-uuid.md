@@ -157,7 +157,9 @@ There are surely other NPM packages to generate UUID. Below is a quick compariso
 
 <img class="center" loading="lazy" src="/images/nodejs-uuid/03nodejs-uuid-npmtrends.jpg" title="Comparision of Node.js UUID related NPM modules on NPM Trends" alt="Comparision of Node.js UUID related NPM modules on NPM Trends">
 
-As seen above, UUID is by far the most popular one with over 50 million weekly downloads. The second most downloaded NPM package is Nano ID with 15 million weekly downloads. Time to wrap up!
+As seen above, UUID is by far the most popular one with over 50 million weekly downloads. The second most downloaded NPM package is Nano ID with 15 million weekly downloads. 
+
+You can also run multiple NPM commands with [concurrenlty npm](/blog/2022/09/npm-concurrently/) package to test things faster. Time to wrap up!
 
 ## Conclusion
 
