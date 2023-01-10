@@ -205,7 +205,7 @@ A snippet of the same example with timeout added looks like the following:
 })();
 ```
 
-The code is exactly the same as the above, except now there is a timeout of 900 milliseconds added as highlighted. 900 ms is still high in normal scenarios but in this case, you know the API is going to respond in at least 8000 milliseconds. When you run the above code you will see the following:
+The code is exactly the same as the above, except now there is a timeout of 900 milliseconds added as highlighted. 900 ms is still high in normal scenarios but in this case, you know the API is going to respond in at least 8000 milliseconds. You can also run the checks concurrently with [Javascript promise.all](/blog/2022/07/javascript-promise-all/) if you want. When you run the above code you will see the following:
 
 <img class="center" loading="lazy" src="/images/axios-timeout/03after-axios-timeout.jpg" title="Output after Axios timeout - takes 0.96 seconds" alt="Output after Axios timeout - takes 0.96 seconds">
 
