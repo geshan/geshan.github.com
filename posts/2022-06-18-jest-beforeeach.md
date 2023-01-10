@@ -217,7 +217,7 @@ With the above 3 tests, we will have 100% code coverage that can be seen by runn
 npm run test:cov
 ```
 
-The above common is mapped to `jest –coverage` and as jest has a built-in code coverage it gives the following output:
+The above common is mapped to `jest –coverage`. You can even [run single jest test](/blog/2022/07/jest-run-single-test/) if that makes it easier. Jest has a built-in code coverage, so it gives the following output:
 
 <img class="center" loading="lazy" src="/images/jest-beforeeach/03jest-beforeeach-code-cov.jpg" title="Example output for Jest BeforeEach test code coverage" alt="Jest before each code coverage">
 

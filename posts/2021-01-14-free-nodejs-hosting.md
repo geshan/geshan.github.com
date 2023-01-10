@@ -92,7 +92,7 @@ This is a simple quotes API and you can find the code open-source on [Github](ht
 
 > Render has one of the smoothest developer experience and deploy the Node.js app was a breeze.
 
-It also has comprehensive [docs](https://render.com/docs?utm_source=geshan.com.np) to help you deploy not only Node.js apps for free but a host of other languages and frameworks. Some other things you can deploy on Render are Python, Go, PHP (Laravel) and Docker.
+It also has comprehensive [docs](https://render.com/docs?utm_source=geshan.com.np) to help you deploy not only Node.js apps for free but a host of other languages and frameworks. Some other things you can deploy on Render are Python, Go, PHP (Laravel) and Docker. You can also host other [Node.js alternatives](/blog/2022/08/nodejs-alternatives/) on Render like Deno and Bun.js.
 
 #### Deploy Node.js Quotes API to Render
 

@@ -148,7 +148,7 @@ The list goes on and on, [Spotify](https://blog.risingstack.com/how-enterprises-
 
 > In addition, it also proves it can work in a large scale organization with 90 teams, 600 developers, and 5 development offices on 2 continents building the same product.
 
-You can read more success stories in this [post](https://trio.dev/blog/companies-use-node-js). Node.js microservices are here to stay and they have been proven both battle-tested and working amazingly at enterprise scale.
+You can read more success stories in this [post](https://trio.dev/blog/companies-use-node-js). Node.js microservices are here to stay and they have been proven both battle-tested and working amazingly at enterprise scale. Now there are other [Node.js alternatives](/blog/2022/08/nodejs-alternatives/) like Deno and Bun.js that you can try out if they are performant and fit for your purpose.
 
 ## Conclusion
 
