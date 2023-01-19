@@ -14,7 +14,7 @@ description: Story of AU Tech Jobs that helped 6+ people land full-time tech job
 keywords: life changing startup
 
 ---
-Most often than not, the success of any project (or start-up) is measured in terms of current and potential profits. We often overlook human growth which is even more fulfilling. In this post, I am going to discuss how a side project/mini startup -- [AU Tech Jobs](https://autechjobs.ml) helped at least 6 people, all immigrants, land full-time tech jobs from casual non-tech roles and how it has changed their lives in more positive ways during this looming pandemic.
+Most often than not, the success of any project (or start-up) is measured in terms of current and potential profits. We often overlook human growth which is even more fulfilling. In this post, I am going to discuss how a side project/mini startup -- [AU Tech Jobs](https://autechjobs.com) helped at least 6 people, all immigrants, land full-time tech jobs from casual non-tech roles and how it has changed their lives in more positive ways during this looming pandemic.
 
 <!-- more -->
 
@@ -104,7 +104,7 @@ Not to my surprise, he got an offer in Jan-2021 and started working as a Jr. Fro
 
 Then we have AM, she re-found her love of writing with AU Tech Jobs in Sep-2020. Now she is freelancing as a writer and social media person.
 
-You can read some success stories on this [blog post](https://autechjobs.ml/blog/side-project-helps-to-land-tech-job-in-australia/) at AU Tech Jobs’ blog too. I can go on and on with the other 3-5 people who cracked the prized full-time tech job. 
+You can read some success stories on this [blog post](https://autechjobs.com/blog/side-project-helps-to-land-tech-job-in-australia/) at AU Tech Jobs’ blog too. I can go on and on with the other 3-5 people who cracked the prized full-time tech job. 
 
 > Not only did they increase their income by 1.5x to 2x but also earned the flexibility to work from home during such a harsh pandemic time. 
 

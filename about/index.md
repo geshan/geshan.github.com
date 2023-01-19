@@ -48,7 +48,7 @@ I have a couple of side projects. I only do one side project a year to get it ov
 
 ### AU Tech Jobs - 2020
 
-[AU Tech Jobs](https://autechjobs.ml/) is a tech job aggregator that collects jobs from 95+ companies. Currently, the [app](https://app.autechjobs.ml/) has over 2700 jobs listed. Its USPs include:
+[AU Tech Jobs](https://autechjobs.com/) is a tech job aggregator that collects jobs from 95+ companies. Currently, the [app](https://app.autechjobs.com/) has over 2700 jobs listed. Its USPs include:
 
 - Job description summary for easy reading
 - Tag job as non-technical by using external categorization service
