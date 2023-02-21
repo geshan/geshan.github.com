@@ -120,7 +120,7 @@ It will give us output similar to the below:
 
 <img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/02rabbitmq-docker.jpg" title="Run RabbitMQ with Docker and Docker compose" alt="Run RabbitMQ with Docker and Docker compose">
 
-Please be aware that we are using the default configuration used by the official [RabbitMQ docker image](https://hub.docker.com/_/rabbitmq). This means it will use `guest`:`guest` for username and password including other default settings. To check if our RabbitMQ is running fine, it is best to hit `http://localhost:156763` on the browser of our choice. We should see a long screen like below:
+Please be aware that we are using the default configuration used by the official [RabbitMQ docker image](https://hub.docker.com/_/rabbitmq). This means it will use `guest`:`guest` for username and password including other default settings. To check if our RabbitMQ is running fine, it is best to hit `http://localhost:15673` on the browser of our choice. We should see a long screen like below:
 
 <img class="center" loading="lazy" src="/images/rabbitmq-docker-nodejs/03rabbitmq-mgmt-login.jpg" title="RabbitMQ managemment running locally - login with guest:guest" alt="RabbitMQ managemment running locally - login with guest:guest">
 
