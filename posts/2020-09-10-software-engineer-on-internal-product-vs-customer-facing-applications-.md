@@ -24,7 +24,7 @@ Working on software systems is usually a complex process if not a complicated on
 
 E-commerce has been around for decades now. I have worked for fashion e-commerce companies for the past 8 years now on 2 continents. Unsurprisingly, due to COVID-19, many brick and mortar businesses have been forced to jump on the e-commerce bandwagon. This has created many new opportunities. Smaller companies could live with services like [Shopify](https://www.shopify.com.au/) or one of its competitors like [Wix](https://www.wix.com/ecommerce/website). This would result in no or minimal software development.
 
-> Businesses with an appetite for in-house software development can even start with something like woo-commerce, Magento, Odoo, or similar. But, at a scale of millions of customers, cookie-cutter generic solutions might not be the best fit.
+> Businesses with an appetite for in-house software development can even start with something like woo-commerce, [Magento](https://business.adobe.com/products/magento/magento-commerce.html), Odoo, or similar. But, at a scale of millions of customers, cookie-cutter generic solutions might not be the best fit.
 
 Either it is too much work to get things customized well or hammering the screw is not a path you want to choose for your business. Therefore, having custom-built solutions that can scale well with business demands is crucial for commercial success.
 
