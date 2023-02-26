@@ -360,6 +360,6 @@ All the code for this tutorial is available in a public GitHub repository for yo
 
 ## Conclusion
 
-In this tutorial about Node.js and SQLite, we have learned how to create a minimal REST API for Quotes. This is more like a starting point to build bigger things.
+In this tutorial about Node.js and SQLite, we have learned how to create a minimal REST API for Quotes. This is more like a starting point to build bigger things. You can host your application for free following this tutorial on [Node.js free hosting](/blog/2021/01/free-nodejs-hosting/).
 
 > You can use the open-source [Github repository](https://github.com/geshan/nodejs-sqlite) to use this example as a base to build your own API with Node.js and SQLite using the Express.js framework. Best of luck!

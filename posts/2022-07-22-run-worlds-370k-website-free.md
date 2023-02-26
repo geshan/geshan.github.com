@@ -71,7 +71,7 @@ My blog is fully open source and currently generated with [Eleventy](https://www
 
 > From the cost viewpoint, this blog’s code is open and hosted on GitHub for which I pay $0/month.
 
-Making it open source is my choice, I can make it closed source and still get the job done. But I want to contribute back to the community by making it open source. People new to Eleventy can see the changes and features on my blog and use it if they want. Consequently, I will unravel if the blog uses and server or database.
+Making it open source is my choice, I can make it closed source and still get the job done. But I want to contribute back to the community by making it open source. People new to Eleventy can see the changes and features on my blog and use it if they want. If you want to host your Node.js applcation, you can do it for for not cost with [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) services. Consequently, I will unravel if the blog uses and server or database.
 
 ## JAM stack website - no servers no database
 

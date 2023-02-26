@@ -214,7 +214,7 @@ The changes will be picked up pretty fast and show up on the browser as follows:
 
 <img class="center" loading="lazy" src="/images/nextjs-docker/06nextjs-with-docker.jpg" title="Next.js running with Docker and Docker compose locally" alt="Next.js running with Docker and Docker compose locally">
 
-Congrats! You have successfully Dockerized a Next.js project. As the app has been Dockerized you can run it on any service with or without Kubernetes.
+Congrats! You have successfully Dockerized a Next.js project. As the app has been Dockerized you can run it on any service with or without Kubernetes. You can also try out [PostgreSQL with Docker](/blog/2021/12/docker-postgres/) and Docker compose and connect it with you Next.js application.
 
 Thank you for following along, you can find all the code of this tutorial in this [GitHub repository](https://github.com/geshan/next-js-api-routes-docker). For the docker-specific code please refer to this [pull request](https://github.com/geshan/next-js-api-routes-docker/pull/1).
 

@@ -50,7 +50,7 @@ You can read my previous tutorial to try [Node.js with MySQL](/blog/2020/11/node
 1. You have Node.js (preferably Node 18.x) installed and running on your machine (or Node.js running with a docker container).
 2. You are aware of how Node.js generally works and also have a bit of Express Js experience.
 3. Having some knowledge of Git and GitHub will be really useful.
-4. For the database we will use a free database on [ElephantSQL](https://www.elephantsql.com/), so please register and set up a free PostgreSQL database there. Of course, you should know how a relational database works.
+4. For the database we will use a free database on [ElephantSQL](https://www.elephantsql.com/), so please register and set up a free PostgreSQL database there. Of course, you should know how a relational database works. If you want to use PostgreSQL locally you should try out [Docker and PostgreSQL](/blog/2021/12/docker-postgres/).
 5. You are able to code using an IDE. I will be using VS Code as an editor but you are free to use any code editor of your choice for this Node.js PostgreSQL tutorial.
 
 ## Steps for Node.js PostgreSQL tutorial

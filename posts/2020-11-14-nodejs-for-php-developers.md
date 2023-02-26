@@ -274,7 +274,9 @@ As Node.js has a built-in web server, the Dockerfile is much cleaner.
 
 > When you install node, npm is bundled with it. This eliminates the need to install packages at a different stage in the docker build.
 
-In the above Dockerfile multi-stage docker build is used to separate production and development docker images. Having the package manager (npm) bundled and having the web-server as part of the language/runtime is something different in Node.js for PHP developers. If you are interested more in Dockering a Node.js applicaiton step-by-step follow this [tutorial](/blog/2020/11/nodejs-with-docker/). Also, [nodemon](/blog/2021/02/nodemon/) is only installed in the dev stage as it will be used only for development.
+In the above Dockerfile multi-stage docker build is used to separate production and development docker images. Having the package manager (npm) bundled and having the web-server as part of the language/runtime is something different in Node.js for PHP developers.
+
+If you are interested more in Dockering a Node.js applicaiton step-by-step follow this [tutorial](/blog/2020/11/nodejs-with-docker/). Also, [nodemon](/blog/2021/02/nodemon/) is only installed in the dev stage as it will be used only for development. There are other runtimes for Node.js which are new JavaScript [Node.js alternatives](/blog/2022/08/nodejs-alternatives/). These are Deno and Bun, both claim to be better then Node.js in some way but Node.js is still the de-facto way to run JavaScript on the server.
 
 ## Conclusion
 

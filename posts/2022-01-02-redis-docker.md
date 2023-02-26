@@ -54,7 +54,7 @@ To run some Redis commands inside the container, we can run `docker exec -it tes
 
 <img class="center" loading="lazy" src="/images/redis-docker/03redis-cli.jpg" title="Execute Redis CLI inside Redis Docker container" alt="Execute Redis CLI inside Redis Docker container">
 
-As seen above we could set some value with the key `test` and get it back. As there are no volumes set or any commands given to persist the keys and values will be lost when the container stops. Next up we will look into running the same version of Redis with docker-compose.
+As seen above we could set some value with the key `test` and get it back. As there are no volumes set or any commands given to persist the keys and values will be lost when the container stops. If you are looking for a Relational database with docker try this tutorial on [PostgreSQL and Docker](/blog/2021/12/docker-postgres/). Next up we will look into running the same version of Redis with docker-compose.
 
 ## Redis with Docker-compose
 
