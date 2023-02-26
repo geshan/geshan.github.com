@@ -150,6 +150,8 @@ The list goes on and on, [Spotify](https://blog.risingstack.com/how-enterprises-
 
 You can read more success stories in this [post](https://trio.dev/blog/companies-use-node-js). Node.js microservices are here to stay and they have been proven both battle-tested and working amazingly at enterprise scale. Now there are other [Node.js alternatives](/blog/2022/08/nodejs-alternatives/) like Deno and Bun.js that you can try out if they are performant and fit for your purpose.
 
+It has become very easy to host any Node.js application with [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/). Once your microservice has a significant amount of traffic then you can move it to a better hosting, for instance a Kubernetes cluster.
+
 ## Conclusion
 
 > Javascript might be [the most misunderstood language in the world](http://www.crockford.com/javascript/javascript.html) but with [best practices](https://github.com/goldbergyoni/nodebestpractices) in place Node.js is here for the long-term. It is ruling the enterprises as well as making the [startup](https://medium.com/@dreamtoipo/why-modern-day-startup-heroes-are-choosing-node-js-to-develop-their-application-34e5fcbefd10) developers happy.

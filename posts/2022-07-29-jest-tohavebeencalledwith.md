@@ -279,4 +279,6 @@ Great! You have learned how to use Jest toHaveBeenCalledWith covering multiple u
 
 ## Conclusion
 
-In this tutorial about Jest toHaveBeenCalledWith you learned how to do the partial matching for object properties and array elements. First, a happy path was covered with tests. Then you wrote a test to verify how the code behaves in an edge case situation. Carry on testing!
+In this tutorial about Jest toHaveBeenCalledWith you learned how to do the partial matching for object properties and array elements. You can also learn about [running a single jest test](/blog/2022/07/jest-run-single-test/) easily to target your specific test. 
+
+First, a happy path was covered with tests. Then you wrote a test to verify how the code behaves in an edge case situation. Carry on testing!

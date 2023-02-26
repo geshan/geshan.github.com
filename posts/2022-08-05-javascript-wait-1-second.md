@@ -117,7 +117,7 @@ const {setTimeout} = require('timers/promises');
 })();
 ```
 
-The code is the same as the previous example, the main difference here is you are using a native setTimeout function as a promise in place of defining your one promise to block the code. This is a better way to wait for 1 second in JavaScript, specifically Node.js, as it uses native code.
+The code is the same as the previous example, the main difference here is you are using a native setTimeout function as a promise in place of defining your one promise to block the code. This is a better way to wait for 1 second in JavaScript, specifically Node.js, as it uses native code. This helps with any application using Node.js sleep.
 
 In addition to using setTimeout and Promises with setTimeout, you can also use an NPM package to wait for X seconds using JavaScript. In the section below, you will use the Delay NPM package to do the same.
 
@@ -158,6 +158,8 @@ Still, Delay is the most popular among them with more than 2 million downloads i
 The first piece of advice would be to not use an NPM package to wait in JavaScript if you opt to use one, go for Delay as it has exponentially more downloads than all the other 4 competitors combined.
 
 All the code examples are available in this [GitHub repository](https://github.com/geshan/javascript-wait) for your reference.
+
+You can run all the examples at once with [NPM concurrently](/blog/2022/09/npm-concurrently/), the results might not be as you expect though :).
 
 ## Conclusion
 

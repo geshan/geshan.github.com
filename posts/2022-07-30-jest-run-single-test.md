@@ -269,6 +269,8 @@ npm run test:pat 'should return empty array if no data is found'
 
 It will run the tests that match the given pattern without the need to type all that long command. Similarly, you can slap in a `--watch` after the above command to make it run on each file save, which is very helpful while writing tests.
 
+If you want to add variety to your tests and verify the function have been called with the right parameters, read this tutorial about [Jest toHaveBeenCalledWith](/blog/2022/07/jest-tohavebeencalledwith/). It will be very helpful to have more confidence in your Jest tests. 
+
 ## Conclusion
 
 In this tutorial, you learned how to run single or specific tests with Jest by using either `.only` or `-t` CLI parameter. Both those options can be used too. After that, the `--testPathPattern` Jest CLI parameter was discussed to target tests written on a specific file. 

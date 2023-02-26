@@ -245,6 +245,8 @@ The main caveat here is when working with external resources they will have a ra
 
 All of the above code is available as [pull request](https://github.com/geshan/javascript-promise-all/pull/2) and an [open-source repository](https://github.com/geshan/javascript-promise-all/) on GitHub for your reference.
 
+You can also run multiple NPM commands simultenously like Promise.all with the [NPM concurrently](/blog/2022/09/npm-concurrently/) package. It is doing a similar thing but from the CLI level.
+
 ## Conclusion
 
 We saw how to use `JavaScript Promise.all` to speed up the fetching time for data from external  API. It can also be used with internal resources or function in other files but be careful that running multiple things concurrently can be an issue for external as well as internal resources.

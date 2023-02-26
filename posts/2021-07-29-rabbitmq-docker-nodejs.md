@@ -359,4 +359,4 @@ In this step-by-step tutorial, we saw how to set up RabbitMQ with Docker and Doc
 
 > In a more real-life application, the messages may be produced by a different service potentially written in a different language like PHP or Python. The message can be consumed by another service written in Node.js or GoLang.
 
-As long as the messages are passed on using a standard notation like JSON, they should be easily produced and processed by the respective consumer. I hope this guide was useful to scratch the surface of RabbitMQ with Docker and publishing and consuming RabbitMQ messages with Node.js. Happy async processing!
+As long as the messages are passed on using a standard notation like JSON, they should be easily produced and processed by the respective consumer. You can also try out [PostgreSQL with Docker](/blog/2021/12/docker-postgres/) for a relational DBMS. I hope this guide was useful to scratch the surface of RabbitMQ with Docker and publishing and consuming RabbitMQ messages with Node.js. Happy async processing!
