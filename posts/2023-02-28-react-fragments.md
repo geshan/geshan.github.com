@@ -4,7 +4,8 @@ title: How to use React fragments, a step-by-step guide for beginners
 date: 2023-02-28T23:28:57.000+11:00
 comments: true
 tags:
-- Software Engineering
+- Javascript
+- Web Development
 cover: "/images/react-fragments/01react-fragments-full.jpg"
 pagetitle: How to use React fragments, a step-by-step guide for beginners
 description: In this tutorial you will learn how to use React fragments editing a simple but useful app that fetches latest HackerNews stories. Read it!
