@@ -7,6 +7,7 @@ tags:
 - Node.js
 - Javascript
 - Web Development
+- Docker
 cover: "/images/nextjs-docker/01nextjs-docker.jpg"
 pagetitle: How to use Next.js with Docker and Docker compose a beginner's guide
 description: In this tutorial, learn how to use Next.js with docker with a step-by-step
