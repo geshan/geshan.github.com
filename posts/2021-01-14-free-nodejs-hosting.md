@@ -186,7 +186,7 @@ Next, let's look at how Cyclic compares to Render and Vercel.
 
 > Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline.
 
-As mentioned its [pricing](https://www.cyclic.sh/pricing) page, which has a self claimed `generous free tier` we can deploy apps which can be invoked 10K times in a month. It also has some hard and soft limits mentioined in the [limits](https://docs.cyclic.sh/docs/overview/limits) page.
+As mentioned its [pricing](https://www.cyclic.sh/pricing) page, which has a self claimed `generous free tier` we can deploy one app which can be invoked 10K times in a month. It also has some hard and soft limits mentioined in the [limits](https://docs.cyclic.sh/docs/overview/limits) page.
 
 #### Deploy Node.js Quotes API to Cyclic
 
