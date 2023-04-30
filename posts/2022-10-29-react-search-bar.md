@@ -9,8 +9,10 @@ tags:
 - Web Development
 cover: "/images/react-search-bar/01react-search-bar.jpg"
 pagetitle: How to create a React search bar a step-by-step guide
-description: In this tutorial, learn how to add a React search bar to an existing app step-by-step.
+description: In this tutorial, learn how to add a React search bar to an existing
+  app step-by-step.
 keywords: react search bar, reactjs search bar, search bar react, search bar reactjs
+
 ---
 React is the [most popular](https://2021.stateofjs.com/en-US/libraries/front-end-frameworks) frontend framework (ok a library) in terms of usage for the past 6 years. Being able to search content is a very useful feature for all websites and React apps are no exception. In this post, you will learn how to add a React search bar to an existing React app step-by-step. Let’s get going!
 
@@ -168,7 +170,7 @@ Next, the `updateKeyword` function is defined which filters out stories based on
 
 After that, the `SearchBar` component is added on line 45. Here you pass in the `keyword` variable and `updatedKeyword` function as `onChange so that the component works as intended. 
 
-One thing to notice here is, because there are multiple elements returned by this component it is wrapped into a [React fragment](https://reactjs.org/docs/fragments.html) with its [short syntax](https://reactjs.org/docs/fragments.html#short-syntax). Without this wrapping, it will throw an `Objects are not valid as a React child (found: [object Promise]). If you meant to render a collection of children, use an array instead.` error. After this integration, the search functionality will work.
+One thing to notice here is, because there are multiple elements returned by this component it is wrapped into a [React fragment](/blog/2023/02/react-fragments/) with its [short syntax](https://reactjs.org/docs/fragments.html#short-syntax). Without this wrapping, it will throw an `Objects are not valid as a React child (found: [object Promise]). If you meant to render a collection of children, use an array instead.` error. After this integration, the search functionality will work.
 
 For you to get the full context of this application, below HackerNews Stories component that loops through the passed-in stories and renders the title, author, and point in an H3 element:
 
