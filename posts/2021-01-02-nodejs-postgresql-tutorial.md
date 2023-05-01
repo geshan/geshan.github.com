@@ -6,6 +6,7 @@ comments: true
 tags:
 - Web Development
 - Node.js
+- Postgres
 cover: "/images/nodejs-postgresql-tutorial/01nodejs-postgres-tutorial.jpg"
 pagetitle: 'Node.js Postgresql tutorial: Build a simple REST API with Express step-by-step'
 description: Follow this 2500+ word step-by-step tutorial to learn Node.js and PostgreSQL

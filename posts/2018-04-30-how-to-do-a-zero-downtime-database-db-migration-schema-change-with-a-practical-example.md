@@ -9,6 +9,7 @@ tags:
 - deployment
 - devops
 - Software Engineering
+- Mysql
 cover: "/images/db-migration/db-migration.png"
 description: Database migration on a production database is never simple. You can
   run your alter statements with zero or minimal downtime following the steps mentioned

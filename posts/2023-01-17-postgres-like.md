@@ -5,6 +5,7 @@ date: 2023-01-17T22:47:55.000+11:00
 comments: true
 tags:
 - Software Engineering
+- Postgres
 cover: "/images/postgres-like/01postgres-like.jpg"
 pagetitle: How to use LIKE in PostgreSQL a beginner’s guide with practical examples
 description: In this tutorial, you will learn how to use the PostgreSQL LIKE and ILIKE expressions with practical examples.

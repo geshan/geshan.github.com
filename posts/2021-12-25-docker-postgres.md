@@ -6,6 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Docker
+- Postgres
 cover: "/images/docker-postgres/01docker-postgres.jpg"
 pagetitle: Postgres with Docker and Docker compose a step-by-step guide for beginners
 description: Learn how to set up and run PostgreSQL with docker and docker-compose

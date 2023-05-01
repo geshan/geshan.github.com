@@ -7,6 +7,7 @@ comments: true
 tags:
 - Web Development
 - Node.js
+- Mysql
 cover: "/images/nodejs-mysql-tutorial/00nodejs-mysql-tutorial-full.jpg"
 pagetitle: 'Node.js MySQL tutorial: a step-by-step getting started guide with Express
   js REST API'

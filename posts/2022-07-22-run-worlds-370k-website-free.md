@@ -1,25 +1,25 @@
 ---
 layout: post
-title: How I run one of the world’s top 370K websites for free
+title: How I run one of the world’s top 320K websites for free
 date: 2022-07-22T22:39:45.000+11:00
 comments: true
 tags:
 - Software Engineering
 - Misc
-cover: "/images/worlds-top-370k-website/01run-top-website-free.jpg"
-pagetitle: How I run one of the world’s top 370K websites for free
-description: Find out how I run one of the world's top 370K website for $0. Quick
+cover: "/images/worlds-top-370k-website/01run-top-website-free-320.jpg"
+pagetitle: How I run one of the world’s top 320K websites for free
+description: Find out how I run one of the world's top 320K website for $0. Quick
   answer Cloudflare free plan, full details in the post.
 keywords: run world's top website for free, top website free
 
 ---
 Years back, being in the top 1 million websites worldwide was one of the goals for this blog when I saw that on Alexa.com. I am not sure when that milestone was hit, it looks like it was before [2019](https://web.archive.org/web/20190731210538/https://www.alexa.com/siteinfo/geshan.com.np) as per Web archive.
 
-Ok, I have said it, this blog you are reading is one of the top 370K websites in the world as per [Similarweb](https://i.ibb.co/cFjBYXN/geshan-com-np-rank-jul-22.jpg). In this post, I will peel the layers on how I run this blog absolutely free. Yes, you heard it right, this “popular” blog 😊 runs for exactly $0 a month and has no recurring operating cost whatsoever. Let's get into the details!
+Ok, I have said it, this blog you are reading is one of the top 320K websites in the world as per [Similarweb](https://i.ibb.co/cFjBYXN/geshan-com-np-rank-jul-22.jpg). In this post, I will peel the layers on how I run this blog absolutely free. Yes, you heard it right, this “popular” blog 😊 runs for exactly $0 a month and has no recurring operating cost whatsoever. Let's get into the details!
 
 <!-- more -->
 
-<img class="center" loading="lazy" src="/images/worlds-top-370k-website/01run-top-website-free.jpg" title="Run one of the world's top 370K websites for free" alt="Run one of the world's top 370K websites for free">
+<img class="center" loading="lazy" src="/images/worlds-top-370k-website/01run-top-website-free-320.jpg" title="Run one of the world's top 320K websites for free" alt="Run one of the world's top 320K websites for free">
 
 ## Table of contents
 
@@ -44,7 +44,7 @@ Below are the main points if you don’t want to read the long explanation in th
 3. As this is primarily a static website (HTML, CSS, and some JavaScript - mostly vanilla), there is no database, no server, no image hosting, or S3 bucket equating to 0 recurring operational costs. On the flip side, this blog is a PWA where you can browse all/most of the content offline.
 4. I am a Cloudflare fan (a bigger fan of their free plan) and exploit all the FREE services they provide like DNS, email mapping (which is in beta), SSL, caching, etc. Yes, you can email me at me@geshan.com.np :). As soon as they have a new setting or feature I go and turn it on for example [early hints](https://blog.cloudflare.com/early-hints/).
 5. The code for my blog is fully open source and available on [GitHub](https://github.com/geshan/geshan.github.com) for which I pay $ 0 every year.
-6. In terms of popularity, [Similarweb](https://www.similarweb.com/website/geshan.com.np) says my blog is in the world’s most popular 370K websites - in Jul-2022 at the time of writing this.
+6. In terms of popularity, [Similarweb](https://www.similarweb.com/website/geshan.com.np) says my blog is in the world’s most popular 320K websites - in Mar-2023 at the time of writing this.
 7. The main turning point for traffic was in Q4-2020 when I changed from writing about things I liked to topics people search for on Google. SEO and pull marketing work much better.
 
 The primary takeaway here is:
@@ -146,7 +146,7 @@ Let's look at how being on the top million website lists helps in the next secti
 
 There are multiple sources that list the top 1 million websites in the world. There is the [majestic million](https://majestic.com/reports/majestic-million) list, [Tranco](https://tranco-list.eu/) list, and [Cisco Umbrella top 1 million](http://s3-us-west-1.amazonaws.com/umbrella-static/index.html) list to name some. This blog ranks on almost all of these and at multiple places. Among the lists which one is the most reliable is a [debatable](https://www.domaintools.com/resources/blog/mirror-mirror-on-the-wall-whos-the-fairest-website-of-them-all) discussion.
 
-At the time of writing, on the Majestic million, this blog ranks at 892K. On the [Tranco list](https://tranco-list.eu/api/ranks/domain/geshan.com.np), it ranks at 485K[,](https://tranco-list.eu/api/ranks/domain/geshan.com.np) and Similar web ranks this blog as one of the world’s top 370K websites. There used to be a [top million](https://web.archive.org/web/20220501054146/https://www.alexa.com/topsites) list from Alexa but Alexa is closing down now. This domain also ranks at 122k on Domcop’s top [10 million websites](https://www.domcop.com/top-10-million-websites).
+At the time of writing, on the Majestic million, this blog ranks at 892K. On the [Tranco list](https://tranco-list.eu/api/ranks/domain/geshan.com.np), it ranks at 485K[,](https://tranco-list.eu/api/ranks/domain/geshan.com.np) and Similar web ranks this blog as one of the world’s top 320K websites. There used to be a [top million](https://web.archive.org/web/20220501054146/https://www.alexa.com/topsites) list from Alexa but Alexa is closing down now. This domain also ranks at 122k on Domcop’s top [10 million websites](https://www.domcop.com/top-10-million-websites).
 
 > The average of the above 4 numbers will be 457.25K, so if the title is a bit misleading be it :).
 
