@@ -231,6 +231,12 @@ After that, we can check how the app looks at `http://localhost:3000` on the bro
 
 To make local testing easier we can surely add other helpful NPM packages like [nodemon](/blog/2021/02/nodemon/) and [browser sync](https://browsersync.io/). Those are good to have enhancements.
 
+You can run this project in your browser with [StackBlitz](https://stackblitz.com/github/geshan/nodejs-express-tutorial?file=index.js) as seen below, click "Run Project" to get started (it runs fully in your browser, not hosted anywhere):
+
+<iframe src="https://stackblitz.com/github/geshan/nodejs-express-tutorial?ctl=1&embed=1&file=index.js" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+
+You can even fork it and change the code fully on your browsers and see the change reflected in the preview URL in a mattor of seconds.
+
 ## Next steps
 
 This is just scratching the surface. If you want to change how the form submission behavior works you can look into the [form submission](https://github.com/geshan/nodejs-express-tutorial/blob/master/public/assets/js/main.js#L141) part in the main.js file and change it to call an internal API or external route. All the code is available as an [open source](https://github.com/geshan/nodejs-express-tutorial) repository on Github for your convenience. 
