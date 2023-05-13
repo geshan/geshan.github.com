@@ -83,7 +83,7 @@ This has many advantages like the website can be hosted on CDN which makes it su
 
 ### Browse offline with PWA
 
-This blog is a [Progressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) (PWA). I don’t make much noise about it or push it to the users but you can install this blog as an app with Chrome and view the whole website (almost all) fully offline. On any Chomore (desktop or mobile) click options (those three dots) and click “Install app”. Then enjoy this blog fully offline even when there is no internet.
+This blog is a [Progressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) (PWA). I don’t make much noise about it or push it to the users but you can install this blog as an app with Chrome and view the whole website (almost all) fully offline. On any Chrome (desktop or mobile) click options (those three dots) and click “Install app”. Then enjoy this blog fully offline even when there is no internet.
 
 Another way to do it will be to browse the blog for some time like a couple of minutes, turn off the wi-fi/mobile data and continue browsing. Most of the pages and blogs will work as normal with images. That is the power of PWA, I can work on making it a full-on mobile app and submit it to app stores but I have not felt the need to do it till now.
 
