@@ -524,7 +524,7 @@ After you have [nodemon](/blog/2021/02/nodemon/) installed globally you can run 
 DEBUG=nodejs-postgresql:* nodemon bin/www 
 ```
 
-Nodemon is great for development.
+Nodemon is great for development. Some other [Node.js alternatives](/blog/2022/08/nodejs-alternatives/) like Bun.js claim to be faster than Node, but Node.js is still the most popular option.
 
 ## TLDR; quick rundown
 

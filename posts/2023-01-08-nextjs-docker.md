@@ -147,6 +147,8 @@ After that, you add the `builder` stage where the node modules are copied and th
 
 After that, you define the `runner` stage. This is the main stage that runs Next.js. Here you use the Node.js 18 Alpine image similar to all the above stages. Then add a group and user for Next.js. It is also important for security. After that, you copy the next folder from the `builder` stage, and node modules and package.json file. Then you define the user to be `nextjs` that will execute the command to run the Next.js project. In the end, you run `npm start` which will start the container with that command.
 
+You can host your Next.js app with [free Node.js hosting](/blog/2021/01/free-nodejs-hosting/) providers like Vercel. In the next part you will learn about adding Docker Compose to the Next.js app.
+
 
 ## Adding Docker compose for Next.js
 
