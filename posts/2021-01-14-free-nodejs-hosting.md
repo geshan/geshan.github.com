@@ -245,6 +245,8 @@ Some other services where you can host your Node.js application free/almost free
 
 You can even explore other cloud providers like IBM Cloud or Alibaba to host your Node.js app for $0 a month. Heroku will sunset it's free plan soon. I will leave the digging deeper part for you.
 
+If your app needs a database, you can also use [Postgres with Docker](/blog/2021/12/docker-postgres/) or use free services like ElephantSQL or Neon.tech.
+
 ## Conclusion
 
 Hosting a small test project with Node.js should not be a hassle.
