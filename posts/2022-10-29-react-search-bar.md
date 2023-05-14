@@ -201,7 +201,7 @@ To test the React HackerNews front page stories app with the search functionalit
 
 <img class="center" loading="lazy" src="/images/react-search-bar/05react-search-bar-working.gif" title="React search bar working as intended to filter by title and author name" alt="React search bar working as intended to filter by title and author name">
 
-Or you can try out the search feature on [Netilfy branch preview](https://deploy-preview-5--reactjs-search-bar.netlify.app/) too. All the code done for this guide is available for your reference in this [pull request](https://github.com/geshan/react-search-bar/pull/5). First, you search for `st` which filters posts where `st` is found in the title or the author’s name. Then you search for `jp` and find one story where the author’s name has `jp` in it. So the functionality is working fine.
+Or you can try out the search feature on [Netilfy branch preview](https://deploy-preview-5--reactjs-search-bar.netlify.app/) too. All the code done for this guide is available for your reference in this [pull request](https://github.com/geshan/react-search-bar/pull/5). First, you search for `st` which filters posts where `st` is found in the title or the author’s name. Then you search for `jp` and find one story where the author’s name has `jp` in it. So the functionality is working fine. If you want you can show the messages better with [React Toastify](/blog/2023/05/react-toastify/).
 
 Congrats! You have added search to a relatively dynamic app that changes with time.
 
