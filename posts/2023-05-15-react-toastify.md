@@ -24,7 +24,7 @@ React Toastify is the most popular NPM package to show toast messages on a React
 * [React Toastify](#react-toastify)
 * [When to use React Toastify](#when-to-use-react-toastify)
 * [How to use React Toastify](#how-to-use-react-toastify)
-* [NPM trends](#npm-trends)
+* [Popularity of React Toastify](#popularity-of-react-toastify)
 * [Conclusion](#conclusion)
 
 <!-- tocstop -->
@@ -197,10 +197,10 @@ If you run the app with `npm start` and point your browser to `http://loccalhost
 
 <img class="center" loading="lazy" src="/images/react-toastify/03react-toastify-guess-app.gif" title="Name to Nationalities guessing app with React Toastify Running" alt="Name to Nationalities guessing app with React Toastify Running">
 
-For your reference, all the changes is available as a [pull request](​​https://github.com/geshan/name-nationality/pull/13) on GitHub. You can also try out the app with React Toastify on [Netlify](https://deploy-preview-13--name-nationality.netlify.app/). In the next section, you will find out that [React Toastify](https://www.npmjs.com/package/react-toastify) is the most popular NPM package to show toast messages.
+For your reference, all the changes is available as a [pull request](​​https://github.com/geshan/name-nationality/pull/13) on GitHub. You can also try out the app with React Toastify on [Netlify](https://deploy-preview-13--name-nationality.netlify.app/). The app uses [React Fragments](/blog/2023/02/react-fragments/) and if you want you can also add a [React Search Bar](/blog/2022/10/react-search-bar/). In the next section, you will find out that [React Toastify](https://www.npmjs.com/package/react-toastify) is the most popular NPM package to show toast messages.
 
 
-## NPM trends
+## Popularity of React Toastify
 
 Without doubts, React Toastify is the most popular NPM library to show toast message in React. The distant second is React Hot Toast as per [NPM Trends](https://npmtrends.com/react-confirm-alert-vs-react-hot-toast-vs-react-toastify-vs-react-toastr-vs-react-toasts) as seen below:
 

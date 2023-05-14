@@ -302,7 +302,7 @@ As seen above, the main code changes have been again highlighted in yellow. Thes
 * Then, in lines 28-32 the main usage can be seen, where the `classnames` function is called with an object which instructs to always add the class name `message` but adding either `success` or `error` classname depends on the value of the `errorInFetch` variable.
 * As the `messageClassNames` is already used for the class name of the div showing message it will pick up the new dynamic class names automatically.
 
-For your reference, you can also view the above changes as a [pull request](https://github.com/geshan/name-nationality/pull/12). Running the code will give the same output as above when done imperatively with string concatenation.
+For your reference, you can also view the above changes as a [pull request](https://github.com/geshan/name-nationality/pull/12). Running the code will give the same output as above when done imperatively with string concatenation. A better and easier way to show sucess/error messages with better UI can be with [React Toastify](/blog/2023/05/react-toastify/), without the need to meddle with the class names.
 
 ## Conclusion
 
