@@ -52,7 +52,7 @@ For both the above cases, you will need a brand name and a working website or we
 3. The aim is to run your staging and production applications for \~ $1 a day, so the $300 will last for just over 9.5 months.
 4. After that, you will need to find a way to generate money or get more Google Cloud Platform (GCP) credits like from [Google for startups](https://cloud.google.com/developers/startups) or some [other](https://www.joinffl.com/cloud-credits) way.
 5. For this guide, we will consider having a brochure JAMstack website hosted on Netlify
-6. The web application will be hosted on Google Cloud Run with the MYSQL database on Google Cloud SQL.
+6. The web application will be hosted on Google [Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) with the MYSQL database on Google Cloud SQL.
 
 It is time to dive deeper into the steps:
 
@@ -92,7 +92,7 @@ If you just want to test your idea then you can stop here. With the brochure web
 
 <img class="center" loading="lazy" src="/images/start-tech-startup/05netlify-forms.jpg" title="Netlify and Netlify forms" alt="Netlify and Netlify forms for getting user data">
 
-Take note that, for all the above services you have not even spent a penny. So you can run your experiment as long as you want. If you have already some code and some form of your tech startup working then proceed further to host it with GCP with serverless containers on Google Cloud Run.
+Take note that, for all the above services you have not even spent a penny. So you can run your experiment as long as you want. If you have already some code and some form of your tech startup working then proceed further to host it with GCP with [serverless containers](/blog/2023/04/serverless-containers/) on Google Cloud Run.
 
 ### Time for Google Cloud Platform (GCP)
 

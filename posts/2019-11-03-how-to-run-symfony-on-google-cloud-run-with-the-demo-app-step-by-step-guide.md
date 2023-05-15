@@ -70,7 +70,7 @@ One issue with this setup is that data will not be saved if you click around and
 There are some things you need to consider for this automagic deployment of the Symfony App. Let’s look at what just happened above:
 
 1. The Symfony Demo app has been dockerized, have a look at this [Dockerfile](https://github.com/geshan/symfony-demo-google-cloud-run/blob/master/Dockerfile) and the [Apache config](https://github.com/geshan/symfony-demo-google-cloud-run/blob/master/docker/000-default.conf) too. The Dockerfile uses multistage build, on stage to install dependencies with composer and another one with Apache to run the application.
-1. If you want to run it locally, just run `docker-compose up` then go to `http://localhost:8080`. [8080](https://cloud.google.com/run/docs/reference/container-contract) is the required port needed for Google Cloud Run.
+1. If you want to run it locally, just run `docker-compose up` then go to `http://localhost:8080`. [8080](https://cloud.google.com/run/docs/reference/container-contract) is the required port needed for Google [Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/).
 1. Thanks to the [Google Cloud Run button](https://cloud.google.com/blog/products/serverless/introducing-cloud-run-button-click-to-deploy-your-git-repos-to-google-cloud) and the Cloud Shell script that does the automagic deployment.
 
 To make the most out of this tutorial, you can fork the [repo](https://github.com/geshan/symfony-demo-google-cloud-run), add your own button then explore more with it.

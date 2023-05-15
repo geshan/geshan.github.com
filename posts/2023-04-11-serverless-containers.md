@@ -113,7 +113,7 @@ Along with that control, the engineer doesn’t need to worry about scaling and 
 
 <img class="center" loading="lazy" src="/images/serverless-container/04serverless-containers-sweet-spot.jpg" title="Serverless containers sweet spot of both control and ease" alt="Serverless containers sweet spot of both control and ease">
 
-With modern serverless container services like Google Cloud run you can also run long-running tasks like a cron job with [Cloud Run Jobs](https://cloud.google.com/run/docs/create-jobs). In the next section, you will learn about the components needed for running serverless containers.
+With modern serverless container services like Google [Cloud run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) you can also run long-running tasks like a cron job with [Cloud Run Jobs](https://cloud.google.com/run/docs/create-jobs). In the next section, you will learn about the components needed for running serverless containers.
 
 ## Components for running serverless containers
 
