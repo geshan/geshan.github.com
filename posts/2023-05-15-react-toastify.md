@@ -197,7 +197,7 @@ If you run the app with `npm start` and point your browser to `http://loccalhost
 
 <img class="center" loading="lazy" src="/images/react-toastify/03react-toastify-guess-app.gif" title="Name to Nationalities guessing app with React Toastify Running" alt="Name to Nationalities guessing app with React Toastify Running">
 
-For your reference, all the changes is available as a [pull request](​​https://github.com/geshan/name-nationality/pull/13) on GitHub. You can also try out the app with React Toastify on [Netlify](https://deploy-preview-13--name-nationality.netlify.app/). You can also view the generic React Toastify examples ona Next.js app in this [GitHub repo](https://github.com/geshan/react-toastify-examples). This Next.js example is also running on [Vercel](https://react-toastify-examples.vercel.app/).
+For your reference, all the changes is available as a [pull request](https://github.com/geshan/name-nationality/pull/13) on GitHub. You can also try out the app with React Toastify on [Netlify](https://deploy-preview-13--name-nationality.netlify.app/). You can also view the generic React Toastify examples ona Next.js app in this [GitHub repo](https://github.com/geshan/react-toastify-examples). This Next.js example is also running on [Vercel](https://react-toastify-examples.vercel.app/).
 
 This app uses [React Fragments](/blog/2023/02/react-fragments/) and if you want you can also add a [React Search Bar](/blog/2022/10/react-search-bar/). In the next section, you will find out that [React Toastify](https://www.npmjs.com/package/react-toastify) is the most popular NPM package to show toast messages.
 
