@@ -260,7 +260,7 @@ You can run the final code by executing `node index.js` which will look like the
 
 <img class="center" loading="lazy" src="/images/inquirer-js/02inquirer-js-app-demo.gif" title="Running CLI app built with Inquirer.js in Node.js" alt="Running CLI app built with Inquirer.js in Node.js">
 
-Hurray! You have built a running CLI application in Node.js using Inquirer.js and also used important features of the library like validation and filter in the process. You can run multiple commands with [NPM concurrently](blog/2022/09/npm-concurrently/) or try [JavaScript Promise all](/blog/2022/07/javascript-promise-all/) for a similar effect programatically.
+Hurray! You have built a running CLI application in Node.js using Inquirer.js and also used important features of the library like validation and filter in the process. You can run multiple commands with [NPM concurrently](/blog/2022/09/npm-concurrently/) or try [JavaScript Promise all](/blog/2022/07/javascript-promise-all/) for a similar effect programatically.
 
 You might not know that Inquirer.js is one of the most popular Node.js NPM libraries to build CLI apps much more used than the native [Node.js readline](/blog/2022/03/nodejs-readline/), that is what you will find out next. 
 
