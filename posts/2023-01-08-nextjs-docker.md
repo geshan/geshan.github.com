@@ -59,7 +59,7 @@ Similar to Dockerizing other applications, when you put the Next.js application 
 
 In addition to making it portable, Docker also helps to run multiple copies of your application that can be scaled horizontally. As spinning up a docker container is relatively easy and cheap this helps with scaling your applications much easier with a container orchestrator like Kubernetes. All of these benefits surely apply to your Next.js app. 
 
-As Next.js also supports on [server side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) and [API routes](https://nextjs.org/docs/api-routes/introduction), the applications using these features cannot be cached on the CDN. This is where if the Next.js app is Dockerized it can be easily deployed into a Kubernetes cluster or even on [serverless containers](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/).
+As Next.js also supports on [server side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) and [API routes](https://nextjs.org/docs/api-routes/introduction), the applications using these features cannot be cached on the CDN. This is where if the Next.js app is Dockerized it can be easily deployed into a Kubernetes cluster or even on [serverless containers](/blog/2023/04/serverless-containers/).
 
 
 ## Prerequisites
