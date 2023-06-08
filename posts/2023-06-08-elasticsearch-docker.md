@@ -97,7 +97,7 @@ This will pull the Elasticsearch version 8.8.0 from [DockerHub](https://hub.dock
 Once the image is downloaded, run the following command to start an Elasticsearch container:
 
 ```bash
-docker run --rm --name elasticsearch_container -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e “xpack.security.enabled=false” elasticsearch:8.8.0
+docker run --rm --name elasticsearch_container -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.8.0
 ```
 
 This command starts a container named elasticsearch_container, maps Elasticsearch ports 9200 and 9300 to the host machine, and sets the discovery type to single-node. It also sets the security to false as you don’t want to use HTTPs white testing locally. These settings are suited only for local development and not for production deployment. Here port 9200 is used to hit the Elasticsearch REST API and 9300 is used to communicate between nodes. As this is a single node setup for local you can also opt to not expose the port 9300.
