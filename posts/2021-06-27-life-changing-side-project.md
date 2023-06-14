@@ -22,16 +22,18 @@ Most often than not, the success of any project (or start-up) is measured in ter
 
 ## Table of contents
 
-* [How AU Tech Jobs started](#how-au-tech-jobs-started)
-* [Getting more hands in the game](#getting-more-hands-in-the-game)
-* [That soft launch](#that-soft-launch)
-* [Joiners and leavers](#joiners-and-leavers)
-* [First success story](#first-success-story)
-* [Other success stories followed](#other-success-stories-followed)
-* [Not all rosy stories](#not-all-rosy-stories)
-* [Timeline](#timeline)
-* [Talk](#talk)
-* [Conclusion](#conclusion)
+- [Table of contents](#table-of-contents)
+- [How AU Tech Jobs started](#how-au-tech-jobs-started)
+- [Getting more hands in the game](#getting-more-hands-in-the-game)
+- [That soft launch](#that-soft-launch)
+- [Joiners and leavers](#joiners-and-leavers)
+- [First success story](#first-success-story)
+- [Other success stories followed](#other-success-stories-followed)
+- [Not all rosy stories](#not-all-rosy-stories)
+- [Timeline](#timeline)
+- [Talk](#talk)
+  - [Talk video](#talk-video)
+- [Conclusion](#conclusion)
 
 ## How AU Tech Jobs started
 
@@ -138,6 +140,12 @@ If you can please do it.
 I gave a talk about the same topic at [GDG Cloud Sydney May 2023](https://www.meetup.com/gdgcloudsydney/events/292947927/) meetup, the slides are below:
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3e6a3599158a4c0da937088e2b16e716" title="Free GCP credits + a side project (ATJ) = 10+ first full-time tech jobs" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:rgba(0, 0, 0, 0.1); --darkreader-inline-boxshadow:rgba(0, 0, 0, 0.2) 0px 5px 40px; aspect-ratio: 560 / 315;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-boxshadow="" data-ratio="1.7777777777777777"></iframe>
+
+### Talk video
+
+The video of the talk is below:
+
+{% youtube "8eGbNp7qb_Q" %}
 
 ## Conclusion
 

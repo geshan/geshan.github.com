@@ -25,13 +25,14 @@ Web scraping is the process of extracting data from a website in an automated wa
 
 ## Table of contents
 
-* [Web scraping the dos and don’ts](#web-scraping-the-dos-and-don'ts)
-* [Prerequisites](#prerequisites)
-* [Web scraping with Node.js the simple example](#web-scraping-with-node.js-the-simple-example)
-  * [Axios and Cheerio for Node.js web scraping](#axios-and-cheerio-for-node.js-web-scraping)
-* [Node.js web scraping rendering JavaScript](#node.js-web-scraping-rendering-javascript)
-  * [Puppeteer for web scraping](#puppeteer-for-web-scraping)
-* [Conclusion](#conclusion)
+- [Table of contents](#table-of-contents)
+- [Web scraping the dos and don’ts](#web-scraping-the-dos-and-donts)
+- [Prerequisites](#prerequisites)
+- [Web scraping with Node.js the simple example](#web-scraping-with-nodejs-the-simple-example)
+  - [Axios and Cheerio for Node.js web scraping](#axios-and-cheerio-for-nodejs-web-scraping)
+- [Node.js web scraping rendering JavaScript](#nodejs-web-scraping-rendering-javascript)
+  - [Puppeteer for web scraping](#puppeteer-for-web-scraping)
+- [Conclusion](#conclusion)
 
 ## Web scraping the dos and don’ts
 
@@ -165,7 +166,7 @@ All the working code is available as a [Github repository](https://github.com/ge
 
 In addition to scraping just one page, we could get all the links and loop through (or even better promise.all) the pages but at that point, it would be a full-on spider than just web page scraping.
 
-Another alternative to Puppeteer is [Playwright](https://playwright.dev/). It is similar to puppeteer and has a similar API, the advantage is it supports multiple [browsers](https://playwright.dev/docs/why-playwright#support-for-all-browsers) like Firefox and Safari. The headless recorder plugin can generate a good starting script for both Puppeteer and Playwright so you can get a very good starting point if you are not well versed in writing such automation scripts.
+Another alternative to Puppeteer is [Playwright](https://playwright.dev/). It is similar to puppeteer and has a similar API, the advantage is it supports multiple [browsers](https://playwright.dev/docs/why-playwright#support-for-all-browsers) like Firefox and Safari. The headless recorder plugin can generate a good starting script for both Puppeteer and Playwright so you can get a very good starting point if you are not well versed in writing such automation scripts. If you want to learn web [scraping with Python](https://www.scrapingdog.com/blog/web-scraping-with-python/), here is the perfect guide for you.
 
 ## Conclusion
 
