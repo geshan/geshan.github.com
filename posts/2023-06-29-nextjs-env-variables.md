@@ -8,7 +8,7 @@ tags:
 - Javascript
 cover: "/images/nextjs-env-variables/01nextjs-env-variables.jpg"
 pagetitle: How to use environment variables in Next.js (includes a working example app)
-description: In this tutorial you will learn how to set Next.js environment variables correctly with a fully functional example app.
+description: In this tutorial, you will learn how to set Next.js environment variables correctly with a fully functional example app.
 keywords: nextjs env variables, nextjs environment variables, nextjs env, nextjs environment
 ---
 Next.js is a React framework that makes building fast, user-friendly websites easy. It uses server-side rendering to pre-render pages on the server, which makes them load faster for users. Environment variables are a way to store sensitive information, such as passwords or API keys, outside of your code. This makes it more secure, it is one of the tenants of the [12-factor app](https://12factor.net/config). In this post, you will learn how to properly use environment variables on both the server and client side of Next.js. Let’s get started!
@@ -35,7 +35,7 @@ Next.js is the most popular React.js meta framework if you look at the search tr
 
 <img class="center" loading="lazy" src="/images/nextjs-env-variables/02nextjs-popularity.jpg" title="Next.js is the most popular React meta framwork" alt="Next.js is the most popular React meta framwork">
 
-Next you wil learn about environment variables and its use in web applications.
+Next, you will learn about environment variables and their use in web applications.
 
 ## Environment variables
 
@@ -54,15 +54,15 @@ DB_PORT=3306
 DB_URL=mysql://$DB_USER:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME
 ```
 
-With the above environment variables in a `.env` file or as operating system level environment variables you can choose the databse you want. For instance on staging it will point to a staging database and for a production environment the production database credentials will be used.
-One more thing to notice above is the `DB_URL` which is constructed by reference the other variables with a `$` sign.
+With the above environment variables in a `.env` file or as operating system-level environment variables, you can choose the database you want. For instance, on staging it will point to a staging database and for a production environment, the production database credentials will be used.
+One more thing to notice above is the `DB_URL` which is constructed by referencing the other variables with a `$` sign.
 
 Next.js will automatically expand the variables using $ to [reference](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables#referencing-other-variables) other variables, so it will construct a valid `DB_URL` replacing the right environment variables.
 In the next section, you will learn about Next.js environment variables.
 
 ## Environment variables in Next.js
 
-For this post, you will use Next.js 13 with the [app router](https://nextjs.org/docs/app/building-your-application) (not the pages folder). To use environment variables in Next.js, you can create a `.env.local` file in your project’s root directory. This file will contain all of your environment variables, which you can then access in your code using the process.env object while doing backend execution or server side components.
+For this post, you will use Next.js 13 with the [app router](https://nextjs.org/docs/app/building-your-application) (not the pages folder). To use environment variables in Next.js, you can create a `.env.local` file in your project’s root directory. This file will contain all of your environment variables, which you can then access in your code using the process.env object while doing backend execution or server-side components.
 For example, if you have an environment variable called SECRET_KEY, you can access it in your code like this:
 
 ```bash
@@ -76,7 +76,7 @@ You can also use environment variables to set up different configurations for yo
 At times you will need to expose some variables to be accessible on the frontend at the browser level. Of course, these variables cannot be secret (like a password) as they can be read by everyone as it is part of the frontend code.
 
 Let’s say if you want to use Google Analytics 4 then you will need to expose the GA4 measurement ID to the browser.
-To expose a public environment variable in Next.js you have to preix the environment variable with `NEXT_PUBLIC`, so for the GA4 measurement ID it can be exposed as follows:
+To expose a public environment variable in Next.js you have to prefix the environment variable with `NEXT_PUBLIC`, so for the GA4 measurement ID it can be exposed as follows:
 
 ```bash
 NEXT_PUBLIC_GA_MEASUREMENT_ID="<your-GA4-ID-here>"
@@ -86,23 +86,23 @@ You will know about the load order for environment variables in Next.js in the n
 
 ### Environment variable load order in Next.js
 
-The environment variable have a precedence order in Next.js which is as below:
+The environment variables have a precedence order in Next.js which is as below:
 
 1. process.env
 1. .env.$(NODE_ENV).local
-1. .env.local (Not checked when NODE_ENV is test.)
+1. .env.local (Not checked when NODE_ENV is `test`.)
 1. .env.$(NODE_ENV)
 1. .env
    
-For `NODE_ENV` the only allowed values are development, production and test. In case of the precedence, if NODE_ENV is `development` and you define a variable say `DB_HOST` in both `.env.development.local` and `.env`, the value in .`env.development.local` will be used as per above priority order.
-You have learned about Next.js environment varaibels, now it is time to the knowledge into practice in the followting section with an example app.
+For `NODE_ENV` the only allowed values are development, production, and test. In case of the precedence, if NODE_ENV is `development` and you define a variable say `DB_HOST` in both `.env.development.local` and `.env`, the value in .`env.development.local` will be used as per above priority order.
+You have learned about Next.js environment variables, now it is time to the knowledge into practice in the following section with an example app.
 
 ## Example city weather app
 
-To put the things you have learned about Next.js environment variables you will clone and run an example app that can show the temperature of a given city. The application has two parts. The first part to call and API with a API key to get the weather for a city will use a server only environment variable. 
+To put the things you have learned about Next.js environment variables you will clone and run an example app that can show the temperature of a given city. The application has two parts. The first part to call an API with an API key to get the weather for a city will use a server-only environment variable. 
 
 Then the second part is adding Google Analytics 4 script to the application which will use the public (frontend/browser) level environment variable.
-The running app, looks like the below:
+The running app looks like the below:
 
 <img class="center" loading="lazy" src="/images/nextjs-env-variables/03nextjs-app-running.jpg" title="Next.js city weather app running on Vercel" alt="Next.js city weather app running on Vercel">
 
@@ -113,19 +113,19 @@ API_NINJAS_API_KEY="API_NINJAS_API_KEY-value"
 NEXT_PUBLIC_GA_MEASUREMENT_ID="G-**--------"
 ```
 
-You can understand what is happening in the applicaiton by having a look at the visual representation of the communication flow between the systems involved as follows:
+You can understand what is happening in the application by having a look at the visual representation of the communication flow between the systems involved as follows:
 
 <img class="center" loading="lazy" src="/images/nextjs-env-variables/04nextjs-app-architecture.jpg" title="Next.js city weather app talking with API Ninjas API and Google Analytics" alt="Next.js city weather app talking with API Ninjas API and Google Analytics">
 
 When the user hits the URL with (or without the city), the Next.js app will send a request to [API Ninjas](https://api-ninjas.com/) with the API key provided (for free) by API Ninjas. This app calls the API Ninjas’ [weather API](https://api-ninjas.com/api/weather) sending the city name. If no city name is given it falls back to London.
 
-If you put the API Key from API Ninjas in public other people can use it and/or abuse it as well. That is why is is set as a server level Next.js environment variable. For your app to work you will also need to register and get your own free API key from  API Ninjas.
+If you put the API Key from API Ninjas in public other people can use it and/or abuse it as well. That is why it is set as a server-level Next.js environment variable. For your app to work you will also need to register and get your own free API key from  API Ninjas.
 
 Another system involved is Google Analytics. A GA4 tag is added to the weather app that will report the page views to Google Analytics. It used the measurement ID to identify the app. You can follow this [tutorial](https://hackernoon.com/setting-up-google-analytics-4-in-a-nextjs-project) to get a step-by-step process to add GA4 on a Next.js app.
 
-The goal for this guide is to explain the Next.js environment variables. As the GA4 script runs on the browser level the measurement id environment variable is set to `NEXT_PUBLIC` so that it can be used on the frontend/browser. This environment varaible can be exposed to public.
+The goal of this guide is to explain the Next.js environment variables. As the GA4 script runs on the browser level the measurement id environment variable is set to `NEXT_PUBLIC` so that it can be used on the frontend/browser. This environment variable can be exposed to the public.
 
-The app is deployed on Vercel currently, you can also use [Next.js with Docker](/blog/2023/01/nextjs-docker/) to run the app locally. With Docker you can easily the run any Next.js application without the need to have a specified version of Node.js or NPM. These dependencies can be configured as code in the Dockerfile.
+The app is deployed on Vercel currently, you can also use [Next.js with Docker](/blog/2023/01/nextjs-docker/) to run the app locally. With Docker, you can easily run any Next.js application without the need to have a specified version of Node.js or NPM. These dependencies can be configured as code in the Dockerfile.
 
 ### City weather Next.js app code
 
@@ -157,7 +157,7 @@ export default async function Home(req) {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Current temprature in {weatherData.city} is 
+          Current temperature in {weatherData.city} is 
           <code className={styles.code}> {weatherData.temp} C</code>
         </p>
         <div>
@@ -211,23 +211,23 @@ export default async function Home(req) {
 The change to this `src/app/page.js` are as follows:
 
 * The `Script` tag has been imported from `next/script` on line no 3
-* On line 4, You have also assigned the Next.js environment variable `NEXT_PUBLIC_GA_MEASUREMENT_ID` to a constant called `GA_MEASUREMENT_ID`
-* From line 6-17, getWeatherData async function uses fetch to call the API Ninjas’ weather API passing the city that is passed in as a parameter to the function. It returns the data received from the API call after adding the city to it. This function runs on the server and it used the `API_NINJAS_API_KEY` Next.js environment variable to make the call to the API.
-* In the Home component, `city` is fetched from the URL query parameter if it exists else city variable gets a fallback value of `London` on line 20.
+* On the line 4, You have also assigned the Next.js environment variable `NEXT_PUBLIC_GA_MEASUREMENT_ID` to a constant called `GA_MEASUREMENT_ID`
+* From lines 6-17, the getWeatherData async function uses fetch to call the API Ninjas’ weather API passing the city that is passed in as a parameter to the function. It returns the data received from the API call after adding the city to it. This function runs on the server and it used the `API_NINJAS_API_KEY` Next.js environment variable to make the call to the API.
+* In the Home component, `city` is fetched from the URL query parameter if it exists else the city variable gets a fallback value of `London` on line 20.
 * On line 21, the `getWeatherData` function is called with the city constant set on line 20.
-* The name of the city and current temperature in that city are rendered,  on lines 24-28
-* On lines 60-71, the GA4 tag is placed which user the public Next.js environment variable twice. Once for the Google tag manager and again at line 69 for the GA config.
+* The name of the city and the current temperature in that city are rendered,  on lines 24-28
+* On lines 60-71, the GA4 tag is placed which uses the public Next.js environment variable twice. Once for the Google tag manager and again at line 69 for the GA config.
   
 With these changes now you have used both the server side and client (browser) side Next.js environment variable in a small but useful and working application. All the code is available in the public [GitHub repository](https://github.com/geshan/nextjs-weather-geo/tree/master).
 
 You can easily deploy this app on Vercel by clicking the “Deploy” button on the readme or find it running on [Vercel](https://nextjs-weather-geo.vercel.app/?city=Sydney). You can clone/fork the repo and change the to fit your needs.
 
-Hurray! You have learned how to use Next.js environment variable with help of an example working app that fetches the live weather for any given city and sending back analytics to GA 4.
+Hurray! You have learned how to use the Next.js environment variable with the help of an example working app that fetches the live weather for any given city and sends back analytics to GA 4.
 
 ## Conclusion
 
-In this guide, you learned about Next.js and its popularity. Then you also gained some knowledge about environment variables for web application and specifically for Next.js. After that you learned both types of Next.js environment varaible (server and client ones which are public) and the order of precedence to use them.
+In this guide, you learned about Next.js and its popularity. Then you also gained some knowledge about environment variables for web applications and specifically for Next.js. After that, you learned both types of Next.js environment variables (server and client ones which are public) and the order of precedence to use them.
 
-Then you looked at an example of a Next.js app that pulls in the current weather for any given city using both a server level and client/brower level environment variables.
+Then you looked at an example of a Next.js app that pulls in the current weather for any given city using both server-level and client/browser-level environment variables.
 
 I hope you learned something new, keep absorbing more knowledge. If you have any questions or comments please leave them below.
