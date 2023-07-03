@@ -6,6 +6,8 @@ comments: true
 tags:
 - Technology
 - Software Engineering
+- Jobs
+- Misc
 cover: "/images/tip-beginner-sw-eng/puzzle.jpg"
 description: First, solve the problem. Then, write the code. - John Johnson
 keywords: beginner software engineer, software engineer, software engineer tip
