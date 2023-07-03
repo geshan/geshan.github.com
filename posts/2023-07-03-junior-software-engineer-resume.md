@@ -9,8 +9,8 @@ tags:
 - Talks
 cover: "/images/junior-software-engineer-resume/01junior-software-engineer-resume.jpg"
 pagetitle: How to craft your junior software engineer resume the right way
-description: In this guide, you will learn how write an impressive junior software engineer resume that will get you calls and interviews.
-keywords: junior software engineer resume, entry level software engineer resume, early career software engineer resume
+description: In this guide, you will learn how to write an impressive junior software engineer resume that will get you calls and interviews.
+keywords: junior software engineer resume, entry-level software engineer resume, early career software engineer resume
 ---
 Writing a resume as a junior software engineer that strikes the right chord for both technical and non-technical readers is a crucial skill. In this guide, you will learn how you can craft a masterpiece junior software engineer that will get you more calls and possibly interviews, let’s get going!
 
@@ -236,7 +236,7 @@ Explore various job boards and communities focused on different aspects of the t
 
 [My Startup Gig](https://au.mystartupgig.com/jobs) is another job board suitable for junior or entry-level individuals, as startups often provide rapid learning opportunities and may be more willing to hire those with less experience.
 
-Consider connecting with local startup communities and hubs, like [Fishburners](https://fishburners.org/) and Microsoft Reactor, for networking and job search resources. For women seeking a more female-friendly work environment, the [Work180](​​https://work180.com/en-au/for-women/job-search) job board is worth checking out.
+Consider connecting with local startup communities and hubs, like [Fishburners](https://fishburners.org/) and Microsoft Reactor, for networking and job search resources. For women seeking a more female-friendly work environment, the [Work 180](https://work180.com/en-au/for-women/job-search) job board is worth checking out.
 
 By utilizing these resources and actively participating in the tech community, you can increase your chances of finding the right job opportunities and making valuable connections in the industry.
 
