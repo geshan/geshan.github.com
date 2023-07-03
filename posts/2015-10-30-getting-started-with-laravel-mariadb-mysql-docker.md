@@ -263,6 +263,6 @@ You can carry on using the docker containers to replace your local Apache/Ngnix 
 > You can use this analogy that containers are cattle and virtual machines (VMs) are pets.
 
 Creating, deleting and reconstructing the containers should be easy, fast and seamless than VMs.
-If you want to speed up your development flow and help other team members contribute faster to the project opt for docker and docker-comopse. 
+If you want to speed up your development flow and help other team members contribute faster to the project opt for docker and docker-comopse.
 
 You can even host your Laravel app using [serverless containers](/blog/2023/04/serverless-containers/) on Google [Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/), this [guide](/blog/2019/10/get-laravel-6-running-on-google-cloud-run-step-by-step-with-ci/) will show you how to do it step-by-step. Happy Dockerizing and coding Laravel + PHP!

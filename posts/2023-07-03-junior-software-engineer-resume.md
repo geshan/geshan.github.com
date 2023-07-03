@@ -111,7 +111,7 @@ I conducted some written interviews from 2019-202 with some in-house tech recrui
 
 [Scott](/blog/2020/08/things-tech-recruiters-look-for-in-your-resume-first-interview-part-02/#scott-crowe-(canva)-looks-for-relevant-experience-and-technical-capability) from Canva highlights another important aspect recruiters look for in a resume: interest in the product and good business acumen. As a software engineer, it's essential to understand how the business makes money and be knowledgeable about the product or company you're applying to. This shows that you're not just a developer working in isolation but rather a team player who understands the bigger picture.
 
-[Pam](blog/2022/08/what-do-tech-recruiters-look-for-part-03/#pam-(harrison.ai)-focuses-on-the-previous-workplaces-and-tech-stacks-used)-focuses-on-the-previous-workplaces-and-tech-stacks-used) from Harrison AI emphasizes the importance of having an organized and clean CV. Ensuring your resume is free from typos and grammatical mistakes not only creates a positive first impression but also highlights your communication and organizational skills.
+[Pam](/blog/2022/08/what-do-tech-recruiters-look-for-part-03/#pam-(harrison.ai)-focuses-on-the-previous-workplaces-and-tech-stacks-used) from Harrison AI emphasizes the importance of having an organized and clean CV. Ensuring your resume is free from typos and grammatical mistakes not only creates a positive first impression but also highlights your communication and organizational skills.
 
 Taking all these factors into account, there are some guidelines for creating a great resume. The golden standard is to have a one-page resume. If you have only two or three years of experience, a three-page resume may be excessive. Aim for conciseness and clarity while including all relevant information.
 
@@ -222,7 +222,7 @@ Stay connected to the tech community and explore community job boards and profes
 
 To boost your resume, consider participating in ambassador programs from big tech companies, 
 
-> such as [Google Developer Student Clubs](https://developers.google.com/community/gdsc), [GitHub Campus Experts](https://education.github.com/experts), [Stack Overflow Student Ambassdor](https://students.stackoverflow.co/) and [Microsoft student ambassador](https://studentambassadors.microsoft.com/) programs. 
+> such as [Google Developer Student Clubs](https://developers.google.com/community/gdsc), [GitHub Campus Experts](https://education.github.com/experts), [Stack Overflow Student Ambassdor](https://students.stackoverflow.co/) and [Microsoft student ambassador](https://studentambassadors.microsoft.com/) programs.
 
 These connections demonstrate your involvement in the tech community and add credibility to your resume.
 
