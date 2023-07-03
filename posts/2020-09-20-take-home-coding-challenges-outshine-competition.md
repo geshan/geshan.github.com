@@ -5,6 +5,8 @@ date: 2020-09-20T15:25:29.000+11:00
 comments: true
 tags:
 - Software Engineering
+- Jobs
+- Misc
 cover: "/images/take-home-coding-challenges/01take-home-coding-challenges.jpg"
 pagetitle: 'Take-home coding challenges: how to outshine your competition'
 description: Like it or not, your hiring process will most of the time involve take-home

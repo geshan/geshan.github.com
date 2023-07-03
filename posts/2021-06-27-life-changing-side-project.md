@@ -6,6 +6,7 @@ date: 2021-06-27T23:42:35.000+11:00
 comments: true
 tags:
 - Misc
+- Jobs
 cover: "/images/life-changing-startup/01autechjobs-app.jpg"
 pagetitle: A mini tech startup (side project) that earned in terms of life-changing
   first full-time tech jobs, not money

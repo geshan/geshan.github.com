@@ -6,6 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Talks
+- Jobs
 cover: /images/things-jr-dev/geshan-dn-meetup-4.jpg
 description: Learn about some of the things I wised I knew as a junior developer/software engineer. Some are technical and some are not.
 keywords: software engineering, junior developer, software development, web development
