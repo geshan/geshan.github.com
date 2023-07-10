@@ -59,13 +59,13 @@ If you are starting a new project don't blindly use a NoSQL like Mongo DB. This 
 
 ## Node.js MySQL tutorial steps
 
-We will be building a simple REST API with Express js that can give out quotes. Before diving deeper into the steps, I would really recommend you to take a refresher on [REST](https://www.codecademy.com/articles/what-is-rest)(REpresentational State Transfer). It will be best to read on REST verbs and run some cURL commands to POST APIs.
+We will be building a simple REST API with Express js that can give out quotes. Before diving deeper into the steps, I would really recommend you take a refresher on [REST](https://www.codecademy.com/articles/what-is-rest)(REpresentational State Transfer). It will be best to read REST verbs and run some cURL commands to POST APIs.
 
 Given you have Node.js running (either on the machine or with Docker), we can start with setting up Express first:
 
 ### Setup Express js for Node.js MySQL tutorial
 
-To set up express, we will use the express-generator. You can generate an express js app without any view engine for this Node.js MySQL tutorial with the following command:
+To set up express, we will use the `express-generator`. You can generate an express js app without any view engine for this Node.js MySQL tutorial with the following command:
 
 ``` bash
 npx express-generator --no-view --git nodejs-mysql
@@ -192,7 +192,7 @@ CREATE TABLE `quote`
 
 This is a simple table with 5 columns. The first one is `id` the auto-incremented primary key. Then there is `quote` and `author`. Both of these columns are varchar.
 
-After that there is `created_at` and `updated_at`. Both date columns have a default value of `CURRENT_TIMESTAMP` so we don’t need to send these values from code. Also not that, updated_at will be auto-updated when the row is updated because of this: `on update CURRENT_TIMESTAMP`.
+After that, there is `created_at` and `updated_at`. Both date columns have a default value of `CURRENT_TIMESTAMP` so we don’t need to send these values from code. Also note that `updated_at` will be auto-updated when the row is updated because of this: `on update CURRENT_TIMESTAMP`.
 
 You can run the above to create the `quote` table, to fill up some good programming-related quotes run the following insert SQL query too:
 
@@ -221,10 +221,10 @@ The above query will add 15 quotes to the table, it should be a good starting po
 
 At this stage, we will connect to MySQL from Node.js express application. To do this task, we will use [Mysql2](https://github.com/sidorares/node-mysql2) library. If you are asking why not the default [Mysql](https://github.com/mysqljs/mysql). It is because of 2 main reasons:
 
-* Mysql2 has a [wrapper for promises](https://github.com/sidorares/node-mysql2/blob/master/documentation/Promise-Wrapper.md) out of the box
+* Mysql2 has a [wrapper for promises](https://github.com/sidorares/node-mysql2/blob/master/documentation/en/Promise-Wrapper.md) out of the box
 * Mysql2 supports [prepared statements](https://github.com/sidorares/node-mysql2#using-prepared-statements) which are faster and safer
 
-If you want a head to head comparison of these two libraries please head to [npm compare](https://npmcompare.com/compare/mysql,mysql2).
+If you want a head-to-head comparison of these two libraries please head to [npm compare](https://npmcompare.com/compare/mysql,mysql2).
 
 #### Install mysql2 in the express app
 
@@ -297,7 +297,7 @@ module.exports = {
 }
 ```
 
-In this simple DB wrapper, we create a pool of connections for MySQL. As our config has `connectionLimit` of 2 it will create a maximum of 2 connections to the database. Then there is a straightforward `query` method exposed out that can run the SQL query with given params.
+In this simple DB wrapper, we create a pool of connections for MySQL. As our config has `connectionLimit` of 2 it will create a maximum of 2 connections to the database. Then there is a straightforward `query` method exposed that can run the SQL query with given params.
 
 After that, create a `/services/quotes.js` file with the following contents:
 
@@ -321,7 +321,7 @@ module.exports = {
 
 Till this point, it is a very simple file that includes the `db` service created above. Then there is a `getMultiple` function exposed out with module.exports. Beware this will query all the records on the database which should be 15 at this stage. We will make it paginated in the next step.
 
-Consequently we will wire up the `getMultiple` function in `/services/quotes.js` with the route `/quotes` in the `/routes/quotes.js` file like below:
+Consequently, we will wire up the `getMultiple` function in `/services/quotes.js` with the route `/quotes` in the `/routes/quotes.js` file like below:
 
 ``` js
 const express = require('express');
@@ -389,7 +389,7 @@ module.exports = {
 
 We will use this helper.js file to calculate the offset. The other function will return an empty array if the rows variable is empty, else it will return rows.
 
-Next we will update the query to get quotes in `/services/quotes.js` service. The change quote service looks like below:
+Next, we will update the query to get quotes in `/services/quotes.js` service. The change quote service looks like below:
 
 ``` js
 const db = require('./db');
@@ -418,7 +418,7 @@ module.exports = {
 
 The main difference for the pagination feature compared to the older quotes service is the query has offset and limit passed to it. Notice that we are using a prepared statement which makes the query secure from SQL injection. You can read more about SQL injection prevention with prepared statements in this [stackoverflow answer](https://stackoverflow.com/a/8265319/112849).
 
-The other file changed to get the pagination feature is `/routes/quotes.js`. The new quotes.js route looks like below now:
+The other file changed to get the pagination feature is `/routes/quotes.js`. The new quotes.js route looks like the below now:
 
 ``` js
 const express = require('express');
@@ -444,7 +444,7 @@ If you run the app and hit the browser with `http://localhost:3000/quotes?page=2
 
 <img class="center" loading="lazy" src="/images/nodejs-mysql-tutorial/06pagination-output.jpg" title="Nodemon output for quotes API pagination" alt="Quotes API pagination output for Node.js MySQL tutorial using Express js">
 
-So what happened here, the main change is in the way we construct the `SELECT` query. Depending on the page number we calculate an offset and pass a different query:
+So what happened here, is the main change is in the way we construct the `SELECT` query. Depending on the page number we calculate an offset and pass a different query:
 
 * For page 1, the query is `SELECT id, quote, author FROM quote LIMIT 0,10`
 * For page 2, the query becomes `SELECT id, quote, author FROM quote LIMIT 10,10`
@@ -460,7 +460,7 @@ As you have a basic GET API up and running you can add more features to it like:
 * You can also search by word using SQL Like `%computer%` can give all quotes that have the word computer in it
 * To make matters exciting for practice, add a new column called `category` and update the API.
 
-I will leave it up to you on what else you would want to build on top of the newly created GET quotes REST API endpoint. The next step is to create a POST API to create new quotes.
+I will leave it up to you what else you would want to build on top of the newly created GET quotes REST API endpoint. The next step is to create a POST API to create new quotes.
 
 ### Save new quote - POST API for Node.js MySQL tutorial
 
@@ -486,7 +486,7 @@ router.post('/', async function(req, res, next) {
 module.exports = router;
 ```
 
-After that we will add `validateCreate` and `create` functions in the `/services/quotes.js` service file and expose `create` in module.exports  like below:
+After that, we will add `validateCreate` and `create` functions in the `/services/quotes.js` service file and expose `create` in module.exports  like below:
 
 ``` js
 function validateCreate(quote) {
@@ -577,13 +577,13 @@ You can find lots of quotes to try [here](https://github.com/skolakoda/programmi
 
 ---
 
-So there you have it, a basic RESTful API for quotes that can crate new quotes with a POST endpoint. There is a GET endpoint to fetch quotes with pagination.
+So there you have it, a basic RESTful API for quotes that can create new quotes with a POST endpoint. There is a GET endpoint to fetch quotes with pagination.
 
 If you want to try a hosted DB you can check this [Node.js HarperDB](https://amanhimself.dev/blog/build-rest-api-with-nodejs-harperdb/) tutorial.
 
 ## TLDR; I want to run it quickly
 
-As all the code is in a public [Github repository](https://github.com/geshan/nodejs-mysql), you can get started in no time running the following commands:
+As all the code is in a public [Github repository](https://github.com/geshan/nodejs-mysql), you can get started in no time by running the following commands:
 
 1. Clone the repository: `git clone git@github.com:geshan/nodejs-mysql.git`
 1. Then run `cd nodejs-mysql`
