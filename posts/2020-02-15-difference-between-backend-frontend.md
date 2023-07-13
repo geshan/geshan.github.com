@@ -55,7 +55,7 @@ Some of my observations about backend development:
 * Backend work will require the software engineer/developer to understand more complex concepts of the database like concurrency, [locking](https://www.methodsandtools.com/archive/archive.php?id=83), and [transactions](https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/).
 * Of course, to do backend development knowledge of [SQL](https://www.khanacademy.org/computing/computer-programming/sql) will be indispensable.
   * Similarly, the work will involve setting up and/or configuring a Relational DBMS like [Mysql](https://www.mysql.com/), [Postgres](https://www.postgresql.org/), [SQL Server](https://www.microsoft.com/en-in/sql-server/), [Oracle](https://www.oracle.com/database/), etc.
-* To do backend development work well knowledge of network, DNS, etc will also be very helpful.
+* To do backend development work well knowledge of network, DNS, etc will also be very helpful. So, if you're looking to [hire backend developers](https://flexiple.com/backend/#hiring-guide), make sure they have good knowledge of this.
 * Depending on the work, it will involve creating APIs for other consumers like a mobile application or a frontend application. Work might include building [RESTful](https://www.mulesoft.com/resources/api/what-is-rest-api-design) API or [GraphQL](https://graphql.org/). Peeking into [gRPC](https://grpc.io/) will be beneficial too.
 
 There are many things I am skipping here like knowledge of data structure and algorithms, HTTP, operating system knowledge, NoSQL database, Message Brokers, etc but that is intentional as this is an oversimplified high-level summary.
