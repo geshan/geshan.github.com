@@ -41,7 +41,7 @@ At the end of the day always do the following, given you are on your working bra
     git checkout -
     git rebase master
 
-You get the latest master. Then you go back to your previous branch and rebase your branch with the latest master.
+You get the latest master. Then you go back to your previous branch and rebase your branch with the latest master. You can read more about [undoing a git rebase](/blog/2023/07/undo-git-rebase/) if you need to do that.
 
 ## Rule 3: Review pull requests faster and merge them to the main branch
 
