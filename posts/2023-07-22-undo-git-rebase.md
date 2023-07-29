@@ -75,7 +75,7 @@ Let's walk through the process in a bit more detail :
 
 You can check out the `readme` branch after cloning the repository with `git checkout -b readme origin/readme`. The `readme` branch in this Nextjs weather app [repo](https://github.com/geshan/nextjs-weather-geo) is behind the master branch. You can see the following view with [gitk](https://www.atlassian.com/git/tutorials/git) or git log too.
 
-<img class="center" src="/images/undo-git-rebase/02before-git-rebase.jpg" title="Readme branch before the git rebase" alt="Readme branch before the git rebase">
+<img class="center" loading="lazy" src="/images/undo-git-rebase/02before-git-rebase.jpg" title="Readme branch before the git rebase" alt="Readme branch before the git rebase">
 
 Now to rebase with the master branch you will run `git rebate master` on the `readme` branch.
 It will show the following output
@@ -87,7 +87,7 @@ Successfully rebased and updated refs/heads/readme.
 
 Now if you look at the commit history with `gitk`, it will show the following:
 
-<img class="center" src="/images/undo-git-rebase/03after-git-rebase.jpg" title="Readme branch after the git rebase with the master branch" alt="Readme branch after the git rebase with the master branch">
+<img class="center" loading="lazy" src="/images/undo-git-rebase/03after-git-rebase.jpg" title="Readme branch after the git rebase with the master branch" alt="Readme branch after the git rebase with the master branch">
 
 The `readme` branch has been rebased with the `master` branch, if you want to undo the rebase you should run:
 
@@ -103,7 +103,7 @@ HEAD is now at 2ea1674 Better readme
 
 If you see the commit history now, you will see it the same as the previous git commit history which looks like the below:
 
-<img class="center" src="/images/undo-git-rebase/04after-undoing-git-rebase.jpg" title="Readme branch after undoing the git rebase" alt="Readme branch after undoing the git rebase">
+<img class="center" loading="lazy" src="/images/undo-git-rebase/04after-undoing-git-rebase.jpg" title="Readme branch after undoing the git rebase" alt="Readme branch after undoing the git rebase">
 
 Another way to rewrite the git commit history is by using [git reflog](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/) which is a very powerful tool to undo almost anything in Git. You can try `git reflog` on this branch and it will show all the changes including the rebase and undoing the rebase. In the next section, you will learn about some important considerations for undoing a git rebase.
 
