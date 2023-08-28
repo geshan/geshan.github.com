@@ -185,7 +185,7 @@ The first one is, here we use `- ./db/init.sql:/docker-entrypoint-initdb.d/creat
 
 Next, we define a new service called `api` which builds the local `Dockerfile` with target `production` and names it `quotes-api`. After that, it has a `depends_on` definition on the `db` container which is our Postgres container.
 
-Subsequently, it maps the host port 3000 to the exposed container port 3000 where the Node.js Express API server is running. In the environment variables, it defines `db` as the host which maps to the above Postgres container and uses the same credentials as provided in the above definition. It [links](https://docs.docker.com/compose/compose-file/compose-file-v3/#links) to the Postgres container defined before the API service.
+Subsequently, it maps the host port 3000 to the exposed container port 3000 where the Node.js Express API server is running. In the environment variables, it defines `db` as the host which maps to the above Postgres container and uses the same credentials as provided in the above definition. It [links](https://docs.docker.com/compose/compose-file/compose-file-v3/#links) to the Postgres container defined before the API service. You should learn more about [docker compose environment variables](/blog/2023/08/docker-compose-environment-variables/).
 
 Finally, it maps all the local files to the `/src` of the container to make things run with Node.js.
 

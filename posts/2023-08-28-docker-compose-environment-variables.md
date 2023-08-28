@@ -17,13 +17,26 @@ Docker Compose is a powerful tool for orchestrating multi-container applications
 
 <img class="center" src="/images/docker-compose-environment-variables/01docker-compose-environment-variables.jpg" title="Setting up environment variables in Docker Compose an almost complete guide" alt="Setting up environment variables in Docker Compose an almost complete guide">
 
+## Table of contents
+
+* [Prerequisites](#prerequisites)
+* [Using MySQL container as an example](#using-mysql-container-as-an-example)
+* [How to define environment variables in Docker run](#how-to-define-environment-variables-in-docker-run)
+* [Adding environment variables in the Docker compose file](#adding-environment-variables-in-the-docker-compose-file)
+    * [Substitute from shell or .env file](#substitute-from-shell-or-env-file)
+    * [Pass the env file with --env-file argument](#pass-the-env-file-with---env-file-argument)
+* [Putting environment variable in an external file](#putting-environment-variable-in-an-external-file)
+    * [Use the env_file attribute](#use-the-env_file-attribute)
+* [Docker compose environment variables precedence](#docker-compose-environment-variables-precedence)
+* [Best practices for Docker compose environment variables](#best-practices-for-docker-compose-environment-variables)
+* [Conclusion](#conclusion)
 
 ## Prerequisites
 
 Before you go to the code section, the following are some prerequisites:
 
 1. You have docker and docker-compose installed on your local machine. This post will make use of Docker 24.0.2 and docker-compose v 2.18.1 on a Mac. Docker compose can be run with `docker-compose` or `docker compose` command in this version of docker and docker-compose.
-1.  Prior experience with docker and docker-compose will be helpful.
+1. Prior experience with docker and docker-compose will be helpful.
 1. Knowledge of MySQL and injecting environment variables will be useful but not necessary.
 
 For the context of this guide, you will use docker-compose in a development setting only. You are not expected to use docker-compose to orchestrate or scale containers. Scaling and orchestrating containers is done in a better way by Kubernetes. Given the requisites are mentioned, in the next section you will learn about MySQL container as an example for the whole post. 

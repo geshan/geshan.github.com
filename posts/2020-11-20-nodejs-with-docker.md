@@ -307,7 +307,7 @@ The docker compose file has some parts to understand:
 * In services, the web service has `target:dev` being sent so that we build only for the dev stage not production
 * The current directory `.` is mounted to the docker container at `/src` so the changes will be reflected in the container too.
 * We changed the `npm start` command in the Docker with Node.js to use `nodemon` as we wil use docker compose only for development.
-* We pass in only one environment variable `NODE_ENV` as `dev` other environment variables for instance database credentials can also be passed in as environment variables.
+* We pass in only one environment variable `NODE_ENV` as `dev` other environment variables for instance database credentials can also be passed in as environment variables. In this tutorial, you can learn more about [docker compose environment varaibles](/blog/2023/08/docker-compose-environment-variables/) and ways to pass it.
 
 We will be using `BUILDKIT` to build docker containers with docker-compose too. To use BUILKIT with docker-compose while building the docker container we can execute the command below:
 
