@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A beginner's guide to type casting in TypeScript with examples
-date: 2023-08-25T22:05:57.000+11:00
+date: 2023-08-05T22:05:57.000+11:00
 comments: true
 tags:
 - Software Engineering
