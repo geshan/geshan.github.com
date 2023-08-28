@@ -311,7 +311,7 @@ networks:
 
 The main change here is, we define a new service called `consumer` which builds the Dockerfile we defined above with target `dev`. To keep things simple, we copy all the files from the current folder to `/src` which is the work dir on the container with volumes. Next, we define this node.js container `depends_on` the `rabbitmq` container. This will only define the [sequence of start up](https://docs.docker.com/compose/startup-order/) of the container but not wait for the dependent container to be running; that is where wait-for-it comes into play. We wait for a maximum of 30 seconds for the RabbitMQ server to be up before the consumer starts.
 
-Subsequently, we sent some environment variables. The most important being `AMQP_URL` which tells the consumer which RabbitMQ server to connect to using the AMQP protocol. It maps to the right host and port as part of the [docker compose network](https://docs.docker.com/compose/networking/) with the correct credentials.
+Subsequently, we sent some environment variables. The most important being `AMQP_URL` which tells the consumer which RabbitMQ server to connect to using the AMQP protocol. It maps to the right host and port as part of the [docker compose network](https://docs.docker.com/compose/networking/) with the correct credentials. In this guide, you can learn more about [docker compose environment variables](/blog/2023/08/docker-compose-environment-variables/) and its precedence.
 
 The changes for the docker-compose file and Dockerfile are available in this [pull request](https://github.com/geshan/nodejs-rabbitmq-docker/pull/4/files). In the following section, we will test that all this setup and code works as intended.
 

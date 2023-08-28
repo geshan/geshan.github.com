@@ -147,7 +147,7 @@ volumes:
     driver: local
 ```
 
-This file is similar to the above docker-compose file. The main changes here are the `api` service now also depends on the `cache` service which is our Redis server. In addition to that, in the API service, we are passing the Redis related credentials as extra environment variables like `REDIS_HOST`, `REDIS_PORT`, and `REDIS_PASSWORD`. These parts have been highlighted in the above file. 
+This file is similar to the above docker-compose file. The main changes here are the `api` service now also depends on the `cache` service which is our Redis server. In addition to that, in the API service, we are passing the Redis related credentials as extra environment variables like `REDIS_HOST`, `REDIS_PORT`, and `REDIS_PASSWORD`. These parts have been highlighted in the above file. You can use [docker compose environment variables](/blog/2023/08/docker-compose-environment-variables/) to learn more about how to use environment variables with docker-compose.
 
 When we do a regular `docker-compose up` with this docker-compose.yml file it will yield the output similar to the below:
 
