@@ -1,6 +1,6 @@
 # Geshan's Blog on Eleventy
 
-Moved from octopress to Eleventy. Hosted on Cloudflare pages.
+Moved from Octopress to Eleventy. Hosted on Cloudflare pages.
 
 ## Docker
 
@@ -17,3 +17,7 @@ Run this:
 ```
 rm -rf _site && ELEVENTY_ENV=production npx eleventy --serve
 ```
+
+## Do not clone this as a boilerplate
+
+Please do not clone this repo as a boilerplate or starter for your own blog. This is not a stock theme or a boilerplate Eleventy blog. I have made this open source just to keep things open not to be copied and used as a base theme, so please DO NOT do it, thanks!
