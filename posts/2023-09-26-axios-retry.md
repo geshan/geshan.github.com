@@ -5,7 +5,8 @@ date: 2023-09-26T22:41:57.000+11:00
 comments: true
 tags:
 - Software Engineering
-- Postgres
+- Javascript
+- Web Development
 cover: "/images/axios-retry/01axios-retry.jpg"
 pagetitle: A beginner's guide to retrying failed requests with Axios Retry
 description: "In this guide, you will learn how to use Axios Retry plugin to retry failed request with Axios applying certain rules. Get going now!"
