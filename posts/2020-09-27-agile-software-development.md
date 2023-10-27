@@ -83,7 +83,7 @@ Now, notice some of the things that happened in this process:
 * The children got served all the apple dices of their portion in one go. This may be a good or a bad thing depending on how you translate it.
 * Surely there was no feedback loop in this process, the children felt a bit left out.
 
-All in all, the process looked normal. Unfortunately, software development is not as easy as serving an apple to four hungry children. So let’s have a look at how agile software development would attempt to solve the same problem.
+All in all, the process looked normal. Unfortunately, software development is not as easy as serving an apple to four hungry children. So let’s have a look at how agile software development would attempt to solve the same problem. This is where the analogy gets interesting. If you're looking for a project management solution, check out this guide by [Cloudwards](https://www.cloudwards.net/best-project-management-software-for-small-business/).
 
 ### The agile software development approach to serving an apple
 
