@@ -161,6 +161,44 @@ The output will look like the below:
 
 Surely in 2023, there will be more billionaires making their money from the technology category than any other. For instance, in the top 100 billionaires of the world Real Estate has 2 whereas tech has 16, so work in tech :). You can play around with the data and ask more questions to get more insights with SQL and string_agg.
 
+## Using string_agg with WITHIN GROUP
+
+In addition to the basic usage of string_agg, PostgreSQL provides an extension to this function called WITHIN GROUP, allowing you to specify the order in which values are concatenated within each group, which is particularly valuable when the sequence of items in the concatenated string is significant.
+
+The syntax for using WITHIN GROUP is as follows:
+
+```sql
+string_agg(expression, delimiter) WITHIN GROUP (ORDER BY ordering_expression)
+```
+
+The WITHIN GROUP extension in PostgreSQL's string_agg function enables ordered concatenation, providing control over the sequence of values within each group. This functionality proves especially useful for tasks like listing products sorted by prices.
+
+Let's update the aforementioned query to obtain answers to questions such as listing all the billionaires by country and year of birth, with the youngest first, along with the count by country:
+
+```sql
+SELECT
+    b.country,
+    STRING_AGG (
+        b.name || ' - ' || b.birth_year, ', '
+        ORDER BY b.birth_year DESC
+        WITHIN GROUP (ORDER BY b.birth_year DESC)
+    ) AS billionaire_birth_year,
+    COUNT(b.name) as no_of_billionaires
+FROM
+    billionaire b
+GROUP BY
+    b.country
+ORDER BY no_of_billionaires DESC;
+```
+
+In this query, the string_agg function will concatenate billionaire names along with their birth years (ordered by birth year in descending order) within each country group and count the number of billionaires in each country, ultimately sorting the results by the number of billionaires in descending order.
+
+Did you notice any difference? In this query, we added 'WITHIN GROUP'. The key distinction is that the previous query applies the ordering to the entire result set, whereas in this one, we ensure that the concatenation is ordered within each country group as well.
+
+Why does this matter? Consider a scenario where the order of items in the concatenated string is crucial, such as when creating a comma-separated list of items in a specific sequence. The WITHIN GROUP extension empowers you to control this order, providing a powerful tool for precise string aggregation.
+
+It's important to note that if the order of items is not significant for your use case, you can continue to use string_agg without WITHIN GROUP as demonstrated earlier.
+
 ## Conclusion
 
 PostgreSQL's string_agg function is a powerful tool for string aggregation in SQL queries. It allows you to concatenate values from multiple rows into a single string, making it ideal for tasks such as generating comma-separated lists or creating custom reports.
