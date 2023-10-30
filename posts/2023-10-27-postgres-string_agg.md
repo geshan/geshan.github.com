@@ -8,7 +8,7 @@ tags:
 - Postgres
 cover: "/images/postgres-string_agg/01postgres-string_agg.jpg"
 pagetitle: How to use the string_agg function in Postgres with examples
-description: "Learn how to use Postgres string_agg function with examples of top 100 billioinaires in the world, pretty fun!"
+description: "Learn how to use Postgres string_agg function with examples of top 100 billionaires in the world, pretty fun!"
 keywords: postgres string_agg, string_agg postgres, mysql group_concat postgres
 ---
 Are you a software engineer who works with PostgreSQL? Do you often find yourself needing to manipulate and aggregate strings in your database? If so, you're in luck because PostgreSQL provides a powerful function called string_agg. In this blog post, you dive into what string_agg is, how it's related to MySQL's group_concat, and walk through a couple of examples using real data. By the end, you'll have a solid understanding of how to make the most string_agg in your PostgreSQL queries. Let’s get going!
@@ -121,7 +121,7 @@ SELECT
     STRING_AGG (
 	    b.name || ' - ' || b.birth_year, ', '
       ORDER BY b.birth_year DESC
-    ) billionaire_birth_year,
+    ) AS billionaire_birth_year,
     COUNT(b.name) as no_of_billionaires
 FROM
     billionaire b
@@ -146,7 +146,7 @@ SELECT
     STRING_AGG (
 	    b.name, ', '
       ORDER BY b.name ASC
-    ) billionaire_birth_year,
+    ) AS billionaire_names,
     COUNT(b.name) as no_of_billionaires
 FROM
     billionaire b
@@ -157,9 +157,9 @@ ORDER BY no_of_billionaires DESC;
 
 The output will look like the below:
 
-<img class="center" src="/images/postgres-string_agg/03postgres-string_agg-billionaires.jpg" title="Top 100 Billionares by category and count per category" alt="Top 100 Billionares by category and count per category">
+<img class="center" src="/images/postgres-string_agg/03postgres-string_agg-billionaires.jpg" title="Top 100 Billionaires by category and count per category" alt="Top 100 Billionaires by category and count per category">
 
-Surely in 2023, there are more billionaires making their money from the technology category than any other. For instance, in the top 100 billionaires of the world Real Estate has 2 whereas tech has 16, so work in tech :). You can play around with the data and ask more questions to get more insights with SQL and string_agg.
+Surely in 2023, there will be more billionaires making their money from the technology category than any other. For instance, in the top 100 billionaires of the world Real Estate has 2 whereas tech has 16, so work in tech :). You can play around with the data and ask more questions to get more insights with SQL and string_agg.
 
 ## Conclusion
 
