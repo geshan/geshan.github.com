@@ -101,7 +101,7 @@ After that, while adding the route it had a suggestion too:
 
 Then you can run the server and see the `ok` route is working as expected by running `node index.js`. It will look as follows on your browser: `http://localhost:8080/`:
 
-<img class="center" loading="lazy" src="/images/nodejs-duet-ai-vs-code/09express-running.jpg" title="Express running on port 8080" alt="Express running on port 8080">
+<img class="center" loading="lazy" src="/images/nodejs-duet-ai-vs-code/09express-running-02.jpg" title="Express running on port 8080" alt="Express running on port 8080">
 
 Now it is time to add a dummy JSON response, so you can ask Duet AI to help you with the following prompt:
 
