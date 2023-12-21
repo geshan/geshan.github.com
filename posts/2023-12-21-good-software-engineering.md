@@ -18,7 +18,7 @@ In the ever-evolving landscape of technology, the importance of good software en
 
 <!-- more -->
 
-<img class="center" src="/images/good-software-engineering/01good-software-enginereing.jpg" title="Good software engineering is about finding a solution at the correct layer with boring technology" alt="Good software engineering is about finding a solution at the correct layer with boring technology">
+<img class="center" src="/images/good-software-engineering/01good-software-engineering.jpg" title="Good software engineering is about finding a solution at the correct layer with boring technology" alt="Good software engineering is about finding a solution at the correct layer with boring technology">
 
 ## Table of contents
 
