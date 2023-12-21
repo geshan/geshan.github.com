@@ -6,6 +6,8 @@ comments: true
 tags:
 - Software Engineering
 - Javascript
+- Gen AI
+- AI
 cover: "/images/nodejs-duet-ai-vs-code/01nodejs-duet-ai-vs-code.jpg"
 pagetitle: "How to write and deploy a basic Node.js API with Duet AI on VS Code a step-by-step guide"
 description: "Learn how to write and deploy a basic Node.js API with Duet AI on VS Code, in this step-by-step tutorial with 20+ screenshots!"
@@ -16,6 +18,13 @@ As developers, we constantly dance between writing code, managing infrastructure
 <!-- more -->
 
 <img class="center" src="/images/nodejs-duet-ai-vs-code/01nodejs-duet-ai-vs-code.jpg" title="How to write and deploy a basic Node.js API with Duet AI on VS Code a step-by-step guide" alt="How to write and deploy a basic Node.js API with Duet AI on VS Code a step-by-step guide">
+
+## Table of contents
+
+* [Install Duet AI on VS Code](#install-duet-ai-on-vs-code)
+* [Writing a simple Node.js API with Duet AI](#writing-a-simple-node.js-api-with-duet-ai)
+* [Deploy to cloud run with Duet AI](#deploy-to-cloud-run-with-duet-ai)
+* [Conclusion](#conclusion)
 
 
 ## Install Duet AI on VS Code
