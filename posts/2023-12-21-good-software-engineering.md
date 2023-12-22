@@ -31,7 +31,7 @@ In the ever-evolving landscape of technology, the importance of good software en
 * [Conclusion](#conclusion)
 
 
-Good software engineering is not just about writing code that works; it's about writing code that stands the test of time, is easily maintainable, and can adapt to the changing needs of the business. This involves making crucial decisions about where and how different components of your system should interact white it is stable, scaleable, and resilient.
+Good software engineering is not just about writing code that works; it's about writing code that stands the test of time, is easily maintainable, and can adapt to the changing needs of the business. This involves making crucial decisions about where and how different components of your system should interact while it is stable, scaleable, and resilient.
 
 In addition to that, your choice of technology for each layer also plays a vital role in how reliable, easily recoverable, and [resilient software](/blog/2020/12/software-resilience/) you can deliver. Another important aspect of this discussion is [software scalability](/blog/2020/12/software-scalability/). In the next section, you will learn about selecting the right layer for your solution.
 
