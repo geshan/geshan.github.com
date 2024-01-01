@@ -156,7 +156,7 @@ The full working Node.js code is available as a [GitHub repository](https://gith
 
 Axios interceptors can also be used for other cases too. For instance, it can be utilized to refresh a JWT token when it expires. This can be useful for applications that require authentication for each request and need the token to be refreshed periodically without the user having to re-authenticate every time it expires. [Axios JWT](https://www.npmjs.com/package/axios-jwt) does this, it also stores, clears, transmits, and automatically refreshes JWT authentication tokens.
 
-Another handy usage is to retry the request a certain number of times if it fails. There are a couple of NPM packages that do it already like [Axios Retry](https://www.npmjs.com/package/axios-retry) and [Retry Axios](https://www.npmjs.com/package/retry-axios). Both of them have config objects with relevant options like the number of retries and back-off strategy.
+Another handy usage is to retry the request a certain number of times if it fails. There are a couple of NPM packages that do it already like [Axios Retry](/blog/2023/09/axios-retry/) and [Retry Axios](https://www.npmjs.com/package/retry-axios). Both of them have config objects with relevant options like the number of retries and back-off strategy.
 
 There is even a library to log any Axios request as a curl command called [Axios curlize](https://www.npmjs.com/package/axios-curlirize). It also uses [request interceptors](https://github.com/anthonygauthier/axios-curlirize/blob/master/src/main.js#L13) to do the job. The possibilities are endless, you could write your own custom response interceptor to convert snake case to camel case when the response is received. I will leave where you want to exploit Axios interceptors to you.
 
