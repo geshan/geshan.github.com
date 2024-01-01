@@ -221,7 +221,7 @@ The above query will add 15 quotes to the table, it should be a good starting po
 
 At this stage, we will connect to MySQL from Node.js express application. To do this task, we will use [Mysql2](https://github.com/sidorares/node-mysql2) library. If you are asking why not the default [Mysql](https://github.com/mysqljs/mysql). It is because of 2 main reasons:
 
-* Mysql2 has a [wrapper for promises](https://github.com/sidorares/node-mysql2/blob/master/documentation/en/Promise-Wrapper.md) out of the box
+* Mysql2 has a [wrapper for promises](https://github.com/sidorares/node-mysql2/tree/master?tab=readme-ov-file#using-promise-wrapper) out of the box
 * Mysql2 supports [prepared statements](https://github.com/sidorares/node-mysql2#using-prepared-statements) which are faster and safer
 
 If you want a head-to-head comparison of these two libraries please head to [npm compare](https://npmcompare.com/compare/mysql,mysql2).

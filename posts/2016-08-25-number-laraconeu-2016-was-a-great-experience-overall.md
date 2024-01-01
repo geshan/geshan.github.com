@@ -99,7 +99,7 @@ For more photos from the conference do checkout the #LaraconEu tag with [photos]
 ## Amazing Experience
 
 Overall, it was an amazing experience. The venue was great. Organizers put a lot of effort to make sure the speakers felt comfortable. I
-want to thank them. The comments I have received over [JoinedIn](https://joind.in/talk/9999a) about my talk have been very helpful, I would really like
+want to thank them. The comments I have received over [JoinedIn](https://joind.in/event/laracon-eu-2016/embrace-chatops-stop-installing-deployment-software) about my talk have been very helpful, I would really like
 more ratings and comments :).
 
 > I am waiting for the videos like everyone else, I have some talks I missed that I want to watch. I loved being a part of such a vibrant event backed by
