@@ -31,7 +31,7 @@ Let’s analyze which free productivity software can help us get the important t
 
 ## Free productivity software to use frequently
 
-I could have jotted down a long list of [20](https://www.lifehack.org/articles/featured/top-20-free-applications-to-increase-your-productivity.html), [40](https://www.ventureharbour.com/best-productivity-apps/), or even [60](https://www.timedoctor.com/blog/productivity-tools/) free productivity software. But most of them would be applications I have never used or used once in a while. Below are the productivity software that I have used frequently and each of them has a free plan too, let’s get going:
+I could have jotted down a long list of 20, or even [60](https://www.timedoctor.com/blog/productivity-tools/) free productivity software. But most of them would be applications I have never used or used once in a while. Below are the productivity software that I have used frequently and each of them has a free plan too, let’s get going:
 
 ### Toggl Track
 

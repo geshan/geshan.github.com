@@ -98,7 +98,7 @@ To be honest, in 2020 you can easily use [async await](https://developer.mozilla
 
 Another Pro Tip:
 
-> Even Node.js versions are [LTS](https://nodejs.org/en/about/releases/), odd ones are not. So use Node 16 or 18 not 15 or 17 in production.
+> Even Node.js versions are [LTS](https://nodejs.org/en/about/previous-releases), odd ones are not. So use Node 18 or 20 not 15 or 17 in production.
 
 Going a bit deeper into non-sequential execution, promises and the power it has plays an important role here. The ability to do concurrent things is great in Node.js and javascript in general.
 
