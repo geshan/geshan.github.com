@@ -44,7 +44,7 @@ In the above example, if the user is created successfully, it can be an `info/in
 
 As it is a standard there will be libraries for generally any language/framework, logging is a language/framework agnostic practice that all developers can benefit from using any type and size of applications.
 
-Some logging libraries for some languages are listed as follows:
+Some [logging libraries](/blog/2021/01/nodejs-logging-library/) for some languages are listed as follows:
 
 * [Monolog](https://github.com/Seldaek/monolog) - PHP (based on PSR-3 logging standard)
 * [Winston](https://github.com/winstonjs/winston) - Javascript
