@@ -5,9 +5,7 @@ date: 2023-12-21T23:21:53.000+11:00
 comments: true
 tags:
 - Software Engineering
-- Javascript
-- Gen AI
-- AI
+- Misc
 cover: "/images/good-software-engineering/01good-software-engineering.jpg"
 pagetitle: "Good software engineering is about finding a solution at the correct layer with boring technology"
 description: "Learn how to find a solution at the right layer of your stack and with boring techology."

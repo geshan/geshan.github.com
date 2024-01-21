@@ -5,9 +5,11 @@ date: 2023-12-18T23:15:52.000+11:00
 comments: true
 tags:
 - Software Engineering
+- Web Development
 - Javascript
 - Gen AI
 - AI
+- GCP
 cover: "/images/nodejs-duet-ai-vs-code/01nodejs-duet-ai-vs-code.jpg"
 pagetitle: "How to write and deploy a basic Node.js API with Duet AI on VS Code a step-by-step guide"
 description: "Learn how to write and deploy a basic Node.js API with Duet AI on VS Code, in this step-by-step tutorial with 20+ screenshots!"
@@ -164,7 +166,6 @@ This `dockerfile` can be made better by implementing multiple things like using 
 You can test the Dockerfile by running `docker build -t node-app .` but we will deploy this to Google Cloud Run next. Duet AI as Google Cloud Run support built into it, you can read more about [serverless containers](/blog/2023/04/serverless-containers/) if you like.
 
 If you open your VS Code command palette and type `cloud run`, you will see:
-
 
 <img class="center" loading="lazy" src="/images/nodejs-duet-ai-vs-code/13duet-ai-cloud-run.jpg" title="Duet AI integrated with Cloud Run" alt="Duet AI integrated with Cloud Run">
 
