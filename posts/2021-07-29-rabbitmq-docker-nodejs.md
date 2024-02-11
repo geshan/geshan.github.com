@@ -8,6 +8,7 @@ tags:
 - Javascript
 - Node.js
 - RabbitMQ
+- Docker
 cover: "/images/rabbitmq-docker-nodejs/01rabbitmq-docker-nodejs.jpg"
 pagetitle: How to use RabbitMQ and Node.js with Docker and Docker-compose
 description: Learn how to use RabbitMQ with Node.js publisher and consumer, set up

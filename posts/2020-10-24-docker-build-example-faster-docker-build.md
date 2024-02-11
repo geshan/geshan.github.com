@@ -5,6 +5,7 @@ date: 2020-10-24T22:15:25.000+11:00
 comments: true
 tags:
 - devops
+- Docker
 cover: "/images/docker-build-example/01faster-docker-build.jpg"
 pagetitle: How to go from slow to fast docker build with example
 description: In this post, we will see a docker build example of a node js API application
