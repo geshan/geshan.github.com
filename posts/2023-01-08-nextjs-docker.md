@@ -55,9 +55,9 @@ If it was a popularity contest, Next.js blows the other competitor out of the wa
 
 ## Why use next.js with Docker
 
-Similar to Dockerizing other applications, when you put the Next.js application on a docker container it has some advantages. There first one is that you [ship the whole stack not only your code](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/#ship-the-whole-stack%2C-not-just-code), the stack includes the OS, any other language/executables in specific versions and your code. This means you get over works on my machine syndrome. 
+Similar to Dockerizing other applications, when you put the Next.js application on a docker container it has some advantages. There first one is that you [ship the whole stack not only your code](/blog/2018/11/4-ways-docker-changed-the-way-software-engineers-work-in-past-half-decade/#ship-the-whole-stack%2C-not-just-code), the stack includes the OS, any other language/executables in specific versions and your code. This means you get over works on my machine syndrome.
 
-In addition to making it portable, Docker also helps to run multiple copies of your application that can be scaled horizontally. As spinning up a docker container is relatively easy and cheap this helps with scaling your applications much easier with a container orchestrator like Kubernetes. All of these benefits surely apply to your Next.js app. 
+In addition to making it portable, Docker also helps to run multiple copies of your application that can be scaled horizontally. As spinning up a docker container is relatively easy and cheap this helps with scaling your applications much easier with a container orchestrator like Kubernetes. All of these benefits surely apply to your Next.js app.
 
 As Next.js also supports on [server side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) and [API routes](https://nextjs.org/docs/api-routes/introduction), the applications using these features cannot be cached on the CDN. This is where if the Next.js app is Dockerized it can be easily deployed into a Kubernetes cluster or even on [serverless containers](/blog/2023/04/serverless-containers/).
 
