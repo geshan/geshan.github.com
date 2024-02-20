@@ -13,7 +13,7 @@ pagetitle: "How to create a text summarizer using Gemini over Vertex AI with Nod
 description: "Learn how to create a simple summarizer with Gemini API on Vertex AI with Node.js that runs on the CLI."
 keywords: Gemini, Gemini api, vertex ai, gemini node.js, vertex ai nodejs, vertex ai node.js, google gemini, gemini pro nodejs
 ---
-Gemini by Google is a powerful multimodal Large Language Model (LLM) capable of taking images, videos, and text as input and generating text and images. [Gemini](https://gemini.google.com/) has 3 versions Nano, Pro, and Ultra. For this post, you will use Gemini Pro 1.0 via [Vertex AI](https://cloud.google.com/vertex-ai) to create an API that takes a URL as an input and gives out a summary of the page’s content using Node.js, let’s get started!
+Gemini by Google is a powerful multimodal Large Language Model (LLM) capable of taking images, videos, and text as input and generating text and images. [Gemini](https://gemini.google.com/) has 3 versions Nano, Pro, and Ultra. For this post, you will use Gemini Pro 1.0 via [Vertex AI](https://cloud.google.com/vertex-ai) to create summarizer then run it on the CLI using Node.js, let’s get started!
 
 <!-- more -->
 
