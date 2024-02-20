@@ -10,6 +10,7 @@ tags:
 - Gen AI
 - AI
 - GCP
+- Node.js
 cover: "/images/nodejs-duet-ai-vs-code/01nodejs-duet-ai-vs-code.jpg"
 pagetitle: "How to write and deploy a basic Node.js API with Duet AI on VS Code a step-by-step guide"
 description: "Learn how to write and deploy a basic Node.js API with Duet AI on VS Code, in this step-by-step tutorial with 20+ screenshots!"
