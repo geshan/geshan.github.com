@@ -122,7 +122,7 @@ Here you are asking the service to be called `eventually-podcast` when deploying
 
 <img class="center" loading="lazy" src="/images/cloud-shell-editor/13deploy-to-cloud-run.jpg" title="Start deploying the code to Google Cloud Run from source which used Buildpacks" alt="Start deploying the code to Google Cloud Run from source which used Buildpacks">
 
-It will take some minutes to build the image from the source using [buildpacks](​​https://cloud.google.com/docs/buildpacks/overview) and then deploy it to Google Cloud Run. You might need to authorize some permissions if you are doing so for the first time. Many things happen in the background to get this job done. Once done it will look as follows
+It will take some minutes to build the image from the source using [buildpacks](​https://cloud.google.com/docs/buildpacks/overview) and then deploy it to Google Cloud Run. You might need to authorize some permissions if you are doing so for the first time. Many things happen in the background to get this job done. Once done it will look as follows:
 
 <img class="center" loading="lazy" src="/images/cloud-shell-editor/14deployed-to-cloud-run.jpg" title="Code is deployed to Cloud Run and you get a working HTTPS URL to try out" alt="Code is deployed to Cloud Run and you get a working HTTPS URL to try out">
 

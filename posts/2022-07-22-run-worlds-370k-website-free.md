@@ -89,7 +89,7 @@ Another way to do it will be to browse the blog for some time like a couple of m
 
 ### Content editing
 
-Even though the website is static changing it is pretty easy. In case I need to fix a typo or make a small change, I use [Forestry’s](https://forestry.io/) free plan to do it from the browser. It can also be done with [Netlify CMS](https://www.netlifycms.org/).
+Even though the website is static changing it is pretty easy. In case I need to fix a typo or make a small change, I use [Forestry’s](https://forestry.io/) free plan to do it from the browser. It can also be done with Netlify CMS now Decap CMS(https://decapcms.org/).
 
 In the next section, we will understand how I host this JAM stack website.
 

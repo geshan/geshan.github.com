@@ -181,7 +181,7 @@ async function generateContent() {
 
 Let’s analyze the things that changed. First, you introduced a const called `prompt` that has the prompt to summarize the text. This makes separating the prompt from the text to work on. Then you used it as part of the request.
 
-In place of the `generateContentStream` you have replaced it with the `generateContent` to get the final result compared to following a stream approach. You can configure the request params as per the official [docs](​​https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini#gemini-pro). After the response is received, you pull out the text and print it on the screen with a `console.log`. It looks like the following when you again run `node –no-warnings cli.js`:
+In place of the `generateContentStream` you have replaced it with the `generateContent` to get the final result compared to following a stream approach. You can configure the request params as per the official [docs](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini#gemini-pro). After the response is received, you pull out the text and print it on the screen with a `console.log`. It looks like the following when you again run `node –no-warnings cli.js`:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/17cli-output-sync.jpg" title="Better one shot non-streamed output after changing the code to work in a sync manner" alt="Better one shot non-streamed output after changing the code to work in a sync manner">
 
