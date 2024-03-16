@@ -68,11 +68,11 @@ module.exports = {
         "date": lastPost.date,
         "wordCount": lastPost.wordCount
       },
-      "tags": JSON.stringify(tags),
-      "categories": JSON.stringify(categories),
-      "years": JSON.stringify(years),
-      "months": JSON.stringify(months),
-      "days": JSON.stringify(days)
+      "tags": tags,
+      "categories": categories,
+      "years": years,
+      "months": months,
+      "days": days
     };
   }
 };
