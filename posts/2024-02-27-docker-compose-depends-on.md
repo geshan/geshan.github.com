@@ -11,7 +11,7 @@ pagetitle: "How to use docker compose depends_on a beginner's guide"
 description: "Learn how to use docker compose depend_on proprely to start the dependent service first, make it healthy then only start the main container"
 keywords: docker compose depends on, docker compose depends_on, docker-compose depends on, docker-compoes depends_on
 ---
-Docker Compose is a powerful tool that allows you to define and run multi-container Docker applications. It simplifies the process of managing and orchestrating multiple containers, making it a popular choice for development and testing environments. One of the key features of Docker Compose is the `depends_on` option, which allows you to specify dependencies between services. In this beginner's guide, you will explore how to use `depends_on` effectively, ensuring your services start up in the correct order and function seamlessly. Let’s get started!!
+Docker Compose is a powerful tool that allows you to define and run multi-container Docker applications. It simplifies the process of managing and orchestrating multiple containers, making it a popular choice for development and testing environments. One of the key features of Docker Compose is the `depends_on` option, which allows you to specify dependencies between services. In this beginner's guide, you will explore how to use `depends_on` effectively, ensuring your services start up in the correct order and function seamlessly. Let’s get started!
 
 <!-- more -->
 
