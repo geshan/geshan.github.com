@@ -53,7 +53,10 @@ module.exports = {
       totalWords += wordCount(p.templateContent);
     });
     let avgWords = totalWords / totalPosts;
-
+    const mnths = {};
+    for (const [index, month] of months.entries()) {
+      mnths[index+1] = month;
+    }
     return {
       totalPosts,
       totalWords,
@@ -71,7 +74,7 @@ module.exports = {
       "tags": tags,
       "categories": categories,
       "years": years,
-      "months": months,
+      "months": mnths,
       "days": days
     };
   }
