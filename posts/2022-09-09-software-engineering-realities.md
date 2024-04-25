@@ -54,7 +54,7 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. Write code that is easy to delete, [not easy to extend](https://programmingisterrible.com/post/139222674273/how-to-write-disposable-code-in-large-systems).
 1. Premature optimization is the [root of all evil](https://effectiviology.com/premature-optimization/).
 1. In most cases, software development and delivery will always take longer than estimated.
-1. Don’t follow buzz (twitter) driven development, keep it boring and certain. For a 1000s or millions dollar business, [choose boring technology](https://boringtechnology.club/) a.k.a [boring stack](https://flaviocopes.com/boring-stack/) – keep the shiny new things for your side projects.
+1. Don’t follow buzz (twitter) driven development, keep it boring and certain. For a 1000s or millions dollar business, [choose boring technology](/blog/2023/12/good-software-engineering/#choose-boring-technology) a.k.a [boring stack](https://flaviocopes.com/boring-stack/) – keep the shiny new things for your side projects.
 1. When coding something in addition to the patterns and concepts you know (like SOLID, Law of Demeter, and others) also think of the request per minute/second the code and data store is expected to handle.
 1. [First, solve the problem. Then, write the code.](/blog/2018/12/the-most-important-tip-for-beginner-software-engineers-is/) - John Johnson
 1. Do some [pair programming](/blog/2020/06/pair-programming-benefits-for-your-team/) even with someone junior to you, one thing is guaranteed both of you will learn something new.
@@ -78,7 +78,7 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. Working in [a product company is different than working in a web agency](/blog/2013/06/working-for-dev-shop-with-projects-vs/). 
 1. Even in a product company, [working on internal products is not like working on a customer-facing product](/blog/2020/09/software-engineer-on-internal-product-vs-customer-facing-applications-/).
 1. Similarly, you will need a [different mindset](/blog/2021/11/software-engineer-mindset/) when working on a stable product on the critical path used by most of the customers vs a completely new feature not used by customers till now.
-1. A [static website (not even JAMstack)](/blog/2020/04/static-vs-dynamic-websites-jam-stack/) will beat the best web server-powered dynamic website in performance every single day. Go Web 1.0 where you should – for example, a brochure website, it surely does not need WordPress for that 1 “contact us” form.
+1. A [static website not even JAMstack](/blog/2020/04/static-vs-dynamic-websites-jam-stack/) will beat the best web server-powered dynamic website in performance every single day. Go Web 1.0 where you should – for example, a brochure website, it surely does not need WordPress for that 1 “contact us” form.
 1. [Full-stack software engineer is a myth](/blog/2020/02/difference-between-backend-frontend/), yes I said it. In the past 15 years possibly I have found a couple of engineers who are truly (almost) full stack. It is basically a backend engineer who can do some frontend or a frontend engineer who can do some backend work.
 1. Generally, there are two types of software engineers, the creators: who will create the “next” web framework (which might be used by 100s of people). The users: who will never make the “next” web framework but will use one of the “popular” ones and add business value. Which one are you and which one you want to be is fully your call.
 1. Build the right thing and build the thing right [go hand in hand](https://www.stevesmith.tech/blog/build-the-right-thing-and-build-the-thing-right/), but build the right thing first :D.
@@ -125,12 +125,11 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. While writing unit tests, aim for a high code coverage but don’t run after having 100% code coverage, evaluate the cost and benefit of the highest possible code coverage.
 1. Integration or End to End (E2E) might be a good idea but look at the feedback time it takes. There are only two types of automated tests the [fast ones and not-so-fast ones](/blog/2016/03/there-are-only-two-types-of-automated-software-tests/).
 
-
 ## Software Deployment/Release
 
-1. Software deployment is not a release. Use feature flags to control web traffic flow like a tap controls water flow.
+1. [Software deployment is not a release](/blog/2018/10/deployment-is-not-release/). Use feature flags to control web traffic flow like a tap controls water flow.
 1. Speaking of feature flags, you might not need a fancy feature flag management SAAS. It can be good to have it but executing the feature flag concept with a simple `if else` is also possible.
-1. Deployment tools will come and go, making the deployment atomic, and easy to rollback is the main catch here.
+1. [Deployment tools](/blog/2021/04/sofware-deployment-tools/) will come and go, making the deployment atomic, and easy to rollback is the main catch here.
 1. Your work is not done after releasing it on production and testing a couple of times. If you can set up a dashboard or other way to track the progress for a big feature, that helps the stakeholder greatly. Tweak the definition of done for some tasks, that's fine.
 1. [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often). Also follow that in code, when code works make a commit so that you can go back to that state if needed.
 1. Move fast break (few) things (behind feature flags) – :) -- Originally attributed to [Mark Zukerberg](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over).

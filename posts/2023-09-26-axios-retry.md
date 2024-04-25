@@ -56,7 +56,7 @@ Axios Retry is an Axios plugin that simplifies the process of retrying failed re
 
 * Customizable Retry Strategies: You can define custom retry strategies based on the specific needs of your application, such as increasing the delay between retries or limiting the number of attempts.
 
-* Enhances Code Readability: By encapsulating retry logic within Axios interceptors, your code remains clean and maintainable, improving readability.
+* Enhances Code Readability: By encapsulating retry logic within [Axios interceptors](/blog/2022/12/axios-interceptors/), your code remains clean and maintainable, improving readability.
 
 Axios retry plugin has a flexible config you can use, which is described in the next section.
 

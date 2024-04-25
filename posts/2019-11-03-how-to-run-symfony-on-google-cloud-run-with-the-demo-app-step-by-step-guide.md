@@ -59,7 +59,7 @@ Then wait for the container to be built and deployed, you can see my process bel
 
 <img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/03deploy-symfony.jpg" title="Steps to deploy Symfony on Google Cloud Run" alt="Steps to deploy Symfony on Google Cloud Run">
 
-If everything goes fine on your Google Cloud Shell, you will see HTTPs URL you can go to in order to see your Symfony demo app running like below:
+If everything goes fine on your [Google Cloud Shell](/blog/2024/01/cloud-shell-editor/), you will see HTTPs URL you can go to in order to see your Symfony demo app running like below:
 
 <img class="center" loading="lazy" src="/images/symfony-on-google-cloud-run/04symfony-running.jpg" title="Symfony running on Google Cloud Run" alt="Symfony running on Google Cloud Run">
 
