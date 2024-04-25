@@ -130,7 +130,7 @@ The file looks similar to the above one, still, let’s discuss the newly added 
 
 * **Services**: In this configuration, there are two services `node` which runs a simple Node.js app, and Nginx which sits in front of the Node.js app as a reverse proxy. Nginx will forward all requests to the `/api` path to the Node.js app. The Node.js app is in the `../api` folder and has its own [Dockerfile](https://github.com/geshan/nginx-docker-compose/blob/master/api/Dockerfile). You can learn more about [Node.js with Docker](/blog/2020/11/nodejs-with-docker/) too.
 * **Nginx Volumes:** There are two volumes this time, first one is similar to the above. The second one the key to this configuration which holds the definition of what the `/` and `/api` paths should do. You will know about this later.
-* **Depends on**: Here it says that the Nginx service will be started after the Node.js service with depends on. You can read more about [Docker compose depends on](blog/2024/02/docker-compose-depends-on/) and learn about it.
+* **Depends on**: Here it says that the Nginx service will be started after the Node.js service with depends on. You can read more about [Docker compose depends on](/blog/2024/02/docker-compose-depends-on/) and learn about it.
 
 Next, you will learn about the components of this two-container setup.
  
