@@ -122,7 +122,7 @@ Next, you will know about the Docker commands that will help you work with Docke
 
 ## Essential Docker Commands
 
-At this point, you will need docker installed on your machine (or wherever you want to try the following commands). Depending on your operating system you can find the instructions to install the [Docker engine](https://docs.docker.com/engine/install/) on its website. You can also install the Docker desktop. After you have Docker running locally, you can try executing `docker --version` when that works you can try the following [docker commands](/blog/2022/05/docker-commands/) :
+At this point, you will need docker installed on your machine (or wherever you want to try the following commands). Depending on your operating system you can find the instructions to install the [Docker engine](https://docs.docker.com/engine/install/) on its website. You can also install the Docker desktop. After you have Docker running locally, you can try executing `docker --version` when that works you can try the following [docker commands](https://geshan.com.np/blog/2022/05/docker-commands/) :
 
 * **docker search:** Finds Docker images on Docker Hub.
 * **docker pull:** Downloads an image from a registry to your local machine.
