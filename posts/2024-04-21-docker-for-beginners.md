@@ -122,7 +122,7 @@ Next, you will know about the Docker commands that will help you work with Docke
 
 ## Essential Docker Commands
 
-At this point, you will need docker installed on your machine (or wherever you want to try the following commands). Depending on your operating system you can find the instructions to install the [Docker engine](https://docs.docker.com/engine/install/) on its website. You can also install the Docker desktop. After you have Docker running locally, you can try executing `docker --version` when that works you can try the following [docker commands](​​/blog/2022/05/docker-commands/):
+At this point, you will need docker installed on your machine (or wherever you want to try the following commands). Depending on your operating system you can find the instructions to install the [Docker engine](https://docs.docker.com/engine/install/) on its website. You can also install the Docker desktop. After you have Docker running locally, you can try executing `docker --version` when that works you can try the following [docker commands](​​/blog/2022/05/docker-commands/) :
 
 * **docker search:** Finds Docker images on Docker Hub.
 * **docker pull:** Downloads an image from a registry to your local machine.
@@ -146,7 +146,7 @@ All of the above content is available as slides too:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTIz0YiwQP5bV90mFNT5RpJOwKYzYeY2LPw26hlulQvhw1dqzQBVUVhbFHKR5PCNb_aO_VquVRS-96d/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-In the next part of this series, you will learn about docker networking and docker compose.
+In the next part of this series, you will learn about docker networking and docker-compose.
 
 Next, you will find out the need to learn Docker in today’s world.
 
