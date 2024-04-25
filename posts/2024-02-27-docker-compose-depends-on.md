@@ -38,7 +38,7 @@ For example, if your application depends on a database, the database service nee
 
 It's important to distinguish `depends_on` from `links`. While `links` create network aliases and allow containers to communicate with each other by their service names, `depends_on` solely focuses on startup order. It does not automatically guarantee that the dependent service is ready to accept connections or requests. You will explore how to handle readiness checks later in this guide.
 
-Let’s look at an example for an application that is a Node.js API (for Quotes) that uses Docker and has a Postgres database to store the data. The full [Node.js Postgres](blog/2021/01/nodejs-postgresql-tutorial/) tutorial is available if you want to learn and understand how it is built. A working docker compose file with both the Node.js API and Postgres database services using `links` to make it possible for the Node.js container to talk to the db can look like the below:
+Let’s look at an example for an application that is a Node.js API (for Quotes) that uses Docker and has a Postgres database to store the data. The full [Node.js Postgres](/blog/2021/01/nodejs-postgresql-tutorial/) tutorial is available if you want to learn and understand how it is built. A working docker compose file with both the Node.js API and Postgres database services using `links` to make it possible for the Node.js container to talk to the db can look like the below:
 
 ```yaml/20-21
 version: '3.8'
