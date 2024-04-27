@@ -189,10 +189,10 @@ You need the `--no warnings` to not print any warnings about the fetch object. T
 
 ## Next steps
 
-For this post, it will feel a bit static and restricted. To change the input text to get a summary you will need to change the file and run the command again. Thereby, in the next part of this series, you will be able to input a URL to an API. Then the system will scrape the text from that URL and then summarize it.
+For this post, it will feel a bit static and restricted. To change the input text to get a summary you will need to change the file and run the command again. Thereby, in the [next part](/blog/2024/02/gemini-vertex-ai-nodejs-api/) of this series, you will be able to input a URL to an API. Then the system will scrape the text from that URL and then summarize it.
 
-It will involve some code refactoring and restructuring to make the code reusable, stay tuned for part 2 where you will convert this code to a more flexible solution with an Express JS API. If you are eager to look at the API code, it is available as an open-source [GitHub repository](https://github.com/geshan/summarizer-gemini).
+It will involve some code refactoring and restructuring to make the code reusable, stay tuned for [part 2](/blog/2024/02/gemini-vertex-ai-nodejs-api/) where you will convert this code to a more flexible solution with an Express JS API. If you are eager to look at the API code, it is available as an open-source [GitHub repository](https://github.com/geshan/summarizer-gemini).
 
 ## Conclusion
 
-In this post, you learned how to play around with the Vertex AI interface to create a Gemini Pro 1.0 powered summarizer. Then, you pulled in the code to your local on a `cli.js` file and changed the code to give a synchronous output compared to a streaming one. I hope it was a good start, more goodness to follow in the next part. Keep exploring Gen AI and Gemini!
+In this post, you learned how to play around with the Vertex AI interface to create a Gemini Pro 1.0 powered summarizer. Then, you pulled in the code to your local on a `cli.js` file and changed the code to give a synchronous output compared to a streaming one. I hope it was a good start, more goodness to follow in the [next part](/blog/2024/02/gemini-vertex-ai-nodejs-api/). Keep exploring Gen AI and Gemini!
