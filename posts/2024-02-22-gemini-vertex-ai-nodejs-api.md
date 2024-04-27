@@ -29,10 +29,9 @@ Gemini by Google is a powerful LLM and in this tutorial, you will use the Gemini
   * [Build the Express.js API](#build-the-express.js-api)
 * [Conclusion](#conclusion)
 
-
 ## Where we left in the last part
 
-From the last part, you have a folder called `summarizer-gemini` which has the `@google-cloud/vertexai` NPM module installed and `cli.js` file that can summarize the static text which is in the same file. When you run `node –no-warnings cli.js`, it will show you an output similar to the following:
+From the [last part](/blog/2024/02/gemini-vertex-ai-nodejs/), you have a folder called `summarizer-gemini` which has the `@google-cloud/vertexai` NPM module installed and `cli.js` file that can summarize the static text which is in the same file. When you run `node –no-warnings cli.js`, it will show you an output similar to the following:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/17cli-output-sync.jpg" title="Better one shot non-streamed output after changing the code to work in a sync manner" alt="Better one shot non-streamed output after changing the code to work in a sync manner">
 
@@ -98,7 +97,7 @@ module.exports = {
 
 The things that have changed here is, that you have renamed the `getContent` function to `getSummary`. Then you have also removed the static text that had news about removing waste from waterways to a new variable called `text`. The `text` variable is passed in as a parameter to the `getSummary` function which makes it dynamic. Then you expose the get summary with the `module.exports` so that it can be used with require in any other file and get the returned summary.
 
-In the next part, you will add a basic scraper using Axios and Cheerio (packaged together as axrio).
+In the next section, you will add a basic scraper using Axios and Cheerio (packaged together as axrio).
 
 ### Add scraper.js file
 
@@ -254,6 +253,6 @@ The code is also available as an open-source [GitHub repository](https://github.
 
 ## Conclusion
 
-In part 2 of this tutorial, you were able to convert the sample code into a full-fledged API. You also have a quick way to test out any URL using the modified `cli.js` file.
+In part 2 of this tutorial, you were able to convert the sample code into a full-fledged API. You also have a quick way to test out any URL using the modified `cli.js` file. Here is the [part 1](/blog/2024/02/gemini-vertex-ai-nodejs/).
 
 I hope it gives you a solid base to create your Gen AI apps using the Gemini API on Vertex AI in the Google Cloud Platform. This is just scratching the surface, with the right prompts you can create APIs that can do many things like categorize text, generate other text, etc. The possibilities are endless. I hope you learned a useful skill.
