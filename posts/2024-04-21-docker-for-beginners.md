@@ -146,7 +146,7 @@ All of the above content is available as slides too:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTIz0YiwQP5bV90mFNT5RpJOwKYzYeY2LPw26hlulQvhw1dqzQBVUVhbFHKR5PCNb_aO_VquVRS-96d/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-In the next part of this series, you will learn about docker networking and docker-compose.
+In the next part of this series, you will get at [docker compose tutorial](/blog/2024/04/docker-compose-tutorial/).
 
 Next, you will find out the need to learn Docker in today’s world.
 
