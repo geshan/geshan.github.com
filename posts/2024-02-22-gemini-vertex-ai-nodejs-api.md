@@ -251,6 +251,8 @@ There you have it, you have successfully converted the sample that you got from 
 
 The code is also available as an open-source [GitHub repository](https://github.com/geshan/summarizer-gemini) for your reference.
 
+You can also create a [e-commerce product description generator](/blog/2024/04/gemini-ecommerce-product-description-generator/) using Gemini over Vertex AI that takes in pictures and a prompt to give out a decent product description. Try it.
+
 ## Conclusion
 
 In part 2 of this tutorial, you were able to convert the sample code into a full-fledged API. You also have a quick way to test out any URL using the modified `cli.js` file. Here is the [part 1](/blog/2024/02/gemini-vertex-ai-nodejs/).
