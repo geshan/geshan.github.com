@@ -40,7 +40,7 @@ Before you get your hands dirty with Vertex AI and some code, let’s understand
 
 Now, imagine you have a system where you can upload pictures and prompt the system to get the product description for that particular product. The generated product descriptions will not be perfect but it will get you (or the copywriter) 80% of the way. That is what you are doing to build in this tutorial.
 
-To do this you will use the Gemini Pro LLM over Vertex AI, you will also get the basic code that can be deployed as a service. You can find some more context in these slides.In the next section, you will learn about the prerequisites to build the e-commerce product description generator.
+To do this you will use the Gemini Pro LLM over Vertex AI, you will also get the basic code that can be deployed as a service. You can find some more context in these [slides](https://docs.google.com/presentation/d/1WboHu9zHIQLoiW_RO20KXLQb6twLdGLBNy_e3iadk94/edit?usp=sharing). In the next section, you will learn about the prerequisites to build the e-commerce product description generator.
 
 ## Prerequisites
 
