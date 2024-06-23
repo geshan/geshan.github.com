@@ -143,8 +143,8 @@ You can also wrap the error or exception into your custom exception. For instanc
 
 ## Conclusion
 
-JavaScript's `try...catch` statement is an invaluable tool for handling errors gracefully. It provides a structured way to anticipate and manage exceptions, preventing your code from crashing and ensuring a better user experience.
+JavaScript's `try catch` statement is an invaluable tool for handling errors gracefully. It provides a structured way to anticipate and manage exceptions, preventing your code from crashing and ensuring a better user experience.
 
-By understanding the principles of `try...catch` and applying them judiciously, you can create robust and reliable JavaScript applications. Remember to leverage the `finally` block for essential cleanup tasks, and don't shy away from utilizing `try...catch` in both synchronous and asynchronous code. In this guide, you learned how to use try…catch and finally in both sync and async JavaScript code with useful examples.
+By understanding the principles of `try catch` and applying them judiciously, you can create robust and reliable JavaScript applications. Remember to leverage the `finally` block for essential cleanup tasks, and don't shy away from utilizing `try catch` in both synchronous and asynchronous code. In this guide, you learned how to use try…catch and finally in both sync and async JavaScript code with useful examples.
 
-Keep practicing and exploring different error-handling scenarios to become a master of error management in JavaScript. Embrace the power of `try...catch` and finally, let your code handle errors with elegance and resilience. Happy coding!
+Keep practicing and exploring different error-handling scenarios to become a master of error management in JavaScript. Embrace the power of `try catch` and finally, let your code handle errors with elegance and resilience. Happy coding!
