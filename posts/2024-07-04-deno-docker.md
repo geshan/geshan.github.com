@@ -152,7 +152,7 @@ This Dockerfile is used to create a Docker container for a Deno application. Her
 
 8. `CMD ["run", "-A", "main.ts"]`: Specifies the default command to run when the container starts. In this case, it runs the Deno application with the command `deno run -A main.ts`. The `-A` flag gives the script all permissions, which include network access, file system access, etc.
 
-This Dockerfile is a straightforward way to containerize a Deno application, ensuring it runs in a lightweight, secure environment with all its dependencies properly cached.
+This Dockerfile is a straightforward way to containerize a Deno application, ensuring it runs in a lightweight, secure environment with all its dependencies properly cached. You can also use [multi-stage docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/) to reduce the size of the final image, but for this example, a single-stage build is sufficient. If you want a refersher on Docker, please do read this [docker for beginners](/blog/2024/04/docker-for-beginners/) guide.
 
 Given you have creaded the `Dockerfile` you can build it into a Docker image with:
 
@@ -203,8 +203,9 @@ Then run `docker compose up` to run the app container. It will give an output li
 
 <img class="center" loading="lazy" src="/images/deno-docker/09deno-docker-compose-up.jpg" title="Docker compose up result for Deno app (Fresh)" alt="Docker compose up result for Deno app (Fresh)">
 
+Due to how things are cached, you might need to run `deno task build` locally to get the `_fresh` folder to be mapped with volumes for Docker compose. If you want a [nodemon](/blog/2021/02/nodemon/) like experience you can use [denon](https://deno.land/x/denon@2.5.0). If you want to learn more about Docker comoose you can check this [docker compose tutorial](/blog/2024/04/docker-compose-tutorial/).
 
-Due to how things are cached, you might need to run `deno task build` locally to get the `_fresh` folder to be mapped with volumes for Docker compose. If you want a [nodemon](/blog/2021/02/nodemon/) like experience you can use [denon](https://deno.land/x/denon@2.5.0).
+All of the code is in this open-source [GitHub](https://github.com/geshan/deno-fresh-docker) repository. You can clone it and try it out yourself. If you have any questions or suggestions, feel free to open an issue or a pull request.
 
 ## Conclusion
 
