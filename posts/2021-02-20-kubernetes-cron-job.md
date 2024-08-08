@@ -6,6 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Kubernetes
+- devops
 cover: "/images/kubernetes-cron-job/01kubernetes-cron-job.jpg"
 pagetitle: "Kubernetes cron jobs: a hands-on guide to optimally configured crons"
 description: Need to configure your Kubernetes Cron jobs optimally? Read this 2000+ words guide to do exactly that.
@@ -58,7 +59,7 @@ Even though Kubernetes is flexible, powerful, and ultra-popular. There are some 
 
 ## Kubernetes Cron Job
 
-I have been part of a team that used Kubernetes in Production in [2016](https://www.slideshare.net/geshan/embrace-chatops-stop-installing-deployment-software-larcon-eu-2016/54). Kubernetes is great at managing long-running workloads like web servers or queue consumers. They roughly translate to [Service](https://kubernetes.io/docs/concepts/services-networking/service/), and [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) artifact in Kubernetes lingo. In addition to being great for long-running workloads, Kubernetes does an amazing job in managing Cron Jobs too. 
+I have been part of a team that used Kubernetes in Production in [2016](https://www.slideshare.net/geshan/embrace-chatops-stop-installing-deployment-software-larcon-eu-2016/54). Kubernetes is great at managing long-running workloads like web servers or queue consumers. They roughly translate to [Service](https://kubernetes.io/docs/concepts/services-networking/service/), and [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) artifact in Kubernetes lingo. In addition to being great for long-running workloads, Kubernetes does an amazing job in managing Cron Jobs too. You can manage cron jobs with [Kubernetes Lens](/blog/2024/08/kubernetes-lens/).
 
 If we look at a bit of Kubernetes history, Kubernetes Cron Job was called `ScheduledJob`. In [version 1.5](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.5.md#action-required-before-upgrading) it was renamed to be called Cron Job. In Kubernetes, [Cron Job](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) is a special kind of a [Job](https://kubernetes.io/docs/concepts/workloads/controllers/job/) that runs on a repeating schedule. The frequency of the Kubernetes Cron Job is written in the familiar [Cron](https://crontab.guru/) format. For example `0 4 * * *` in the cron format means at 4:00 AM every morning. You can read more about the [cron schedule syntax](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#cron-schedule-syntax) if you want.
 
