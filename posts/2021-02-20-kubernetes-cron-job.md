@@ -6,6 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Kubernetes
+- devops
 cover: "/images/kubernetes-cron-job/01kubernetes-cron-job.jpg"
 pagetitle: "Kubernetes cron jobs: a hands-on guide to optimally configured crons"
 description: Need to configure your Kubernetes Cron jobs optimally? Read this 2000+ words guide to do exactly that.
