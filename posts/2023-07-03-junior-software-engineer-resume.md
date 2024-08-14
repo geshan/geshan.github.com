@@ -105,7 +105,7 @@ As you are now aware that the primary audience of the resume is a tech recruiter
 
 ## What recruiters look for
 
-I conducted some written interviews from 2019-202 with some in-house tech recruiters in Sydney. From interviews conducted between 2019 and 2022, here's what recruiters look for in a resume:
+I conducted some written interviews from 2019-2022 with some in-house tech recruiters in Sydney. From interviews conducted between 2019 and 2022, here's what recruiters look for in a resume:
 
 [Cloë](/blog/2019/01/things-tech-recruiters-look-for/#clo%C3%AB-stanbridge-(safety-culture)-looks-for-tech-and-soft-skills) emphasizes the importance of including side projects, particularly for junior engineers who may have limited industry experience. Showcasing side projects allow you to demonstrate your skills, share your code, and provide a working URL, which can help you stand out and prove your abilities beyond your primary job experience.
 
