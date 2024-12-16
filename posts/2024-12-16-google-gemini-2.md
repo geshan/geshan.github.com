@@ -31,7 +31,7 @@ Gemini 2.0 isn't just another LLM; it's a [powerful multimodal model](https://bl
 
 <img class="center" src="/images/google-gemini-2/02gemini-2-capabilities.jpg" loading="lazy" title="Google Gemini 2.0 capabilities" alt="Google Gemini 2.0 capabilities">
 
-Unlike other models, Gemini 2.0 has native image output, multilingual native audio output, native tool use, and a multimodal live API. However, some of the features have not yet been released to everyone. If you are interested, you can also look at the API and SDK [docs](​​https://cloud.google.com/vertex-ai/generative-ai/docs/gemini-v2). As per Google’s official announcement: 
+Unlike other models, Gemini 2.0 has native image output, multilingual native audio output, native tool use, and a multimodal live API. However, some of the features have not yet been released to everyone. If interested, you can also look at the API and SDK [docs](​​https://cloud.google.com/vertex-ai/generative-ai/docs/gemini-v2). As per Google’s official announcement: 
 
 > Flash 2.0 is twice as fast as 1.5 Pro while achieving stronger performance, includes new multimodal outputs, and comes with native tool use.
 
@@ -41,9 +41,9 @@ Imagine having a real-time conversation with an LLM while showing it a video, sh
 
 ## Using Gemini 2.0 Live Stream to Improve CV, LinkedIn, and GitHub Profile
 
-Now that you have a basic understanding of Gemini 2.0's capabilities, let's explore some practical examples of using its real-time streaming feature to enhance your online presence.
+Now that you understand Gemini 2.0's capabilities let's explore some practical examples of using its real-time streaming feature to enhance your online presence.
 
-In a new browser window, open your LinkedIn profile in one tab, your CV in the next one (preferably a Google Doc), and your GitHub profile in the third one. Then, on the fourth tab, go to https://aistudio.google.com (Google AI Studio) and click on [Stream Realtime](https://aistudio.google.com/live), then paste in the following prompt to get better responses to improve your LinkedIn profile, CV, and Github Profile:
+In a new browser window, open your LinkedIn profile in one tab, your CV in the next one (preferably a Google Doc), and your GitHub profile in the third one. Then, on the fourth tab, go to https://aistudio.google.com (Google AI Studio) and click on [Stream Realtime](https://aistudio.google.com/live), then paste the following prompt into `System Instructions` to get better responses to improve your LinkedIn profile, CV, and Github Profile:
 
 ```js
 You are now a combined LinkedIn Profile optimization expert and 
@@ -51,9 +51,9 @@ a technical CV writing expert focusing on software engineering.
 Your role is to provide actionable, easy-to-follow, and high-quality 
 advice to improve a LinkedIn profile, including but not limited 
 to headlines, about sections, and things the person is sharing on 
-LinkedIn, all geared towards the person finding a full-time tech role 
+LinkedIn, is all geared toward the person finding a full-time tech role 
 in Australia. Your expertise spans optimizing LinkedIn profiles 
-and resumes towards finding the first or second full-time software 
+and resumes toward finding the first or second full-time software 
 engineering role focused on recent graduates. 
 
 As an expert technical resume writer, focus on the XYZ formula and 
