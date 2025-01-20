@@ -10,7 +10,7 @@ tags:
 - Google Cloud Run
 cover: "/images/ollama-google-cloud-run/01ollama-google-cloud-run.jpg"
 pagetitle: "How to run (any) open LLM with Ollama on Google Cloud Run [Step-by-step]"
-description: "Learn how to run and host Gemma 2:2b with Ollama on Google Cloud Run in this step-by-step tutorial. You can use Gemma with an API too, using Ollama"
+description: "Learn how to run and host Gemma 2:2b with Ollama on Google Cloud Run in this step-by-step tutorial. You can use Gemma with an API, too, using Ollama"
 keywords: ollama google cloud run, ollama gemma, gemma ollama, ollama cloud, ollama gcp, ollama cloud run
 ---
 Ollama is a great way to run many open Large Language Models (LLMs). You can run Google Gemma 2, Phi 4, Mistral, and Llama 3 on your machine or the cloud with [Ollama](https://ollama.com/). You can also host these open LLMs as APIs using Ollama. In this post, you will learn how to host Gemma 2 (2b) with Ollama 0.5.x on Google Cloud Run; let’s get started!
@@ -96,7 +96,7 @@ Then, for billing select `Instance-based` and keep the `Minimum number of instan
 
 <img class="center" src="/images/ollama-google-cloud-run/14cloud-run-billing.jpg" loading="lazy" title="Select instance based billing, set minimum instances to 0 and ingress to All" alt="Select instance based billing, set minimum instances to 0 and ingress to All">
 
-In the next part, you will link the GCS bucket as a Cloud Run volume.
+Next, you will link the GCS bucket as a Cloud Run volume.
 
 ### Wire up GSC bucket as a Cloud Run Volume
 
@@ -145,7 +145,7 @@ Then click `Create` and wait for some time as the `Ollama` image is 1.5 GB, it w
 
 It will look like the below after it is deployed successfully:
 
-<img class="center" src="/images/ollama-google-cloud-run/23cloud-run-created.jpg" loading="lazy" title="Cloud Run Service with Ollama created sucessfully and has a working URL now" alt="Cloud Run Service with Ollama created sucessfully and has a working URL now">
+<img class="center" src="/images/ollama-google-cloud-run/23cloud-run-created.jpg" loading="lazy" title="Cloud Run Service with Ollama created successfully and has a working URL now" alt="Cloud Run Service with Ollama created successfully and has a working URL now">
 
 Click the service URL to see if it is working:
 
