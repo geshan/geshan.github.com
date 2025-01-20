@@ -83,18 +83,17 @@ The `HackerNewsStoriesWithSerach` component will house both the `SearchBar` and 
 As discussed in the above component structure you will add the `SearchBar` component. The code for `src/SearchBar.js` file which holds the component is as follows:
 
 ```js
-const SearchBar = ({keyword, onChange}) => {
-  const BarStyle = {width:"20rem",background:"#F0F0F0", border:"none", padding:"0.5rem"};
+const SearchBar = ({ keyword, onChange }) => {
   return (
-    <input 
-     style={BarStyle}
-     key="search-bar"
-     value={keyword}
-     placeholder={"search news"}
-     onChange={(e) => onChange(e.target.value)}
+    <input
+      className="border border-gray-300 px-5 py-2 w-full rounded-full bg-gray-100"
+      key="search-bar"
+      value={keyword}
+      placeholder={"Search news..."}
+      onChange={(e) => onChange(e.target.value)}
     />
   );
-}
+};
 
 export default SearchBar;
 ```
@@ -107,22 +106,28 @@ Some basic style is defined for the React search bar and it is added to the retu
 
 At this juncture, the `SearchBar` component has been written up. But it is not used until it is integrated into the currently existing components `HackerNewsStoriesWithSearch` and `HackerNewsStories`. To achieve the search functionality you will wire this new component to the existing components as follows:
 
-```js/3,7,10,15-17,27-31,44-45
-import { useState, useEffect } from 'react';
-import HackerNewsStories from './HackerNewsStories';
-import SearchBar from './SearchBar';
+```js/7,21-23,33-39,51,77
+import { useState, useEffect } from "react";
+import HackerNewsStories from "./HackerNewsStories";
+import SearchBar from "./SearchBar";
 
 const HackerNewsStoriesWithSearch = () => {
   const [stories, setStories] = useState([]);
   const [allStories, setAllStories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [keyword, setKeyword] = useState('');
+  const [keyword, setKeyword] = useState("");
 
   const fetchStories = async () => {
     try {
-      const data = await (await fetch('https://hn.algolia.com/api/v1/search_by_date?tags=front_page&hitsPerPage=20')).json();
-      const stortedStories = data.hits.sort((story, nextStory) => (story.points < nextStory.points ? 1 : -1));
+      const { hits } = await (
+        await fetch(
+          "https://hn.algolia.com/api/v1/search_by_date?tags=front_page&hitsPerPage=30"
+        )
+      ).json();
+      const stortedStories = hits.sort((story, nextStory) =>
+        (story.points ?? 0) < nextStory.points ? 1 : -1
+      );
       setAllStories(stortedStories);
       setStories(stortedStories);
       setError(null);
@@ -135,29 +140,55 @@ const HackerNewsStoriesWithSearch = () => {
   };
 
   const updateKeyword = (keyword) => {
-    const filtered = allStories.filter(story => {
-     return `${story.title.toLowerCase()} ${story.author.toLowerCase()}`.includes(keyword.toLowerCase());
-    })
+    const filtered = allStories.filter((story) => {
+      return `${story.title.toLowerCase()} ${story.author.toLowerCase()}`.includes(
+        keyword.toLowerCase()
+      );
+    });
     setKeyword(keyword);
     setStories(filtered);
- }
+  };
 
   useEffect(() => {
     fetchStories();
   }, []);
 
   return (
-    <> { /* React fragment */}
-    <div className="wrapper">
-      <h2>Latest HN Stories</h2>
-      {loading && <div>HackerNews frontpage stories loading...</div>}
-      {error && <div>{`Problem fetching the HackeNews Stories - ${error}`}</div>}
-      <SearchBar keyword={keyword} onChange={updateKeyword}/>
-      <HackerNewsStories stories={stories} />
-    </div>
+    <>
+      {/* React fragment */}
+      <div className="grid grid-cols-1 gap-4">
+        <h2 className="text-2xl font-bold text-center">Latest HN Stories</h2>
+        <SearchBar keyword={keyword} onChange={updateKeyword} />
+        {loading && (
+          <svg
+            className="animate-spin mx-auto h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              className="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              strokeWidth="4"
+            ></circle>
+            <path
+              className="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        )}
+        {error && (
+          <div className="p-2 bg-red-500 text-sm text-white rounded">{`Problem fetching the HackeNews Stories - ${error}`}</div>
+        )}
+        <HackerNewsStories stories={stories} />
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default HackerNewsStoriesWithSearch;
 ```
@@ -176,16 +207,30 @@ For you to get the full context of this application, below HackerNews Stories co
 
 
 ```js
-const HackerNewsStories = ({stories = []}) => {
-  return (    
-    <div className="stories-wrapper">
+const HackerNewsStories = ({ stories = [] }) => {
+  return (
+    <div className="grid grid-cols-1 gap-2">
       {stories &&
-        stories.map(({ objectID, url, title, author, points }) => (
-          title && url &&
-          <div className='stories-list' key={objectID}>
-            <h3><a href={url} target="_blank" rel="noreferrer">{title}</a> - By <b>{author}</b> ({points} points)</h3>
-          </div>                        
-        ))}
+        stories.map(
+          ({ objectID, url, title, author, points }) =>
+            title &&
+            url && (
+              <a
+                className="hover:drop-shadow"
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                key={objectID}
+              >
+                <div className="p-2 bg-gray-100 rounded">
+                  <h3 className="text-md">{title}</h3>
+                  <div className="text-sm text-gray-600">
+                    By <b>{author}</b> ({points ?? 0} points)
+                  </div>
+                </div>
+              </a>
+            )
+        )}
     </div>
   );
 };
