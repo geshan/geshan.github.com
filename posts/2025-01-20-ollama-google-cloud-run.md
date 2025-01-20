@@ -10,10 +10,10 @@ tags:
 - Google Cloud Run
 cover: "/images/ollama-google-cloud-run/01ollama-google-cloud-run.jpg"
 pagetitle: "How to run (any) open LLM with Ollama on Google Cloud Run [Step-by-step]"
-description: "Learn how to run and host Gemma 2:2b with Ollama on Google Cloud Run in this step by step tutorial. You can use Gemma with a API too using Ollama"
+description: "Learn how to run and host Gemma 2:2b with Ollama on Google Cloud Run in this step-by-step tutorial. You can use Gemma with an API too, using Ollama"
 keywords: ollama google cloud run, ollama gemma, gemma ollama, ollama cloud, ollama gcp, ollama cloud run
 ---
-Ollama is a great way to run many open Large Language Models (LLMs). You can run Google Gemma 2, Phi 4, Mistral, and Llama 3 on your machine or the cloud with [Ollama](https://ollama.com/). You can also host these open LLMs as APIs using Ollama. In this post, you will learn how to host Gemma 2 (2b) with Ollama 4.x on Google Cloud Run; let’s get started!
+Ollama is a great way to run many open Large Language Models (LLMs). You can run Google Gemma 2, Phi 4, Mistral, and Llama 3 on your machine or the cloud with [Ollama](https://ollama.com/). You can also host these open LLMs as APIs using Ollama. In this post, you will learn how to host Gemma 2 (2b) with Ollama 0.5.x on Google Cloud Run; let’s get started!
 
 <!-- more -->
 
@@ -35,11 +35,11 @@ First, you will need an existing Project on Google Cloud, or you can create a [n
 
 To create a new bucket, search for `bucket` on the search bar:
 
-<img class="center" src="/images/ollama-google-cloud-run/02search-buckets.jpg" loading="lazy" title="Search for bucket on Google Cloud Console search bar" alt="Search for bucket on Google Cloud Console search bar">
+<img class="center" src="/images/ollama-google-cloud-run/02search-buckets.jpg" loading="lazy" title="Search for a bucket on Google Cloud Console search bar" alt="Search for bucket on Google Cloud Console search bar">
 
 Then select the `Buckets` option, as shown above. Then click the `+ Create` option on the “Buckets” page:
 
-<img class="center" src="/images/ollama-google-cloud-run/03create-bucket-button.jpg" loading="lazy" title="Click on the create bucket button on the GCS buckets page" alt="Click on the create bucket button on the GCS buckets page">
+<img class="center" src="/images/ollama-google-cloud-run/03create-bucket-button.jpg" loading="lazy" title="Click on the Create bucket button on the GCS buckets page" alt="Click on the Create bucket button on the GCS buckets page">
 
 After that, name the bucket something unique, like `ollama-gemma2-2b-xyz.`. All buckets across GCP have unique names, so you might need a suffix. Then click the down arrow beside `Optimize storage for data-intensive workloads` and check the `Enable Hierarchical namespace on this bucket` checkbox as shown below:
 
