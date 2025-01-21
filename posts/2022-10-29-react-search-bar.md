@@ -46,7 +46,7 @@ In the long-running war of frontend frameworks, React looks like it has won the 
 
 Before getting hands dirty with the code below are some requisites:
 
-1. Any prior experience with React.js would be helpful
+1. Any prior experience with React.js and Tailwind CSS would be helpful
 1. Previous knowledge of working with Git and GitHub will be beneficial
 1. A general understanding of how APIs work and are called from React.js would be needed.
 1. Knowing about some React concepts like props, [function components](https://reactjs.org/docs/components-and-props.html#function-and-class-components), use effect hook, and fragments will be useful.
@@ -199,7 +199,7 @@ It uses React’s [useEffect  hook](https://reactjs.org/docs/hooks-effect.html) 
 
 Next, the `updateKeyword` function is defined which filters out stories based on the keyword existing in the story’s title and author. It filters stories from all stories so that each search is done on the full set of stories, not a filtered subset. Then it sets the filtered stories as stories that will be rendered by the `HackerNewsStories` component. It also updates the keyword that will be passed in and displayed on the input box by the `SearchBar` component.
 
-After that, the `SearchBar` component is added on line 45. Here you pass in the `keyword` variable and `updatedKeyword` function as `onChange so that the component works as intended. 
+After that, the `SearchBar` component is added on line 52. Here you pass in the `keyword` variable and `updatedKeyword` function as `onChange` so that the component works as intended. If this filter triggers API calls on every onChange event, you can implement [debounce or throttle](https://www.developerway.com/posts/debouncing-in-react) techniques to reduce the number of requests sent to the API.
 
 One thing to notice here is, because there are multiple elements returned by this component it is wrapped into a [React fragment](/blog/2023/02/react-fragments/) with its [short syntax](https://reactjs.org/docs/fragments.html#short-syntax). Without this wrapping, it will throw an `Objects are not valid as a React child (found: [object Promise]). If you meant to render a collection of children, use an array instead.` error. After this integration, the search functionality will work.
 
