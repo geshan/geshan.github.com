@@ -19,6 +19,15 @@ Ollama is a great way to run many open Large Language Models (LLMs). You can run
 
 <img class="center" src="/images/ollama-google-cloud-run/01ollama-google-cloud-run.jpg" title="How to run (any) open LLM with Ollama on Google Cloud Run [Step-by-step]" alt="How to run (any) open LLM with Ollama on Google Cloud Run [Step-by-step]">
 
+## Table of contents
+
+* [Why Google Cloud Run](#why-google-cloud-run)
+* [Create a GCS bucket](#create-a-gcs-bucket)
+* [Deploy Ollama on Google Cloud Run](#deploy-ollama-on-google-cloud-run)
+    * [Wire up GSC bucket as a Cloud Run Volume](#wire-up-gsc-bucket-as-a-cloud-run-volume)
+* [Testing Gemma 2 with Ollama on Google Cloud Console](#testing-gemma-2-with-ollama-on-google-cloud-console)
+* Conclusion[#conclusion]
+
 ## Why Google Cloud Run
 
 Good question; I have written multiple [blog posts](https://geshan.com.np/blog/categories/google-cloud-run/) about Google Cloud Run and also given a couple of [talks](/blog/2019/11/from-0-to-working-serverless-url-for-a-containerized-app-with-google-cloud-run-slides-and-video/) in the past years, Some great [reasons](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) to use Google Cloud Run to host open LLMs with [serverless containers](/blog/2023/04/serverless-containers/) are:
