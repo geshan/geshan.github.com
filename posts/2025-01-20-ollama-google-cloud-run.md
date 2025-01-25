@@ -134,7 +134,7 @@ After that, click the `Settings` tab and set the `Memory` to `32 GiB` and the `C
 
 <img class="center" src="/images/ollama-google-cloud-run/20cloud-run-resources.jpg" loading="lazy" title="Set Port for Cloud Run to 8080 and allocate 32 GB of memory and 8 CPUs" alt="Set Port for Cloud Run to 8080 and allocate 32 GB of memory and 8 CPUs">
 
-Your `Setting` section will look like the above when you are done editing it; after that, you can click `Done`. If you cannot allocate 32 GB of memory and 8 CPUs it might be because your account is new; you can reqeust a [quota increase](https://cloud.google.com/run/quotas#increase). Event with 512 MB of memory and 1 CPU, which you should have without a quota increase, you can run the [smollm2:135m](https://ollama.com/library/smollm2:135m) at 135 million parameters; the model is 271 MB, which will fit in the 512 MB allocated memory.
+Your `Setting` section will look like the above when you are done editing it; after that, you can click `Done`. If you cannot allocate 32 GB of memory and 8 CPUs it might be because your account is new; you can reqeust a [quota increase](https://cloud.google.com/run/quotas#increase). Even with 512 MB of memory and 1 CPU, which you should have without a quota increase, you can run the [smollm2:135m](https://ollama.com/library/smollm2:135m) at 135 million parameters; the model is 271 MB, which will fit in the 512 MB allocated memory.
 
 
 Then, move on to the `Requests` section. Here, you can set the `Request timeout` to `300` seconds  (5 minutes), the default value, and keep the  
