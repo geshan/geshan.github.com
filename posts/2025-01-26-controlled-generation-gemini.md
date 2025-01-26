@@ -234,11 +234,11 @@ First, you have put a schema of a JSON object (not an array of objects or anythi
 * summary: it is of type string
 * tech_percent: having the type number
 
-Then, you specify that both properties are required in the output by adding both the field to the `required` array. There are other types [supported fields](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#fields) or types from the [Vertex AI schema](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/Schema) you can use. For example, you can use an `Enum` with only two values, `positive` or `negative` if you analyze sentiment. 
+Then, you specify that both properties are required in the output by adding both fields to the `required` array. There are other types [supported fields](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#fields) or types from the [Vertex AI schema](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/Schema) you can use. For example, you can use an `Enum` with only two values, `positive` or `negative` if you analyze sentiment. 
 
-Similarly, you can send in an array of items and expect back an array of items in a given schema like this [weather forecast example](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#forecast). The possibilities are endless, if you use Gemini’s multi-modal capabilities you can even use a schema to list out the identified [objects](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#identify) in an image. It would be advisable to read that [official document](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output) thoroughly. You can also use Google AI Studio for a visual editor for the structured output schema.
+Similarly, you can send in an array of items and expect back an array of items in a given schema like this [weather forecast example](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#forecast). The possibilities are endless, if you use Gemini’s multi-modal capabilities you can even use a schema to list out the identified [objects](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#identify) in an image. It would be advisable to thoroughly read that [official document](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output). You can also use Google AI Studio for a visual editor for the structured output schema.
 
-Next we will test out the output on the Vertex AI interface.
+Next, we will test the output on the Vertex AI interface.
 
 ### Test it
 
@@ -267,7 +267,7 @@ Error message: 'Online prediction request quota exceeded for gemini-experimental
 Status: 429 Error code: 8
 ```
 
-To get over this error you can use a differnt model like the `gemini-1.5-pro-002`.
+You can use a different model like the `gemini-1.5-pro-002` to overcome this error. You can also ask for an increase in the [Vertex AI quota](https://cloud.google.com/vertex-ai/generative-ai/docs/quotas).
 
 ### Generate code
 
@@ -279,17 +279,19 @@ It will show a working Python code as follows:
 
 <img class="center" src="/images/controlled-generation-gemini/14generated-python-code.jpg" loading="lazy" title="You can get generated python code that you can try out with Google Cloud Shell and Cloud Shell editor or on your local machine" alt="You can get generated python code that you can try out with Google Cloud Shell and Cloud Shell editor or on your local machine">
 
-To close the overlay, you can click `Close`. You can analyze that the code has `response_schema` parameter when the call is done which will have the schema you defined in the pervious step.
+Click ' Close ' to close the overlay. When the call is finished, you can analyze the code's `response_schema` parameter, which will have the schema you defined in the previous step.
 
 You can copy and run the generated Python code on Google Cloud Shell, editing the file [Cloud Shell editor](/blog/2024/01/cloud-shell-editor/), there is an example of that in this [tutorial](https://geshan.com.np/blog/2024/04/gemini-ecommerce-product-description-generator/#run-generated-python-code). You can also run it as a [Google Collab Notebook](https://colab.google/notebooks/) by clicking the `Open Notebook` button.
 
-As this tutorial is focused on `controlled generation,` we will not dive deeper into running the code. However, you can add other layers to the generated code as needed. For example, you can create an API with [FastAPI](https://fastapi.tiangolo.com/) or have a running app with a helpful UI using [Streamlit](https://streamlit.io/) or Google’s [Mesop](https://google.github.io/mesop/).
+As this tutorial is focused on `controlled generation,` we will not explore running the code further. However, you can add other layers to the generated code as needed. For example, you can create an API with [FastAPI](https://fastapi.tiangolo.com/) or have a running app with a helpful UI using [Streamlit](https://streamlit.io/) or Google’s [Mesop](https://google.github.io/mesop/).
 
 Coming back to the use case, I would have directly called the Gemini API for each or multiple job posts in the single call as Gemini 2.0 flash exp has a 1 million tokens context window and got the summary in batches of 100 or 200 jobs. In the above example, each job took 900-1000 tokens, which would work well. I would also consider the cost associated with it.
 
-Nothing will change visually for the user; however, this enhancement will greatly improve the output quality.
+Nothing will change visually for the user; however, this enhancement will significantly improve the output quality. 
 
-This blog post has been written as part of #VertexAISprint and Google Cloud credits are provided for this project.
+You can also try the official [controlled generation tutorial](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/controlled-generation/intro_controlled_generation.ipynb) over Google Collab.
+
+This blog post has been written as part of #VertexAISprint, and Google Cloud credits are provided for this project.
 
 ## Controlled generation is useful
 
