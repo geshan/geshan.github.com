@@ -183,7 +183,7 @@ It will download (pull) Gemma 2:2b and save it in the GCS bucket (a linked volum
 
 <img class="center" src="/images/ollama-google-cloud-run/26ollama-use-gemma2.jpg" loading="lazy" title="Use Gemma 2 2B params with Ollama installed on Google Cloud Console" alt="Use Gemma 2 2B params with Ollama installed on Google Cloud Console">
 
-You can download/pull any other model Ollama supports and start using it. For example, you can download `llama3.3:70b` by Meta, `phi4:14b` by Microsoft, or even `smollam2:135m`, which is only 271 MB in size compared to other models, which are GBs in size.
+You can download/pull any other model Ollama supports and start using it. For example, you can download `llama3.3:70b` by Meta, `phi4:14b` by Microsoft, `deepseek-r1:8b` by [DeepSeek](https://api-docs.deepseek.com/news/news250120) (which is getting very popular), or even `smollam2:135m`, which is only 271 MB in size compared to other models, which are GBs in size.
 
 You can type `/bye` to get out of the ollama CLI. Now, as Gemma 2:2b is downloaded, you can also send a cURL command to test it out like the one below:
 
@@ -203,7 +203,7 @@ If you go in the bucket and look at its contents, you will find Gemma 2 there:
 
 <img class="center" src="/images/ollama-google-cloud-run/28ollama-gemma-gcs.jpg" loading="lazy" title="Gemma 2 2B files in the Google Cloud Storage bucket created in the first step" alt="Gemma 2 2B files in the Google Cloud Storage bucket created in the first step">
 
-Google Cloud Run makes it easy to run any LLM on Ollama. You can run Phi 4, Llama 3, or any other model; you must pull it and run your command or POST with curl. You can also use libraries like [LiteLLM](https://www.litellm.ai/) to use the model in your apps using Ollama’s [APIs](https://github.com/ollama/ollama/blob/main/docs/api.md). It would be great if you could explore Ollama more on your own. You can also use [Open WebUI](https://github.com/open-webui/open-webui) to have a GUI on top of Oallma running Gemma 2 LLM.
+Google Cloud Run makes it easy to run any LLM on Ollama. You can run Phi 4, Llama 3, or any other model; you must pull it and run your command or POST with curl. You can also use libraries like [LiteLLM](https://www.litellm.ai/) to use the model in your apps using Ollama’s [APIs](https://github.com/ollama/ollama/blob/main/docs/api.md). Please explore Ollama more on your own. You can also use [Open WebUI](https://github.com/open-webui/open-webui) to have a GUI on top of Oallma running Gemma 2 LLM.
 
 ## Conclusion
 
