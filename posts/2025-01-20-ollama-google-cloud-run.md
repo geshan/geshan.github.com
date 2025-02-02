@@ -8,6 +8,7 @@ tags:
 - Gen AI
 - GCP
 - Google Cloud Run
+- Ollama
 cover: "/images/ollama-google-cloud-run/01ollama-google-cloud-run.jpg"
 pagetitle: "How to run (any) open LLM with Ollama on Google Cloud Run [Step-by-step]"
 description: "Learn how to run and host Gemma 2:2b with Ollama on Google Cloud Run in this step-by-step tutorial. You can use Gemma with an API, too, using Ollama"
