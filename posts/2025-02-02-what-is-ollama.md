@@ -92,7 +92,8 @@ It will install Ollama and all its related dependences and end like the below if
 
 <img class="center" src="/images/what-is-ollama/03brew-install-ollama-output.jpg" loading="lazy" title="Final successful output of brew install ollama on a Mac" alt="Final successful output of brew install ollama on a Mac">
 
-Now if you run `ollama –version` you will see something like the bleow:
+If you installed it with brew you will need to run `ollama serve`. You will see the ollama variables and resources.
+Then you can run `ollama –version` in a different CLI tab. You will see something like the bleow:
 
 ```bash
  ➜  ollama --version
