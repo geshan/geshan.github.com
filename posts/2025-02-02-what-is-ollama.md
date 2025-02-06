@@ -141,7 +141,7 @@ Depending on your operationg system and how you installed Ollama it may vary. In
 
 <img class="center" src="/images/what-is-ollama/07ollama-model-storage.jpg" loading="lazy" title="Ollama stores models at ~/.ollama/models" alt="Ollama stores models at ~/.ollama/models">
 
-Ollama store the models at `~/.ollama/models` on Linux machines as well. It can be changed by setting an [environment variable](https://github.com/ollama/ollama/blob/main/docs/faq.md#setting-environment-variables-on-linux) called `OLLAMA_MODELS`.  In the next part of this series, you will learn about Ollama commands.
+Ollama store the models at `~/.ollama/models` on Linux machines as well. It can be changed by setting an [environment variable](https://github.com/ollama/ollama/blob/main/docs/faq.md#setting-environment-variables-on-linux) called `OLLAMA_MODELS`.  In the next part of this series, you will learn about [Ollama commands](/blog/2025/02/ollama-commands/).
 
 ## Conclusion
 
