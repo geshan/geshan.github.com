@@ -33,7 +33,7 @@ Ollama is an open-source tool that helps you run open LLMs on your machine or a 
 
 ## Quick recap
 
-This blog post is part 2 of the Ollama series. In the [first part](/blog/2025/02/what-is-ollama/), you covered topics like [what is Ollama](/blog/2025/02/what-is-ollama/#what-is-ollama), it’s [features](/blog/2025/02/what-is-ollama/#ollama-features) and [how to run Ollama](blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) with examples of Smollm2 and DeepSeek R1 models.
+This blog post is part 2 of the Ollama series. In the [first part](/blog/2025/02/what-is-ollama/), you covered topics like [what is Ollama](/blog/2025/02/what-is-ollama/#what-is-ollama), it’s [features](/blog/2025/02/what-is-ollama/#ollama-features) and [how to run Ollama](/blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) with examples of Smollm2 and DeepSeek R1 models.
 
 In this part, you will learn about some useful Ollama commands like serve, run, and ps. Before diving deeper into code mode, please ensure you have Ollama installed and working in your system by reading part 1.
 
@@ -47,7 +47,7 @@ Ollama has multiple commands to achieve relative goals. To know the sub-commands
 
 It will give you the following output:
 
-<img class="center" src="/images/ollama-commands/02ollama-help.jpg" loading="lazy" title="Output of ollama --help showing all avaiable Ollama commands" alt="Output of ollama --help showing all avaiable Ollama commands">
+<img class="center" src="/images/ollama-commands/02ollama-help.jpg" loading="lazy" title="Output of ollama --help showing all available Ollama commands" alt="Output of ollama --help showing all available Ollama commands">
 
 You can also run `ollama --version` to check the version of Ollama when writing the version of Ollama is  `0.5.7`. If you want help with a specific sub-command, you can add `--help` after the sub-command; for example: `ollama run --help` will give you the following output:
 
@@ -57,7 +57,7 @@ Now that you know the basics, let’s look at some useful Ollama commands.
 
 ### Ollama serve
 
-Ollama `serve` is the main command that starts the Ollama server. It can be configured with many environment variables, such as `OLLAMA_DEBUG` to enable or disable debugging, `OLLAMA_HOST` to specify the server's host, and `OLLAMA_MAX_QUEUE` to configure the maximum number of queued requests. If you want to know more about these environment variables, run `ollama serve --help`.
+Ollama `serve` is the main command that starts the Ollama server. It can be configured with many environment variables, such as `OLLAMA_DEBUG` to enable or disable debugging, `OLLAMA_HOST` to specify the server's host, and `OLLAMA_MAX_QUEUE` to configure the maximum number of queued requests. To learn more about these environment variables, run `ollama serve --help`.
 
 Ollama runs [Gin](https://github.com/ollama/blob/main/server/routes.go#L27)  (written in Go) as the underlying server to add an API layer to the downloaded (pulled) models. Both the CLI and any other services that need to use LLM inference will use the server started with `ollama serve`, which will give an output similar to the below: 
 
@@ -79,7 +79,7 @@ ollama run smollm2:135m
 
 It will result in something like the following:
 
-<img class="center" src="/images/ollama-commands/05ollama-run-smollm2.jpg" loading="lazy" title="Output of ollama run smollm2:145m on the cli when the model is already downloaded" alt="Output of ollama run smollm2:145m on the cli when the model is already downloaded">
+<img class="center" src="/images/ollama-commands/05ollama-run-smollm2.jpg" loading="lazy" title="Output of ollama run smollm2:145m on the CLI when the model is already downloaded" alt="Output of ollama run smollm2:145m on the CLI when the model is already downloaded">
 
 If you ran the model for the first time, it would have downloaded and run, as seen in the last [part](/blog/2025/02/what-is-ollama/) of this Ollama series. However, running an already pulled (downloaded) model runs quickly the second time.
 
@@ -201,7 +201,7 @@ ollama create smollm2:135m-16k-ctx -f Modelfile-smollm2-16k
 
 It will create a new variant of the Smollm2 135 million parameter model following the instructions in the model file. If you run `ollama list`, you will see the new model on the list. Then, to run the new model, you can execute `ollama run smollm2:135m-16k-ctx` as seen below:
 
-<img class="center" src="/images/ollama-commands/06ollama-create.jpg" loading="lazy" title="Output of ollama create a new model with 0.2 temprature and context window of 16K tokens" alt="Output of ollama create a new model with 0.2 temprature and context window of 16K tokens">
+<img class="center" src="/images/ollama-commands/06ollama-create.jpg" loading="lazy" title="Output of ollama create a new model with 0.2 temperature and context window of 16K tokens" alt="Output of ollama create a new model with 0.2 temperature and context window of 16K tokens">
 
 In the running model context, where you can type `/?` for help, if you type in `/show info` you will see the following output:
 
@@ -230,7 +230,7 @@ In the running model context, where you can type `/?` for help, if you type in `
 
 This means the two parameters specified in the Model file,  `temperature` and context window with `num_ctx`, are applied to the model. Because the temperature is set to a low value `0.2`, if you ask this model variant, `why is the sky blue? give me 1 sentence answer.` even 3 times consecutively; it will give you almost the same answer as seen below:
 
-<img class="center" src="/images/ollama-commands/07ollama-sky-blue.jpg" loading="lazy" title="Output of ollama why is the sky blue, same answer as the temprature is only 0.2" alt="Output of ollama why is the sky blue, same answer as the temprature is only 0.2">
+<img class="center" src="/images/ollama-commands/07ollama-sky-blue.jpg" loading="lazy" title="Output of ollama why is the sky blue, same answer as the temperature is only 0.2" alt="Output of ollama why is the sky blue, same answer as the temperature is only 0.2">
 
 Next, you will learn about some other Ollama commands.
 
