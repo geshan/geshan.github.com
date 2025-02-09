@@ -21,6 +21,7 @@ The world of AI has been hyped for more than two years now since the release of 
 ## Table of contents
 
 - [What is Ollama](#what-is-ollama)
+- [Ollama blog post series](#ollama-blog-post-series)
 - [Ollama features](#ollama-features)
   - [Privacy and offline access](#privacy-and-offline-access)
   - [Model management](#model-management)
@@ -39,6 +40,14 @@ The world of AI has been hyped for more than two years now since the release of 
 Ollama is an [open-source](https://github.com/ollama/ollama) tool mainly written in Go lang (89%) that runs open LLMs on your local machine (or a server). It acts like a bridge between any open LLM and your machine, not only running them but also providing an API layer on top of them so that another application or service can use them.
 
 [Ollama](https://ollama.com/) is a user-friendly and powerful software for running LLMs locally. It hides the complexities of LLMs, packaging them to be accessible and easily customizable with a [model file](https://github.com/ollama/ollama/blob/main/docs/modelfile.md). There are alternatives to Ollama, like [vllm](https://github.com/vllm-project/vllm) and [aphrodite](https://github.com/aphrodite-engine/aphrodite-engine), but Ollama is surely the most popular one. Ollama provides a clean, user-friendly interface that allows you to interact directly with LLMs, tailoring the experience to your needs.
+
+## Ollama blog post series
+
+This post is the first part of a series of posts on Ollama. In this series, you will learn about Ollama, its features, how to install and run it on your local machine, and how to use it with different models.
+
+The part 2 of this series will cover [Ollama commands](/blog/2025/02/ollama-commands/). In this part, you will learn about the various commands you can use with Ollama to interact with LLMs. You will learn how to list models, run models, pull models, and more.
+
+Similarly in part 3, you will learn about [Ollama APIs](/blog/2025/02/ollama-api/), which are used by the CLI and can be used by other systems to interact with the LLMs mainly for generating responses out of an open LLM.
 
 ## Ollama features
 

@@ -35,7 +35,9 @@ Ollama is an open-source tool that helps you run open LLMs on your machine or a 
 
 This blog post is part 2 of the Ollama series. In the [first part](/blog/2025/02/what-is-ollama/), you covered topics like [what is Ollama](/blog/2025/02/what-is-ollama/#what-is-ollama), it’s [features](/blog/2025/02/what-is-ollama/#ollama-features) and [how to run Ollama](/blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) with examples of Smollm2 and DeepSeek R1 models.
 
-In this part, you will learn about some useful Ollama commands like serve, run, and ps. Before diving deeper into code mode, please ensure you have Ollama installed and working in your system by reading part 1.
+In this part, you will learn about some useful Ollama commands like serve, run, and ps. Before diving deeper into code mode, please ensure you have Ollama installed and working in your system by reading [part 1](/blog/2025/02/what-is-ollama/). Part 1 also covers the installation of Ollama and running the Smollm2 135 million parameter model and DeepSeek R1 8 billion parameter model.
+
+The part 3 of this Ollama series covers the [Ollama APIs](/blog/2025/02/ollama-api/), which are used by the CLI and can be used by other systems to interact with the LLMs.
 
 ## Ollama commands
 
