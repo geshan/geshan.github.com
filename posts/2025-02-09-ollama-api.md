@@ -32,7 +32,7 @@ Ollama is open-source software that makes running most open LLMs seamlessly on y
 
 ## Quick review of the Ollama series
 
-This blog post is part 3 of the Ollama series. In the first part, you learned about [what Ollama is](/blog/2025/02/what-is-ollama/#what-is-ollama), including its [features](/blog/2025/02/what-is-ollama/#ollama-features) and also [how to run Ollama](/blog/2025/02/ollama-commands/blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) on your local machine with a couple of models.
+This blog post is part 3 of the Ollama series. In the first part, you learned about [what Ollama is](/blog/2025/02/what-is-ollama/#what-is-ollama), including its [features](/blog/2025/02/what-is-ollama/#ollama-features) and also [how to run Ollama](/blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) on your local machine with a couple of models.
 
 In part two, you explored some useful [Ollama commands](/blog/2025/02/ollama-commands/), like [ollama serve](/blog/2025/02/ollama-commands/#ollama-serve) to start Ollama and serve available models, [ollama run](/blog/2025/02/ollama-commands/#ollama-run) to pull (download) and run a model.
 
