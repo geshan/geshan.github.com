@@ -33,7 +33,7 @@ Ollama gives you one of the easiest ways to run most open LLMs on your machine. 
 
 This is part 4 of the Ollama blog series. In the [first part](/blog/2025/02/what-is-ollama/), you learned [what an Ollama is](/blog/2025/02/what-is-ollama/#what-is-ollama), its features, and how to run it on your local machine.
 
-The second part delved into the [Ollama commands](/blog/2025/02/ollama-api/) you can execute on the CLI. Part 3 of the series shed light on some of the important [Ollama APIs](/blog/2025/02/ollama-api/) focusing on the `generate` and `chat` endpoints.
+The second part delved into the [Ollama commands](/blog/2025/02/ollama-commands/) you can execute on the CLI. Part 3 of the series shed light on some of the important [Ollama APIs](/blog/2025/02/ollama-api/) focusing on the `generate` and `chat` endpoints.
 
 This part involves running [Ollama’s Docker image](https://hub.docker.com/r/ollama/ollama) and adding a web UI, the [Open WebUI](https://github.com/open-webui/open-webui), to provide a chat interface for any model Ollama can run. Like Ollama, Open WebUI is also open-source, with the code primarily in JavaScript, Python, and TypeScript. It also has a docker image pushed on the Google Container Registry, created from its [Dockerfile](https://github.com/open-webui/open-webui/blob/main/Dockerfile). You will use Docker Compose to run these two images together for a working application.
 
