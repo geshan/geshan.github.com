@@ -8,7 +8,8 @@ tags:
 - Gen AI
 - Ollama
 cover: "/images/ollama-docker-compose/01ollama-docker-compose.jpg"
-pagetitle: "How to use Ollama with Open WebUI seamlessly with Docker and Docker Compose"
+pagetitle: "How to use Ollama with Open WebUI with Docker and Docker Compose"
+description: "Learn how to use Ollama and Open WebUI inside Docker with Docker compose to run any open LLM and create your own mini ChatGPT."
 keywords: ollama docker, ollama docker compose, ollama open webui, ollama docker webui, ollama docker compose webui
 ---
 Ollama gives you one of the easiest ways to run most open LLMs on your machine. It is open-source and easy to use. In addition to using it with a command line or its APIs, you can use it with a web user interface using [Open WebUI](https://openwebui.com/). This post will teach you how to run Ollama and Open WebUI to run any open LLM with a web-based chat interface like ChatGPT. Let’s get started!

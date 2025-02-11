@@ -8,7 +8,7 @@ tags:
 - Gen AI
 - Ollama
 cover: "/images/ollama-commands/01ollama-commands.jpg"
-pagetitle: "Ollama commands: How to use Ollama in the command line [Part 2]"
+pagetitle: "Ollama commands: How to use Ollama in the command line"
 description: "Learn about the important Ollama commands to run Ollama on your local machine with Smollm2 and Qwen 2.5 models"
 keywords: ollama commands, ollama serve, ollama run, ollama list, ollama ps
 ---

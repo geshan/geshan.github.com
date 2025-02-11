@@ -8,7 +8,8 @@ tags:
 - Gen AI
 - Ollama
 cover: "/images/ollama-api/01ollama-api.jpg"
-pagetitle: "Learn how to use Ollama APIs like generate, chat and more with cURL and Jq with useful examples"
+pagetitle: "How to use Ollama APIs like generate, chat and more [with examples]"
+description: "Learn how to use Ollama APIs like generate, chat and more like list model, pull model, etc with cURL and Jq with useful examples"
 keywords: ollama api, ollama apis, ollama api endpoints, ollama generate, ollama chat, ollama pull
 ---
 Ollama is open-source software that makes running most open LLMs seamlessly on your own machine (or even on the cloud). Written in Go lang, Ollama is user-friendly and easy to start. In this post, part 3 of the Ollama blog posts series, you will learn about using Ollama’s APIs for generating responses (LLM inference) and much more; let’s get going!
