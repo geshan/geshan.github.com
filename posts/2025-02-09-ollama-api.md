@@ -20,6 +20,7 @@ Ollama is open-source software that makes running most open LLMs seamlessly on y
 ## Table of contents
 
 - [Quick review of the Ollama series](#quick-review-of-the-ollama-series)
+- [Curl and Jq](#curl-and-jq)
 - [Ollama API Endpoints](#ollama-api-endpoints)
   - [Generate endpoint](#generate-endpoint)
   - [Chat endpoint](#chat-endpoint)
@@ -37,6 +38,10 @@ This blog post is part 3 of the Ollama series. In the first part, you learned ab
 In part two, you explored some useful [Ollama commands](/blog/2025/02/ollama-commands/), like [ollama serve](/blog/2025/02/ollama-commands/#ollama-serve) to start Ollama and serve available models, [ollama run](/blog/2025/02/ollama-commands/#ollama-run) to pull (download) and run a model.
 
 In this part, you will learn about the Ollama APIs. In addition to the inference API endpoints `/api/generate` and `/api/chat`, you will also learn about other useful API endpoints. The Ollama commands call these APIs behind the scenes to provide the outputs.
+
+In the next part, part 4, you will learn how to run [Ollama in Docker](/blog/2025/02/ollama-docker-compose/) with Docker Compose. You will also add Open WebUI with Docker Compose to have a WebUI to interact with LLMs running on Ollama.
+
+## Curl and Jq
 
 For this guide, you will use cURL to call the APIs with [Jq](https://jqlang.org/). To install JQ, follow their official [download](https://jqlang.org/download/) guides for instance, on a Mac, you can run `brew install jq`, similarly on an Ubuntu machine, you can execute `sudo apt-get install jq` on a Windows machine, you can use chocolatey. Or you can get the binary and make it executable, too.
 

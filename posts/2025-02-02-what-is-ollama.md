@@ -49,6 +49,8 @@ The part 2 of this series will cover [Ollama commands](/blog/2025/02/ollama-comm
 
 Similarly in part 3, you will learn about [Ollama APIs](/blog/2025/02/ollama-api/), which are used by the CLI and can be used by other systems to interact with the LLMs mainly for generating responses out of an open LLM.
 
+In part 4, you will learn how to run [Ollama with Docker Compose](/blog/2025/02/ollama-docker-compose/). Docker is a popular containerization tool that allows you to run applications in a container. You will also add Open WebUI to have a web interface on top of LLMs running on Ollama.
+
 ## Ollama features
 
 Below are some important features of Ollama:
