@@ -8,7 +8,7 @@ tags:
 - Gen AI
 - Ollama
 cover: "/images/ollama-docker-compose/01ollama-docker-compose.jpg"
-pagetitle: "Learn how to use Ollama with Open WebUI seamlessly with Docker and Docker Compose"
+pagetitle: "How to use Ollama with Open WebUI seamlessly with Docker and Docker Compose"
 keywords: ollama docker, ollama docker compose, ollama open webui, ollama docker webui, ollama docker compose webui
 ---
 Ollama gives you one of the easiest ways to run most open LLMs on your machine. It is open-source and easy to use. In addition to using it with a command line or its APIs, you can use it with a web user interface using [Open WebUI](https://openwebui.com/). This post will teach you how to run Ollama and Open WebUI to run any open LLM with a web-based chat interface like ChatGPT. Let’s get started!
@@ -110,7 +110,7 @@ Services is the main section where you define your application's different parts
 * `volumes`: - `ollama:/root/.ollama` creates a persistent storage area. `/root/.ollama` is where Ollama stores its data (like downloaded models). ollama: (defined at the bottom of the file) is a named volume. This means the data will persist even if you stop and restart the container. Without this, you'd lose all your downloaded models every time you stopped Ollama. It's like giving Ollama a dedicated hard drive that doesn't get erased.
 * `container_name`: `ollama`: This gives the container a specific name, "ollama," making it easier to refer to.
 
-* `tty: true` allocates a pseudo-TTY, which can be useful for interactive sessions. In simple terms, it helps the container handle input and output, making it behave more like a regular terminal. Programs that expect to interact with a user often need this.
+* `tty: true` allocates a pseudo-TTY, which can be helpful for interactive sessions. It helps the container handle input and output, making it behave more like a regular terminal. Programs that expect to interact with a user often need this.
 * `restart: unless-stopped`: This tells Docker to automatically restart the Ollama container if it crashes or stops for any reason unless you explicitly stop it yourself (e.g., using docker compose down). It's like setting an auto-restart feature.
 
 * open-webui: This defines the second service, named "open-webui".
@@ -118,7 +118,7 @@ Services is the main section where you define your application's different parts
 * `image: ghcr.io/open-webui/open-webui:main`: This uses the Open WebUI image from the GitHub Container Registry (ghcr.io). `main` specifies a particular version (the main branch).
 * `container_name: open-webui`: Gives the container a specific name.
 * `volumes`: - `open-webui:/app/backend/data`: Similar to Ollama, this creates persistent storage for Open WebUI's data. /app/backend/data is where Open WebUI stores its data. open-webui: is another named volume. This keeps your Open WebUI settings and data safe.
-* `depends_on`: - ollama: This is crucial. It tells Docker Compose that the Open WebUI service depends on the Ollama service. Docker Compose will start Ollama before starting Open WebUI. This is essential because Open WebUI needs Ollama to be running to function. It's like saying, "Don't start the dashboard until the engine is running”. Read more about [Docker compose depends on](/blog/2024/02/docker-compose-depends-on/).
+* `depends_on`: - ollama: This is crucial. It tells Docker Compose that the Open WebUI service depends on the Ollama service. Docker Compose will start Ollama before starting Open WebUI. This is essential because Open WebUI needs Ollama to run and function. It's like saying, "Don't start the dashboard until the engine runs”. Read more about [Docker compose depends on](/blog/2024/02/docker-compose-depends-on/).
 * `ports`: `- 3000:8080` This maps port 3000 on your host machine to port 8080 inside the Open WebUI container. Open WebUI runs on port 8080. This means you'll access the Open WebUI interface by going to http://localhost:3000 in your web browser.
 * `environment`: This sets environment variables inside the Open WebUI container. These are configuration settings.
 
