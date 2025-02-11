@@ -8,7 +8,7 @@ tags:
 - Gen AI
 - Ollama
 cover: "/images/what-is-ollama/01what-is-ollama.jpg"
-pagetitle: "What is Ollama and how to use it: a quick guide [part 1]"
+pagetitle: "What is Ollama and how to use it: a quick guide"
 description: "Learn what Ollama is, its features and how to run it on your local machine with DeepSeek R1 and Smollm2 models"
 keywords: what is ollama, ollama, ollama deepseek, ollama smollm2, ollama features, ollama models, ollama local machine, ollama quick guide
 ---
