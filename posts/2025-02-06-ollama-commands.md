@@ -39,6 +39,8 @@ In this part, you will learn about some useful Ollama commands like serve, run, 
 
 The part 3 of this Ollama series covers the [Ollama APIs](/blog/2025/02/ollama-api/), which are used by the CLI and can be used by other systems to interact with the LLMs.
 
+In part 4, you will learn about running [Ollama in Docker with Docker Compose](/blog/2025/02/ollama-docker-compose/). You will also add Open WebUI in a Docker container to interact with the LLMs running on Ollama with Docker Compose.
+
 ## Ollama commands
 
 Ollama has multiple commands to achieve relative goals. To know the sub-commands you can run with Ollama, you can execute the following: 
