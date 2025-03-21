@@ -131,7 +131,7 @@ That was easy to get your Node.js app up and running pretty fast. Next, let’s 
 
 ### Genezio
 
-[Genezio](https://genezio.com/deployment-platform/) is a great place to deploy both frontend and backend apps. Being a layer on top of serverless functions it can also run some other languages and [Node.js is included](https://vercel.com/docs/runtimes#official-runtimes/node-js) in that list. Amongst other good features, a very handy feature with Genezio is you get a unique URL for each pull request which makes testing that particular branch a breeze. They call this deploy preview.
+[Genezio](https://genezio.com/deployment-platform/) is a great place to deploy both frontend and backend apps.
 
 > [Genezio Pricing](https://genezio.com/deployment-platform/pricing/) is pretty straight forward. Personal projects run free and it integrates with GitHub, BitBucket, and GitLab.
 
@@ -144,7 +144,10 @@ Given you have [registered](https://app.genez.io/auth/signup) on to Genezio with
 - Fork the [https://github.com/geshan/nodejs-express-tutorial](https://github.com/geshan/nodejs-express-tutorial) to your GitHub account
 - Go to Genezio [dashboard](https://app.genez.io/new-project)
 - Click on "Import from Github" and
-- You will be asked to connect Genez with GitHub.
+- You will be asked to connect Genezio with GitHub.
+
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-connect-github.jpg" title="Connect Genezio to github" alt="Connect Genezio to github">
+
 - Once connected with GitHub, search for the forked repo.
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-import-repo.jpg" title="Link your GitHub with Genez via its app" alt="Link your GitHub with Genez via its app">
@@ -155,19 +158,19 @@ Given you have [registered](https://app.genez.io/auth/signup) on to Genezio with
 
 - Subsequently, Genezio will build and deploy the app for you in a live URL in a couple of minutes.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-live-url.jpg" title="Genezio URL" alt="Genzio URL">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-live-url.jpg" title="Genezio URL" alt="Genzio URL">
 
 - To view the working app click on the URL on overview page
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-overview.jpg" title="Genezio Dashboard" alt="Genzio dashboard">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-overview.jpg" title="Genezio Dashboard" alt="Genzio dashboard">
 
 - It should come up something like this
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-live-website.jpg" title="Live website deployed in Genezio" alt="Live website deployed in Genezio">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-live-website.jpg" title="Live website deployed in Genezio" alt="Live website deployed in Genezio">
 
 - You can also edit your code directly in Genezio or get help on your code using Genezio AI built in.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-ai.jpg" title="Chat with Genezio AI" alt="Chat with Genezio Ai">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-ai.jpg" title="Chat with Genezio AI" alt="Chat with Genezio Ai">
 
 ### Cyclic
 
@@ -215,7 +218,7 @@ Below is a quick comparison table for Render, Vercel, and Cyclic.
 | :-------------: | :-: | :----: | ---------------------- | ------------------- | ------------ |
 |     Render      | N/A |  N/A   | After 15 mins          | No                  | 5            |
 |     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
-|     Cyclic      | N/A |  1 GB  | No                     | Yes                 | Multiple     |
+|     Genezio     | N/A |  1 GB  | No                     | Yes                 | Multiple     |
 
 After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
