@@ -1,22 +1,26 @@
 ---
 layout: post
-title: 3 free Node.js hosting services you should be using today (with step-by-step
+title:
+  3 free Node.js hosting services you should be using today (with step-by-step
   deployment examples)
 date: 2021-01-14T22:30:22.000+11:00
 comments: true
 tags:
-- Web Development
-- Node.js
+  - Web Development
+  - Node.js
 cover: "/images/free-nodejs-hosting/01free-nodejs-hosting-new02.jpg"
-pagetitle: 3 free Node.js hosting services you should be using today (with step-by-step
+pagetitle:
+  3 free Node.js hosting services you should be using today (with step-by-step
   deployment examples)
-description: Use these 3 completely free Node.js hosting services to host your Node.js
+description:
+  Use these 3 completely free Node.js hosting services to host your Node.js
   application. Follow this 2000+ words guide to see how to deploy your Node.js app
   to these services.
-keywords: free node.js hosting, free node js hosting, node js free hosting, node.js
+keywords:
+  free node.js hosting, free node js hosting, node js free hosting, node.js
   free hosting
-
 ---
+
 Hosting Node.js applications is easy, finding a completely free Node.js hosting service that is reliable is not. In this post, we will discuss 3 hosting services where you can host your Node.js applications or API for free which you should start using now. We will also deploy a demo app step-by-step on each of these 3 platforms. I wished to have found more than 3 but finding even 3 was not very easy.
 
 <!-- more -->
@@ -25,20 +29,20 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 
 ## Table of contents
 
-* [Free Node.js Hosting options](#free-node.js-hosting-options)
-* [Prerequisites](#prerequisites)
-* [Free Node.js hosting services](#free-node.js-hosting-services)
-* [Issues with these services](#issues-with-these-services)
-* [Free Node.js hosting platforms to deploy your app](#free-node.js-hosting-platforms-to-deploy-your-app)
-  * [Render](#render)
-    * [Deploy Node.js Quotes API to Render](#deploy-node.js-quotes-api-to-render)
-  * [Vercel](#vercel)
-    * [Deploy Node.js Quotes API on Vercel](#deploy-node.js-quotes-api-on-vercel)
-  * [Cyclic](#cyclic)
-    * [Deploy Node.js Quotes API to Cyclic](#deploy-node.js-quotes-api-to-cyclic)
-* [Quick comparison of Free Node.js hosting services](#quick-comparison-of-free-node.js-hosting-services)
-* [Other options for free Node.js hosting](#other-options-for-free-node.js-hosting)
-* [Conclusion](#conclusion)
+- [Free Node.js Hosting options](#free-node.js-hosting-options)
+- [Prerequisites](#prerequisites)
+- [Free Node.js hosting services](#free-node.js-hosting-services)
+- [Issues with these services](#issues-with-these-services)
+- [Free Node.js hosting platforms to deploy your app](#free-node.js-hosting-platforms-to-deploy-your-app)
+  - [Render](#render)
+    - [Deploy Node.js Quotes API to Render](#deploy-node.js-quotes-api-to-render)
+  - [Vercel](#vercel)
+    - [Deploy Node.js Quotes API on Vercel](#deploy-node.js-quotes-api-on-vercel)
+  - [Cyclic](#cyclic)
+    - [Deploy Node.js Quotes API to Cyclic](#deploy-node.js-quotes-api-to-cyclic)
+- [Quick comparison of Free Node.js hosting services](#quick-comparison-of-free-node.js-hosting-services)
+- [Other options for free Node.js hosting](#other-options-for-free-node.js-hosting)
+- [Conclusion](#conclusion)
 
 ## Free Node.js Hosting options
 
@@ -82,9 +86,9 @@ Well, that is still better than the above two options if you only have only one 
 
 ## Free Node.js hosting platforms to deploy your app
 
-Ok, let’s cut the rant and get to deploying a demo application. For this illustration I will use A [node.js Express API](/blog/2021/01/nodejs-postgresql-tutorial/) that talks with a PostgreSQL database on [ElephantSQL](https://www.elephantsql.com/).
+Ok, let’s cut the rant and get to deploying a demo application. For this illustration I will use A [node.js Express Tutorial with Pug](https://github.com/yashcrest/nodejs-express-tutorial).
 
-This is a simple quotes API and you can find the code open-source on [Github](https://github.com/geshan/nodejs-posgresql). Time to see this app hosted for free on Render.
+This is a demo project to show how to build a demo app with Express js and Pug and you can find the code open-source on [Github](https://github.com/yashcrest/nodejs-express-tutorial). Time to see this app hosted for free on Render.
 
 ### Render
 
@@ -98,87 +102,75 @@ It also has comprehensive [docs](https://render.com/docs?utm_source=geshan.com.n
 
 You will need a [free account](https://dashboard.render.com/?utm_source=geshan.com.np) on Render to get started. After you have registered with your preferred method like Github or Email, please follow the steps below to run your Node.js app on Render:
 
-* Login to your Render account
-* On the Dashboard under "Web Services" click "New Web Service" as seen below:
+- Login to your Render account
+- On the Dashboard under "Web Services" click "New Web Service" as seen below:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/02render-new-service.jpg" title="Add a new Render servcie" alt="Add a new Render servcie">
 
-* Then paste `https://github.com/geshan/nodejs-posgresql` at the bottom on the next screen and click "Continue" as seen here:
+- Then paste `https://github.com/geshan/nodejs-posgresql` at the bottom on the next screen and click "Continue" as seen here:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/03-render-service-url.jpg" title="Add GitHub repo URL for the Render service" alt="Add GitHub repo URL for the Render service">
 
-* After that on the next page, type in `nodejs-postgresql` as the Name of the app, select the Environment as "Node".
+- After that on the next page, type in `nodejs-postgresql` as the Name of the app, select the Environment as "Node".
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/04render-app-name.jpg" title="Add a name for the Render web service" alt="Add a name for the Render web service">
 
-* On the same page, make sure the build command is `npm install` and the start command is `npm start`. Also make sure the plan is `Free`. Then click the blue button at the end of the page "Create Web Service"
+- On the same page, make sure the build command is `npm install` and the start command is `npm start`. Also make sure the plan is `Free`. Then click the blue button at the end of the page "Create Web Service"
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/05render-app-command.jpg" title="Configure build and start command for Render web service" alt="Configure build and start command for Render web service">
 
-* It will take a some minutes to build and deploy, you will see an output like the below:
+- It will take a some minutes to build and deploy, you will see an output like the below:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/06render-app-deployed.jpg" title="Render web service deployment successful" alt="Render web service deployment successful">
 
-* Your application's URL will be visible under the name of the app, click it to check if your app is running. If you click the app while it is being deployed the first time, it will come back with a `404` response. It will take some time to come alive. Then if you hit `<YOUR-APP-URL>/quotes` you will see something like:
+- Your application's URL will be visible under the name of the app, click it to check if your app is running. If you click the app while it is being deployed the first time, it will come back with a `404` response. It will take some time to come alive. Then if you hit `<YOUR-APP-URL>/quotes` you will see something like:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/07render-app-running.jpg" title="Render web service Up and running successfully" alt="Render web service Up and running successfully">
 
 That was easy to get your Node.js app up and running pretty fast. Next, let’s look at how to deploy the same application on Vercel.
 
-### Vercel
+### Genezio
 
-[Vercel](https://vercel.com) (previously known as Zeit) is a great place to deploy frontend apps. Being a layer on top of serverless functions it can also run some other languages and [Node.js is included](https://vercel.com/docs/runtimes#official-runtimes/node-js) in that list. Amongst other good features, a very handy feature with Vercel is you get a unique URL for each pull request which makes testing that particular branch a breeze. They call this deploy preview.
+[Genezio](https://genezio.com/deployment-platform/) is a great place to deploy both frontend and backend apps.
 
-> [Vercel Pricing](https://vercel.com/pricing) is pretty straight forward. Personal projects run free and it integrates with GitHub, BitBucket, and GitLab.
+> [Genezio Pricing](https://genezio.com/deployment-platform/pricing/) is pretty straight forward. Personal projects run free and it integrates with GitHub, BitBucket, and GitLab.
 
-Let's look at how we can deploy our Quotes API Node.js app on Vercel.
+Let's look at how we can deploy our Node.js app on Genezio.
 
-#### Deploy Node.js Quotes API on Vercel
+#### Deploy Node.js app on Genezio
 
-After you have [registered](https://vercel.com/signup) with Vercel and are logged into Vercel, do the following steps:
+Given you have [registered](https://app.genez.io/auth/signup) on to Genezio with Github and are logged in, do the following steps:
 
-* Visit [https://github.com/geshan/nodejs-posgresql](https://github.com/geshan/nodejs-posgresql) (you don’t even need to fork the repo)
-* Click on the blue “Deploy” button
-* Give it a name in the Vercel UI like below:
+- Fork the [https://github.com/geshan/nodejs-express-tutorial](https://github.com/geshan/nodejs-express-tutorial) to your GitHub account
+- Go to Genezio [dashboard](https://app.genez.io/new-project)
+- Click on "Import from Github" and
+- You will be asked to connect Genezio with GitHub.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05nodejs-vercel-linkup.jpg" title="Link up Node.js App Github Repo with Vercel" alt="Link up Node.js App Github Repo with Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-connect-github.jpg" title="Connect Genezio to github" alt="Connect Genezio to github">
 
-* And click "Continue"
-* You can create your own repo on Github from the screen below:
+- Once connected with GitHub, search for the forked repo.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/06nodejs-vercel-create-repo.jpg" title="Create Github Repo within Vercel for Node.js free hosting" alt="Create Github Repo within Vercel for Node.js free hosting">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-import-repo.jpg" title="Link your GitHub with Genez via its app" alt="Link your GitHub with Genez via its app">
 
-* After that, select the root as the project’s source code, then click “Continue”
+- Once the repo is imported to Genezio, if you have any Environment Variables you can add them and click "Create".
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/07nodejs-vercel-project-root.jpg" title="Choose root as the project source code in Vercel" alt="Choose root as the project source code in Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genez-create-repo.jpg" title="Create repo in genezio" alt="Create repo in genezio">
 
-* Subsequently, click deploy in the next screen:
+- Subsequently, Genezio will build and deploy the app for you in a live URL in a couple of minutes.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/08nodejs-vercel-deploy.jpg" title="Deploy the app on Vercel with Deploy button" alt="Deploy the app on Vercel with Deploy button">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-live-url.jpg" title="Genezio URL" alt="Genzio URL">
 
-* It will build and deploy the app and you will see a screen like below:
+- To view the working app click on the URL on overview page
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/09nodejs-vercel-deployed.jpg" title="The app is deployed on Vercel" alt="The app is deployed on Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-overview.jpg" title="Genezio Dashboard" alt="Genzio dashboard">
 
-* Now, click the “Visit” button, you should see something like the following:
+- It should come up something like this
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/10nodejs-vercel-app-running.jpg" title="The app is running on Vercel" alt="The app is running on Vercel">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-live-website.jpg" title="Live website deployed in Genezio" alt="Live website deployed in Genezio">
 
-* Add `/quotes` to the URL and you should see the quotes in a JSON format like below:
+- You can also edit your code directly in Genezio or get help on your code using Genezio AI built in.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/11nodejs-vercel-api-running.jpg" title="The quotes API is running on Vercel" alt="The quotes API is running on Vercel">
-
-This is set up very well now, you should go to the app’s settings page if you want to tweak anything. You can add environment variables and do other things in the settings. You can even look at the function’s logs.
-
-Each time you open a new pull request in that repository Vercel will give you a deploy preview URL which is very handy. You can see how it looks like below:
-
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/12nodejs-vercel-deploy-preview.jpg" title="Vercel deploy preview on GitHub pull request" alt="Vercel deploy preview on GitHub pull request">
-
-On merge to master/main branch, it will auto-deploy the code to the main URL. You can use the [Vercel CLI](https://vercel.com/docs/cli) for re-deployments, setting up environment variables, and a host of other things.
-
-Vercel has a powerful CLI to make your life easier for deploying the apps and doing other things like having a look at the app logs from the CLI.
-
-Next, let's look at how Cyclic compares to Render and Vercel.
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-ai.jpg" title="Chat with Genezio AI" alt="Chat with Genezio Ai">
 
 ### Cyclic
 
@@ -192,26 +184,25 @@ As mentioned its [pricing](https://www.cyclic.sh/pricing) page, which has a self
 
 Given you have [registered](https://app.cyclic.sh/#/join/geshan) on to Cyclic with GitHub and you are logged in, follow the steps below:
 
-* Fork the `https://github.com/geshan/nodejs-posgresql` repository to your GitHub account
-* Go to your fork and click the "Deploy to cyclic" navy blue button
-* You will be asked to connect Cyclic with GitHub, you can approve the repo as below
+- Fork the `https://github.com/geshan/nodejs-posgresql` repository to your GitHub account
+- Go to your fork and click the "Deploy to cyclic" navy blue button
+- You will be asked to connect Cyclic with GitHub, you can approve the repo as below
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/20cyclic-link.jpg" title="Link your GitHub with Cyclic vai its app" alt="Link your GitHub with Cyclic vai its app">
 
-* Subsequently, Cyclic will build and deploy the app and show you "You're Live!" in a couple of minutes maximum, when the process is done as follows:
+- Subsequently, Cyclic will build and deploy the app and show you "You're Live!" in a couple of minutes maximum, when the process is done as follows:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/21cyclic-live.jpg" title="Your app is live with Cyclic" alt="Your app is live with Cyclic">
 
-
-* Now we can click on the "Go to nodejs-posgresql Dashboard" button. It will take us to the overview page like below:
+- Now we can click on the "Go to nodejs-posgresql Dashboard" button. It will take us to the overview page like below:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/22cyclic-app-overview.jpg" title="Your app overview on Cyclic" alt="Your app overview on Cyclic">
 
-* To view the working app click the "App URL" link, which will show something like:
+- To view the working app click the "App URL" link, which will show something like:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/23cyclic-homepage.jpg" title="Our app main page working on Cyclic" alt="Our app main page working on Cyclic">
 
-* Next, add `/quotes` to the URL and you should see something similar to the following:
+- Next, add `/quotes` to the URL and you should see something similar to the following:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/24cyclic-quotes.jpg" title="Node.js Quotes API running on Cyclic" alt="Node.js Quotes API running on Cyclic">
 
@@ -224,10 +215,10 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 Below is a quick comparison table for Render, Vercel, and Cyclic.
 
 | Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
-| :---: | :---: | :---: | --- | --- | --- |
-| Render | N/A | N/A | After 15 mins | No | 5 |
-| Vercel | N/A | 1 GB | No | Yes | Unlimited |
-| Cyclic | N/A | 1 GB | No | Yes | Multiple |
+| :-------------: | :-: | :----: | ---------------------- | ------------------- | ------------ |
+|     Render      | N/A |  N/A   | After 15 mins          | No                  | 5            |
+|     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
+|     Genezio     | N/A |  1 GB  | No                     | Yes                 | Multiple     |
 
 After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
