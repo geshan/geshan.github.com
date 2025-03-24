@@ -36,7 +36,7 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 - [Free Node.js hosting platforms to deploy your app](#free-node.js-hosting-platforms-to-deploy-your-app)
   - [Render](#render)
     - [Deploy Node.js Quotes API to Render](#deploy-node.js-quotes-api-to-render)
-  - [Vercel](#vercel)
+  - [Genezio](#genezio)
     - [Deploy Node.js app on Genezio](#deploy-node.js-app-on-genezio)
   - [Cyclic](#cyclic)
     - [Deploy Node.js Quotes API to Cyclic](#deploy-node.js-quotes-api-to-cyclic)
