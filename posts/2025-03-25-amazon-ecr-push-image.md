@@ -16,6 +16,14 @@ Amazon Elastic Container Registry (ECR) is a fully managed container registry th
 
 <img class="center" src="/images/amazon-ecr-push-image/01amazon-ecr-push-image.jpg" title="Push a Docker image to Amazon Elastic Container Registery (ECR)" alt="Push a Docker image to Amazon Elastic Container Registery (ECR)">
 
+## Table of contents
+
+* [What is Amazon ECR](#what-is-amazon-ecr)
+* [The Node.js Hello World app](#the-node.js-hello-world-app)
+* [Create private Amazon ECR](#create-private-amazon-ecr)
+* [Build and push Node.js Docker image](#build-and-push-node.js-docker-image)
+* [Conclusion](#conclusion)
+
 ## What is Amazon ECR
 
 Amazon Elastic Container Registry (ECR) is an Amazon Web Service (AWS) service that stores and manages Docker images, making it easy to pull and deploy them to services like Elastic Container Service (ECS), Elastic Kubernetes Service (EKS), and/or AWS Lambda functions. Below is a quick overview of how it works from the [official website](https://aws.amazon.com/ecr/).
