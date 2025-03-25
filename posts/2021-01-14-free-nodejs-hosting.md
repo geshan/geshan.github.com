@@ -103,31 +103,37 @@ It also has comprehensive [docs](https://render.com/docs?utm_source=geshan.com.n
 You will need a [free account](https://dashboard.render.com/?utm_source=geshan.com.np) on Render to get started. After you have registered with your preferred method like Github or Email, please follow the steps below to run your Node.js app on Render:
 
 - Login to your Render account
-- On the Dashboard under "Web Services" click "New Web Service" as seen below:
+- On the dashboard, under "Web Services", click "New Web Service" as seen below:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/02render-new-service.jpg" title="Add a new Render servcie" alt="Add a new Render servcie">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-new-service.jpg" title="Add a new Render servcie" alt="Add a new Render servcie">
 
-- Then paste `https://github.com/geshan/nodejs-posgresql` at the bottom on the next screen and click "Continue" as seen here:
+- On the next screen, choose `Public Git Repository`, then paste the following GitHub URL: `https://github.com/geshan/nodejs-express-tutorial` and click `Connect` as seen here:
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/03-render-service-url.jpg" title="Add GitHub repo URL for the Render service" alt="Add GitHub repo URL for the Render service">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25-render-service-url.jpg" title="Add GitHub repo URL for the Render service" alt="Add GitHub repo URL for the Render service">
 
-- After that on the next page, type in `nodejs-postgresql` as the Name of the app, select the Environment as "Node".
+- On the next page, type in `nodejs-express-tutorial` as the name of the app, and set the language to `Node`.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/04render-app-name.jpg" title="Add a name for the Render web service" alt="Add a name for the Render web service">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25-render-app-name.jpg" title="Add a name for the Render web service" alt="Add a name for the Render web service">
 
-- On the same page, make sure the build command is `npm install` and the start command is `npm start`. Also make sure the plan is `Free`. Then click the blue button at the end of the page "Create Web Service"
+- On the same page, make sure the build command is `npm install` and the start command is `node index.js`. Also make sure the plan is `Free`.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/05render-app-command.jpg" title="Configure build and start command for Render web service" alt="Configure build and start command for Render web service">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-command.jpg" title="Configure build and start command for Render web service" alt="Configure build and start command for Render web service">
 
-- It will take a some minutes to build and deploy, you will see an output like the below:
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-plan.jpg" title="Choose Free Web Service Plan" alt="Choose Free Web Service Plan">
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/06render-app-deployed.jpg" title="Render web service deployment successful" alt="Render web service deployment successful">
+- Then click the white `Deploy Web Service` button at the bottom of the page.
 
-- Your application's URL will be visible under the name of the app, click it to check if your app is running. If you click the app while it is being deployed the first time, it will come back with a `404` response. It will take some time to come alive. Then if you hit `<YOUR-APP-URL>/quotes` you will see something like:
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-deploy.jpg" title="Configure build and start command for Render web service" alt="Configure build and start command for Render web service">
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/07render-app-running.jpg" title="Render web service Up and running successfully" alt="Render web service Up and running successfully">
+- It will take a few minutes to build and deploy. You will see an output like the one below:
 
-That was easy to get your Node.js app up and running pretty fast. Next, let’s look at how to deploy the same application on Vercel.
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-deployed.jpg" title="Render web service deployment successful" alt="Render web service deployment successful">
+
+- Your application's URL will be visible under the app name. Click it to check if your app is running. If you click the link too early (while it’s still deploying), it may return a `404` response. Just wait a bit — once it’s live visiting the URL will show something like this:
+
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-running.jpg" title="Render web service Up and running successfully" alt="Render web service Up and running successfully">
+
+That was a quick and easy way to get your Node.js app up and running on Render. Next, let’s look how to deploy the same application on Genezio.
 
 ### Genezio
 
