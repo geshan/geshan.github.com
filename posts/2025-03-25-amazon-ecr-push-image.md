@@ -180,7 +180,7 @@ You can see the image’s details by clicking the `latest` link, which will show
 
 <img class="center" src="/images/amazon-ecr-push-image/14amazon-ecr-with-pushed-image.jpg" loading="lazy" title="AWS Console UI showing Amazon ECR with the pushed Docker image details" alt="AWS Console UI showing Amazon ECR with the pushed Docker image details">
 
-You can deploy the image's URL as a container in ECS, EKS, or even a Lambda function. The next part of this blog post series will discuss that.
+You can deploy the image's URL as a container in ECS, EKS, or even a Lambda function. The [next part](/blog/2025/03/amazon-ecs-tutorial/#create-an-esc-service) of this blog post series you will deploy the built and pushed container to Amazon Elastic Container Service (ECS).
 
 ## Conclusion
 
