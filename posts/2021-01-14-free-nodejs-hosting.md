@@ -1,31 +1,22 @@
 ---
 layout: post
-title:
-  3 free Node.js hosting services you should be using today (with step-by-step
-  deployment examples)
+title: "3 free Node.js hosting services you should be using today (with step-by-step deployment examples)"
 date: 2021-01-14T22:30:22.000+11:00
 comments: true
 tags:
   - Web Development
   - Node.js
-cover: "/images/free-nodejs-hosting/01free-nodejs-hosting-new02.jpg"
-pagetitle:
-  3 free Node.js hosting services you should be using today (with step-by-step
-  deployment examples)
-description:
-  Use these 3 completely free Node.js hosting services to host your Node.js
-  application. Follow this 2000+ words guide to see how to deploy your Node.js app
-  to these services.
-keywords:
-  free node.js hosting, free node js hosting, node js free hosting, node.js
-  free hosting
+cover: "/images/free-nodejs-hosting/01free-nodejs-hosting-new03.jpg"
+pagetitle: "3 free Node.js hosting services you should be using today (with step-by-step deployment examples)"
+description: "Use these 3 completely free Node.js hosting services to host your Node.js application. Follow this guide to see how to deploy your Node.js app to these services."
+keywords: free node.js hosting, free node js hosting, node js free hosting, node.js free hosting
 ---
 
-Hosting Node.js applications is easy, finding a completely free Node.js hosting service that is reliable is not. In this post, we will discuss 3 hosting services where you can host your Node.js applications or API for free which you should start using now. We will also deploy a demo app step-by-step on each of these 3 platforms. I wished to have found more than 3 but finding even 3 was not very easy.
+Hosting Node.js applications is easy, finding a completely free Node.js hosting service that is reliable is not. In this post, we will discuss 3 hosting services where you can host your Node.js applications or API for free which you should start using now. We will also deploy a demo app step-by-step on each of these 3 platforms. I wished to have found more than 3 but finding even 3 was not very easy. This post was last updated on 2025-03-27.
 
 <!-- more -->
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting-new02.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/01free-nodejs-hosting-new03.jpg" title="3 free node.js hosting services you should try now" alt="3 free node.js hosting services you should try now">
 
 ## Table of contents
 
@@ -66,7 +57,7 @@ Time to start revealing our free Node.js hosting services:
 
 ## Free Node.js hosting services
 
-The free Node.js hosting services are Render (free tier), Vercel (hobby free forever plan), and Cyclic. All these services can host your Node.js application for $0 a month a.k.a. absolutely and completely free. You don't even need to add a credit card for backup or safety reasons. But there are strings attached, as discussed next.
+The free Node.js hosting services are Render (free tier), Genzio (free plan), and Koyeb. All these services can host your Node.js application for $0 a month a.k.a. absolutely and completely free. You don't even need to add a credit card for backup or safety reasons. But there are strings attached, as discussed next.
 
 ## Issues with these services
 
@@ -74,13 +65,7 @@ Render apps sleep if they are inactive for 15 minutes.
 
 Or you can use something like Cron-Job.org to ping your Render service every 10 minutes to keep it awake. Render apps might take up to 30 seconds to respond after sleeping.
 
-Vercel is an amazing service, where you could host both your backend API and frontend application in the same repository. It focuses more on the frontend side of things.
-
-> The downside is that Vercel uses serverless functions. It is like a great wrapper on top of AWS Lambda. It only allows personal GitHub repositories for free, not organizational ones.
-
-With serverless functions, the issues of cold start and losing application state comes into the picture.
-
-Cyclic is another awesome service where the app does not sleep if you don’t get requests for 30 minutes. It is serverless and a great wrapper on top of multiple AWS services.
+With completely free services there will always be some kind of limitation. For example, you will get less resources like CPU and memory. Also, you might not get a custom domain or SSL certificate for free. These restrictions are logical and acceptable for free services. 
 
 Well, that is still better than the above two options if you only have only one [coding challenge](/blog/2020/09/take-home-coding-challenges-outshine-competition/) to deploy.
 
@@ -218,13 +203,13 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 
 ## Quick comparison of Free Node.js hosting services
 
-Below is a quick comparison table for Render, Vercel, and Cyclic.
+Below is a quick comparison table for Render, Genezio, and Vercel.
 
 | Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
 | :-------------: | :-: | :----: | ---------------------- | ------------------- | ------------ |
 |     Render      | N/A |  N/A   | After 15 mins          | No                  | 5            |
-|     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
 |     Genezio     | N/A |  1 GB  | No                     | Yes                 | Multiple     |
+|     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
 
 After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
@@ -233,7 +218,6 @@ After that contrast, let’s look at some other options that are free but still 
 Some other services where you can host your Node.js application free/almost free but you need to put your credit card are as follows:
 
 1. Railway - [Railway](https://railway.app?referralCode=Tcesg7) is a great service with free $5 a month. We can even run a database on Railway without adding a credit card.
-1. Koyeb - [Koyeb](https://www.koyeb.com/pricing) is another useful service that gives $5 a month. We can run Containers as well on it.
 1. Fly.io - Pretty good, it is like CDN for the backend. The [free plan](https://fly.io/docs/about/pricing/) has 3 shared-CPU-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
 1. Google Cloud Run - You can host your Node.js app on [Google Cloud Run](https://cloud.google.com/run) as [serverless containers](/blog/2023/04/serverless-containers/). You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
 1. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is better used to code collaboratively than host a Node.js app or API.
