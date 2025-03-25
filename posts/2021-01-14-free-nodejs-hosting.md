@@ -107,11 +107,11 @@ You will need a [free account](https://dashboard.render.com/?utm_source=geshan.c
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-new-service.jpg" title="Add a new Render servcie" alt="Add a new Render servcie">
 
-- On the next screen, choose **Public Git Repository**, then paste the following GitHub URL: `https://github.com/geshan/nodejs-express-tutorial` and click **"Connect"** as seen here:
+- On the next screen, choose `Public Git Repository`, then paste the following GitHub URL: `https://github.com/geshan/nodejs-express-tutorial` and click `Connect` as seen here:
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/25-render-service-url.jpg" title="Add GitHub repo URL for the Render service" alt="Add GitHub repo URL for the Render service">
 
-- On the next page, type in `nodejs-express-tutorial` as the name of the app, and set the language to **Node**.
+- On the next page, type in `nodejs-express-tutorial` as the name of the app, and set the language to `Node`.
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/25-render-app-name.jpg" title="Add a name for the Render web service" alt="Add a name for the Render web service">
 
@@ -121,7 +121,7 @@ You will need a [free account](https://dashboard.render.com/?utm_source=geshan.c
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-plan.jpg" title="Choose Free Web Service Plan" alt="Choose Free Web Service Plan">
 
-- Then click the white **"Deploy Web Service"** button at the bottom of the page.
+- Then click the white `Deploy Web Service` button at the bottom of the page.
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-deploy.jpg" title="Configure build and start command for Render web service" alt="Configure build and start command for Render web service">
 
@@ -133,7 +133,7 @@ You will need a [free account](https://dashboard.render.com/?utm_source=geshan.c
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/25render-app-running.jpg" title="Render web service Up and running successfully" alt="Render web service Up and running successfully">
 
-That was a quick and easy way to get your Node.js app up and running on Render. Next, let’s look how to deploy the same application on **Genezio**.
+That was a quick and easy way to get your Node.js app up and running on Render. Next, let’s look how to deploy the same application on Genezio.
 
 ### Genezio
 
