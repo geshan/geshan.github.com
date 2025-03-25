@@ -203,13 +203,13 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 
 ## Quick comparison of Free Node.js hosting services
 
-Below is a quick comparison table for Render, Vercel, and Cyclic.
+Below is a quick comparison table for Render, Genezio, and Vercel.
 
 | Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
 | :-------------: | :-: | :----: | ---------------------- | ------------------- | ------------ |
 |     Render      | N/A |  N/A   | After 15 mins          | No                  | 5            |
-|     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
 |     Genezio     | N/A |  1 GB  | No                     | Yes                 | Multiple     |
+|     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
 
 After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
@@ -218,7 +218,6 @@ After that contrast, let’s look at some other options that are free but still 
 Some other services where you can host your Node.js application free/almost free but you need to put your credit card are as follows:
 
 1. Railway - [Railway](https://railway.app?referralCode=Tcesg7) is a great service with free $5 a month. We can even run a database on Railway without adding a credit card.
-1. Koyeb - [Koyeb](https://www.koyeb.com/pricing) is another useful service that gives $5 a month. We can run Containers as well on it.
 1. Fly.io - Pretty good, it is like CDN for the backend. The [free plan](https://fly.io/docs/about/pricing/) has 3 shared-CPU-1x VMs with 256 MB of RAM. Asks for a credit-card on registration.
 1. Google Cloud Run - You can host your Node.js app on [Google Cloud Run](https://cloud.google.com/run) as [serverless containers](/blog/2023/04/serverless-containers/). You can get up to [2 million requests](https://cloud.google.com/run/pricing) per month free. But it will involve setting up Google Cloud Registry and other tools. Part of Google Cloud Platform which asks for a credit card on registration.
 1. Glitch - [Glitch](https://glitch.com/pricing) can host one of your Node.js Apps for free. It is better used to code collaboratively than host a Node.js app or API.
