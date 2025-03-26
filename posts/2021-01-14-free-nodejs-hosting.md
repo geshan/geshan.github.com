@@ -26,11 +26,11 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
 - [Issues with these services](#issues-with-these-services)
 - [Free Node.js hosting platforms to deploy your app](#free-node.js-hosting-platforms-to-deploy-your-app)
   - [Render](#render)
-    - [Deploy Node.js Quotes API to Render](#deploy-node.js-quotes-api-to-render)
+    - [Deploy Node.js app on Render](#deploy-node.js-app-on-render)
   - [Genezio](#genezio)
     - [Deploy Node.js app on Genezio](#deploy-node.js-app-on-genezio)
   - [Koyeb](#koyeb)
-    - [Deploy Node.js app on Koyeb](#deploy-Node.js-app-on-Koyeb)
+    - [Deploy Node.js app on Koyeb](#deploy-node.js-app-on-koyeb)
 - [Quick comparison of Free Node.js hosting services](#quick-comparison-of-free-node.js-hosting-services)
 - [Other options for free Node.js hosting](#other-options-for-free-node.js-hosting)
 - [Conclusion](#conclusion)
@@ -83,7 +83,7 @@ This is a demo project to show how to build a demo app with Express js and Pug a
 
 It also has comprehensive [docs](https://render.com/docs?utm_source=geshan.com.np) to help you deploy not only Node.js apps for free but a host of other languages and frameworks. Some other things you can deploy on Render are Python, Go, PHP (Laravel) and Docker. You can also host other [Node.js alternatives](/blog/2022/08/nodejs-alternatives/) on Render like Deno and Bun.js.
 
-#### Deploy Node.js Quotes API to Render
+#### Deploy Node.js app on Render
 
 You will need a [free account](https://dashboard.render.com/?utm_source=geshan.com.np) on Render to get started. After you have registered with your preferred method like Github or Email, please follow the steps below to run your Node.js app on Render:
 
@@ -170,13 +170,13 @@ simplifies deploying and scaling applications, APIs, and machine learning models
 
 #### Deploy Node.js app on Koyeb
 
-- [Signup](https://app.koyeb.com/auth/signup) with your github account (preferred)
+- [Signup](https://app.koyeb.com/auth/signup) with your GitHub account (preferred)
 
 - Once you're in, click on the `Create Service` button and then select `Web service` option and then select the source `GitHub` for our use case. You can choose other services or sources depending on your use case.
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-01-create-new.jpg" title="Create new service on koyeb" alt="Create new service on koyeb">
 
-- Put the repository url manually or you can install github and then select the app from there.
+- Put the repository url manually or you can install GitHub app and then select the app from there.
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-02-source.jpg" title="Enter or select repository source" alt="Enter or select repository source">
 
