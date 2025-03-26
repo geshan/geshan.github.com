@@ -29,8 +29,8 @@ Hosting Node.js applications is easy, finding a completely free Node.js hosting 
     - [Deploy Node.js Quotes API to Render](#deploy-node.js-quotes-api-to-render)
   - [Genezio](#genezio)
     - [Deploy Node.js app on Genezio](#deploy-node.js-app-on-genezio)
-  - [Cyclic](#cyclic)
-    - [Deploy Node.js Quotes API to Cyclic](#deploy-node.js-quotes-api-to-cyclic)
+  - [Koyeb](#koyeb)
+    - [Deploy Node.js app on Koyeb](#deploy-Node.js-app-on-Koyeb)
 - [Quick comparison of Free Node.js hosting services](#quick-comparison-of-free-node.js-hosting-services)
 - [Other options for free Node.js hosting](#other-options-for-free-node.js-hosting)
 - [Conclusion](#conclusion)
@@ -65,7 +65,7 @@ Render apps sleep if they are inactive for 15 minutes.
 
 Or you can use something like Cron-Job.org to ping your Render service every 10 minutes to keep it awake. Render apps might take up to 30 seconds to respond after sleeping.
 
-With completely free services there will always be some kind of limitation. For example, you will get less resources like CPU and memory. Also, you might not get a custom domain or SSL certificate for free. These restrictions are logical and acceptable for free services. 
+With completely free services there will always be some kind of limitation. For example, you will get less resources like CPU and memory. Also, you might not get a custom domain or SSL certificate for free. These restrictions are logical and acceptable for free services.
 
 Well, that is still better than the above two options if you only have only one [coding challenge](/blog/2020/09/take-home-coding-challenges-outshine-competition/) to deploy.
 
@@ -163,39 +163,42 @@ Given you have [registered](https://app.genez.io/auth/signup) on to Genezio with
 
 <img class="center" loading="lazy" src="/images/free-nodejs-hosting/05genezio-ai.jpg" title="Chat with Genezio AI" alt="Chat with Genezio Ai">
 
-### Cyclic
+### Koyeb
 
-[Cyclic](https://app.cyclic.sh/#/join/geshan) aims to be a servive that offers full stack services for free. It is a serverless wrapper built very well on top of [AWS](https://docs.cyclic.sh/docs/overview/architecture). As it says on its website
+[Koyeb](https://www.koyeb.com/) is a serverless cloud platform that
+simplifies deploying and scaling applications, APIs, and machine learning models. It offers high-performance infrastructure with automatic scaling across global locations, making it ideal for AI and inference workloads. With support for various frameworks and languages, Koyeb enables developers to focus on building without worrying about infrastructure management.
 
-> Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline.
+#### Deploy Node.js app on Koyeb
 
-As mentioned its [pricing](https://www.cyclic.sh/pricing) page, which has a self claimed `generous free tier` we can deploy one app which can be invoked 10K times in a month. It also has some hard and soft limits mentioined in the [limits](https://docs.cyclic.sh/docs/overview/limits) page.
+- [Signup](https://app.koyeb.com/auth/signup) with your github account (preferred)
 
-#### Deploy Node.js Quotes API to Cyclic
+- Once you're in, click on the `Create Service` button and then select `Web service` option and then select the source `GitHub` for our use case. You can choose other services or sources depending on your use case.
 
-Given you have [registered](https://app.cyclic.sh/#/join/geshan) on to Cyclic with GitHub and you are logged in, follow the steps below:
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-01-create-new.jpg" title="Create new service on koyeb" alt="Create new service on koyeb">
 
-- Fork the `https://github.com/geshan/nodejs-posgresql` repository to your GitHub account
-- Go to your fork and click the "Deploy to cyclic" navy blue button
-- You will be asked to connect Cyclic with GitHub, you can approve the repo as below
+- Put the repository url manually or you can install github and then select the app from there.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/20cyclic-link.jpg" title="Link your GitHub with Cyclic vai its app" alt="Link your GitHub with Cyclic vai its app">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-02-source.jpg" title="Enter or select repository source" alt="Enter or select repository source">
 
-- Subsequently, Cyclic will build and deploy the app and show you "You're Live!" in a couple of minutes maximum, when the process is done as follows:
+- Choose the free CPU option. There are various other options availbale for both CPUs and GPUs. You can choose those depending on your need but they're not free $$.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/21cyclic-live.jpg" title="Your app is live with Cyclic" alt="Your app is live with Cyclic">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-03-choose-cpu.jpg" title="Choose free CPU" alt="Choose free CPU">
 
-- Now we can click on the "Go to nodejs-posgresql Dashboard" button. It will take us to the overview page like below:
+- Then you scroll down and confirm and in few minutes, you'll see this screen with the public URL to visit your app.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/22cyclic-app-overview.jpg" title="Your app overview on Cyclic" alt="Your app overview on Cyclic">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-04-public-url.jpg" title="See deployed app info" alt="See deployed app info">
 
-- To view the working app click the "App URL" link, which will show something like:
+- You can click on `manage your service` to manage the configuration if needed or go to the `Services` tab to see all of your services.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/23cyclic-homepage.jpg" title="Our app main page working on Cyclic" alt="Our app main page working on Cyclic">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-05-manage-service.jpg" title="Manage deployed app" alt="Manage deployed app">
 
-- Next, add `/quotes` to the URL and you should see something similar to the following:
+- Visit your hosted app using that public URL.
 
-<img class="center" loading="lazy" src="/images/free-nodejs-hosting/24cyclic-quotes.jpg" title="Node.js Quotes API running on Cyclic" alt="Node.js Quotes API running on Cyclic">
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-06-page-visit.jpg" title="Visit deployed app" alt="Visit deployed app">
+
+- Furthermore, you can go to `Setting` tab and then `Plans` to see more info about plans and pricing.
+
+<img class="center" loading="lazy" src="/images/free-nodejs-hosting/koyeb-07-plan-pricing.jpg" title="Pland and pricing" alt="Pland and pricing">
 
 ---
 
@@ -205,11 +208,11 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 
 Below is a quick comparison table for Render, Genezio, and Vercel.
 
-| Feature/Service | CPU | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
-| :-------------: | :-: | :----: | ---------------------- | ------------------- | ------------ |
-|     Render      | N/A |  N/A   | After 15 mins          | No                  | 5            |
-|     Genezio     | N/A |  1 GB  | No                     | Yes                 | Multiple     |
-|     Vercel      | N/A |  1 GB  | No                     | Yes                 | Unlimited    |
+| Feature/Service |   CPU    | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
+| :-------------: | :------: | :----: | ---------------------- | ------------------- | ------------ |
+|     Render      |   N/A    |  N/A   | After 15 mins          | No                  | 5            |
+|     Genezio     |   N/A    |  1 GB  | No                     | Yes                 | Multiple     |
+|      Koyeb      | 0.1 vCPU | 512 MB | After 15 mins          | Yes                 | 1            |
 
 After that contrast, let’s look at some other options that are free but still ask for your credit card as a backup option that they can charge if you use more resources.
 
