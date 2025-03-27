@@ -206,7 +206,7 @@ There you have it, the same Node.js API deployed on all 3 free Node.js hosting s
 
 ## Quick comparison of Free Node.js hosting services
 
-Below is a quick comparison table for Render, Genezio, and Vercel.
+Below is a quick comparison table for Render, Genezio, and Koyeb.
 
 | Feature/Service |   CPU    | Memory | Sleeps on no activity? | Is FAAS/Serverless? | No. of apps? |
 | :-------------: | :------: | :----: | ---------------------- | ------------------- | ------------ |
