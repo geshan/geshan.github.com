@@ -11,7 +11,7 @@ templateClass: tmpl-post
     <div class="col-span-12 md:col-span-8">
   <article class="hentry w-11/12 md:w-full mx-auto mt-4">
     <header class="page-header">
-      <h1 class="md:text-7xl text-5xl font-bold text-darkpurple">{{ title }}</h1>
+      <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
       <p class="meta text-muted">
       {% include "components/posted-date-time.njk" %} . <span class='text-darkgrey'>{{ helpers.getReadingTime(content) }} min read</span>
       </p>
