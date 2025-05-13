@@ -24,7 +24,7 @@ eleventyComputed:
     {% set postslistCounter = collections.posts | length %}
     {% include "postslist-excerpt.njk" %}
     <div class='pager-container md:w-9/12 w-11/12 mt-4 '>
-      <ul class="pager flex content-center justify-start text-lg ">
+      <ul class="pager flex flex-wrap content-center justify-start text-lg ">
         {% if pagination.href.previous %}
         <li class="previous list-none mr-6 inline-block">
           <a href="{{ pagination.href.previous }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 pt-2 rounded-md text-center block h-auto' >
