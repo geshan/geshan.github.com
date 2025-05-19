@@ -4,20 +4,20 @@
 /** tailwind over-rides */
 
 h1 {
-  font-size: xx-large; /* Changed from xxx-large */
+  font-size: xxx-large;
   font-weight: bold;
 }
 h2 {
-  font-size: x-large;  /* Changed from xxx-large */
+  font-size: xx-large;
   font-weight: bold;
 }
 h3 {
-  font-size: large;   /* Changed from xx-large */
+  font-size: x-large;
   font-weight: bold;
 }
 
 h4 {
-  font-size: medium; /* Changed from x-large */
+  font-size: large;
   font-weight: bold;
 }
 
