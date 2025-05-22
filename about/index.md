@@ -5,7 +5,7 @@ templateClass: tmpl-page
 eleventyNavigation:
   key: About Me
   order: "3"
-date: 2022-06-29T21:20:00.000+00:00
+date: 2025-05-23T21:20:00.000+00:00
 cover: "/images/geshan.jpg"
 description: I am Geshan. I am a software engineer, with 15+ years of software engineering
   experience. I have been blogging since 2007.
@@ -13,12 +13,33 @@ description: I am Geshan. I am a software engineer, with 15+ years of software e
 ---
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80 mb-3'>
 <p class='cover-description text-2xl px-4 my-auto text-white '>
-Hi, I am Geshan. I am a software engineer, with more than 15 years of software engineering experience. Currently, I am living in Sydney, Australia serving Simply Wall St as a senior software engineer.
+Hi, I am Geshan. I am a software engineer, with more than 17 years of software engineering experience. Currently, I am living in Sydney, Australia serving Simply Wall St as a senior software engineer.
 </p>
 <img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 </div>
 
-I have a keen interest in REST architecture, microservices, and cloud computing. I am a language-agnostic software engineer (backend-focused) who believes the value provided to the business is more important than the choice of language or framework.
+I have a keen interest in software architecture, microservices, and cloud computing. I am a language-agnostic software engineer (backend-focused) who believes the value provided to the business is more important than the choice of language or framework.
+
+> Fiddling with [Gen AI](/blog/categories/gen-ai/), LLMs, new models, and tools like [Ollama](/blog/categories/ollama/) is something I do on the side these days.
+
+Playing with Gen AI tools and evaluating how it can be used in your day-to-day work is becoming a need of current times.
+
+## Table of contents
+
+- [Consciously evolving](#consciously-evolving)
+- [Day to day](#day-to-day)
+- [Why This blog?](#why-this-blog)
+- [Public Speaking](#public-speaking)
+- [Side Projects](#side-projects)
+  - [Nepal News English - 2019](#nepal-news-english---2019)
+  - [AU Tech Jobs - 2020](#au-tech-jobs---2020)
+  - [Bloggers union - 2022](#bloggers-union---2022)
+  - [Speakers camp - 2023](#speakers-camp---2023)
+  - [GDG in each capital city of Australia - 2024](#gdg-in-each-capital-city-of-australia---2024)
+- [Publications](#publications)
+- [Feedback from colleagues](#feedback-from-colleagues)
+- [I am also](#i-am-also)
+- [Follow Me/this blog](#follow-methis-blog)
 
 ## Consciously evolving
 
@@ -26,7 +47,7 @@ I was born and lived the majority of my life in Kathmandu, Nepal. I have lived a
 
 ## Day to day
 
-Day to day, I use mainly Javascript (Typescript/Node.js) and PHP with MySQL/Postgres database to translate business requirements into reliable, [scalable](/blog/2020/12/software-scalability/), and [resilient software](/blog/2020/12/software-resilience/) systems.
+Day to day, I use mainly Javascript (Typescript/Node.js) and some PHP (every now and then) with MySQL/Postgres database to translate business requirements into reliable, [scalable](/blog/2020/12/software-scalability/), and [resilient software](/blog/2020/12/software-resilience/) systems.
 
 ## Why This blog?
 
@@ -38,9 +59,11 @@ Another factor that motivates me to keep on publishing blog posts is the feedbac
 
 I have given [talks](/blog/categories/talks/) at tech conferences in the Middle East, Europe, United States, and Australia in the past years on topics ranging from ChatOps, Continous delivery to Microservices and Serverless containers. You can see a neatly organized [table](https://github.com/geshan/public-speaking) as a GitHub repo. I have also spoken at various meetups too.
 
+I have also ran workshops mainly on Gen AI since 2024. The two main workshops I have done include building a [E-commerce product description generator](https://gw.geshan.com.np/) and using Gen AI to [guess the geo location of a photo](https://geo.geshan.com.np/).
+
 ## Side Projects
 
-I have a couple of side projects. I only do one side project a year to get it over the line:):
+I have some side projects. I tend do one side project a year and get it over the line:):
 
 ### Nepal News English - 2019
 
@@ -58,6 +81,22 @@ I have a couple of side projects. I only do one side project a year to get it ov
 - Faceted search (search by multiple departments or work type)
 
 This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in late 2018.
+
+AU Tech Jobs is still running after five years. I have written a blog post about it [here](/blog/2021/06/life-changing-side-project/).
+
+### Bloggers union - 2022
+
+I helped some techies to start their own blog.  4-5 people did start writing their own blog but I don't suppose they continued writing. More on it [here](/blog/2022/12/recap-2022/#side-project---bloggers’-union).
+
+### Speakers camp - 2023
+
+I helped multiple people get into public speaking in 2023, I still help groom new speakers. The basic idea is to push, help, and motivate people to get into public speaking of any form, especially speaking at meetups which has a lower bar than speaking at conferences. I have helped them with both the content and the delivery of their talks. You can read some [success stories](/blog/2023/12/review-2023/#side-project---speakers-camp), a couple of them have become Google Developer Experts (GDEs) in their respective fields -- more to come on this.
+
+### GDG in each capital city of Australia - 2024
+
+This started in mid 2023, when GDG Darwin was started in May 2023. I have helped start or restart Google Developer Groups (GDGs) in each capital city of Australia. From Canberra to Perth, thanks to all the volunteers and Matt for his support. You can read more on the [community aspect](/blog/2024/12/recap-2024/#community-activities).
+
+There might be something in 2025 too :). 
 
 ## Publications
 
@@ -180,10 +219,14 @@ I have always strived to have a positive impact on the places I have work and th
 - a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
 - mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
 - and a SEO rookie :)
+- [GDG (Cloud) Sydney](https://gdg.community.dev/gdg-cloud-sydney/) orgnaizer since 2023
+- a [Docker Captain](https://www.docker.com/captains/geshan-manandhar/) since mid 2024
+
+And many other things.
 
 ## Follow Me/this blog
 
-- You can find me posting techy things on [Twitter](https://twitter.com/geshan), [Linked In](https://linkedin.com/in/geshan), and [Facebook page](https://facebook.com/geshanblog) for this blog.
+- You can find me posting techy things on [Linked In](https://linkedin.com/in/geshan), [BlueSky](https://bsky.app/profile/geshan.com.np), and [Twitter](https://twitter.com/geshan).
 - You can follow this blog on [Telegram](https://t.me/geshanblog) too.
 - I also happen to be on [Github](https://github.com/geshan) and [Stack Overflow](https://stackoverflow.com/users/112849/geshan).
 
