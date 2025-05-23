@@ -153,9 +153,13 @@ After the change, I tested the app to ensure it worked as expected. There is no 
 
 There you have it—you vibe coded a fully functioning app that started with a simple idea and a single prompt. You also deployed it on a publicly accessible URL, which you can share with friends. As it is running on Google Cloud, it will cost you money, so be sure to check your costs on Google Cloud Billing and stop the app if you need to. After testing, you can delete the project with the app running on Google Cloud Run.
 
-In my case, the primary prompt and calling the API were in the [services/geminiService.ts](https://github.com/geshan/geo-guesser-ai/blob/master/services/geminiService.ts) file, which was using `gemini-2.5-flash-preview-04-17` with a pretty well-crafted prompt. The whole app is available in this open-source [GitHub repository](https://github.com/geshan/geo-guesser-ai/tree/master). From the code I read, it looks like a frontend-only app, so how it handles the API key and its security is your responsibility. 
+In my case, the primary prompt and calling the API were in the [services/geminiService.ts](https://github.com/geshan/geo-guesser-ai/blob/master/services/geminiService.ts) file, which was using `gemini-2.5-flash-preview-04-17` with a pretty well-crafted prompt. The whole app is available in this open-source [GitHub repository](https://github.com/geshan/geo-guesser-ai/tree/master). From the code I read, it looks like a frontend-only app, so how it handles the API key and its security is your responsibility.
 
-The goal was to have a working app, and you have it, even with a dark and light theme switcher. It is a good starting point, but I would not consider it production-ready; use it cautiously and carefully. If you think something is wrong, delete the app from Cloud Run and/or delete the whole project. I don’t want you bleeding money on Google Cloud Platform. 
+You can read the [FAQs](https://aistudio.google.com/apps?source=faq) on Google AI Studio Build/Apps page, which tell you that it is a frontend only app and other details about how it runs in an Iframe on Google Cloud Run.
+
+<img class="center" src="/images/google-ai-studio-apps/23gogole-ai-studio-apps-faq.jpg" loading="lazy" title="Google AI Studio Build (apps) page FAQs" alt="Google AI Studio Build (apps) page FAQs">
+
+The goal was to have a working app, and you have it, even with a dark and light theme switcher. It is a good starting point, but I would not consider it production-ready; use it cautiously and carefully. If you think something is wrong, delete the app from Cloud Run and/or delete the whole project. I don’t want you bleeding money on Google Cloud Platform.
 
 ## Conclusion
 
