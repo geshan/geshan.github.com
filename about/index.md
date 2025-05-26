@@ -13,16 +13,16 @@ description: I am Geshan. I am a software engineer, with 15+ years of software e
 ---
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80 mb-3'>
 <p class='cover-description text-2xl px-4 my-auto text-white '>
-Hi, I am Geshan. I am a software engineer, with more than 17 years of software engineering experience. Currently, I am living in Sydney, Australia serving Simply Wall St as a senior software engineer.
+Hi, I am Geshan. I am a software engineer, with more than 17 years of software engineering experience. I live in Sydney, Australia, serving Simply Wall St as a senior software engineer.
 </p>
 <img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 </div>
 
-I have a keen interest in software architecture, microservices, and cloud computing. I am a language-agnostic software engineer (backend-focused) who believes the value provided to the business is more important than the choice of language or framework.
+I am keenly interested in software architecture, microservices, and cloud computing. I am a language-agnostic software engineer (backend-focused) who believes the value provided to the business is more important than the choice of language or framework.
 
 > Fiddling with [Gen AI](/blog/categories/gen-ai/), LLMs, new models, and tools like [Ollama](/blog/categories/ollama/) is something I do on the side these days.
 
-Playing with Gen AI tools and evaluating how it can be used in your day-to-day work is becoming a need of current times.
+Playing with Gen AI tools and evaluating how they can be used in your day-to-day work is becoming a necessity.
 
 ## Table of contents
 
@@ -43,7 +43,7 @@ Playing with Gen AI tools and evaluating how it can be used in your day-to-day w
 
 ## Consciously evolving
 
-I was born and lived the majority of my life in Kathmandu, Nepal. I have lived and worked in the Netherlands, U.A.E, and Australia. This multi-cultural experience has enriched my life in various aspects. It has also given me chances to work on software systems of varying scale that millions of customers have used, benefitted from, and can rely upon.
+I was born in Kathmandu, Nepal, and have lived there for more than 24 years. I have also lived and worked in the Netherlands, the U.A.E., and Australia. This multi-cultural experience has enriched my life in various aspects. It has also allowed me to work on software systems of varying scale that millions of customers have used, benefited from, and can rely upon.
 
 ## Day to day
 
@@ -53,7 +53,7 @@ Day to day, I use mainly Javascript (Typescript/Node.js) and some PHP (every now
 
 I have been blogging since 2007, I blog about things I have learned, things I want to share, or just something I want to rant about :). The best feeling is when you are stuck on something you Google for a solution and you end up finding your own blog post written some years back. That feeling is priceless.
 
-Another factor that motivates me to keep on publishing blog posts is the feedback you get from people. I have been told that the person was looking for something technical and found one of my blog posts. The person added, it helped to solve the issue or learn something new. This also gives me a sense of immense satisfaction.
+Another factor that motivates me to keep on publishing blog posts is the feedback I get from people. I have been told that the person was looking for something technical and found one of my blog posts. The person added, it helped to solve the issue or learn something new. This also gives me a sense of immense satisfaction.
 
 ## Public Speaking
 
@@ -74,7 +74,7 @@ I have some side projects. I tend do one side project a year and get it over the
 [AU Tech Jobs](https://autechjobs.com/) is a tech job aggregator that collects jobs from 95+ companies. Currently, the [app](https://app.autechjobs.com/) has over 2700 jobs listed. Its USPs include:
 
 - Job description summary for easy reading
-- Tag job as non-technical by using external categorization service
+- Tag job as non-technical by using an external categorization service
 - Saved jobs
 - Applied jobs
 - Shows if the company is known to sponsor work visa or not
@@ -104,6 +104,7 @@ A list of some of the articles I have written outside of this blog:
 
 - [How to use Jest spyOn with React.js and Fetch (includes step-by-step code example)](https://meticulous.ai/blog/how-to-use-jest-spyon/) - Meticulous, 2022
 - [5 compelling reasons to work for Simply Wall St Tech](https://medium.com/simplywallst/5-compelling-reasons-to-work-for-simply-wall-st-tech-49ab9878b283) - Simply Wall St. tech blog, 2022
+- [Run Your Rails App On Kubernetes: A Step-by-Step Tutorial](https://www.honeybadger.io/blog/rails-on-kubernetes/) - HoneyBadger, 2021
 - [How to Get Started with Prisma ORM for Node.js and PostgreSQL](https://blog.appsignal.com/2021/07/21/how-to-get-started-with-prisma-orm-for-nodejs-and-postgresql.html) - AppSignal, 2021
 - [Use Node.js with Docker and Docker Compose to improve DX](https://blog.logrocket.com/node-js-docker-improve-dx/ "Use Node.js with Docker and Docker Compose to improve DX") - LogRocket, 2020
 - [Example app on Fly.io to run Puppeteer](https://fly.io/docs/app-guides/puppeteer-js-renderer/ "Example app with Puppeteer on Fly.io") - Fly.io, 2019
@@ -112,7 +113,7 @@ A list of some of the articles I have written outside of this blog:
 
 ## Feedback from colleagues
 
-I have always strived to have a positive impact on the places I have work and the people I work with. Some feedback I have received include:
+I have always strived to impact the places I work positively and the people I work with. Some feedback I have received includes:
 
 <div class=" bg-gray-100 rounded-md mt-2 flex flex-col items-center justify-center px-5 py-5">
 <div class="w-full mx-auto mb-5 rounded-md bg-white shadow-md px-5 pt-5 pb-10 text-gray-800">
@@ -143,7 +144,7 @@ I have always strived to have a positive impact on the places I have work and th
 
 <h2 class='text-2xl mt-5 font-bold text-darkpurple'>Mohammad (Moe) Torkainfar, Software Engineer @ THE ICONIC - 2020</h2>
 
-> Few people have the opportunity to discover silver bullet solutions on tech—but I did when I worked with Geshan. I had the pleasure of working with him for 6 months at THE ICONIC, collaborating on several project teams.
+> Few people have the opportunity to discover silver bullet solutions on tech, but I did when I worked with Geshan. I had the pleasure of working with him for 6 months at THE ICONIC, collaborating on several project teams.
 >
 > I was particularly impressed by Geshan's ability to handle even the toughest complex issues in our squad. That skill often takes years to develop, but it seemed to come perfectly naturally to him. The seniority and wisdom helped us make our issues easier to understand, it is remarkable. Besides, the way that he's been looking at the problems showed me a new way of looking at the issues.
 >
@@ -205,7 +206,7 @@ I have always strived to have a positive impact on the places I have work and th
 
 > Geshan is a good programmer with great analytical and decision-making skills. He is no doubt one of the best well-planned and systematic person (as a worker) I have ever encountered.
 >
-> Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and posses great presentational skills.
+> Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and possesses great presentational skills.
 
 </div>
 </div>
@@ -214,20 +215,20 @@ I have always strived to have a positive impact on the places I have work and th
 
 ## I am also
 
-- running this blog since 2007 -- how many years? do the math on your own ;). It is currently [11ty](https://www.11ty.dev/ "11ty or Eleventy").
+- Running this blog since 2007 -- how many years? do the math on your own ;). It is currently [11ty](https://www.11ty.dev/ "11ty or Eleventy").
 - a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar) (GDE) for Google Cloud since Dec 2019
 - a [Certified Scrum Master](https://bcert.me/bc/html/show-badge.html?b=dkuowomp) since Apr 2019
 - mentoring and coaching people in their tech careers, especially to find their first full-time tech role in Australia from mid-2018. Wanna chat? Send me an email (email address below).
 - and a SEO rookie :)
-- [GDG (Cloud) Sydney](https://gdg.community.dev/gdg-cloud-sydney/) orgnaizer since 2023
+- [GDG (Cloud) Sydney](https://gdg.community.dev/gdg-cloud-sydney/) organizer since 2023
 - a [Docker Captain](https://www.docker.com/captains/geshan-manandhar/) since mid 2024
 
 And many other things.
 
 ## Follow Me/this blog
 
-- You can find me posting techy things on [Linked In](https://linkedin.com/in/geshan), [BlueSky](https://bsky.app/profile/geshan.com.np), and [Twitter](https://twitter.com/geshan).
+- You can find me posting techy things on [LinkedIn](https://linkedin.com/in/geshan), [BlueSky](https://bsky.app/profile/geshan.com.np), and [Twitter](https://twitter.com/geshan).
 - You can follow this blog on [Telegram](https://t.me/geshanblog) too.
 - I also happen to be on [Github](https://github.com/geshan) and [Stack Overflow](https://stackoverflow.com/users/112849/geshan).
 
-You can reach me by email at geshan[at]gmail[dot]com. I am also open to link exchanges for this blog but please DO NOT contact me for any guest posts.
+You can reach me by email at geshan[at]gmail[dot]com. I am also open to link exchanges for this blog, but please DO NOT contact me for any guest posts.
