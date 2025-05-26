@@ -7,13 +7,13 @@ eleventyNavigation:
   order: "3"
 date: 2025-05-23T21:20:00.000+00:00
 cover: "/images/geshan.jpg"
-description: I am Geshan. I am a software engineer, with 15+ years of software engineering
+description: I am Geshan. I am a software engineer with 17+ years of experience in software engineering
   experience. I have been blogging since 2007.
 
 ---
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-indigo-500 p-3 md:h-80 mb-3'>
 <p class='cover-description text-2xl px-4 my-auto text-white '>
-Hi, I am Geshan. I am a software engineer, with more than 17 years of software engineering experience. I live in Sydney, Australia, serving Simply Wall St as a senior software engineer.
+Hi, I am Geshan. I am a software engineer with more than 17 years of software engineering experience. I live in Sydney, Australia, serving Simply Wall St as a senior software engineer.
 </p>
 <img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 </div>
@@ -53,7 +53,7 @@ Day to day, I use mainly Javascript (Typescript/Node.js) and some PHP (every now
 
 I have been blogging since 2007, I blog about things I have learned, things I want to share, or just something I want to rant about :). The best feeling is when you are stuck on something you Google for a solution and you end up finding your own blog post written some years back. That feeling is priceless.
 
-Another factor that motivates me to keep on publishing blog posts is the feedback I get from people. I have been told that the person was looking for something technical and found one of my blog posts. The person added, it helped to solve the issue or learn something new. This also gives me a sense of immense satisfaction.
+Another factor that motivates me to keep on publishing blog posts is the feedback I get from people. I have been told that the person was looking for something technical and found one of my blog posts. The person added that it helped to solve the issue or learn something new. This also gives me a sense of immense satisfaction.
 
 ## Public Speaking
 
