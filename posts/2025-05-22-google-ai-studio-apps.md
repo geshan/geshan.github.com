@@ -10,7 +10,7 @@ tags:
 - Google Cloud Run
 cover: "/images/google-ai-studio-apps/01google-ai-studio-apps.jpg"
 pagetitle: "Google AI Studio: How to go from a prompt to a geo-location guessing app in minutes"
-description: "Learn how generate, create and deploy a geo-location guessing app using Google AI Studio and run it on Google Cloud Run step by step."
+description: "Learn how to generate, create and deploy a geo-location guessing app using Google AI Studio and run it on Google Cloud Run step by step."
 keywords: google ai studio, google cloud run, ai studio, geo-location guessing app, gcp, google cloud, ai, generative ai, google ai studio apps
 ---
 Can you code and deploy a basic but functional app with minimal coding experience? With the latest Google AI Studio feature, you can build and deploy apps by instructing an agent in minutes. You can also deploy the app on Google Cloud Run and make changes easily. This post will show you how. Let’s get started!
