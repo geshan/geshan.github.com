@@ -115,7 +115,7 @@ After that, click the `Build` button on the form. Then you will need to wait for
 
 You can follow the progress on the left-hand side, the `Code assistant` panel or even click the “Code” button on the right side to see the generated code as follows:
 
-<img class="center" src="/images/google-ai-studio-build/06google-ai-studio-code.jpg" loading="lazy" title="Google AI Studio generating code for the resume reviewer app" alt="Google AI Studio generating code for the resume reviewer app">
+<img class="center" src="/images/google-ai-studio-build/06google-ai-studio-generating-code.jpg" loading="lazy" title="Google AI Studio generating code for the resume reviewer app" alt="Google AI Studio generating code for the resume reviewer app">
 
 Once it is done, it will load the `Preview` tab and may look something like the below:
 
