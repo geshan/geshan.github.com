@@ -8,6 +8,7 @@ tags:
 - AI
 - Gen AI
 - Google Cloud Run
+- Google AI Studio
 cover: "/images/google-ai-studio-apps/01google-ai-studio-apps.jpg"
 pagetitle: "Google AI Studio: How to go from a prompt to a geo-location guessing app in minutes"
 description: "Learn how to generate, create and deploy a geo-location guessing app using Google AI Studio and run it on Google Cloud Run step by step."
@@ -141,7 +142,7 @@ It verifies the project and, given that the app is already deployed in that proj
 
 <img class="center" src="/images/google-ai-studio-apps/20redeploy-app.jpg" loading="lazy" title="Redeploy the app on the same project to get the new change" alt="Redeploy the app on the same project to get the new change">
 
-It will take some time to redeploy the app, and you will see the `Deploying to Cloud Run` message. 
+It will take some time to redeploy the app, and you will see the `Deploying to Cloud Run` message.
 
 <img class="center" src="/images/google-ai-studio-apps/21redeploying-app.jpg" loading="lazy" title="Google AI Studio redeploying the app to the same Google Cloud Project" alt="Google AI Studio redeploying the app to the same Google Cloud Project">
 

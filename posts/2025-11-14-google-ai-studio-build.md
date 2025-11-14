@@ -4,10 +4,12 @@ title: "How to build your own resume reviewer with Google AI Studio in minutes"
 date: 2025-11-14T21:48:25.000+11:00
 comments: true
 tags:
-- MCP
+- Google AI Studio
+- Google Cloud Run
 - AI
 - Gen AI
-cover: "/images/github-mcp-vscode/01github-mcp-vscode.jpg"
+- GCP
+cover: "/images/google-ai-studio-build/01google-ai-studio-build.jpg"
 pagetitle: "How to build your own resume reviewer with Google AI Studio in minutes and deploy it on Google Cloud Run"
 description: "Learn how to build your own resume reviewer with Google AI Studio in minutes and deploy it on Google Cloud Run."
 keywords: google ai studio, resume reviewer, google cloud run, ai applications, large language models, llm, generative ai, ai tools, google cloud ai, google ai studio tutorial, google ai studio build guide
