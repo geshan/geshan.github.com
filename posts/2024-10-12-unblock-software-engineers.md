@@ -26,6 +26,7 @@ Writing code is a small part of your job as a software engineer. You will also b
     - [Orders over 1000 issue](#orders-over-1000-issue)
     - [The Zendesk library case with an SSL issue](#the-zendesk-library-case-with-an-ssl-issue)
     - [For things that can wait, StackOverflow is your friend](#for-things-that-can-wait%2C-stackoverflow-is-your-friend)
+- [How to unblock software engineers visual summary](#how-to-unblock-software-engineers-visual-summary)
 - [Conclusion](#conclusion)
 
 ## What to do vs how to do it
@@ -50,7 +51,7 @@ A recent example I remember is when we had to calculate the average cost price o
 
 From the engineer’s point of view, it is a balancing act, too. You should be able to ask questions to related people for clarity to be a product-minded engineer. On the other hand, the ticket should also have enough context and examples to make your job easier.
 
-> Think of it this way: following the Pareto principle, 80% of your what to do questions should already be answered by the description, context, and examples of the task, and for the remaining 20%, you should go in and ask people over Slack or even do a small meeting for that extra clarity. 
+> Think of it this way: following the Pareto principle, 80% of your what to do questions should already be answered by the description, context, and examples of the task, and for the remaining 20%, you should go in and ask people over Slack or even do a small meeting for that extra clarity.
 
 On the contrary, the product and design team must level up their game if you, as a software engineer, need to communicate with three people to get 80% of what to do for a task.
 
@@ -64,7 +65,7 @@ The difference is experienced engineers with more than a decade of experience in
 
 > I have seen many programming problems remain unsolved while on a screen; on the contrary, when the engineer moves the problem to a physical board or paper, it gets solved much more quickly.
 
-More senior engineers have called me on a board, and the solution comes faster on a board than being tied to a screen. That's where, especially for junior and mid-level engineers, the time you spend on a whiteboard teaches you many things. Architecture-level things, like drawing boxes and arrows between them, are best done collaboratively on a physical whiteboard. 
+More senior engineers have called me on a board, and the solution comes faster on a board than being tied to a screen. That's where, especially for junior and mid-level engineers, the time you spend on a whiteboard teaches you many things. Architecture-level things, like drawing boxes and arrows between them, are best done collaboratively on a physical whiteboard.
 
 You will also get stuck with technical things in multiple ways; it can be as small as a syntax issue. For instance, you might forget how to use JavaScript's spread syntax `...`. An issue in the library or the framework you use for that project can also block you.  For example, you might need to learn how to do [database transaction](https://typeorm.io/transactions) in TypeORM. You can solve many of these blockages with a quick Google search or by asking an LLM. The more difficult technical blockers are the ones that could be more obvious, as discussed next.
 
@@ -78,7 +79,7 @@ Once, while I was working for Namshi, around 2015, we faced a bizarre issue. We 
 
 #### The Zendesk library case with an SSL issue
 
-Sometimes, you find yourself in a situation where no one deployed any new code. It was working yesterday, and today, it is not working. Most likely, in such cases, a third-party library has stopped working. One example from mid-2018 is when a system communicated with Zendesk using its APIs. 
+Sometimes, you find yourself in a situation where no one deployed any new code. It was working yesterday, and today, it is not working. Most likely, in such cases, a third-party library has stopped working. One example from mid-2018 is when a system communicated with Zendesk using its APIs.
 
 One fine morning, it started throwing unusual errors, and we had not deployed any change to the system for over a week. So, it was clear that the issue was not in the code we had written but something with a third-party library or a thing out of our control. On investigating deeper, it turned out to be an SSL [issue](https://github.com/blakmatrix/node-zendesk/issues/221).
 
@@ -96,9 +97,19 @@ I have asked some questions on StackOverflow and got answers in days. One of the
 
 On a different note, I would not consider open pull requests (or waiting for code review) a blockage. It is part of a good software engineering process that teaches you a lot about code, engineering, and writing software that will work well in production.
 
+## How to unblock software engineers visual summary
+
+Here is a quick visual summary of how to unblock software engineers from non-technical and technical blockers:
+
+<img class="center" src="/images/unblock-software-engineers/02unblock-sw-eng.jpg" title="How to unblock software engineers from non-technical and technical blockers" alt="How to unblock software engineers from non-technical and technical blockers">
+
+Slides:
+
+<script defer class="speakerdeck-embed" data-id="b9286550cc0940de99cbc21a769e9733" data-ratio="1.791044776119403" src="//speakerdeck.com/assets/embed.js"></script>
+
 ## Conclusion
 
-Software engineers at any level and in any company will get blocked from doing their work in non-technical or technical ways. 
+Software engineers at any level and in any company will get blocked from doing their work in non-technical or technical ways.
 
 > The focus should be on reducing the blocked time to increase the productivity of the software engineers and, eventually, the company’s productivity.
 
