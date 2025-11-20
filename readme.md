@@ -2,6 +2,22 @@
 
 Moved from Octopress to Eleventy. Hosted on Cloudflare pages.
 
+## Blog Topic Suggestions
+
+Need help deciding what to write about next? Run the topic suggestion tool:
+
+```bash
+npm run suggest-topic
+```
+
+This analyzes your blog post history and provides data-driven recommendations based on:
+- Recent trending topics
+- Coverage gaps in evergreen content
+- Series expansion opportunities
+- Combination of your expertise areas
+
+See [NEXT_TOPIC.md](./NEXT_TOPIC.md) for current recommendations or [TOPIC_SUGGESTIONS.md](./TOPIC_SUGGESTIONS.md) for detailed documentation.
+
 ## Docker
 
 To run locally just run `docker-compose up` then visit `http://localhost:8080`

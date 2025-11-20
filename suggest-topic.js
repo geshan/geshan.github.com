@@ -63,7 +63,15 @@ function analyzePosts(posts) {
   const tagsByYear = {};
   
   posts.forEach(post => {
-    const year = post.filename.substring(0, 4);
+    // Parse year from date field in front matter, fallback to filename
+    let year = null;
+    if (post.date) {
+      const dateMatch = post.date.match(/^(\d{4})/);
+      if (dateMatch) year = dateMatch[1];
+    }
+    if (!year) {
+      year = post.filename.substring(0, 4);
+    }
     
     post.tags.forEach(tag => {
       allTags[tag] = (allTags[tag] || 0) + 1;
@@ -102,16 +110,22 @@ function generateSuggestions(analysis) {
   }
   
   // 2. Evergreen topics that haven't been covered recently
-  const evergreen = ['Node.js', 'Javascript', 'Docker', 'Software Engineering', 'Web Development'];
-  const underrepresentedEvergreen = evergreen.filter(tag => 
-    (analysis.allTags[tag] || 0) > 10 && (analysis.recentTags[tag] || 0) < 3
+  // Identify evergreen topics as those with high total count (>10 posts) across all time
+  const evergreenCandidates = Object.entries(analysis.allTags)
+    .filter(([tag, count]) => count > 10)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 10)
+    .map(([tag]) => tag);
+  
+  const underrepresentedEvergreen = evergreenCandidates.filter(tag => 
+    (analysis.recentTags[tag] || 0) < 3
   );
   
   if (underrepresentedEvergreen.length > 0) {
     suggestions.push({
       category: '🌲 Evergreen Topics Needing Refresh',
       reason: 'These core topics are popular but haven\'t been covered recently',
-      topics: underrepresentedEvergreen.map(tag => `Fresh take on ${tag}: new patterns, tools, or best practices`)
+      topics: underrepresentedEvergreen.slice(0, 5).map(tag => `Fresh take on ${tag}: new patterns, tools, or best practices`)
     });
   }
   
@@ -138,18 +152,51 @@ function generateSuggestions(analysis) {
   
   // 4. Series completion or expansion
   const recentPostTitles = analysis.recentPosts.slice(0, 10).map(p => p.title);
-  const partPattern = /\[?[Pp]art\s+\d+\]?/;
-  const seriesPosts = recentPostTitles.filter(title => partPattern.test(title));
+  const partPattern = /\[?[Pp]art\s+(\d+)\]?/;
+  const seriesMap = {};
   
-  if (seriesPosts.length > 0) {
+  // Find series and count parts
+  recentPostTitles.forEach(title => {
+    const match = title.match(partPattern);
+    if (match) {
+      const partNumber = parseInt(match[1]);
+      // Extract series name (remove part indicator)
+      const seriesName = title.replace(partPattern, '').replace(/[:\-]\s*$/, '').trim();
+      if (!seriesMap[seriesName] || seriesMap[seriesName] < partNumber) {
+        seriesMap[seriesName] = partNumber;
+      }
+    }
+  });
+  
+  // Also check for Ollama series specifically
+  const ollamaPosts = analysis.recentPosts.filter(p => p.tags.includes('Ollama'));
+  
+  if (Object.keys(seriesMap).length > 0 || ollamaPosts.length > 0) {
+    const seriesTopics = [];
+    
+    if (ollamaPosts.length > 0) {
+      seriesTopics.push(`Continue your Ollama series (${ollamaPosts.length} posts so far)`);
+    }
+    
+    Object.entries(seriesMap).forEach(([name, parts]) => {
+      seriesTopics.push(`Continue "${name}" series (${parts} parts published)`);
+    });
+    
+    // Add generic series expansion ideas
+    const awsPosts = analysis.recentPosts.filter(p => p.tags.includes('AWS')).length;
+    const aiStudioPosts = analysis.recentPosts.filter(p => p.tags.includes('Google AI Studio')).length;
+    
+    if (awsPosts > 0) {
+      seriesTopics.push(`Expand your AWS coverage (${awsPosts} posts so far)`);
+    }
+    if (aiStudioPosts > 0) {
+      seriesTopics.push(`Create a comprehensive Google AI Studio series (${aiStudioPosts} posts so far)`);
+    }
+    
     suggestions.push({
       category: '📚 Series Expansion',
       reason: 'You have active series that readers might want continued',
-      topics: [
-        'Continue your Ollama series (you have 4 parts already)',
-        'Expand your AWS series (ECR and ECS coverage)',
-        'Create a comprehensive Google AI Studio series'
-      ]
+      topics: seriesTopics.slice(0, 5)
     });
   }
   
