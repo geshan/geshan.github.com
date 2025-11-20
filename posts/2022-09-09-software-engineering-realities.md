@@ -33,6 +33,8 @@ I have been writing code in some form for more than 20 years now. I have been a 
 * [DevOps/SRE](#devopssre)
 * [Side projects](#side-projects)
 * [Misc](#misc)
+* [Quick visual summary](#quick-visual-summary)
+* [Conclusion](#conclusion)
 
 ## Before the important points
 
@@ -75,7 +77,7 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. “Be conservative in what you do, be liberal in what you accept from others.” - [Robustness principle](https://en.wikipedia.org/wiki/Robustness_principle) – Postel's Law. Think of how it would apply to the APIs you design and implement for instance.
 1. Security is everyone’s job and a difficult one. As software engineers, it is best to learn about [OWASP top 10](https://owasp.org/www-project-top-ten/) at least and write code to minimize or mitigate them.
 1. [WebAssembly](https://webassembly.org/) seems to be the next important thing in web development. It would be good to fiddle around with it – me included.
-1. Working in [a product company is different than working in a web agency](/blog/2013/06/working-for-dev-shop-with-projects-vs/). 
+1. Working in [a product company is different than working in a web agency](/blog/2013/06/working-for-dev-shop-with-projects-vs/).
 1. Even in a product company, [working on internal products is not like working on a customer-facing product](/blog/2020/09/software-engineer-on-internal-product-vs-customer-facing-applications-/).
 1. Similarly, you will need a [different mindset](/blog/2021/11/software-engineer-mindset/) when working on a stable product on the critical path used by most of the customers vs a completely new feature not used by customers till now.
 1. A [static website not even JAMstack](/blog/2020/04/static-vs-dynamic-websites-jam-stack/) will beat the best web server-powered dynamic website in performance every single day. Go Web 1.0 where you should – for example, a brochure website, it surely does not need WordPress for that 1 “contact us” form.
@@ -89,7 +91,6 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. As a junior or even a mid-level software engineer with 2-3 years of experience, it is perfectly fine to not know things, for instance, Docker. Don’t stress about it, good companies hire language and tech agnostic people for their potential not what they already know.
 1. You can be a software engineer with 5 years of work experience but the things you did in the first year carried on of the next four. Or you can be a software engineer with just 3 years of experinece going from a company doing 100s of requests per day to 1000s of requests per hour in 3 years. Choose your own destiny.
 
-
 ## Languages and frameworks
 
 1. Languages and frameworks have a popularity cycle like the Bayesian curve. What is super popular now may not be popular 5 or 10 years down the line. Look at PHP, Jquery, and Angular for instance. No one can guarantee React will be as popular as now in 5 years.
@@ -99,14 +100,12 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. Learn about the newer standard like [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) etc. These things are the common factors in this super diverged web tooling landscape.
 1. Within boundaries, do not hammer a screw. If a language is more suited for a solution use that instead of the language you know best or the main language of the company.
 1. Learn at least 2 programming languages, even better if one is strict, and compiled (like Go lang or Rust – even Java/C) and another one that is very dynamic and lenient (like PHP or JavaScript). This will give you the spectrum of programming languages.
-1. Also, learn 2 different programming languages one that runs sync (sequentially) by default like PHP, and another one which can run async (non sequentially) like JavaScript and adjust your mind to sequentially executing code vs [promise.all](/blog/2022/07/javascript-promise-all/) :). To take it one level higher mix threads or something like [Go Routines](https://go.dev/tour/concurrency) – enjoy the concurrency. 
-
+1. Also, learn 2 different programming languages one that runs sync (sequentially) by default like PHP, and another one which can run async (non sequentially) like JavaScript and adjust your mind to sequentially executing code vs [promise.all](/blog/2022/07/javascript-promise-all/) :). To take it one level higher mix threads or something like [Go Routines](https://go.dev/tour/concurrency) – enjoy the concurrency.
 
 ## Navigating new codebases
 
 1. It is normal to get lost for hours if not days in new codebases when you join a new workplace.
 1. Your best navigator to a completely new codebase is someone who has worked a lot on it or someone who has worked recently on it. Schedule like 1-2 hour pair programming session and get all the secrets of that codebase.
-
 
 ## Databases
 
@@ -141,7 +140,7 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 1. To make a software system easily scaleable, the first prerequisite is to make it stateless.
 1. Incidents and downtimes will happen, it is difficult but respond calmly but practically to downtimes or incidents. The main priority is to get the services back and later postmortem.
 1. Yes Kubernetes is very popular but you might not need it, still, you can use containers even serverless with services like [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/).
-1. A great Continuous Integartion (CI) and [Continous delivery (CD) culture definitely adds value to the business](/blog/2017/08/adopt-a-painless-continuous-delivery-culture/). 
+1. A great Continuous Integartion (CI) and [Continous delivery (CD) culture definitely adds value to the business](/blog/2017/08/adopt-a-painless-continuous-delivery-culture/).
 1. Always be mindful of Personally Identifiable Information (PII) - never log them, mask them and be careful as the laws around them are getting stricter and fines higher.
 1. You might not have access to a production database which is a good thing.
 1. You see another array of problems at scale. The code and infrastructure that works for 1000 requests per day start breaking at 1000 requests per minute. And yes, scale is very relative to your business.
@@ -174,6 +173,18 @@ I wanted to share this for a while now and it is also inspired by this [Reddit p
 
 Those are 101 points (4+41+8+8+5+6+6+14+3+12).
 There are more things I can write about, but still, this should already be a lot of information to process.
+
+## Quick visual summary
+
+Here is a quick visual summary of the 101 software engineering realities you must be aware of:
+
+<img class="center" loading="lazy" src="/images/software-engineering-realities/02sw-eng-realities.jpg" title="101 software engineering realities summary" alt="101 software engineering realities summary">
+
+101 software engineering realities summary - [full](/images/software-engineering-realities/02sw-eng-realities-full.jpg) image
+
+Slides:
+
+<script defer class="speakerdeck-embed" data-id="4b9fb372b39d456ba1db1b2fa41e5fb7" data-ratio="1.791044776119403" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## Conclusion
 
