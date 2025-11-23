@@ -258,7 +258,7 @@ Try all eight tiles and see what they generate. I have set my [Relevance AI Note
 
 <img class="center" loading="lazy" src="/images/how-to-use-notebooklm/20notebooklm-all-features.jpg" title="NotebookLM most feature used and notes generated" alt="NotebookLM most feature used and notes generated">
 
-You can watch the video overview and listen to the audio overview too. You can also add your own notes and play around with NotebookLM.
+You can watch the video overview and listen to the audio overview too. You can also add your own notes and play around with NotebookLM. If you would like to use NotebookLM as a native mobile app you can download the [Android app](https://play.google.com/store/apps/details?id=com.google.android.apps.labs.language.tailwind) or the [iOS app](https://apps.apple.com/us/app/google-notebooklm/id6737527615).
 
 ## Conclusion
 
