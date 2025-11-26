@@ -9,6 +9,7 @@ tags:
 - Gen AI
 - Google Cloud Run
 - Google AI Studio
+- Gemini
 cover: "/images/google-ai-studio-apps/01google-ai-studio-apps.jpg"
 pagetitle: "Google AI Studio: How to go from a prompt to a geo-location guessing app in minutes"
 description: "Learn how to generate, create and deploy a geo-location guessing app using Google AI Studio and run it on Google Cloud Run step by step."

@@ -7,6 +7,7 @@ tags:
 - AI
 - Gen AI
 - GCP
+- Gemini
 cover: "/images/e-commerce-product-description-generator/01e-commerce-product-description-generator.jpg"
 pagetitle: "How to create an e-commerce product description generator using Gemini and Vertex AI"
 description: "Learn how to create a useful e-commerce product description generator using Gemini  Pro API over Vertex AI on GCP with Python code example"
@@ -100,7 +101,6 @@ price. Make sure that the copy is written in an engaging and friendly tone.
 10. After that hit the `Submit` button to test out the prompt with the uploaded images, you should get a response similar to the following:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/05prompt-response.jpg" title="The response to the prompt with product description" alt="The response to the prompt with product description">
-
 
 ## Name and save the prompt
 
@@ -244,7 +244,7 @@ Congrats! You have successfully built and tested a general purpose e-commrece pr
 
 In this blog post, you embarked on a journey to build a basic e-commerce product description generator using Google's Gemini API over Vertex AI on GCP.
 
-You started by creating a prompt that captures the essence of what we wanted the generator to achieve. Towards the end you create a proof of concept script with Python that can be converted into a standalone internal application. 
+You started by creating a prompt that captures the essence of what we wanted the generator to achieve. Towards the end you create a proof of concept script with Python that can be converted into a standalone internal application.
 
 Whether you're an e-commerce entrepreneur, a content creator, or simply someone interested in the future of AI, LLMs have the potential to revolutionize the way we work and create.
 

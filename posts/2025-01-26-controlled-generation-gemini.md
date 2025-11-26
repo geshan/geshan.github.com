@@ -7,6 +7,7 @@ tags:
 - AI
 - Gen AI
 - GCP
+- Gemini
 cover: "/images/controlled-generation-gemini/01controlled-generation-gemini.jpg"
 pagetitle: "How to use Gemini over Vertex AI to summarize and categorize job listings with controlled generation"
 description: "Learn how to use controlled generation in Gemini over Vertex AI for the output to adhere to a given schema with a real life job listings example."
@@ -35,7 +36,7 @@ LLMs generally reply in a nondeterministic format; it does not always comply wit
 
 This is a real-life scenario where one of our side projects - [AU Tech Jobs](https://app.autechjobs.com) which aggregates jobs from multiple (like 60+) company job listing pages. If interested, you can read the [story of ATJ](/blog/2021/06/life-changing-side-project/). Currently, the job details page has two useful features on the job detail page, built by calling two different APIs.
 
-The first one is if the “computer percent” for a particular job is less than a given threshold, it shows a message `Our machine learning algorithm suggests this might not be a pure tech job` to let the user know it might not be a tech job, for example, an “Account Executive” role is not a tech or software engineering/tech job. Currently, this classification is done using the [uclassify API](https://uclassify.com/browse/uclassify/topics?input=Text). It does an “ok” jo,b but sometimes does not give back a good `computer_percent` classification. 
+The first one is if the “computer percent” for a particular job is less than a given threshold, it shows a message `Our machine learning algorithm suggests this might not be a pure tech job` to let the user know it might not be a tech job, for example, an “Account Executive” role is not a tech or software engineering/tech job. Currently, this classification is done using the [uclassify API](https://uclassify.com/browse/uclassify/topics?input=Text). It does an “ok” jo,b but sometimes does not give back a good `computer_percent` classification.
 
 The second feature is a summary of the job description. Currently, this feature is done using [Bert Executive summarizer](https://github.com/geshan/bert-extractive-summarizer) – you can [try it](https://smrzr.io/) out. [BERT](https://www.nvidia.com/en-au/glossary/bert/) by Google is like the previous version before the transformer models. It does the summarization task but is not as versatile as a Large Language Model (LLM). We call another API to get the summary of the job description.
 
@@ -234,7 +235,7 @@ First, you have put a schema of a JSON object (not an array of objects or anythi
 * summary: it is of type string
 * tech_percent: having the type number
 
-Then, you specify that both properties are required in the output by adding both fields to the `required` array. There are other types [supported fields](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#fields) or types from the [Vertex AI schema](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/Schema) you can use. For example, you can use an `Enum` with only two values, `positive` or `negative` if you analyze sentiment. 
+Then, you specify that both properties are required in the output by adding both fields to the `required` array. There are other types [supported fields](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#fields) or types from the [Vertex AI schema](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/Schema) you can use. For example, you can use an `Enum` with only two values, `positive` or `negative` if you analyze sentiment.
 
 Similarly, you can send in an array of items and expect back an array of items in a given schema like this [weather forecast example](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#forecast). The possibilities are endless, if you use Gemini’s multi-modal capabilities you can even use a schema to list out the identified [objects](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output#identify) in an image. It would be advisable to thoroughly read that [official document](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output). You can also use Google AI Studio for a visual editor for the structured output schema.
 
@@ -287,7 +288,7 @@ As this tutorial is focused on `controlled generation,` we will not explore runn
 
 Coming back to the use case, I would have directly called the Gemini API for each or multiple job posts in the single call as Gemini 2.0 flash exp has a 1 million tokens context window and got the summary in batches of 100 or 200 jobs. In the above example, each job took 900-1000 tokens, which would work well. I would also consider the cost associated with it.
 
-Nothing will change visually for the user; however, this enhancement will significantly improve the output quality. 
+Nothing will change visually for the user; however, this enhancement will significantly improve the output quality.
 
 You can also try the official [controlled generation tutorial](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/controlled-generation/intro_controlled_generation.ipynb) over Google Collab.
 

@@ -7,6 +7,7 @@ tags:
 - AI
 - Gen AI
 - GCP
+- Gemini
 cover: "/images/google-gemini-2/01google-gemini-2.jpg"
 pagetitle: "Enhance Your CV, LinkedIn, and GitHub Profile with Gemini 2.0 - Stream Realtime [includes video]"
 description: "Learn how to enhance your CV, LinkedIn, and GitHub profile with Gemini 2.0, a new AI tool in realtime."
@@ -31,7 +32,7 @@ Gemini 2.0 isn't just another LLM; it's a [powerful multimodal model](https://bl
 
 <img class="center" src="/images/google-gemini-2/02gemini-2-capabilities.jpg" loading="lazy" title="Google Gemini 2.0 capabilities" alt="Google Gemini 2.0 capabilities">
 
-Unlike other models, Gemini 2.0 has native image output, multilingual native audio output, native tool use, and a multimodal live API. However, some of the features have not yet been released to everyone. If interested, you can also look at the API and SDK [docs](​​https://cloud.google.com/vertex-ai/generative-ai/docs/gemini-v2). As per Google’s official announcement: 
+Unlike other models, Gemini 2.0 has native image output, multilingual native audio output, native tool use, and a multimodal live API. However, some of the features have not yet been released to everyone. If interested, you can also look at the API and SDK [docs](​​https://cloud.google.com/vertex-ai/generative-ai/docs/gemini-v2). As per Google’s official announcement:
 
 > Flash 2.0 is twice as fast as 1.5 Pro while achieving stronger performance, includes new multimodal outputs, and comes with native tool use.
 
@@ -43,7 +44,7 @@ Imagine having a real-time conversation with an LLM while showing it a video, sh
 
 Now that you understand Gemini 2.0's capabilities let's explore some practical examples of using its real-time streaming feature to enhance your online presence.
 
-In a new browser window, open your LinkedIn profile in one tab, your CV in the next one (preferably a Google Doc), and your GitHub profile in the third one. Then, on the fourth tab, go to https://aistudio.google.com (Google AI Studio) and click on [Stream Realtime](https://aistudio.google.com/live), then paste the following prompt into `System Instructions` to get better responses to improve your LinkedIn profile, CV, and Github Profile:
+In a new browser window, open your LinkedIn profile in one tab, your CV in the next one (preferably a Google Doc), and your GitHub profile in the third one. Then, on the fourth tab, go to <https://aistudio.google.com> (Google AI Studio) and click on [Stream Realtime](https://aistudio.google.com/live), then paste the following prompt into `System Instructions` to get better responses to improve your LinkedIn profile, CV, and Github Profile:
 
 ```js
 You are now a combined LinkedIn Profile optimization expert and 
@@ -78,7 +79,7 @@ Actionability: Provide actionable advice with a clear path to
 implementation, including prioritization and how to maximize outcomes.
 ```
 
-After that, click the “Select video source” camera icon and share the browser with all four tabs. For this example, we are using Sajan’s profile. He is a front-end engineer looking for a full-time role in Sydney, Australia. 
+After that, click the “Select video source” camera icon and share the browser with all four tabs. For this example, we are using Sajan’s profile. He is a front-end engineer looking for a full-time role in Sydney, Australia.
 
 ### Demo Video
 
@@ -88,7 +89,7 @@ Then follow what is done in the below 17-minute video to elevate your LinkedIn p
 
 Always remember that an LLM can hallucinate, so think critically before executing the suggestions given by Gemini 2.0 Flash or any other LLM, as they give out non-deterministic output.
 
-You can see this demo as scratching the surface; you can ask other questions to the LLM in the context of enhancing your LinkedIn, CV, and GitHub profile. 
+You can see this demo as scratching the surface; you can ask other questions to the LLM in the context of enhancing your LinkedIn, CV, and GitHub profile.
 
 > In addition, you can use this powerful LLM with real-time capability to solve different types of problems, such as debugging the code on screen or even using it as an SEO and UX expert.
 

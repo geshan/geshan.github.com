@@ -7,6 +7,7 @@ tags:
 - AI
 - Gen AI
 - GCP
+- Gemini
 cover: "/images/youtube-chapters-timings-generator/01youtube-chapters-timings-generator.jpg"
 pagetitle: "How to create a YouTube video chapters' timings generator using Gemini over Vertex AI"
 description: "Learn to use Gemini Flash LLM over Vertex AI to generate YouTube video chapters timings automatically."
@@ -18,12 +19,11 @@ While watching a long YouTube video have you felt like it would have been great 
 
 <img class="center" src="/images/youtube-chapters-timings-generator/01youtube-chapters-timings-generator.jpg" title="How to create a YouTube video chapters' timings generator using Gemini over Vertex AI" alt="How to create a YouTube video chapters' timings generator using Gemini over Vertex AI">
 
-
 ## YouTube video chapters a huge time-saver
 
 It is no secret that YouTube [video chapters](https://support.google.com/youtube/answer/9884579?hl=en) is a huge time saver for your audience. Be it a long 2-hour podcast or a 40-minute talk video if the video has relevant chapters your audience can jump to the parts that are most meaningful for them.
 
-Creating chapter data manually is a tedious and time-consuming task. You will need to sit down with something to take notes be it pen and paper or your mobile phone’s notes app. Then play the video and move the progress bar here and there to note down the timings from the video to list them down as chapters. What if there was an automated and easier way to do this, why can’t an LLM like Gemini which now has a 2 million context window? 
+Creating chapter data manually is a tedious and time-consuming task. You will need to sit down with something to take notes be it pen and paper or your mobile phone’s notes app. Then play the video and move the progress bar here and there to note down the timings from the video to list them down as chapters. What if there was an automated and easier way to do this, why can’t an LLM like Gemini which now has a 2 million context window?
 
 In February, the 1M context window for Gemini 1.5 pro could process 1 hour of video so with a 2M context window it should be able to process 2 hours of content. Even Gemini 1.5 flash has a 1M context window. So, technically your YouTube video could be 2 hours long and Gemini 1.5 Pro with the 2M context window should be able to generate chapter timings for it.
 
@@ -136,7 +136,7 @@ You can also click the `Get Code` and play around with it, you can look at an ex
 
 In this blog post, you created a YouTube video chapter timings generator using Gemini Flash over Vertext AI. If your videos are longer you can use Gemini Pro which has a 2 million context window and it is more expensive than the Flash version.
 
-You started by creating a prompt useful to generate video chapter timings and used it to generate chapters for one video. 
+You started by creating a prompt useful to generate video chapter timings and used it to generate chapters for one video.
 
 > Take this as scratching the surface, as the LLM has the context of the video’s content you can also craft a prompt to generate a compelling and SEO-optimized video description.
 
