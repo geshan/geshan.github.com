@@ -9,6 +9,7 @@ tags:
 - AI
 - Gen AI
 - GCP
+- Gemini
 cover: "/images/google-ai-studio-build/01google-ai-studio-build.jpg"
 pagetitle: "How to build your own resume reviewer with Google AI Studio in minutes and deploy it on Google Cloud Run"
 description: "Learn how to build your own resume reviewer with Google AI Studio in minutes and deploy it on Google Cloud Run."

@@ -8,6 +8,7 @@ tags:
 - Gen AI
 - Node.js
 - GCP
+- Gemini
 cover: "/images/gemini-vertex-ai-nodejs-api/01gemini-vertex-ai-nodejs-api.jpg"
 pagetitle: "How to create a text summarizer API using Gemini on Vertex AI with Node.js a step-by-step guide [Part 2]"
 description: "Learn how to create a simple summarizer with Gemini API on Vertex AI with Node.js that runs on the CLI."
@@ -162,7 +163,7 @@ const summaryGenerator = require('./gemini');
 
 Here, you first require the `scraper.js` and the `gemini.js`  as `summaryGenerator`. Then you have an async [IIEF](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) - Immediately Invoked Function Expression which parses the URL from the CLI parameters. If the URL is not provided it falls back to a News post from 7News. Then it prints the URL it is going to use for scraping and ultimately generating a summary.
 
-After that, it sends the URL to the scraper’s `getContents` function to get the contents of that web page. If there is no content (even due to an error) it returns `could not get data from the given URL` else it sends the page contents to the `getSummary` of the `gemini.js` file to get the summary. 
+After that, it sends the URL to the scraper’s `getContents` function to get the contents of that web page. If there is no content (even due to an error) it returns `could not get data from the given URL` else it sends the page contents to the `getSummary` of the `gemini.js` file to get the summary.
 
 If you run this script with `node --no-warnings cli.js https://7news.com.au/news/advice-for-swifties-on-getting-to-taylor-swifts-eras-tour-shows-at-sydney-olympic-park-c-13672302` it will show something like the below:
 
@@ -220,7 +221,7 @@ app.listen(port, () => {
 
 In this file that has a web server with Express.js, you first require all 3 components needed to make the summarizer API work. Those are the express instance, scraper, and the `gemini.js` file required as the `summaryGenerator` const.
 
-Then, you instantiate a new express app as the `app` const and pull in the port from the environment variable. If the environment variable of `PORT` is not set you fall back to port `3000`. 
+Then, you instantiate a new express app as the `app` const and pull in the port from the environment variable. If the environment variable of `PORT` is not set you fall back to port `3000`.
 
 The first route you have added for the Express app is `/` which returns a JSON object with a `message` key that has the value `alive`. This acts like a health check for the summarizer API.
 

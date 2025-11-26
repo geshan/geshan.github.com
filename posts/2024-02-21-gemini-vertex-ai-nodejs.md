@@ -8,6 +8,7 @@ tags:
 - Gen AI
 - Node.js
 - GCP
+- Gemini
 cover: "/images/gemini-vertex-ai-nodejs/01gemini-vertex-ai-nodejs.jpg"
 pagetitle: "How to create a text summarizer using Gemini over Vertex AI with Node.js a step-by-step guide [Part 1]"
 description: "Learn how to create a simple summarizer with Gemini API on Vertex AI with Node.js that runs on the CLI."
