@@ -5,6 +5,8 @@ date: 2022-08-30T23:27:32.000+11:00
 comments: true
 tags:
 - Misc
+- Jobs
+- Job Search
 cover: "/images/tech-recruiters/01tech-recruiters.jpg"
 pagetitle: Things tech recruiters look for in your resume and first interview part
   3

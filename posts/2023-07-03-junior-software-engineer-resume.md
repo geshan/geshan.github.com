@@ -7,6 +7,7 @@ tags:
 - Misc
 - Jobs
 - Talks
+- Job Search
 cover: "/images/junior-software-engineer-resume/01junior-software-engineer-resume.jpg"
 pagetitle: How to craft your junior software engineer resume the right way
 description: In this guide, you will learn how to write an impressive junior software engineer resume that will get you calls and interviews.

@@ -8,6 +8,7 @@ tags:
 - Technology
 - Misc
 - Jobs
+- Job Search
 pagetitle: How to make that first impression with your CV and initial interview, tech
   recruiters' view
 cover: "/images/tech-recruitment-aus-part02/for-hire.jpg"

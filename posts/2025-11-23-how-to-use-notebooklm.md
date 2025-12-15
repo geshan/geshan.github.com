@@ -7,6 +7,7 @@ tags:
 - NotebookLM
 - AI
 - Gen AI
+- Job Search
 cover: "/images/how-to-use-notebooklm/01how-to-use-notebooklm.jpg"
 pagetitle: "How to use NotebookLM with a practical job search example"
 description: "Learn how to use Google NotebookLM effectively with this practical guide. Explore its features and find out how to use it for Job search with practical examples."
