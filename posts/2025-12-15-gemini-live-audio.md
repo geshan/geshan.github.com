@@ -27,6 +27,7 @@ Wouldn’t it be great if you had an on-demand experienced software engineer int
   - [Steps to use Gemini Live audio as an interviewer](#steps-to-use-gemini-live-audio-as-an-interviewer)
   - [Switching modes](#switching-modes)
   - [Demo video](#demo-video)
+- [Other interview ideas](#other-inteview-ideas)
 - [Conclusion](#conclusion)
 
 ## Gemini Multimodal capabilities
