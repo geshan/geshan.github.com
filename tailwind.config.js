@@ -1,6 +1,9 @@
 module.exports = {
   content: [
-    './**/*.html', './**/**/*.html', './**/**/*.html', './**/**/**/*.html'
+    "./**/*.html",
+    "./**/**/*.html",
+    "./**/**/*.html",
+    "./**/**/**/*.html",
   ],
   theme: {
     gradientColorStops: (theme) => ({
@@ -10,10 +13,19 @@ module.exports = {
     }),
     extend: {
       fontFamily: {
-        leading: ["Darker Grotesque"],
-        reading: ["Poppins"],
+        leading: ["Source Serif 4", "Source Serif 3", "serif"],
+        reading: ["Source Serif 4", "Source Serif 3", "serif"],
       },
       colors: {
+        avocado: "#CDE4B2",
+        lightAvocado: "#F3F8EC",
+        darkAvocado: "#517329",
+
+        textColor: "#6A6C66",
+        blackText: "#000000",
+        lightGray: "#797B75",
+        gray: "#3F423B",
+
         darkpurple: "#2e296d",
         midgrey: "#858393",
         purple: "#4C3FE4",
@@ -21,6 +33,8 @@ module.exports = {
         mildgrey: "#8D8D8D",
         darkgrey: "#848393",
         midblack: "#251F54",
+        avocado: "#CDE4B2",
+        secondaryAvocado: "#F3F8EC",
       },
       spacing: {
         138: "8.62rem",
@@ -29,6 +43,7 @@ module.exports = {
         222: "13.9rem",
         68: "4.25rem",
         249: "15.5rem",
+        140: "8.75rem",
       },
       padding: {
         15: "1rem",
@@ -38,9 +53,9 @@ module.exports = {
         "-30": "-8rem",
       },
       gridTemplateRows: {
-        '10': 'repeat(10, minmax(0, 1fr))',
-      }
+        10: "repeat(10, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [],
-}
+};

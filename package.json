@@ -11,7 +11,7 @@
     "dev:eleventy": "npx @11ty/eleventy --serve",
     "build:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-006.css --minify",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
-    "dev": "npm-run-all clean --parallel dev:*",
+    "dev": "eleventy --serve --incremental",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy"
   },
   "repository": {
