@@ -8,6 +8,7 @@ tags:
 - Gen AI
 - GCP
 - Gemini
+- Job Search
 cover: "/images/google-gemini-2/01google-gemini-2.jpg"
 pagetitle: "Enhance Your CV, LinkedIn, and GitHub Profile with Gemini 2.0 - Stream Realtime [includes video]"
 description: "Learn how to enhance your CV, LinkedIn, and GitHub profile with Gemini 2.0, a new AI tool in realtime."

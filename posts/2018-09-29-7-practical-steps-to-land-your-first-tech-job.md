@@ -6,6 +6,7 @@ comments: true
 tags:
 - Misc
 - Jobs
+- Job Search
 cover: "/images/5-steps-first-tech-job/first-tech-job-a.jpg"
 description: Network in person, use recuriter's help, contribute to open source, list
   companies/roles you want to work in and learn a new tech thing each month to land

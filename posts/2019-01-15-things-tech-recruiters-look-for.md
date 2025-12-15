@@ -7,6 +7,7 @@ tags:
 - Technology
 - Misc
 - Jobs
+- Job Search
 pagetitle: Things tech recruiters look for in your cv and the first interview
 cover: /images/tech-recruitment-aus/for-hire.jpg
 description: Stop sending your resume to a black hole. Listen to these 3 tech recruiters to save your resume from being ignored by internal tech recruiters in Australia.
