@@ -265,7 +265,12 @@ After the parsing is successful you log the first book, which will look like the
 
 <img class="center" loading="lazy" src="/images/nodejs-xml-parser/03nodejs-xml-parse.jpg" title="Node.js XML parser parsign a XML file output on the CLI" alt="Node.js XML parser parsign a XML file output on the CLI">
 
-Great! You have passed the XML file into a JavaScript object. As per the need, you can loop through the `books` array or do the task that you want to accomplish. Next, you will learn how to create XML data from a JavaScript object. 
+Great! You have passed the XML file into a JavaScript object. As per the need, you can loop through the `books` array or do the task that you want to accomplish. 
+
+In many real-world projects, the next step after parsing is to move that XML data into a relational database so it can be queried with SQL instead of being processed only in memory. For that use case, using an online converter like [Flexter Online XML to SQL converter](https://sonra.io/xml-to-sql-database-converter/
+) can save a lot of manual schema design and insert-statement writing. It automatically turns complex XML structures into normalized tables and SQL scripts that your Node.js application can work with directly.
+
+Next, you will learn how to create XML data from a JavaScript object. 
 
 ## Create XML using Fast XML parser
 
