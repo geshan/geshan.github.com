@@ -80,32 +80,64 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
       </header>
       {% include "components/post-tags.njk" %}
       <div class="entry-content clearfix mt-5">{{ content | safe }}</div>
-      <footer class="w-full mt-4">
-        <ul class="meta text-muted pager my-6 flex md:flex-row flex-col justify-evenly">
-          {% if prevPost.url %}
-          <li
-            class="previous bg-darkAvocado hover:text-darkAvocado hover:bg-white hover:border-darkAvocado border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full rounded-md text-white text-justify"
-          >
+      <footer class="w-full mt-12 mb-8">
+        <nav class="post-navigation border-t border-gray-200 pt-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {% if prevPost.url %}
             <a
               href="{{ prevPost.url }}"
-              class="block text-left w-full text-md md:text-lg"
+              class="group flex flex-col md:flex-row items-start md:items-center gap-4 p-4 rounded-lg border border-gray-200 hover:border-darkAvocado hover:bg-lightAvocado transition-all duration-200"
               title="Previous Post: {{ prevPost.data.title }}"
-              >« {{ prevPost.data.title }}</a
             >
-          </li>
-          {% endif %} {% if nextPost.url %}
-          <li
-            class="next bg-darkAvocado hover:text-darkAvocado hover:bg-white hover:border-darkAvocado border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full mt-4 md:mt-0 rounded-md text-white text-justify"
-          >
+              <div class="flex-shrink-0">
+                <div
+                  class="w-10 h-10 rounded-full bg-darkAvocado group-hover:bg-darkAvocado flex items-center justify-center transition-colors"
+                >
+                  <i class="fas fa-arrow-left text-white"></i>
+                </div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="text-xs font-medium text-midgrey uppercase tracking-wide mb-1">
+                  Previous Post
+                </div>
+                <div
+                  class="text-base md:text-lg font-medium font-leading text-black group-hover:text-darkAvocado break-words"
+                >
+                  {{ prevPost.data.title }}
+                </div>
+              </div>
+            </a>
+            {% else %}
+            <div></div>
+            {% endif %} {% if nextPost.url %}
             <a
               href="{{ nextPost.url }}"
-              class="block text-right w-full text-md md:text-lg"
+              class="group flex flex-col md:flex-row items-start md:items-center gap-4 p-4 rounded-lg border border-gray-200 hover:border-darkAvocado hover:bg-lightAvocado transition-all duration-200 md:text-right"
               title="Next Post: {{ nextPost.data.title }}"
-              >{{ nextPost.data.title }} »</a
             >
-          </li>
-          {% endif %}
-        </ul>
+              <div class="flex-1 min-w-0">
+                <div
+                  class="text-xs font-medium text-midgrey uppercase tracking-wide mb-1 md:text-right"
+                >
+                  Next Post
+                </div>
+                <div
+                  class="text-base md:text-lg font-medium font-leading text-black group-hover:text-darkAvocado break-words"
+                >
+                  {{ nextPost.data.title }}
+                </div>
+              </div>
+              <div class="flex-shrink-0">
+                <div
+                  class="w-10 h-10 rounded-full bg-darkAvocado group-hover:bg-darkAvocado flex items-center justify-center transition-colors ml-auto md:ml-0"
+                >
+                  <i class="fas fa-arrow-right text-white"></i>
+                </div>
+              </div>
+            </a>
+            {% endif %}
+          </div>
+        </nav>
       </footer>
     </article>
     <section class="md:w-full mx-auto mt-4">{% include "components/disqus.njk" %}</section>
