@@ -67,13 +67,12 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             type="button"
             class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
             aria-label="Share this post"
-            onclick="document.querySelector('.share-icons').classList.toggle('hidden')"
           >
             <i class="fas fa-share"></i>
           </button>
         </div>
         <!-- Share Icons (Hidden by default) -->
-        <div class="share-icons hidden mt-4">
+        <div class="share-icons mt-4">
           <div class="flex items-center justify-center gap-3">
             {% include "components/share.njk" %}
           </div>

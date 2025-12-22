@@ -1,6 +1,6 @@
 <section class="panel panel-default w-11/12 mb-6">
   <div class="panel-heading mb-2">
-    <h3 class="panel-title font-normal">Popular Picks</h3>
+    <h3 class="panel-title !text-3xl font-normal uppercase mb-8 md:mb-4">Popular Picks</h3>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
     {%- set allowedTags = ['devops', 'misc', 'software engineering', 'talks', 'web development'] -%}
@@ -12,7 +12,8 @@
       title="{{ tag }}"
     >
       {{ tag | lower }}
-      <span class="badge inline-block bg-avocado px-2 py-1 rounded-full text-white mb-2 float-right"
+      <span
+        class="badge inline-block bg-darkAvocado px-2 py-1 rounded-full text-white mb-2 float-right"
         >{{ collections[ tag ] | length }}</span
       >
     </a>

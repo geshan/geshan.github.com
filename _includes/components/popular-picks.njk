@@ -1,9 +1,9 @@
 {% set postslist = collections.popularPicks %} {% if postslist.length > 0 %}
 <section class="mt-12">
-  <h2 class="font-leading font-bold text-3xl text-darkpurple mb-6">Popular Picks 🔥</h2>
+  <h2 class="font-leading font-bold text-3xl text-darkpurple mb-6 uppercase">Popular Picks 🔥</h2>
   <div class="space-y-4">
     {% for post in postslist %}
-    <article class="border-b border-gray-200 pb-4">
+    <article class="border-b border-gray-200 pb-4 md:pb-6">
       <h3 class="font-leading font-semibold text-xl text-darkpurple mb-2">
         <a href="{{ post.url | url }}" class="hover:text-avocado"> {{ post.data.title }} </a>
       </h3>

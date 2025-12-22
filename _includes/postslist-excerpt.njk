@@ -1,6 +1,6 @@
 <div class="blog-index w-11/12 md:w-full mx-auto mt-4">
   {% for post in postslist | reverse %}
-  <article class="post mb-6">
+  <article class="post mb-6 border-b border-lightGray pb-6">
     <header class="page-header">
       <h2 class="font-leading font-semibold md:text-3xl text-2xl text-textColor pt-3 break-words">
         <a href="{{ post.url }}"> {{ post.data.title }} </a>
