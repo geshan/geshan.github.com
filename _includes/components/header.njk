@@ -1,11 +1,11 @@
 <div>
   <nav class="bg-white">
-    <div class="max-w-6xl mx-auto py-4 px-4">
+    <div class="w-full md:max-w-6xl mx-auto py-4 px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo on the left -->
         <div class="flex-shrink-0">
           <a href="/" class="flex items-center">
-            <img class="h-8 w-8" src="/images/theme/geshan.png" alt="Geshan G"/>
+            <img class="h-10 w-10" src="/images/theme/geshan.png" alt="Geshan G" />
           </a>
         </div>
 
@@ -14,27 +14,42 @@
           <!-- Navigation links -->
           <div class="hidden sm:flex items-center gap-12">
             {%- for entry in collections.all | eleventyNavigation %}
-              <a href="{{ entry.url | url }}" 
-                 class="text-base font-leading font-medium text-black hover:text-midgrey transition-colors
-                        {% if entry.url == page.url %} text-midgrey{% endif %}" 
-                 aria-current="page">{{ entry.title }}</a>
+            <a
+              href="{{ entry.url | url }}"
+              class="text-base font-leading font-medium text-black hover:text-midgrey transition-colors {% if entry.url == page.url %} text-midgrey{% endif %}"
+              aria-current="page"
+              >{{ entry.title }}</a
+            >
             {%- endfor %}
           </div>
 
           <!-- Search Bar -->
-          <form class="search flex items-center" action="https://www.google.com/search" method="GET">
+          <form
+            class="search flex items-center"
+            action="https://www.google.com/search"
+            method="GET"
+          >
             <input type="hidden" name="sitesearch" value="geshan.com.np" />
             <div class="relative">
-              <input class="bg-gray-100 border border-gray-300 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40" 
-                     type="text" 
-                     name="q" 
-                     placeholder="Search" 
-                     label="search">
-              <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" 
-                   fill="none" 
-                   stroke="currentColor" 
-                   viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              <input
+                class="bg-gray-100 border border-gray-300 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
+                type="text"
+                name="q"
+                placeholder="Search"
+                label="search"
+              />
+              <svg
+                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
               </svg>
             </div>
           </form>
@@ -45,26 +60,101 @@
             class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-avocado"
             onClick="mobileView()"
             aria-controls="mobile-menu"
-            aria-expanded="false">
+            aria-expanded="false"
+          >
             <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Mobile menu -->
-    <div class="mobile-menu hidden fixed w-full top-0 h-full z-10 bg-white flex-row justify-between content-center sm:hidden border-2 border-transparent">
-      <div class="px-4 pt-20 pb-3 space-y-4 m-auto w-full">
-        <a href="/" class="px-3 py-2 text-xl font-medium text-black font-leading block w-full" aria-current="page">Home</a>
-        {%- for entry in collections.all | eleventyNavigation %}
-          <a href="{{ entry.url | url }}" class="px-3 py-2 text-xl font-medium text-black font-leading block w-full" aria-current="page">{{ entry.title }}</a>
-        {%- endfor %}
-      </div>
-      <div class='close-btn cursor-pointer absolute right-6 top-6' onClick='mobileView()'>
-        <h3 class='text-black text-4xl text-center cursor-pointer'>×</h3>
+    <!-- Mobile menu (overlay) -->
+    <div
+      class="mobile-menu fixed inset-0 z-40 hidden sm:hidden bg-black bg-opacity-40"
+      role="dialog"
+      aria-modal="true"
+    >
+      <!-- Clickable backdrop -->
+      <div class="absolute inset-0" onClick="mobileView()" aria-hidden="true"></div>
+
+      <!-- Slide-over panel -->
+      <div
+        class="relative ml-auto flex h-full w-11/12 max-w-sm flex-col justify-start bg-white shadow-xl"
+      >
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-4 border-b border-gray-200">
+          <div class="flex items-center gap-3">
+            <img class="h-8 w-8" src="/images/theme/geshan.png" alt="Geshan G" />
+            <span class="text-lg font-semibold text-textColor">Geshan's Blog</span>
+          </div>
+          <button
+            type="button"
+            class="inline-flex items-center justify-center rounded-full p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-avocado"
+            onClick="mobileView()"
+            aria-label="Close main menu"
+          >
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation links -->
+        <nav class="overflow-y-auto px-4 py-6 space-y-2">
+          <a
+            href="/"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-leading text-black hover:bg-lightAvocado"
+            aria-current="page"
+          >
+            Home
+          </a>
+          {%- for entry in collections.all | eleventyNavigation %}
+          <a
+            href="{{ entry.url | url }}"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-leading text-black hover:bg-lightAvocado {% if entry.url == page.url %} bg-lightAvocado{% endif %}"
+            aria-current="page"
+          >
+            {{ entry.title }}
+          </a>
+          {%- endfor %}
+        </nav>
+
+        <!-- Footer area (optional actions) -->
+        <div class="px 4 py-4 border-t border-gray-200">
+          <a
+            href="https://www.linkedin.com/in/geshan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-start rounded-lg bg-darkAvocado px-4 py-2 text-sm font-medium text-white hover:bg-avocado hover:text-black transition-colors w-1/2 ml-4"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </nav>

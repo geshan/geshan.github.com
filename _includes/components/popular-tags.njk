@@ -11,12 +11,12 @@
             {%- for tag in collections.tagList | sort -%}
               {%- if tag | lower in allowedTags -%}
                 {%- set tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
-              <a href='{{ tagUrl }}' title="{{ tag }}" class=" background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1
+              <a href='{{ tagUrl }}' title="{{ tag }}" class=" background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-avocado px-3 py-1
                   text-xl border-gray-300 cursor-pointer hover:border-gray-400 ">
                 {{ tag | lower }}</a>
               {% endif %}
           {% endfor %}
-          <span class=" mr-4 mb-4 font-semibold underline text-purple hover:text-purple px-3 py-1 text-xl cursor-pointer ">
+          <span class=" mr-4 mb-4 font-semibold underline text-gray hover:text-darkAvocado px-3 py-1 text-xl cursor-pointer ">
             <a href="/blog/categories/">20+ more</a>
           </span>
         </div>

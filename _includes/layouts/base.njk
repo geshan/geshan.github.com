@@ -11,11 +11,11 @@
     {%- include "components/ga.njk" -%}
     {%- include "components/sw-new.njk" -%}
   </head>
-  <body class="overflow-x-hidden font-leading">
+  <body class="overflow-x-hidden font-leading flex flex-col min-h-screen">
     {%- include "components/gtm.njk" -%}
     {%- include "components/header.njk" -%}
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-    <div id="wrap">
+    <div id="wrap" class="flex-grow md:px-0">
       <div id="main">
         <div id="content">
           <div class="row">
@@ -23,8 +23,9 @@
                 {{ content | safe }}
             </div>
             {% if page.url == '/' %}
-              {% include "components/popular-tags.njk" %}
               {% include "sidebar/latest-posts.njk" %}
+              {% include "sidebar/side-projects.njk" %}
+               {% include "sidebar/honest-takes.njk" %}
             {% endif %} 
             </div>           
         </div><!-- div class row close -->

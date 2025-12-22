@@ -1,9 +1,39 @@
 {%- if templateClass == "tmpl-post" -%}
 <span class="share-icons">
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on LinkedIn" onClick="ga('send', 'event', 'share', 'clickShareOnLinkedIn');"><span id="linkedin-share" class="fa fa-linkedin sharing-common li-color"></span></a>
-  <a href="http://twitter.com/share?text={{ title }} - &url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Twitter" onClick="ga('send', 'event', 'share', 'clickShareOnTwitter');"><span id="twitter-share" class="fa fa-twitter sharing-common twitter-color"></span></a>
-  <a href="http://www.facebook.com/sharer.php?u={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Facebook" onClick="ga('send', 'event', 'share', 'clickShareOnFacebook');"><span id="facebook-share" class="fa fa-facebook sharing-common fb-color"></span></a>
-  <a href="https://t.me/share/url?url={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Telegram" onClick="ga('send', 'event', 'share', 'clickShareOnTelegram');"><span id="telegram-share" class="fa fa-telegram sharing-common tg-color"></span></a>
-  <a href="https://api.whatsapp.com/send?text={{ absolutePostUrl }}" target="_blank" title="Share '{{ title }}' on Whatsapp" onClick="ga('send', 'event', 'share', 'clickShareOnWhatsapp');"><span id="whatsapp-share" class="fa fa-whatsapp sharing-common wa-color"></span></a>
+  <a
+    href="https://www.linkedin.com/shareArticle?mini=true&url={{ absolutePostUrl }}"
+    target="_blank"
+    title="Share '{{ title }}' on LinkedIn"
+    onClick="ga('send', 'event', 'share', 'clickShareOnLinkedIn');"
+    ><span id="linkedin-share" class="fa fa-linkedin sharing-common text-[#0077B5]"></span
+  ></a>
+  <a
+    href="http://twitter.com/share?text={{ title }} - &url={{ absolutePostUrl }}"
+    target="_blank"
+    title="Share '{{ title }}' on Twitter"
+    onClick="ga('send', 'event', 'share', 'clickShareOnTwitter');"
+    ><span id="twitter-share" class="fa fa-twitter sharing-common text-[#1DA1F2]"></span
+  ></a>
+  <a
+    href="http://www.facebook.com/sharer.php?u={{ absolutePostUrl }}"
+    target="_blank"
+    title="Share '{{ title }}' on Facebook"
+    onClick="ga('send', 'event', 'share', 'clickShareOnFacebook');"
+    ><span id="facebook-share" class="fa fa-facebook sharing-common text-[#1877F2]"></span
+  ></a>
+  <a
+    href="https://t.me/share/url?url={{ absolutePostUrl }}"
+    target="_blank"
+    title="Share '{{ title }}' on Telegram"
+    onClick="ga('send', 'event', 'share', 'clickShareOnTelegram');"
+    ><span id="telegram-share" class="fa fa-telegram sharing-common text-[#0088cc]"></span
+  ></a>
+  <a
+    href="https://api.whatsapp.com/send?text={{ absolutePostUrl }}"
+    target="_blank"
+    title="Share '{{ title }}' on Whatsapp"
+    onClick="ga('send', 'event', 'share', 'clickShareOnWhatsapp');"
+    ><span id="whatsapp-share" class="fa fa-whatsapp sharing-common text-[#25d366]"></span
+  ></a>
 </span>
 {%- endif -%}

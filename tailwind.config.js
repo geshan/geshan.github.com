@@ -1,10 +1,5 @@
 module.exports = {
-  content: [
-    "./**/*.html",
-    "./**/**/*.html",
-    "./**/**/*.html",
-    "./**/**/**/*.html",
-  ],
+  content: ["./**/*.html", "./**/**/*.html", "./**/**/*.html", "./**/**/**/*.html"],
   theme: {
     gradientColorStops: (theme) => ({
       ...theme("colors"),
@@ -26,9 +21,7 @@ module.exports = {
         lightGray: "#797B75",
         gray: "#3F423B",
 
-        darkpurple: "#2e296d",
         midgrey: "#858393",
-        purple: "#4C3FE4",
         lightbg: "#F5F5F5",
         mildgrey: "#8D8D8D",
         darkgrey: "#848393",

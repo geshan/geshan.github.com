@@ -1,0 +1,18 @@
+<section class="panel panel-default w-11/12 mb-6">
+  <div class="panel-heading mb-2">
+    <h3 class="panel-title font-normal">Popular Picks</h3>
+  </div>
+  <div class="list-group flex flex-col justify-center content-center">
+    {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
+    <a
+      class="list-group-item mb-5 border-b-2 border-darkgrey hover:border-avocado font-reading font-normal text-midblack w-full text-base"
+      href="{{ post.url | url }}"
+      title="{{ post.data.title }}"
+    >
+      {{ post.data.title }}
+    </a>
+    {% endfor %} {% if popularPosts.length == 0 %}
+    <p class="text-textColor text-sm">No popular picks available yet.</p>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<!-- Honest Takes Section -->
+<section
+  class="py-16 md:py-24 px-4 md:px-8 bg-gradient-to-t from-white via-lightAvocado to-avocado"
+>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-leading font-normal text-5xl text-darkpurple pb-12">
+      <span class="text-lightGray italic font-normal"> Honest</span> Takes
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+      {% for testimonial in honestTakes %}
+      <div
+        class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md {% if testimonial.isLarge %} {% else %} {% endif %} relative overflow-hidden py-4"
+      >
+        <p
+          class="{% if testimonial.isLarge %}text-base md:text-lg{% else %}text-base{% endif %} text-black mb-6 leading-relaxed px-8 md:px-12 md:py-8"
+        >
+          {{ testimonial.quote }}
+        </p>
+        <div class="relative z-10">
+          <i
+            class="fas fa-quote-left text-darkAvocado absolute -bottom-1 left-6 md:text-5xl text-3xl font-serif leading-none"
+          ></i>
+        </div>
+        <div
+          class="flex items-center justify-between border-t border-mildgrey pt-4 p-6 md:p-12 py-3 md:py-4 text-textColor text-lg z-50 overflow-hidden"
+        >
+          <div>
+            <p class="font-semibold">{{ testimonial.author }}</p>
+            <p class="text-md text-midgrey">{{ testimonial.title }}</p>
+          </div>
+          <div>
+            <p class="font-semibold uppercase">{{ testimonial.company }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

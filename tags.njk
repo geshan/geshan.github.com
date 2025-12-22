@@ -16,9 +16,14 @@ eleventyComputed:
   description: "You can read more about {{ tag }} on Geshan.com.np"
 permalink: /blog/categories/{{ tag | slug }}/
 ---
-<article role="article" class='md:w-7/12 w-11/12 mx-auto mt-4'>  
-<header class="page-header"><h1 class="entry-title"> Category: {{tag}}</h1></header>
-  {% set postslist = collections[ tag ] %}
-  {% include "postslist-h3.njk" %}
-  <p>See <a href="{{ '/blog/categories/' | url }}">all categories</a>.</p>
+
+<article role="article" class="md:max-w-6xl mx-auto mt-4">
+  <header class="page-header">
+    <h1 class="md:text-4xl text-3xl font-bold text-gray">Category: {{tag}}</h1>
+  </header>
+  {% set postslist = collections[ tag ] %} {% include "postslist-h3.njk" %}
+  <p>
+    See
+    <a href="{{ '/blog/categories/' | url }}" class="text-darkAvocado underline">all categories</a>.
+  </p>
 </article>

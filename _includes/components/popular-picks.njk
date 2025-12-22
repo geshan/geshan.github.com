@@ -1,0 +1,25 @@
+{% set postslist = collections.popularPicks %} {% if postslist.length > 0 %}
+<section class="mt-12">
+  <h2 class="font-leading font-bold text-3xl text-darkpurple mb-6">Popular Picks 🔥</h2>
+  <div class="space-y-4">
+    {% for post in postslist %}
+    <article class="border-b border-gray-200 pb-4">
+      <h3 class="font-leading font-semibold text-xl text-darkpurple mb-2">
+        <a href="{{ post.url | url }}" class="hover:text-avocado"> {{ post.data.title }} </a>
+      </h3>
+      <p class="text-sm text-midgrey">
+        {% set date = post.date %} {% include "components/posted-date-time.njk" %} {% if
+        post.data.tags %}
+        <span class="ml-2"
+          >• {% for tag in post.data.tags | slice(0, 3) %}
+          <a href="/blog/categories/{{ tag | slug }}/" class="text-avocado hover:underline"
+            >{{ tag }}</a
+          >{% if not loop.last %}, {% endif %} {% endfor %}
+        </span>
+        {% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

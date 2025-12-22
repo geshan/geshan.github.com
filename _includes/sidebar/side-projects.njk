@@ -1,9 +1,37 @@
-<section class="panel panel-default w-11/12 mb-6">
-    <div class="panel-heading">
-        <h3 class="panel-title">Side Projects</h3>
+<section class="mt-20 pt-20 bg-lightAvocado rounded-lg p-6">
+  <div class="max-w-6xl mx-auto pb-8 md:px-4 sm:px-4 px-4">
+    <h2 class="font-leading font-normal text-5xl text-darkpurple pb-12">
+      <span class="text-lightGray italic font-normal"> Side</span> Projects
+    </h2>
+    <div id="side_projects" class="grid md:grid-cols-2 grid-cols-1 gap-12">
+      {% for project in sideProjects %}
+      <div class="border-b border-mildgrey pb-6">
+        <div class="flex items-center gap-4 font-reading font-normal text-textColor mb-3">
+          <i class="fas fa-briefcase"></i>
+          <a
+            class="font-semibold text-2xl hover:underline"
+            href="{{ project.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ project.title }} ({{ project.year }})</a
+          >
+        </div>
+        <p class="mt-3 font-reading font-normal text-textColor leading-7">
+          {{project.description}}
+        </p>
+        <ul class="list-disc list-inside">
+          {% for note in project.notes %}
+          <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+        {% if project.extraNotes %}
+        <p class="mt-3 font-reading font-normal text-textColor leading-7">
+          {{ project.extraNotes }}
+        </p>
+        {% endif %}
+      </div>
+
+      {% endfor %}
     </div>
-    <div id="side_projects" class="list-group flex flex-col">
-      <a class="list-group-item font-reading font-normal text-midblack mb-3" href="https://app.autechjobs.com"><i class="fas fa-briefcase"></i> AU Tech Jobs</a>
-      <a class="list-group-item font-reading font-normal text-midblack mb-3 " href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgeshan.com.np%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=nepal_news_en&tw_p=followbutton"><i class="fa fa-twitter"></i> Nepal News English</a> 
-    </div>
+  </div>
 </section>

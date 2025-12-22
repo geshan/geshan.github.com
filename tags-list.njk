@@ -6,14 +6,18 @@ renderData:
   description: "Categories and tags on this blog"
 ---
 
-<article role="article" class='md:w-7/12 w-11/12 mx-auto mt-4' >
+<article role="article" class="md:max-w-6xl mx-auto mt-4">
   <header class="page-header">
-    <h1 class="text-7xl font-bold text-darkpurple ">Categories</h1>
+    <h1 class="md:text-4xl text-3xl font-bold text-gray">Categories</h1>
   </header>
-  <div class='grid md:grid-rows-10 grid-cols-2 md:grid-flow-col gap-4 mt-10'>
-    {% for tag in collections.tagList | sort %}
-      {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag mt-6 font-reading font-normal text-midblack w-9/12 border-b-2 border-gray-400 hover:border-purple ">{{ tag }}</a>
+  <div class="grid md:grid-rows-10 grid-cols-2 md:grid-flow-col gap-4 mt-10">
+    {% for tag in collections.tagList | sort %} {% set tagUrl %}/blog/categories/{{ tag | slug }}/{%
+    endset %}
+    <a
+      href="{{ tagUrl | url }}"
+      class="tag mt-6 font-reading font-normal text-textColor w-9/12 border-b-2 border-gray-400 hover:border-avocado"
+      >{{ tag }}</a
+    >
     {% endfor %}
   </div>
 </article>

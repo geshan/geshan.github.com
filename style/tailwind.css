@@ -1,21 +1,75 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+:root {
+  --darkAvocado: #517329;
+  --lightAvocado: #f3f8ec;
+  --textColor: #6a6c66;
+  --blackText: #000000;
+  --lightGray: #797b75;
+  --gray: #3f423b;
+  --midgrey: #858393;
+  --lightbg: #f5f5f5;
+}
+
 /** tailwind over-rides */
 
-h1,
-h2 {
-  font-size: xxx-large;
+/* Mobile First - Phone (default) */
+h1 {
+  font-size: 28px;
   font-weight: bold;
+  line-height: 1.2;
 }
-h3 {
-  font-size: xx-large;
+
+h2 {
+  font-size: 24px;
   font-weight: bold;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 h4 {
-  font-size: x-large;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Tablet (640px and up) */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
 }
 
 h2,
@@ -23,7 +77,7 @@ h3,
 h4,
 h5 {
   --tw-text-opacity: 1;
-  color: rgba(46, 41, 109, var(--tw-text-opacity));
+  color: var(--blackText);
 }
 
 h1 > a.direct-link,
@@ -46,7 +100,7 @@ div > div > article > ul > li > a,
 div > div > article > div > ol > li > a,
 div > div > article > ul > ol > a,
 p > a {
-  color: #4c3fe4;
+  color: #517329;
 }
 
 /**share things */
@@ -59,7 +113,6 @@ span.share-icons {
   top: 320px;
 }
 span.sharing-common {
-  color: #9d9d9d;
   background-color: #f5f5f5;
   height: 52px;
   width: 52px;
@@ -70,6 +123,7 @@ span.sharing-common {
   margin-bottom: 6px;
   margin-left: 6px;
   border-radius: 12px;
+  border: 1px solid var(--lightGray);
 }
 span.sharing-common:hover {
   color: white;
@@ -96,7 +150,10 @@ h3.comments {
   clear: both;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-size: 0.95rem;
   background-color: #f1f3f5;
 }
@@ -212,21 +269,20 @@ pre[class*="language-"] {
 .token.prefix.unchanged,
 .token.prefix.inserted,
 .token.prefix.deleted {
-	-webkit-user-select: none;
-	user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Optional: full-width background color */
 .token.inserted:not(.prefix),
 .token.deleted:not(.prefix) {
-	display: block;
+  display: block;
 }
 
 /* carbon */
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #carbonads {
   display: flex;
@@ -321,15 +377,14 @@ pre[class*="language-"] {
   padding-left: 25px;
   font-size: 22px;
 }
-.entry-content ul li
-{
+.entry-content ul li {
   list-style: disc;
 }
 .entry-content ol li {
   list-style: auto;
 }
 .entry-content li::marker {
-  color: #4c3fe4;
+  color: #517329;
 }
 .entry-content > div > .cover-description {
   font-size: 24px;
@@ -372,12 +427,12 @@ div > details {
 }
 div > details > summary {
   font-size: 22px;
-  color: #4c3fe4;
+  color: #517329;
   cursor: pointer;
 }
 div > details > ul li a {
   font-size: 22px;
-  color: #4c3fe4;
+  color: #517329;
 }
 #scrollDiv {
   left: 40px;
@@ -409,7 +464,7 @@ blockquote > p:first-child:before {
 table,
 td,
 th {
-  border: 2px solid #4c3fe4;
+  border: 2px solid #517329;
   text-align: center;
   padding: 7px;
 }
@@ -424,7 +479,7 @@ table {
 
 /*Scroll bar progress */
 .progress-bar {
-  background: linear-gradient(to right, #4c3fe4 var(--scroll), transparent 0);
+  background: linear-gradient(to right, #517329 var(--scroll), transparent 0);
   background-repeat: no-repeat;
   width: 100%;
   position: fixed;
@@ -455,7 +510,7 @@ table {
 /* Responsive Google Slides, Vimeo, Twitch */
 iframe[src*="docs.google.com"],
 iframe[src*="player.vimeo.com"],
-iframe[src*="player.twitch.tv"]{
+iframe[src*="player.twitch.tv"] {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;

@@ -4,12 +4,14 @@ title: "How to create an Amazon Elastic Container Registry (ECR) and push a dock
 date: 2025-03-25T22:41:57.000+11:00
 comments: true
 tags:
-- AWS
+  - AWS
+  - must-read
 cover: "/images/amazon-ecr-push-image/01amazon-ecr-push-image.jpg"
 pagetitle: "How to create an Amazon Elastic Container Registry (ECR) and push a docker image to it"
 description: "Learn how create a private Amazon Elastic Container Registry (ECR), then build and push a Node.js Hello World app's Docker image to it."
 keywords: amazon ecr push image, amazon ecr, private amazon ecr
 ---
+
 Amazon Elastic Container Registry (ECR) is a fully managed container registry that can store (Docker) container images, making it easy to pull, share, and deploy container images. This post will teach you how to create a private Amazon ECR and push Docker container images of a simple Node.js Hello World app with Express. Let’s get started!
 
 <!-- more -->
@@ -18,11 +20,11 @@ Amazon Elastic Container Registry (ECR) is a fully managed container registry th
 
 ## Table of contents
 
-* [What is Amazon ECR](#what-is-amazon-ecr)
-* [The Node.js Hello World app](#the-node.js-hello-world-app)
-* [Create private Amazon ECR](#create-private-amazon-ecr)
-* [Build and push Node.js Docker image](#build-and-push-node.js-docker-image)
-* [Conclusion](#conclusion)
+- [What is Amazon ECR](#what-is-amazon-ecr)
+- [The Node.js Hello World app](#the-node.js-hello-world-app)
+- [Create private Amazon ECR](#create-private-amazon-ecr)
+- [Build and push Node.js Docker image](#build-and-push-node.js-docker-image)
+- [Conclusion](#conclusion)
 
 ## What is Amazon ECR
 
@@ -39,12 +41,12 @@ It is assumed that you have Node.js 20+ installed on your local machine. If not,
 The Node.js Hello World app used for this tutorial is an Express 5.x app. You can start a Node.js app with `npm init`, and to install Express 5.x, you can run `npm install express@next`. Then, in the folder that has the `package.json` and `package-lock.json`, you can create an `index.js` file with the following code:
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = process.env.PORT || 80;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
 app.listen(port, () => {
@@ -52,7 +54,7 @@ app.listen(port, () => {
 });
 ```
 
-It is a simple Node.js app with only one route `/` that prints `Hello World` using Express.  If you run `node index.js` , you will see the following:
+It is a simple Node.js app with only one route `/` that prints `Hello World` using Express. If you run `node index.js` , you will see the following:
 
 ```bash
 > node index.js
@@ -89,7 +91,7 @@ EXPOSE 80
 CMD ["node", "index.js"]
 ```
 
-It is a Dockerfile using  [Docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) to create the build and the production stage.
+It is a Dockerfile using [Docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) to create the build and the production stage.
 
 The easiest way to get started is to clone this repository in your AWS Cloud Shell and build the image there. Before that, you will first create the private Amazon ECR.
 
@@ -117,7 +119,7 @@ It might take some seconds for the EC registry to be created, and you will be ta
 
 <img class="center" src="/images/amazon-ecr-push-image/06private-ecr-created.jpg" loading="lazy" title="AWS Console UI showing the private Amazon ECR created" alt="AWS Console UI showing the private Amazon ECR created">
 
-In the next part, you will learn how to build and push a Docker container image using AWS Cloudshell. You are using AWS Cloudshell, so there is nothing to install on your machine. You can also do the same using your machine. 
+In the next part, you will learn how to build and push a Docker container image using AWS Cloudshell. You are using AWS Cloudshell, so there is nothing to install on your machine. You can also do the same using your machine.
 
 ## Build and push Node.js Docker image
 
@@ -147,7 +149,7 @@ After that, click on the `View push commands` button on the left side of the pag
 
 <img class="center" src="/images/amazon-ecr-push-image/10ecr-show-push-commands.jpg" loading="lazy" title="AWS Console UI showing  ECR login, docker build related commands" alt="AWS Console UI showing  ECR login, docker build related commands">
 
-Copy all four visible commands and paste them into Notepad or your IDE.  The commands I got were:
+Copy all four visible commands and paste them into Notepad or your IDE. The commands I got were:
 
 ```bash
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <long-id-here>.dkr.ecr.us-east-1.amazonaws.com
@@ -164,7 +166,7 @@ Then, run them individually on your console, maintaining the order. After the fi
 
 <img class="center" src="/images/amazon-ecr-push-image/11aws-cloudshell-erc-login.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with ECR login command output" alt="AWS Console UI showing AWS CloudShell with ECR login command output">
 
-The `docker build` command will take up to 5 minutes, wait for it.  After the build is done, it will look something like the below:
+The `docker build` command will take up to 5 minutes, wait for it. After the build is done, it will look something like the below:
 
 <img class="center" src="/images/amazon-ecr-push-image/12aws-cloudshell-docker-build.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with Docker build command output" alt="AWS Console UI showing AWS CloudShell with Docker build command output">
 
