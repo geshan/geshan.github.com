@@ -1,22 +1,82 @@
-/** Source Serif Fonts **/
 /* Source Serif 4 */
 @font-face {
   font-family: "Source Serif 4";
+  src: url("/fonts/SourceSerif4/SourceSerif4-500.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
-  src: url("/fonts/SourceSerif4-VariableFont_opsz,wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/fonts/SourceSerif4/SourceSerif4-500Italic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/fonts/SourceSerif4/SourceSerif4-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/fonts/SourceSerif4/SourceSerif4-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Source Serif 3 */
+/* Source Sans 3 */
 @font-face {
-  font-family: "Source Serif 3";
-  font-style: normal;
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3/SourceSans3-400.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
-  src: url("https://fonts.gstatic.com/s/sourceserif3/v1/YA9dr0Wd4kDdOruthQnSgqUxBYyCoW0q4g.woff2")
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3/SourceSans3-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3/SourceSans3-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Source Sans Pro */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro/SourceSansPro-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro/SourceSansPro-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro/SourceSansPro-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro/SourceSansPro-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }

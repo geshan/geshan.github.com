@@ -16,7 +16,7 @@
             {%- for entry in collections.all | eleventyNavigation %}
             <a
               href="{{ entry.url | url }}"
-              class="text-base font-leading font-medium text-black hover:text-midgrey transition-colors {% if entry.url == page.url %} text-midgrey{% endif %}"
+              class="uppercase text-base font-ui font-medium text-gray hover:text-midgrey transition-colors {% if entry.url == page.url %} text-midgrey{% endif %}"
               aria-current="page"
               >{{ entry.title }}</a
             >
@@ -32,14 +32,14 @@
             <input type="hidden" name="sitesearch" value="geshan.com.np" />
             <div class="relative">
               <input
-                class="bg-gray-100 border border-gray-300 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
+                class="bg-gray-100 border border-neutralGray rounded-lg py-2 pl-10 pr-4 font-body text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
                 type="text"
                 name="q"
                 placeholder="Search"
                 label="search"
               />
               <svg
-                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
+                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutralGray"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -99,7 +99,7 @@
         <div class="flex items-center justify-between px-4 py-4 border-b border-gray-200">
           <div class="flex items-center gap-3">
             <img class="h-8 w-8" src="/images/theme/geshan.svg" alt="Geshan G" />
-            <span class="text-lg font-semibold text-textColor">Geshan's Blog</span>
+            <span class="text-lg font-semibold text-textColor font-body">Geshan's Blog</span>
           </div>
           <button
             type="button"
@@ -128,7 +128,7 @@
         <nav class="overflow-y-auto px-4 py-6 space-y-2">
           <a
             href="/"
-            class="block rounded-lg px-3 py-2 text-base font-medium font-leading text-black hover:bg-lightAvocado"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-body text-black hover:bg-lightAvocado"
             aria-current="page"
           >
             Home
@@ -150,7 +150,7 @@
             href="https://www.linkedin.com/in/geshan"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-start rounded-lg bg-darkAvocado px-4 py-2 text-sm font-medium text-white hover:bg-avocado hover:text-black transition-colors w-1/2 ml-4"
+            class="flex items-center justify-start rounded-lg bg-darkAvocado px-4 py-2 text-base font-regular font-body text-white hover:bg-avocado hover:text-black transition-colors w-1/2 ml-4"
           >
             Connect on LinkedIn
           </a>

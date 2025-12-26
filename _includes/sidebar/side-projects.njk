@@ -1,33 +1,30 @@
 <section class="pt-10 bg-lightAvocado rounded-lg">
   <div class="max-w-6xl mx-auto pb-8 md:px-4 sm:px-4 px-4">
-    <h2 class="font-leading font-normal text-5xl text-darkpurple pb-12">
-      <span class="text-lightGray italic font-normal"> Side</span> Projects
+    <h2 class="font-heading font-medium pb-12">
+      <span class="text-lightGray italic"> Side</span>
+      <span class="text-blackText">Projects</span>
     </h2>
     <div id="side_projects" class="grid md:grid-cols-2 grid-cols-1 gap-12">
       {% for project in sideProjects %}
-      <div class="border-b border-mildgrey pb-6">
-        <div class="flex items-center gap-4 font-reading font-normal text-textColor mb-3">
+      <div class="border-b border-neutralGray pb-6">
+        <div class="flex items-center gap-4 font-ui font-normal text-gray mb-3">
           <i class="fas fa-briefcase"></i>
           <a
-            class="font-semibold text-2xl hover:underline"
+            class="font-semibold md:text-3xl text-2xl hover:underline"
             href="{{ project.url }}"
             target="_blank"
             rel="noopener noreferrer"
             >{{ project.title }} ({{ project.year }})</a
           >
         </div>
-        <p class="mt-3 font-reading font-normal text-textColor leading-7">
-          {{project.description}}
-        </p>
-        <ul class="list-disc list-inside">
+        <p class="mt-4 font-ui font-normal text-gray text-xl">{{project.description}}</p>
+        <ul class="mt-2 list-disc list-inside font-ui text-xl">
           {% for note in project.notes %}
           <li>{{ note }}</li>
           {% endfor %}
         </ul>
         {% if project.extraNotes %}
-        <p class="mt-3 font-reading font-normal text-textColor leading-7">
-          {{ project.extraNotes }}
-        </p>
+        <p class="mt-4 font-ui font-normal text-gray text-xl">{{ project.extraNotes }}</p>
         {% endif %}
       </div>
 

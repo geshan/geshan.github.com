@@ -3,17 +3,18 @@
   <div class="mt-10 max-w-6xl mx-auto pb-8 px-4">
     <div class="grid-cols-12 md:grid gap-10">
       <div class="col-span-12 md:col-span-8">
-        <h2 class="font-leading font-semibold text-4xl md:text-6xl text-textColor break-words">
-          <span class="text-lightGray italic font-normal"> Recently</span> Published
+        <h2 class="font-heading font-medium text-textColor break-words">
+          <span class="text-lightGray italic"> Recently</span>
+          <span class="text-blackText">Published</span>
         </h2>
         <!-- recent posting  -->
         <div class="mb-14">
           <div id="recent_posts" class="list-group">
             {% for post in posts | reverse %}
-            <div class="border-b border-mildgrey py-6 md:py-8 hover:bg-lightAvocado">
-              <h3 class="font-leading font-semibold text-2xl text-gray pt-3">
+            <div class="border-b border-neutralGray py-6 md:py-8 hover:bg-lightAvocado">
+              <h3 class="font-ui font-semibold text-2xl text-gray pt-3">
                 <a
-                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words"
+                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui font-medium"
                   href="{{ post.url | url }}"
                   title="{{ post.data.description }}"
                 >
@@ -22,18 +23,16 @@
                   {% endif %}
                 </a>
               </h3>
-              <p class="w-full text-sm sm:text-base text-darkgrey my-3 leading-relaxed">
+              <p class="w-full text-xl text-lightGray my-3 font-body font-medium">
                 <time
-                  class="uppercase text-textColor text-xs sm:text-sm md:text-base whitespace-normal break-words"
+                  class="uppercase whitespace-normal break-words"
                   datetime="{{ post.date | getSitemapDate }}"
                 >
                   {{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{
                   helpers.getReadingTime(post.templateContent) }} min read
                 </time>
               </p>
-              <p
-                class="font-reading font-normal text-textColor text-sm sm:text-base leading-relaxed break-words"
-              >
+              <p class="font-body font-regular text-gray text-xl break-words">
                 {{ post.data.description }}
               </p>
             </div>
@@ -42,11 +41,11 @@
         </div>
         <div class="w-full">
           <a
-            class="block rounded border-2 text-center font-semibold uppercase text-darkgrey hover:text-darkAvocado hover:border-darkAvocado py-3 text-base border-gray-300 cursor-pointer px-4 w-full"
+            class="font-body block rounded border-2 text-center font-semibold text-gray hover:text-darkAvocado hover:border-darkAvocado py-3 text-xl border-gray-300 cursor-pointer px-4 w-full"
             href="/posts/1/"
             style="width: 100%"
           >
-            view all posts
+            View all posts
           </a>
         </div>
       </div>

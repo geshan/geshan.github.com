@@ -10,6 +10,10 @@ module.exports = {
       fontFamily: {
         leading: ["Source Serif 4", "Source Serif 3", "serif"],
         reading: ["Source Serif 4", "Source Serif 3", "serif"],
+        heading: ["var(--font-heading)"],
+        ui: ["var(--font-ui)"],
+        body: ["var(--font-body)"],
+        nav: ["var(--font-nav)"],
       },
       colors: {
         avocado: "#CDE4B2",
@@ -27,6 +31,8 @@ module.exports = {
         darkgrey: "#848393",
         midblack: "#251F54",
         avocado: "#CDE4B2",
+        neutralGray: "#C1C2BF",
+        quoteGray: "#B8D892",
         secondaryAvocado: "#F3F8EC",
       },
       spacing: {

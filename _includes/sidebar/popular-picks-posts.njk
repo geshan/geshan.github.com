@@ -1,24 +1,26 @@
 <section class="panel panel-default mb-6">
   <div class="panel-heading mb-2">
-    <h3 class="panel-title !text-3xl font-normal uppercase mb-8 md:mb-4">Popular Picks</h3>
+    <h5 class="panel-title font-semibold uppercase mb-8 md:mb-4 font-heading text-gray">
+      Popular Picks
+    </h5>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
     {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
-    <div class="border-b-2 border-lightGray py-2">
+    <div class="border-b border-neutralGray py-2">
       <a
-        class="list-group-item mb-5 hover:border-avocado font-reading font-normal text-midblack w-full text-base pb-3"
+        class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-base pb-3"
         href="{{ post.url | url }}"
         title="{{ post.data.title }}"
       >
         {{ post.data.title }}
       </a>
-      <p class="text-textColor text-sm py-2">
+      <p class="text-lightGray text-base py-2 font-ui font-medium">
         {{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{
-        helpers.getReadingTime(post.templateContent) }} min read
+        helpers.getReadingTime(post.templateContent) }} MIN READ
       </p>
     </div>
     {% endfor %} {% if popularPosts.length == 0 %}
-    <p class="text-textColor text-sm">No popular picks available yet.</p>
+    <p class="text-lightGray text-base font-ui">No popular picks available yet.</p>
     {% endif %}
   </div>
 </section>

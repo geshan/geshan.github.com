@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "../css/fonts.css";
 
 :root {
   --darkAvocado: #517329;
@@ -11,64 +12,105 @@
   --gray: #3f423b;
   --midgrey: #858393;
   --lightbg: #f5f5f5;
+  --font-heading: "Source Serif 4", Georgia, serif;
+  --font-ui: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-nav: "inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+html,
+body {
+  font-family: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-heading);
+  color: var(--blackText);
+  font-weight: 500;
+}
+
+/* UI areas */
+nav,
+.tabs,
+.tab,
+.mobile-menu-panel {
+  font-family: var(--font-ui);
 }
 
 /** tailwind over-rides */
 
 /* Mobile First - Phone (default) */
 h1 {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 29px;
+  font-weight: 500;
   line-height: 1.3;
 }
 
 h3 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.4;
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 25px;
+  font-weight: 500;
   line-height: 1.4;
 }
 
 /* Tablet (640px and up) */
 @media (min-width: 640px) {
   h1 {
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: 61px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 49px;
   }
   h3 {
     font-size: 24px;
   }
   h4 {
-    font-size: 20px;
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 25px;
   }
 }
 
 /* Desktop (1024px and up) */
 @media (min-width: 1024px) {
   h1 {
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 61px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 49px;
   }
   h3 {
     font-size: 28px;
   }
   h4 {
-    font-size: 24px;
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 25px;
   }
 }
 
@@ -249,7 +291,7 @@ pre[class*="language-"] {
 }
 .token.bold,
 .token.important {
-  font-weight: 700;
+  font-weight: 500;
 }
 .token.italic {
   font-style: italic;
@@ -449,7 +491,7 @@ blockquote > p {
   margin: 0 auto;
   font-size: 26px;
   color: #251f54;
-  font-weight: 700;
+  font-weight: 500;
 }
 blockquote > p:first-child:before {
   content: "";
