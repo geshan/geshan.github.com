@@ -74,45 +74,7 @@ h5 {
   line-height: 1.4;
 }
 
-/* Tablet (640px and up) */
-@media (min-width: 640px) {
-  h1 {
-    /* font-size: 36px; */
-    font-size: 61px;
-  }
-  h2 {
-    font-size: 49px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 32px;
-  }
-  h5 {
-    font-size: 25px;
-  }
-}
 
-/* Desktop (1024px and up) */
-@media (min-width: 1024px) {
-  h1 {
-    /* font-size: 48px; */
-    font-size: 61px;
-  }
-  h2 {
-    font-size: 49px;
-  }
-  h3 {
-    font-size: 28px;
-  }
-  h4 {
-    font-size: 32px;
-  }
-  h5 {
-    font-size: 25px;
-  }
-}
 
 h2,
 h3,
@@ -477,7 +439,6 @@ div > details > ul li a {
   color: #517329;
 }
 #scrollDiv {
-  left: 40px;
   transition: all ease-in-out 0.5s;
 }
 
@@ -556,4 +517,14 @@ iframe[src*="player.twitch.tv"] {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }

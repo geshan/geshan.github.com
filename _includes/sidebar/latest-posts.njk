@@ -3,15 +3,20 @@
   <div class="mt-10 max-w-6xl mx-auto pb-8 px-4">
     <div class="grid-cols-12 md:grid gap-10">
       <div class="col-span-12 md:col-span-8">
-        <h2 class="font-heading font-medium text-textColor break-words">
+        <h1 class="text-3xl md:text-5xl font-heading font-medium text-textColor break-words">
           <span class="text-lightGray italic"> Recently</span>
           <span class="text-blackText">Published</span>
-        </h2>
+        </h1>
+       
+        <div class="mt-12 relative font-ui">
+       {% include 'components/scroll-tags.njk' %}
+        </div>
+       
         <!-- recent posting  -->
         <div class="mb-14">
           <div id="recent_posts" class="list-group">
             {% for post in posts | reverse %}
-            <div class="border-b border-neutralGray py-6 md:py-8 hover:bg-lightAvocado">
+            <div class="border-b border-neutralGray py-4 md:py-6 hover:bg-lightAvocado font-ui">
               <h3 class="font-ui font-semibold text-2xl text-gray pt-3">
                 <a
                   class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui font-medium"
@@ -23,7 +28,7 @@
                   {% endif %}
                 </a>
               </h3>
-              <p class="w-full text-xl text-lightGray my-3 font-body font-medium">
+              <p class="w-full text-md text-lightGray my-3 font-medium">
                 <time
                   class="uppercase whitespace-normal break-words"
                   datetime="{{ post.date | getSitemapDate }}"
@@ -32,7 +37,7 @@
                   helpers.getReadingTime(post.templateContent) }} min read
                 </time>
               </p>
-              <p class="font-body font-regular text-gray text-xl break-words">
+              <p class="font-ui text-gray text-xl break-words">
                 {{ post.data.description }}
               </p>
             </div>
@@ -41,7 +46,7 @@
         </div>
         <div class="w-full">
           <a
-            class="font-body block rounded border-2 text-center font-semibold text-gray hover:text-darkAvocado hover:border-darkAvocado py-3 text-xl border-gray-300 cursor-pointer px-4 w-full"
+            class="block rounded border-2 text-center font-semibold text-gray hover:text-darkAvocado hover:border-darkAvocado py-3 text-xl border-gray-300 cursor-pointer px-4 w-full"
             href="/posts/1/"
             style="width: 100%"
           >

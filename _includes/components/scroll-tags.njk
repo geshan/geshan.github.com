@@ -1,32 +1,46 @@
 <div
-  class="mx-auto flex flex-row justify-center items-center h-16 border-t-2 border-gray-100 shadow-md -mt-6 mb-6"
+  class="w-full flex flex-row items-center justify-center mb-6 relative gap-4 font-ui border-b border-avocado"
 >
   <button
     type="button"
     id="leftBtn"
     onclick="scrollLft()"
-    class="absolute z-10 left-1 text-white bg-darkAvocado border-white hover:text-darkAvocado hover:bg-white hover:border-darkAvocado rounded-full h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 text-center"
+    class="flex items-center justify-center text-blackText hover:text-darkAvocado transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:text-blackText"
+    aria-label="Scroll left"
   >
-    ←
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
   </button>
-  <ul id="scrollDiv" class="flex items-center justify-center absolute h-12">
+  
+  <ul id="scrollDiv" class="flex-1 flex items-center h-12 overflow-x-auto overflow-y-hidden scrollbar-hide min-w-0">
+   <li>
+      <a
+        href="/posts/1/"
+        class="tag mr-4 mb-4  font-medium text-darkAvocado hover:text-darkAvocado  px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase underline  underline-offset-[15px]"
+        >Recent</a
+      >
+    </li> 
     {% for tag in collections.tagList | sort %} {% set tagUrl %}/blog/categories/{{ tag | slug }}/{%
     endset %}
-    <li class="mr-1 ml-5">
+    <li>
       <a
         href="{{ tagUrl | url }}"
-        class="tag background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-darkA px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap h-full"
+        class="tag mr-4 mb-4  font-medium text-darkgrey hover:text-darkAvocado  px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase active:border-b-darkAvocado"
         >{{ tag }}</a
       >
     </li>
     {% endfor %}
   </ul>
-  <button
+    <button
     type="button"
     id="rightBtn"
     onclick="scrollRight()"
-    class="absolute right-1 text-white bg-darkAvocado border-white hover:text-darkAvocado hover:bg-white hover:border-darkAvocado rounded-full h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 text-center"
+    class="flex items-center justify-center text-blackText hover:text-darkAvocado transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:text-blackText"
+    aria-label="Scroll right"
   >
-    →
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
   </button>
 </div>

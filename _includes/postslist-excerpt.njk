@@ -1,8 +1,8 @@
-<div class="blog-index w-11/12 md:w-full mx-auto mt-4">
+<div class="blog-index w-11/12 md:w-full mx-auto mt-4 font-ui">
   {% for post in postslist | reverse %}
   <article class="post mb-6 border-b border-lightGray pb-6">
     <header class="page-header">
-      <h2 class="font-leading font-semibold md:text-3xl text-2xl text-textColor pt-3 break-words">
+      <h2 class="font-ui font-semibold md:text-3xl text-2xl text-textColor pt-3 break-words hover:underline">
         <a href="{{ post.url }}"> {{ post.data.title }} </a>
       </h2>
       <p class="text-muted text-uppercase">
@@ -13,15 +13,8 @@
         >
       </p>
     </header>
-    {% include 'components/post-tags.njk' %}
-    <div class="mt-6 font-reading font-normal text-midblack leading-7">{% excerptMore post %}</div>
-    <footer>
-      <a
-        class="flex items-center font-semibold text-darkAvocado text-xl cursor-pointer mt-3"
-        href="{{ post.url }}"
-        >Read post <span class="ml-4 mt-1">→</span>
-      </a>
-    </footer>
+    <div class="mt-2 font-reading font-normal text-midblack leading-7">{% excerptMore post %}</div>
+    
   </article>
   {% endfor %}
   <p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>
