@@ -14,7 +14,7 @@
         <div class="mb-14">
           <div id="recent_posts" class="list-group">
             {% for post in posts | reverse %}
-            <div class="border-b border-neutralGray py-4 md:py-6 hover:bg-lightAvocado font-ui">
+            <div class="border-b border-neutralGray px-6 py-10 hover:bg-lightAvocado font-ui">
               <h3 class="font-ui font-semibold text-2xl text-gray pt-3">
                 <a
                   class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui"
