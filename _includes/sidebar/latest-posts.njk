@@ -7,11 +7,9 @@
           <span class="text-lightGray italic"> Recently</span>
           <span class="text-blackText">Published</span>
         </h1>
-       
-        <div class="mt-12 relative font-ui">
-       {% include 'components/scroll-tags.njk' %}
-        </div>
-       
+
+        <div class="mt-12 relative font-ui">{% include 'components/scroll-tags.njk' %}</div>
+
         <!-- recent posting  -->
         <div class="mb-14">
           <div id="recent_posts" class="list-group">
@@ -19,7 +17,7 @@
             <div class="border-b border-neutralGray py-4 md:py-6 hover:bg-lightAvocado font-ui">
               <h3 class="font-ui font-semibold text-2xl text-gray pt-3">
                 <a
-                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui font-medium"
+                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui"
                   href="{{ post.url | url }}"
                   title="{{ post.data.description }}"
                 >
@@ -37,16 +35,14 @@
                   helpers.getReadingTime(post.templateContent) }} min read
                 </time>
               </p>
-              <p class="font-ui text-gray text-xl break-words">
-                {{ post.data.description }}
-              </p>
+              <p class="font-ui text-gray text-xl break-words mt-3">{{ post.data.description }}</p>
             </div>
             {% endfor %}
           </div>
         </div>
         <div class="w-full">
           <a
-            class="block rounded border-2 text-center font-semibold text-gray hover:text-darkAvocado hover:border-darkAvocado py-3 text-xl border-gray-300 cursor-pointer px-4 w-full"
+            class="block rounded border-2 text-center font-semibold font-body text-gray hover:text-darkAvocado hover:border-darkAvocado py-3 text-xl border-gray-300 cursor-pointer px-4 w-full"
             href="/posts/1/"
             style="width: 100%"
           >

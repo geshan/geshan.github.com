@@ -34,9 +34,11 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 <div class="progress-bar"></div>
 <div class="max-w-6xl py-3 mx-auto grid-cols-12 grid gap-15 px-4 md:px-0">
   <div class="col-span-12">
-    <article class="hentry md:w-full mx-auto mt-4">
+    <article class="md:w-full mx-auto mt-4">
       <header class="page-header text-center mt-8">
-        <h1 class="md:text-6xl text-4xl font-bold text-textColor text-center mb-6">{{ title }}</h1>
+        <h1 class="md:text-6xl text-4xl font-bold font-heading text-gray text-center mb-6">
+          {{ title }}
+        </h1>
         <div
           class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-4 border-y border-lightbg my-8"
         >
@@ -50,7 +52,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
               />
               <!-- Author Name -->
               <span
-                class="text-black font-bold font-leading text-xs sm:text-sm md:text-base uppercase tracking-wide"
+                class="text-gray font-medium font-body text-xl uppercase tracking-wide text-start"
               >
                 {{ metadata.author.name }}
               </span>
@@ -58,14 +60,14 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             <!-- Date -->
             {% include "components/posted-date-time.njk" %}
             <!-- Reading Time -->
-            <span class="text-midgrey font-reading text-xs sm:text-sm md:text-base uppercase">
+            <span class="text-lightGray font-body font-medium text-xl uppercase">
               {{ helpers.getReadingTime(content) }} MIN READ
             </span>
           </div>
           <!-- Share Button -->
           <button
             type="button"
-            class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
+            class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded text-lightGray hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
             aria-label="Share this post"
           >
             <i class="fas fa-share"></i>
@@ -79,7 +81,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
         </div>
       </header>
       {% include "components/post-tags.njk" %}
-      <div class="entry-content clearfix mt-5">{{ content | safe }}</div>
+      <div class="entry-content clearfix mt-5 font-body text-xl text-gray">{{ content | safe }}</div>
       <footer class="w-full mt-12 mb-8">
         <nav class="post-navigation border-t border-gray-200 pt-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

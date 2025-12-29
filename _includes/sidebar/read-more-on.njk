@@ -1,13 +1,13 @@
 <section class="panel panel-default w-11/12 mb-6">
   <div class="panel-heading mb-2">
-    <h3 class="panel-title !text-3xl font-normal uppercase mb-8 md:mb-4">Popular Picks</h3>
+    <h3 class="panel-title font-semibold font-heading text-gray uppercase mb-8 md:mb-4">Popular Picks</h3>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
     {%- set allowedTags = ['devops', 'misc', 'software engineering', 'talks', 'web development'] -%}
     {%- for tag in collections.tagList | sort -%} {%- if tag | lower in allowedTags -%} {%- set
     tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
     <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} mb-5 border-b-2 border-darkgrey hover:border-avocado font-reading font-normal text-midblack w-full text-base"
+      class="list-group-item{% if tagUrl == page.url %} active{% endif %} mb-5 border-b-2 border-neutralGray hover:border-avocado font-body font-normal text-gray w-full text-base"
       href="{{ tagUrl }}"
       title="{{ tag }}"
     >
@@ -20,7 +20,7 @@
 
     {%- endif -%} {%- endfor -%}
     <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-reading font-normal text-textColor border-b-2 border-darkgrey hover:border-avocado pb-2 mb-5"
+      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-body font-normal text-gray border-b-2 border-neutralGray hover:border-avocado pb-2 mb-5"
       href="/blog/categories/"
       title="All the categories"
     >

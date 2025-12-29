@@ -8,8 +8,6 @@ module.exports = {
     }),
     extend: {
       fontFamily: {
-        leading: ["Source Serif 4", "Source Serif 3", "serif"],
-        reading: ["Source Serif 4", "Source Serif 3", "serif"],
         heading: ["var(--font-heading)"],
         ui: ["var(--font-ui)"],
         body: ["var(--font-body)"],

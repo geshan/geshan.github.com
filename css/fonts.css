@@ -1,28 +1,28 @@
 /* Source Serif 4 */
 @font-face {
   font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4/SourceSerif4-500.woff2") format("woff2");
+  src: url("/fonts/source-sans-4/source-serif-4-latin-500-normal.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4/SourceSerif4-500Italic.woff2") format("woff2");
+  src: url("/fonts/source-sans-4/source-serif-4-latin-500-italic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4/SourceSerif4-600.woff2") format("woff2");
+  src: url("/fonts/source-sans-4/source-serif-4-latin-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4/SourceSerif4-700.woff2") format("woff2");
+  src: url("/fonts/source-sans-4/source-serif-4-latin-700-normal.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -31,21 +31,21 @@
 /* Source Sans 3 */
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3/SourceSans3-400.woff2") format("woff2");
+  src: url("/fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3/SourceSans3-500.woff2") format("woff2");
+  src: url("/fonts/source-sans-3/source-sans-3-latin-500-normal.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3/SourceSans3-600.woff2") format("woff2");
+  src: url("/fonts/source-sans-3/source-sans-3-latin-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -54,28 +54,76 @@
 /* Source Sans Pro */
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro/SourceSansPro-400.woff2") format("woff2");
+  src: url("/fonts/source-sans-pro/source-sans-pro-latin-400-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro/SourceSansPro-600.woff2") format("woff2");
+  src: url("/fonts/source-sans-pro/source-sans-pro-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/source-sans-pro/source-sans-pro-latin-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro/SourceSansPro-700.woff2") format("woff2");
+  src: url("/fonts/source-sans-pro/source-sans-pro-latin-700-normal.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro/SourceSansPro-900.woff2") format("woff2");
+  src: url("/fonts/source-sans-pro/source-sans-pro-latin-900-normal.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nunito */
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito/nunito-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito/nunito-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito/nunito-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito/nunito-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito/nunito-latin-900-normal.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;

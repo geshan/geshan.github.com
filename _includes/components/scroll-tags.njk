@@ -12,27 +12,30 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
     </svg>
   </button>
-  
-  <ul id="scrollDiv" class="flex-1 flex items-center h-12 overflow-x-auto overflow-y-hidden scrollbar-hide min-w-0">
-   <li>
+
+  <ul
+    id="scrollDiv"
+    class="flex-1 flex items-center h-12 overflow-x-auto overflow-y-hidden scrollbar-hide min-w-0"
+  >
+    <li>
       <a
         href="/posts/1/"
-        class="tag mr-4 mb-4  font-medium text-darkAvocado hover:text-darkAvocado  px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase underline  underline-offset-[15px]"
+        class="tag mr-4 mb-4 font-medium text-gray hover:text-darkAvocado px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase underline underline-offset-[15px]"
         >Recent</a
       >
-    </li> 
+    </li>
     {% for tag in collections.tagList | sort %} {% set tagUrl %}/blog/categories/{{ tag | slug }}/{%
     endset %}
     <li>
       <a
         href="{{ tagUrl | url }}"
-        class="tag mr-4 mb-4  font-medium text-darkgrey hover:text-darkAvocado  px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase active:border-b-darkAvocado"
+        class="tag mr-4 mb-4 font-medium text-textColor hover:text-darkAvocado px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase active:border-b-darkAvocado"
         >{{ tag }}</a
       >
     </li>
     {% endfor %}
   </ul>
-    <button
+  <button
     type="button"
     id="rightBtn"
     onclick="scrollRight()"
