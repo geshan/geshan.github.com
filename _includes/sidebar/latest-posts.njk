@@ -15,9 +15,9 @@
           <div id="recent_posts" class="list-group">
             {% for post in posts | reverse %}
             <div class="border-b border-neutralGray px-6 py-10 hover:bg-lightAvocado font-ui">
-              <h3 class="font-ui font-semibold text-2xl text-gray pt-3">
+              <h3 class="font-blogheader font-semibold text-2xl text-gray pt-3">
                 <a
-                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui"
+                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words"
                   href="{{ post.url | url }}"
                   title="{{ post.data.description }}"
                 >
@@ -35,7 +35,7 @@
                   helpers.getReadingTime(post.templateContent) }} min read
                 </time>
               </p>
-              <p class="font-ui text-gray text-xl break-words mt-3">{{ post.data.description }}</p>
+              <p class="font-body text-gray text-xl break-words mt-3">{{ post.data.description }}</p>
             </div>
             {% endfor %}
           </div>

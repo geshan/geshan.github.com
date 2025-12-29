@@ -17,14 +17,14 @@
             >{{ project.title }} ({{ project.year }})</a
           >
         </div>
-        <p class="mt-4 font-ui font-normal text-gray text-xl">{{project.description}}</p>
-        <ul class="mt-2 list-disc list-inside font-ui text-xl">
+        <p class="mt-4 font-body font-normal text-gray text-xl">{{project.description}}</p>
+        <ul class="mt-2 list-disc list-inside font-body text-xl">
           {% for note in project.notes %}
           <li>{{ note }}</li>
           {% endfor %}
         </ul>
         {% if project.extraNotes %}
-        <p class="mt-4 font-ui font-normal text-gray text-xl">{{ project.extraNotes }}</p>
+        <p class="mt-4 font-body font-normal text-gray text-xl">{{ project.extraNotes }}</p>
         {% endif %}
       </div>
 

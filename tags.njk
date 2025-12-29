@@ -22,7 +22,7 @@ permalink: /blog/categories/{{ tag | slug }}/
     <h1 class="md:text-4xl text-3xl font-bold text-gray">Category: {{tag}}</h1>
   </header>
   {% set postslist = collections[ tag ] %} {% include "postslist-h3.njk" %}
-  <p>
+  <p class="font-body text-base">
     See
     <a href="{{ '/blog/categories/' | url }}" class="text-darkAvocado underline">all categories</a>.
   </p>

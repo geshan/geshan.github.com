@@ -13,10 +13,10 @@
   --midgrey: #858393;
   --lightbg: #f5f5f5;
   --font-heading: "Source Serif 4", Georgia, serif;
-  /* --font-ui: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
-  --font-ui: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  /* --font-body: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
+  --font-ui: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  /* --font-ui: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
+  /* --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
+  --font-body: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --font-nav: "inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
