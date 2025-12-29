@@ -8,19 +8,19 @@
     {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
     <div class="border-b border-neutralGray pt-5 pb-3">
       <a
-        class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md md:text-xl pb-3"
+        class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md  pb-3"
         href="{{ post.url | url }}"
         title="{{ post.data.title }}"
       >
         {{ post.data.title }}
       </a>
-      <p class="text-lightGray text-md md:text-xl py-2 font-ui font-medium">
+      <p class="text-lightGray text-md  py-2 font-ui font-medium uppercase">
         {{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{
         helpers.getReadingTime(post.templateContent) }} MIN READ
       </p>
     </div>
     {% endfor %} {% if popularPosts.length == 0 %}
-    <p class="text-lightGray text-md md:text-xl font-ui">No popular picks available yet.</p>
+    <p class="text-lightGray text-md  font-ui">No popular picks available yet.</p>
     {% endif %}
   </div>
 </section>

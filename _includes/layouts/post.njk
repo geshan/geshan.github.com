@@ -34,9 +34,9 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 <div class="progress-bar"></div>
 <div class="max-w-6xl py-3 mx-auto grid-cols-12 grid gap-15 px-4 md:px-0 mb-20">
   <div class="col-span-12">
-    <article class="md:w-full mx-auto mt-4">
-      <header class="page-header text-center mt-8">
-        <h1 class="font-bold font-heading text-gray text-center mb-6">
+    <article class="md:w-full mx-auto">
+      <header class="page-header text-center">
+        <h1 class="font-bold font-heading text-gray  text-center mb-6">
           {{ title }}
         </h1>
         <div
@@ -52,7 +52,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
               />
               <!-- Author Name -->
               <span
-                class="text-gray font-medium font-body text-xl uppercase tracking-wide text-start"
+                class="text-gray font-medium font-body text-md md:text-xl uppercase tracking-wide text-start"
               >
                 {{ metadata.author.name }}
               </span>
@@ -60,28 +60,29 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             <!-- Date -->
             {% include "components/posted-date-time.njk" %}
             <!-- Reading Time -->
-            <span class="text-lightGray font-body font-medium text-xl uppercase">
+            <span class="text-lightGray font-body font-medium text-md md:text-xl uppercase">
               {{ helpers.getReadingTime(content) }} MIN READ
             </span>
           </div>
           <!-- Share Button -->
           <button
             type="button"
+            id="share-button"
             class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded text-lightGray hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
             aria-label="Share this post"
+            onclick="toggleShareIcons(); ga('send', 'event', 'share', 'clickShareOnPost');"
           >
-            <i class="fas fa-share"></i>
+            <i class="fas fa-share" aria-label="Share this post"></i>
           </button>
         </div>
         <!-- Share Icons (Hidden by default) -->
-        <div class="share-icons print:hidden">
+        <div id="share-icons-container" class="share-icons print:hidden hidden" aria-label="Share this post">
           <div class="flex items-center justify-center gap-3">
             {% include "components/share.njk" %}
           </div>
         </div>
       </header>
-      {% include "components/post-tags.njk" %}
-      <div class="entry-content clearfix mt-5 font-body text-xl text-gray">{{ content | safe }}</div>
+      <div class="entry-content clearfix font-body text-xl text-gray">{{ content | safe }}</div>
       <footer class="w-full mt-12 mb-8">
         <nav class="post-navigation border-t border-gray-200 pt-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
