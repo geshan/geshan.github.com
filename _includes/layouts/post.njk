@@ -38,7 +38,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
       <header class="page-header text-center mt-8">
         <h1 class="md:text-6xl text-4xl font-bold text-textColor text-center mb-6">{{ title }}</h1>
         <div
-          class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-4 border-y border-lightbg my-8"
+          class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-2 border-y border-lightbg mt-4"
         >
           <div class="flex items-center justify-start md:gap-4 gap-2 flex-wrap w-2/3">
             <div class="flex justify-start items-center gap-3 md:gap-4">
@@ -72,7 +72,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
           </button>
         </div>
         <!-- Share Icons (Hidden by default) -->
-        <div class="share-icons mt-4">
+        <div class="share-icons">
           <div class="flex items-center justify-center gap-3">
             {% include "components/share.njk" %}
           </div>

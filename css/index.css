@@ -85,6 +85,16 @@ pre {
   margin: 0.5em 0;
   background-color: #f6f6f6;
 }
+
+pre code {
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+}
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
