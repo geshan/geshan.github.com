@@ -184,10 +184,21 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
 }
+pre[class*="language-"],
+pre,
+.highlight {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 0.3em;
+  max-width: 100%;
+}
 pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   border-radius: 0.3em;
 }
 :not(pre) > code[class*="language-"],
@@ -367,14 +378,23 @@ pre[class*="language-"] {
 .highlight pre {
   margin: 0;
 }
+.entry-content {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 .entry-content p {
   font-size: 22px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .entry-content img {
   margin: 30px auto;
   border-radius: 6px;
+  max-width: 100%;
+  height: auto;
 }
 .entry-content ul,
 .entry-content ol {
@@ -473,6 +493,25 @@ th {
 }
 table tr:nth-of-type(even) {
   background-color: rgba(232, 230, 230, 0.942);
+}
+.entry-content {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.entry-content > table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 1em 0;
+  -webkit-overflow-scrolling: touch;
+}
+.entry-content > table thead,
+.entry-content > table tbody,
+.entry-content > table tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
 }
 table {
   margin: 0 auto;
