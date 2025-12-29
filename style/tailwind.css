@@ -437,7 +437,7 @@ pre[class*="language-"] {
 .entry-content ul,
 .entry-content ol {
   padding-left: 25px;
-  font-size: 22px;
+  font-size: 20px;
 }
 .entry-content ul li {
   list-style: disc;
@@ -488,12 +488,12 @@ div > details {
   margin-bottom: 10px;
 }
 div > details > summary {
-  font-size: 22px;
+  font-size: 20px;
   color: #517329;
   cursor: pointer;
 }
 div > details > ul li a {
-  font-size: 22px;
+  font-size: 20px;
   color: #517329;
 }
 #scrollDiv {
