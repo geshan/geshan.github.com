@@ -3,18 +3,15 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
-  "singleQuote": false,
-  "quoteProps": "as-needed",
+  "singleQuote": true,
   "trailingComma": "es5",
   "bracketSpacing": true,
-  "arrowParens": "always",
+  "htmlWhitespaceSensitivity": "ignore",
   "overrides": [
     {
       "files": "*.njk",
       "options": {
-        "parser": "html",
-        "printWidth": 100,
-        "htmlWhitespaceSensitivity": "css"
+        "parser": "html"
       }
     }
   ]

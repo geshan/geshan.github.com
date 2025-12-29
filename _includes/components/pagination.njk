@@ -1,66 +1,66 @@
-<div class="pager-container md:w-7/12 mx-auto mt-4">
-  <ul class="flex content-center justify-center text-lg">
+<div class="mx-auto mt-4 ">
+  <ul class="flex content-center justify-center text-lg p-3 shadow-lg flex-wrap">
     {% if pagination.href.previous %}
-    <li class="previous list-none mr-6 inline-block">
+    <li class="previous list-none md:mr-4 mr-2 inline-block">
       <a
         href="{{ pagination.href.previous }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado border-2 border-transparent transition ease-in-out delay-100 px-3 py-2 pt-2 rounded-md text-center block h-auto"
+        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 px-3 py-2  rounded-md text-center block h-auto font-ui"
       >
-        ←&nbsp;Previous
+        ←&nbsp; <span class="hidden md:inline">Previous</span> 
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber - 1 > 0 %}
-    <li class="list-none mr-6 inline-block">
+    <li class="list-none md:mr-4 mr-2 inline-block">
       <a
         href="/posts/{{ pagination.pageNumber - 1  }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center"
+        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center"
       >
         {{ pagination.pageNumber - 1 }}
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber > 0 %}
-    <li class="list-none mr-6 inline-block">
+    <li class="list-none md:mr-4 mr-2 inline-block">
       <a
         href="/posts/{{ pagination.pageNumber }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center"
+        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center"
       >
         {{ pagination.pageNumber }}
       </a>
     </li>
     {% endif %}
-    <li class="list-none mr-6 inline-block">
+    <li class="list-none md:mr-4 mr-2 inline-block">
       <a
         href="/posts/{{ pagination.pageNumber + 1  }}"
-        class="bg-darkAvocado rounded-full block h-12 w-12 border-darkAvocado border-2 border-transparent pt-2 text-white text-center"
+        class="bg-darkAvocado rounded-lg block p-2 px-3 border-darkAvocado   text-white text-center"
       >
         {{ pagination.pageNumber + 1 }}
       </a>
     </li>
     {% if pagination.pageNumber + 1 < pagination.size %}
-    <li class="list-none mr-6 inline-block">
+    <li class="list-none md:mr-4 mr-2 inline-block">
       <a
         href="/posts/{{ pagination.pageNumber + 2  }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center"
+        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center font-ui"
       >
         {{ pagination.pageNumber + 2 }}
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber + 2 < pagination.size %}
-    <li class="list-none mr-6 inline-block">
+    <li class="list-none md:mr-4 mr-2 inline-block">
       <a
         href="/posts/{{ pagination.pageNumber + 3 }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center"
+        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center font-ui"
       >
         {{ pagination.pageNumber + 3 }}
       </a>
     </li>
     {% endif %} {% if pagination.href.next %}
-    <li class="next list-none mr-6 inline-block">
+    <li class="next list-none md:mr-4 mr-2 inline-block">
       <a
         href="{{ pagination.href.next }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado border-2 border-transparent transition ease-in-out delay-100 px-3 py-2 pt-2 rounded-md text-center block h-auto"
+        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 px-3 py-2  rounded-md text-center block h-auto font-ui"
       >
-        Next&nbsp;→
+        <span class="hidden md:inline">Next</span> &nbsp;→
       </a>
     </li>
     {% endif %}
