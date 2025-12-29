@@ -1,65 +1,90 @@
-[
-  {
-    "quote": "Geshan has been Namshi's Swiss Army knife over the past 6 years: a great team player, solid contributor and adaptive learner. He joined the team and immediately embraced a new way of building software: service-oriented, with automated tests and built to last. His ability to adapt and embrace new challenges has been exceptional, and it was with a calm, receptive spirit that he tackled each and every challenge here at Namshi. Over the past few years, he established himself as one of our top contributors, able to directly discuss approaches and solutions with stakeholders: he operated with a lot of autonomy as one of our most senior engineers, and never encountered major setbacks. There have been multiple instances when, faced with an impending issue, I would rely on Geshan to take over and save the day. I also appreciated the fact that I could have an open, honest conversation with him regarding scope, timelines, and challenges -- there was never a day when I felt I couldn't trust him. Dedicated and devoted to helping his teammates, he definitely left a mark on a few of our other engineers through knowledge-sharing and teamwork. Would definitely recommend him to anyone looking for a solid software engineer with a knack for understanding the business side of the work.",
-    "author": "Alessandro (Alex) Nadalin",
-    "title": "CTO",
-    "company": "Namshi",
-    "isLarge": true
-  },
-  {
-    "quote": "Few people have the opportunity to discover silver bullet solutions on tech—but I did when I worked with Geshan. I had the pleasure of working with him for 6 months at THE ICONIC, collaborating on several project teams. I was particularly impressed by Geshan's ability to handle even the toughest complex issues in our squad. That skill often takes years to develop, but it seemed to come perfectly naturally to him. The seniority and wisdom helped us make our issues easier to understand, it is remarkable. Besides, the way that he's been looking at the problems showed me a new way of looking at the issues. Above all, his communication skills are incredible and I was impressed with his ability to move things forward, even if the issue depends on many things. Any person would be lucky to work with him and he earns my highest recommendation.",
-    "author": "Mohammad (Moe) Torkainfar",
-    "title": "Software Engineer",
-    "company": "THE ICONIC",
-    "isLarge": false
-  },
-  {
-    "quote": "Geshan is an awesome person and engineer as well. He always there when you need him and try to help as much he can. I have worked with him from last 6 months and am really glad to have him in my squad to work together, finding solutions, expressing both ways, and for great suggestions on improving myself both on technical and personal levels. He always comes with great mind set to resolve the problem with effective solutions. He is pretty good at understanding the problem and solving it with step by step approach which i really like and learned along with him. You would never retreat working with Geshan and will always learn something new from him.",
-    "author": "Anupal Sharma",
-    "title": "Senior Software Engineer",
-    "company": "THE ICONIC",
-    "isLarge": false
-  },
-  {
-    "quote": "I had the pleasure of working with Geshan while we were building the most successful fashion e-commerce in the Middle-East. He joined Namshi a year before me and his knowledge about the domain and his great communication skills helped me a lot to get up to speed with the environment. Other than being a good developer, Geshan has been a key role when drafting specifications or testing all the scenarios for a critical feature: he is a very precise and hard worker. I have always admired the fact that he stays very up to date with what goes around in the Tech world and constantly he tries to \"give back\" as much as possible to the community by speaking at conferences and organizing tech events in his home country. I really hope our paths will cross again in the future",
-    "author": "Alessandro (Cirpo) Cinelli",
-    "title": "Head of Backend Engineering",
-    "company": "Namshi",
-    "isLarge": false
-  },
-  {
-    "quote": "Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams. He is very professional in his work and will ensure that the job gets done with quality. His ability and motivation to solve the most challenging technical problems is inspiring. Geshan works hard to ensure his expertise stays relevant and that he's accomplishing his work in the best way possible.",
-    "author": "Max Antonov",
-    "title": "Product Manager",
-    "company": "THE ICONIC",
-    "isLarge": false
-  },
-  {
-    "quote": "Geshan is a hard working individual with serious interest and aptitude for software development. At YoungInnovations, he played crucial role in development of appropriate systems and processes to ensure quality and efficiency in our projects. He was very interested in building capacity of the team. He was ahead of deadlines in most of the cases and paid attention to minute details of the projects he led. He would be an asset to any company he works for.",
-    "author": "Bibhusan Bista",
-    "title": "CEO",
-    "company": "YoungInnovations",
-    "isLarge": false
-  },
-  {
-    "quote": "Geshan is a good programmer with great analytical and decision-making skills. He is no doubt one of the best well-planned and systematic person (as a worker) I have ever encountered. Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and posses great presentational skills.",
-    "author": "Anjan Shrestha",
-    "title": "Senior UX Designer",
-    "company": "YoungInnovations",
-    "isLarge": false
-  },
-  {
-    "quote": "First joined as Senior Developer, Geshan quickly evolved into leading the new established Quality and Maintenance Team which is responsible for assuring quality and solving issues. Geshan is very committed strong developer and has deep knowledge of web technologies. Geshan is blessed with a very humble but caring personality. Working for him was always a joy.",
-    "author": "Halil Koklu",
-    "title": "CTO",
-    "company": "Namshi",
-    "isLarge": false
-  },
-  {
-    "quote": "Geshan is a solid professional, strong communicator and a very nice person. He knows the value of not only developing good solutions but also teaching and inspiring people.",
-    "author": "Ruslan Umyarov",
-    "title": "Software Engineer",
-    "company": "THE ICONIC",
-    "isLarge": false
-  }
-]
+{
+  "mobile": [
+    {
+      "quote": "Geshan has been Namshi's Swiss Army knife over the past 6 years: a great team player, solid contributor and adaptive learner. He joined the team and immediately embraced a new way of building software: service-oriented, with automated tests and built to last. His ability to adapt and embrace new challenges has been exceptional, and it was with a calm, receptive spirit that he tackled each and every challenge here at Namshi. Over the past few years, he established himself as one of our top contributors, able to directly discuss approaches and solutions with stakeholders: he operated with a lot of autonomy as one of our most senior engineers, and never encountered major setbacks. There have been multiple instances when, faced with an impending issue, I would rely on Geshan to take over and save the day. I also appreciated the fact that I could have an open, honest conversation with him regarding scope, timelines, and challenges -- there was never a day when I felt I couldn't trust him. Dedicated and devoted to helping his teammates, he definitely left a mark on a few of our other engineers through knowledge-sharing and teamwork. Would definitely recommend him to anyone looking for a solid software engineer with a knack for understanding the business side of the work.",
+      "author": "Alessandro (Alex) Nadalin",
+      "title": "CTO",
+      "company": "Namshi",
+      "isLarge": true
+    },
+    {
+      "quote": "Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams. He is very professional in his work and will ensure that the job gets done with quality. His ability and motivation to solve the most challenging technical problems is inspiring. Geshan works hard to ensure his expertise stays relevant and that he's accomplishing his work in the best way possible.",
+      "author": "Max Antonov",
+      "title": "Product Manager",
+      "company": "THE ICONIC",
+      "isLarge": false
+    },
+    {
+      "quote": "Geshan is a hard working individual with serious interest and aptitude for software development. At YoungInnovations, he played crucial role in development of appropriate systems and processes to ensure quality and efficiency in our projects. He was very interested in building capacity of the team. He was ahead of deadlines in most of the cases and paid attention to minute details of the projects he led. He would be an asset to any company he works for.",
+      "author": "Bibhusan Bista",
+      "title": "CEO",
+      "company": "YoungInnovations",
+      "isLarge": false
+    }
+  ],
+  "laptop": [
+    {
+      "quote": "Geshan has been Namshi's Swiss Army knife over the past 6 years: a great team player, solid contributor and adaptive learner. He joined the team and immediately embraced a new way of building software: service-oriented, with automated tests and built to last. His ability to adapt and embrace new challenges has been exceptional, and it was with a calm, receptive spirit that he tackled each and every challenge here at Namshi. Over the past few years, he established himself as one of our top contributors, able to directly discuss approaches and solutions with stakeholders: he operated with a lot of autonomy as one of our most senior engineers, and never encountered major setbacks. There have been multiple instances when, faced with an impending issue, I would rely on Geshan to take over and save the day. I also appreciated the fact that I could have an open, honest conversation with him regarding scope, timelines, and challenges -- there was never a day when I felt I couldn't trust him. Dedicated and devoted to helping his teammates, he definitely left a mark on a few of our other engineers through knowledge-sharing and teamwork. Would definitely recommend him to anyone looking for a solid software engineer with a knack for understanding the business side of the work.",
+      "author": "Alessandro (Alex) Nadalin",
+      "title": "CTO",
+      "company": "Namshi",
+      "isLarge": true
+    },
+    {
+      "quote": "Few people have the opportunity to discover silver bullet solutions on tech—but I did when I worked with Geshan. I had the pleasure of working with him for 6 months at THE ICONIC, collaborating on several project teams. I was particularly impressed by Geshan's ability to handle even the toughest complex issues in our squad. That skill often takes years to develop, but it seemed to come perfectly naturally to him. The seniority and wisdom helped us make our issues easier to understand, it is remarkable. Besides, the way that he's been looking at the problems showed me a new way of looking at the issues. Above all, his communication skills are incredible and I was impressed with his ability to move things forward, even if the issue depends on many things. Any person would be lucky to work with him and he earns my highest recommendation.",
+      "author": "Mohammad (Moe) Torkainfar",
+      "title": "Software Engineer",
+      "company": "THE ICONIC",
+      "isLarge": false
+    },
+    {
+      "quote": "Geshan is an awesome person and engineer as well. He always there when you need him and try to help as much he can. I have worked with him from last 6 months and am really glad to have him in my squad to work together, finding solutions, expressing both ways, and for great suggestions on improving myself both on technical and personal levels. He always comes with great mind set to resolve the problem with effective solutions. He is pretty good at understanding the problem and solving it with step by step approach which i really like and learned along with him. You would never retreat working with Geshan and will always learn something new from him.",
+      "author": "Anupal Sharma",
+      "title": "Senior Software Engineer",
+      "company": "THE ICONIC",
+      "isLarge": false
+    },
+    {
+      "quote": "I had the pleasure of working with Geshan while we were building the most successful fashion e-commerce in the Middle-East. He joined Namshi a year before me and his knowledge about the domain and his great communication skills helped me a lot to get up to speed with the environment. Other than being a good developer, Geshan has been a key role when drafting specifications or testing all the scenarios for a critical feature: he is a very precise and hard worker. I have always admired the fact that he stays very up to date with what goes around in the Tech world and constantly he tries to \"give back\" as much as possible to the community by speaking at conferences and organizing tech events in his home country. I really hope our paths will cross again in the future",
+      "author": "Alessandro (Cirpo) Cinelli",
+      "title": "Head of Backend Engineering",
+      "company": "Namshi",
+      "isLarge": false
+    },
+    {
+      "quote": "Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams. He is very professional in his work and will ensure that the job gets done with quality. His ability and motivation to solve the most challenging technical problems is inspiring. Geshan works hard to ensure his expertise stays relevant and that he's accomplishing his work in the best way possible.",
+      "author": "Max Antonov",
+      "title": "Product Manager",
+      "company": "THE ICONIC",
+      "isLarge": false
+    },
+    {
+      "quote": "Geshan is a hard working individual with serious interest and aptitude for software development. At YoungInnovations, he played crucial role in development of appropriate systems and processes to ensure quality and efficiency in our projects. He was very interested in building capacity of the team. He was ahead of deadlines in most of the cases and paid attention to minute details of the projects he led. He would be an asset to any company he works for.",
+      "author": "Bibhusan Bista",
+      "title": "CEO",
+      "company": "YoungInnovations",
+      "isLarge": false
+    },
+    {
+      "quote": "Geshan is a good programmer with great analytical and decision-making skills. He is no doubt one of the best well-planned and systematic person (as a worker) I have ever encountered. Always ready to give out a helping hand (be it coding or any other decision-making issues) and never behind in experimenting with new technologies and methodologies. In addition, he is a good listener/observer and posses great presentational skills.",
+      "author": "Anjan Shrestha",
+      "title": "Senior UX Designer",
+      "company": "YoungInnovations",
+      "isLarge": false
+    },
+    {
+      "quote": "First joined as Senior Developer, Geshan quickly evolved into leading the new established Quality and Maintenance Team which is responsible for assuring quality and solving issues. Geshan is very committed strong developer and has deep knowledge of web technologies. Geshan is blessed with a very humble but caring personality. Working for him was always a joy.",
+      "author": "Halil Koklu",
+      "title": "CTO",
+      "company": "Namshi",
+      "isLarge": false
+    },
+    {
+      "quote": "Geshan is a solid professional, strong communicator and a very nice person. He knows the value of not only developing good solutions but also teaching and inspiring people.",
+      "author": "Ruslan Umyarov",
+      "title": "Software Engineer",
+      "company": "THE ICONIC",
+      "isLarge": false
+    }
+  ]
+}
