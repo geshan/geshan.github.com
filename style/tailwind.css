@@ -587,6 +587,13 @@ table {
   }
 }
 
+/* Print Styles */
+@media print {
+  .share-icons {
+    display: none !important;
+  }
+}
+
 /* Responsive Google Slides, Vimeo, Twitch */
 iframe[src*="docs.google.com"],
 iframe[src*="player.vimeo.com"],

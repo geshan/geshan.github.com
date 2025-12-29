@@ -14,7 +14,7 @@ eleventyComputed:
 <div class="w-full">
 <div class="w-full md:max-w-6xl py-3 px-4 mx-auto md:grid md:grid-cols-12 gap-16 mt-4">
   <div class="col-span-12 md:col-span-8">
-    <div class="w-full px-4 sm:px-6 md:px-0 mx-auto mt-4 sm:mt-6 md:mt-0 mb-6 sm:mb-8 md:mb-8">
+    <div class="w-full px-0 sm:px-6 md:px-0 mx-auto mt-4 sm:mt-6 md:mt-0 ">
       <h2
         class="font-heading text-3xl sm:text-4xl md:text-5xl text-gray mb-3 sm:mb-4 md:mb-6 leading-tight"
       >
@@ -26,16 +26,10 @@ eleventyComputed:
     length %} {% include "postslist-excerpt.njk" %} {% include "components/pagination.njk" %}
   </div>
   <div
-    class="col-span-12 md:col-span-4 w-full md:h-screen md:relative flex flex-col items-center md:items-start md:ml-6"
+    class="col-span-12 md:col-span-4 w-full md:h-screen md:relative flex flex-col items-center md:items-start md:ml-6 mt-8 md:mt-0"
   >
     {% include "sidebar/popular-picks-posts.njk" %}
-    <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-body font-semibold text-gray border-b-2 border-neutralGray hover:border-avocado pb-2 mb-5 uppercase font-body text-gray tracking-wide"
-      href="/blog/categories/"
-      title="All the categories"
-    >
-      <span class="badge"></span>Categories</a
-    >
+   
   </div>
 </div>
 {% include "components/subscribe-post-page.njk" %}
