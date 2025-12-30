@@ -9,7 +9,7 @@
       </h3>
       <p class="text-lightGray text-md md:text-xl font-medium uppercase my-3">
         <span class="glyphicon glyphicon-calendar"> </span>
-        {% set date = post.date %} {% include "components/posted-date-time.njk" %} .
+        {% set date = post.date %} {% include "components/posted-date-time.njk" %} &nbsp;&middot;&nbsp;
         <span>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
       </p>
     </header>
