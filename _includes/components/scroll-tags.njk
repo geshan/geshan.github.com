@@ -1,5 +1,5 @@
 <div
-  class="w-full flex flex-row items-center justify-center mb-6 relative gap-4 font-ui border-b border-avocado"
+  class="w-full flex flex-row items-center justify-center mb-2 relative gap-4 font-ui border-b border-avocado"
 >
   <button
     type="button"
@@ -20,7 +20,7 @@
     <li>
       <a
         href="/posts/1/"
-        class="tag mr-4 mb-4 font-medium text-gray hover:text-darkAvocado px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase underline underline-offset-[15px]"
+        class="tag mr-1 md:mr-4 font-medium text-darkAvocado hover:text-darkAvocado px-2 md:px-3 py-1 text-md md:text-xl border-darkAvocado cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase underline underline-offset-[17px]"
         >Recent</a
       >
     </li>
@@ -29,7 +29,7 @@
     <li>
       <a
         href="{{ tagUrl | url }}"
-        class="tag mr-4 mb-4 font-medium text-textColor hover:text-darkAvocado px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase active:border-b-darkAvocado"
+        class="tag mr-1 md:mr-4 font-medium text-textColor hover:text-darkAvocado px-2 md:px-3 py-1 text-md md:text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase active:border-b-darkAvocado"
         >{{ tag }}</a
       >
     </li>
