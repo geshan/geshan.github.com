@@ -22,7 +22,7 @@ eleventyComputed:
       </h2>
       {% include 'components/scroll-tags.njk' %}
     </div>
-    {% set postslist = pagination.items | reverse %} {% set postslistCounter = collections.posts |
+    {% set postslist = pagination.items | reverse %}  {% set postslistCounter = collections.posts |
     length %} {% include "postslist-excerpt.njk" %} {% include "components/pagination.njk" %}
   </div>
   <div
