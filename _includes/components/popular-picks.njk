@@ -20,6 +20,12 @@
       </p>
     </article>
     {% endfor %}
+    {% if postslist.length == 0 %}
+    <div class="py-4 border-b border-avocado pb-4 flex flex-col gap-2 font-ui">
+      <p class="text-lg text-gray">No popular picks found.</p>
+      <p class="text-lg text-lightGray">See all posts <a href="/posts/1" class="text-darkAvocado underline hover:underline"> here.</a></p>
+    </div>
+    {% endif %}
   </div>
 </section>
 {% endif %}

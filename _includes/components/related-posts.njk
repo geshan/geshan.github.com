@@ -13,4 +13,10 @@
         {% endfor %}
     </div>
     {% endif %}
+    {% if relatedTagPosts.length == 0 %}
+   <div class="py-4 border-b border-avocado pb-4 flex flex-col gap-2 font-ui">
+    <p class="text-lg text-gray">No related blogs found.</p>
+    <p class="text-lg text-lightGray">See all blogs <a href="/posts/1" class="text-darkAvocado underline hover:underline"> here.</a></p>
+   </div>
+    {% endif %}
 </div>

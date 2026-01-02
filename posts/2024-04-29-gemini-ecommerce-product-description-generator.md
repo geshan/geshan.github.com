@@ -4,10 +4,7 @@ title: "How to create an e-commerce product description generator using Gemini a
 date: 2024-04-29T21:54:47.000+11:00
 comments: true
 tags:
-- AI
-- Gen AI
-- GCP
-- Gemini
+
 cover: "/images/e-commerce-product-description-generator/01e-commerce-product-description-generator.jpg"
 pagetitle: "How to create an e-commerce product description generator using Gemini and Vertex AI"
 description: "Learn how to create a useful e-commerce product description generator using Gemini  Pro API over Vertex AI on GCP with Python code example"
