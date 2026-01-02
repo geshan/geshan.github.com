@@ -76,6 +76,51 @@ module.exports = function (eleventyConfig) {
       .replace(/\n/g, "");
   });
 
+  eleventyConfig.addFilter('relatedPosts', (arr, url) => {
+    if (!arr) return [];
+
+    // Find the current post
+    const currentPost = arr.find((post) => post.url === url);
+    if (!currentPost) return [];
+
+    // Get current post's tags (excluding 'posts' tag)
+    const currentTags = (currentPost.data.tags || []).filter((tag) => tag !== 'posts');
+    if (currentTags.length === 0) return [];
+
+    // Find posts with matching tags
+    const relatedPosts = arr
+      .filter((post) => {
+        // Exclude the current post
+        if (post.url === url) return false;
+
+        // Get post tags (excluding 'posts' tag)
+        const postTags = (post.data.tags || []).filter((tag) => tag !== 'posts');
+
+        // Check if there's at least one matching tag
+        return postTags.some((tag) => currentTags.includes(tag));
+      })
+      .map((post) => {
+        // Calculate relevance score (number of shared tags)
+        const postTags = (post.data.tags || []).filter((tag) => tag !== 'posts');
+        const sharedTags = postTags.filter((tag) => currentTags.includes(tag));
+        return {
+          post,
+          relevance: sharedTags.length,
+        };
+      })
+      .sort((a, b) => {
+        // Sort by relevance (most shared tags first), then by date (newest first)
+        if (b.relevance !== a.relevance) {
+          return b.relevance - a.relevance;
+        }
+        return b.date - a.date;
+      })
+      .map((item) => item.post)
+      .slice(0, 4); // Return top 2 related posts
+
+    return relatedPosts;
+  });
+
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
   eleventyConfig.addCollection("posts", function (collection) {

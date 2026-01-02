@@ -81,7 +81,8 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             {% include "components/share.njk" %}
           </div>
         </div>
-      </header>
+      </header> 
+    {% include "components/post-tags.njk" %}
       <div class="entry-content clearfix font-body text-xl text-gray">{{ content | safe }}</div>
       <footer class="w-full mt-12 mb-8">
         <nav class="post-navigation border-t border-gray-200 pt-8">
