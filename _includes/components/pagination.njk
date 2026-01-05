@@ -1,64 +1,72 @@
 <div class="mx-auto my-4 ">
-  <ul class="flex content-center justify-center text-lg p-3 shadow-lg flex-wrap">
+  <ul class="flex content-center justify-center text-xl p-3 shadow-lg flex-wrap">
     {% if pagination.href.previous %}
-    <li class="previous list-none md:mr-4 mr-2 inline-block">
+    <li class="previous list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="{{ pagination.href.previous }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 px-3 py-2  rounded-md text-center block h-auto font-ui"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui text-xl"
       >
         ←&nbsp; <span class="hidden md:inline">Previous</span> 
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber - 1 > 0 %}
-    <li class="list-none md:mr-4 mr-2 inline-block">
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber - 1  }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado block p-2 rounded-md px-4  transition ease-in-out delay-100  text-center text-xl"
       >
         {{ pagination.pageNumber - 1 }}
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber > 0 %}
-    <li class="list-none md:mr-4 mr-2 inline-block">
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado block p-2 rounded-md px-4  transition ease-in-out delay-100  text-center text-xl"
       >
         {{ pagination.pageNumber }}
       </a>
     </li>
     {% endif %}
-    <li class="list-none md:mr-4 mr-2 inline-block">
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber + 1  }}"
-        class="bg-darkAvocado rounded-lg block p-2 px-3 border-darkAvocado   text-white text-center"
+        class="bg-darkAvocado block p-2 rounded-md px-4 border-darkAvocado   text-white text-center text-xl"
       >
         {{ pagination.pageNumber + 1 }}
       </a>
     </li>
     {% if pagination.pageNumber + 1 < pagination.size %}
-    <li class="list-none md:mr-4 mr-2 inline-block">
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber + 2  }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center font-ui"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
       >
         {{ pagination.pageNumber + 2 }}
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber + 2 < pagination.size %}
-    <li class="list-none md:mr-4 mr-2 inline-block">
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber + 3 }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-lg block p-2 px-3  transition ease-in-out delay-100  text-center font-ui"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
       >
         {{ pagination.pageNumber + 3 }}
       </a>
     </li>
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber + 4 }}"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
+      >
+        {{ pagination.pageNumber + 4 }}
+      </a>
+    </li>
     {% endif %} {% if pagination.href.next %}
-    <li class="next list-none md:mr-4 mr-2 inline-block">
+    <li class="next list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="{{ pagination.href.next }}"
-        class="text-darkAvocado bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 px-3 py-2  rounded-md text-center block h-auto font-ui"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui"
       >
         <span class="hidden md:inline">Next</span> &nbsp;→
       </a>

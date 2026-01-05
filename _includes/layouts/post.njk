@@ -112,18 +112,24 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
           <!-- Share Button -->
           <button
             type="button"
-            id="share-button"
+            id="share-button-bottom"
             class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded text-lightGray hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
             aria-label="Share this post"
-            onclick="toggleShareIcons(); ga('send', 'event', 'share', 'clickShareOnPost');"
+            onclick="toggleShareIconsBottom(); ga('send', 'event', 'share', 'clickShareOnPost');"
           >
             <img src="/images/shareIcon.svg" alt="Share this post" class="w-6 h-6">
           </button>
+        </div>
+        <!-- Share Icons (Hidden by default) -->
+        <div id="share-icons-container-bottom" class="share-icons-bottom print:hidden hidden mx-auto" aria-label="Share this post">
+          <div class="w-full flex items-center justify-center mx-auto gap-3">
+            {% include "components/share.njk" %}
+          </div>
         </div>
     </article> {% include "components/post-tags.njk" %}
     <section class="md:w-full mx-auto mt-4">{% include "components/disqus.njk" %}</section>
     
   </div>
 </div>
-<section class="md:w-full mx-auto mt-4 bg-lightAvocado p-4 rounded-lg">{% include "components/related-posts.njk" %}</section>
+<section class="md:w-full mx-auto mt-4 bg-lightAvocado p-4 rounded-lg pb-8">{% include "components/related-posts.njk" %}</section>
 {% include "components/subscribe-nl-new.njk" %}

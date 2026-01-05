@@ -145,16 +145,7 @@ p > a {
   color: #517329;
 }
 
-/**share things */
-span.share-icons {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  gap: 6px;
-  position: fixed;
-  left: 10px;
-  top: 320px;
-}
+
 img.sharing-common {
   background-color: #f5f5f5;
   height: 42px;
@@ -563,14 +554,14 @@ table {
   z-index: 1;
 }
 
-/* Mobile CSS */
-@media only screen and (max-width: 769px) {
+
   span.share-icons {
     display: flex;
     flex-direction: row;
     width: fit-content;
     position: initial;
     margin-top: 16px;
+    gap: 10px;
   }
   .homepage-icons img {
     filter: none;
@@ -579,7 +570,7 @@ table {
   blockquote > p:first-child:before {
     left: 5px;
   }
-}
+
 
 /* Print Styles */
 @media print {

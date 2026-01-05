@@ -28,3 +28,4 @@ jobs:
           PUBLISH_DIR: _site
           PUBLISH_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GA_API_ENDPOINT: ${{ secrets.GA_API_ENDPOINT }}

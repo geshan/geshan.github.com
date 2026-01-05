@@ -29,13 +29,8 @@ eleventyComputed:
     class="col-span-12 md:col-span-4 w-full md:h-screen md:relative flex flex-col items-center md:items-start md:ml-6 mt-8 md:mt-0"
   >
     {% include "sidebar/popular-picks-posts.njk" %} 
-    <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-body font-semibold text-gray border-b-2 border-neutralGray hover:border-avocado pb-2 mb-5 uppercase  tracking-wide"
-      href="/blog/categories/"
-      title="All the categories"
-    >
-      <span class="badge"></span>Categories</a
-    >
+    {% include "sidebar/categories.njk" %} 
+
   </div>
 </div>
 {% include "components/subscribe-nl-new.njk" %}
