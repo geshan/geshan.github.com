@@ -7,10 +7,10 @@
     </h1>
 
     <!-- Mobile Testimonials -->
-    <div class="grid grid-cols-1 md:hidden items-start gap-6">
+    <div class="grid  md:grid-cols-2 grid-cols-1 items-start gap-6">
       {% for testimonial in honestTakes.mobile %}
       <div
-        class="bg-white rounded-2xl shadow-md font-body relative overflow-hidden"
+        class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md font-body relative overflow-hidden"
       >
         <p
           class="text-md md:text-xl text-black font-regular mb-6 px-8 py-8"
@@ -36,33 +36,6 @@
       {% endfor %}
     </div>
 
-    <!-- Laptop/Desktop Testimonials -->
-    <div class="hidden md:grid grid-cols-2 items-start gap-6">
-      {% for testimonial in honestTakes.laptop %}
-      <div
-        class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md font-body relative overflow-hidden py-4"
-      >
-        <p
-          class="text-xl text-black font-regular mb-6 px-12 py-8"
-        >
-          {{ testimonial.quote }}
-        </p>
-        <div class="relative z-10">
-          <img src="/images/quote.svg" alt="Quote left" class="w-10 h-10 absolute -bottom-1 left-6">
-        </div>
-        <div
-          class="flex items-center justify-between border-t border-neutralGray pt-4 p-12 py-4 text-textColor text-lg z-50 overflow-hidden"
-        >
-          <div class="text-xl">
-            <p class="font-semibold text-gray">{{ testimonial.author }}</p>
-            <p class="text-lightGray font-regular">{{ testimonial.title }}</p>
-          </div>
-          <div>
-            <p class="text-lightGray font-bold uppercase text-xl">{{ testimonial.company }}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+    
   </div>
 </section>

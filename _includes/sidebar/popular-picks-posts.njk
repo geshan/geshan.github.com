@@ -1,8 +1,8 @@
 <section class="panel panel-default mb-6">
   <div class="panel-heading mb-2">
-    <h5 class="panel-title font-semibold uppercase md:mb-4 font-heading text-gray">
+    <p class="panel-title font-semibold uppercase md:mb-4 font-heading text-gray">
       Popular Picks
-    </h5>
+    </p>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
     {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
