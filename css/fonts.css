@@ -61,13 +61,6 @@
 }
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/fonts/source-sans-pro/source-sans-pro-latin-500-normal.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Sans Pro";
   src: url("/fonts/source-sans-pro/source-sans-pro-latin-600-normal.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;

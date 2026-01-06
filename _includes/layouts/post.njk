@@ -52,7 +52,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
               />
               <!-- Author Name -->
               <span
-                class="text-gray font-medium font-body text-md md:text-xl uppercase tracking-wide text-start"
+                class="text-gray font-medium font-ui text-md md:text-xl uppercase tracking-wide text-start"
               >
                 {{ metadata.author.name }}
               </span>
@@ -60,7 +60,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             <!-- Date -->
             {% include "components/posted-date-time.njk" %}
             <!-- Reading Time -->
-            <span class="text-lightGray font-body font-medium text-md md:text-xl uppercase">
+            <span class="text-lightGray font-ui font-medium text-md md:text-xl uppercase">
               {{ helpers.getReadingTime(content) }} MIN READ
             </span>
           </div>
@@ -97,7 +97,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
               />
               <!-- Author Name -->
               <span
-                class="text-gray font-medium font-body text-md md:text-xl uppercase tracking-wide text-start"
+                class="text-gray font-medium font-ui text-md md:text-xl uppercase tracking-wide text-start"
               >
                 {{ metadata.author.name }}
               </span>
@@ -105,7 +105,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             <!-- Date -->
             {% include "components/posted-date-time.njk" %}
             <!-- Reading Time -->
-            <span class="text-lightGray font-body font-medium text-md md:text-xl uppercase">
+            <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
               {{ helpers.getReadingTime(content) }} MIN READ
             </span>
           </div>
