@@ -14,13 +14,13 @@
       >
         {{ post.data.title }}
       </a>
-      <p class="text-lightGray text-md  py-2 font-ui font-medium uppercase">
+      <p class="text-textColor text-md  py-2 font-ui font-medium uppercase">
         {{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{
         helpers.getReadingTime(post.templateContent) }} MIN READ
       </p>
     </div>
     {% endfor %} {% if popularPosts.length == 0 %}
-    <p class="text-lightGray text-md  font-ui">No popular picks available yet.</p>
+    <p class="text-textColor text-md  font-ui">No popular picks available yet.</p>
     {% endif %}
   </div>
 </section>
