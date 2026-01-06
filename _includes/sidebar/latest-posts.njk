@@ -15,7 +15,7 @@
           <div id="recent_posts" class="list-group">
             {% for post in posts | reverse %}
             <div class="border-b border-neutralGray px-4 py-4 font-ui{% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
-              <h3 class="font-ui font-semibold text-xl md:text-2xl text-gray pt-3">
+              <h2 class="font-ui font-semibold text-xl md:text-2xl text-gray pt-3">
                 <a
                   class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui hover:text-darkAvocado"
                   href="{{ post.url | url }}"
@@ -25,7 +25,7 @@
                   <code> {{ post.url }} </code>
                   {% endif %}
                 </a>
-              </h3>
+              </h2>
               <p class="w-full text-xl text-textColor my-3 font-medium">
                 <time
                   class="uppercase whitespace-normal break-words"
