@@ -14,10 +14,11 @@
   </head>
   <body class="overflow-x-hidden font-leading flex flex-col min-h-screen">
     {%- include "components/gtm.njk" -%}
-    {%- include "components/header.njk" -%}
-    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-    <div id="wrap" class="flex-grow md:px-0">
-      <div id="main">
+    <header role="banner">
+      {%- include "components/header.njk" -%}
+    </header>
+    
+      <main id="wrap" role="main" class="flex-grow md:px-0">
         <div id="content">
           <div class="row">
             <div>
@@ -31,9 +32,11 @@
             </div>           
         </div><!-- div class row close -->
       </div><!-- div id content close -->
-      </div>
-    </div><!-- wrap close -->
-    {% include "footer/footer.njk" %}
+      </main>
+    
+    <footer role="contentinfo">
+      {% include "footer/footer.njk" %}
+    </footer>
     <!-- Current page: {{ page.url | url }} -->
     <script src="/js/all.min.js" defer></script>
   </body>
