@@ -6,9 +6,9 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {% for post in relatedTagPosts %}
         <div class="py-4 border-b border-avocado pb-4 flex flex-col gap-2 font-ui">
-            <a href="{{ post.url }}" class="text-xl font-medium text-textColor">{{ post.data.title }}</a>
-            <time class="text-sm text-lightGray uppercase">{{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{ helpers.getReadingTime(post.templateContent) }} min read</time> 
-            <p class="text-sm text-lightGray">{{ post.data.description }}</p>
+            <a href="{{ post.url }}" class="font-semibold font-ui text-gray text-xl md:text-2xl">{{ post.data.title }}</a>
+            <time class="font-medium text-xl text-textColor uppercase font-ui">{{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{ helpers.getReadingTime(post.templateContent) }} min read</time> 
+            <p class="text-xl text-gray font-ui">{{ post.data.description }}</p>
         </div>
         {% endfor %}
     </div>
