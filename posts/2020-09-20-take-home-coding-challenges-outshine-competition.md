@@ -6,6 +6,7 @@ comments: true
 tags:
 - Software Engineering
 - Jobs
+- Job Search
 - Misc
 cover: "/images/take-home-coding-challenges/01take-home-coding-challenges.jpg"
 pagetitle: 'Take-home coding challenges: how to outshine your competition'
