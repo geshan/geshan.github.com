@@ -1,34 +1,64 @@
 <!-- Stay Connected Section -->
-<section class="bg-avocado py-12 md:py-18 relative">
-  <div class="max-w-6xl mx-auto px-4 md:px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative">
+<section class="bg-avocado md:py-0 py-12 px-4">
+  <div class="max-w-6xl mx-auto">
+    <!-- Mobile Layout: Stacked (no image) -->
+    <div class="md:hidden">
+      <h2 class="mb-4 text-3xl font-heading font-medium text-textColor break-words">
+        <span class="text-textColor italic">Stay</span><span class="text-blackText"> Connected</span>
+      </h2>
+      <p class="text-base text-blackText font-body font-regular mb-6">
+        Follow me on LinkedIn for new posts, engineering insights, and tech takes — straight from
+        the trenches.
+      </p>
+      <a href="https://www.linkedin.com/in/geshan" target="_blank" rel="noopener noreferrer"
+        class="inline-block bg-darkAvocado text-base text-white px-6 py-3 rounded-lg font-body font-regular hover:opacity-90 transition-opacity w-full text-center">
+        Follow on LinkedIn &nbsp;→
+      </a>
+    </div>
+
+    <!-- Tablet Layout: Image right, text/button left -->
+    <div class="hidden md:grid lg:hidden grid-cols-3 gap-8 items-center">
+      <!-- Left Content: Text and Button -->
+      <div class="z-10 col-span-2">
+        <h2 class="mb-4 text-2xl md:text-4xl font-heading font-medium text-textColor break-words">
+          <span class="text-textColor italic">Stay</span><span class="text-blackText"> Connected</span>
+        </h2>
+        <p class="text-xl text-blackText font-body font-regular mb-6">
+          Follow me on LinkedIn for new posts, engineering insights, and tech takes — straight from
+          the trenches.
+        </p>
+        <a href="https://www.linkedin.com/in/geshan" target="_blank" rel="noopener noreferrer"
+          class="inline-block bg-darkAvocado text-xl text-white px-6 py-3 rounded-lg font-body font-regular hover:opacity-90 transition-opacity">
+          Follow on LinkedIn &nbsp;→
+        </a>
+      </div>
+
+      <!-- Right Content: Image -->
+      <div class="flex items-center justify-end col-span-1">
+        <img class="w-32 h-auto" src="/images/theme/new_logo.svg" alt="Geshan" />
+      </div>
+    </div>
+
+    <!-- Desktop Layout: 2 Columns -->
+    <div class="hidden lg:grid grid-cols-2 gap-8 lg:gap-12 items-center justify-between h-full">
       <!-- Left Content -->
       <div class="z-10">
         <h2 class="mb-4 text-2xl md:text-4xl font-heading font-medium text-textColor break-words">
-          <span class="text-textColor italic">Stay</span
-          ><span class="text-blackText"> Connected</span>
+          <span class="text-textColor italic">Stay</span><span class="text-blackText"> Connected</span>
         </h2>
-        <p class="text-base text-xl text-blackText font-body font-regular mb-6">
+        <p class="text-xl text-blackText font-body font-regular mb-6">
           Follow me on LinkedIn for new posts, engineering insights, and tech takes — straight from
           the trenches.
         </p>
       </div>
 
-      <div class="flex justify-start w-full md:w-auto">
-        <a
-          href="https://www.linkedin.com/in/geshan"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block bg-darkAvocado text-xl text-white px-6 py-3 rounded-lg font-body font-regular hover:opacity-90 transition-opacity w-full md:w-auto text-center md:text-left"
-        >
+      <div class="flex items-center gap-12 w-full md:w-auto justify-end self-end">
+        <img class="w-16 md:w-32 h-auto" src="/images/theme/new_logo.svg" alt="Geshan" />
+        <a href="https://www.linkedin.com/in/geshan" target="_blank" rel="noopener noreferrer"
+          class="inline-block bg-darkAvocado text-xl text-white px-6 py-3 rounded-lg font-body font-regular hover:opacity-90 transition-opacity w-full md:w-auto text-center md:text-left">
           Follow on LinkedIn &nbsp;→
         </a>
       </div>
     </div>
-    <img
-      class="absolute right-0 -top-7 md:-top-16 w-16 h-16 md:w-36 md:h-36"
-      src="/images/theme/geshan.svg"
-      alt="Geshan"
-    />
   </div>
 </section>
