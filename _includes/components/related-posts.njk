@@ -3,7 +3,7 @@
     {% set sortedPosts = collections.latestPosts | reverse %}
     {% set relatedTagPosts = sortedPosts | relatedPosts(page.url) %}
     {% if relatedTagPosts.length > 0 %}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {% for post in relatedTagPosts %}
         <div class="py-4 border-b border-avocado pb-4 flex flex-col gap-2 font-ui">
             <a href="{{ post.url }}" class="font-semibold font-ui text-gray text-xl md:text-2xl">{{ post.data.title }}</a>
