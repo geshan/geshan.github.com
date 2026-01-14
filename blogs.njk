@@ -12,26 +12,29 @@ eleventyComputed:
   description: "More posts on Geshan's Blog, page {{ pagination.pageNumber + 1  }} among many pages"
 ---
 <div class="w-full">
-<div class="w-full md:max-w-6xl py-3 px-4 md:px-0 mx-auto md:grid md:grid-cols-12 gap-16 mt-4">
-  <div class="col-span-12 md:col-span-8">
-    <div class="w-full px-0 sm:px-6 md:px-0 mx-auto mt-4 sm:mt-6 md:mt-0 ">
-      <h2
-        class="font-heading text-3xl sm:text-4xl md:text-5xl text-gray mb-3 sm:mb-4 md:mb-6 leading-tight"
-      >
-        Posts
-      </h2>
-      {% include 'components/scroll-tags.njk' %}
+  <div class="w-full md:max-w-6xl py-3 px-4 md:px-0 mx-auto md:grid 
+  grid-cols-12 mt-4">
+    <div class="md:col-span-8 border-b md:border-r border-neutralGray md:pr-10 
+    pr-0">
+      <div class="w-full px-0 sm:px-6 md:px-0 mx-auto mt-4 sm:mt-6 md:mt-0">
+        <h2
+          class="font-heading text-3xl sm:text-4xl md:text-5xl text-gray mb-3 
+          sm:mb-4 md:mb-6 leading-tight font-medium"
+        > 
+          Posts
+        </h2>
+        {% include 'components/scroll-tags.njk' %}
+      </div>
+      {% set postslist = pagination.items | reverse %} {% set postslistCounter 
+      = collections.posts |
+      length %} 
+      {% include "postslist-excerpt.njk" %} 
+      {% include "components/pagination.njk" %}
     </div>
-    {% set postslist = pagination.items | reverse %}  {% set postslistCounter = collections.posts |
-    length %} {% include "postslist-excerpt.njk" %} {% include "components/pagination.njk" %}
+    <div class="md:col-span-4 w-full md:relative flex flex-col items-center md:items-start mt-8 md:mt-0 md:pl-10 pb-10">
+      {% include "sidebar/popular-picks-posts.njk" %}
+      {% include "sidebar/categories.njk" %}
+    </div>
   </div>
-  <div
-    class="col-span-12 md:col-span-4 w-full md:h-screen md:relative flex flex-col items-center md:items-start md:ml-6 mt-8 md:mt-0"
-  >
-    {% include "sidebar/popular-picks-posts.njk" %} 
-    {% include "sidebar/categories.njk" %} 
-
-  </div>
-</div>
-{% include "components/subscribe-nl-new.njk" %}
+  {% include "components/subscribe-nl-new.njk" %}
 </div>

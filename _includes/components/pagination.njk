@@ -1,14 +1,15 @@
 <div class="mx-auto my-4 ">
-  <ul class="flex content-center justify-center text-xl p-3 shadow-lg flex-wrap">
+  <ul class="flex items-center justify-between w-full text-xl p-3 shadow-lg">
     {% if pagination.href.previous %}
-    <li class="previous list-none md:mr-3 mr-2 inline-block font-ui">
+    <li class="previous list-none md:mr-3 mr-0 inline-block font-ui">
       <a
         href="{{ pagination.href.previous }}"
-        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui text-xl"
+        class="text-gray bg-white border-neutralGray hover:bg-neutralGray  transition ease-in-out delay-100 rounded-md px-2 py-1.5  text-center block h-auto font-ui text-xl"
       >
         ←&nbsp; <span class="hidden md:inline">Previous</span> 
       </a>
     </li>
+   <div class="flex items-center justify-start ">
     {% endif %} {% if pagination.pageNumber - 1 > 0 %}
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
@@ -46,6 +47,7 @@
       </a>
     </li>
     {% endif %} {% if pagination.pageNumber + 2 < pagination.size %}
+    
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber + 3 }}"
@@ -63,10 +65,11 @@
       </a>
     </li>
     {% endif %} {% if pagination.href.next %}
-    <li class="next list-none md:mr-3 mr-2 inline-block font-ui">
+  </div>
+  <li class="next list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="{{ pagination.href.next }}"
-        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui"
+        class="text-gray bg-white border-neutralGray hover:bg-neutralGray  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui"
       >
         <span class="hidden md:inline">Next</span> &nbsp;→
       </a>

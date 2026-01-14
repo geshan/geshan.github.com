@@ -1,6 +1,6 @@
 <div class="blog-index w-full mx-auto font-ui">
   {% for post in postslist | reverse %}
-  <article class="post px-2 md:px-4 py-4 md:py-10 border-b border-neutralGray {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
+  <article class="post px-4 py-4 md:py-10 border-b border-neutralGray {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
     <header class="page-header">
       <h3
         class="font-ui font-semibold md:text-3xl text-xl text-gray pt-3 break-words hover:underline"
@@ -9,7 +9,7 @@
       </h3>
       <p class="text-textColor text-md md:text-xl font-medium uppercase my-3">
         <span class="glyphicon glyphicon-calendar"> </span>
-        {% set date = post.date %} {% include "components/posted-date-time.njk" %} &nbsp;&middot;&nbsp;
+        {% set date = post.date %} {% include "components/posted-date-time.njk" %} &nbsp;&nbsp;&nbsp;
         <span>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
       </p>
     </header>

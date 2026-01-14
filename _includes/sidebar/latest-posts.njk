@@ -1,8 +1,8 @@
 {% set posts = collections.posts | head(-5) %}
 <section>
-  <div class="mt-10 max-w-6xl mx-auto pb-8 px-4">
-    <div class="grid-cols-12 md:grid gap-10">
-      <div class="col-span-12 md:col-span-8">
+  <div class="mt-10 md:mt-20 max-w-6xl mx-auto pb-8 px-4">
+    <div class="grid-cols-12 md:grid">
+      <div class="col-span-12 md:col-span-8 border-b md:border-b-0 md:border-r border-neutralGray md:pr-10 pr-0">
         <h1 class="text-3xl md:text-5xl font-heading font-medium text-textColor break-words">
           <span class="text-lightGray italic"> Recently</span>
           <span class="text-blackText">Published</span>
@@ -31,7 +31,7 @@
                   class="uppercase whitespace-normal break-words"
                   datetime="{{ post.date | getSitemapDate }}"
                 >
-                  {{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{
+                  {{ post.data.date | displayDateOnly }} &nbsp;&nbsp;&nbsp; {{
                   helpers.getReadingTime(post.templateContent) }} min read
                 </time>
               </p>
@@ -50,9 +50,9 @@
           </a>
         </div>
       </div>
-      <div class="col-span-12 md:col-span-4 mt-10 md:mt-0">
+      <div class="col-span-12 md:col-span-4 mt-10 md:mt-0 pl-0 md:pl-10 ">
         <!-- advertisment -->
-        {% include "sidebar/carbon.njk" %} {% include "sidebar/popular-picks-posts.njk" %}
+        {% include "sidebar/popular-picks-posts.njk" %}
       </div>
     </div>
   </div>

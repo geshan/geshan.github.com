@@ -1,8 +1,8 @@
 <section class="panel panel-default mb-6">
   <div class="panel-heading mb-2">
-    <p class="panel-title font-semibold uppercase md:mb-4 font-heading text-gray">
+    <h5 class="panel-title font-medium uppercase md:mb-4 font-heading text-gray">
       Popular Picks
-    </p>
+    </h5>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
     {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
@@ -15,7 +15,7 @@
         {{ post.data.title }}
       </a>
       <p class="text-textColor text-md  py-2 font-ui font-medium uppercase">
-        {{ post.data.date | displayDateOnly }} &nbsp;&middot;&nbsp; {{
+        {{ post.data.date | displayDateOnly }} &nbsp;&nbsp;&nbsp; {{
         helpers.getReadingTime(post.templateContent) }} MIN READ
       </p>
     </div>

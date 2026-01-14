@@ -1,5 +1,5 @@
 <div
-  class="w-full flex flex-row items-center justify-center mb-2 relative gap-4 font-ui border-b border-avocado"
+  class="w-full flex flex-row items-center justify-center mb-2 relative gap-4 font-ui "
 >
   <button
     type="button"
@@ -15,12 +15,12 @@
 
   <ul
     id="scrollDiv"
-    class="flex-1 flex items-center h-12 overflow-x-auto overflow-y-hidden scrollbar-hide min-w-0"
+    class="flex-1 flex items-center overflow-x-auto overflow-y-hidden scrollbar-hide min-w-0 border-b border-neutralGray pb-1.5"
   >
     <li>
       <a
         href="/posts/1/"
-        class="tag mr-1 md:mr-4 font-medium text-darkAvocado hover:text-darkAvocado px-2 md:px-3 py-1 text-md md:text-xl border-darkAvocado cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase underline underline-offset-[17px]"
+        class="tag mr-1 md:mr-4 font-medium text-darkAvocado hover:text-darkAvocado px-2 md:px-3 py-0 text-md md:text-xl border-b-2 border-darkAvocado cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase pb-1"
         >Recent</a
       >
     </li>
@@ -29,7 +29,7 @@
     <li>
       <a
         href="{{ tagUrl | url }}"
-        class="tag mr-1 md:mr-4 font-medium text-textColor hover:text-darkAvocado px-2 md:px-3 py-1 text-md md:text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase active:border-b-darkAvocado"
+        class="tag mr-1 md:mr-4 font-medium text-textColor hover:text-darkAvocado px-2 py-1 text-md md:text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase "
         >{{ tag }}</a
       >
     </li>

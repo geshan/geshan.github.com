@@ -20,6 +20,7 @@ module.exports = {
 
         textColor: '#6A6C66',
         blackText: '#000000',
+        neutralGray: '#ebebeb',
         lightGray: '#797B75',
         gray: '#3F423B',
         alternateGray: '#FAFAFA',
@@ -29,7 +30,6 @@ module.exports = {
         darkgrey: '#848393',
         midblack: '#251F54',
         avocado: '#CDE4B2',
-        neutralGray: '#C1C2BF',
         quoteGray: '#B8D892',
         secondaryAvocado: '#F3F8EC',
       },

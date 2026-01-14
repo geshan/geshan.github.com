@@ -7,14 +7,13 @@ background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
       <span class="text-blackText">Takes</span>
     </h1>
 
-    <!-- Mobile Testimonials -->
     <div class="grid  md:grid-cols-2 grid-cols-1 items-start gap-6">
       {% for testimonial in honestTakes.mobile %}
       <div
         class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md font-body relative overflow-hidden"
       >
         <p
-          class="text-md md:text-xl text-black font-regular mb-6 px-8 py-8"
+          class="text-md md:text-xl text-black font-regular mb-6 md:px-12 px-4 py-8"
         >
           {{ testimonial.quote }}
         </p>
@@ -23,7 +22,7 @@ background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
          
         </div>
         <div
-          class="flex items-center justify-between border-t border-neutralGray pt-4 p-6 py-3 text-textColor text-lg z-50 overflow-hidden"
+          class="flex items-center justify-between border-t border-neutralGray pt-4 md:px-12 px-4 py-3 text-textColor text-lg z-50 overflow-hidden"
         >
           <div class="text-md md:text-xl">
             <p class="font-semibold text-gray">{{ testimonial.author }}</p>
