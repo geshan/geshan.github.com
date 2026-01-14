@@ -1,16 +1,16 @@
 <div class="mx-auto my-4 ">
   <ul class="flex items-center justify-between w-full text-xl p-3 shadow-lg">
-    {% if pagination.href.previous %}
     <li class="previous list-none md:mr-3 mr-0 inline-block font-ui">
       <a
-        href="{{ pagination.href.previous }}"
+        {% if pagination.href.previous %}href="{{ pagination.href.previous }}"{% endif %}
         class="text-gray bg-white border-neutralGray hover:bg-neutralGray  transition ease-in-out delay-100 rounded-md px-2 py-1.5  text-center block h-auto font-ui text-xl"
+        {% if not pagination.href.previous %}disabled{% endif %}
       >
         ←&nbsp; <span class="hidden md:inline">Previous</span> 
       </a>
     </li>
    <div class="flex items-center justify-start ">
-    {% endif %} {% if pagination.pageNumber - 1 > 0 %}
+     {% if pagination.pageNumber - 1 > 0 %}
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
         href="/posts/{{ pagination.pageNumber - 1  }}"
@@ -64,16 +64,20 @@
         {{ pagination.pageNumber + 4 }}
       </a>
     </li>
-    {% endif %} {% if pagination.href.next %}
+    {% endif %} 
   </div>
+  
+  
+
   <li class="next list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="{{ pagination.href.next }}"
+        {% if pagination.href.next %}href="{{ pagination.href.next }}"{% endif %}
         class="text-gray bg-white border-neutralGray hover:bg-neutralGray  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui"
+        {% if not pagination.href.next %}disabled{% endif %}
       >
         <span class="hidden md:inline">Next</span> &nbsp;→
       </a>
     </li>
-    {% endif %}
+   
   </ul>
 </div>
