@@ -128,7 +128,7 @@
         <nav class="overflow-y-auto px-4 py-6 space-y-2">
           <a
             href="/"
-            class="block rounded-lg px-3 py-2 text-base font-medium font-body text-black hover:bg-lightAvocado"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-ui text-black hover:bg-lightAvocado"
             aria-current="page"
           >
             Home
@@ -136,7 +136,7 @@
           {%- for entry in collections.all | eleventyNavigation %}
           <a
             href="{{ entry.url | url }}"
-            class="block rounded-lg px-3 py-2 text-base font-medium font-leading text-black hover:bg-lightAvocado {% if entry.url == page.url %} bg-lightAvocado{% endif %}"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-ui text-black hover:bg-lightAvocado {% if entry.url == page.url %} bg-lightAvocado{% endif %}"
             aria-current="page"
           >
             {{ entry.title }}
