@@ -16,10 +16,11 @@
             {%- for entry in collections.all | eleventyNavigation %}
             <a
               href="{{ entry.url | url }}"
-              class="uppercase text-base font-ui font-medium text-gray hover:text-midgrey transition-colors {% if entry.url == page.url %} text-midgrey{% endif %}"
+              class="uppercase text-base font-ui font-medium text-gray hover:text-midgrey transition-colors {% if entry.url == page.url %} text-textColor{% endif %}"
               aria-current="page"
-              >{{ entry.title }}</a
             >
+              {{ entry.title }}
+            </a>
             {%- endfor %}
           </div>
 
