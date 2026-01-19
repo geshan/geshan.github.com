@@ -44,19 +44,19 @@ To use the Gemini Live Native Audio feature to behave like an experienced softwa
 
 First, go to [Google AI Studio](https://aistudio.google.com) and click the `Playground` link available in the left sidebar as seen below:
 
-<img class="center" src="/images/gemini-live-audio/02gias-playground.jpg" title="Google AI Studio Playground link" alt="Google AI Studio Playground link">
+<img class="center" src="/images/gemini-live-audio/02gias-playground.jpg" loading="lazy" title="Google AI Studio Playground link" alt="Google AI Studio Playground link">
 
  After that, click the `Live` button available under the `Google AI Studio` logo then click the `Gemini 2.5 Flash Native Audio Preview 12-2025` option available:
 
-<img class="center" src="/images/gemini-live-audio/03gias-live.jpg" title="Google AI Studio Live Audio feature selection" alt="Google AI Studio Live Audio feature selection">
+<img class="center" src="/images/gemini-live-audio/03gias-live.jpg" loading="lazy" title="Google AI Studio Live Audio feature selection" alt="Google AI Studio Live Audio feature selection">
 
 Then, on the right sidebar, change the voice from `Zephyr` to `Puck`, it is a better voice (in my opinion) as you will chat with that voice for minutes:
 
-<img class="center" src="/images/gemini-live-audio/04gias-live-voice.jpg" title="Google AI Studio change voice to Puck" alt="Google AI Studio change voice to Puck">
+<img class="center" src="/images/gemini-live-audio/04gias-live-voice.jpg" loading="lazy" title="Google AI Studio change voice to Puck" alt="Google AI Studio change voice to Puck">
 
 Subsequently, scroll down to turn on `Thinking mode`, then `Affective dialog`, and lastly `Grounding with Google Search` as follows:
 
-<img class="center" src="/images/gemini-live-audio/05gias-live-settings.jpg" title="Google AI Studio Live feature settings panel" alt="Google AI Studio Live feature settings panel">
+<img class="center" src="/images/gemini-live-audio/05gias-live-settings.jpg" loading="lazy" title="Google AI Studio Live feature settings panel" alt="Google AI Studio Live feature settings panel">
 
 When you hover over each, it will tell you what the setting does, for instance, `Affective dialog` on will: `Let Gemini adapt its response style to the input expression and tone`. 
 
@@ -163,4 +163,3 @@ for a URL shortner. Be ready to draw some boxes and arrows :).
 In this post you saw the powerful combination of Gemini Live, native audio, and a detailed prompt offers a groundbreaking way to practice technical interviews. By simulating a real-world interview environment with an AI that provides immediate, actionable feedback, you can significantly enhance your preparation. 
 
 This approach not only sharpens your technical knowledge but also builds confidence and clarity in your delivery and the real interview scenario. Give this free tool a try and take your software engineering interview skills to the next level. Keep learning and experimenting!
-
