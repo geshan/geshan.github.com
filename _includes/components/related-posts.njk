@@ -1,12 +1,12 @@
 <div class="max-w-6xl mx-auto md:py-12 px-4">
-    <h2 class="text-4xl text-darkAvocado font-heading flex-shrink-0 py-8"> <span class="text-lightGray italic">Related</span> <span class="text-blackText">Blogs</span></h2>
+    <h2 class="text-4xl text-darkAvocado font-heading font-regular flex-shrink-0 py-8 tracking-normal leading-[105%] md:leading-[105%]"> <span class="text-lightGray italic">Related</span> <span class="text-blackText">Blogs</span></h2>
     {% set sortedPosts = collections.latestPosts | reverse %}
     {% set relatedTagPosts = sortedPosts | relatedPosts(page.url) %}
     {% if relatedTagPosts.length > 0 %}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {% for post in relatedTagPosts %}
         <div class="py-4 border-b border-avocado pb-4 flex flex-col gap-2 font-ui">
-            <a href="{{ post.url }}" class="font-semibold font-ui text-gray text-xl md:text-2xl">{{ post.data.title }}</a>
+            <a href="{{ post.url }}" class="font-semibold font-ui text-gray text-xl md:text-2xl tracking-[-0.01em] leading-[105%] md:leading-[105%]">{{ post.data.title }}</a>
             <time class="font-medium text-xl text-textColor uppercase font-ui">{{ post.data.date | displayDateOnly }} &nbsp;&nbsp;&nbsp; {{ helpers.getReadingTime(post.templateContent) }} min read</time> 
             <p class="text-xl text-gray font-ui">{{ post.data.description }}</p>
         </div>

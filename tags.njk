@@ -19,7 +19,7 @@ permalink: /blog/categories/{{ tag | slug }}/
 
 <article role="article" class="md:max-w-6xl mx-auto mt-4 px-4  mb-20">
   <header class="page-header">
-    <h1 class="md:text-4xl text-3xl font-bold text-gray">Category: {{tag}}</h1>
+    <h1 class="md:text-4xl text-3xl font-semibold text-gray leading-[105%] md:leading-[105%] tracking-[-0.01em]">Category: {{tag}}</h1>
   </header>
   {% set postslist = collections[ tag ] %} {% include "postslist-h3.njk" %}
   <p class="font-body text-base">

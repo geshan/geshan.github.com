@@ -26,7 +26,7 @@
 <section class="pt-16 px-4 md:px-8 pb-20" style="
 background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
   <div class="max-w-6xl mx-auto">
-    <h1 class="text-3xl md:text-5xl font-heading font-medium pb-12">
+    <h1 class="text-3xl md:text-5xl font-heading font-regular pb-12 tracking-normal leading-[105%] md:leading-[105%]">
       <span class="text-lightGray italic"> Honest</span>
       <span class="text-blackText">Takes</span>
     </h1>
@@ -37,7 +37,7 @@ background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
         class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md font-body relative overflow-hidden"
       >
         <p
-          class="text-md md:text-xl text-black font-regular mb-6 md:px-12 px-4 py-8"
+          class="text-md md:text-xl text-black font-regular mb-6 md:px-12 px-4 py-8 leading-[100%] md:leading-[100%]"
         >
           {{ testimonial.quote }}
         </p>
@@ -48,12 +48,12 @@ background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
         <div
           class="flex items-center justify-between border-t border-neutralGray pt-4 md:px-12 px-4 py-3 text-textColor text-lg z-50 overflow-hidden"
         >
-          <div class="text-md md:text-xl">
+          <div class="text-md md:text-xl tracking-[0.01em] leading-[100%] md:leading-[100%]">
             <p class="font-semibold text-gray">{{ testimonial.author }}</p>
-            <p class="text-lightGray font-regular text-md md:text-xl">{{ testimonial.title }}</p>
+            <p class="text-textColor font-regular text-md md:text-xl">{{ testimonial.title }}</p>
           </div>
           <div>
-            <p class="text-lightGray font-bold uppercase text-md md:text-xl">{{ testimonial.company }}</p>
+            <p class="text-textColor font-bold uppercase text-md md:text-xl tracking-[0.01em] leading-[100%] md:leading-[100%]">{{ testimonial.company }}</p>
           </div>
         </div>
       </div>
