@@ -10,14 +10,20 @@ renderData:
   <header class="page-header">
     <h1 class="md:text-4xl text-3xl font-bold text-gray">Categories</h1>
   </header>
-  <div class="grid md:grid-rows-10 grid-cols-2 md:grid-flow-col gap-4 mt-5">
-    {% for tag in collections.tagList | sort %} {% set tagUrl %}/blog/categories/{{ tag | slug }}/{%
-    endset %}
-    <a
-      href="{{ tagUrl | url }}"
-      class="tag mt-6 font-ui font-normal text-textColor w-9/12 border-b-2 border-gray-400 hover:border-avocado"
-      >{{ tag }}</a
-    >
+  <div class="mt-8 flex flex-wrap justify-center gap-4">
+    {% for tag in collections.tagList | sort %}
+      {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
+      <a
+        href="{{ tagUrl | url }}"
+        class="group flex items-center justify-between gap-8 rounded-xl border border-gray bg-white px-4 py-3 font-ui text-textColor transition-colors hover:border-avocado hover:bg-lightAvocado/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-darkAvocado/60"
+      >
+        <span class="capitalize text-lg font-medium text-gray group-hover:text-blackText">
+          {{ tag }}
+        </span>
+        <span class="inline-flex min-w-[2.25rem] items-center justify-center rounded-full bg-darkAvocado px-2 py-2 text-xs font-semibold text-white">
+          {{ collections[tag] | length }}
+        </span>
+      </a>
     {% endfor %}
   </div>
 </article>
