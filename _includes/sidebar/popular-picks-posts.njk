@@ -1,6 +1,6 @@
 <section class="panel panel-default mb-6">
   <div class="panel-heading mb-2">
-    <h5 class="panel-title font-regular uppercase md:mb-4 font-heading text-gray tracking-[0.04em] leading-[100%]">
+    <h5 class="panel-title font-regular uppercase md:mb-4 font-heading text-gray tracking-[0.04em] leading-[100%] md:leading-[100%]">
       Popular Picks
     </h5>
   </div>
@@ -8,7 +8,7 @@
     {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
     <div class="border-b border-neutralGray pt-5 pb-3 {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
       <a
-        class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md pb-3 tracking-[-0.01em] leading-[132%]"
+        class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md pb-3 tracking-[-0.01em] leading-[132%] md:leading-[132%]"
         href="{{ post.url | url }}"
         title="{{ post.data.title }}"
       >
