@@ -3,12 +3,16 @@ permalink: /blog/categories/
 layout: layouts/home.njk
 renderData:
   title: Categories
-  description: "Categories and tags on this blog"
+  description: 'Categories and tags on this blog'
 ---
 
 <article role="article" class="md:max-w-6xl mx-auto mt-4 px-4 md:px-0 mb-20">
   <header class="page-header">
-    <h1 class="md:text-4xl text-3xl font-bold text-gray">Categories</h1>
+    <h1
+      class="md:text-4xl text-3xl font-semibold text-gray tracking-[-0.01em] leading-[105%] md:leading-[105%]"
+    >
+      Categories
+    </h1>
   </header>
   <div class="grid md:grid-rows-10 grid-cols-2 md:grid-flow-col gap-4 mt-5">
     {% for tag in collections.tagList | sort %} {% set tagUrl %}/blog/categories/{{ tag | slug }}/{%
@@ -16,8 +20,9 @@ renderData:
     <a
       href="{{ tagUrl | url }}"
       class="tag mt-6 font-ui font-normal text-textColor w-9/12 border-b-2 border-gray-400 hover:border-avocado"
-      >{{ tag }}</a
     >
+      {{ tag }}
+    </a>
     {% endfor %}
   </div>
 </article>
