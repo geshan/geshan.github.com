@@ -5,7 +5,7 @@
     </h5>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
-    {% set popularPosts = collections.popularPicks | head(5) %} {% for post in popularPosts %}
+    {% set popularPosts = popular | head(5) %} {% for post in popularPosts %}    
     <div class="border-b border-neutralGray pt-5 pb-3 {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
       <a
         class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md pb-3 tracking-[-0.01em] leading-[132%] md:leading-[132%]"

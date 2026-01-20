@@ -60,6 +60,46 @@ Another factor that motivates me to keep on publishing blog posts is the feedbac
 
 I have given [talks](/blog/categories/talks/) at tech conferences in the Middle East, Europe, United States, and Australia in the past years on topics ranging from ChatOps, Continous delivery to Microservices and Serverless containers. You can see a neatly organized [table](https://github.com/geshan/public-speaking) as a GitHub repo. I have also spoken at various meetups too.
 
+
+I have also ran workshops mainly on Gen AI since 2024. The two main workshops I have done include building a [E-commerce product description generator](https://gw.geshan.com.np/) and using Gen AI to [guess the geo location of a photo](https://geo.geshan.com.np/).
+
+## Side Projects
+
+I have some side projects. I tend do one side project a year and get it over the line:):
+
+### Nepal News English - 2019
+
+[Nepal News English](https://twitter.com/nepal_news_en) Twitter account is a news aggregator that aggregates News about Nepal from 15+ sources. It was re-built in 2019 with Node.js and MySQL. All the code is running on [Google Cloud Run](/blog/2019/11/why-use-google-cloud-run-5-compelling-reasons/) as serverless containers. Please follow Nepal_news_en if you want to get all the news about Nepal in the English language in one place. It currently has 14.4 K followers.
+
+### AU Tech Jobs - 2020
+
+[AU Tech Jobs](https://autechjobs.com/) is a tech job aggregator that collects jobs from 95+ companies. Currently, the [app](https://app.autechjobs.com/) has over 2700 jobs listed. Its USPs include:
+
+- Job description summary for easy reading
+- Tag job as non-technical by using an external categorization service
+- Saved jobs
+- Applied jobs
+- Shows if the company is known to sponsor work visa or not
+- Faceted search (search by multiple departments or work type)
+
+This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from [Australian companies providing work visa sponsorship](https://github.com/geshan/au-companies-providing-work-visa-sponsorship) GitHub repo I started in late 2018.
+
+AU Tech Jobs is still running after five years. I have written a blog post about it [here](/blog/2021/06/life-changing-side-project/).
+
+### Bloggers union - 2022
+
+I helped some techies to start their own blog.  4-5 people did start writing their own blog but I don't suppose they continued writing. More on it [here](/blog/2022/12/recap-2022/#side-project---bloggers’-union).
+
+### Speakers camp - 2023
+
+I helped multiple people get into public speaking in 2023, I still help groom new speakers. The basic idea is to push, help, and motivate people to get into public speaking of any form, especially speaking at meetups which has a lower bar than speaking at conferences. I have helped them with both the content and the delivery of their talks. You can read some [success stories](/blog/2023/12/review-2023/#side-project---speakers-camp), a couple of them have become Google Developer Experts (GDEs) in their respective fields -- more to come on this.
+
+### GDG in each capital city of Australia - 2024
+
+This started in mid 2023, when GDG Darwin was started in May 2023. I have helped start or restart Google Developer Groups (GDGs) in each capital city of Australia. From Canberra to Perth, thanks to all the volunteers and Matt for his support. You can read more on the [community aspect](/blog/2024/12/recap-2024/#community-activities).
+
+There might be something in 2025 too :). 
+
 ## Publications
 
 A list of some of the articles I have written outside of this blog:

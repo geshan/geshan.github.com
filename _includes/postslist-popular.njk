@@ -1,16 +1,12 @@
 <ol
   class="postlist"
-  style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}"
+  style="counter-reset: 'start-from {{ (postslistCounter or postslist.length) + 1 }}'"
 >
   {% for post in postslist %}
   <li>
-<<<<<<< HEAD
     <a href="{{ post.url | url }}"
       >{% if post.title %}{{ post.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a
     >
-=======
-      <a href="{{ post.url | url }}">{% if post.title %}{{ post.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
->>>>>>> upstream/source
   </li>
   {% endfor %}
 </ol>
