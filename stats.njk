@@ -2,4 +2,5 @@
 permalink: /stats.json
 ---
 
-{% set postslist = collections.posts %} {{ helpers.getStats(postslist) | dump | safe }}
+{% set postslist = collections.posts %} 
+{{ helpers.getStats(postslist) | dump | safe }}

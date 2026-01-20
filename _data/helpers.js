@@ -16,9 +16,44 @@ module.exports = {
     return process.env.ELEVENTY_ENV || 'production';
   },
   getMetaDescription(content) {
-    const contentBody = content.match(/<div\s+class="entry-content clearfix mt-5">[\S\s]*?<\/div>/gi);
-    return contentBody[0].replace(/(<([^>]+)>)/ig,"")
-            .replace('"', '').replace(/\n/g,' ').trim().substring(0, 142) + '...';
+    if (!content) return '';
+    
+    // Try to find the entry-content div first (for newer posts)
+    let contentBody = content.match(/<div\s+class="entry-content clearfix mt-5">[\S\s]*?<\/div>/gi);
+    
+    // If not found, try to find any div with class containing "entry-content" or "post"
+    if (!contentBody) {
+      contentBody = content.match(/<div[^>]*class="[^"]*entry-content[^"]*">[\S\s]*?<\/div>/gi);
+    }
+    
+    // If still not found, try to extract from post div or first paragraph
+    if (!contentBody) {
+      contentBody = content.match(/<div[^>]*class="[^"]*post[^"]*">[\S\s]*?<\/div>/gi);
+    }
+    
+    // Last resort: extract from first paragraph
+    if (!contentBody) {
+      contentBody = content.match(/<p[^>]*>[\S\s]*?<\/p>/i);
+    }
+    
+    // If still nothing, strip HTML from entire content
+    let text = '';
+    if (contentBody && contentBody[0]) {
+      text = contentBody[0];
+    } else {
+      text = content;
+    }
+    
+    // Strip HTML tags and clean up
+    text = text.replace(/(<([^>]+)>)/ig, "")
+               .replace(/"/g, '')
+               .replace(/\n/g, ' ')
+               .replace(/\s+/g, ' ')
+               .trim();
+    
+    // Return truncated description or empty string
+    if (!text) return '';
+    return text.length > 142 ? text.substring(0, 142) + '...' : text;
   },
   getStats(posts) {
     //from - https://www.stackbit.com/blog/content-stats-eleventy/
