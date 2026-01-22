@@ -1,7 +1,7 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "../css/fonts.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '../css/fonts.css';
 
 :root {
   --darkAvocado: #517329;
@@ -12,12 +12,12 @@
   --gray: #3f423b;
   --midgrey: #858393;
   --lightbg: #f5f5f5;
-  --font-heading: "Source Serif 4", Georgia, serif;
-  --font-ui: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: 'Source Serif 4', Georgia, serif;
+  --font-ui: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   /* --font-ui: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
   /* --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
-  --font-body: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-nav: "inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body: 'Source Sans Pro', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-nav: 'inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
 html,
@@ -145,12 +145,11 @@ p > a {
   color: #517329;
 }
 
-
 img.sharing-common {
   background-color: #f5f5f5;
   height: 42px;
   width: 42px;
-  
+
   padding: 4px;
   border-radius: 10px;
   border: 1px solid var(--darkAvocado);
@@ -186,12 +185,12 @@ samp {
 }
 
 /* code highlight */
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   color: #2a2a2a;
   background: 0 0;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -207,7 +206,7 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
 }
-pre[class*="language-"],
+pre[class*='language-'],
 pre,
 .highlight {
   padding: 1em;
@@ -217,18 +216,18 @@ pre,
   border-radius: 0.3em;
   max-width: 100%;
 }
-pre[class*="language-"] {
+pre[class*='language-'] {
   padding: 1em;
   margin: 0.5em 0;
   overflow-x: auto;
   overflow-y: hidden;
   border-radius: 0.3em;
 }
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: #f5f6f9;
 }
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
@@ -319,8 +318,9 @@ pre[class*="language-"] {
 
 /* carbon */
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #carbonads {
   display: flex;
@@ -379,7 +379,7 @@ pre[class*="language-"] {
 /* copy to clipboard */
 .copy-code-button {
   background-color: white;
-  background-image: url("../images/theme/copy-btn.png");
+  background-image: url('../images/theme/copy-btn.png');
   border-radius: 6px;
   display: block;
   margin-left: auto;
@@ -396,7 +396,7 @@ pre[class*="language-"] {
   cursor: pointer;
 }
 .copied {
-  background-image: url("../images/theme/copied-button.png");
+  background-image: url('../images/theme/copied-button.png');
 }
 .highlight pre {
   margin: 0;
@@ -498,8 +498,8 @@ blockquote > p {
   font-weight: 500;
 }
 blockquote > p:first-child:before {
-  content: "";
-  background-image: url("../images/theme/quote.svg");
+  content: '';
+  background-image: url('../images/theme/quote.svg');
   height: 23px;
   width: 26px;
   position: absolute;
@@ -554,23 +554,21 @@ table {
   z-index: 1;
 }
 
-
-  span.share-icons {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    position: initial;
-    margin-top: 16px;
-    gap: 10px;
-  }
-  .homepage-icons img {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-  }
-  blockquote > p:first-child:before {
-    left: 5px;
-  }
-
+span.share-icons {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  position: initial;
+  margin-top: 16px;
+  gap: 10px;
+}
+.homepage-icons img {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+blockquote > p:first-child:before {
+  left: 5px;
+}
 
 /* Print Styles */
 @media print {
@@ -580,9 +578,9 @@ table {
 }
 
 /* Responsive Google Slides, Vimeo, Twitch */
-iframe[src*="docs.google.com"],
-iframe[src*="player.vimeo.com"],
-iframe[src*="player.twitch.tv"] {
+iframe[src*='docs.google.com'],
+iframe[src*='player.vimeo.com'],
+iframe[src*='player.twitch.tv'] {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
@@ -596,4 +594,19 @@ iframe[src*="player.twitch.tv"] {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
+}
+
+/* CLS Optimization: Prevent layout shifts */
+img[width][height] {
+  height: auto;
+}
+
+/* Reserve space for hero heading to prevent CLS */
+.home-hero h1 {
+  min-height: 1.2em;
+}
+
+/* Ensure images maintain aspect ratio */
+img[style*='aspect-ratio'] {
+  object-fit: contain;
 }

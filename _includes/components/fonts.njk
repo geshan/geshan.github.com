@@ -1,3 +1,25 @@
-<link rel="preconnect" href="/" crossorigin>
-<link rel="preload" href="{{ '/css/fonts.css' | url }}" as="style">
-<link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
+<link rel="preconnect" href="/" crossorigin />
+<link rel="preload" href="{{ '/css/fonts.css' | url }}" as="style" />
+<!-- Preload critical fonts for above-the-fold content -->
+<link
+  rel="preload"
+  href="/fonts/source-sans-4/source-serif-4-latin-400-normal.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/source-sans-4/source-serif-4-latin-500-normal.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/source-sans-pro/source-sans-pro-latin-400-normal.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="{{ '/css/fonts.css' | url }}" />
