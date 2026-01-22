@@ -5,19 +5,16 @@
     </h5>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
-    {% set popularPosts = popular | head(5) %} {% for post in popularPosts %}    
+    {% set popularPosts = popular | head(5) %} 
+    {% for post in popularPosts %}    
     <div class="border-b border-neutralGray pt-5 pb-3 {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
       <a
         class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md pb-3 tracking-[-0.01em] leading-[132%] md:leading-[132%]"
         href="{{ post.url | url }}"
-        title="{{ post.data.title }}"
+        title="{{ post.title }}"
       >
-        {{ post.data.title }}
-      </a>
-      <p class="text-textColor text-md  py-2 font-ui font-medium uppercase">
-        {{ post.data.date | displayDateOnly }} &nbsp;&nbsp;&nbsp; {{
-        helpers.getReadingTime(post.templateContent) }} MIN READ
-      </p>
+        {{ post.title }}
+      </a>     
     </div>
     {% endfor %} {% if popularPosts.length == 0 %}
     <p class="text-textColor text-md  font-ui">No popular picks available yet.</p>
