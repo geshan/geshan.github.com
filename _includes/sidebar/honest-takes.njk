@@ -1,0 +1,65 @@
+<!-- Honest Takes Section -->
+{% set testimonials = [
+  {
+    "quote": "Geshan has been Namshi's Swiss Army knife over the past 6 years: a great team player, solid contributor and adaptive learner. He joined the team and immediately embraced a new way of building software: service-oriented, with automated tests and built to last. His ability to adapt and embrace new challenges has been exceptional, and it was with a calm, receptive spirit that he tackled each and every challenge here at Namshi. Over the past few years, he established himself as one of our top contributors, able to directly discuss approaches and solutions with stakeholders: he operated with a lot of autonomy as one of our most senior engineers, and never encountered major setbacks. There have been multiple instances when, faced with an impending issue, I would rely on Geshan to take over and save the day. I also appreciated the fact that I could have an open, honest conversation with him regarding scope, timelines, and challenges -- there was never a day when I felt I couldn't trust him. Dedicated and devoted to helping his teammates, he definitely left a mark on a few of our other engineers through knowledge-sharing and teamwork. Would definitely recommend him to anyone looking for a solid software engineer with a knack for understanding the business side of the work.",
+    "author": "Alessandro (Alex) Nadalin",
+    "title": "CTO",
+    "company": "Namshi",
+    "isLarge": true
+  },
+  {
+    "quote": "Geshan is an awesome mix of strong engineering talent and excellent communication skills. His leadership qualities and decision-making capabilities contributed immensely to the success of our product teams. He is very professional in his work and will ensure that the job gets done with quality. His ability and motivation to solve the most challenging technical problems is inspiring. Geshan works hard to ensure his expertise stays relevant and that he's accomplishing his work in the best way possible.",
+    "author": "Max Antonov",
+    "title": "Product Manager",
+    "company": "THE ICONIC",
+    "isLarge": false
+  },
+  {
+    "quote": "Geshan is a hard working individual with serious interest and aptitude for software development. At YoungInnovations, he played crucial role in development of appropriate systems and processes to ensure quality and efficiency in our projects. He was very interested in building capacity of the team. He was ahead of deadlines in most of the cases and paid attention to minute details of the projects he led. He would be an asset to any company he works for.",
+    "author": "Bibhusan Bista",
+    "title": "CEO",
+    "company": "YoungInnovations",
+    "isLarge": false
+  }
+] %}
+
+<section class="pt-16 px-4 md:px-8 pb-20" style="
+background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl md:text-5xl font-heading font-regular pb-12 tracking-normal leading-[105%] md:leading-[105%]">
+      <span class="text-lightGray italic"> Honest</span>
+      <span class="text-blackText">Takes</span>
+    </h1>
+
+    <div class="grid  md:grid-cols-2 grid-cols-1 items-start gap-6">
+      {% for testimonial in testimonials %}
+      <div
+        class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md font-body relative overflow-hidden"
+      >
+        <p
+          class="text-md md:text-xl text-black font-regular mb-6 md:px-12 px-4 py-8 leading-[100%] md:leading-[100%]"
+        >
+          {{ testimonial.quote }}
+        </p>
+        <div class="relative z-10">
+         <img src="/images/quote.svg" alt="Quote left" class="w-10 h-10 absolute -bottom-1 left-6">
+         
+        </div>
+        <div
+          class="flex items-center justify-between border-t border-neutralGray pt-4 md:px-12 px-4 py-3 text-textColor text-lg z-50 overflow-hidden"
+        >
+          <div class="text-md md:text-xl tracking-[0.01em] leading-[100%] md:leading-[100%]">
+            <p class="font-semibold text-gray">{{ testimonial.author }}</p>
+            <p class="text-textColor font-regular text-md md:text-xl">{{ testimonial.title }}</p>
+          </div>
+          <div>
+            <p class="text-textColor font-bold uppercase text-md md:text-xl tracking-[0.01em] leading-[100%] md:leading-[100%]">{{ testimonial.company }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    
+  </div>
+</section>

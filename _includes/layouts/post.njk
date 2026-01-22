@@ -2,51 +2,135 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-{% set coverImage %}{{ cover or metadata.defaultCoverImage }}{% endset %}
-{% set logoUrl %}{{ "images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %}
-{% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
-<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "{{ metadata.title }}", "alternativeHeadline": "{{ title }}", "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}", "editor": "{{ metadata.author.name }}", "genre": "{{ tags[1] }}", "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}", "url": "{{ absolutePostUrl }}", "datePublished": "{{ date | htmlDateString }}", "dateCreated": "{{ date | htmlDateString }}", "dateModified": "{{ date | htmlDateString }}", "description": "{{ renderData.description or description or metadata.description }}", "articleBody": "{{ content | stripTags }}", "author": { "@type": "Person", "name": "{{ metadata.author.name }}"}, "publisher": {"@type": "Organization",	"name": "{{ metadata.author.name }}","logo": { "@type": "ImageObject", "url": "{{ logoUrl }}"}},"mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}"}}</script>
+
+{% set coverImage %}{{ cover or metadata.defaultCoverImage }}{% endset %} {% set logoUrl %}{{
+"images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %} {% set
+absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ metadata.title }}",
+    "alternativeHeadline": "{{ title }}",
+    "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}",
+    "editor": "{{ metadata.author.name }}",
+    "genre": "{{ tags[1] }}",
+    "keywords": "{{ renderData.keywords or keywords or metadata.keywords }}",
+    "url": "{{ absolutePostUrl }}",
+    "datePublished": "{{ date | htmlDateString }}",
+    "dateCreated": "{{ date | htmlDateString }}",
+    "dateModified": "{{ date | htmlDateString }}",
+    "description": "{{ renderData.description or description or metadata.description }}",
+    "articleBody": "{{ content | stripTags }}",
+    "author": { "@type": "Person", "name": "{{ metadata.author.name }}" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ metadata.author.name }}",
+      "logo": { "@type": "ImageObject", "url": "{{ logoUrl }}" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}" }
+  }
+</script>
 <div class="progress-bar"></div>
-<div class=" max-w-6xl py-3 px-4 mx-auto grid-cols-12 grid gap-15">
-    <div class="col-span-12 md:col-span-8">
-  <article class="hentry w-11/12 md:w-full mx-auto mt-4">
-    <header class="page-header">
-      <h1 class="text-7xl font-bold text-darkpurple">{{ title }}</h1>
-      <p class="meta text-muted">
-      {% include "components/posted-date-time.njk" %} . <span class='text-darkgrey'>{{ helpers.getReadingTime(content) }} min read</span>
-      </p>
-    </header>
-    {% include "components/post-tags.njk" %}
-    <div class="entry-content clearfix mt-5">
-        {{ content | safe }}
-    </div>
-      <footer class='md:w-9/12 w-11/12 mt-4'>
-        <p class="meta text-muted">
-          <span class="glyphicon glyphicon-user"></span>
-          <span class="byline author vcard"><i class="fas fa-user" title="Posted By"></i> <span class="fn">{{ metadata.author.name }}</span></span> | 
-          <span class="glyphicon glyphicon-calendar"></span>
-          {% include "components/posted-date-time.njk" %}
-          {% include "components/share.njk" %}
-        </p>
-        <ul class="meta text-muted pager my-6 flex md:flex-row flex-col justify-evenly">
-            {% if prevPost.url %}
-              <li class="previous bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full rounded-md text-white text-justify"><a href="{{ prevPost.url }}" class='block text-left w-full' title="Previous Post: {{ prevPost.data.title }}">« {{ prevPost.data.title }}</a></li>
-            {% endif %}
-            {% if nextPost.url %}
-              <li class="next bg-purple hover:text-purple hover:bg-white hover:border-purple border-2 border-transparent transition ease-in delay-100 px-3 py-2 w-full md:ml-10 ml-0 mt-4 md:mt-0 rounded-md text-white text-justify"><a href="{{ nextPost.url }}" class='block text-right w-full' title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} »</a></li>
-            {% endif %}
-        </ul>
-      </footer>
-    </article>
-    <section class='w-11/12 md:w-full mx-auto mt-4'>
-        {% include "components/disqus.njk" %}
-    </section>
+<div class="max-w-6xl py-3 mx-auto grid-cols-12 grid gap-15 px-4 md:px-0 mb-20">
+  <div class="col-span-12">
+    <article class="md:w-full mx-auto">
+      <header class="page-header text-center">
+        <h1 class="font-semibold font-heading text-gray text-center mb-6 tracking-[-0.01em] leading-[105%] md:leading-[105%]">
+          {{ title }}
+        </h1>
+        <div
+          class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-2 border-y border-lightbg mt-4"
+        >
+          <div class="flex items-center justify-start md:gap-4 gap-2 flex-wrap w-2/3">
+            <div class="flex justify-start items-center gap-3 md:gap-4">
+              <!-- Avatar -->
+              <img
+                src="/images/favicons/favicon-32x32-pp.png"
+                alt="Geshan Manandhar"
+                class="w-10 h-10 rounded-full object-cover flex-shrink-0"
+              />
+              <!-- Author Name -->
+              <span
+                class="text-gray font-medium font-ui text-md md:text-xl uppercase tracking-wide text-start"
+              >
+                {{ metadata.author.name }}
+              </span>
+            </div>
+            <!-- Date -->
+            {% include "components/posted-date-time.njk" %}
+            <!-- Reading Time -->
+            <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
+              {{ helpers.getReadingTime(content) }} MIN READ
+            </span>
+          </div>
+          <!-- Share Button -->
+          <button
+            type="button"
+            id="share-button"
+            class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded text-lightGray hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
+            aria-label="Share this post"
+            onclick="toggleShareIcons(); ga('send', 'event', 'share', 'clickShareOnPost');"
+          >
+            <img src="/images/shareIcon.svg" alt="Share this post" class="w-6 h-6">
+          </button>
+        </div>
+        <!-- Share Icons (Hidden by default) -->
+        <div id="share-icons-container" class="share-icons print:hidden hidden" aria-label="Share this post">
+          <div class="flex items-center justify-center gap-3">
+            {% include "components/share.njk" %}
+          </div>
+        </div>
+      </header> 
+   
+      <div class="entry-content clearfix font-body text-xl text-gray">{{ content | safe }}</div>
+   <div
+          class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-2 border-y border-lightbg mt-4"
+        >
+          <div class="flex items-center justify-start md:gap-4 gap-2 flex-wrap w-2/3">
+            <div class="flex justify-start items-center gap-3 md:gap-4">
+              <!-- Avatar -->
+              <img
+                src="/images/favicons/favicon-32x32-pp.png"
+                alt="Geshan Manandhar"
+                class="w-10 h-10 rounded-full object-cover flex-shrink-0"
+              />
+              <!-- Author Name -->
+              <span
+                class="text-gray font-medium font-ui text-md md:text-xl uppercase tracking-wide text-start"
+              >
+                {{ metadata.author.name }}
+              </span>
+            </div>
+            <!-- Date -->
+            {% include "components/posted-date-time.njk" %}
+            <!-- Reading Time -->
+            <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
+              {{ helpers.getReadingTime(content) }} MIN READ
+            </span>
+          </div>
+          <!-- Share Button -->
+          <button
+            type="button"
+            id="share-button-bottom"
+            class="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded text-lightGray hover:border-gray-400 hover:bg-gray-50 transition-colors flex-shrink-0"
+            aria-label="Share this post"
+            onclick="toggleShareIconsBottom(); ga('send', 'event', 'share', 'clickShareOnPost');"
+          >
+            <img src="/images/shareIcon.svg" alt="Share this post" class="w-6 h-6">
+          </button>
+        </div>
+        <!-- Share Icons (Hidden by default) -->
+        <div id="share-icons-container-bottom" class="share-icons-bottom print:hidden hidden mx-auto" aria-label="Share this post">
+          <div class="w-full flex items-center justify-center mx-auto gap-3">
+            {% include "components/share.njk" %}
+          </div>
+        </div>
+    </article> {% include "components/post-tags.njk" %}
+    <section class="md:w-full mx-auto mt-4">{% include "components/disqus.njk" %}</section>
+    
   </div>
-    <div class="col-span-12 md:col-span-4 w-full md:h-screen md:relative mt-10 flex flex-col items-center md:items-start md:ml-6 md:top-32">
-         {% include "sidebar/recent-posts.njk" %}
-         {% include "sidebar/side-projects.njk" %}
-         {% include "sidebar/popular-posts.njk" %}
-         {% include "sidebar/read-more-on.njk" %}
-         {% include "sidebar/subscribe-nl.njk" %}
-    </div>
-  </div>
+</div>
+<section class="md:w-full mx-auto mt-4 bg-lightAvocado p-4 rounded-lg pb-8">{% include "components/related-posts.njk" %}</section>
+{% include "components/subscribe-nl-new.njk" %}
+

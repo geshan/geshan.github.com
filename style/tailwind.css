@@ -1,21 +1,117 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-/** tailwind over-rides */
+@import "../css/fonts.css";
+
+:root {
+  --darkAvocado: #517329;
+  --lightAvocado: #f3f8ec;
+  --textColor: #6a6c66;
+  --blackText: #000000;
+  --lightGray: #797b75;
+  --gray: #3f423b;
+  --midgrey: #858393;
+  --lightbg: #f5f5f5;
+  --font-heading: "Source Serif 4", Georgia, serif;
+  --font-ui: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  /* --font-ui: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
+  /* --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
+  --font-body: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-nav: "inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+html,
+body {
+  font-family: initial;
+}
 
 h1,
-h2 {
-  font-size: xxx-large;
-  font-weight: bold;
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-heading);
+  color: var(--blackText);
+  /* font-weight: 500; */
 }
+
+/* UI areas */
+nav,
+.tabs,
+.tab,
+.mobile-menu-panel {
+  font-family: var(--font-ui);
+}
+
+/** tailwind over-rides */
+
+/* Mobile First - Phone (default) */
+h1 {
+  font-size: 32px;
+  /* font-weight: 400; */
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 29px;
+  /* font-weight: 400; */
+  line-height: 1.3;
+}
+
 h3 {
-  font-size: xx-large;
-  font-weight: bold;
+  font-size: 20px;
+  /* font-weight: 500; */
+  line-height: 1.4;
 }
 
 h4 {
-  font-size: x-large;
-  font-weight: bold;
+  font-size: 23px;
+  /* font-weight: 500; */
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 25px;
+  /* font-weight: 500; */
+  line-height: 1.4;
+}
+
+/* Tablet (640px and up) */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 61px;
+  }
+  h2 {
+    font-size: 49px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 61px;
+  }
+  h2 {
+    font-size: 49px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 25px;
+  }
 }
 
 h2,
@@ -23,7 +119,7 @@ h3,
 h4,
 h5 {
   --tw-text-opacity: 1;
-  color: rgba(46, 41, 109, var(--tw-text-opacity));
+  color: var(--blackText);
 }
 
 h1 > a.direct-link,
@@ -46,33 +142,18 @@ div > div > article > ul > li > a,
 div > div > article > div > ol > li > a,
 div > div > article > ul > ol > a,
 p > a {
-  color: #4c3fe4;
+  color: #517329;
 }
 
-/**share things */
-span.share-icons {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  position: fixed;
-  left: 10px;
-  top: 320px;
-}
-span.sharing-common {
-  color: #9d9d9d;
+
+img.sharing-common {
   background-color: #f5f5f5;
-  height: 52px;
-  width: 52px;
-  font-size: 28px;
-  line-height: 52px;
-  text-align: center;
-  padding: 0;
-  margin-bottom: 6px;
-  margin-left: 6px;
-  border-radius: 12px;
-}
-span.sharing-common:hover {
-  color: white;
+  height: 42px;
+  width: 42px;
+  
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--darkAvocado);
 }
 span.fb-color:hover {
   background-color: #1e51bf;
@@ -96,7 +177,10 @@ h3.comments {
   clear: both;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-size: 0.95rem;
   background-color: #f1f3f5;
 }
@@ -123,10 +207,21 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
 }
+pre[class*="language-"],
+pre,
+.highlight {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 0.3em;
+  max-width: 100%;
+}
 pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   border-radius: 0.3em;
 }
 :not(pre) > code[class*="language-"],
@@ -192,7 +287,7 @@ pre[class*="language-"] {
 }
 .token.bold,
 .token.important {
-  font-weight: 700;
+  font-weight: 500;
 }
 .token.italic {
   font-style: italic;
@@ -212,21 +307,20 @@ pre[class*="language-"] {
 .token.prefix.unchanged,
 .token.prefix.inserted,
 .token.prefix.deleted {
-	-webkit-user-select: none;
-	user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Optional: full-width background color */
 .token.inserted:not(.prefix),
 .token.deleted:not(.prefix) {
-	display: block;
+  display: block;
 }
 
 /* carbon */
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #carbonads {
   display: flex;
@@ -307,29 +401,37 @@ pre[class*="language-"] {
 .highlight pre {
   margin: 0;
 }
+.entry-content {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 .entry-content p {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .entry-content img {
   margin: 30px auto;
   border-radius: 6px;
+  max-width: 100%;
+  height: auto;
 }
 .entry-content ul,
 .entry-content ol {
   padding-left: 25px;
-  font-size: 22px;
+  font-size: 20px;
 }
-.entry-content ul li
-{
+.entry-content ul li {
   list-style: disc;
 }
 .entry-content ol li {
   list-style: auto;
 }
 .entry-content li::marker {
-  color: #4c3fe4;
+  color: #517329;
 }
 .entry-content > div > .cover-description {
   font-size: 24px;
@@ -339,18 +441,18 @@ pre[class*="language-"] {
 }
 .hentry ul,
 .hentry p {
-  font-size: 22px;
+  font-size: 20px;
 }
 .hentry footer {
   width: 100%;
   margin: 10px 0;
 }
-.mobile-menu {
-  animation: slide 0.5s ease-in-out;
+.mobile-menu-panel {
+  animation: slideInFromRight 0.3s ease-out;
 }
-@keyframes slide {
+@keyframes slideInFromRight {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
@@ -371,16 +473,15 @@ div > details {
   margin-bottom: 10px;
 }
 div > details > summary {
-  font-size: 22px;
-  color: #4c3fe4;
+  font-size: 20px;
+  color: #517329;
   cursor: pointer;
 }
 div > details > ul li a {
-  font-size: 22px;
-  color: #4c3fe4;
+  font-size: 20px;
+  color: #517329;
 }
 #scrollDiv {
-  left: 40px;
   transition: all ease-in-out 0.5s;
 }
 
@@ -394,7 +495,7 @@ blockquote > p {
   margin: 0 auto;
   font-size: 26px;
   color: #251f54;
-  font-weight: 700;
+  font-weight: 500;
 }
 blockquote > p:first-child:before {
   content: "";
@@ -409,12 +510,31 @@ blockquote > p:first-child:before {
 table,
 td,
 th {
-  border: 2px solid #4c3fe4;
+  border: 2px solid #517329;
   text-align: center;
   padding: 7px;
 }
 table tr:nth-of-type(even) {
   background-color: rgba(232, 230, 230, 0.942);
+}
+.entry-content {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.entry-content > table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 1em 0;
+  -webkit-overflow-scrolling: touch;
+}
+.entry-content > table thead,
+.entry-content > table tbody,
+.entry-content > table tr {
+  display: table;
+  width: 100%;
+  table-layout: auto;
 }
 table {
   margin: 0 auto;
@@ -424,7 +544,7 @@ table {
 
 /*Scroll bar progress */
 .progress-bar {
-  background: linear-gradient(to right, #4c3fe4 var(--scroll), transparent 0);
+  background: linear-gradient(to right, #517329 var(--scroll), transparent 0);
   background-repeat: no-repeat;
   width: 100%;
   position: fixed;
@@ -434,14 +554,14 @@ table {
   z-index: 1;
 }
 
-/* Mobile CSS */
-@media only screen and (max-width: 769px) {
+
   span.share-icons {
     display: flex;
     flex-direction: row;
     width: fit-content;
     position: initial;
     margin-top: 16px;
+    gap: 10px;
   }
   .homepage-icons img {
     filter: none;
@@ -450,13 +570,30 @@ table {
   blockquote > p:first-child:before {
     left: 5px;
   }
+
+
+/* Print Styles */
+@media print {
+  .share-icons {
+    display: none !important;
+  }
 }
 
 /* Responsive Google Slides, Vimeo, Twitch */
 iframe[src*="docs.google.com"],
 iframe[src*="player.vimeo.com"],
-iframe[src*="player.twitch.tv"]{
+iframe[src*="player.twitch.tv"] {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }

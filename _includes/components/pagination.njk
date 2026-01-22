@@ -1,52 +1,83 @@
-<div class='pager-container md:w-7/12 w-11/12 mx-auto mt-4 '>
-  <ul class="pager flex content-center justify-start text-lg ">
-      {% if pagination.href.previous %}
-      <li class="previous list-none mr-6 inline-block">
-        <a href="{{ pagination.href.previous }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 pt-2 rounded-md text-center block h-auto' >
-          ←&nbsp;Previous Page
-          </a>
-          </li>
-          {% endif %}
-      {% if pagination.pageNumber - 1 > 0  %}
-        <li class='list-none mr-6 inline-block' >
-        <a href="/posts/{{ pagination.pageNumber - 1  }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
+<div class="mx-auto my-4 ">
+  <ul class="flex items-center justify-between w-full text-xl p-3 shadow-lg">
+    <li class="previous list-none md:mr-3 mr-0 inline-block font-ui">
+      <a
+        {% if pagination.href.previous %}href="{{ pagination.href.previous }}"{% endif %}
+        class="text-gray bg-white border-neutralGray hover:bg-neutralGray  transition ease-in-out delay-100 rounded-md px-2 py-1.5  text-center block h-auto font-ui text-xl"
+        {% if not pagination.href.previous %}disabled{% endif %}
+      >
+        ←&nbsp; <span class="hidden md:inline">Previous</span> 
+      </a>
+    </li>
+   <div class="flex items-center justify-start ">
+     {% if pagination.pageNumber - 1 > 0 %}
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber - 1  }}"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado block p-2 rounded-md px-4  transition ease-in-out delay-100  text-center text-xl"
+      >
         {{ pagination.pageNumber - 1 }}
-        </a>
-      </li>
-      {% endif %}
-      {% if pagination.pageNumber > 0  %}
-        <li class='list-none mr-6 inline-block' >
-        <a href="/posts/{{ pagination.pageNumber }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
+      </a>
+    </li>
+    {% endif %} {% if pagination.pageNumber > 0 %}
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber }}"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado block p-2 rounded-md px-4  transition ease-in-out delay-100  text-center text-xl"
+      >
         {{ pagination.pageNumber }}
-        </a>
-      </li>
-      {% endif %}
-      <li class='list-none mr-6 inline-block' >
-        <a href="/posts/{{ pagination.pageNumber + 1  }}" class='bg-purple rounded-full block h-12 w-12 border-purple border-2 border-transparent pt-2 text-white text-center' >
+      </a>
+    </li>
+    {% endif %}
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber + 1  }}"
+        class="bg-darkAvocado block p-2 rounded-md px-4 border-darkAvocado   text-white text-center text-xl"
+      >
         {{ pagination.pageNumber + 1 }}
-        </a>
-      </li>
-        {% if pagination.pageNumber + 1 < pagination.size  %}
-        <li class='list-none mr-6 inline-block' >
-        <a href="/posts/{{ pagination.pageNumber + 2  }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
+      </a>
+    </li>
+    {% if pagination.pageNumber + 1 < pagination.size %}
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber + 2  }}"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
+      >
         {{ pagination.pageNumber + 2 }}
-        </a>
-      </li>
-      {% endif %}
-        {% if pagination.pageNumber + 2 < pagination.size  %}
-        <li class='list-none mr-6 inline-block' >
-        <a href="/posts/{{ pagination.pageNumber + 3 }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
+      </a>
+    </li>
+    {% endif %} {% if pagination.pageNumber + 2 < pagination.size %}
+    
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber + 3 }}"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
+      >
         {{ pagination.pageNumber + 3 }}
-        </a>
-      </li>
-      {% endif %}
-      {% if pagination.href.next %}
-      <li class="next list-none mr-6 inline-block ">
-        <a href="{{ pagination.href.next }}"
-      class=' text-purple bg-white border-purple hover:text-white hover:bg-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 pt-2 rounded-md text-center block h-auto'>
-      Next Page&nbsp;→
-        </a>
-      </li>
-      {% endif %}
+      </a>
+    </li>
+    <li class="list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        href="/posts/{{ pagination.pageNumber + 4 }}"
+        class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
+      >
+        {{ pagination.pageNumber + 4 }}
+      </a>
+    </li>
+    {% endif %} 
+  </div>
+  
+  
+
+  <li class="next list-none md:mr-3 mr-2 inline-block font-ui">
+      <a
+        {% if pagination.href.next %}href="{{ pagination.href.next }}"{% endif %}
+        class="text-gray bg-white border-neutralGray hover:bg-neutralGray  transition ease-in-out delay-100 rounded-md px-4 py-1.5  text-center block h-auto font-ui"
+        {% if not pagination.href.next %}disabled{% endif %}
+      >
+        <span class="hidden md:inline">Next</span> &nbsp;→
+      </a>
+    </li>
+   
   </ul>
 </div>

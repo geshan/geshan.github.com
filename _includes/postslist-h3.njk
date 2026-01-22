@@ -1,25 +1,56 @@
-<div class="entry-content">
-    <div id="blog-archives" class="category">
-        {% set postslist = postslist | reverse %}
-        {% for post in postslist %}
-        {%- if loop.index == 1  or postslist[ loop.index0 - 1 ].year != post.year -%} <h2 class='text-xl font-medium text-purple px-2 py-1 first:mt-5 mt-8 rounded-md border-2 border-purple w-24 text-center'>{{ post.year }}</h2> {%- endif -%}
-                    <article onclick='location.href="{{ post.url | url }}"' class="page-header ml-4 mt-5 flex flex-col pb-2 pl-2 cursor-pointer ">
-                        <h3 class='text-lg cursor-pointer w-fit border-b-2 border-teal hover:border-gray-500' >
-                            <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-                        </h3>
-                        <p class="meta text-muted text-sm cursor-pointer "> <span class="glyphicon glyphicon-calendar"></span>
-                        <time datetime="{{ date | getSitemapDate }}" data-updated="true">
-                            <time class="entry-date" datetime="{{ post.date | getSitemapDate }}">
-                                {{ post.date | displayDate }} .
-                                <span class='text-darkgrey'>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
-                            </time>
-                        </time>
-                        
-                        <span class="glyphicon glyphicon-tags">
-                        </span>&nbsp; 
-                        <span class="categories">
-                        </span>
-                    </article>
-        {% endfor %}
+<div class="w-full">
+  <div id="blog-archives" class="space-y-8">
+    {% set postslist = postslist | reverse %} {% for post in postslist %} {%- if loop.index == 1 or
+    postslist[ loop.index0 - 1 ].year != post.year -%}
+    <div class="flex items-center gap-4 {% if loop.index > 1 %}mt-12{% else %}mt-6{% endif %}">
+      <h2
+        class="text-2xl font-semibold text-darkAvocado font-heading flex-shrink-0"
+      >
+        {{ post.year }}
+      </h2>
+      <div class="flex-1 h-px bg-avocado"></div>
     </div>
+    {%- endif -%}
+    <article
+      class="group border-b border-lightGray pb-6 mb-6 last:border-b-0 last:mb-0 hover:bg-lightAvocado transition-colors rounded-lg px-4 py-3 -mx-4"
+    >
+      <header class="page-header">
+        <h3 class="text-xl font-normal text-gray mb-3 break-words font-ui">
+          <a
+            href="{{ post.url | url }}"
+            class="hover:text-darkAvocado transition-colors underline-offset-4 hover:underline"
+            >{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{%
+            endif %}</a
+          >
+        </h3>
+        <div class="flex flex-wrap items-center gap-3 text-sm text-darkgrey">
+          <time
+            class="uppercase text-lightGray font-medium font-ui"
+            datetime="{{ post.date | getSitemapDate }}"
+          >
+            {{ post.date | displayDate }}
+          </time>
+          <span class="text-lightGray">·</span>
+          <span class="text-lightGray uppercase font-medium font-ui">
+            {{ helpers.getReadingTime(post.templateContent) }} min read
+          </span>
+          {% if post.data.tags %}
+          <span class="text-lightGray">·</span>
+          <div class="flex flex-wrap gap-2">
+            {% for tag in post.data.tags | slice(0, 3) %}
+            <a
+              href="/blog/categories/{{ tag | slug }}/"
+              class="text-darkAvocado hover:text-avocado hover:underline text-xs uppercase"
+            >
+              {{ tag }}
+            </a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </header>
+    </article>
+
+    {% endfor %}
+  </div>
 </div>

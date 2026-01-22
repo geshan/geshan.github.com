@@ -4,83 +4,38 @@ eleventyNavigation:
   key: Posts
   order: 1
 pagination:
-    data: collections.latestPosts
-    size: 5
+  data: collections.latestPosts
+  size: 5
 permalink: "/posts/{{ pagination.pageNumber + 1  }}/index.html"
 eleventyComputed:
   title: "Posts on Geshan's Blog Page {{ pagination.pageNumber + 1  }}"
   description: "More posts on Geshan's Blog, page {{ pagination.pageNumber + 1  }} among many pages"
 ---
-<div class='md:block hidden mx-auto mt-4 mb-16'>
-{% include 'components/scroll-tags.njk' %}
-</div>
- <div class="max-w-6xl py-3 px-4 mx-auto grid-cols-12 grid gap-15">
-  <div class="col-span-12 md:col-span-8">
-    <div class='w-11/12 md:w-full mx-auto mt-4 mb-16'>
-      <h1 class='text-7xl font-bold text-darkpurple' >Blog Posts</h1>
-      <p class='mt-6 md:w-9/12 font-reading font-normal text-darkgrey leading-7'>I write about software engineering technical articles around programming, best practises and trending tech stacks. <a href='https://newsletter.geshan.com.np/' target='_blank' class='text-purple underline'>Subscribe to my newsletter</a> to make sure you don't miss anything.</p>
+<div class="w-full">
+  <div class="w-full md:max-w-6xl py-3 px-4 md:px-0 mx-auto md:grid 
+  grid-cols-12 mt-4">
+    <div class="md:col-span-8 border-b md:border-r border-neutralGray md:pr-10 
+    pr-0">
+      <div class="w-full px-0 sm:px-6 md:px-0 mx-auto mt-4 sm:mt-6 md:mt-0">
+        <h2
+          class="font-heading text-3xl sm:text-4xl md:text-5xl text-gray mb-6 font-regular tracking-[-0.01em] leading-[105%]"
+        > 
+          Posts
+        </h2>
+        {% include 'components/scroll-tags.njk' %}
+      </div>
+      {% set postslist = pagination.items | reverse %} {% set postslistCounter 
+      = collections.posts |
+      length %} 
+      {% include "postslist-excerpt.njk" %} 
+      {% include "components/pagination.njk" %}
+      
     </div>
-    {% set postslist = pagination.items | reverse %}
-    {% set postslistCounter = collections.posts | length %}
-    {% include "postslist-excerpt.njk" %}
-    <div class='pager-container md:w-9/12 w-11/12 mt-4 '>
-      <ul class="pager flex flex-wrap md:flex-nowrap content-center justify-start text-lg ">
-        {% if pagination.href.previous %}
-        <li class="previous list-none mr-6 inline-block">
-          <a href="{{ pagination.href.previous }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 pt-2 rounded-md text-center block h-auto' >
-          ←&nbsp;Previous Page
-          </a>
-        </li>
-        {% endif %}
-        {% if pagination.pageNumber - 1 > 0  %}
-        <li class='list-none mr-6 inline-block' >
-          <a href="/posts/{{ pagination.pageNumber - 1  }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
-          {{ pagination.pageNumber - 1 }}
-          </a>
-        </li>
-        {% endif %}
-        {% if pagination.pageNumber > 0  %}
-        <li class='list-none mr-6 inline-block' >
-          <a href="/posts/{{ pagination.pageNumber }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
-          {{ pagination.pageNumber }}
-          </a>
-        </li>
-        {% endif %}
-        <li class='list-none mr-6 inline-block' >
-          <a href="/posts/{{ pagination.pageNumber + 1  }}" class='bg-purple rounded-full block h-12 w-12 border-purple border-2 border-transparent pt-2 text-white text-center' >
-          {{ pagination.pageNumber + 1 }}
-          </a>
-        </li>
-        {% if pagination.pageNumber + 1 < pagination.size  %}
-        <li class='list-none mr-6 inline-block' >
-          <a href="/posts/{{ pagination.pageNumber + 2  }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
-          {{ pagination.pageNumber + 2 }}
-          </a>
-        </li>
-        {% endif %}
-        {% if pagination.pageNumber + 2 < pagination.size  %}
-        <li class='list-none mr-6 inline-block' >
-          <a href="/posts/{{ pagination.pageNumber + 3 }}" class=' text-purple bg-white border-purple hover:text-white hover:bg-purple rounded-full block h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 pt-2 text-center' >
-          {{ pagination.pageNumber + 3 }}
-          </a>
-        </li>
-        {% endif %}
-        {% if pagination.href.next %}
-        <li class="next list-none mr-6 inline-block ">
-          <a href="{{ pagination.href.next }}"
-            class=' text-purple bg-white border-purple hover:text-white hover:bg-purple border-2 border-transparent transition ease-in-out delay-100  px-3 py-2 pt-2 rounded-md text-center block h-auto'>
-          Next Page&nbsp;→
-          </a>
-        </li>
-        {% endif %}
-      </ul>
+     <div class="md:col-span-4 w-full md:relative flex flex-col items-center md:items-start mt-8 md:mt-0 md:pl-10 pb-10">
+      {% include "sidebar/popular-picks-posts.njk" %}
+      {% include "sidebar/categories.njk" %}
     </div>
+   
   </div>
-      <div class="col-span-12 md:col-span-4 w-full md:h-screen md:relative mt-10 flex flex-col items-center md:items-start md:ml-6 md:top-32">
-    {% include "sidebar/recent-posts.njk" %}
-    {% include "sidebar/side-projects.njk" %}
-    {% include "sidebar/popular-posts.njk" %}
-    {% include "sidebar/read-more-on.njk" %}
-    {% include "sidebar/subscribe-nl.njk" %}
-  </div>
+  {% include "components/subscribe-nl-new.njk" %}
 </div>

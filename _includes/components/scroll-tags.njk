@@ -1,16 +1,49 @@
-<div class='flex flex-row justify-center items-center h-16 border-t-2 border-gray-100 shadow-md -mt-6 mb-12 w-screen'>
-    <button type='button' id='leftBtn' onclick='scrollLft()' class='absolute z-10 left-1 text-white bg-purple border-white hover:text-purple hover:bg-white hover:border-purple rounded-full h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 text-center' >
-      ←
-      </button>
-    <ul id='scrollDiv' class=' flex items-center justify-center absolute h-12'>
-    {% for tag in collections.tagList | sort %}
-      {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
-      <li class='mr-1 ml-5'>
-       <a href="{{ tagUrl | url }}" class="tag background-lightbg mr-4 mb-4 rounded border-2 bg-gray-100 font-semibold text-darkgrey hover:text-purple px-3 py-1 text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap h-full">{{ tag }}</a>
-      </li>
+<div
+  class="w-full flex flex-row items-center justify-center mb-2 relative gap-4 font-ui "
+>
+  <button
+    type="button"
+    id="leftBtn"
+    onclick="scrollLft()"
+    class="flex items-center justify-center text-blackText hover:text-darkAvocado transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:text-blackText"
+    aria-label="Scroll left"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <ul
+    id="scrollDiv"
+    class="flex-1 flex items-center overflow-x-auto overflow-y-hidden scrollbar-hide min-w-0 border-b border-neutralGray pb-1.5"
+  >
+    <li>
+      <a
+        href="/posts/1/"
+        class="tag mr-1 md:mr-4 font-medium text-darkAvocado hover:text-darkAvocado px-2 md:px-3 py-0 text-md md:text-xl border-b-2 border-darkAvocado cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase pb-1"
+        >Recent</a
+      >
+    </li>
+    {% for tag in collections.tagList | sort %} {% set tagUrl %}/blog/categories/{{ tag | slug }}/{%
+    endset %}
+    <li>
+      <a
+        href="{{ tagUrl | url }}"
+        class="tag mr-1 md:mr-4 font-medium text-textColor hover:text-darkAvocado px-2 py-1 text-md md:text-xl border-gray-300 cursor-pointer hover:border-gray-400 whitespace-nowrap uppercase "
+        >{{ tag }}</a
+      >
+    </li>
     {% endfor %}
-    </ul>
-     <button type='button' id='rightBtn' onclick='scrollRight()' class='absolute right-1 text-white bg-purple border-white hover:text-purple hover:bg-white hover:border-purple rounded-full h-12 w-12 border-2 border-transparent transition ease-in-out delay-100 text-center' >
-      →
-      </button>
+  </ul>
+  <button
+    type="button"
+    id="rightBtn"
+    onclick="scrollRight()"
+    class="flex items-center justify-center text-blackText hover:text-darkAvocado transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:text-blackText"
+    aria-label="Scroll right"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
 </div>

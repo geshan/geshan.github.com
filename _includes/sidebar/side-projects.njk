@@ -1,9 +1,83 @@
-<section class="panel panel-default w-11/12 mb-6">
-    <div class="panel-heading">
-        <h3 class="panel-title">Side Projects</h3>
+
+
+
+{% set sideProjects = [
+  {
+    "title": "Nepal News English",
+    "year": 2019,
+    "url": "https://twitter.com/nepal_news_en",
+    "description": "Twitter news aggregator for Nepal from 15+ sources, rebuilt with Node.js and MySQL, running on Google Cloud Run.",
+    "followers": "14.4K",
+    "notes": [
+      "Aggregates news about Nepal from 15+ sources",
+      "Rebuilt in 2019 with Node.js and MySQL",
+      "Runs on Google Cloud Run as serverless containers",
+      "Follow on Twitter for English-language Nepal news"
+    ]
+  },
+  {
+    "title": "AU Tech Jobs",
+    "year": 2020,
+    "url": "https://autechjobs.com/",
+    "appUrl": "https://app.autechjobs.com/",
+    "description": "Tech job aggregator with 2700+ jobs from 95+ companies.",
+    "notes": [
+      "Job description summary for easy reading",
+      "Tag jobs as non-technical via external categorization service",
+      "Saved jobs and applied jobs tracking",
+      "Indicates if a company sponsors work visas",
+      "Faceted search (departments, work type)"
+    ],
+    "extraNotes": "This side project has been a joint effort of more than two dozen people. I thank each and every one of them for their time and support. This project was seeded from Australian companies providing work visa sponsorship GitHub repo I started in late 2018."
+  }
+] %}
+
+<section class="pt-10 md:pt-20 bg-lightAvocado rounded-lg">
+  <div class="max-w-6xl mx-auto pb-8  px-4">
+    <h1 class="text-3xl md:text-5xl font-heading font-regular pb-12 tracking-[-0.01em] leading-[105%] md:leading-[105%]">
+      <span class="text-lightGray italic"> Side</span>
+      <span class="text-blackText">Projects</span>
+    </h1>
+    <div id="side_projects" class="grid md:grid-cols-2 grid-cols-1 gap-12">
+      {% for project in sideProjects %}
+      <div class="border-b border-neutralGray pb-6">
+        <div class="flex items-center gap-4 font-ui font-normal text-gray mb-3">
+          <svg
+            class="w-6 h-6 text-gray flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+            <path
+              d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
+            />
+          </svg>
+          <a
+            class="font-semibold md:text-3xl text-2xl hover:underline tracking-normal leading-[120%] md:leading-[120%]"
+            href="{{ project.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ project.title }} ({{ project.year }})</a
+          >
+        </div>
+        <p class="mt-4 font-ui font-normal text-gray text-md md:text-xl tracking-[-0.01em] leading-[128%] md:leading-[128%]">{{project.description}}</p>
+        <ul class="mt-2 list-disc list-inside font-ui text-md md:text-xl tracking-[-0.01em] leading-[128%] md:leading-[128%]">
+          {% for note in project.notes %}
+          <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+        {% if project.extraNotes %}
+        <p class="mt-4 font-ui font-normal text-gray text-md md:text-xl tracking-[-0.01em] leading-[128%] md:leading-[128%]">{{ project.extraNotes }}</p>
+        {% endif %}
+      </div>
+
+      {% endfor %}
     </div>
-    <div id="side_projects" class="list-group flex flex-col">
-      <a class="list-group-item font-reading font-normal text-midblack mb-3" href="https://app.autechjobs.com"><i class="fas fa-briefcase"></i> AU Tech Jobs</a>
-      <a class="list-group-item font-reading font-normal text-midblack mb-3 " href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgeshan.com.np%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=nepal_news_en&tw_p=followbutton"><i class="fa fa-twitter"></i> Nepal News English</a> 
-    </div>
+  </div>
 </section>

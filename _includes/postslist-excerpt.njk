@@ -1,28 +1,22 @@
-<div class="blog-index w-11/12 md:w-full mx-auto mt-4">
+<div class="blog-index w-full mx-auto font-ui">
   {% for post in postslist | reverse %}
-    <article class="post mb-6">
-      <header class="page-header">
-      <h2 class="font-leading font-semibold text-3xl text-darkpurple pt-3">
-        <a href="{{ post.url }}">
-          {{ post.data.title }}
-        </a>
-      </h2>
-        <p class="meta text-muted text-uppercase"> 
-          <span class="glyphicon glyphicon-calendar">
-          </span>
-          {% set date = post.date %}
-          {% include "components/posted-date-time.njk" %}
-          . <span class='text-darkgrey'>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
-        </p>
-      </header>
-      {% include 'components/post-tags.njk' %}
-      <div class="mt-6 font-reading font-normal text-midblack leading-7 ">
-        {% excerptMore post %}
-      </div>
-      <footer>
-        <a class="flex items-center font-semibold text-purple text-xl cursor-pointer mt-3" href="{{ post.url }}">Read post <span class='ml-4 mt-1'>→</span> </a>
-      </footer>
-    </article>
+  <article class="post px-4 py-4 md:py-10 border-b border-neutralGray {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
+    <header class="page-header">
+      <h3
+        class="font-ui font-semibold md:text-3xl text-xl text-gray pt-3 break-words hover:underline tracking-normal leading-[120%] md:leading-[120%]"
+      >
+        <a href="{{ post.url }}"> {{ post.data.title }} </a>
+      </h3>
+      <p class="text-textColor text-md md:text-xl font-medium uppercase my-3">
+        <span class="glyphicon glyphicon-calendar"> </span>
+        {% set date = post.date %} {% include "components/posted-date-time.njk" %} &nbsp;&nbsp;&nbsp;
+        <span>{{ helpers.getReadingTime(post.templateContent) }} min read</span>
+      </p>
+    </header>
+    <div class="mt-3 font-ui text-md md:text-xl text-gray">{% excerptMore post %}</div>
+  </article>
   {% endfor %}
-  <p>More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.</p>
+  <p class="font-body text-gray text-base mt-2 ml-6">
+    More posts can be found in <a href="{{ '/blog/archives/' | url }}">the archive</a>.
+  </p>
 </div>

@@ -1,9 +1,7 @@
 {% if date %}
 <time datetime="{{ date | getSitemapDate }}" data-updated="true">
-    <time class="entry-date" datetime="{{ date | getSitemapDate }}">
-      <span class="text-lg text-darkgrey mt-1">     
-        {{ date | displayDateOnly }}
-      </span>
-    </time>
+  <time class="entry-date" datetime="{{ date | getSitemapDate }}">
+    <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase"> {{ date | displayDateOnly }} </span>
+  </time>
 </time>
 {% endif %}

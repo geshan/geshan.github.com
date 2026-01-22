@@ -4,106 +4,113 @@ title: Geshan's Blog
 templateClass: tmpl-home
 date: 2022-06-29T19:21:25.000+00:00
 ---
-    <!-- section top intro -->
-    <section
-      class="
-        mt-24
-        md:max-w-3xl
-        xl:max-w-6xl
-        mx-auto
-        sm:max-w-xl
-        text-center
-        sm:text-left
-        px-4
-        md:px-0
-      "
+
+<!-- section top intro -->
+<section class="bg-lightAvocado min-h-[70vh] px-4 flex items-center">
+  <div class="max-w-6xl mx-auto w-full">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center justify-center text-center md:text-left"
     >
-      <div class="grid-cols-12 grid">
-        <div class="sm:col-span-10 col-span-12">
-          <div>
-            <h1 class="text-5xl sm:text-7xl font-bold text-darkpurple">
-              👋 I’m Geshan, Senior Software Engineer and a speaker.
-            </h1>
-            <p class="mt-6 text-midgrey text-2xl">
-              I have more than 17 years of professional software engineering experience, currently
-              located in Sydney, Australia serving
-              <span class="underline font-bold text-darkpurple"
-                >Simply Wall St</span
-              >
-              as a senior software engineer. I am a Google Developer
-              Expert and I have actively participated as a speaker in:
-            </p>
-          </div>
-          <div class="mt-8">
-  <ul class="flex items-center homepage-icons">
-    <li class="mr-5">
-      <img
-        class="w-138 h-auto"
-        src="/images/theme/laracon-amsterdam.png"
-        alt="laracon EU Amsterdam 2016 logo"
-      />
-    </li>
+      <!-- Left side: Large serif text -->
+      <div class="mt-4 md:mt-0 order-1">
+        <h1 class="font-heading font-regular text-left tracking-[-0.01em] leading-[105%]">
+          <span class="text-lightGray italic">I'm Geshan,</span><br />
+          <span class="text-black">Senior Software Engineer and a Speaker.</span>
+        </h1>
+      </div>
 
-    <li class="mr-5">
-      <img
-        class="w-90 h-auto"
-        src="/images/theme/dev-days.png"
-        alt="Devops Days Portland 2017"
-      />
-    </li>
+      <!-- Right side: Description paragraph -->
+      <div class="order-1 md:order-2 flex flex-col gap-4 items-center md:items-start">
+        <p class="text-xl text-textColor md:text-xl font-body font-regular text-justify">
+          <span class="text-blackText font-heading text-3xl font-medium mr-2">I</span>have more than 17 years of
+          professional software engineering experience, currently located in Sydney, Australia
+          serving</span>
+          <a href="https://safewill.com/" target="_blank" class="font-medium text-darkAvocado">Safewill</a>
+          as a Technical Lead. I am a Google Developer Expert, a technical writer blogging
+          since 2007 and I have actively participated as a speaker in various events.
+        </p>
+        <!-- Logos section -->
+        <div class="mt-4 mb-8 md:mb-0 w-full">
+          <ul class="flex items-center gap-5 justify-center md:justify-start flex-wrap">
+            <li>
+              <img
+                class="w-120 h-auto"
+                src="/images/theme/laracon-amsterdam.webp"
+                alt="laracon EU Amsterdam 2016 logo"
+                width="120"
+                height="120"
+              />
+            </li>
 
-    <li class="mr-5">
-      <img
-        class="w-75 h-auto"
-        src="/images/theme/dev-days-newcastle.png"
-        alt="Devops Days New Castle 2018"
-      />
-    </li>
+            <li>
+              <img
+                class="w-90 h-auto"
+                src="/images/theme/dev-days.webp"
+                alt="Devops Days Portland 2017"
+                width="90"
+                height="90"
+              />
+            </li>
 
-   <li class="mr-5">
-      <img
-        class="w-68 h-auto"
-        src="/images/theme/laracon.png"
-        alt="Laracon AU 2019"
-      />
-    </li>
-     <li>
-      <img
-        class="w-249 h-auto"
-        src="/images/theme/serverless-days.png"
-        alt="Serverless Days Sydney 2019"
-      />
-    </li>
-  </ul>
+            <li>
+              <img
+                class="w-75 h-auto"
+                src="/images/theme/dev-days-newcastle.webp"
+                alt="Devops Days New Castle 2018"
+                width="75"
+                height="75"
+              />
+            </li>
 
-  <ul class="flex items-center justify-center sm:justify-start homepage-icons ">    
-   <li>
-      <img
-        class="w-249 h-auto mr-5"
-        src="/images/theme/devfest-hobart-2024.jpg"
-        alt="Google Devfest Hobart 2024"
-      />
-    </li>    
-    <li>
-      <img
-        class="w-249 h-auto mr-5"
-        src="/images/theme/programmable.jpg"
-        alt="Programmable 2025 Sydney"
-      />
-    </li>
-    <li>
-      <img
-        class="w-249 h-auto mr-5"
-        src="/images/theme/bwai-canberra-2025.jpg"
-        alt="Build With AI Canberra 2025"
-      />
-    </li>
-  </ul>
-
-            <p class="mt-6 text-midgrey text-2xl"> and more. I am a technical writer too, blogging since 2007.</p>
-
-          </div>
+            <li>
+              <img
+                class="w-68 h-auto"
+                src="/images/theme/laracon.webp"
+                alt="Laracon AU 2019"
+                width="68"
+                height="68"
+              />
+            </li>
+            <li>
+              <img
+                class="w-68 h-auto mr-5"
+                src="/images/theme/bwai-canberra-2025.webp"
+                alt="Build With AI Canberra 2025"
+                width="68"
+                height="68"
+              />
+            </li>
+            <li>
+              <img
+                class="w-140 h-auto"
+                src="/images/theme/serverless-days.webp"
+                alt="Serverless Days Sydney 2019"
+                width="140"
+                height="140"
+              />
+            </li>
+            <li>
+              <img
+                class="w-140 h-auto mr-5"
+                src="/images/theme/devfest-hobart-2024.webp"
+                alt="Google Devfest Hobart 2024"
+                width="140"
+                height="140"
+              />
+            </li>
+            <li>
+              <img
+                class="w-140 h-auto mr-5"
+                src="/images/theme/programmable.webp"
+                alt="Programmable 2025 Sydney"
+                width="140"
+                height="140"
+              />
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 {%- include "components/subscribe-nl-new.njk" -%}
