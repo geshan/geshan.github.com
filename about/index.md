@@ -14,7 +14,7 @@ description:
 
 <div class='flex md:flex-row flex-col-reverse rounded-md bg-darkAvocado p-3 md:h-80 mb-3'>
 <p class='cover-description text-2xl px-4 my-auto text-white '>
-Hi, I am Geshan. I am a software engineer with more than 17 years of software engineering experience. I live in Sydney, Australia, serving Simply Wall St as a senior software engineer.
+Hi, I am Geshan. I am a software engineer with more than 17 years of software engineering experience. I live in Sydney, Australia, serving Safewill as a technical lead.
 </p>
 <img class="center rounded-full md:border-4 border-white h-44  md:h-5/6 m-auto " src="/images/geshan.jpg" title="Geshan Manandhar" alt="Geshan Manandhar">
 </div>
