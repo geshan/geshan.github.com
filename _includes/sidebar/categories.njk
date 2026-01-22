@@ -3,11 +3,11 @@
     <h3
       class="panel-title font-regular uppercase md:mb-4 font-heading text-gray tracking-[0.04em] leading-[100%] md:leading-[100%]"
     >
-      Categories
+      Select Categories
     </h3>
   </div>
   <div class="list-group flex flex-col justify-center content-center">
-    {%- set allowedTags = ['devops', 'misc', 'software engineering', 'talks', 'web development'] -%}
+    {%- set allowedTags = ['ai', 'devops', 'docker', 'software engineering', 'job search' ] -%}
     {%- for tag in collections.tagList | sort -%} {%- if tag | lower in allowedTags -%} {%- set
     tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
     <a
