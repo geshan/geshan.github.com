@@ -1,6 +1,6 @@
 <div class="max-w-6xl mx-auto md:py-12 px-4">
     <h2 class="text-4xl text-darkAvocado font-heading font-regular flex-shrink-0 py-8 tracking-normal leading-[105%] md:leading-[105%]"> <span class="text-lightGray italic">Related</span> <span class="text-blackText">Blogs</span></h2>
-    {% set sortedPosts = collections.latestPosts | reverse %}
+    {% set sortedPosts = collections.latestPosts %}
     {% set relatedTagPosts = sortedPosts | relatedPosts(page.url) %}
     {% if relatedTagPosts.length > 0 %}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
