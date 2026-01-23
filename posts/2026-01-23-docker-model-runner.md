@@ -128,7 +128,7 @@ You can also chat with the model from the `Chat` tab, as seen below:
 
 You can also inspect the mode’s architecture, parameters, and other information in the `Inspect` tab:
 
-<img class="center" src="/images/docker-model-runner/09docker-desktop-chat-with-model.jpg" loading="lazy" title="Looking at the model information in Docker Desktop" alt="Looking at the model information in Docker Desktop">
+<img class="center" src="/images/docker-model-runner/10docker-desktop-model-inspect.jpg" loading="lazy" title="Looking at the model information in Docker Desktop" alt="Looking at the model information in Docker Desktop">
 
 The above information is similar to running the `docker model inspect smollm2` command. You can find the list of commands supported by `docker model` in the official Docker [documentation](https://docs.docker.com/reference/cli/docker/model/). For instance, you can see the running models with `docker model ps` and try out other commands similar to the main Docker CLI.
 
