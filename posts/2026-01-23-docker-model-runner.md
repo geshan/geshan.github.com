@@ -47,7 +47,7 @@ Given the prerequisites have been mentioned, in the next section, you will run S
 
 ## Running Smollm2 with Docker Moder Runner
 
-Given that you have tested that you have Docker and Docker Model Runner installed on your system of choice. You will be running the Smollm2(https://huggingface.co/collections/HuggingFaceTB/smollm2) model’s default/latest variant, which is the 360 million parameter one. It is 256.38 MB in size. You might ask why Smollm2. In my opinion, it is small enough to download quickly and does a good job of answering basic questions.
+Given that you have tested that you have Docker and Docker Model Runner installed on your system of choice. You will be running the [Smollm2](https://huggingface.co/collections/HuggingFaceTB/smollm2) model’s default/latest variant, which is the 360 million parameter one. It is 256.38 MB in size. You might ask why Smollm2. In my opinion, it is small enough to download quickly and does a good job of answering basic questions.
 
 If you are not very confident with Docker commands, you can read the [Docker for beginners](/blog/2024/04/docker-for-beginners/) tutorial for a refresher on Docker. You can also read the post on [Docker commands](/blog/2022/05/docker-commands/) like docker pull, docker images, docker run, and others.
 
@@ -145,7 +145,7 @@ Untagged: index.docker.io/ai/smollm2:latest
 Deleted: sha256:354bf30d0aa3af413d2aa5ae4f23c66d78980072d1e07a5b0d776e9606a2f0b9
 ```
 
-There you go, you pulled a model with Docker Model runner and were able to run it. You had a quick chat with Smollm2. In the next part, you will learn how to connect a model with your own app using Docker Compose.
+There you go, you pulled a model with Docker Model runner and were able to run it. You had a quick chat with Smollm2. In the next part, you will learn how to connect a model with your own app using [Docker Model Runner and Docker Compose](/blog/2026/01/docker-model-runner-docker-compose/).
 
 
 ## Conclusion
