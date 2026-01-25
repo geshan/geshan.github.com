@@ -7,7 +7,7 @@ tags:
 - AI
 - Gen AI
 - Docker
-cover: "/images/docker-model-runner/01docker-model-runner.jpg"
+cover: "/images/docker-model-runner-docker-compose/01docker-model-runner-docker-compose.jpg"
 pagetitle: "How to use an open model with your application using Docker Model Runner and Docker Compose [Part 2]"
 description: "A tutorial showing how to run Smollm2 with Docker Model Runner and Docker Compose to work with a simple Node.js/Express.js chat application"
 keywords: docker model runner, docker model runner smollm2, docker model runner compose, docker model runner docker compose, docker model runner node.js app, docker model runner express.js, docker model runner chat app
@@ -252,4 +252,4 @@ In my experience, when running AI models locally, they can start to eat up CPU r
 
 ## Conclusion
 
-In this post, you built on part 1, the introduction to [Docker Model Runner](/blog/2026/01/docker-model-runner/), by connecting a simple Node.js (Express.js) chat app to the Smollm2 model using Docker Compose. You saw the code for the chat app, then a simple Dockerfile to run a Node.js app, and finally the Docker Compose file that connects the app to the open model (SmolM2 in this case). Then you ran it and saw it in action. Keep Learning!
+In this post, you built on part 1, the introduction to Docker Model Runner, by connecting a simple Node.js (Express.js) chat app to the Smollm2 model using Docker Compose. You saw the code for the chat app, then a simple Dockerfile to run a Node.js app, and finally the Docker Compose file that connects the app to the open model (SmolM2 in this case). Then you ran it and saw it in action. Keep Learning!
