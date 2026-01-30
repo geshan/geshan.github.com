@@ -1,0 +1,59 @@
+{% set posts = collections.posts | head(-5) %}
+<section>
+  <div class="mt-10 md:mt-20 max-w-6xl mx-auto pb-8 px-4">
+    <div class="grid-cols-12 md:grid">
+      <div class="col-span-12 md:col-span-8 border-b md:border-b-0 md:border-r border-neutralGray md:pr-10 pr-0">
+        <h1 class="text-3xl md:text-5xl font-heading font-regular text-textColor break-words tracking-normal leading-[105%] md:leading-[105%]">
+          <span class="text-lightGray italic"> Recently</span>
+          <span class="text-blackText">Published</span>
+        </h1>
+
+        <div class="mt-12 relative font-ui">{% include 'components/scroll-tags.njk' %}</div>
+
+        <!-- recent posting  -->
+        <div class="mb-14">
+          <div id="recent_posts" class="list-group">
+            {% for post in posts | reverse %}
+            <div class="border-b border-neutralGray px-4 py-4 font-ui{% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}">
+              <h2 class="font-ui font-semibold text-xl md:text-2xl text-gray pt-3">
+                <a
+                  class="list-group-item{% if post.url == page.url %} active{% endif %} break-words font-ui hover:text-darkAvocado"
+                  href="{{ post.url | url }}"
+                  title="{{ post.data.description }}"
+                >
+                  {% if post.data.title %} {{ post.data.title }} {% else %}
+                  <code> {{ post.url }} </code>
+                  {% endif %}
+                </a>
+              </h2>
+              <p class="w-full text-xl text-textColor my-3 font-medium">
+                <time
+                  class="uppercase whitespace-normal break-words"
+                  datetime="{{ post.date | getSitemapDate }}"
+                >
+                  {{ post.data.date | displayDateOnly }} &nbsp;&nbsp;&nbsp; {{
+                  helpers.getReadingTime(post.templateContent) }} min read
+                </time>
+              </p>
+              <p class="font-ui text-gray text-md md:text-xl break-words mt-3">{{ post.data.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="w-full">
+          <a
+            class="block rounded border-2 text-center font-semibold font-body text-gray hover:text-darkAvocado hover:border-darkAvocado py-3 text-xl border-gray-300 cursor-pointer px-4 w-full"
+            href="/posts/1/"
+            style="width: 100%"
+          >
+            View all posts
+          </a>
+        </div>
+      </div>
+      <div class="col-span-12 md:col-span-4 mt-10 md:mt-0 pl-0 md:pl-10 ">
+        <!-- advertisment -->
+        {% include "sidebar/popular-picks-posts.njk" %}
+      </div>
+    </div>
+  </div>
+</section>
