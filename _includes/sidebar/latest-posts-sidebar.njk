@@ -1,0 +1,27 @@
+{% set latestPosts = collections.latestPosts | head(5) %}
+<section class="panel panel-default w-full mb-6">
+  <div class="panel-heading mb-2 text-left">
+    <h3
+      class="panel-title font-regular uppercase md:mb-4 font-heading text-gray tracking-[0.04em] leading-[100%] md:leading-[100%]"
+    >
+      Latest Posts
+    </h3>
+  </div>
+  <div class="list-group flex flex-col justify-center content-center">
+    {% for post in latestPosts %}
+    <div
+      class="border-b border-neutralGray pt-5 pb-3 {% if loop.index % 2 == 0 %} bg-alternateGray{% endif %}"
+    >
+      <a
+        class="list-group-item mb-5 hover:border-avocado font-ui font-semibold text-gray w-full text-md pb-3 tracking-[-0.01em] leading-[132%] md:leading-[132%]"
+        href="{{ post.url | url }}"
+        title="{{ post.data.title }}"
+      >
+        {{ post.data.title }}
+      </a>
+    </div>
+    {% endfor %} {% if latestPosts.length == 0 %}
+    <p class="text-textColor text-md font-ui">No latest posts available yet.</p>
+    {% endif %}
+  </div>
+</section>
