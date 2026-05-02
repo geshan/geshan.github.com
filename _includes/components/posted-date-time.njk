@@ -5,3 +5,8 @@
   </time>
 </time>
 {% endif %}
+{% if lastUpdated and not (date | isSameDay(lastUpdated)) %}
+<time class="entry-date" datetime="{{ lastUpdated | getSitemapDate }}">
+  <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">UPDATED: {{ lastUpdated | displayDateOnly }}</span>
+</time>
+{% endif %}

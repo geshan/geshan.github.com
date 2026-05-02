@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
+const isSameDay = require("./_11ty/isSameDay");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
@@ -42,6 +43,8 @@ module.exports = function (eleventyConfig) {
     const dateInUTC = DateTime.fromJSDate(dateObj, { zone: "utc" });
     return dateInUTC.toISODate();
   });
+
+  eleventyConfig.addFilter("isSameDay", isSameDay);
 
   eleventyConfig.addFilter("yearMonth", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy/LL");

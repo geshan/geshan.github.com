@@ -19,7 +19,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     "url": "{{ absolutePostUrl }}",
     "datePublished": "{{ date | htmlDateString }}",
     "dateCreated": "{{ date | htmlDateString }}",
-    "dateModified": "{{ date | htmlDateString }}",
+    "dateModified": "{% if lastUpdated and not (date | isSameDay(lastUpdated)) %}{{ lastUpdated | htmlDateString }}{% else %}{{ date | htmlDateString }}{% endif %}",
     "description": "{{ renderData.description or description or metadata.description }}",
     "articleBody": "{{ content | stripTags }}",
     "author": { "@type": "Person", "name": "{{ metadata.author.name }}" },

@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
+		<updated>{% if post.data.lastUpdated and not (post.date | isSameDay(post.data.lastUpdated)) %}{{ post.data.lastUpdated | rssDate }}{% else %}{{ post.date | rssDate }}{% endif %}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 	</entry>

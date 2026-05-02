@@ -2,6 +2,7 @@
 layout: post
 title: A beginner's guide to running Elasticsearch with Docker and Docker Compose
 date: 2023-06-08T23:45:52.000+11:00
+lastUpdated: 2026-05-02T21:22:45.000+11:00
 comments: true
 tags:
 - Web Development

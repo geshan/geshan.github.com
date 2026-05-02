@@ -36,6 +36,7 @@
     "axios": "^1.7.4",
     "eleventy-google-fonts": "^0.1.0",
     "eleventy-plugin-blog-tools": "^0.4.1",
+    "fast-check": "^4.7.0",
     "html-minifier": "^4.0.0",
     "luxon": "^3.0.4",
     "markdown-it": "^13.0.1",
