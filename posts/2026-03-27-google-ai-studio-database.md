@@ -2,6 +2,7 @@
 layout: post
 title: "How to build a simple Google login and profile page on Google AI Studio with Firebase as a datastore [step-by-step]"
 date: 2026-03-27T21:52:47.000+11:00
+lastUpdated: 2026-04-19
 comments: true
 tags:
 - Google AI Studio
@@ -43,7 +44,7 @@ Given that is mentioned, you can start building a login and user profile page on
 
 The aim of this tutorial is to build a simple but useful login page with Google login ([1.8 billion people use Gmail](https://www.demandsage.com/gmail-statistics/) each month). The app will also have a form to input address, phone number, LinkedIn profile, and GitHub profile that will be displayed on a plain profile page.
 
-You could have used [Google Stitch to vibe design](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/) it, we can keep it as a topic for another blog post. 
+You could have used [Google Stitch to vibe design](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/) it, we can keep it as a topic for another blog post. Testing last updtaed.
 
 ## Google AI Studio - Build
 

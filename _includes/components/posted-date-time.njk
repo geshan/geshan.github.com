@@ -1,7 +1,13 @@
 {% if date %}
+{% set showUpdated = lastUpdated and (lastUpdated | htmlDateString) != (date | htmlDateString) %}
 <time datetime="{{ date | getSitemapDate }}" data-updated="true">
   <time class="entry-date" datetime="{{ date | getSitemapDate }}">
     <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase"> {{ date | displayDateOnly }} </span>
   </time>
 </time>
+{% if showUpdated %}
+<time class="entry-date updated-date" datetime="{{ lastUpdated | htmlDateString }}">
+  <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">Updated: {{ lastUpdated | readableDate }}</span>
+</time>
+{% endif %}
 {% endif %}
