@@ -9,7 +9,7 @@ tags:
 cover: "/images/postgres-insert-multiple-rows/01postgres-insert-multiple-rows.jpg"
 pagetitle: "How to insert multiple rows in Postgres using two useful methods"
 description: "Learn to insert multiple rows at once in Postgres with a single insert statement and the copy command in this useful tutorial."
-keywords: postgres insert multiple rows, postgers insert multiple rows at once, postgres insert multiple rows copy, postgres insert multiple rows single insert
+keywords: postgres insert multiple rows, postgres insert multiple rows at once, postgres insert multiple rows copy, postgres insert multiple rows single insert
 ---
 The PostgreSQL database, lovingly known as Postgres, is a powerful open-source database management system. Developers adore it for its robustness, reliability, and expressive SQL (Structured Query Language) capabilities. Often, when working with Postgres, you'll need to insert multiple rows into a table. While the single-row INSERT statement might be the first thing that pops into your mind, there are more efficient approaches when dealing with large amounts of data. In this blog post, you will dive deep into two powerful methods that can significantly streamline the process of inserting multiple rows in Postgres. Let's get started!
 
@@ -28,11 +28,9 @@ The PostgreSQL database, lovingly known as Postgres, is a powerful open-source d
     * [Use the quotes example for copy](#use-the-quotes-example-for-copy)
 * [Conclusion](#conclusion)
 
-## Adding data
+## As a software engineer, you should always strive to write highly optimized and efficient code. This can depend on the number of requests per second the code is expected to handle, the size of the data, the number of database connections, and other factors. The same goes for the data manipulation operations you perform on a database, be it MySQL, Postgres, or another database. So, you should know about the trade-offs and choose the best approach given the context.
 
-As a software engineer, you should always strive to write optimally optimized and efficient code. This can be the number of requests per second the code is expected to handle, the size of data, the number of database connections, and other factors. The same goes for the data manipulation operation you perform on a database, be it MySQL, Postgres, or another database. So, you should know about the trade-offs and choose the best approach given the context.
-
-You will explore the two ways to insert multiple rows in Postgres. First, you will look at inserting multiple rows with a single INSERT statement, then delve into the powerful `COPY` command, that can be used to insert multiple rows from an external CSV file to an existing table. By the end of this comprehensive exploration, you'll have a solid grasp of how to insert multiple rows in Postgres efficiently and effectively.
+You will explore two ways to insert multiple rows in Postgres. First, you will look at inserting multiple rows with a single INSERT statement, then delve into the powerful `COPY` command that can be used to insert multiple rows from an external CSV file into an existing table. By the end of this comprehensive exploration, you'll have a solid grasp of how to insert multiple rows in Postgres efficiently and effectively.
 
 ## Example quote table
 
@@ -66,7 +64,7 @@ INSERT INTO quote (quote, author)
 VALUES ('The only way to learn a new programming language is by writing programs in it.', 'Dennis Ritchie');
 ```
 
-This statement inserts a new quote into the quote table with the value `The only way to learn a new programming language is by writing programs in it.` and `Dennis Ritchie` as the author. The above `INSERT` statement works well for a single row, but what if you want to insert multiple rows? For that, you would have to repeat the same `INSERT` statement for each row which is not very efficient, for instance, to add two more quotes with other authors  you will need to execute two more INSERT statements as below:
+This statement inserts a new quote into the quote table with the value `The only way to learn a new programming language is by writing programs in it.` and `Dennis Ritchie` as the author. The above `INSERT` statement works well for a single row, but what if you want to insert multiple rows? For that, you would have to repeat the same `INSERT` statement for each row, which is not very efficient. For instance, to add two more quotes with other authors, you will need to execute two more `INSERT` statements, as shown below:
 
 ```sql
 INSERT INTO quote (quote, author)
@@ -76,13 +74,13 @@ INSERT INTO quote (quote, author)
 VALUES ('Programs must be written for people to read, and only incidentally for machines to execute.', 'Harold Abelson');
 ```
 
-As you can see for 3 rows you had to run 3 INSERT statements. Now, you know the single `INSERT` statement is not very efficient for inserting multiple rows. It might involve multiple connections from your app to your database which will be slow. You will learn about a much more efficient way of doing this in the next section.
+As you can see, for 3 rows you had to run 3 `INSERT` statements. Now, you know the single `INSERT` statement is not very efficient for inserting multiple rows. It might involve multiple connections from your app to your database, which will be slow. You will learn about a much more efficient way of doing this in the next section.
 
 ## Multiple rows with a single insert
 
-There are a couple of other ways to insert multiple rows in Postgres and both of them are much better than running individual `INSERT` statements. One way to do it is to run single `INSERT` statements to insert multiple rows with a bulk insert approach. Another way to insert multiple rows in Postgres is by using the `COPY` command.
+There are a couple of other ways to insert multiple rows in Postgres, and both of them are much better than running individual `INSERT` statements. One way to do it is to run a single `INSERT` statement to insert multiple rows with a bulk insert approach. Another way to insert multiple rows in Postgres is by using the `COPY` command.
 
-Inserting multiple rows with a single insert has a similar syntax as inserting a single row, the main difference is you pass in multiple rows. Below is an example to insert 5 quotes on the above quote table:
+Inserting multiple rows with a single insert has a similar syntax to inserting a single row; the main difference is that you pass in multiple rows. Below is an example to insert 5 quotes into the above quote table:
 
 ```sql
 INSERT INTO quote (quote, author) VALUES 
@@ -97,16 +95,16 @@ When you run it with `psql` it will look as follows:
 
 <img class="center" loading="lazy" src="/images/postgres-insert-multiple-rows/02insert-multiple.jpg" title="Inserting multiple rows with single insert query working on psql" alt="Inserting multiple rows with single insert query working on psql">
 
-You can also use the [RETURING keyword](https://www.postgresql.org/docs/current/dml-returning.html) in Postgres to get the inserted data.
+You can also use the [RETURNING keyword](https://www.postgresql.org/docs/current/dml-returning.html) in Postgres to get the inserted data.
 
 ### On Conflict and DB transaction
 
-If you do a bulk insert of multiple rows with a single insert, you can easily turn it into an upsert using the `ON CONFLICT` [clause](https://www.postgresql.org/docs/current/sql-insert.html#SQL-ON-CONFLICT). It checks if a unique constraint or a composite key is violated, in that case, you can use the new values to replace the old ones. For instance, in the above example if an already existing quote is inserted again and you want to change the author it will look like this:
+If you do a bulk insert of multiple rows with a single insert, you can easily turn it into an upsert using the `ON CONFLICT` [clause](https://www.postgresql.org/docs/current/sql-insert.html#SQL-ON-CONFLICT). It checks if a unique constraint or a composite key is violated; in that case, you can use the new values to replace the old ones. For instance, in the above example, if an already existing quote is inserted again and you want to change the author, it will look like this:
 
 ```sql
 INSERT INTO quote (quote, author)
 VALUES
-    ('First, solve the problem. Then, write the code.', 'John Johnson1), 
+    ('First, solve the problem. Then, write the code.', 'John Johnson1'), 
     ('Java is to JavaScript what car is to Carpet.', 'Chris Heilmann1'), 
 ON CONFLICT (quote) DO UPDATE
 SET author = EXCLUDED.author;
@@ -114,13 +112,13 @@ SET author = EXCLUDED.author;
 
 The above insert will act like an upsert and update the author to the new values provided in the insert values as the quote already exists and it has a unique constraint.
 
-Another thing to consider is if you are inserting rows with a parent-child table for example, the author is a table and the quote is another table as described in this [Postgres Delete Cascade](/blog/2023/04/delete-cascade-postgres/) post, then it is best done in a database transaction. You will first add the author get the author’s id and use it in the query to insert the quote all in the same database transaction to maintain data integrity. Next, you will learn about the useful COPY command.
+Another thing to consider is if you are inserting rows with a parent-child relationship—for example, if the author is in one table and the quote is in another table as described in this [Postgres Delete Cascade](/blog/2023/04/delete-cascade-postgres/) post—then it is best done in a database transaction. You will first add the author, get the author’s ID, and use it in the query to insert the quote—all in the same database transaction to maintain data integrity. Next, you will learn about the useful `COPY` command.
 
 ## Insert multiple rows with COPY command
 
 The `COPY` command provides a bulk insertion mechanism for inserting multiple rows from a file into a Postgres table with a single command. It can significantly improve performance compared to executing multiple individual INSERT statements. It's particularly useful when you have large datasets to import.
 
-The basic syntax for using the `COPY` command for inserting data from a CSV file to a table is:
+The basic syntax for using the `COPY` command for inserting data from a CSV file into a table is:
 
 ```sql
 COPY table_name (column1, column2, column3, ...)
@@ -156,7 +154,7 @@ For the CSV file you have:
 * **Delimiter:** The delimiter used in the CSV file to separate the columns is a comma.
 * **Quote:** Some of the quotes are wrapped in double quotes.
 
-To insert the quotes data from the CSV file into the quote table you can run the following `COPY` command:
+To insert the quotes data from the CSV file into the quote table, you can run the following `COPY` command:
 
 ```sql
 COPY quote("quote","author") from '/tmp/quotes.csv' WITH DELIMITER ',' CSV HEADER;
@@ -180,10 +178,10 @@ The `COPY` command has efficiently inserted the data from the `quotes.csv` file.
 
 > COPY naming a file or command is only allowed to database superusers or users who are granted one of the roles pg_read_server_files, pg_write_server_files, or pg_execute_server_program, since it allows reading or writing any file or running a program that the server has privileges to access.
 
-Given the user has the right permissions, the `COPY` command is a very useful tool. I could not run it on a [Neon](https://neon.tech) database but I could easily run it on a local Postgres database run with [Docker compose](/blog/2021/12/docker-postgres/).
+Given the user has the right permissions, the `COPY` command is a very useful tool. I could not run it on a [Neon](https://neon.tech) database, but I could easily run it on a local Postgres database run with [Docker Compose](/blog/2021/12/docker-postgres/).
 
 ## Conclusion
 
 In this comprehensive guide, you have explored two effective methods for inserting multiple rows in Postgres. You learned the limitations of using individual `INSERT` statements for large datasets and used the single insert to put in multiple rows at once. You then delved into the powerful `COPY` command, discovering how to efficiently insert multiple rows from a CSV file.
 
-By mastering these techniques, you can streamline your data manipulation operations, enhance performance, and optimize your Postgresql workflows. Keep in mind to be aware of the performance considerations, and database design, and indexing when dealing with a huge data set for efficient insert operations. The next time you face the task of inserting multiple rows in a Postgres table, remember these methods and choose the most suitable approach for your needs. Happy coding!
+By mastering these techniques, you can streamline your data manipulation operations, enhance performance, and optimize your PostgreSQL workflows. Keep in mind the performance considerations, database design, and indexing when dealing with a huge dataset for efficient insert operations. The next time you face the task of inserting multiple rows in a Postgres table, remember these methods and choose the most suitable approach for your needs. Happy coding!
