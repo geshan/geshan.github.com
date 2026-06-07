@@ -9,12 +9,12 @@ tags:
 - Web Development
 cover: "/images/nodejs-dotenv/01nodejs-dotenv.jpg"
 pagetitle: "How to use environment variables from a .env file in Node.js"
-description: "Learn how to use environment variables with the dotenv NPM package and natively with Node 20+."
+description: "Learn how to use environment variables with the dotenv npm package and natively with Node 20+."
 keywords: nodejs dotenv, node js dotenv, node.js dotenv, nodejs environment variables, node.js environment variables, node.js env variables, node.js env, node.js process.env
 ---
-Environment variables are essential for configuring your Node.js applications, allowing you to tailor settings for different environments like development, testing, and production. While you can set environment variables directly in your system or terminal, a more elegant and organized approach is to use a **.env file**. This file allows you to store all your environment variables in one central location, keeping them separate from your code and making it easy to manage different configurations.
+Environment variables are essential for configuring your Node.js applications, allowing you to tailor settings for different environments like development, testing, and production. While you can set environment variables directly in your system or terminal, a more organized approach is to use a **.env file**. This file allows you to store all your environment variables in one central location, keeping them separate from your code and making it easy to manage different configurations.
 
-In this comprehensive guide, we'll delve into the world of environment variables in Node.js, explore the role of the popular `dotenv` package, and uncover how to use it effectively. We'll also explore the native way of accessing environment variables in Node.js 20+ using ESM (EcmaScript Modules). Let's get started!
+In this comprehensive guide, we'll delve into the world of environment variables in Node.js, explore the role of the popular `dotenv` package, and uncover how to use it effectively. We'll also explore the native way of accessing environment variables in Node.js 20+ using ESM (ECMAScript Modules). Let's get started!
 
 <!-- more -->
 
@@ -28,8 +28,8 @@ In this comprehensive guide, we'll delve into the world of environment variables
   - [Installing dotenv](#installing-dotenv)
   - [Creating a .env file](#creating-a-.env-file)
   - [Loading environment variables](#loading-environment-variables)
-- [Get environment variables natively Node 20+](#get-environment-variables-natively-node-20%2B)
-  - [Using –-env file in node cli](#using-–env-file-in-node-cli)
+- [Get environment variables natively in Node 20+](#get-environment-variables-natively-in-node-20%2B)
+  - [Using --env-file in Node CLI](#using---env-file-in-node-cli)
 - [Dotenv is still popular](#dotenv-is-still-popular)
 - [Conclusion](#conclusion)
 
@@ -39,7 +39,7 @@ Imagine you're building a Node.js application that needs to connect to a databas
 
 That's where environment variables come to the rescue. You can store sensitive information like API keys, database credentials, and other configuration settings as environment variables, keeping them separate from your codebase. This enhances security and makes it easier to deploy your application to different environments with different configurations.
 
-A .env file is a simple text file that stores your environment variables in a key-value format. It's a widely adopted convention in the Node.js ecosystem for managing environment variables, and there's a popular NPM package called `dotenv` that makes it easy to load these variables into your application. It also helps you achieve the [config](https://12factor.net/config) part of the 12-factor app. The 12-factor app’s config factor states, “requires strict separation of config from code. Config varies substantially across deploys, code does not.”
+A .env file is a simple text file that stores your environment variables in a key-value format. It's a widely adopted convention in the Node.js ecosystem for managing environment variables, and there's a popular NPM package called `dotenv` that makes it easy to load these variables into your application. It also helps you achieve the [config](https://12factor.net/config) part of the 12-factor app. The 12-factor app’s config factor states, it “requires strict separation of config from code. Config varies substantially across deploys, code does not.”
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ Before we dive into the code and explore how to use environment variables from a
 
 * **Node.js 20 or later installed:**  We'll be using the latest features of Node.js, so having a recent version installed is essential. You can check your Node.js version by running `node --version` in your terminal.
 * **A basic understanding of Node.js and NPM:** You should be familiar with running Node.js scripts and installing NPM packages using the `npm install` command.
-* **Basic knowledge of JavaScript Modules:** This guide will use ESM imports. This is the new standard for JavaScript modules, and it's supported in Node.js 14 and above.
+* **Basic knowledge of JavaScript Modules:** This guide will use ESM imports. This is the new standard for JavaScript modules, and it is supported in Node.js 14 and above.
 
 In the subsequent section, you will learn how to get environment variables using the `dotenv` package.
 
@@ -88,11 +88,11 @@ console.log(`Database name is ${dbName} and database username is ${dbUser}`);
 
 In the above code example, the `dotenv/config` import call loads the environment variables from the `.env` file into `process.env`. Then, you add two constants, `dbName` and `dbUser`, to get the relevant environment variables and show them on the console with `console.log`. If it was a real application, like an Express.js app, you would have used these variables to instantiate the connection to a database. 
 
-When you run the above `index.js` file with `node index.js` and the relevant `.env` file it will show the following output:
+When you run the above `index.js` file with `node index.js` and the relevant `.env` file, it will show the following output:
 
 <img class="center" src="/images/nodejs-dotenv/02nodejs-dotenv-use.jpg" loading="lazy" title="Output of using the NPM dotenv package with Node.js version less than 20" alt="Output of using the NPM dotenv package with Node.js version less than 20">
 
-If you want to use a different filename than `.env`. You can import only the `dotenv `module with `import dotenv from 'dotenv';`, you can use a custom `.env` file (not `.env`), you can pass in the path to the file as an argument to the `config` method like the below:
+If you want to use a different filename than `.env` and you want to import only the `dotenv` module with `import dotenv from 'dotenv';` to use a custom env file (not `.env`), you can pass the path to the file as an argument to the `config` method like this:
 
 ```javascript
 dotenv.config({ path: './.env.example' });
@@ -112,18 +112,18 @@ You can acces the environment variable by executing:
 node --require dotenv/config index-no-imports.js
 ```
 
-Dotenv has a small ecosystem around it, you can learn more by reading it’s [Readme](https://github.com/motdotla/dotenv) file. There is dotenvx, you can encrypt and decrypt your environment variables, and `dotenv-valut` too. It is supported by companies like Warp, WorkOs and Alloy Automation. It also has a YouTube channel and a [video](https://www.youtube.com/watch?v=YtkZR0NFd1g) explaining how to use it. There are lots of official examples using it from projects like [Next.js](https://github.com/dotenv-org/examples/tree/master/nextjs) to express.
+Dotenv has a small ecosystem around it; you can learn more by reading its [README](https://github.com/motdotla/dotenv) file. There is dotenvx, where you can encrypt and decrypt your environment variables, and `dotenv-vault` too. It is supported by companies like Warp, WorkOS, and Alloy Automation. It also has a YouTube channel and a [video](https://www.youtube.com/watch?v=YtkZR0NFd1g) explaining how to use it. There are lots of official examples using it from projects like [Next.js](https://github.com/dotenv-org/examples/tree/master/nextjs) to Express.
 
 In the next section, you will learn about the native way of accessing environment variables in Node.js 20+.
 
 ## Get environment variables natively Node 20+
 
 From Node.js 20+, there is a native way to access environment variables without the
-need to install a NPM package like `dotenv.`  From Node 20.6.0, one of the most notable changes is the built-in support for .env files
+need to install an NPM package like `dotenv`. From Node 20.6.0, one of the most notable changes is the built-in support for `.env` files.
 
-### Using –env file in node cli
+### Using --env-file in Node CLI
 
-With the same `.env` file and the `index-no-imports.js` file from the above example. You can use the environment variales from the `.env` file in any `js` file with the following command:
+With the same `.env` file and the `index-no-imports.js` file from the above example, you can use the environment variables from the `.env` file in any `.js` file with the following command:
 
 ```bash
 node --env-file .env index-no-imports.js
@@ -133,18 +133,17 @@ It will result in:
 
 <img class="center" src="/images/nodejs-dotenv/03nodejs-env-file.jpg" loading="lazy" title="Output of using the Node.js --env-file to load env file in Node.js version 20+" alt="Output of using the Node.js --env-file to load env file in Node.js version 20+">
 
-Which is exactly the same as the above output without the need to import `dotenv` in the file or in the command line. This is possible from Node 20.6.0 as it [added built-in support for .env files](https://nodejs.org/en/blog/release/v20.6.0#built-in-env-file-support).
+This is exactly the same as the above output, without the need to import `dotenv` in the file or on the command line. This is possible from Node 20.6.0 as it [added built-in support for .env files](https://nodejs.org/en/blog/release/v20.6.0#built-in-env-file-support).
 
 You can update your `.env` file and run the code again and it will pick up the updated
-environment variable. This is how you can access environment variables with
-`import.meta.env` in Node.js 20+. You can use [nodemon](/blog/2021/02/nodemon/) to restart your applications when a `.js` file changes or even when a `.env` file changes with the correct watches.
+environment variable. This is how you can access environment variables natively in Node.js 20+. You can use [nodemon](/blog/2021/02/nodemon/) to restart your applications when a `.js` file changes or even when a `.env` file changes with the correct watches.
 
 For your reference, you can find the code examples in this [GitHub repository](https://github.com/geshan/nodejs-dotenv).
 
 ## Dotenv is still popular
 
-Given that Node.js 20+ has provided a native way to access environment variables since Sep 2023 (more than a year from when this blog post was written), you might be wondering why to bother with dotenv? It's a valid question with a valid answer:
-`dotenv` is still the most popular package for getting environment variables from a .env file.
+Given that Node.js 20+ has provided a native way to access environment variables since September 2023 (more than a year from when this blog post was written), you might be wondering why bother with dotenv. It's a valid question with a valid answer:
+`dotenv` is still the most popular package for getting environment variables from a `.env` file.
 
 > With over 45 million downloads per week as of Nov 2023, `dotenv` is a battle-tested and widely used package in the Node.js ecosystem. 
 
@@ -157,8 +156,8 @@ As you can see, dotenv is the clear winner, with exponentially more weekly downl
 ## Conclusion
 
 In this comprehensive guide, you have learned how to access environment variables from
-a .env file in Node.js. You explored two methods, the first one using the popular dotenv package and the second one using the native `--env-file` available in Node.js 20+. With the knowledge of both methods, you can now make an informed choice depending on your project's needs.
+a `.env` file in Node.js. You explored two methods, the first one using the popular `dotenv` package and the second one using the native `--env-file` available in Node.js 20+. With the knowledge of both methods, you can now make an informed choice depending on your project's needs.
 
 > If you are working on a new project, I recommend opting for the native `--env-file` method, as it's part of Node.js and doesn't need an external dependency. But if you are working on an existing project that already uses `dotenv`, there's no need to change.
 
-In the end, both achieve the same goal of accessing environment variables from a .env file. Eventually you can move to the native way of accessing environment variables in Node.js 20+ as it's part of the Node.js core and doesn't need an external dependency. This will make your application more lightweight and reduce the number of dependencies.
+In the end, both achieve the same goal of accessing environment variables from a `.env` file. Eventually, you can move to the native way of accessing environment variables in Node.js 20+ as it's part of the Node.js core and doesn't need an external dependency. This will make your application more lightweight and reduce the number of dependencies.

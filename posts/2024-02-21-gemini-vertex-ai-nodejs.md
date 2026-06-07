@@ -14,7 +14,7 @@ pagetitle: "How to create a text summarizer using Gemini over Vertex AI with Nod
 description: "Learn how to create a simple summarizer with Gemini API on Vertex AI with Node.js that runs on the CLI."
 keywords: Gemini, Gemini api, vertex ai, gemini node.js, vertex ai nodejs, vertex ai node.js, google gemini, gemini pro nodejs
 ---
-Gemini by Google is a powerful multimodal Large Language Model (LLM) capable of taking images, videos, and text as input and generating text and images. [Gemini](https://gemini.google.com/) has 3 versions Nano, Pro, and Ultra. For this post, you will use Gemini Pro 1.0 via [Vertex AI](https://cloud.google.com/vertex-ai) to create summarizer then run it on the CLI using Node.js, let’s get started!
+Gemini by Google is a powerful multimodal Large Language Model (LLM) capable of taking images, videos, and text as input and generating text and images. [Gemini](https://gemini.google.com/) has 3 versions: Nano, Pro, and Ultra. For this post, you will use Gemini Pro 1.0 via [Vertex AI](https://cloud.google.com/vertex-ai) to create a summarizer and then run it on the CLI using Node.js. Let’s get started!
 
 <!-- more -->
 
@@ -32,16 +32,16 @@ Gemini by Google is a powerful multimodal Large Language Model (LLM) capable of 
 
 Before getting your hands dirty with the code, below are some prerequisites you should have:
 
-* You should have a running Google Cloud Account, GCP gives $300 [free](https://cloud.google.com/free) for 90 days for new accounts. Be aware of the [Vertex AI pricing](https://cloud.google.com/vertex-ai/pricing) for Gemini APIs.
-* A basic understanding of Node.js and the NPM package manager is expected. You should have Node and NPM CLIs running on your local. The code has been tested with Node 20.x.
+* You should have a running Google Cloud Account; GCP gives $300 [free](https://cloud.google.com/free) for 90 days for new accounts. Be aware of the [Vertex AI pricing](https://cloud.google.com/vertex-ai/pricing) for Gemini APIs.
+* A basic understanding of Node.js and the NPM package manager is expected. You should have Node and NPM CLIs running on your local machine. The code has been tested with Node 20.x.
 * You have the `gcloud` [cli](https://cloud.google.com/sdk/gcloud) working on your machine.
-* Some git knowledge will be good to have but not required
+* Some Git knowledge will be helpful to have, but not required.
 
 Next, you will start using the Gemini Pro API over Vertex AI.
 
 ## Summarizer with Gemini API on Vertex AI
 
-Given the prerequisites are mentioned, the first task for you is to test out the summarizer app on Vertex AI. To do ths, you will first login to your Google Cloud Platform [console](https://console.cloud.google.com/) and create a new project as follows on the [Project Create](https://console.cloud.google.com/projectcreate) page:
+Given the prerequisites are mentioned, the first task for you is to test out the summarizer app on Vertex AI. To do this, you will first log in to your Google Cloud Platform [console](https://console.cloud.google.com/) and create a new project as follows on the [Project Create](https://console.cloud.google.com/projectcreate) page:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/02gcp-create-project.jpg" title="Create a new GCP project" alt="Create a new GCP project">
 
@@ -49,7 +49,7 @@ You can name the project `gemini-api` as seen above and click the “Create” b
 
 It will take some time and the project will be created with a notification about it, you can select the project from the notification (under the bell icon) as seen below:
 
-<img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/03gcp-select-project.jpg" title="Select your newly created GCP projct to use it for building the summarizer" alt="Select your newly created GCP projct to use it for building the summarizer">
+<img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/03gcp-select-project.jpg" title="Select your newly created GCP project to use it for building the summarizer" alt="Select your newly created GCP project to use it for building the summarizer">
 
 After that, search for `vertex ai` on the search bar and click the `Vertex AI` option from the inline search results as follows:
 
@@ -59,7 +59,7 @@ On the Vertex AI page, at the left sidebar scroll a bit down and click the `Lang
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/05enable-apis.jpg" title="Enable the Vertex AI APIs to use Gemini 1.0 Pro LLM" alt="Enable the Vertex AI APIs to use Gemini 1.0 Pro LLM">
 
-Click `Enable` on the above screen, it will show `Enabled` with a green tick then close it, and then in the second overlay click “Agree and Continue” as follows
+Click `Enable` on the above screen, it will show `Enabled` with a green tick then close it, and then in the second overlay click “Agree and Continue” as follows:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/06vertex-ai-studio-agree.jpg" title="Agree the Vertex AI terms and conditions to move head" alt="Agree the Vertex AI terms and conditions to move head">
 
@@ -97,22 +97,22 @@ Check out all the recycling going on at TerraCycle, especially their cool beaded
 The above text is from a news story on [Good News Network](https://www.goodnewsnetwork.org/nonprofit-diverts-an-ocean-plastic-tide-removing-2-million-pounds-of-trash-from-waterways/) and the magic sauce, the prompt is:
 
 ```js
-As an expert writer with more than a decade of experience please summarize the following in under 125 words words. You are allowed to rephrase given the summary means the same as the original text:
+As an expert writer with more than a decade of experience please summarize the following in under 125 words. You are allowed to rephrase given the summary means the same as the original text:
 ```
 
-After you paste it, click the `Submit` button toward the end of the page and it will look as follows after the summarization is done:
+After you paste it, click the `Submit` button toward the end of the page, and it will look as follows after the summarization is done:
 
-<img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/08vertex-ai-gemini-pro-summary.jpg" title="Text summary generated on Vertex AI with Gemni 1.0 Pro model" alt="Text summary generated on Vertex AI with Gemni 1.0 Pro model">
+<img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/08vertex-ai-gemini-pro-summary.jpg" title="Text summary generated on Vertex AI with Gemini 1.0 Pro model" alt="Text summary generated on Vertex AI with Gemini 1.0 Pro model">
 
 Hurray! You have created a useful summarizer with very little effort in almost no time. You can click the `pencil` icon and save it if you like.
 
-Make sure that the model is `Gemini 1.0 Pro` and you can change the region as per your choice. If you like you can play around with the other parameters like temperature to fine-tune your output. You are also welcome to peep into the `Advance settings` like Top-K and Top-P to get a better result. You can learn more about them in this blog post about these [LLM parameters](https://ivibudh.medium.com/a-guide-to-controlling-llm-model-output-exploring-top-k-top-p-and-temperature-parameters-ed6a31313910). You can also update the `Safety Settings` if you would like to block things like hate speech, dangerous content, etc.
+Make sure that the model is `Gemini 1.0 Pro` and you can change the region as per your choice. If you like you can play around with the other parameters like temperature to fine-tune your output. You are also welcome to peep into the `Advanced settings` like Top-K and Top-P to get a better result. You can learn more about them in this blog post about these [LLM parameters](https://ivibudh.medium.com/a-guide-to-controlling-llm-model-output-exploring-top-k-top-p-and-temperature-parameters-ed6a31313910). You can also update the `Safety Settings` if you would like to block things like hate speech, dangerous content, etc.
 
 In the next section, you will pull in the code provided to make the summarizer work in the CLI.
 
 ## Run the summarizer in the CLI with Node.js
 
-It is good that your proof concept is running on Vertex AI but your users cannot use it just like that. For that, you will need some code to eventually expose your summarizer as an API to your ultimate users. Vertex AI has some generated code available to make your POC into a working app. To get the code, click the `Get Code` link toward the top right of the vertex AI studio page:
+It is good that your proof of concept is running on Vertex AI, but your users cannot use it just like that. For that, you will need some code to eventually expose your summarizer as an API to your ultimate users. Vertex AI has some generated code available to make your POC into a working app. To get the code, click the `Get Code` link toward the top right of the vertex AI studio page:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/09vertex-ai-get-code.jpg" title="Vertex AI get code button" alt="Vertex AI get code button">
 
@@ -120,13 +120,13 @@ Then click `Node.js` as this is a Node.js example on the slider that comes on th
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/10vertex-ai-nodejs-code.jpg" title="Vertex AI Node.js code sample for your simple text summarizer" alt="Vertex AI Node.js code sample for your simple text summarizer">
 
-After that, go to a directory and create a new directory named `summarizer-gemini`, which on a Nix-based system will be `mkdir summarizer-gemini` the to go to the directory `cd summarizer-gemini`.
+After that, go to a directory and create a new directory named `summarizer-gemini`, which on a Unix-based system will be `mkdir summarizer-gemini` and then go to the directory with `cd summarizer-gemini`.
 
 In that folder, run `npm init -y` and you will see something like the below:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/11npm-init.jpg" title="Result of npm init to initiate a Node.js project" alt="Result of npm init to initiate a Node.js project">
 
-After that, you can run the following commands as seen on the Vertex AI’s get code slider:
+After that, you can run the following commands as seen on Vertex AI’s Get Code slider:
 
 ```bash
 npm install @google-cloud/vertexai
@@ -146,11 +146,11 @@ This will open a browser to allow the Google Auth library to access your GCP acc
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/13gcp-sign-in.jpg" title="Sign into GCP after running gcloud auth" alt="Sign into GCP after running gcloud auth">
 
-Then you will need to allow the Google Auth Library
+Then you will need to allow the Google Auth Library:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/14gcp-allow.jpg" title="Allow GCP gcloud auth to access your Google account details" alt="Allow GCP gcloud auth to access your Google account details">
 
-Once that is done you can copy page the whole code that begins with:
+Once that is done, you can copy and paste the whole code that begins with:
 
 ```js
 const {VertexAI} = require('@google-cloud/vertexai');
@@ -160,7 +160,7 @@ To a file named `cli.js` in the folder you are in, it will look something like t
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/15vscode-cli-js.jpg" title="File structure for cli.js in VS Code" alt="File structure for cli.js in VS Code">
 
-Now in your CLI, you can run `node –no-warnings  cli.js`, it will show you an output similar to the following:
+Now in your CLI, you can run `node --no-warnings cli.js`, it will show you an output similar to the following:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/16cli-output-stream.jpg" title="Streamed output of the sample code copied from the Vertex AI Studio interface" alt="Streamed output of the sample code copied from the Vertex AI Studio interface">
 
@@ -180,20 +180,20 @@ async function generateContent() {
 };
 ```
 
-Let’s analyze the things that changed. First, you introduced a const called `prompt` that has the prompt to summarize the text. This makes separating the prompt from the text to work on. Then you used it as part of the request.
+Let’s analyze the things that changed. First, you introduced a const called `prompt` that has the prompt to summarize the text. This makes it easier to separate the prompt from the text to work on. Then you used it as part of the request.
 
-In place of the `generateContentStream` you have replaced it with the `generateContent` to get the final result compared to following a stream approach. You can configure the request params as per the official [docs](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini#gemini-pro). After the response is received, you pull out the text and print it on the screen with a `console.log`. It looks like the following when you again run `node –no-warnings cli.js`:
+In place of the `generateContentStream` you have replaced it with `generateContent` to get the final result instead of a streaming approach. You can configure the request parameters as per the official [docs](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini#gemini-pro). After the response is received, you pull out the text and print it on the screen with a `console.log`. It looks like the following when you again run `node --no-warnings cli.js`:
 
 <img class="center" loading="lazy" src="/images/gemini-vertex-ai-nodejs/17cli-output-sync.jpg" title="Better one shot non-streamed output after changing the code to work in a sync manner" alt="Better one shot non-streamed output after changing the code to work in a sync manner">
 
-You need the `--no warnings` to not print any warnings about the fetch object. There you have a basic example of creating a summarizer in your CLI.
+You need the `--no-warnings` to avoid printing any warnings about the fetch object. There you have a basic example of creating a summarizer in your CLI.
 
 ## Next steps
 
-For this post, it will feel a bit static and restricted. To change the input text to get a summary you will need to change the file and run the command again. Thereby, in the [next part](/blog/2024/02/gemini-vertex-ai-nodejs-api/) of this series, you will be able to input a URL to an API. Then the system will scrape the text from that URL and then summarize it.
+Currently, the application is static and restricted. To change the input text and get a new summary, you need to edit the file and run the command again. Therefore, in the [next part](/blog/2024/02/gemini-vertex-ai-nodejs-api/) of this series, you will be able to input a URL to an API. Then the system will scrape the text from that URL and summarize it.
 
 It will involve some code refactoring and restructuring to make the code reusable, stay tuned for [part 2](/blog/2024/02/gemini-vertex-ai-nodejs-api/) where you will convert this code to a more flexible solution with an Express JS API. If you are eager to look at the API code, it is available as an open-source [GitHub repository](https://github.com/geshan/summarizer-gemini).
 
 ## Conclusion
 
-In this post, you learned how to play around with the Vertex AI interface to create a Gemini Pro 1.0 powered summarizer. Then, you pulled in the code to your local on a `cli.js` file and changed the code to give a synchronous output compared to a streaming one. I hope it was a good start, more goodness to follow in the [next part](/blog/2024/02/gemini-vertex-ai-nodejs-api/). Keep exploring Gen AI and Gemini!
+In this post, you learned how to play around with the Vertex AI interface to create a Gemini Pro 1.0 powered summarizer. Then, you pulled in the code to your local on a `cli.js` file and changed the code to give a synchronous output instead of a streaming one. I hope it was a good start; more goodness to follow in the [next part](/blog/2024/02/gemini-vertex-ai-nodejs-api/). Keep exploring Gen AI and Gemini!

@@ -10,8 +10,8 @@ tags:
 - Gemini
 cover: "/images/e-commerce-product-description-generator/01e-commerce-product-description-generator.jpg"
 pagetitle: "How to create an e-commerce product description generator using Gemini and Vertex AI"
-description: "Learn how to create a useful e-commerce product description generator using Gemini  Pro API over Vertex AI on GCP with Python code example"
-keywords: gemini api, vertex ai, gen ai, product descripiton generator
+description: "Learn how to create a useful e-commerce product description generator using Gemini Pro API over Vertex AI on GCP with Python code example"
+keywords: gemini api, vertex ai, gen ai, product description generator
 ---
 Gen AI can be utilized to build useful things. In this post, you will build an e-commerce product description generator using Google’s Gemini Pro vision LLM over Vertex AI on the Google Cloud Platform (GCP). Let’s get started!
 
@@ -33,26 +33,26 @@ Gen AI can be utilized to build useful things. In this post, you will build an e
 
 ## Process of writing product descriptions for e-commerce websites
 
-Before you get your hands dirty with Vertex AI and some code, let’s understand the process of wiring product descriptions for any product shown on an e-commerce website. Models are scheduled to take photographs wearing the products, every product is photographed in a photo studio.
+Before you get your hands dirty with Vertex AI and some code, let’s understand the process of writing product descriptions for any product shown on an e-commerce website. Models are scheduled to take photographs wearing the products, every product is photographed in a photo studio.
 
  Then a copywriter has a look at the retouched photographs possibly with the product by the side and writes a product description that you see on the website. It is a long process and if the website has hundreds of products going online each day it can be a labor-intensive, time-consuming, and error-prone process as it is mostly manual. It can be summed up visually as:
 
-<img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/30prod-desc-process.jpg" title="The general process of writing product descripitons" alt="The general process of writing product descripitons">
+<img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/30prod-desc-process.jpg" title="The general process of writing product descriptions" alt="The general process of writing product descriptions">
 
-Now, imagine you have a system where you can upload pictures and prompt the system to get the product description for that particular product. The generated product descriptions will not be perfect but it will get you (or the copywriter) 80% of the way. That is what you are doing to build in this tutorial.
+Now, imagine you have a system where you can upload pictures and prompt the system to get the product description for that particular product. The generated product descriptions will not be perfect, but they will get you (or the copywriter) 80% of the way. That is what you are going to build in this tutorial.
 
 To do this you will use the Gemini Pro LLM over Vertex AI, you will also get the basic code that can be deployed as a service. You can find some more context in these [slides](https://docs.google.com/presentation/d/1WboHu9zHIQLoiW_RO20KXLQb6twLdGLBNy_e3iadk94/edit?usp=sharing). In the next section, you will learn about the prerequisites to build the e-commerce product description generator.
 
 ## Prerequisites
 
-To begin, you will need to have the following pre-requisites sorted:
+To begin, you will need to have the following prerequisites sorted:
 
 * Have a working Google Cloud account (with some credit)
 * Download this [zip file](https://gw.geshan.com.np/assets/images.zip) on your machine, for the product images. Please decompress it after downloading.
 
 Also, be aware of the [Vertex AI and Gemini Pricing](https://cloud.google.com/vertex-ai/generative-ai/pricing) as well.
 
-Next, you will create a GCP project to build your e-commerce product description generator. You might need 20-30 minutes to create the basic product description generator and have a proof of concept code for it as shown below.
+Next, you will create a GCP project to build your e-commerce product description generator. You might need 20-30 minutes to create the basic product description generator and have a proof-of-concept code for it as shown below.
 
 ## Vertex AI on GCP
 
@@ -94,7 +94,7 @@ comfortable to wear jeans and do not include any details about the
 price. Make sure that the copy is written in an engaging and friendly tone.
 ```
 
-9. Then upload the images you find in the repository or the images folder of the unzipped `images.zip` file. Navigate to `womens-jeans-photos` folder after clicking the `Insert Media` option on the right side of the `Prompt` textbox. Then upload all Once all the 8 images, it will look something like the below:
+9. Then upload the images you find in the repository or the images folder of the unzipped `images.zip` file. Navigate to the `womens-jeans-photos` folder after clicking the `Insert Media` option on the right side of the `Prompt` textbox. Once all the 8 images are uploaded, it will look something like the below:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/04prompt-ready.jpg" title="The prompt with the images upload" alt="The prompt with the images upload">
 
@@ -104,7 +104,7 @@ price. Make sure that the copy is written in an engaging and friendly tone.
 
 ## Name and save the prompt
 
-11. At this point, it would be a good idea to save your prompt (with images). To do this, click the `pen` icon beside `Untitled prompt` above the prompt text box, then type `e-commerce-product-desc-generator` the click anywhere, it will look like the below while editing:
+11. At this point, it would be a good idea to save your prompt (with images). To do this, click the `pen` icon beside `Untitled prompt` above the prompt text box, then type `e-commerce-product-desc-generator`, then click anywhere, it will look like the below while editing:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/06name-prompt.jpg" title="Name the prompt" alt="Name the prompt">
 
@@ -124,7 +124,7 @@ All saved prompts will be accessible in your [My Prompts](https://console.cloud.
 
 ## Gemini configurations
 
-15. In terms of configurations, for Gemini 1.0 pro vision there are 4 options you can configure. Those four are explained in plain words below:
+15. In terms of configurations, for Gemini 1.0 Pro Vision there are 4 options you can configure. Those four are explained in plain words below:
 
 * **Temperature (Randomness/Creativity/Spice)**: Imagine a roulette wheel (randomness). A high temperature increases the spin's randomness, affecting the chosen word (output).
 
@@ -158,9 +158,9 @@ You can play around with the prompt and make it more flexible or more specific a
 
 ---
 
-## Run generated Python Code
+## Run Generated Python Code
 
-18. If you want to create an API for the e-commerce description generator or want to have more control over what the LLM is called, you can generate code and run it on a Google Cloud Platform service like Google Cloud Run. To generate code, click the `<> Get Code` link which shows a slider on the right side as follows:
+18. If you want to create an API for the e-commerce description generator or want to have more control over what the LLM is called, you can generate code and run it on a Google Cloud Platform service like Google Cloud Run. To generate code, click the `<> Get Code` link, which shows a slider on the right side as follows:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/12get-code.jpg" title="Get code for your Gemini experiment" alt="Get code for your Gemini experiment">
 
@@ -178,7 +178,7 @@ For this workshop, you will use the Node.js code and try it out. For that, you w
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/21open-terminal.jpg" title="Open terminal in editor" alt="Open terminal in editor">
 
-22. In the editor's terminal, execute `mkdir projects && cd projects && mkdir gemini-workshop && cd gemini-workshop` and then `pip3 install --upgrade google-cloud-aiplatform` :
+22. In the editor's terminal, execute `mkdir projects && cd projects && mkdir gemini-workshop && cd gemini-workshop` and then `pip3 install --upgrade google-cloud-aiplatform`:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/22run-commands-python.jpg" title="Commands executed" alt="Commands executed">
 
@@ -200,17 +200,17 @@ For this workshop, you will use the Node.js code and try it out. For that, you w
 
 27. For the contents of the gemini.py, click `<>GET CODE` on the Vertex AI Editor screen, while on the `Python` option copy the code into a file called `gemini.py`
 
-<img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/13copy-python-code.jpg" title="Get Python code for e-commerce descripiton generator" alt="Get Python code for e-commerce descripiton generator">
+<img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/13copy-python-code.jpg" title="Get Python code for e-commerce description generator" alt="Get Python code for e-commerce description generator">
 
 28. Paste the code in the `gemini.py` empty file and save it:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/27paste-code-python.jpg" title="Paste copied code" alt="Paste copied code">
 
-29. To run the code and test it out, again open the terminal from `Hamburger Menu > Terminal > New Terminal` and type in `python gemini.py` then hit enter. It will ask you to `Authorise`:
+29. To run the code and test it out, again open the terminal from `Hamburger Menu > Terminal > New Terminal` and type in `python gemini.py` then hit enter. It will ask you to `Authorize`:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/28authorize.jpg" title="Authorize the execution" alt="Authorize the execution">
 
-After authorisation, the code will run and give an output like the below:
+After authorization, the code will run and give an output like the below:
 
 <img class="center" loading="lazy" src="/images/e-commerce-product-description-generator/29code-output-python.jpg" title="See the generated product description" alt="See the generated product description">
 
@@ -238,13 +238,13 @@ The UI is below:
 
 31. It would be good idea to read more about LLMs in general and also about Gemini. You can also do courses or code labs about [Gemini on Cloud Skills boost](https://www.cloudskillsboost.google/catalog?keywords=gemini&page=1) platform.
 
-Congrats! You have successfully built and tested a general purpose e-commrece product description generator. You can also crate a text or URL's [text summarizer](/blog/2024/02/gemini-vertex-ai-nodejs/) using Gemini over Vertex AI.
+Congrats! You have successfully built and tested a general-purpose e-commerce product description generator. You can also create a text or URL [text summarizer](/blog/2024/02/gemini-vertex-ai-nodejs/) using Gemini over Vertex AI.
 
 ## Conclusion
 
 In this blog post, you embarked on a journey to build a basic e-commerce product description generator using Google's Gemini API over Vertex AI on GCP.
 
-You started by creating a prompt that captures the essence of what we wanted the generator to achieve. Towards the end you create a proof of concept script with Python that can be converted into a standalone internal application.
+You started by creating a prompt that captures the essence of what we wanted the generator to achieve. Towards the end, you created a proof-of-concept script with Python that can be converted into a standalone internal application.
 
 Whether you're an e-commerce entrepreneur, a content creator, or simply someone interested in the future of AI, LLMs have the potential to revolutionize the way we work and create.
 

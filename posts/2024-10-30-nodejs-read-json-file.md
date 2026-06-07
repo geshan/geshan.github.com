@@ -9,7 +9,7 @@ tags:
 - Web Development
 cover: "/images/nodejs-read-json-file/01nodejs-read-json-file.jpg"
 pagetitle: "How to Read a JSON File Using Node.js"
-description: "Learn how to read a JSON file using Node.js. This post covers reading a JSON file synchronously and asynchronously using the fs module and fs-extra NPM package."
+description: "Learn how to read a JSON file using Node.js. This post covers reading a JSON file synchronously and asynchronously using the fs module and fs-extra npm package."
 keywords: nodejs read json file, node read json file, read json file node, read json file nodejs
 ---
 Reading a JSON (JavaScript Object Notation) file in Node.js is a common task for web developers, especially those working with backend and server-side applications. This tutorial will guide you through the process, breaking down the steps to efficiently read JSON files using both the native Node.js `fs` module and the `fs-extra` npm package.  Let's dive into the world of JSON file handling and equip you with the knowledge to tackle this task seamlessly!
@@ -39,7 +39,7 @@ This blog post provides a clear, concise, and hands-on guide to reading JSON fil
 
 You will cover two approaches:
 
-1. **Using the native `fs` module:** This is the built-in Node.js module for interacting with the file on the file system. It provides both synchronous and asynchronous methods for reading files.
+1. **Using the native `fs` module:** This is the built-in Node.js module for interacting with the files on the file system. It provides both synchronous and asynchronous methods for reading files.
 2. **Using the `fs-extra` npm package:**  This package extends the functionality of the `fs` module, offering more user-friendly methods and simplifying common file operations.
 
 By the end of this tutorial, you'll have a solid understanding of both methods and be able to choose the approach that best suits your needs.
@@ -58,13 +58,13 @@ Before you dive into the code, let's make sure you have the following prerequisi
 
 3. **Code Editor:** You'll need a code editor to write and edit your JavaScript code. Some popular choices include VS Code, Atom, Sublime Text, and WebStorm.
 
-For this tutorial, you will use ESM imports and not `require` as it is 2024. In the next section, you will learn about the data set of billionaires from 2023, which will be used as an example for this guide.
+For this tutorial, you will use ESM imports and not `require`, as it is 2024. In the next section, you will learn about the dataset of billionaires from 2023, which will be used as an example for this guide.
 
 ## Example: Billionaires Data From 2023
 
 To illustrate how to read a JSON file using Node.js, you will use a real-world example of data about the top 100 billionaires from 2023. The data is sourced from [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/billionaires-statistics-dataset?resource=download) and provides various details about these individuals. We have curated the data to focus on a few key attributes, making it easier to manage for this tutorial. The data is originally in CSV format, and it has been converted to JSON for this tutorial.
 
-Here's a snippet of the JSON data you will use. It is stored in a file named `billionaires-2023.json`. The full data file can be found in this [GitHub repository](https://github.com/geshan/nodejs-json) , a snippet of the data is shown below for your reference:
+Here's a snippet of the JSON data you will use. It is stored in a file named `billionaires-2023.json`. The full data file can be found in this [GitHub repository](https://github.com/geshan/nodejs-json), and a snippet of the data is shown below for your reference:
 
 ```json
 [
@@ -106,7 +106,7 @@ This JSON data represents an array of objects, each of which corresponds to a bi
 
 ## Read JSON File Using Native fs
 
-The native [fs](https://nodejs.org/api/fs.html) module in Node.js provides a straightforward way to interact with the file system. You’ll explore two methods for reading JSON files using `fs`:
+The native `fs` module in Node.js provides a straightforward way to interact with the file system. You’ll explore two methods for reading JSON files using `fs`:
 
 1. `fs.readFile`: This method reads the entire file asynchronously.
 2. `fs.readFileSync`:  This method reads the entire file synchronously. 
@@ -115,7 +115,7 @@ Using asynchronous methods like `fs.readFile` for non-blocking operations is gen
 
 ### Read JSON File Asynchronously Using fs
 
-Below is an example code for reading the data of 2,240 Billionaires in 2023 in an async way using promises.
+Below is example code for reading the data of 2,240 billionaires in 2023 in an asynchronous way using promises.
 
 ```js
 import { readFile } from 'node:fs/promises';
@@ -137,7 +137,7 @@ In this example:
    Then, from the parsed data, the data of the second-rank Billionaire, Elon Musk, is logged on the console.
 3. If an error occurs during the process in the `catch` block, it is logged with `console.error`.
 
-As you are using Node version 22, top-level await is available. You can run the example with `node index.js`, it will show the following output:
+As you are using Node version 22, top-level await is available. You can run the example with `node index.js`. It will show the following output:
 
 <img class="center" src="/images/nodejs-read-json-file/02nodejs-read-json-file-run.jpg" loading="lazy" title="Run read node.js file with native fs module in async way" alt="Run read node.js file with native fs module in async way">
 
@@ -145,8 +145,7 @@ In the next part, you will read the same file with `fs` but in a sync way.
 
 ### Read JSON File Synchronously Using fs
 
-While it's recommended to use the asynchronous method, for completeness, let's
-also, see how to read a JSON file synchronously. 
+While it's recommended to use the asynchronous method, for completeness, let's also see how to read a JSON file synchronously. 
 
 ```js
 import { readFileSync } from 'node:fs';
@@ -213,7 +212,7 @@ catch (err) {
 }
 ```
 
-It is the same example as the above async one; the main difference here is that it reads the file in a sync way.
+It is the same example as the above asynchronous one; the main difference here is that it reads the file in a sync way.
 
 Using `fs-extra` can significantly reduce code complexity and improve readability, especially when performing common file operations.
 
