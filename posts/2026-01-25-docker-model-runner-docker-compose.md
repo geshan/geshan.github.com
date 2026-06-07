@@ -16,7 +16,7 @@ You can run open models with other apps, such as [Ollama](/blog/2025/02/what-is-
 
 <!-- more -->
 
-<img class="center" src="/images/docker-model-runner-docker-compose/01docker-model-runner-docker-compose.jpg" title="Docker Model Runner: with Docker compose to run a Node.js app with Smollm2" alt="Docker Model Runner: with Docker compose to run a Node.js app with Smollm2" fetchpriority="high">
+<img class="center" src="/images/docker-model-runner-docker-compose/01docker-model-runner-docker-compose.jpg" title="Docker Model Runner: with Docker Compose to run a Node.js app with Smollm2" alt="Docker Model Runner: with Docker Compose to run a Node.js app with Smollm2" fetchpriority="high">
 
 
 ## Table of contents
@@ -32,7 +32,7 @@ You can run open models with other apps, such as [Ollama](/blog/2025/02/what-is-
 
 ## Prerequisites
 
-In this part, similar to part 1 about [Docker Model Runner](/blog/2026/01/docker-model-runner/), you will need Docker Desktop installed with Docker Model Runner available. You will also need a decent hardware configuration to run the models, especially the ones with billions of parameters. On top of that, the following things will also be needed:
+In this part, similar to part 1 about [Docker Model Runner](/blog/2026/01/docker-model-runner/), you will need Docker Desktop installed with Docker Model Runner available. You will also need a decent hardware configuration to run the models, especially those with billions of parameters. On top of that, the following things will also be needed:
 
 * Docker compose installed on your machine. Compose is bundled with Docker Desktop if it is not installed, please [install](https://docs.docker.com/compose/install/) it.
 * A general idea of how Docker Compose works and how services communicate in Docker Compose would be good to know. You can get a refresher with this [Docker Compose tutorial](/blog/2024/04/docker-compose-tutorial/)
@@ -42,7 +42,7 @@ Given that, you can jump to the next section to configure the AI settings for De
 
 ## Settings for the API on Docker Desktop
 
-Any open model you pull and run can expose the APIs for chat completion and other functionalities. For this API to be accessible from your local machine or other containers (inside or outside a docker compose set up), you will need to `Enable host-side TCP support` when Docker Model Runner (DMR) is enabled.
+Any open model you pull and run can expose the APIs for chat completion and other functionalities. For this API to be accessible from your local machine or other containers (inside or outside a docker compose setup), you will need to `Enable host-side TCP support` when Docker Model Runner (DMR) is enabled.
 
 To do this, you can follow the steps below:
 
@@ -54,7 +54,7 @@ To do this, you can follow the steps below:
 1. Then click `Apply` as seen below:
 
 
-<img class="center" src="/images/docker-model-runner-docker-compose/02docker-desktop-ai-models-settings.jpg" loading="lazy" title="Docker Desktop AI modles settings for Docker Model Runner" alt="Docker Desktop AI modles settings for Docker Model Runner">
+<img class="center" src="/images/docker-model-runner-docker-compose/02docker-desktop-ai-models-settings.jpg" loading="lazy" title="Docker Desktop AI models settings for Docker Model Runner" alt="Docker Desktop AI models settings for Docker Model Runner">
 
 By default, it will use port number `12343`, adjust `CORS` settings if you need to. In the next section, you will learn about the demo Node.js application you will use to chat with the Smollm2 model. 
 
@@ -62,11 +62,11 @@ By default, it will use port number `12343`, adjust `CORS` settings if you need 
 
 For this tutorial, rather than writing a completely new application, you will reuse the [Node.js version](https://github.com/docker/hello-genai/tree/main/node-genai) of the [hello-genai](https://github.com/docker/hello-genai/) open-source code from Docker.
 
-You can use any open model like [Gemma 3](https://hub.docker.com/r/ai/gemma3) or [Mistral 3](https://hub.docker.com/r/ai/ministral3) or even [Gemma function](https://hub.docker.com/r/ai/functiongemma) if you want to build AI Agents. For this guide, you will use Smollm2's default variant with 360 M parameters as it general purpose and small enough to run on most machines. Next, you will see a snippet of the Node.js Express ap,p which calls the Smollm2 model.
+You can use any open model like [Gemma 3](https://hub.docker.com/r/ai/gemma3) or [Mistral 3](https://hub.docker.com/r/ai/ministral3) or even [Gemma function](https://hub.docker.com/r/ai/functiongemma) if you want to build AI Agents. For this guide, you will use Smollm2's default variant with 360 M parameters as it is general purpose and small enough to run on most machines. Next, you will see a snippet of the Node.js Express app, which calls the Smollm2 model.
 
 ### Code for the Node app
 
-The demo application connects a Node.js Express app to Smollm2, defined as a `model` in the Docker Compose file. The app is reused from Docker's open-source [hello-genai](https://github.com/docker/hello-genai) repository. I have taken the [node-genai](https://github.com/docker/hello-genai/tree/main/node-genai) app and modified it a bit. It is a simple chat interface used to send prompts to the model and display the response on a webpage. There is a screenshot if this in action in the later section.
+The demo application connects a Node.js Express app to Smollm2, defined as a `model` in the Docker Compose file. The app is reused from Docker's open-source [hello-genai](https://github.com/docker/hello-genai) repository. I have taken the [node-genai](https://github.com/docker/hello-genai/tree/main/node-genai) app and modified it a bit. It is a simple chat interface used to send prompts to the model and display the response on a webpage. There is a screenshot of this in action in the later section.
 
 Main part of the code for the Express.js app in the `node-genai` app is as follows:
 
@@ -140,7 +140,7 @@ If the API returns a valid response with choices, it extracts and trims the assi
 
 ### Dockerfile for Node app
 
-The `Dockefile` below is used to run the Node.js chat app built with Express.js.
+The `Dockerfile` below is used to run the Node.js chat app built with Express.js.
 
 ```
 FROM node:24-alpine
@@ -166,7 +166,7 @@ EXPOSE 8080
 CMD ["node", "app.js"]
 ```
 
-The above Dockerfile builds a lightweight container for a Node.js application. It would have been better to use a [multistage Docker build](blog/2019/11/how-to-use-docker-multi-stage-build/), still, it is fine for a demo app.
+The above Dockerfile builds a lightweight container for a Node.js application. It would have been better to use a [multistage Docker build](/blog/2019/11/how-to-use-docker-multi-stage-build/), still, it is fine for a demo app.
 
 It starts from the `node:24-alpine` base image, which provides Node.js 24 on a small Alpine Linux distribution. `WORKDIR /app` sets `/app` as the working directory inside the container.
 
@@ -176,7 +176,7 @@ It starts from the `node:24-alpine` base image, which provides Node.js 24 on a s
 
 `EXPOSE 8080` documents that the app listens on port 8080. Finally, `CMD ["node", "app.js"]` defines the default command to start the application when the container runs.
 
-It is a good enough Dockefile for a small chat app like this. The next section details the Docker Compose file that links this app and container to the Smollm2 model.
+It is a good enough Dockerfile for a small chat app like this. The next section details the Docker Compose file that links this app and container to the Smollm2 model.
 
 
 ### Docker compose file with Node app and Smollm2 model
@@ -220,7 +220,7 @@ In the next section, you will run the chat app and the model together with Docke
 
 ### Running the app with Docker Compose
 
-To run the Node.js Chat app built with Express.js and Smollm2 attached to it, you can run the following command, which will first build the app and then run the app and the model in the  background:
+To run the Node.js Chat app built with Express.js and Smollm2 attached to it, you can run the following command, which will first build the app and then run the app and the model in the background:
 
 ```bash
 docker compose build && docker compose up -d
@@ -228,22 +228,22 @@ docker compose build && docker compose up -d
 
 It will give an output like the following:
 
-<img class="center" src="/images/docker-model-runner-docker-compose/03docker-model-runner-build-up.jpg" loading="lazy" title="Docker Model runner and Docker compose to build and run a Node.js App with Smollm2 open model" alt="Docker Model runner and Docker compose to build and run a Node.js App with Smollm2 open model">
+<img class="center" src="/images/docker-model-runner-docker-compose/03docker-model-runner-build-up.jpg" loading="lazy" title="Docker Model Runner and Docker Compose to build and run a Node.js App with Smollm2 open model" alt="Docker Model Runner and Docker Compose to build and run a Node.js App with Smollm2 open model">
 
-You don’t need to build the container every time; you can do `docker compose up -d` the next time. After that, to confirm that the containers are runnin,g you can execute:
+You don’t need to build the container every time; you can do `docker compose up -d` the next time. After that, to confirm that the containers are running, you can execute:
 
 ```bash
 docker compose logs -f
 ```
 Which will show something like:
 
-<img class="center" src="/images/docker-model-runner-docker-compose/04docker-model-runner-compose-logs.jpg" loading="lazy" title="Docker Model runner and Docker compose logs of Node.js App with Smollm2 open model" alt="Docker Model runner and Docker compose logs of Node.js App with Smollm2 open model">
+<img class="center" src="/images/docker-model-runner-docker-compose/04docker-model-runner-compose-logs.jpg" loading="lazy" title="Docker Model Runner and Docker Compose logs of Node.js App with Smollm2 open model" alt="Docker Model Runner and Docker Compose logs of Node.js App with Smollm2 open model">
 
 As the app is running on localhost port `8082`, you can open your browser of choice and hit `http://localhost:8082`, which will render something similar to:
 
-<img class="center" src="/images/docker-model-runner-docker-compose/05dmr-nodejs-smollm2-app-running.jpg" loading="lazy" title="Docker Model runner and Docker compose Node.js App with Smollm2 open model running on the browser" alt="Docker Model runner and Docker compose Node.js App with Smollm2 open model running on the browser">
+<img class="center" src="/images/docker-model-runner-docker-compose/05dmr-nodejs-smollm2-app-running.jpg" loading="lazy" title="Docker Model Runner and Docker Compose Node.js App with Smollm2 open model running on the browser" alt="Docker Model Runner and Docker Compose Node.js App with Smollm2 open model running on the browser">
 
-Docker includes an internal URL for the Model’s APIs at `http://model-runner.docker.internal/`, which can be called by other containers. If you want to call it from localhost, it is running on port `12434`. Then you can chat with Smolllm2 via the simple Node.js chat interface.
+Docker includes an internal URL for the Model’s APIs at `http://model-runner.docker.internal/`, which can be called by other containers. If you want to call it from localhost, it is running on port `12434`. Then you can chat with Smollm2 via the simple Node.js chat interface.
 
 To check the running containers, you can run `docker compose ps`. To stop the containers, run `docker compose stop`. To check the running models, you can run `docker model ps`. To unload Smollm2, you can run `docker model unload smollm2`; if you run `docker model ps`, it will not be running Smollm2 anymore. 
 
@@ -252,4 +252,4 @@ In my experience, when running AI models locally, they can start to eat up CPU r
 
 ## Conclusion
 
-In this post, you built on part 1, the introduction to Docker Model Runner, by connecting a simple Node.js (Express.js) chat app to the Smollm2 model using Docker Compose. You saw the code for the chat app, then a simple Dockerfile to run a Node.js app, and finally the Docker Compose file that connects the app to the open model (SmolM2 in this case). Then you ran it and saw it in action. Keep Learning!
+In this post, you built on part 1, the introduction to Docker Model Runner, by connecting a simple Node.js (Express.js) chat app to the Smollm2 model using Docker Compose. You saw the code for the chat app, then a simple Dockerfile to run a Node.js app, and finally the Docker Compose file that connects the app to the open model (Smollm2 in this case). Then you ran it and saw it in action. Keep Learning!

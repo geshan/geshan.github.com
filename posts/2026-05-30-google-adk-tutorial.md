@@ -11,7 +11,7 @@ tags:
 - Gemini
 cover: "/images/google-adk-tutorial/01google-adk-tutorial.jpg"
 pagetitle: "Getting Started with Google Agent Development Kit (ADK): Build and Run Your Simple Fact-Checker AI Agent"
-description: "A step by step guide to get started with Google ADK to build your first AI agent which does fact checking"
+description: "A step-by-step guide to get started with Google ADK to build your first AI agent which does fact checking"
 keywords: google adk, google adk tutorial, adk tutorial, ai agents
 ---
 Have you ever tried building an AI agent, only to get bogged down in massive, complex frameworks just to get a basic output? If you want a clean, code-first way to build and debug agents without the boilerplate, Google’s open-source Agent Development Kit (ADK) is what you need. In this post, you will learn how to set up the Python SDK, code your first Gemini-powered agent that checks facts, and test it locally using ADK’s built-in web playground. Let's get started!
@@ -63,7 +63,7 @@ mkdir fact-checker-agent-adk
 cd fact-checker-agent-adk
 ```
 
-Then you can run,
+Then you can run:
 
 ```bash
 uv init
@@ -75,7 +75,7 @@ It will initialize the project with uv, and add the Google ADK package to the pr
 
 <img class="center" src="/images/google-adk-tutorial/02google-adk-added-by-uv.jpg" loading="lazy" title="Adding google adk package using uv" alt="Adding google adk package using uv">
 
-Now you have `google adk` installed. At the time of writing, the version is 2.1. You can check it by running `uv run adk –version`.
+Now you have `google adk` installed. At the time of writing, the version is 2.1. You can check it by running `uv run adk --version`.
 
 To create the fact checker agent with the `adk` CLI, run the command below and answer the questions about the model, whether to use Vertex AI or an API key from Google AI Studio. You will need to execute the following command:
 
@@ -119,8 +119,8 @@ root_agent = Agent(
     model="gemini-flash-latest", #gemini 3.5 at the time of writing
     instruction="""You are a fact checker. 
     You will be skeptical about anything that is said to you. 
-    You will search the web and verify the given information 
-    if it does not match you will respond with the latest 
+    You will search the web and verify the given information; 
+    if it does not match, you will respond with the latest 
     and factual information.""",
     description="An Agent to provide only facts about a given topic using Google Search.",
     generate_content_config=types.GenerateContentConfig(
@@ -132,19 +132,19 @@ root_agent = Agent(
 app = App(name="fact_checker", root_agent=root_agent)
 ```
 
-The code above is doing:
+The code above does the following:
 
-* First, it imports necessary modules like `load_dotenv` to load secrets, Agent, and app, which are the core building blocks of Google ADK
-* It also imports the `Google Search` built-in tool that allows the AI agent to browse the internet for live data and `types` for advanced configuration settings for the AI model
-* After that, it loads the environment variable that uses the Google AI Studio API key you put in the last step. If you had used Vertex AI ([Google Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes) now), it would load the GCP project details too.
+* First, it imports the necessary modules like `load_dotenv` to load secrets, `Agent`, and `App`, which are the core building blocks of Google ADK
+* It also imports the `google_search` built-in tool that allows the AI agent to browse the internet for live data, and `types` for advanced configuration settings for the AI model
+* After that, it loads the environment variables using the Google AI Studio API key you set up in the previous step. If you had used Vertex AI (now [Google Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes)), it would load the GCP project details too.
 * Then, it defines the AI Agent as `root_agent` which:
-	* has a name of `Facts`
-	* uses the `gemini-flash-latest` model, which is Gemini 3.5 at the time of writing this blog post
-* The instructions give the AI a strict persona. It tells the agent to be inherently skeptical of user input and mandates that it must verify claims using the internet. 
-* Add a relevant description
-* add a `temperature` of only 0.1, as for the fact checker agent, it is good to be not very creative with answers and reply back to the point as LLM temperature [controls randomness](https://www.ibm.com/think/topics/llm-temperature)
-* Then gives it a Google search as a tool to do the fact-checking
-* Finally, the app is initialized with the name `fact_checker`, and the root agent is assigned
+	* has the name `Facts`
+	* uses the `gemini-flash-latest` model, which is Gemini 3.5 at the time of writing this blog post.
+* The instructions give the AI a strict persona. It tells the agent to be inherently skeptical of user input and mandates that it must verify claims using the internet.
+* It adds a relevant description.
+* It sets a `temperature` of only 0.1; for the fact-checker agent, it is better not to be creative with answers and to reply to the point, as the LLM temperature [controls randomness](https://www.ibm.com/think/topics/llm-temperature).
+* Then, it configures Google Search as a tool to perform the fact-checking.
+* Finally, the app is initialized with the name `fact_checker`, and the root agent is assigned.
 
 In the next section, you will run the agent in the CLI and the web, then verify if it is fact-checking the statements correctly. 
 
@@ -177,7 +177,7 @@ Which will result in:
 
 <img class="center" src="/images/google-adk-tutorial/05google-adk-run-web.jpg" loading="lazy" title="Running the Fact checker AI agent locally using Google ADK web UI" alt="Running the Fact checker AI agent locally using Google ADK web UI">
 
-After that, you can open the browser of your choice (like Google Chrome) and go to `http://localhost:8000` as the ADK web will by default run on port 8000. You will see something like the below, and you can ask anything to fact-check it, like below:
+After that, you can open the browser of your choice (like Google Chrome) and go to `http://localhost:8000` as the ADK web will, by default, run on port 8000. You will see something like the below, and you can ask anything to fact-check it, like below:
 
 <img class="center" src="/images/google-adk-tutorial/06google-adk-web-ui-browser.jpg" loading="lazy" title="Fact checker AI agent running locally using Google ADK web UI on Chrome" alt="Fact checker AI agent running locally using Google ADK web UI on Chrome">
 
