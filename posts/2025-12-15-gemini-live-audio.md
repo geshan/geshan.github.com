@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use Gemini Live audio as an interviewer for a software engineer’s job (with video)"
+title: "How to use Gemini Live audio as an interviewer for a software engineering job (with video)"
 date: 2025-12-16T21:48:25.000+11:00
 comments: true
 tags:
@@ -10,15 +10,15 @@ tags:
 - Gemini
 - Job Search
 cover: "/images/gemini-live-audio/01gemini-live-audio.jpg"
-pagetitle: "How to use Gemini Live audio as an interviewer for a software engineer’s job (with video)"
-description: "Learn how to use Gemini Live audio as an interviewer for a software engineer’s job with this practical guide. Use Gemini as a interviwer for a backend engineer role and talk with it"
+pagetitle: "How to use Gemini Live audio as an interviewer for a software engineering job (with video)"
+description: "Learn how to use Gemini Live audio as an interviewer for a software engineering job with this practical guide. Use Gemini as an interviewer for a backend engineer role and talk with it"
 keywords: gemini live audio, gemini live interviewer, AI interview practice, software engineer interview practice, backend engineer interview, AI-powered interview simulator
 ---
 Wouldn’t it be great if you had an on-demand experienced software engineer interviewer who could take a technical interview whenever and wherever you wanted? Yes, it is possible with [Gemini Live](https://gemini.google/overview/gemini-live/) and the [native audio](https://blog.google/products/gemini/gemini-audio-model-updates/) feature on Google AI Studio, along with a well-crafted prompt. The best part is that it's free. Let’s get started!
 
 <!-- more -->
 
-<img class="center" src="/images/gemini-live-audio/01gemini-live-audio.jpg" title="Use Gemini Live Audio feature to do mock software enginer interview" alt="Use Gemini Live Audio feature to do mock software enginer interview">
+<img class="center" src="/images/gemini-live-audio/01gemini-live-audio.jpg" title="Use Gemini Live Audio feature to do mock software engineer interview" alt="Use Gemini Live Audio feature to do mock software engineer interview">
 
 ## Table of contents
 
@@ -27,7 +27,7 @@ Wouldn’t it be great if you had an on-demand experienced software engineer int
   - [Steps to use Gemini Live audio as an interviewer](#steps-to-use-gemini-live-audio-as-an-interviewer)
   - [Switching modes](#switching-modes)
   - [Demo video](#demo-video)
-- [Other interview ideas](#other-inteview-ideas)
+- [Other interview ideas](#other-interview-ideas)
 - [Conclusion](#conclusion)
 
 ## Gemini Multimodal capabilities
@@ -46,11 +46,11 @@ First, go to [Google AI Studio](https://aistudio.google.com) and click the `Play
 
 <img class="center" src="/images/gemini-live-audio/02gias-playground.jpg" loading="lazy" title="Google AI Studio Playground link" alt="Google AI Studio Playground link">
 
- After that, click the `Live` button available under the `Google AI Studio` logo then click the `Gemini 2.5 Flash Native Audio Preview 12-2025` option available:
+ After that, click the `Live` button available under the `Google AI Studio` logo, then click the `Gemini 2.5 Flash Native Audio Preview 12-2025` option available:
 
 <img class="center" src="/images/gemini-live-audio/03gias-live.jpg" loading="lazy" title="Google AI Studio Live Audio feature selection" alt="Google AI Studio Live Audio feature selection">
 
-Then, on the right sidebar, change the voice from `Zephyr` to `Puck`, it is a better voice (in my opinion) as you will chat with that voice for minutes:
+Then, on the right sidebar, change the voice from `Zephyr` to `Puck`; it is a better voice (in my opinion) as you will chat with that voice for minutes:
 
 <img class="center" src="/images/gemini-live-audio/04gias-live-voice.jpg" loading="lazy" title="Google AI Studio change voice to Puck" alt="Google AI Studio change voice to Puck">
 
@@ -70,7 +70,7 @@ For this task, you will act as an experienced interviewer, too.
 You operate in two modes, the interviewer mode and the reviewer mode.
 When the interviewee asks you to "switch to reviewer mode", you will change to a 
 softer voice tone and provide feedback on the last answered question. 
-When the interviewee asks you to "switch to interviewer mode",  you go back 
+When the interviewee asks you to "switch to interviewer mode", you go back 
 to the interviewer mode with a stronger voice tone, continue asking questions, 
 and record the answers for later analysis.
 
@@ -126,7 +126,7 @@ outcomes to ace the interview.
 
 The prompt is self-explanatory, and when pasted on the text area, it will look as follows:
 
-<img class="center" src="/images/gemini-live-audio/06gias-prompt.jpg" loading="lazy" title="Adding the prompt to make Gemini live act as an experience software interviewer who has done more than 100 technical interviews" alt="Adding the prompt to make Gemini live act as an experience software interviewer who has done more than 100 technical interviews">
+<img class="center" src="/images/gemini-live-audio/06gias-prompt.jpg" loading="lazy" title="Adding the prompt to make Gemini live act as an experienced software interviewer who has done more than 100 technical interviews" alt="Adding the prompt to make Gemini live act as an experienced software interviewer who has done more than 100 technical interviews">
 
 After that, click `Run`.
 
@@ -135,7 +135,7 @@ Then it will ask for a job description. It is best to give a backend engineer ro
 <img class="center" src="/images/gemini-live-audio/07gias-jd.jpg" loading="lazy" title="Gemini Live prompt for software interview mode, providing the link to the job description" alt="Gemini Live prompt for software interview mode, providing the link to the job description">
 
 
-After that, it will ask for your introduction. You can give your “backend engineer” introduction by  clicking the `Record` mic button and speaking:
+After that, it will ask for your introduction. You can give your “backend engineer” introduction by clicking the `Record` mic button and speaking:
 
 <img class="center" src="/images/gemini-live-audio/08gias-answer.jpg" loading="lazy" title="Giving your backend engineer introduction using the Gemini Live interviewer prompt" alt="Giving your backend engineer introduction using the Gemini Live interviewer prompt">
 
@@ -145,21 +145,21 @@ Then it will move on to other technical questions, and you can follow along and 
 
 At any point in the interview, you can say `switch to reviewer mode` then ask for feedback about your answers.
 
-Then again, tell it to `switch to interviewer mode`,  and it will continue the questions. You can also ask for feedback at the end, but for that, you will need to increase the `session context size` setting in the right sidebar. You can see this in action in the video below.
+Then again, tell it to `switch to interviewer mode`, and it will continue the questions. You can also ask for feedback at the end, but for that, you will need to increase the `session context size` setting in the right sidebar. You can see this in action in the video below.
 
 ### Demo video
 
-Below is a 7 minute demo video of the whole process for your reference:
+Below is a 7-minute demo video of the whole process for your reference:
 
 {% youtube "valxA5kk0oM" %}
 
-## Other inteview ideas
+## Other interview ideas
 
 You can also use Gemini Live with the screen share feature to do a system design interview. You will need to tweak the prompt to be a system design interviewer and do a system design interview
-for a URL shortner. Be ready to draw some boxes and arrows :).
+for a URL shortener. Be ready to draw some boxes and arrows :).
 
 ## Conclusion
 
-In this post you saw the powerful combination of Gemini Live, native audio, and a detailed prompt offers a groundbreaking way to practice technical interviews. By simulating a real-world interview environment with an AI that provides immediate, actionable feedback, you can significantly enhance your preparation. 
+In this post, you saw the powerful combination of Gemini Live, native audio, and a detailed prompt offers a groundbreaking way to practice technical interviews. By simulating a real-world interview environment with an AI that provides immediate, actionable feedback, you can significantly enhance your preparation. 
 
 This approach not only sharpens your technical knowledge but also builds confidence and clarity in your delivery and the real interview scenario. Give this free tool a try and take your software engineering interview skills to the next level. Keep learning and experimenting!

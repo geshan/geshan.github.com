@@ -7,7 +7,7 @@ tags:
 - AWS
 cover: "/images/amazon-ecs-tutorial/01amazon-ecs-tutorial.jpg"
 pagetitle: "How to deploy a container image to Amazon Elastic Container Service (ECS) with Fargate: a beginner’s tutorial"
-description: "Learn how deploy a container from a private Amazon ECR repository to ECS with Fargate step-by-step with screenshots."
+description: "Learn how to deploy a container from a private Amazon ECR repository to ECS with Fargate step-by-step with screenshots."
 keywords: amazon ecs tutorial, amazon ecs
 ---
 Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that simplifies the deployment, management, and scaling of containerized applications on AWS. It manages containers without the need to learn Kubernetes. With Fargate, resource management can also be serverless. In this post, you will learn how to deploy a built container image from Amazon Elastic Container Registry (ECR) to Amazon Elastic Container Service (ECS) provisioned with Fargate. The goal is to do the bare minimum to get a URL/IP from a container image on ECR (image built and pushed in [part 1](/blog/2025/03/amazon-ecr-push-image/) of this series), let’s get going!
@@ -21,13 +21,13 @@ Amazon Elastic Container Service (ECS) is a fully managed container orchestratio
 - [What is Amazon Elastic Container Service (ECS)](#what-is-amazon-elastic-container-service-ecs)
 - [Create an Elastic Container Service cluster](#create-an-elastic-container-service-cluster)
 - [Create a task definition for ECS](#create-a-task-definition-for-ecs)
-- [Create an ECS Service](#create-an-esc-service)
+- [Create an ECS Service](#create-an-ecs-service)
 - [Important note](#important-note)
 - [Conclusion](#conclusion)
 
 ## What is Amazon Elastic Container Service (ECS)
 
-[Amazon ECS](https://aws.amazon.com/ecs/) is a fully managed container orchestration service that helps you to more efficiently deploy, manage, and scale containerized applications. You can provision the underlying resource with Fargate or Elastic Compute 2 (EC2) instances. With [Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html), you can use Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances.
+[Amazon ECS](https://aws.amazon.com/ecs/) is a fully managed container orchestration service that helps you more efficiently deploy, manage, and scale containerized applications. You can provision the underlying resource with Fargate or Elastic Compute 2 (EC2) instances. With [Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html), you can use Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances.
 
 Below is a diagram of how Amazon ECS with Fargate fits in the pipeline with AWS CodePipeline, ECR, and other services including Docker in the mix:
 
@@ -67,11 +67,11 @@ To create a task definition, click on `Task definitions` as seen in the previous
 
 <img class="center" src="/images/amazon-ecs-tutorial/08ecs-create-task-link.jpg" loading="lazy" title="AWS console showing ECS Create new task definition link on the Task defintions page" alt="AWS console showing ECS Create new task definition link on the Task defintions page">
 
-On the task definition form, put in the `Task definition family` as `nodejs-apps` and make sure you have `AWS Fargate` selected in the Launch type of `Infrastructure requirements` :
+On the task definition form, put in the `Task definition family` as `nodejs-apps` and make sure you have `AWS Fargate` selected in the Launch type of `Infrastructure requirements`:
 
 <img class="center" src="/images/amazon-ecs-tutorial/09ecs-task-form.jpg" loading="lazy" title="AWS console showing ECS Create new task definition form with task definition family and infrastructure options" alt="AWS console showing ECS Create new task definition form with task definition family and infrastructure options">
 
-In the task size section, select CPU as `.5 vCPU` and Memory as `1 GB`. As we are running a simple Hello World Node.js application, these resources would be more than enough.  Then, select the `Task role` and `Task execution role` as `ecsTaskExecutionRole`.
+In the task size section, select CPU as `.5 vCPU` and Memory as `1 GB`. As we are running a simple Hello World Node.js application; these resources would be more than enough. Then, select the `Task role` and `Task execution role` as `ecsTaskExecutionRole`.
 
 <img class="center" src="/images/amazon-ecs-tutorial/10ecs-task-size-role.jpg" loading="lazy" title="AWS console showing ECS Create new task definition form with task resources and roles" alt="AWS console showing ECS Create new task definition form with task resources and roles">
 
@@ -97,7 +97,7 @@ You will see the service definition has been created:
 
 Until now, you have only created a service definition, not a service, so no containers are running. In the next section, you will create a service with a task that will bring up the container.
 
-## Create an ESC Service
+## Create an ECS Service
 
 To create a service, click `Clusters` on the previous screenshot and then click on the cluster name, which should be `dev-cluster`. In the cluster detail page, on the `Services` tab, click the `Create` button on the bottom right of the page to create a service:
 
@@ -107,15 +107,15 @@ On the create service form, select the `Compute options` as `Launch type` with `
 
 <img class="center" src="/images/amazon-ecs-tutorial/17ecs-service-create-form.jpg" loading="lazy" title="AWS console showing ECS service create form with compute configuration" alt="AWS console showing ECS service create form with compute configuration">
 
-In the `Deployment Configuration` section, `Application type` would be pre-selected as `Service`, in the `Family` field, select in `nodejs-apps` and select the `Revision` to be `LATEST`. Then name the service `hello-world-service`, then leave the other settings as-is like `Replica` has `Desired tasks` of  1:
+In the `Deployment Configuration` section, `Application type` would be pre-selected as `Service`. In the `Family` field, select in `nodejs-apps` and select the `Revision` to be `LATEST`. Then name the service `hello-world-service`, then leave the other settings as-is like `Replica` has `Desired tasks` of 1:
 
 <img class="center" src="/images/amazon-ecs-tutorial/18ecs-service-deployment-config.jpg" loading="lazy" title="AWS console showing ECS service create form with deployment configuration" alt="AWS console showing ECS service create form with deployment configuration">
 
-Then scroll down to the `Networking` section, this is the important part. Expand it, make sure the VPC is selected as is. In the `Subnets` section click `Clear current selection` and from the drop-down, choose only one subnet that has `us-east-1a` .
+Then scroll down to the `Networking` section; this is the important part. Expand it, make sure the VPC is selected as is. In the `Subnets` section, click `Clear current selection` and from the drop-down, choose only one subnet that has `us-east-1a` .
 
 In the `Security group` section, choose `Create new security group`. In the `Security group name` field, type in `port-3000-open-from-anywhere`. Similarly, type in `Open port 3000 from anywhere` in the `Security group description` field.
 
-After that, in the `Inbound rule for security groups` part, choose Customized TCP as `Type`; in the Port Range field, type in `3000,` and select' Anywhere' for the source field. Also, make sure that the `Public IP` is `Turned On`:
+After that, in the `Inbound rule for security groups` part, choose Customized TCP as `Type`; in the Port Range field, type in `3000` and select 'Anywhere' for the source field. Also, make sure that the `Public IP` is `Turned On`:
 
 <img class="center" src="/images/amazon-ecs-tutorial/19ecs-service-networking.jpg" loading="lazy" title="AWS console showing ECS service create form with networking and security group configuration" alt="AWS console showing ECS service create form with networking and security group configuration">
 
@@ -123,7 +123,7 @@ After that, scroll to the bottom of the form and click `Create` to create the se
 
 <img class="center" src="/images/amazon-ecs-tutorial/20ecs-service-create-button.jpg" loading="lazy" title="AWS console showing ECS service create form with the Create button at the end" alt="AWS console showing ECS service create form with the Create button at the end">
 
-It will take some time for the service to come up, you can click on the Service name `hello-world-service`:
+It will take some time for the service to come up, you can click on the service name `hello-world-service`:
 
 <img class="center" src="/images/amazon-ecs-tutorial/21ecs-service-creating.jpg" loading="lazy" title="AWS console showing ECS service created and service showing up in the Services tab" alt="AWS console showing ECS service created and service showing up in the Services tab">
 
@@ -135,11 +135,11 @@ On the task page, click on the `Networking` Tab and click the `open address` bes
 
 <img class="center" src="/images/amazon-ecs-tutorial/23ecs-service-task-networking.jpg" loading="lazy" title="AWS console showing ECS service task and the networking tab with the Public IP" alt="AWS console showing ECS service task and the networking tab with the Public IP">
 
-When the IP opens in a new tab browser (if it is Chrome, allow the tab to load it insecurely without HTTPs), then append `:3000` to the IP as the Hello World Node.js app is set to run on 3000 with the `PORT` environment variable, you should see the app run by printing `Hello World!` on the browser:
+When the IP opens in a new tab browser (if it is Chrome, allow the tab to load it insecurely without HTTPS), then append `:3000` to the IP as the Hello World Node.js app is set to run on 3000 with the `PORT` environment variable, you should see the app run by printing `Hello World!` on the browser:
 
-<img class="center" src="/images/amazon-ecs-tutorial/24ecs-service-running-on-browser.jpg" loading="lazy" title="ESC Service and task accessible using the IP on a browser tab" alt="ESC Service and task accessible using the IP on a browser tab">
+<img class="center" src="/images/amazon-ecs-tutorial/24ecs-service-running-on-browser.jpg" loading="lazy" title="ECS Service and task accessible using the IP on a browser tab" alt="ECS Service and task accessible using the IP on a browser tab">
 
-Congratulations, your Node.js Hello World container is now running on ECS with Fargate. You should read about the difference between an ESC [Task and a service](https://davidlhw.dev/notes/aws-ecs-diff-bwt-task-and-service/).
+Congratulations, your Node.js Hello World container is now running on ECS with Fargate. You should read about the difference between an ECS [Task and a service](https://davidlhw.dev/notes/aws-ecs-diff-bwt-task-and-service/).
 
 ## Important note
 

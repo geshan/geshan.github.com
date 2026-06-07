@@ -32,18 +32,18 @@ Ollama gives you one of the easiest ways to run most open LLMs on your machine. 
 
 ## Recap of the Ollama series
 
-This is part 4 of the Ollama blog series. In the [first part](/blog/2025/02/what-is-ollama/), you learned [what an Ollama is](/blog/2025/02/what-is-ollama/#what-is-ollama), its features, and how to run it on your local machine.
+This is part 4 of the Ollama blog series. In the [first part](/blog/2025/02/what-is-ollama/), you learned [what Ollama is](/blog/2025/02/what-is-ollama/#what-is-ollama), its features, and how to run it on your local machine.
 
 The second part delved into the [Ollama commands](/blog/2025/02/ollama-commands/) you can execute on the CLI. Part 3 of the series shed light on some of the important [Ollama APIs](/blog/2025/02/ollama-api/) focusing on the `generate` and `chat` endpoints.
 
-This part involves running [Ollama’s Docker image](https://hub.docker.com/r/ollama/ollama) and adding a web UI, the [Open WebUI](https://github.com/open-webui/open-webui), to provide a chat interface for any model Ollama can run. Like Ollama, Open WebUI is also open-source, with the code primarily in JavaScript, Python, and TypeScript. It also has a docker image pushed on the Google Container Registry, created from its [Dockerfile](https://github.com/open-webui/open-webui/blob/main/Dockerfile). You will use Docker Compose to run these two images together for a working application.
+This part involves running [Ollama’s Docker image](https://hub.docker.com/r/ollama/ollama) and adding a web UI, the [Open WebUI](https://github.com/open-webui/open-webui), to provide a chat interface for any model Ollama can run. Like Ollama, Open WebUI is also open-source, with the code primarily in JavaScript, Python, and TypeScript. It also has a docker image pushed on the GitHub Container Registry, created from its [Dockerfile](https://github.com/open-webui/open-webui/blob/main/Dockerfile). You will use Docker Compose to run these two images together for a working application.
 
 ## Prerequisites
 
 Before you start running some Docker Compose commands, be informed of some of the software that needs to be running on your machine:
 
 1. You will need Docker running on your machine, for this example, I am using Docker 27.4.0 on Mac
-1. Make sure you have Docker Compose available as well (it used to be a different install when it was `docker-compose` when it was in v1, from [v2](https://stackoverflow.com/a/66516826) it is coupled with the Docker Desktop installation). I am using Docker Compose version v2.31.0-desktop.2 on a Mac)
+2. Make sure you have Docker Compose available as well (it used to be a different install when it was docker-compose in v1; from v2, it is coupled with the Docker Desktop installation). I am using Docker Compose version v2.31.0-desktop.2 on a Mac)
 1. It would be good to know about Docker volumes, docker ports, and basic [docker commands](/blog/2022/05/docker-commands/)
 
 You can read the [Docker for beginners](/blog/2024/04/docker-for-beginners/) tutorial for a refresher on Docker. Please read this [docker compose tutorial](/blog/2024/04/docker-compose-tutorial/) to learn more about Docker Compose. 
@@ -56,9 +56,9 @@ Open Web UI aims to simplify working with large language models. It allows users
 
 ## Ollama Docker Compose
 
-The Docker images for both Ollama and Open WebUI are not small. Ollama’s latest (version 0.5.7 at the time of writing) is 4.76 GB uncompressed, and Open WebUI’s main tag is 3.77 GB uncompressed. Below is the `docker-compose.yaml` file that has both Ollama and Open Web UI:
+The Docker images for both Ollama and Open WebUI are not small. Ollama’s latest image (version 0.5.7 at the time of writing) is 4.76 GB uncompressed, and Open WebUI’s main tag is 3.77 GB uncompressed. Below is the `docker-compose.yaml` file that has both Ollama and Open Web UI:
 
-```bash
+```yaml
 services:
   ollama:
     image: ollama/ollama:latest
@@ -106,36 +106,36 @@ Let’s look at the `services` section of the above `docker-compose.yaml` file:
 Services is the main section where you define your application's different parts (containers). Each "service" is a separate program running in its isolated environment.
 
 * `ollama`: This defines the first service, named "ollama".
-* `image: ollama/ollama:latest`: This tells Docker which pre-built "image" to use. An image is like a template for a container. `ollama/ollama:lates`t means you using the official Ollama image, and `latest` means we want the most recent version.
+* `image: ollama/ollama:latest`: This tells Docker which pre-built "image" to use. An image is like a template for a container. `ollama/ollama:latest` means you are using the official Ollama image, and `latest` means we want the most recent version.
 * `ports: - 11434:11434`: This maps port 11434 on your host machine (your computer) to port 11434 inside the Ollama container. Ollama listens for requests on port 11434. This allows other applications (like Open WebUI) to talk to Ollama.
-* `volumes`: - `ollama:/root/.ollama` creates a persistent storage area. `/root/.ollama` is where Ollama stores its data (like downloaded models). ollama: (defined at the bottom of the file) is a named volume. This means the data will persist even if you stop and restart the container. Without this, you'd lose all your downloaded models every time you stopped Ollama. It's like giving Ollama a dedicated hard drive that doesn't get erased.
-* `container_name`: `ollama`: This gives the container a specific name, "ollama," making it easier to refer to.
+* `volumes: - ollama:/root/.ollama` creates a persistent storage area. `/root/.ollama` is where Ollama stores its data (like downloaded models). `ollama:` (defined at the bottom of the file) is a named volume. This means the data will persist even if you stop and restart the container. Without this, you'd lose all your downloaded models every time you stopped Ollama. It's like giving Ollama a dedicated hard drive that doesn't get erased.
+* `container_name: ollama`: This gives the container a specific name, "ollama," making it easier to refer to.
 
 * `tty: true` allocates a pseudo-TTY, which can be helpful for interactive sessions. It helps the container handle input and output, making it behave more like a regular terminal. Programs that expect to interact with a user often need this.
-* `restart: unless-stopped`: This tells Docker to automatically restart the Ollama container if it crashes or stops for any reason unless you explicitly stop it yourself (e.g., using docker compose down). It's like setting an auto-restart feature.
+* `restart: unless-stopped`: This tells Docker to automatically restart the Ollama container if it crashes or stops for any reason unless you explicitly stop it yourself (e.g., using `docker compose down`). It's like setting an auto-restart feature.
 
-* open-webui: This defines the second service, named "open-webui".
+* `open-webui`: This defines the second service, named "open-webui".
 
 * `image: ghcr.io/open-webui/open-webui:main`: This uses the Open WebUI image from the GitHub Container Registry (ghcr.io). `main` specifies a particular version (the main branch).
 * `container_name: open-webui`: Gives the container a specific name.
-* `volumes`: - `open-webui:/app/backend/data`: Similar to Ollama, this creates persistent storage for Open WebUI's data. /app/backend/data is where Open WebUI stores its data. open-webui: is another named volume. This keeps your Open WebUI settings and data safe.
-* `depends_on`: - ollama: This is crucial. It tells Docker Compose that the Open WebUI service depends on the Ollama service. Docker Compose will start Ollama before starting Open WebUI. This is essential because Open WebUI needs Ollama to run and function. It's like saying, "Don't start the dashboard until the engine runs”. Read more about [Docker compose depends on](/blog/2024/02/docker-compose-depends-on/).
-* `ports`: `- 3000:8080` This maps port 3000 on your host machine to port 8080 inside the Open WebUI container. Open WebUI runs on port 8080. This means you'll access the Open WebUI interface by going to http://localhost:3000 in your web browser.
+* `volumes: - open-webui:/app/backend/data`: Similar to Ollama, this creates persistent storage for Open WebUI's data. `/app/backend/data` is where Open WebUI stores its data. `open-webui:` is another named volume. This keeps your Open WebUI settings and data safe.
+* `depends_on: - ollama`: This is crucial. It tells Docker Compose that the Open WebUI service depends on the Ollama service. Docker Compose will start Ollama before starting Open WebUI. This is essential because Open WebUI needs Ollama to run and function. It's like saying, "Don't start the dashboard until the engine runs". Read more about [Docker compose depends on](/blog/2024/02/docker-compose-depends-on/).
+* `ports: - 3000:8080` This maps port 3000 on your host machine to port 8080 inside the Open WebUI container. Open WebUI runs on port 8080. This means you'll access the Open WebUI interface by going to http://localhost:3000 in your web browser.
 * `environment`: This sets environment variables inside the Open WebUI container. These are configuration settings.
 
-* `OLLAMA_BASE_URL=http://ollama:11434`: This tells Open WebUI where to find Ollama. Notice it's using the service name ollama (not localhost). Docker Compose sets up internal networking so services can communicate using their service names. This is how Open WebUI knows how to connect to the Ollama "engine."
+* `OLLAMA_BASE_URL=http://ollama:11434`: This tells Open WebUI where to find Ollama. Notice it's using the service name `ollama` (not localhost). Docker Compose sets up internal networking so services can communicate using their service names. This is how Open WebUI knows how to connect to the Ollama "engine."
 * `WEBUI_SECRET_KEY=`: This is a security setting for Open WebUI. You should set it to a strong, random value for production use. It's like a password for the web interface. Leaving it blank is fine for local testing but not for a public-facing server.
 
-* `extra_hosts`: as `- host.docker.internal:host-gateway:` This is a bit more advanced. It allows the container to access services running on your host machine. `host.docker.internal` is a special hostname that resolves to your host's internal IP address. This is useful if, for example, you have another service running directly on your computer (not inside a container) that Open WebUI needs to access.
+* `extra_hosts: - host.docker.internal:host-gateway`: This is a bit more advanced. It allows the container to access services running on your host machine. `host.docker.internal` is a special hostname that resolves to your host's internal IP address. This is useful if, for example, you have another service running directly on your computer (not inside a container) that Open WebUI needs to access.
 
 * `restart: unless-stopped`: As with Ollama, this ensures that Open WebUI restarts automatically unless you manually stop it.
 
 * `volumes`: This section defines the named volumes used above. Volumes persist data even if the containers are restarted.
 
-* `ollama: {}` defines the ollama volume. The empty {} means we're using the default Docker volume driver.
-* `open-webui: {}` defines the open-webui volume using the default driver where Docker manages where and how to save it.
+* `ollama: {}` defines the `ollama` volume. The empty `{}` means we're using the default Docker volume driver.
+* `open-webui: {}` defines the `open-webui` volume using the default driver where Docker manages where and how to save it.
 
-This docker-compose file sets up a system with Ollama (likely a large language model server) and Open-WebUI (a web interface to interact with Ollama).  It ensures that Ollama starts first, that both services have persistent storage, and that Open-WebUI knows how to connect to Ollama.  You'll be able to access Open-WebUI on your computer at port 3000.  Remember to set a `WEBUI_SECRET_KEY`!
+This docker-compose file sets up a system with Ollama (a large language model server) and Open-WebUI (a web interface to interact with Ollama).  It ensures that Ollama starts first, that both services have persistent storage, and that Open-WebUI knows how to connect to Ollama.  You'll be able to access Open-WebUI on your computer at port 3000.  Remember to set a `WEBUI_SECRET_KEY`!
 
 ## Running Ollama and Open WebUI with Docker compose
 
@@ -147,7 +147,7 @@ docker compose up
 
 Or you could run `docker-compose up` depending on the version of Docker Compose installed on your machine. Running this command for the first time will take some time, depending on your internet speed, because it will download around 4 GB of data in total (2.5 GB for Ollama and 1.5 GB or a bit more for Open WebUI). So you can make your coffee now and come back with it when the download finishes:
 
-<img class="center" src="/images/ollama-docker-compose/02ollama-open-webui-pull-docker-images.jpg" loading="lazy" title="Pulling GBs or data for Ollama and Open WebUI Docker Images" alt="Pulling GBs or data for Ollama and Open WebUI Docker Images">
+<img class="center" src="/images/ollama-docker-compose/02ollama-open-webui-pull-docker-images.jpg" loading="lazy" title="Pulling GBs of data for Ollama and Open WebUI Docker Images" alt="Pulling GBs of data for Ollama and Open WebUI Docker Images">
 
 After it downloads both the docker images and runs them, you will see something like the below on the CLI:
 
@@ -165,7 +165,7 @@ After you fill out the form, you will reach the Open WebUI Dashboard with an ann
 
 <img class="center" src="/images/ollama-docker-compose/06open-webui-registered.jpg" loading="lazy" title="Admin registered on Open WebUI and landing on the logged in page for the first time" alt="Admin registered on Open WebUI and landing on the logged in page for the first time">
 
-Click on `Ok let’s go` to see the Open WebUI main screen. As no models are downloaded, you will download the `smollm2:135m` model using the UI. This can also be done from the CLI with `docker compose exec ollama ollama pull smollm2:135m`, but you will use the UI for now.
+Click on `Ok, let’s go` to see the Open WebUI main screen. As no models are downloaded, you will download the `smollm2:135m` model using the UI. This can also be done from the CLI with `docker compose exec ollama ollama pull smollm2:135m`, but you will use the UI for now.
 
 To pull/download the model onto your local Ollama instance, click the `Select a model` drop down and type in `smollm2:135m` then click on `Pull smollm2:135m from Ollama.com` to download the model as shown below:
 

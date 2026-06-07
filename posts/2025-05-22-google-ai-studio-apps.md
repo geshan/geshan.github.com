@@ -31,15 +31,15 @@ Can you code and deploy a basic but functional app with minimal coding experienc
 
 ## The goal
 
-Your goal is to build a Gen AI (LLM)- powered application that will take an image (of a popular place) and then give you back the Country, City, state, place, and the geolocation coordinates of that place. A creative use of this can be stalking and knowing where your friends went by using their Instagram photos. Other usages are up to you. This is more of a proof-of-concept fun project to demonstrate the power of LLM and Gen AI with Gemini 2.5 models.
+Your goal is to build a Gen AI (LLM)-powered application that will take an image (of a popular place) and then give you back the Country, City, state, place, and the geolocation coordinates of that place. A creative use of this can be knowing where your friends went by using their Instagram photos. Other use cases are up to you. This is more of a proof-of-concept fun project to demonstrate the power of LLMs and Gen AI with Gemini 2.5 models.
 
 ## Build an app with a prompt on Google AI Studio
 
-Go to [Google AI Studio](https://aistudio.google.com), then click on the `Build` link in left menu as shown below:
+Go to [Google AI Studio](https://aistudio.google.com), then click on the `Build` link in the left menu as shown below:
 
 <img class="center" src="/images/google-ai-studio-apps/02google-ai-studio-build.jpg" loading="lazy" title="Go to Google AI Studio and click on the Build link on the left menu" alt="Go to Google AI Studio and click on the Build link on the left menu">
 
-Then paste the following in the prompt text area;
+Then paste the following in the prompt text area:
 
 ```
 Build an app that can guess Geo location from a given image:
@@ -57,29 +57,29 @@ It will look something like the below:
 
 <img class="center" src="/images/google-ai-studio-apps/03google-ai-studio-app-prompt.jpg" loading="lazy" title="In the Build (apps) page input the above prompt and click the blue Build button" alt="In the Build (apps) page input the above prompt and click the blue Build button">
 
-After that, click the blue `Build` button. It will use a code agent/assistant like [Google Jules AI](https://jules.google/) and start “thinking” and writing the whole application as seen below:
+After that, click the blue `Build` button. It will use a code agent/assistant like [Google Jules AI](https://jules.google/), starting to “think” and write the whole application as seen below:
 
-<img class="center" src="/images/google-ai-studio-apps/04google-ai-studio-building-app.jpg" loading="lazy" title="It thinks for some time (under a minute) an the starts creating the files for the Javascript (React, vite) app" alt="It thinks for some time (under a minute) an the starts creating the files for the Javascript (React, vite) app">
+<img class="center" src="/images/google-ai-studio-apps/04google-ai-studio-building-app.jpg" loading="lazy" title="It thinks for some time (under a minute) and then starts creating the files for the Javascript (React, vite) app" alt="It thinks for some time (under a minute) and then starts creating the files for the Javascript (React, vite) app">
 
 It will take a couple of minutes (or a bit longer), and then it will generate the full app in React and TypeScript. It uses Tailwind CSS for styling. When the app generation is complete, it will look as follows:
 
-<img class="center" src="/images/google-ai-studio-apps/05google-ai-studio-app-created.jpg" loading="lazy" title="In a couple of minutes the React, Vite app is created with Tailwind CSS styling that can guess the geo location for a given picture, it also has a dark and light theme switcher" alt="In a couple of minutes the React, Vite app is created with Tailwind CSS styling that can guess the geo location for a given picture, it also has a dark and light theme switcher">
+<img class="center" src="/images/google-ai-studio-apps/05google-ai-studio-app-created.jpg" loading="lazy" title="In a couple of minutes, the React, Vite app is created with Tailwind CSS styling that can guess the geo location for a given picture. It also has a dark and light theme switcher" alt="In a couple of minutes, the React, Vite app is created with Tailwind CSS styling that can guess the geo location for a given picture. It also has a dark and light theme switcher">
 
 The application preview is available on the right panel, so you can upload and test a picture like [this](/images/google-ai-studio-apps/statue-of-liberty-1075752_1920.jpg) one (Statue of Liberty). It will analyze the photo and guess the geo location as follows:
 
-<img class="center" src="/images/google-ai-studio-apps/06geo-location-guess-ny.jpg" loading="lazy" title="Testing the Geo location gussing app in preview with a picture of Statue of Liberty, New York" alt="Testing the Geo location gussing app in preview with a picture of Statue of Liberty, New York">
+<img class="center" src="/images/google-ai-studio-apps/06geo-location-guess-ny.jpg" loading="lazy" title="Testing the Geo location guessing app in preview with a picture of Statue of Liberty, New York" alt="Testing the Geo location guessing app in preview with a picture of Statue of Liberty, New York">
 
 You can even click the provided Google Maps link and see where the place is. You can scroll down to see the methodology and the verification steps as seen below:
 
-<img class="center" src="/images/google-ai-studio-apps/07sl-ny-location-details.jpg" loading="lazy" title="Checking methodology and verification details of the picture of Statue of Liberty New York in the Geo location guessing app" alt="Checking methodology and verification details of the picture of Statue of Liberty New York in the Geo location guessing app">
+<img class="center" src="/images/google-ai-studio-apps/07sl-ny-location-details.jpg" loading="lazy" title="Checking methodology and verification details of the picture of Statue of Liberty, New York in the Geo location guessing app" alt="Checking methodology and verification details of the picture of Statue of Liberty, New York in the Geo location guessing app">
 
-In the next section,  you will deploy the generated (vibe-coded) app to Google Cloud Run.
+In the next section, you will deploy the generated (vibe-coded) app to Google Cloud Run.
 
 ## Deploy to Google Cloud Run
 
 [Google Cloud Run](https://geshan.com.np/blog/2023/04/serverless-containers/#google-cloud-run) is a fully managed compute platform that automatically scales your stateless containers. It is a great way to deploy your applications without worrying about the underlying infrastructure.
 
-You will need an existing project and some credits in your Google Cloud Account to deploy to Google Cloud Run. If you do not have an existing project on Google Cloud, you can create a [new one](​​https://console.cloud.google.com/projectcreate) as seen below:
+You will need an existing project and some credits in your Google Cloud Account to deploy to Google Cloud Run. If you do not have an existing project on Google Cloud, you can create a [new one](https://console.cloud.google.com/projectcreate) as seen below:
 
 <img class="center" src="/images/google-ai-studio-apps/08new-gcp-project.jpg" loading="lazy" title="Create a new GCP project to deploy the Geo location app on Google Cloud Run" alt="Create a new GCP project to deploy the Geo location app on Google Cloud Run">
 
@@ -87,11 +87,11 @@ It will take some time, and the project will be created; you will be notified of
 
 <img class="center" src="/images/google-ai-studio-apps/09gcp-project-created.jpg" loading="lazy" title="New GCP project created to deploy the Geo location app on Google Cloud Run" alt="New GCP project created to deploy the Geo location app on Google Cloud Run">
 
-To deploy the generated (vibe-coded) application that you have tested. Go back to the `Build` page of the generated app. In the `Preview` section on the right, click the Rocket (🚀)  black and white icon on the top right corner above `Preview`:
+To deploy the generated (vibe-coded) application that you have tested, go back to the `Build` page of the generated app. In the `Preview` section on the right, click the Rocket (🚀) black and white icon on the top right corner above `Preview`:
 
-<img class="center" src="/images/google-ai-studio-apps/10google-ai-studio-deploy.jpg" loading="lazy" title="Click deploy icon on top of the Preview section in Google AI Studio Build page" alt="Click deploy icon on top of the Preview section in Google AI Studio Build page">
+<img class="center" src="/images/google-ai-studio-apps/10google-ai-studio-deploy.jpg" loading="lazy" title="Click deployment icon on top of the Preview section in Google AI Studio Build page" alt="Click deployment icon on top of the Preview section in Google AI Studio Build page">
 
-Then, search and select the project you just created on Google Cloud Console, in my case it is `geo-location-app`, then click the `Deploy app` blue button as follows:
+Then, search and select the project you just created on Google Cloud Console; in my case, it is `geo-location-app`, then click the `Deploy app` blue button as follows:
 
 <img class="center" src="/images/google-ai-studio-apps/11select-project.jpg" loading="lazy" title="To deploy the generated app to Cloud Run select the project you just created - geo-location-app in my case" alt="To deploy the generated app to Cloud Run select the project you just created - geo-location-app in my case">
 
@@ -103,7 +103,7 @@ Then it will show `Deploying to Cloud Run` and finally give you a link to try ou
 
 <img class="center" src="/images/google-ai-studio-apps/13project-deployed.jpg" loading="lazy" title="Google AI Studio has deployed the project successfully on Google Cloud Run" alt="Google AI Studio has deployed the project successfully on Google Cloud Run">
 
-You can click the `App URL` link or the `View app` button to see the app working on a publicly accessible URL, the same as the one you tested in the preview. When you click the `View app` blue button, you will see the app in action:
+You can click the `App URL` link or the `View app` button to see the app working on a publicly accessible URL, which is the same as the one you tested in the preview. When you click the `View app` blue button, you will see the app in action:
 
 <img class="center" src="/images/google-ai-studio-apps/14running-app.jpg" loading="lazy" title="The Geo location guessing React App is running on Google Cloud Run deployed by a click on Google AI Studio" alt="The Geo location guessing React App is running on Google Cloud Run deployed by a click on Google AI Studio">
 
@@ -131,11 +131,11 @@ You can input the new instruction as follows and hit the blue up button as seen 
 
 <img class="center" src="/images/google-ai-studio-apps/17prompt-to-change.jpg" loading="lazy" title="The Geo location guessing React App is changed on Google AI Studio with a prompt to remove OSINT" alt="The Geo location guessing React App is changed on Google AI Studio with a prompt to remove OSINT">
 
-It will take some time to do the given task, after some thinking (in my case, 10 seconds), it started editing the files. The app looked like the following after the change was made:
+It will take some time to do the given task. After some thinking (in my case, 10 seconds), it started editing the files. The app looked like the following after the change was made:
 
 <img class="center" src="/images/google-ai-studio-apps/18app-updated.jpg" loading="lazy" title="The Geo location guessing React App is updated on Google AI Studio with OSINT removed from the UI" alt="The Geo location guessing React App is updated on Google AI Studio with OSINT removed from the UI">
 
-As the change has been made and the app has been tested in preview. You can save the new change by hitting the save icon above the preview. You can redeploy it to Google Cloud Run. To do this, click the Rocket (🚀)  black and white icon on the top right corner above `Preview` and select the same project (it was `geo-location-app` in my case):
+As the change has been made and the app has been tested in preview, you can save the new change by hitting the save icon above the preview. You can redeploy it to Google Cloud Run. To do this, click the Rocket (🚀) black and white icon on the top right corner above `Preview` and select the same project (it was `geo-location-app` in my case):
 
 <img class="center" src="/images/google-ai-studio-apps/19select-project-redeploy.jpg" loading="lazy" title="Select project to redeploy the app to get the new change on Cloud Run" alt="Select project to redeploy the app to get the new change on Cloud Run">
 
@@ -157,9 +157,9 @@ There you have it—you vibe coded a fully functioning app that started with a s
 
 In my case, the primary prompt and calling the API were in the [services/geminiService.ts](https://github.com/geshan/geo-guesser-ai/blob/master/services/geminiService.ts) file, which was using `gemini-2.5-flash-preview-04-17` with a pretty well-crafted prompt. The whole app is available in this open-source [GitHub repository](https://github.com/geshan/geo-guesser-ai/tree/master). From the code I read, it looks like a frontend-only app, so how it handles the API key and its security is your responsibility.
 
-You can read the [FAQs](https://aistudio.google.com/apps?source=faq) on Google AI Studio Build/Apps page, which tell you that it is a frontend only app and other details about how it runs in an Iframe on Google Cloud Run.
+You can read the [FAQs](https://aistudio.google.com/apps?source=faq) on Google AI Studio Build/Apps page, which tell you that it is a frontend-only app and other details about how it runs in an Iframe on Google Cloud Run.
 
-<img class="center" src="/images/google-ai-studio-apps/23gogole-ai-studio-apps-faq.jpg" loading="lazy" title="Google AI Studio Build (apps) page FAQs" alt="Google AI Studio Build (apps) page FAQs">
+<img class="center" src="/images/google-ai-studio-apps/23google-ai-studio-apps-faq.jpg" loading="lazy" title="Google AI Studio Build (apps) page FAQs" alt="Google AI Studio Build (apps) page FAQs">
 
 The goal was to have a working app, and you have it, even with a dark and light theme switcher. It is a good starting point, but I would not consider it production-ready; use it cautiously and carefully. If you think something is wrong, delete the app from Cloud Run and/or delete the whole project. I don’t want you bleeding money on Google Cloud Platform.
 

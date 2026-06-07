@@ -12,7 +12,7 @@ pagetitle: "Ollama commands: How to use Ollama in the command line"
 description: "Learn about the important Ollama commands to run Ollama on your local machine with Smollm2 and Qwen 2.5 models"
 keywords: ollama commands, ollama serve, ollama run, ollama list, ollama ps
 ---
-Ollama is an open-source tool that helps you run open LLMs on your machine or a server. It is the glue layer between your machine (or hardware) and the open LLM of your choice. In this post, you will learn about the Ollama command you can use to get the most out of it; let’s get going!
+Ollama is an open-source tool that helps you run open LLMs on your machine or a server. It is the glue layer between your machine (or hardware) and the open LLM of your choice. In this post, you will learn about the Ollama commands you can use to get the most out of it; let’s get going!
 
 <!-- more -->
 
@@ -33,17 +33,17 @@ Ollama is an open-source tool that helps you run open LLMs on your machine or a 
 
 ## Quick recap
 
-This blog post is part 2 of the Ollama series. In the [first part](/blog/2025/02/what-is-ollama/), you covered topics like [what is Ollama](/blog/2025/02/what-is-ollama/#what-is-ollama), it’s [features](/blog/2025/02/what-is-ollama/#ollama-features) and [how to run Ollama](/blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) with examples of Smollm2 and DeepSeek R1 models.
+This blog post is part 2 of the Ollama series. In the [first part](/blog/2025/02/what-is-ollama/), you covered topics like [what is Ollama](/blog/2025/02/what-is-ollama/#what-is-ollama), its [features](/blog/2025/02/what-is-ollama/#ollama-features) and [how to run Ollama](/blog/2025/02/what-is-ollama/#how-to-run-ollama-locally) with examples of Smollm2 and DeepSeek R1 models.
 
 In this part, you will learn about some useful Ollama commands like serve, run, and ps. Before diving deeper into code mode, please ensure you have Ollama installed and working in your system by reading [part 1](/blog/2025/02/what-is-ollama/). Part 1 also covers the installation of Ollama and running the Smollm2 135 million parameter model and DeepSeek R1 8 billion parameter model.
 
-The part 3 of this Ollama series covers the [Ollama APIs](/blog/2025/02/ollama-api/), which are used by the CLI and can be used by other systems to interact with the LLMs.
+Part 3 of this Ollama series covers the [Ollama APIs](/blog/2025/02/ollama-api/), which are used by the CLI and can be used by other systems to interact with the LLMs.
 
 In part 4, you will learn about running [Ollama in Docker with Docker Compose](/blog/2025/02/ollama-docker-compose/). You will also add Open WebUI in a Docker container to interact with the LLMs running on Ollama with Docker Compose.
 
 ## Ollama commands
 
-Ollama has multiple commands to achieve relative goals. To know the sub-commands you can run with Ollama, you can execute the following: 
+Ollama has multiple commands to achieve relative goals. To see the sub-commands you can run with Ollama, you can execute the following: 
 
 ```bash
  ollama --help
@@ -53,9 +53,9 @@ It will give you the following output:
 
 <img class="center" src="/images/ollama-commands/02ollama-help.jpg" loading="lazy" title="Output of ollama --help showing all available Ollama commands" alt="Output of ollama --help showing all available Ollama commands">
 
-You can also run `ollama --version` to check the version of Ollama when writing the version of Ollama is  `0.5.7`. If you want help with a specific sub-command, you can add `--help` after the sub-command; for example: `ollama run --help` will give you the following output:
+You can also run `ollama --version` to check the version of Ollama when writing, the version of Ollama is `0.5.7`. If you want help with a specific sub-command, you can add `--help` after the sub-command; for example: `ollama run --help` will give you the following output:
 
-<img class="center" src="/images/ollama-commands/03ollama-run-help.jpg" loading="lazy" title="Output of ollama run --help showing available flag and environment variables" alt="Output of ollama run --help showing available flag and environment variables">
+<img class="center" src="/images/ollama-commands/03ollama-run-help.jpg" loading="lazy" title="Output of ollama run --help showing available flags and environment variables" alt="Output of ollama run --help showing available flags and environment variables">
 
 Now that you know the basics, let’s look at some useful Ollama commands.
 
@@ -63,7 +63,7 @@ Now that you know the basics, let’s look at some useful Ollama commands.
 
 Ollama `serve` is the main command that starts the Ollama server. It can be configured with many environment variables, such as `OLLAMA_DEBUG` to enable or disable debugging, `OLLAMA_HOST` to specify the server's host, and `OLLAMA_MAX_QUEUE` to configure the maximum number of queued requests. To learn more about these environment variables, run `ollama serve --help`.
 
-Ollama runs [Gin](https://github.com/ollama/blob/main/server/routes.go#L27)  (written in Go) as the underlying server to add an API layer to the downloaded (pulled) models. Both the CLI and any other services that need to use LLM inference will use the server started with `ollama serve`, which will give an output similar to the below: 
+Ollama runs [Gin](https://github.com/ollama/ollama/blob/main/server/routes.go#L27) (written in Go) as the underlying server to add an API layer to the downloaded (pulled) models. Both the CLI and any other services that need to use LLM inference will use the server started with `ollama serve`, which will give an output similar to the below: 
 
 <img class="center" src="/images/ollama-commands/04ollama-serve.jpg" loading="lazy" title="Output of ollama serve showing applied environment variables" alt="Output of ollama serve showing applied environment variables">
 
@@ -73,7 +73,7 @@ Given that the server is running, you will run a model next with `ollama run`.
 
 ### Ollama run
 
-The Ollama `run` command runs an open model available in the Ollama models [page](https://ollama.com/search). It will pull (download) the model to your machine and then run it, exposing it via the API started with `ollama serve`. Like the previous part, you will run the Smollm2 135 million parameter because it will run on most machines with even less memory (like 512 MB), as the model is 271 MB.
+The Ollama `run` command runs an open model available in the Ollama models [page](https://ollama.com/search). It will pull (download) the model to your machine and then run it, exposing it via the API started with `ollama serve`. Like the previous part, you will run the Smollm2 135 million parameter model because it will run on most machines with even less memory (like 512 MB), as the model is 271 MB.
 
 To run Smollm2 135M parameters model, you can execute: 
 
@@ -83,7 +83,7 @@ ollama run smollm2:135m
 
 It will result in something like the following:
 
-<img class="center" src="/images/ollama-commands/05ollama-run-smollm2.jpg" loading="lazy" title="Output of ollama run smollm2:145m on the CLI when the model is already downloaded" alt="Output of ollama run smollm2:145m on the CLI when the model is already downloaded">
+<img class="center" src="/images/ollama-commands/05ollama-run-smollm2.jpg" loading="lazy" title="Output of ollama run smollm2:135m on the CLI when the model is already downloaded" alt="Output of ollama run smollm2:135m on the CLI when the model is already downloaded">
 
 If you ran the model for the first time, it would have downloaded and run, as seen in the last [part](/blog/2025/02/what-is-ollama/) of this Ollama series. However, running an already pulled (downloaded) model runs quickly the second time.
 
@@ -125,7 +125,7 @@ To exit the running model context, type `/bye` and return to the command line. O
 
 ### Ollama list
 
-The Ollma list command lists all the open models pulled (downloaded) from Ollama’s registry and saved to your machine. When I ran `ollama list` on my machine, I got the following output:
+The Ollama list command lists all the open models pulled (downloaded) from Ollama’s registry and saved to your machine. When I ran `ollama list` on my machine, I got the following output:
 
 ```bash/0
 ollama list    
@@ -174,7 +174,7 @@ Similarly, running the Qwen model now will run directly rather than downloading 
 
 ### Ollama ps
 
-Like other `ps` commands that list processes, the `ollama ps` command will list running models. For this, you will first need to run a model; you can run the Qwen2 0.5 B parameters model with `ollama run qwen2.5:0.5b`. Then, in a new CLI tab, you can run `ollama ps`, which will give an output similar to the following:
+Like other `ps` commands that list processes, the `ollama ps` command will list running models. For this, you will first need to run a model; you can run the Qwen 2.5 0.5B parameters model with `ollama run qwen2.5:0.5b`. Then, in a new CLI tab, you can run `ollama ps`, which will give an output similar to the following:
 
 ```bash/0
 ollama ps
@@ -186,7 +186,7 @@ To exit the run context, type `/bye` to return to the command line.
 
 ### Ollama create
 
-With the `ollama create` command, you can create a new variant of an existing open model. For example, you will create a new variant of the `smollm2:135m` parameter model with a context window of 16K, and the temperature (creativeness) is set to 0.1, which is significantly less creative. To do this, first, you will create a Model file named `Modelfile-smollm2-16k` in your current folder with the following content:
+With the `ollama create` command, you can create a new variant of an existing open model. For example, you will create a new variant of the `smollm2:135m` parameter model with a context window of 16K, and the temperature (creativeness) is set to 0.1, which is significantly less creative. To do this, first, you will create a model file named `Modelfile-smollm2-16k` in your current folder with the following content:
 
 ```bash
 FROM smollm2:135m
@@ -232,9 +232,9 @@ In the running model context, where you can type `/?` for help, if you type in `
     Version 2.0, January 2004
 ```
 
-This means the two parameters specified in the Model file,  `temperature` and context window with `num_ctx`, are applied to the model. Because the temperature is set to a low value `0.2`, if you ask this model variant, `why is the sky blue? give me 1 sentence answer.` even 3 times consecutively; it will give you almost the same answer as seen below:
+This means the two parameters specified in the model file, `temperature` and context window with `num_ctx`, are applied to the model. Because the temperature is set to a low value `0.2`, if you ask this model variant, `why is the sky blue? give me a 1-sentence answer.` even 3 times consecutively; it will give you almost the same answer as seen below:
 
-<img class="center" src="/images/ollama-commands/07ollama-sky-blue.jpg" loading="lazy" title="Output of ollama why is the sky blue, same answer as the temperature is only 0.2" alt="Output of ollama why is the sky blue, same answer as the temperature is only 0.2">
+<img class="center" src="/images/ollama-commands/07ollama-sky-blue.jpg" loading="lazy" title="Output of asking why the sky is blue, same answer as the temperature is only 0.2" alt="Output of asking why the sky is blue, same answer as the temperature is only 0.2">
 
 Next, you will learn about some other Ollama commands.
 
@@ -273,4 +273,4 @@ In the next part of this Ollama series, you will learn about the Ollama APIs. Th
 
 ## Conclusion
 
-In this comprehensive guide, you explored a wide range of essential Ollama commands, From `ollama serve` to `ollama run`, and from `ollama pull` to `ollam create`. By mastering these Ollama commands, you'll be well-equipped to harness the full potential of this powerful and easy-to-use framework, opening up a world of possibilities for your projects and applications. Whether you're a seasoned developer or just starting your journey into AI, Ollama and its commands will undoubtedly be invaluable assets in your toolkit. Keep learning!
+In this comprehensive guide, you explored a wide range of essential Ollama commands, from `ollama serve` to `ollama run`, and from `ollama pull` to `ollama create`. By mastering these Ollama commands, you'll be well-equipped to harness the full potential of this powerful and easy-to-use framework, opening up a world of possibilities for your projects and applications. Whether you're a seasoned developer or just starting your journey into AI, Ollama and its commands will undoubtedly be invaluable assets in your toolkit. Keep learning!

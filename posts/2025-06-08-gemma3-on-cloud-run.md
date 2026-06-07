@@ -30,7 +30,7 @@ Gemma is a collection of lightweight, modern open models built by Google. They a
 
 ## Gemma 3 on Cloud Run
 
-To deploy Gemma 3 (4 billion parameters model) on Google Cloud Run from Google AI Studio. Gemma 3 models’ size [ranges](https://ollama.com/library/gemma3) from 815 MB for 1B parameters to 17 GB for the 27B parameters. The model you will deploy is the 4B parameters, which is 3.3 GB.
+It is easy to deploy Gemma 3 (4 billion parameters model) on Google Cloud Run from Google AI Studio. Gemma 3 models’ sizes [range](https://ollama.com/library/gemma3) from 815 MB for 1B parameters to 17 GB for the 27B parameters. The model you will deploy is the 4B parameters model, which is 3.3 GB.
 
 You will first create a new Google Cloud Project. You can deploy Gemma 3 from AI Studio with just a few clicks. When deployed from AI Studio, it uses Ollama under the hood to run Gemma 3 inside a container. In that container, there is a slim Go server/proxy to [verify](https://github.com/google-gemini/gemma-cookbook/blob/main/Demos/Gemma-on-Cloudrun/proxy.go#L86) the API key.
 
@@ -58,13 +58,13 @@ Under the `Run setting` on the right side bar, click on the dropdown that has th
 
 <img class="center" src="/images/gemma3-on-cloud-run/05gemma3-4b-on-ai-studio.jpg" loading="lazy" title="Select Gemma 3 with 4 billion parameters on Google AI Studio" alt="Select Gemma 3 with 4 billion parameters on Google AI Studio">
 
-On the selected `Gemma 3 4B` model, bring the temperature down to `0.3` and the Top P setting to `0.4` , as follows:
+On the selected `Gemma 3 4B` model, bring the temperature down to `0.3` and the Top P setting to `0.4`, as follows:
 
-<img class="center" src="/images/gemma3-on-cloud-run/06gemma3-settings.jpg" loading="lazy" title="Setting the temparature (creativity) and top p settings for Gemma 3:4B on AI Studio" alt="Setting the temparature (creativity) and top p settings for Gemma 3:4B on AI Studio">
+<img class="center" src="/images/gemma3-on-cloud-run/06gemma3-settings.jpg" loading="lazy" title="Setting the temperature (creativity) and top p settings for Gemma 3:4B on AI Studio" alt="Setting the temperature (creativity) and top p settings for Gemma 3:4B on AI Studio">
 
-The above setting doesn't matter when you deploy. If you want, you can chat with Gemma 3 like ask it `why is the sky blue?, give the shortest possible answer`. It should give back a one sentence answer. 
+The above setting doesn't matter when you deploy. If you want, you can chat with Gemma 3, like asking it `why is the sky blue?, give the shortest possible answer`. It should give back a one-sentence answer. 
 
-After that, click on the black and white Rocket icon (🚀) besides the `Run settings` and click `Deploy to Cloud Run` as seen below:
+After that, click on the black and white Rocket icon (🚀) beside the `Run settings` and click `Deploy to Cloud Run` as seen below:
 
 <img class="center" src="/images/gemma3-on-cloud-run/07ai-studio-gemma3-to-cloud-run.jpg" loading="lazy" title="Deploy Gemma 3 to Google Cloud Run from AI Studio" alt="Deploy Gemma 3 to Google Cloud Run from AI Studio">
 
@@ -101,7 +101,7 @@ Hurray! You have Gemma 3 running on Google Cloud Run. Now you can use it in your
 
 ## The Docker image
 
-From the surface, it looks partially like magic, but most of the heavy lifting is being done by a prebuilt Docker image available on the Google Cloud Artifact registry (pkg.dev) built with Google Cloud Biuld. 
+From the surface, it looks partially like magic, but most of the heavy lifting is being done by a prebuilt Docker image available on the Google Cloud Artifact registry (pkg.dev) built with Google Cloud Build. 
 
 When you read the official docs about [Gemma on Cloud Run](https://github.com/google-gemini/gemma-cookbook/tree/main/Demos/Gemma-on-Cloudrun), you can find out that there are pre-built Docker images like [Gemma 3:4B](http://us-docker.pkg.dev/cloudrun/container/gemma/gemma3-4b) on the package registry. As [GPUs on Cloud Run](https://cloud.google.com/run/docs/configuring/services/gpu) have become available on demand with no reservations needed, deploying any model with Ollama on Cloud Run has become much easier. 
 
@@ -134,7 +134,7 @@ You can run it on Google Cloud Shell as:
 
 <img class="center" src="/images/gemma3-on-cloud-run/12cloud-run-deploy-gemma3-4b.jpg" loading="lazy" title="Gcloud run deploy command to deploy Gemma 3 4B on Cloud Run" alt="Gcloud run deploy command to deploy Gemma 3 4B on Cloud Run">
 
-It might ask you do deploy with `no zonal redundancy`, write `y` for yes, and it should deploy the service and give you back a URL as follows:
+It might ask you to deploy with `no zonal redundancy`, write `y` for yes, and it should deploy the service and give you back a URL as follows:
 
 <img class="center" src="/images/gemma3-on-cloud-run/13gemma3-deploy-with-cli.jpg" loading="lazy" title="Gemma 3 deploy with Gcloud run command" alt="Gemma 3 deploy with Gcloud run command">
 
@@ -142,10 +142,10 @@ If you hit the URL key with the API key, you can see the `Ollama is running` mes
 
 <img class="center" src="/images/gemma3-on-cloud-run/14gemma3-running.jpg" loading="lazy" title="Gemma 3 running deployed with Gcloud run command" alt="Gemma 3 running deployed with Gcloud run command">
 
-There you have it. Now you know you have decoded the secret of the magic AI studio doing in the background to enable the API key. Gemma 3 is running on Google Cloud Run with Ollama and a proxy server written in Go.
+There you have it. Now you know you have decoded the secret of what AI Studio is doing in the background to enable the API key. Gemma 3 is running on Google Cloud Run with Ollama and a proxy server written in Go.
 
 ## Conclusion
 
 In this post, you learned about deploying Gemma 3 on Google Cloud Run through Google AI Studio's intuitive interface, which simplifies a complex process into a few clicks. You also learned that this deployment leverages Ollama and pre-built Docker images from the Google Cloud Artifact Registry, enhanced with a Go-based proxy server for API key validation. 
 
-Additionally, you could decode the magic using a single gcloud command within the Google Cloud Shell, offering flexibility and control over deployment parameters like concurrency, CPU, GPU, and memory. Both methods result in a functional Gemma 3 instance on Cloud Run, ready to be integrated into applications, providing developers like you with powerful AI model capabilities with minimal effort. Keep experimenting!
+Additionally, you could decode the magic using a single `gcloud` command within the Google Cloud Shell, offering flexibility and control over deployment parameters like concurrency, CPU, GPU, and memory. Both methods result in a functional Gemma 3 instance on Cloud Run, ready to be integrated into applications, providing developers like you with powerful AI model capabilities with minimal effort. Keep experimenting!

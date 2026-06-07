@@ -14,7 +14,7 @@ Amazon Elastic Container Registry (ECR) is a fully managed container registry th
 
 <!-- more -->
 
-<img class="center" src="/images/amazon-ecr-push-image/01amazon-ecr-push-image.jpg" title="Push a Docker image to Amazon Elastic Container Registery (ECR)" alt="Push a Docker image to Amazon Elastic Container Registery (ECR)">
+<img class="center" src="/images/amazon-ecr-push-image/01amazon-ecr-push-image.jpg" title="Push a Docker image to Amazon Elastic Container Registry (ECR)" alt="Push a Docker image to Amazon Elastic Container Registry (ECR)">
 
 ## Table of contents
 
@@ -52,7 +52,7 @@ app.listen(port, () => {
 });
 ```
 
-It is a simple Node.js app with only one route `/` that prints `Hello World` using Express.  If you run `node index.js` , you will see the following:
+It is a simple Node.js app with only one route `/` that prints `Hello World` using Express.  If you run `node index.js`, you will see the following:
 
 ```bash
 > node index.js
@@ -64,7 +64,7 @@ After that, if you hit `http://localhost` on your favorite browser, you will see
 The next important file in the repository is the `Dockerfile` with the following content:
 
 ```bash
-#buld stage
+#build stage
 FROM public.ecr.aws/docker/library/node:22 AS build
 
 WORKDIR /srv
@@ -89,13 +89,13 @@ EXPOSE 80
 CMD ["node", "index.js"]
 ```
 
-It is a Dockerfile using  [Docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) to create the build and the production stage.
+It is a Dockerfile using [Docker multi-stage build](/blog/2019/11/how-to-use-docker-multi-stage-build/) to create the build and the production stage.
 
 The easiest way to get started is to clone this repository in your AWS Cloud Shell and build the image there. Before that, you will first create the private Amazon ECR.
 
 ## Create private Amazon ECR
 
-Amazon Elastic Container Registry (ECR) can be public or private. For example, this [Node.js docker image](https://gallery.ecr.aws/docker/library/node) is being served from the public ECR. No authentication is required to pull the node image. Conversely, the apps you develop will to be accessible to the public, so they are in a private ECR, which has some form of access control to ensure only the right users have access to it.
+Amazon Elastic Container Registry (ECR) can be public or private. For example, this [Node.js docker image](https://gallery.ecr.aws/docker/library/node) is being served from the public ECR. No authentication is required to pull the node image. Conversely, the apps you develop will not be accessible to the public, so they are in a private ECR, which has some form of access control to ensure only the right users have access to it.
 
 To create a private Amazon Elastic Container Registry (ECR), you must be logged into your AWS account and have the correct IAM permissions. This post does not cover the IAM permissions. In your AWS console, search for `ecr` as shown below:
 
@@ -113,11 +113,11 @@ On the form, fill in the repository name as `nodejs/hello-world`, where `nodejs`
 
 It is better to keep the tags immutable so they are not overwritten. To do this, click the `Immutable` radio button in the `Image tag mutability` section. After that, keep the Encryption settings as is and click the `Create` button at the bottom of this page.
 
-It might take some seconds for the EC registry to be created, and you will be taken to the `Private repositories` listing page as seen below:
+It might take a few seconds for the ECR registry to be created, and you will be taken to the `Private repositories` listing page as seen below:
 
 <img class="center" src="/images/amazon-ecr-push-image/06private-ecr-created.jpg" loading="lazy" title="AWS Console UI showing the private Amazon ECR created" alt="AWS Console UI showing the private Amazon ECR created">
 
-In the next part, you will learn how to build and push a Docker container image using AWS Cloudshell. You are using AWS Cloudshell, so there is nothing to install on your machine. You can also do the same using your machine. 
+In the next part, you will learn how to build and push a Docker container image using AWS CloudShell. You are using AWS CloudShell, so there is nothing to install on your machine. You can also do the same on your local machine.
 
 ## Build and push Node.js Docker image
 
@@ -143,7 +143,7 @@ It will result in the following state:
 
 <img class="center" src="/images/amazon-ecr-push-image/09aws-cloudshell-with-commands.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with create project related commands" alt="AWS Console UI showing AWS CloudShell with create project related commands">
 
-After that, click on the `View push commands` button on the left side of the page it will show a pop-up as seen below:
+After that, click on the `View push commands` button on the left side of the page; it will show a pop-up as seen below:
 
 <img class="center" src="/images/amazon-ecr-push-image/10ecr-show-push-commands.jpg" loading="lazy" title="AWS Console UI showing  ECR login, docker build related commands" alt="AWS Console UI showing  ECR login, docker build related commands">
 
@@ -162,13 +162,13 @@ docker push <long-id-here>.dkr.ecr.us-east-1.amazonaws.com/nodejs/hello-world:la
 
 Then, run them individually on your console, maintaining the order. After the first command, you will see `Login Succeeded`. That command is used to log in to the Elastic container registry.
 
-<img class="center" src="/images/amazon-ecr-push-image/11aws-cloudshell-erc-login.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with ECR login command output" alt="AWS Console UI showing AWS CloudShell with ECR login command output">
+<img class="center" src="/images/amazon-ecr-push-image/11aws-cloudshell-ecr-login.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with ECR login command output" alt="AWS Console UI showing AWS CloudShell with ECR login command output">
 
 The `docker build` command will take up to 5 minutes, wait for it.  After the build is done, it will look something like the below:
 
 <img class="center" src="/images/amazon-ecr-push-image/12aws-cloudshell-docker-build.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with Docker build command output" alt="AWS Console UI showing AWS CloudShell with Docker build command output">
 
-The third command tags the built container with `nodejs/hello-world:latest `, which results in nothing. The fourth command pushes the image to the private Amazon ECR. If everything goes well, when it finishes, it will look like the following:
+The third command tags the built container with `nodejs/hello-world:latest`, which results in nothing. The fourth command pushes the image to the private Amazon ECR. If everything goes well, when it finishes, it will look like the following:
 
 <img class="center" src="/images/amazon-ecr-push-image/13aws-cloudshell-docker-tag-push-image.jpg" loading="lazy" title="AWS Console UI showing AWS CloudShell with Docker tag and push command output" alt="AWS Console UI showing AWS CloudShell with Docker tag and push command output">
 
@@ -180,10 +180,10 @@ You can see the image’s details by clicking the `latest` link, which will show
 
 <img class="center" src="/images/amazon-ecr-push-image/14amazon-ecr-with-pushed-image.jpg" loading="lazy" title="AWS Console UI showing Amazon ECR with the pushed Docker image details" alt="AWS Console UI showing Amazon ECR with the pushed Docker image details">
 
-You can deploy the image's URL as a container in ECS, EKS, or even a Lambda function. The [next part](/blog/2025/03/amazon-ecs-tutorial/) of this blog post series you will deploy the built and pushed container to Amazon Elastic Container Service (ECS).
+You can deploy the image's URL as a container in ECS, EKS, or even a Lambda function. The [next part](/blog/2025/03/amazon-ecs-tutorial/) of this blog post series, you will deploy the built and pushed container to Amazon Elastic Container Service (ECS).
 
 ## Conclusion
 
-In this post, you learned about Amazon Elastic Container Registry (ECR), a service in Amazon Web Services (AWS). Then, you built a simple Hello World Node.js app with Express 5.x. After that, using the AWS interface, you created a private AWS ECR Docker image registry. Consequently, look at the command provided. You used AWS CodeShell to build and push the Hello World Node.js app image after cloning the repository from GitHub.
+In this post, you learned about Amazon Elastic Container Registry (ECR), a service in Amazon Web Services (AWS). Then, you built a simple Hello World Node.js app with Express 5.x. After that, using the AWS interface, you created a private AWS ECR Docker image registry. Consequently, using the commands provided, you used AWS CloudShell to build and push the Hello World Node.js app image after cloning the repository from GitHub.
 
-I hope you learned the basics of Amazon ECR, in the next part, you will deploy the container on Amazon Elastic Container Service (ECS) using Fargate for serverless resource provisioning. Keep learing!
+I hope you learned the basics of Amazon ECR, in the next part, you will deploy the container on Amazon Elastic Container Service (ECS) using Fargate for serverless resource provisioning. Keep learning!
