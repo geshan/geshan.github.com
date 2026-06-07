@@ -120,7 +120,8 @@ A list of some of the articles I have written outside of this blog:
 - Mentoring and coaching people in their tech careers, especially helping them find their first full-time tech role in Australia since mid-2018. Wanna chat? Send me an email (email address below).
 - An SEO rookie :).
 - A [GDG (Cloud) Sydney](https://gdg.community.dev/gdg-cloud-sydney/) organizer since 2023.
-- A [Docker Captain](https://www.docker.com/captains/geshan-manandhar/) since mid-2024.
+- A [Docker Captain](https://www.docker.com/captains/geshan-manandhar/) from June 2024 to June 2026 (no longer a Docker Captain).
+- A [AWS Community Builder](https://builder.aws.com/community/@geshan) since March 2026
 
 And many other things.
 
