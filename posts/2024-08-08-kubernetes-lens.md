@@ -90,7 +90,7 @@ port to access it from your machine with `kubectl port-forward service/kubernete
 Rancher is a good choice for organizations that need to manage multiple Kubernetes clusters or that are using a mix of container orchestration tools. If you need to manage multiple clusters or
 different container orchestration tools, Rancher is a good fit for your needs. It does take up a lot of resources to run.  I used Rancher from 2018-2021, it was a good tool and did the job well.
 
-There are other tools to navigate Kubernetes like [K9s](https://k9scli.io/), [Seabird](https://getseabird.github.io/), and [K8Studio](​​https://k8studio.io/), but I have not used them enough to comment on them.
+There are other tools to navigate Kubernetes like [K9s](https://k9scli.io/), [Seabird](https://getseabird.github.io/), and [K8Studio](https://k8studio.io/) , but I have not used them enough to comment on them.
 
 ## Kubernetes Lens is simple
 

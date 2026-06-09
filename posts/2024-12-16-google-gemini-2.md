@@ -33,7 +33,7 @@ Gemini 2.0 isn't just another LLM; it's a [powerful multimodal model](https://bl
 
 <img class="center" src="/images/google-gemini-2/02gemini-2-capabilities.jpg" loading="lazy" title="Google Gemini 2.0 capabilities" alt="Google Gemini 2.0 capabilities">
 
-Unlike other models, Gemini 2.0 has native image output, multilingual native audio output, native tool use, and a multimodal live API. However, some of the features have not yet been released to everyone. If interested, you can also look at the API and SDK [docs](​​https://cloud.google.com/vertex-ai/generative-ai/docs/gemini-v2). As per Google’s official announcement:
+Unlike other models, Gemini 2.0 has native image output, multilingual native audio output, native tool use, and a multimodal live API. However, some of the features have not yet been released to everyone. If interested, you can also look at the API and SDK [docs](https://cloud.google.com/vertex-ai/generative-ai/docs/gemini-v2). As per Google’s official announcement:
 
 > Flash 2.0 is twice as fast as 1.5 Pro while achieving stronger performance, includes new multimodal outputs, and comes with native tool use.
 
