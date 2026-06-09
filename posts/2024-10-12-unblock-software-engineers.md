@@ -41,7 +41,7 @@ On the other hand, the engineering team's prerogative is how to do a particular 
 
 It is common for software engineers to pick up a task (usually a ticket on a task management software like Jira) and realize that the task does not have enough context to get started or make any progress. Tasks without enough description are commonplace, and bugs without steps to reproduce are also typical.
 
-As a product manager (or product owner), having a clear [definition of ready](blog/2018/11/5-signs-that-reveal-your-software-development-process-is-agile-only-on-paper-and-solutions-for-them/#unclear-definition-of-ready-for-development-and-done) for tasks to be worked on is required. Another important aspect is that the definition of ready is followed strictly on almost all tasks. For instance, if the definition of ready means a task will have a user story and technical requirements defined, it is the task of the product team to have it filled in on all the tickets.
+As a product manager (or product owner), having a clear [definition of ready](/blog/2018/11/5-signs-that-reveal-your-software-development-process-is-agile-only-on-paper-and-solutions-for-them/#unclear-definition-of-ready-for-development-and-done) for tasks to be worked on is required. Another important aspect is that the definition of ready is followed strictly on almost all tasks. For instance, if the definition of ready means a task will have a user story and technical requirements defined, it is the task of the product team to have it filled in on all the tickets.
 
 ### Unblocking from non-technical blockers
 
