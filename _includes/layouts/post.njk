@@ -44,7 +44,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
         <div
           class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-2 border-y border-lightbg mt-4"
         >
-          <div class="flex items-center justify-start md:gap-4 gap-2 flex-wrap w-2/3">
+          <div class="flex items-center justify-start md:gap-4 gap-2 flex-wrap">
             <div class="flex justify-start items-center gap-3 md:gap-4">
               <!-- Avatar -->
               <img
@@ -61,7 +61,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             </div>
 
             <!-- Date -->
-            {% include "components/posted-date-time-with-time.njk" %}
+            {% include "components/posted-date-time-with-read.njk" %}
           </div>
           <!-- Share Button -->
           <button
