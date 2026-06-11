@@ -16,3 +16,4 @@ Disallow: /blog/2009/*
 Disallow: /blog/2010/*
 
 Sitemap: https://geshan.com.np/sitemap.xml 
+Content-Signal: ai-train=no, search=yes, ai-input=yes

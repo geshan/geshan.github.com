@@ -8,10 +8,10 @@ tags:
 - Docker
 cover: "/images/nginx-docker-compose/01nginx-docker-compose.jpg"
 pagetitle: "How to use Nginx with Docker Compose effectively with examples"
-description: "Learn how to use nginx and docker compose proprely with a simple and multi-container example with reverse proxy setting"
-keywords: nginx docker compose, docker compose ngins
+description: "Learn how to use Nginx and Docker Compose properly with a simple and multi-container example with reverse proxy settings"
+keywords: nginx docker compose, docker compose nginx
 ---
-Nginx, a free, open-source, high-performance web server and reverse proxy, has become a cornerstone of modern web applications. Its versatility, efficiency, and ability to handle high-traffic loads make it a popular choice among developers and organizations alike. In this post, you are going to learn how to use Niginx with Docker and Docker Compose with a simple example and another example that is closer to a real-life scenario, let’s get started!
+Nginx, a free, open-source, high-performance web server and reverse proxy, has become a cornerstone of modern web applications. Its versatility, efficiency, and ability to handle high-traffic loads make it a popular choice among developers and organizations alike. In this post, you are going to learn how to use Nginx with Docker and Docker Compose with a simple example and another that is closer to a real-life scenario, let’s get started!
 
 <!-- more -->
 
@@ -26,21 +26,21 @@ Nginx, a free, open-source, high-performance web server and reverse proxy, has b
     * [The components of Nginx Docker compose a multi-container setup](#the-components-of-nginx-docker-compose-a-multi-container-setup)
 * [Conclusion](#conclusion)
 
-## Nginx and Docker compose
+## Nginx and Docker Compose
 
-On top of being a great web server, Nginx has other useful features too like [load balancing](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/),  [content caching](​​https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/), and [mail proxy](https://docs.nginx.com/nginx/admin-guide/mail-proxy/mail-proxy/). You can even set up [JWT authentication](https://github.com/kjdev/nginx-auth-jwt) with Nginx. That speaks volumes about how versatile Nginx is.
+On top of being a great web server, Nginx has other useful features too like [load balancing](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/),  [content caching](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/), and [mail proxy](https://docs.nginx.com/nginx/admin-guide/mail-proxy/mail-proxy/). You can even set up [JWT authentication](https://github.com/kjdev/nginx-auth-jwt) with Nginx. That speaks volumes about how versatile Nginx is.
 
 In the realm of containerization, Docker has become the de facto standard for packaging and deploying applications. Docker Compose, a companion tool, simplifies the management of multi-container applications by allowing you to define and run them using a single YAML file.
 
 When you combine Nginx with Docker Compose, you unlock a powerful and efficient way to deploy and manage web applications. Docker Compose streamlines the process of running multiple containers, including your Nginx web server and any backend services your application might rely on. You could potentially run multiple backend servers and route the traffic to them using Nginx in front of them as a [reverse proxy](https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/).
 
-In the next section, you will look at a simple example with Nginx and Docker compose to host a small brochure website with static files.
+In the next section, you will look at a simple example with Nginx and Docker Compose to host a small brochure website with static files.
 
 ### Prerequisites
 
 Before you embark on this journey, let's ensure you have the following prerequisites:
 
-1. A basic understanding of Docker and Docker Compose: Familiarity with Docker commands like `docker build`, `docker run`, and `docker-compose up` is essential. If you're new to Docker, I recommend checking out the official Docker documentation or online tutorials to get up to speed. Also, you will need Docker running on your machine, the examples are based on Docker version 24.0.2 and Docker compose version 2.18.1.
+1. A basic understanding of Docker and Docker Compose: Familiarity with Docker commands like `docker build`, `docker run`, and `docker compose up` is essential. If you're new to Docker, I recommend checking out the official Docker documentation or online tutorials to get up to speed. Also, you will need Docker running on your machine; the examples are based on Docker version 24.0.2 and Docker Compose version 2.18.1.
 
 2. General understanding of Nginx: Knowing how Nginx works and how it is configured will be greatly helpful.
 
@@ -48,19 +48,19 @@ Before you embark on this journey, let's ensure you have the following prerequis
 
 4. Text editor or IDE: You'll need a text editor or IDE to create and edit the Dockerfile and docker-compose.yml files. I will be using VSCode.
 
-In the next, section you will run a simple example to serve static files with Nginx and Docker Compose.
+In the next section, you will run a simple example to serve static files with Nginx and Docker Compose.
 
-## Nginx Docker Compose a simple example
+## Nginx Docker Compose: A Simple Example
 
-Let's begin with a straightforward example that illustrates how to use Nginx with Docker Compose to host static files. For this example, you want to create a brochure website for your imaginary Gen AI startup named Summrzer (a different variation for Summarizer). Your design skills could be better, so you get a responsive theme from HTML5up.net called [Steller](https://html5up.net/stellar). 
+Let's begin with a straightforward example that illustrates how to use Nginx with Docker Compose to host static files. For this example, you want to create a brochure website for your imaginary Gen AI startup named Summrzer (a variation of Summarizer). Since your design skills could be better, you get a responsive theme from HTML5up.net called Stellar. 
 
-To get started you will first clone the ready-made repository where the files have been edited to look like a landing page of our imaginary start-up `Summrzer`. You can clone the repository with the following command:
+To get started, you will first clone the ready-made repository where the files have been edited to look like a landing page of our imaginary start-up `Summrzer`. You can clone the repository with the following command:
 
 ```bash
 git clone git@github.com:geshan/nginx-docker-compose.git
 ```
 
-After that, you have to run the docker compose command pointing it to the `basic.yaml` file with the `up` parameter. Let’s look at that file first:
+After that, you have to run the `docker compose` command pointing it to the `basic.yaml` file with the `up` parameter. Let’s look at that file first:
 
 ```bash
 version: '3.8'
@@ -73,15 +73,15 @@ services:
       - ./html5up-stellar/:/usr/share/nginx/html
 ```
 
-Let's break down this Docker compose file:
+Let's break down this Docker Compose file:
 
 * **version:** Specifies the Docker Compose file format version, in this case, 3.8. 
-* *services:** Defines the services that make up our application. In this case, it is only Nginx.
-* *image:** Uses the `nginx:1-alpoine` image from Docker Hub. Which is the smaller Alpine version, not the default Debian one.
+* **services:** Defines the services that make up our application. In this case, it is only Nginx.
+* **image:** Uses the `nginx:1-alpine` image from Docker Hub. Which is the smaller Alpine version, not the default Debian one.
 * **ports:** Maps the host's port 8089 to the container's port 80, allowing access to the web server running in the container from the host machine with `http://localhost:8089`
-* **volumes:** You have mounted the local `./html5up-stellar` to `/usr/share/nginx/html` default document root fo Nignx.
+* **volumes:** You have mounted the local `./html5up-stellar` to `/usr/share/nginx/html`, the default document root for Nginx.
 
-This could have also been done with a Dockerfile but it is easier with this configuration and much easier to build as well as change any configuration.
+This could have also been done with a `Dockerfile`, but it is easier with this configuration and much easier to build as well as change any configuration.
 
 Now, to run the simple version of the Nginx with the above Docker Compose config, you can execute the following command:
 
@@ -97,13 +97,13 @@ To check the running app, open your favorite browser and point the tab to `http:
 
 <img class="center" loading="lazy" src="/images/nginx-docker-compose/03summrzer.jpg" title="Summarizer static site running a simple Nginx Docker compose example with single container" alt="Summarizer static site running a simple Nginx Docker compose example with single container">
 
-Hurray! You have run a simple version of Nginx that can serve static files like HTML, JavaScirpt, CSS, and images. You can add more things to the configuration like [Cache-Control headers with Nginx](https://webdock.io/en/docs/webdock-control-panel/optimizing-performance/setting-cache-control-headers-common-content-types-nginx-and-apache), that can be a topic for another blog post.
+Hurray! You have run a simple version of Nginx that can serve static files like HTML, JavaScript, CSS, and images. You can add more things to the configuration like [Cache-Control headers with Nginx](https://webdock.io/en/docs/webdock-control-panel/optimizing-performance/setting-cache-control-headers-common-content-types-nginx-and-apache), that can be a topic for another blog post.
 
-You can stop the command by pressing `Ctrl+C`.  In the next part, you will learn how to run multiple containers with Nginx using a Docker compose configuration file.
+You can stop the command by pressing `Ctrl+C`.  In the next part, you will learn how to run multiple containers with Nginx using a Docker Compose configuration file.
 
-## Multi-container example with Nginx and Docker compose
+## Multi-container example with Nginx and Docker Compose
 
-Now that you've seen a basic example, let's move on to a multi-container scenario. You will create a setup where Nginx serves static files for the root path `/` and acts as a reverse proxy for a Node.js API running on a different container for the `/api` path. To do this, the Docker compose file is already in the cloned repository at `./compose.yaml`, which looks like the below:
+Now that you've seen a basic example, let's move on to a multi-container scenario. You will create a setup where Nginx serves static files for the root path `/` and acts as a reverse proxy for a Node.js API running on a different container for the `/api` path. To do this, the Docker Compose file is already in the cloned repository at `./compose.yaml`, which looks like the below:
 
 ```bash
 version: "3.8"
@@ -128,13 +128,13 @@ services:
 
 The file looks similar to the above one, still, let’s discuss the newly added things:
 
-* **Services**: In this configuration, there are two services `node` which runs a simple Node.js app, and Nginx which sits in front of the Node.js app as a reverse proxy. Nginx will forward all requests to the `/api` path to the Node.js app. The Node.js app is in the `../api` folder and has its own [Dockerfile](https://github.com/geshan/nginx-docker-compose/blob/master/api/Dockerfile). You can learn more about [Node.js with Docker](/blog/2020/11/nodejs-with-docker/) too.
-* **Nginx Volumes:** There are two volumes this time, first one is similar to the above. The second one the key to this configuration which holds the definition of what the `/` and `/api` paths should do. You will know about this later.
-* **Depends on**: Here it says that the Nginx service will be started after the Node.js service with depends on. You can read more about [Docker compose depends on](/blog/2024/02/docker-compose-depends-on/) and learn about it.
+* **Services**: In this configuration, there are two services: `node` which runs a simple Node.js app, and `nginx` which sits in front of the Node.js app as a reverse proxy. Nginx will forward all requests to the `/api` path to the Node.js app. The Node.js app is in the `./api` folder and has its own [Dockerfile](https://github.com/geshan/nginx-docker-compose/blob/master/api/Dockerfile). You can learn more about [Node.js with Docker](/blog/2020/11/nodejs-with-docker/) too.
+* **Nginx Volumes:** There are two volumes this time; the first is similar to the one above. The second is the key to this configuration, holding the definition of what the `/` and `/api` paths should do. You will learn about this later.
+* **Depends on**: Here, it specifies that the Nginx service will start after the Node.js service using `depends_on`. You can read more about [Docker Compose depends_on](/blog/2024/02/docker-compose-depends-on/) to learn about it.
 
 Next, you will learn about the components of this two-container setup.
- 
-### The components of Nginx Docker compose a multi-container setup
+
+### The components of Nginx Docker Compose Multi-Container Setup
 
 As discussed, there is a Node.js app that is a simple API with a single file that looks like the below:
 
@@ -159,9 +159,9 @@ app.listen(port, () => {
 });
 ```
 
-It is a basic Express.js app that sends back a stock response which adds like a demo to the `Summrzer` start-up story.
+It is a basic Express.js app that sends back a stock response which acts as a demo to the `Summrzer` start-up story.
 
-A docker file has been added to serve this Node.js app that looks like the below:
+A `Dockerfile` has been added to serve this Node.js app that looks like the below:
 
 ```bash
 FROM node:20-alpine as base
@@ -202,12 +202,12 @@ server {
 }
 ```
 
-It is a simple configuration that says, if the user hits the `/` path serve the static files from `/var/www/html` this is where the `hmll5up-stellar` files are mounted in the Docker compose file. It can be made better with extra configs like cache headers which is out of the scope of this tutorial.
+It is a simple configuration that says, if the user hits the `/` path, serve the static files from `/var/www/html`. This is where the `html5up-stellar` files are mounted in the Docker Compose file. It can be made better with extra configs like cache headers, which is out of the scope of this tutorial.
 
-The second block is the interesting one, where requests to `/api/` will be routed to `localhost:8181` this is where the Node.js express app is running. This app is not accessible from the host machine as no ports are exposed for the `node` service in the above Docker compose file. It also sets additional proxy headers to ensure proper communication between Nginx and the Node.js application. It sends the Real IP to the node service, and the [X-Forwarded-For](https://www.nginx.com/resources/wiki/start/topics/examples/forwarded/) header is used to standardize sending the original IP. The `X-Forwarded-Proto` [header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-Proto) essentially identifies HTTP/HTTPS traffic.
+The second block is the interesting one, where requests to `/api/` will be routed to `http://node:8181/`—which is where the Node.js Express app is running. This app is not accessible from the host machine as no ports are exposed for the `node` service in the above Docker Compose file. It also sets additional proxy headers to ensure proper communication between Nginx and the Node.js application. It sends the Real IP to the Node service, and the [X-Forwarded-For](https://www.nginx.com/resources/wiki/start/topics/examples/forwarded/) header is used to standardize sending the original IP. The `X-Forwarded-Proto` [header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-Proto) essentially identifies HTTP/HTTPS traffic.
 
-Proxy pass is saying to forward all requests to `/api` to the Node.js service running on port 8181.
-To run this two container setup, you can execute the following command:
+`proxy_pass` is used to forward all requests to `/api` to the Node.js service running on port 8181.
+To run this two-container setup, you can execute the following command:
 
 ```bash
 docker compose up
@@ -217,16 +217,16 @@ You will see an output like the below:
 
 <img class="center" loading="lazy" src="/images/nginx-docker-compose/04nginx-docker-compose-multi.jpg" title="Running a complex Nginx Docker compose example with two containers" alt="Running a complex Nginx Docker compose example with two containers">
 
-If you go to `http://localhost:8089` you will see a similar output of the modified stellar template as you did in the previous section. To check that the Node.js API is running properly you can go to `http://localhost:8089/ap/summaryi` on your favorite browser, it will yield something like:
+If you open `http://localhost:8089`, you will see a similar output of the modified Stellar template as you did in the previous section. To check that the Node.js API is running properly, you can navigate to `http://localhost:8089/api/summary` in your browser. It will yield something like:
 
 <img class="center" loading="lazy" src="/images/nginx-docker-compose/05summrzer-api.jpg" title="Summarzer API running with Nginx and Docker compose with reverse proxy to a Node.js app" alt="Summarzer API running with Nginx and Docker compose with reverse proxy to a Node.js app">
 
-There you have it, you have successfully run two examples with Nginx and Docker compose. The first one with Nginx only serves static files and the second one with Nginx serves both static files and acts as a reverse proxy for a simple Node.js app.
+There you have it: you have successfully run two examples with Nginx and Docker Compose. The first one with Nginx only serves static files, and the second one with Nginx serves both static files and acts as a reverse proxy for a simple Node.js app.
 
 ### Conclusion
 
 Using Nginx with Docker Compose provides a powerful and efficient way to deploy and manage web applications. Docker Compose simplifies the process of running multiple containers, including your Nginx web server and any backend services your application might rely on. This combination offers advantages such as simplified configuration portability, scalability, and isolation.
 
-Through the two examples presented in this post, you've learned how to use Nginx with Docker Compose to host static files and act as a reverse proxy for a Node.js API. These examples demonstrate the basic principles of using Nginx with Docker Compose, and you can build upon them to create more complex and sophisticated deployments with extra features like Caching and Load balancing.
+Through the two examples presented in this post, you've learned how to use Nginx with Docker Compose to host static files and act as a reverse proxy for a Node.js API. These examples demonstrate the basic principles of using Nginx with Docker Compose, and you can build upon them to create more complex and sophisticated deployments with extra features like caching and load balancing.
 
 By leveraging the power of Nginx and Docker Compose, you can streamline your web development workflow and deploy and manage your applications with ease and efficiency.

@@ -38,19 +38,19 @@ TypeScript has emerged as a powerful tool that brings static typing to JavaScrip
 
 Enums, short for enumerations, are a feature of languages that allows developers to define a set of named constants, allowing developers to represent a group of related values in a more meaningful and readable way. These named constants represent a distinct set of values that are related in some way. 
 
-Enums are available in other languages like [Java and C#](https://weyprecht.de/2019/10/16/enums-in-csharp-and-java/), even databases like [MySQL](https://dev.mysql.com/doc/refman/8.0/en/enum.html) and [Postgres](https://dev.mysql.com/doc/refman/8.0/en/enum.html) have Enum type.  Unfortunately, JavaScript does not support Enums natively, even though a workaround can be to use a regular JavaScript object as a proxy Enum. TypeScript, on the other hand, has support for Enums. In TypeScript, Enum makes it possible to create a symbolic name for a set of values, providing more meaningful names to improve code readability.
+Enums are available in other languages like [Java and C#](https://weyprecht.de/2019/10/16/enums-in-csharp-and-java/), even databases like [MySQL](https://dev.mysql.com/doc/refman/8.0/en/enum.html) and [Postgres](https://dev.mysql.com/doc/refman/8.0/en/enum.html) have Enum types.  Unfortunately, JavaScript does not support Enums natively, even though a workaround is to use a regular JavaScript object as a proxy Enum. TypeScript, on the other hand, has support for Enums. In TypeScript, Enums make it possible to create a symbolic name for a set of values, providing more meaningful names to improve code readability.
 
 Let's dive deeper into the structure of Enums in TypeScript. Enum declarations begin with the `enum` keyword, followed by the name of the enumeration. Inside the braces, you list the possible values of the enum, each separated by a comma. Below is a simple Enum for traffic lights:
 
 ```typescript
 enum TrafficLights {
   Red,
-  Yello,
+  Yellow,
   Green,
 }
 ```
 
-In this example, you have created an enum named `TrafficLights` with three possible values: `Red`, `Yello`, and `Green`. By default, TypeScript assigns numeric values starting from 0 to each enum member. In this case, `Red` will have the value 0, `Yellow` will have 1, and so on.
+In this example, you have created an enum named `TrafficLights` with three possible values: `Red`, `Yellow`, and `Green`. By default, TypeScript assigns numeric values starting from 0 to each enum member. In this case, `Red` will have the value 0, `Yellow` will have 1, and so on.
 
 In the next section, you will learn why to use Enums in Typescript.
 
@@ -72,13 +72,13 @@ Integrated development environments (IDEs) that support TypeScript, such as [Vis
 
 ### Avoiding Magic Values
 
-You can avoid magic values with Enums. Using Enums properly "magic values" scattered throughout your code can be centralized in a single location. Magic values are hard-coded constants that lack clear context. Enums provide a named representation, adding clarity to your codebase. For example `if (platform === 0)` is much harder to read vs `if (platform === platforms.mobile)`, here the 0 is the magic value.
+You can avoid magic values with Enums. Using Enums properly, "magic values" scattered throughout your code can be centralized in a single location. Magic values are hard-coded constants that lack clear context. Enums provide a named representation, adding clarity to your codebase. For example, `if (platform === 0)` is much harder to read vs `if (platform === platforms.mobile)`. Here, the `0` is the magic value.
 
-In the next part, you will learn how to use Typescript Enums with an example of order statuses.
+In the next part, you will learn how to use TypeScript Enums with an example of order statuses.
 
 ## How to Use Enums in TypeScript
 
-Now that you have established the benefits of using Enums, let's walk through practical examples of how to implement them in TypeScript. For this, you will use order statuses as an example. If you have placed an order on any e-commerce website it will have some status like placed, processing (packed), shipped, and delivered for the happy path. It can also have other statuses like canceled, returned, etc but we will not include them.
+Now that you have established the benefits of using Enums, let's walk through practical examples of how to implement them in TypeScript. For this, you will use order statuses as an example. If you have placed an order on any e-commerce website, it will have some status like placed, processing (packed), shipped, and delivered for the happy path. It can also have other statuses like canceled, returned, etc., but we will not include them.
 
 ### Example - Order Status
 
@@ -93,12 +93,12 @@ enum OrderStatus {
 }
 ```
 
-In this example, we've defined an enum named `OrderStatus` with four possible values: `Placed`, `Packed`, `Shipped`, and `Delivered`.  More on what the values will be for the above Emum in the next segment.
+In this example, we've defined an enum named `OrderStatus` with four possible values: `Placed`, `Packed`, `Shipped`, and `Delivered`.  More on what the values will be for the above Enum in the next segment.
 
 
 ### Order Status with Numeric Enums
 
-By default, TypeScript assigns numeric values starting from 0 to each enum member. So, for the above example, `Placed` will have a value of 0 and `Delivered` will have value of 3. However, you can customize these values if needed, as seen below.
+By default, TypeScript assigns numeric values starting from 0 to each enum member. So, for the above example, `Placed` will have a value of 0 and `Delivered` will have a value of 3. However, you can customize these values if needed, as seen below.
 
 ```typescript
 enum OrderStatus {
@@ -123,7 +123,7 @@ You can try out all the examples locally with TypeScript or on the [TypeScript P
 
 <img class="center" loading="lazy" src="/images/typescript-enum/02typescript-enum-playground.jpg" title="Order Status TypeScript enum example running on TypeScript playground" alt="Order Status TypeScript enum example running on TypeScript playground">
 
-You can run all the code examples in this blog post on TypeScript playgroud to see how it run and what it compiles to in the form of JavaScript. Next, you will look into Order Status enum with strings.
+You can run all the code examples in this blog post on the TypeScript Playground to see how they run and what they compile to in the form of JavaScript. Next, you will look into Order Status enum with strings.
 
 ### Order Status with String Enums
 
@@ -141,11 +141,11 @@ enum OrderStatus {
 
 This approach can be beneficial when you want more descriptive values or use the enum values as keys in an object.
 
-Next, you will learn about more concepts related to TypeScript emums like Heteregenous enums and extracting object types of Enums.
+Next, you will learn about more concepts related to TypeScript enums like heterogeneous enums and extracting object types of Enums.
 
 ### Heterogeneous Enums
 
-Unlike other languages, TypeScript allows for heterogeneous enums, where some members have numeric values, and others have string values. You can also mix up numbers and strings as the values for Enums which is called Heterogenous Enums, as seen below:
+Unlike other languages, TypeScript allows for heterogeneous enums, where some members have numeric values, and others have string values. You can also mix numbers and strings as the values for Enums, which is called Heterogeneous Enums, as seen below:
 
 ```typescript
 enum Status {
@@ -159,7 +159,7 @@ This flexibility can be useful in scenarios where a mix of data types is require
 
 ## More about Enums
 
-There are more things to Enums than the ones already mentioned in this post. It would be useful for you to know about [Ambient Enums](https://levelup.gitconnected.com/introduction-to-typescript-enums-const-and-ambient-enums-1fe686b67495), which are basically like a redefinition of existing enums. Similarly it would be helpful to know about [exrtracting object type of Enums](https://www.digitalocean.com/community/tutorials/how-to-use-enums-in-typescript#extracting-the-object-type-of-enums), that can make it easier to use Enum as a Type in TypeScript. Other couple of interesting things about Enums that would be handy for you to know are, how enums are represented on [runtime](https://www.typescriptlang.org/docs/handbook/enums.html#enums-at-runtime) and [compile time](https://www.typescriptlang.org/docs/handbook/enums.html#enums-at-compile-time).
+There are more things to Enums than the ones already mentioned in this post. It would be useful for you to know about [Ambient Enums](https://levelup.gitconnected.com/introduction-to-typescript-enums-const-and-ambient-enums-1fe686b67495), which are basically like a redefinition of existing enums. Similarly, it would be helpful to know about [extracting object type of Enums](https://www.digitalocean.com/community/tutorials/how-to-use-enums-in-typescript#extracting-the-object-type-of-enums), which can make it easier to use an Enum as a Type in TypeScript. Another couple of interesting things about Enums that would be handy for you to know are how enums are represented at [runtime](https://www.typescriptlang.org/docs/handbook/enums.html#enums-at-runtime) and [compile time](https://www.typescriptlang.org/docs/handbook/enums.html#enums-at-compile-time).
 
 ## Conclusion
 

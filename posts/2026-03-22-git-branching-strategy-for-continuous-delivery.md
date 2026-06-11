@@ -7,7 +7,7 @@ tags:
 - git
 cover: "/images/git-branching-strategy-for-continuous-delivery/01git-branching-strategy-for-continuous-delivery.jpg"
 pagetitle: "Choosing the best git branching strategy for continuous delivery in your team"
-description: "A compairsion of GitFlow, GitHub Flow (simplified GitFlow) and trunk based development with a focus on continuous delivery for your team"
+description: "A comparison of GitFlow, GitHub Flow (simplified GitFlow) and trunk based development with a focus on continuous delivery for your team"
 keywords: git branching strategy for continuous delivery, single long-lived branch, git branching strategy, release management, git branching strategy for teams
 ---
 With AI doing some or most of the code writing (ahm! generation, if I may), being strong in the basics becomes even more crucial. If you have the word "engineer" in your job title, then knowing tools like Git and Docker has become inevitable. In this post, you will learn about the three main Git branching strategies and which one your team should choose for continuous delivery. This post will also cover real-life experiences and recommend a Git branching strategy that has proven more effective for the teams I've been a part of. Let’s get started!
@@ -33,9 +33,9 @@ As stated in Atlassian’s [blog post](https://www.atlassian.com/continuous-deli
 
 > Continuous integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single software project. It's a primary DevOps best practice, allowing developers to frequently merge code changes into a central repository where builds and tests then run.
 
-So the focus is on integrating code changes into a single project or for better understanding a Git Branch. 
+So the focus is on integrating code changes into a single project or, for a better understanding, a Git branch. 
 
-Similarly Continuous delivery as per [Jez Humble](https://continuousdelivery.com/) is:
+Similarly, continuous delivery as per [Jez Humble](https://continuousdelivery.com/) is:
 
 > Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
 
@@ -53,7 +53,7 @@ In the Gitflow model, the `master` branch is reserved exclusively for code curre
 
 The Image is taken from this [blog post](https://medium.com/@zaghdoudi.mohamed/the-secret-to-better-version-control-gitflow-explained-6cbb094780a4).
 
-This sounds fine in theory, but the complexity multiplies when it is time to release. Multiple changes from two or more software engineers would have been merged to develop. Big changes = big risk, and all of it goes to production in one go when the `develop` branch is deployed. After deployment, the develop branch’s changes have to be merged into master.
+This sounds fine in theory, but the complexity multiplies when it is time to release. Multiple changes from two or more software engineers would have been merged into develop. Big changes = big risk, and all of it goes to production in one go when the `develop` branch is deployed. After deployment, the develop branch’s changes have to be merged into master.
 
 If a critical bug is found in production, you have to create a `hotfix` branch off of `master`, fix the bug, and then merge that hotfix into both `master` and `develop`. 
 
@@ -81,7 +81,7 @@ In this variation of GitHub Flow, the deployment happens before the code is merg
 
 You and your team test the feature branch thoroughly in this environment. Once the CI tests pass, the product manager approves the feature, and the QA checks pass (if any), you deploy that exact feature branch directly to the production environment. Only after the code runs successfully in production and has been verified as stable, do you merge the Pull Request into the `master` branch. This could be done within minutes of the production deployment or may take some time, depending on the type of change or the feature deployed.
 
-This approach guarantees that the `master` branch is always 100% stable. If a deployment fails, `master` is untouched, and you can simply deploy  `master` to roll back. Then, fix the issue on your feature branch and try again. This is a highly resilient way to handle continuous delivery, though it requires sophisticated deployment tooling to deploy from arbitrary branches or tags.
+This approach guarantees that the `master` branch is always 100% stable. If a deployment fails, `master` is untouched, and you can simply deploy `master` to roll back. Then, fix the issue on your feature branch and try again. This is a highly resilient way to handle continuous delivery, though it requires sophisticated deployment tooling to deploy from arbitrary branches or tags.
 
 ### Deploying after merging
 
@@ -95,7 +95,7 @@ To recover, you must either quickly run the `git revert` command to undo the mer
 
 Rollback would typically involve opening a pull request and merging it to remove the problematic change from master, so other software engineers can merge their work and deploy to production as normal.
 
-Regardless of which deployment variation you choose, GitHub Flow's reliance on a single long-lived branch drastically reduces merge conflicts and cognitive load, making it a useful git branching strategy for continuous delivery.
+Regardless of which deployment variation you choose, GitHub Flow's reliance on a single long-lived branch drastically reduces merge conflicts and cognitive load, making it a useful Git branching strategy for continuous delivery.
 
 ## Trunk-based development
 
@@ -103,11 +103,11 @@ If GitHub Flow simplifies things by having only one long-lived branch, then Trun
 
 However, there is often a subtle confusion surrounding Trunk-based development. The confusion usually stems from whether it means having literally only one branch (`master` or "trunk") where everyone commits directly, or doing extremely small, short-lived feature branches that are merged multiple times a day. 
 
-<img class="center" src="/images/git-branching-strategy-for-continuous-delivery/04trunk-based-dev.jpg" title="Trunk based development enables speed but has engineering team maturity as a requirement" alt="Trunk based development enables speed but has engineering team maturity as a requirement" >
+<img class="center" src="/images/git-branching-strategy-for-continuous-delivery/04trunk-based-dev.jpg" title="Trunk-based development enables speed but has engineering team maturity as a requirement" alt="Trunk-based development enables speed but has engineering team maturity as a requirement" >
 
 The image is taken from [Trunk Based Development](https://trunkbaseddevelopment.com/) website.
 
-In practice, modern Trunk-based development usually means the latter. Software engineers create very short-lived branches off the trunk, write a small batch of code, and merge it back into the trunk as quickly as possible—often several times a day. The goal is to completely eliminate the "merge hell" that occurs when long-running feature branches diverge too far from the main codebase. By integrating code continuously, you ensure that everyone is always working on the most up-to-date version of the software. This is where sync code review with [pair programming](/blog/2020/06/pair-programming-benefits-for-your-team/) comes into play. In this age of AI written/generated code pair programming might be a dying art form.
+In practice, modern Trunk-based development usually means the latter. Software engineers create very short-lived branches off the trunk, write a small batch of code, and merge it back into the trunk as quickly as possible—often several times a day. The goal is to completely eliminate the "merge hell" that occurs when long-running feature branches diverge too far from the main codebase. By integrating code continuously, you ensure that everyone is always working on the most up-to-date version of the software. This is where sync code review with [pair programming](/blog/2020/06/pair-programming-benefits-for-your-team/) comes into play. In this age of AI-written/generated code, pair programming might be a dying art form.
 
 When evaluating a git branching strategy for continuous delivery, Trunk-based development is often seen as the holy grail. Because code is integrated so frequently, the continuous delivery pipeline is constantly firing, deploying small, incremental changes to production. This drastically reduces the blast radius of any given deployment. If a deployment breaks something, it is incredibly easy to pinpoint the cause because the changeset is so small.
 
@@ -125,7 +125,7 @@ If your team lacks this level of maturity, attempting Trunk-based development wi
 
 You have now explored the three main contenders for your team's workflow. Gitflow is heavy and bureaucratic, hindering rapid deployment. Trunk-based development is incredibly fast and efficient, but it requires a level of engineering maturity, testing infrastructure, and feature flag management that many teams simply do not possess yet.
 
-When choosing a Git branching strategy for continuous delivery, you need a process that provides structure without bottlenecks and speed without chaos. This is exactly why GitHub flow strikes the right balance. 
+When choosing a Git branching strategy for continuous delivery, you need a process that provides structure without bottlenecks and speed without chaos. This is exactly why GitHub Flow strikes the right balance. 
 
 You can think of GitHub Flow as existing in the "Goldilocks zone" of version control strategies. It is not too hot or too cold; it is just right. 
 
@@ -147,6 +147,6 @@ Software engineering is a complex discipline, and delivering reliable software t
 
 In this guide, you have explored the landscape of version control workflows. You learned that while Gitflow was a pioneer, its multiple long-lived branches make it too cumbersome for modern, rapid release cycles. You discovered that Trunk-based development offers incredible speed and integration, but demands a highly mature testing culture and strict reliance on feature flags. 
 
-Ultimately, finding the right git branching strategy for continuous delivery comes down to evaluating your team's current capabilities and your business needs. For the vast majority of software engineering teams, GitHub Flow provides the perfect equilibrium. It leverages the power of Pull Requests for code quality while maintaining a single, deployable `master` branch to enable fast, frictionless releases. 
+Ultimately, finding the right Git branching strategy for continuous delivery comes down to evaluating your team's current capabilities and your business needs. For the vast majority of software engineering teams, GitHub Flow provides the perfect equilibrium. It leverages the power of Pull Requests for code quality while maintaining a single, deployable `master` branch to enable fast, frictionless releases. 
 
 Remember, your branching strategy is a means to an end. The ultimate goal is to deliver value to your users consistently and safely. Choose the strategy that keeps your team productive, your codebase clean, and your deployments boring and predictable. Happy coding and deploying!

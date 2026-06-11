@@ -12,7 +12,7 @@ pagetitle: "How to use Ollama APIs like generate, chat and more [with examples]"
 description: "Learn how to use Ollama APIs like generate, chat and more like list model, pull model, etc with cURL and Jq with useful examples"
 keywords: ollama api, ollama apis, ollama api endpoints, ollama generate, ollama chat, ollama pull
 ---
-Ollama is open-source software that makes running most open LLMs seamlessly on your own machine (or even on the cloud). Written in Go lang, Ollama is user-friendly and easy to start. In this post, part 3 of the Ollama blog posts series, you will learn about using Ollama’s APIs for generating responses (LLM inference) and much more; let’s get going!
+Ollama is open-source software that makes running most open LLMs seamlessly on your own machine (or even on the cloud). Written in Go, Ollama is user-friendly and easy to start. In this post, part 3 of the Ollama blog post series, you will learn about using Ollama’s APIs for generating responses (LLM inference) and much more; let’s get going!
 
 <!-- more -->
 
@@ -40,11 +40,11 @@ In part two, you explored some useful [Ollama commands](/blog/2025/02/ollama-com
 
 In this part, you will learn about the Ollama APIs. In addition to the inference API endpoints `/api/generate` and `/api/chat`, you will also learn about other useful API endpoints. The Ollama commands call these APIs behind the scenes to provide the outputs.
 
-In the next part, part 4, you will learn how to run [Ollama in Docker](/blog/2025/02/ollama-docker-compose/) with Docker Compose. You will also add Open WebUI with Docker Compose to have a WebUI to interact with LLMs running on Ollama.
+In the next part, Part 4, you will learn how to run [Ollama in Docker](/blog/2025/02/ollama-docker-compose/) with Docker Compose. You will also add Open WebUI with Docker Compose to have a WebUI to interact with LLMs running on Ollama.
 
 ## Curl and Jq
 
-For this guide, you will use cURL to call the APIs with [Jq](https://jqlang.org/). To install JQ, follow their official [download](https://jqlang.org/download/) guides for instance, on a Mac, you can run `brew install jq`, similarly on an Ubuntu machine, you can execute `sudo apt-get install jq` on a Windows machine, you can use chocolatey. Or you can get the binary and make it executable, too.
+For this guide, you will use cURL to call the APIs with [Jq](https://jqlang.org/). To install JQ, follow their official [download](https://jqlang.org/download/) guides. For instance, on a Mac, you can run `brew install jq`, similarly on an Ubuntu machine, you can execute `sudo apt-get install jq` on a Windows machine, you can use chocolatey. Or you can get the binary and make it executable, too.
 
 You can use other programming languages, such as Python and JavaScript, with the official libraries for [Python](https://github.com/ollama/ollama-python) and [JavaScript](https://github.com/ollama/ollama-js), and frameworks like [LiteLLM](https://docs.litellm.ai/docs/providers/ollama) or [LangChain](https://python.langchain.com/docs/integrations/llms/ollama/) to call the Ollama APIs.
 
@@ -52,9 +52,9 @@ You can use other programming languages, such as Python and JavaScript, with the
 
 There are more than 10 Ollama API endpoints. This tutorial will focus on some of the most important ones. To use the APIs, you will need Ollama to run either with `ollama serve` or as a service. You will also need at least one model pulled for the API calls.
 
-For this guide, you will use [smollm2](https://github.com/huggingface/smollm):135m, one of the smaller LLMs at 221 MB. You can use any bigger model if it runs on the available resources. The reason to choose `smollm2:135m` is because most machines, even with 512 MB or memory, can run it.
+For this guide, you will use [smollm2](https://github.com/huggingface/smollm):135m, one of the smaller LLMs at 221 MB. You can use any bigger model if it runs on the available resources. The reason to choose `smollm2:135m` is because most machines, even with 512 MB of memory, can run it.
 
-To start, run `ollama serve,` in another CLI tab, and run `ollama pull smollm2:135m`. If you have pulled `smollm2:135m` from the previous parts of this tutorial series, the download will be very fast as the files already exist.
+To start, run `ollama serve`, in another CLI tab, and run `ollama pull smollm2:135m`. If you have pulled `smollm2:135m` from the previous parts of this tutorial series, the download will be very fast as the files already exist.
 
 ### Generate endpoint
 
@@ -65,7 +65,7 @@ As the name points out, this API endpoint is available at `/api/generate` you ca
 * suffix: can be used if you want to append some text after the response
 * images: a list of base64-encoded images if you want to use it with multimodal models like Llava or SmolVLM.
 
-There are other advanced parameters, too, like `stream,` which you can read about in the official [docs](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-completion). For now, you can run the following curl command to get a response from `smollm2:!35m` model:
+There are other advanced parameters, too, like `stream,` which you can read about in the official [docs](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-completion). For now, you can run the following curl command to get a response from `smollm2:135m` model:
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
@@ -75,7 +75,7 @@ curl http://localhost:11434/api/generate -d '{
 }' | jq .
 ```
 
-In the above `curl` command, you are using the `/api/generate` API endpoint and asking about the `smollm2:135m` model. `Why is the sky blue? Give the shortest answer possible in under 20 words`, and ask Ollama not to stream the output, so give the full answer in one go. Then, the output is piped to `jq`. This gives the following output:
+In the above `curl` command, you are using the `/api/generate` API endpoint and asking about the `smollm2:135m` model. `Why is the sky blue? Give the shortest answer possible in under 20 words`, asking Ollama not to stream the output, so give the full answer in one go. Then, the output is piped to `jq`. This gives the following output:
 
 ```json
 {
@@ -96,7 +96,7 @@ In the above `curl` command, you are using the `/api/generate` API endpoint and 
 }
 ```
 
-If you were calling this API from another script or software system, you would be more concerned about the `response` column. If you just want to see the response from the model, you can use `jq` for that in the following way:
+If you were calling this API from another script or software system, you would be more concerned about the `response` field. If you just want to see the response from the model, you can use `jq` for that in the following way:
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
@@ -114,7 +114,7 @@ You can make many types of requests on the generated API endpoint. One useful on
 
 ### Chat endpoint
 
-The chat endpoint available at `/api/chat`, which also works with POST, is similar to the `generate` API. It generates the next message in a chat with a selected model. It is a streaming endpoint that will have a series of responses. You can turn off the streaming with the `”stream::false` parameter as seen below: 
+The chat endpoint available at `/api/chat`, which also works with POST, is similar to the `generate` API. It generates the next message in a chat with a selected model. It is a streaming endpoint that will have a series of responses. You can turn off the streaming with the `"stream": false` parameter as seen below: 
 
 ```bash
 curl http://localhost:11434/api/chat -d '{
@@ -169,7 +169,7 @@ The extracted content from the response of the `/api/chat` will look as follows:
 
 <img class="center" src="/images/ollama-api/03ollama-chat-api.jpg" loading="lazy" title="Output of calling the ollama chat API endpoint with cURL and jq" alt="Output of calling the ollama chat API endpoint with cURL and jq">
 
-You can do [structured outputs](https://github.com/ollama/ollama/blob/main/docs/api.md#chat-request-structured-outputs) with the chat endpoint. Being a chat endpoint, you can send in the [history](https://github.com/ollama/ollama/blob/main/docs/api.md#chat-request-with-history) of the conversation to the the endpoint. For all the other types of reqeust, you can send to this `/api/chat` endpoint, it would be best to go through the [official Ollama docs](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-chat-completion) about it.
+You can do [structured outputs](https://github.com/ollama/ollama/blob/main/docs/api.md#chat-request-structured-outputs) with the chat endpoint. Being a chat endpoint, you can send in the history of the conversation to the endpoint. For all the other types of request you can send to this `/api/chat` endpoint, it would be best to go through the [official Ollama docs](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-chat-completion) about it.
 
 ### List models
 
@@ -243,7 +243,7 @@ I have these three models available on my machine. Your response might be slight
 
 ### Pull a model
 
-To download a new model from Ollama [model registry](https://ollama.com/search) you can use the `/api/pull` API endpoint that works with a POST call. As the official doc states, canceled pulls are resumed, and in case of multiple pull calls they will share the same download progress.
+To download a new model from Ollama [model registry](https://ollama.com/search) you can use the `/api/pull` API endpoint that works with a POST call. As the official docs state, canceled pulls are resumed, and in case of multiple pull calls, they will share the same download progress.
 
 A model name is required to pull a model, and you can choose to stream or not stream the response. Below is an example of calling the `/api/pull` endpoint without streaming to pull/download the `snowflake-arctic-embed:22m`, which is an embedding model at 46 MB:
 
@@ -277,7 +277,7 @@ Given that the model is downloaded, the easiest way to verify this is by running
 
 ### Show model information
 
-By calling the '/api/show ' endpoint with a POST call, you can view the model information, including details, model file, template, parameters, license, and system prompt. The model name is a required parameter. Passing the `verbose` optional parameter will return the full data with verbose fields in the response. 
+By calling the '/api/show' endpoint with a POST call, you can view the model information, including details, model file, template, parameters, license, and system prompt. The model name is a required parameter. Passing the `verbose` optional parameter will return the full data with verbose fields in the response. 
 
 Below is an example call to the show model information endpoint without the verbose flag for the `smollm2:135m` model, some fields have been truncated for brevity:
 
@@ -344,13 +344,13 @@ Depending on the level of security needed for your Ollama instance, the show mod
 
 Other Ollama APIs can [list running models](https://github.com/ollama/ollama/blob/main/docs/api.md#list-running-models), [delete a model](https://github.com/ollama/ollama/blob/main/docs/api.md#delete-a-model) (you would not want someone to delete a pulled model), [create a model](https://github.com/ollama/ollama/blob/main/docs/api.md#create-a-model) from another model, [copy a model](https://github.com/ollama/ollama/blob/main/docs/api.md#copy-a-model), and even [generate embeddings](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-embeddings). You can explore them all in the official [documents](https://github.com/ollama/ollama/blob/main/docs/api.md). 
 
-Suppose you have used Postman and its collections. You can also use this [Postman collection](https://www.postman.com/postman-student-programs/ollama-api/documentation/suc47x8/ollama-rest-api) that lists most of the Ollama API calls in a neat, easy to test collection. In the next part (part 4) of the Ollama blog series, you will learn how to run Ollama in Docker with Docker Compose.
+Suppose you have used Postman and its collections. You can also use this [Postman collection](https://www.postman.com/postman-student-programs/ollama-api/documentation/suc47x8/ollama-rest-api) that lists most of the Ollama REST API documentation in a neat, easy-to-test collection. In the next part (part 4) of the Ollama blog series, you will learn how to run Ollama in Docker with Docker Compose.
 
 ## Important caveat
 
-If you plan to host Ollma on a publicly accessible URL or with some form of authentication and authorization, please remember to expose only the generate (`/api/generate`) and the chat  (`/api/chat`) endpoints. You will not want users to call the pull or even delete model API endpoints. 
+If you plan to host Ollama on a publicly accessible URL or with some form of authentication and authorization, please remember to expose only the generate (`/api/generate`) and the chat (`/api/chat`) endpoints. You will not want users to call the pull or even delete API endpoints.
 
-You can do it by putting a reverse proxy in front of Ollama’s Gin server (running at port 11434, by default). You can choose between [Nginx reverse proxy](https://github.com/kesor/ollama-proxy) or [Caddy](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy). With a reverse proxy, you can pass through only the traffic that comes to `/api/generate` and `/api/chat` forward to Ollama. As Ollama’s server is written in Go/Gin, you may even try that path to secure your APIs if you know how to write Go and Gin. There is an [issue](https://github.com/ollama/ollama/issues/1053) on the official Ollama GitHub repository about something similar if you want to follow that.
+You can do it by putting a reverse proxy in front of Ollama’s Gin server (running on port 11434 by default). You can choose between [Nginx reverse proxy](https://github.com/kesor/ollama-proxy) or [Caddy](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy). With a reverse proxy, you can pass through only the traffic that comes to `/api/generate` and `/api/chat` and forward to Ollama. As Ollama’s server is written in Go/Gin, you may even try that path to secure your APIs if you know how to write Go and Gin. There is an [issue](https://github.com/ollama/ollama/issues/1053) on the official Ollama GitHub repository about something similar if you want to follow that.
 
 ## Conclusion
 

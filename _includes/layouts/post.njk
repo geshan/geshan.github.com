@@ -19,7 +19,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     "url": "{{ absolutePostUrl }}",
     "datePublished": "{{ date | htmlDateString }}",
     "dateCreated": "{{ date | htmlDateString }}",
-    "dateModified": "{% if lastUpdated and (lastUpdated | htmlDateString) != (date | htmlDateString) %}{{ lastUpdated | htmlDateString }}{% else %}{{ date | htmlDateString }}{% endif %}",
+    "dateModified": "{{ date | htmlDateString }}",
     "description": "{{ renderData.description or description or metadata.description }}",
     "articleBody": "{{ content | stripTags }}",
     "author": { "@type": "Person", "name": "{{ metadata.author.name }}" },
@@ -59,7 +59,6 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
                 {{ metadata.author.name }}
               </span>
             </div>
-
             <!-- Date -->
             {% include "components/posted-date-time-with-read.njk" %}
           </div>

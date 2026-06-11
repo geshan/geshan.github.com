@@ -12,7 +12,7 @@ pagetitle: "How to Upsert Data in Postgres Using INSERT ON CONFLICT UPDATE"
 description: "Learn how to upsert data in Postgres using the INSERT ON CONFLICT UPDATE clause with practical examples. Combine insert and update operations into one UPSERT."
 keywords: postgres on conflict update, postgres upsert, postgres upsert example, postgres upsert multiple rows, postgres upsert single row
 ---
-Updating existing data is a core requirement of any web application; doing it efficiently will make your life easier. PostgreSQL, a robust and feature-rich relational database, offers a powerful and elegant solution for managing these updates: `INSERT ON CONFLICT UPDATE`. It is helpful to combine insert and update to Upsert and use the same logic for both operations. In this post, you will learn how to use `INSERT ON CONFLICT UPDATE` in Postgres to Upsert data effectively with practical examples. Let’s get going!
+Updating existing data is a core requirement of any web application; doing it efficiently will make your life easier. PostgreSQL, a robust and feature-rich relational database, offers a powerful and elegant solution for managing these updates: `INSERT ON CONFLICT UPDATE`. It is helpful to combine insert and update operations into an upsert and use the same logic for both operations. In this post, you will learn how to use `INSERT ON CONFLICT UPDATE` in Postgres to upsert data effectively with practical examples. Let’s get going!
 
 <!-- more -->
 
@@ -49,9 +49,9 @@ Let's break down this powerful command:
 * `SET column1 = excluded.column1, column2 = excluded.column2, ...`: If a conflict is identified (a row with the same unique constraint already exists), this section specifies the columns to update and their new values.  The keyword `excluded` refers to the values that were *originally* provided in the `VALUES` clause.  This helps efficiently update the existing row without any complex subqueries.
 * `RETURNING`: clause returns from the insert or update statement the values of any columns after the insert or update was run. You can select some columns or everything with a `*`.
 
-You can read more about the INSERT and INSERT ON CONFLICT part in the Postgres official [docs](https://www.postgresql.org/docs/current/sql-insert.html). You can also read about [Postgres Node.js Tutorial](/blog/2021/01/nodejs-postgresql-tutorial/) if you want to create a simple Node.js app interacting with Postgres. Also, you can read [Postgrest insert multiple rows](/blog/2024/08/postgres-insert-multiple-rows/) to learn about techniques to insert multiple rows into Postgres efficiently with the same example used below.
+You can read more about the INSERT and INSERT ON CONFLICT part in the Postgres official [docs](https://www.postgresql.org/docs/current/sql-insert.html). You can also read about the [Postgres Node.js Tutorial](/blog/2021/01/nodejs-postgresql-tutorial/) if you want to create a simple Node.js app interacting with Postgres. Also, you can read [Postgres insert multiple rows](/blog/2024/08/postgres-insert-multiple-rows/) to learn about techniques to insert multiple rows into Postgres efficiently with the same example used below.
 
-If your app has a data insertion, it will require updating data, too. Therefore, combining the two tasks into one becomes much more manageable, where Upsert becomes useful. In addition to `INSERT ON CONFICT UPDATE`, in the newer version of Postgres that is 15 and above, a [MERGE statement](https://www.postgresql.org/docs/current/sql-merge.html) is also available.
+If your app has data insertion, it will require updating data, too. Therefore, combining the two tasks into one becomes much more manageable, where upserting becomes useful. In addition to `INSERT ON CONFLICT UPDATE`, in the newer versions of Postgres (15 and above), a [MERGE statement](https://www.postgresql.org/docs/current/sql-merge.html) is also available.
 
 ## Upsert example with quotes table
 
@@ -104,13 +104,13 @@ SET quote = excluded.quote, author = excluded.author, updated_at = DEFAULT
 RETURNING *;
 ```
 
-This query attempts to upsert a single quote. If a quote’s unique id (the primary key) already exists, both the `quote` and `author` columns will be updated to reflect the new value provided.  The original `created_at` timestamp will be preserved, and `updated_at` will get the last updated time with the `DEFAULT` keyword, equating to the current timestamp. The values above don’t make sense, but they are used to show that the rows are being updated. If you provide the id as `null`, it will be inserted as it will not conflict with any existing id.
+This query attempts to upsert a single quote. If a quote’s unique `id` (the primary key) already exists, both the `quote` and `author` columns will be updated to reflect the new value provided. The original `created_at` timestamp will be preserved, and `updated_at` will get the last updated time with the `DEFAULT` keyword, equating to the current timestamp. The values above don’t make sense, but they are used to show that the rows are being updated. If you provide the `id` as `null`, it will be inserted, as it will not conflict with any existing ID.
 
 ### Upsert multiple rows on the quotes table
 
 The power of `INSERT ON CONFLICT UPDATE` truly shines when you need to handle multiple rows.  For instance, let’s say you have a CSV file containing a list of quotes and their authors that you want to import into the `quotes` table. You could use a single query to insert all the quotes, ensuring that existing quotes are efficiently updated.  This demonstrates a significant reduction in overhead compared to performing multiple individual `INSERT` and `UPDATE` operations.
 
-Here’s a sample query that demonstrates this concept with an assumption that the CSV only had two quotes:
+Here’s a sample query that demonstrates this concept under the assumption that the CSV only had two quotes:
   
 ```sql
 INSERT INTO quote (id, quote, author) VALUES
@@ -121,9 +121,9 @@ SET quote = excluded.quote, author = excluded.author, updated_at = DEFAULT
 RETURNING *;
 ```
 
-If it were an actual application, the `VALUES` part would have been constructed based on the data provided in the CSV. This would have been done with a parameterized query or an ORM (Object-relational mapping) library of the team’s choice. Like above, if you put the `id` as `null`, that row will be inserted. In the case of this `quote` table, the `quote` column is also unique, so if the given quote matches an existing quote, you might get an error. Using the `quote` column as the `conflict target` of the conflict can be another way of dealing with that issue.
+If it were an actual application, the `VALUES` part would have been constructed based on the data provided in the CSV. This would have been done with a parameterized query or an ORM (Object-relational mapping) library of the team’s choice. Like above, if you put the `id` as `null`, that row will be inserted. In the case of this `quote` table, the `quote` column is also unique, so if the given quote matches an existing quote, you might get an error. Using the `quote` column as the conflict target can be another way of dealing with that issue.
 
-In this example, you are using id, but for your use case, you can use any unique column or constraint with a combination of more than one column. If the columns are passed correctly in the `conflict target`, the `ON CONFLICT(...)` part will work as expected.
+In this example, you are using `id`, but for your use case, you can use any unique column or constraint with a combination of more than one column. If the columns are passed correctly in the conflict target, the `ON CONFLICT(...)` part will work as expected.
 
 You can find both examples as a [DB Fiddle](https://www.db-fiddle.com/f/s4d4rRtvm7ez2TJAdAFmg3/3) you can run, which looks like the below when you run it:
 

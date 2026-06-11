@@ -63,7 +63,7 @@ While running the GitHub MCP server locally gives you control, it often comes wi
 
 ### Remote GitHub MCP server
 
-For most teams and individual developers, the remote GitHub MCP server offers a significantly more streamlined and hassle-free experience. This version is hosted and managed directly by GitHub, eliminating the need for you to worry about Docker containers, manual updates, or [infrastructure maintenance](https://github.blog/ai-and-ml/generative-ai/a-practical-guide-on-how-to-use-the-github-mcp-server/). On top of that, as you are using the Oauth authentication and not a personal access token, it s a better alternative from a security point of view as well.
+For most teams and individual developers, the remote GitHub MCP server offers a significantly more streamlined and hassle-free experience. This version is hosted and managed directly by GitHub, eliminating the need for you to worry about Docker containers, manual updates, or [infrastructure maintenance](https://github.blog/ai-and-ml/generative-ai/a-practical-guide-on-how-to-use-the-github-mcp-server/). On top of that, as you are using the OAuth authentication and not a personal access token, it is a better alternative from a security point of view as well.
 
 There are multiple advantages to using the remote GitHub MCP server, which GitHub manages. There is no infrastructure overhead for you; getting started is much easier (just add a URL, authenticate, and you are good to go). As you are using a remote server, it will work on any device, including a remote machine/Cloud Shell running on a VM on a remote server. 
 
@@ -79,7 +79,7 @@ For example, instead of manually navigating GitHub to create an issue, you could
 
 ### Step-by-step guide to connect VS Code to the remote GitHub MCP server
 
-To connect the remote GitHub MCP server with your VS Code and Copilot, you will surely need VS Code (V1.92 or later) with the [GitHub Copilot extension](https://code.visualstudio.com/docs/copilot/overview) installed and a valid GitHub account. Also the current project should have a connected GitHub repository. With that in mind, let’s start:
+To connect the remote GitHub MCP server with your VS Code and Copilot, you will surely need VS Code (V1.92 or later) with the [GitHub Copilot extension](https://code.visualstudio.com/docs/copilot/overview) installed and a valid GitHub account. Also, the current project should have a connected GitHub repository. With that in mind, let’s start:
 
 #### Install the remote MCP Server
 
@@ -87,7 +87,7 @@ To install a new MCP server on VS Code:
 
 1. Open the command palette (Cmd+Shift+p on a Mac) and run `> MCP: Add Server…` 
 2. In the next step, select `HTTP (HTTP or Server Sent Events) Connect to a remote…`
-3. For the Server UR,L put `https://api.githubcopilot.com/mcp/` and hit Enter to confirm
+3. For the Server URL, put `https://api.githubcopilot.com/mcp/` and hit Enter to confirm
 4. Then, name the server `github-remote-mcp-server` or something you feel is appropriate and hit Enter
 5. After that, select `Global` or `Workspace`. In my case, I selected `Global` so that it runs on all projects
 6. Then it will ask you to allow the extension, click on “Allow”
@@ -116,15 +116,15 @@ To list pull requests, you can type `#list_pull_requests` in your GitHub Copilot
 
 #### Other things to do with remote GitHub MCP Server
 
-You can ask Copilot `What operations can you do on GitHub with the mpc server?` It will list down the things it can do, as follows:
+You can ask Copilot `What operations can you do on GitHub with the MCP server?` It will list down the things it can do, as follows:
 
-<img class="center" src="/images/github-mcp-vscode/04github-copilot-mcp-operations.jpg" loading="lazy" title="Asking GitHub Copilot what operation can the GitHub MCP server do" alt="Asking GitHub Copilot what operation can the GitHub MCP server do">
+<img class="center" src="/images/github-mcp-vscode/04github-copilot-mcp-operations.jpg" loading="lazy" title="Asking GitHub Copilot what operations can the GitHub MCP server do" alt="Asking GitHub Copilot what operations can the GitHub MCP server do">
 
-From here, you can chat and know or do things you want with GitHub, like listing gists, creating gists, interacting with issues, or even opening a pull request directly from VS Code.
+From here, you can chat and find out or do things you want with GitHub, like listing gists, creating gists, interacting with issues, or even opening a pull request directly from VS Code.
 
 #### MCP server settings
 
-You can also go to the settings and turn on or off any of the remote GitHub MCP server tools as per your need, as seen below:
+You can also go to the settings and turn on or off any of the remote GitHub MCP server tools as per your needs, as seen below:
 
 <img class="center" src="/images/github-mcp-vscode/05github-mcp-tools.jpg" loading="lazy" title="Listing all the tools in the remote GitHub MCP server in the GitHub Copilot settings" alt="Listing all the tools in the remote GitHub MCP server in the GitHub Copilot settings">
 
@@ -132,6 +132,6 @@ There you have it, a way to interact and do things with GitHub without leaving y
 
 ## Conclusion
 
-In this post, you learned about what MCP is and how to use the GitHub MCP Server. You can use the GitHub MCP server locally with Docker or without installing anything with the remote option.  After that, you learned how to use the remote GitHub MCP server on VS Code with GitHub Copilot. First, connect to the MCP server and authenticate, then perform a couple of tasks, such as listing the pull requests for the current repository. You also took a quick look at the tools of the GitHub MCP server and learned how to turn these tools on or off as needed.
+In this post, you learned about what MCP is and how to use the GitHub MCP Server. You can use the GitHub MCP server locally with Docker or without installing anything with the remote option. After that, you learned how to use the remote GitHub MCP server on VS Code with GitHub Copilot. First, connect to the MCP server and authenticate, then perform a couple of tasks, such as listing the pull requests for the current repository. You also took a quick look at the tools of the GitHub MCP server and learned how to turn these tools on or off as needed.
 
 I hope you have gained some new knowledge about MCP in general and the official GitHub remote MCP server. Carry on learning!
