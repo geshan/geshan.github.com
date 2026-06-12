@@ -3,6 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
+{% set showUpdated = true %}
 {% set coverImage %}{{ cover or metadata.defaultCoverImage }}{% endset %} {% set logoUrl %}{{
 "images/favicons/favicon-32x32.png" | url | absoluteUrl(metadata.url) }}{% endset %} {% set
 absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
@@ -19,7 +20,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     "url": "{{ absolutePostUrl }}",
     "datePublished": "{{ date | htmlDateString }}",
     "dateCreated": "{{ date | htmlDateString }}",
-    "dateModified": "{{ date | htmlDateString }}",
+    "dateModified": "{{ (updated or date) | htmlDateString }}",
     "description": "{{ renderData.description or description or metadata.description }}",
     "articleBody": "{{ content | stripTags }}",
     "author": { "@type": "Person", "name": "{{ metadata.author.name }}" },

@@ -2,6 +2,7 @@
 layout: post
 title: "How to build a simple Google login and profile page on Google AI Studio with Firebase as a datastore [step-by-step]"
 date: 2026-03-27T21:52:47.000+11:00
+updated: 2026-06-15T12:00:00.000+10:00
 comments: true
 tags:
 - Google AI Studio
