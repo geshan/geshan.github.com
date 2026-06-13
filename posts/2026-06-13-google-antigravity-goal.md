@@ -104,9 +104,9 @@ The whole process looks like the following after you start it and it finishes te
 
 The video has been sped up at 4x; the operation took around 8 minutes in real life.
 
-After that, I can accept all the changes and commit those changes to a git branch and open a pull request. Or even as the agent to create the pull request after committing.
+After that, I can accept all the changes, commit them to a git branch, and open a pull request. Or even as the agent to create the pull request after committing. Google Cloud credits are provided for this project.
 
-There you have it: with a single `/goal` prompt and the browser operated by Antigravity IDE, you can add a new feature and verify it works in the browser. I hope it was easy, and that at the end the IDE created a `walkthrough` file with screenshots showing the feature is working as expected.
+There you have it: with a single `/goal` prompt and the browser operated by Antigravity IDE, you can add a new feature and verify it works in the browser. I hope it was easy. At the end, the IDE created a `walkthrough` file with screenshots showing the feature is working as expected.
 
 You can use `/goal` to try to do another feature like dark mode. You can also try other slash commands like `/grill-me`, where the IDE questions you for the right direction and suggests a thorough plan. Also, `/browser` is another useful command to automate the browser. You can learn more about these in this [codelab](https://codelabs.developers.google.com/getting-started-google-antigravity#3).
 
