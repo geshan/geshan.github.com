@@ -1,7 +1,13 @@
 {% if date %}
-<time datetime="{{ date | getSitemapDate }}" data-updated="true">
+<span class="inline-flex items-center gap-2 md:gap-4 flex-wrap">
   <time class="entry-date" datetime="{{ date | getSitemapDate }}">
-    <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase"> {{ date | displayDateOnly }} </span>
+    <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">{{ date | displayDateOnly }}</span>
   </time>
-</time>
+  {% if isPostPage and updatedAt %}
+  <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">&bull;</span>
+  <time class="updated-date" datetime="{{ updatedAt | getSitemapDate }}">
+    <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">Updated: {{ updatedAt | displayDateOnly }}</span>
+  </time>
+  {% endif %}
+</span>
 {% endif %}

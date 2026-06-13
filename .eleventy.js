@@ -21,40 +21,47 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  const parseDate = (dateObj) => {
+    if (!dateObj) return new Date();
+    if (dateObj instanceof Date) return dateObj;
+    const parsed = new Date(dateObj);
+    return isNaN(parsed.getTime()) ? new Date() : parsed;
+  };
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd-LLL-yyyy");
+    return DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("dd-LLL-yyyy");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+    return DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   eleventyConfig.addFilter("displayDateOnly", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd-LLL-yyyy");
+    return DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("dd-LLL-yyyy");
   });
 
   eleventyConfig.addFilter("displayDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd-LLL-yyyy HH:MM:s");
+    return DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("dd-LLL-yyyy HH:MM:s");
   });
 
   eleventyConfig.addFilter("getSitemapDate", (dateObj) => {
-    const dateInUTC = DateTime.fromJSDate(dateObj, { zone: "utc" });
+    const dateInUTC = DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" });
     return dateInUTC.toISODate();
   });
 
   eleventyConfig.addFilter("yearMonth", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy/LL");
+    return DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("yyyy/LL");
   });
 
   function getYear(dateObj) {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
+    return DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("yyyy");
   }
 
   eleventyConfig.addFilter("getYear", getYear);
 
   eleventyConfig.addFilter("getPriority", (dateObj) => {
-    const year = DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
+    const year = DateTime.fromJSDate(parseDate(dateObj), { zone: "utc" }).toFormat("yyyy");
     const currentYear = new Date().getFullYear();
 
     return year === String(currentYear) ? 0.8 : 0.7;
