@@ -21,7 +21,7 @@ Google Antigravity 2.0 has some very [interesting features](https://antigravity.
 
 ## Table of contents
 
-- [What is Google Antigravity?](#what-is-google-antigravity)
+- [What is Google Antigravity?](#what-is-google-antigravity%3F)
 - [Prerequisites](#prerequisites)
 - [Clone the blog](#clone-the-blog)
 - [Open the blog in Antigravity 2.0 IDE](#open-the-blog-in-antigravity-2.0-ide)
