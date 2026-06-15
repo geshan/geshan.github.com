@@ -42,7 +42,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
           {{ title }}
         </h1>
         <div
-          class="flex items-center justify-between gap-3 md:gap-4 flex-wrap md:flex-nowrap py-2 border-y border-lightbg mt-4"
+          class="flex items-center justify-between gap-3 md:gap-4 md:flex-nowrap py-2 border-y border-lightbg mt-4"
         >
           <div class="flex items-center justify-start md:gap-4 gap-2 flex-wrap">
             <div class="flex justify-start items-center gap-3 md:gap-4">
@@ -108,11 +108,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
             </span>
           </div>
           <!-- Date -->
-          {% include "components/posted-date-time.njk" %}
-          <!-- Reading Time -->
-          <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
-            {{ helpers.getReadingTime(content) }} MIN READ
-          </span>
+          {% include "components/posted-date-time-with-read.njk" %}
         </div>
         <!-- Share Button -->
         <button
