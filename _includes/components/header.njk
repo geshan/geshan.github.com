@@ -25,35 +25,25 @@
           </div>
 
           <!-- Search Bar -->
-          <form
-            class="search flex items-center"
-            action="https://www.google.com/search"
-            method="GET"
-          >
-            <input type="hidden" name="sitesearch" value="geshan.com.np" />
-            <div class="relative">
-              <input
-                class="bg-gray-100 border border-neutralGray rounded-lg py-2 pl-10 pr-4 font-body text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
-                type="text"
-                name="q"
-                placeholder="Search"
-                label="search"
-              />
-              <svg
-                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutralGray"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </form>
+          <!-- Import the library -->
+          <script type="module" src="https://eca19519-b487-4142-976e-2fb86017f8b9.search.ai.cloudflare.com/assets/v0.0.40/search-snippet.es.js"></script>
+
+          <search-bar-snippet
+            api-url="https://eca19519-b487-4142-976e-2fb86017f8b9.search.ai.cloudflare.com/"
+            placeholder="Search..."
+            max-results="20"
+            max-render-results="8"
+            show-url="true"
+            hide-branding="true">
+          </search-bar-snippet>
+
+          <style>
+          search-bar-snippet {
+            --search-snippet-primary-color: #689F38;
+            --search-snippet-primary-hover: #9CCC65;
+            --search-snippet-focus-ring: #558B2F;
+          }
+          </style>
 
           <!-- Mobile menu button -->
           <button
