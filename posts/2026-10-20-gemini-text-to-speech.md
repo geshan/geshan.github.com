@@ -31,7 +31,7 @@ Generating almost lifelike audio from plain text is possible with Gemini text to
 
 ## Gemini text to speech capabilities
 
-Google's Gemini ecosystem has expanded far beyond text and code generation into near studio-grade audio synthesis. With the introduction of Gemini 3.8 Flash TTS ( and Gemini 3.8 Flash-Lite TTS, Gemini text to speech has reached a new level of creative text to speech capability. 
+Google's Gemini ecosystem has expanded far beyond text and code generation into near studio-grade audio synthesis. With the introduction of Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, Gemini text to speech has reached a new level of creative text to speech capability. 
 
 Gemini TTS does not just read your text; it performs your script with natural pacing, regional accents, emotional nuance, and conversational cues. Gemini TTS models give you access to over 2,000 production-ready voices and natural-language voice design. But the exciting part is voice replication (voice cloning). In the next section, you will learn why using your own cloned voice for text to speech is an added capability to your workflow.
 
@@ -52,7 +52,7 @@ The fastest way to replicate your voice, verify consent, and test out Gemini tex
 
 ### Navigate to Google AI Studio speech generation
 
-Open the browser of your choice (preferably Chrome) and head over to the Google AI Studio Speech Generation [page](https://aistudio.google.com/generate-speech) and click on `Crete new voice` as seen below:
+Open the browser of your choice (preferably Chrome) and head over to the Google AI Studio Speech Generation [page](https://aistudio.google.com/generate-speech) and click on `Create new voice` as seen below:
 
 <img class="center" src="/images/gemini-text-to-speech/02gias-speech-generation.jpg" loading="lazy" title="Navigate to Google AI Studio speech generation and click Create new voice" alt="Navigate to Google AI Studio speech generation and click Create new voice">
 
@@ -80,7 +80,7 @@ If all goes well, your voice will be replicated in the Google AI Studio UI and r
 
 ### Use replicated voice for text to speech
 
-When your voice clone is ready, and you land on the Playground with your clone voice selected. You can paste some text like:
+When your voice clone is ready, and you land on the Playground with your clone voice selected. You can paste some text (from my [2025 recap](/blog/2025/12/recap-2025/)) like:
 
 ```
 Below are the highlights of 2025 in a nutshell: <laugh>
@@ -101,7 +101,7 @@ Once you are satisfied, you can generate the `wav` file by clicking the `Run` bu
 
 <img class="center" src="/images/gemini-text-to-speech/09gias-voice-run-and-download.jpg" loading="lazy" title="Run speech generation and download WAV audio file in Google AI Studio" alt="Run speech generation and download WAV audio file in Google AI Studio">
 
-If you want to try out the code, you can also click the `Get Code` button at the top right side of the page and copy the Python or TypeScript (node.js) code and run it on your local machine or GCP Cloud Shell:
+If you want to try out the code, you can also click the `Get Code` button at the top right side of the page and copy the Python or TypeScript (node.js) code and run it on your local machine or [GCP Cloud Shell](/blog/2024/01/cloud-shell-editor/):
 
 <img class="center" src="/images/gemini-text-to-speech/10gias-get-code.jpg" loading="lazy" title="Click Get Code button in Google AI Studio" alt="Click Get Code button in Google AI Studio">
 
