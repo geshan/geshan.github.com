@@ -10,7 +10,7 @@ tags:
 cover: "/images/gemini-text-to-speech/01gemini-text-to-speech.jpg"
 pagetitle: "How to clone your own voice to use for text to speech with Gemini on Google AI Studio"
 description: "Use Google AI studio to clone your voice and use it with Gemini Text to speech to create audio from any text"
-keywords: gemini voice cloning, gemini text to speech, gemini ai studio voice clone, gemini custom voice
+keywords: gemini voice cloning, gemini text to speech, gemini ai studio voice clone, gemini custom voice, gemini tts, gemini voice replication, google ai studio text to speech, gemini 3.8 tts, gemini speech generation
 ---
 Generating almost lifelike audio from plain text is possible with Gemini text to speech models like the [Gemini 3.8 TTS model](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/). Instead of relying on robotic, monotonous voices for your applications or video tutorials, you can now clone your own voice in a couple of minutes using just a short audio sample and use it for text to speech. In this step-by-step guide, you will learn how to replicate your voice and use it with Gemini TTS on Google AI Studio, including a code example. Let’s get started!
 
