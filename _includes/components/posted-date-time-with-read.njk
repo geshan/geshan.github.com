@@ -1,0 +1,27 @@
+{% if date %} {% set showUpdated = lastUpdated and (lastUpdated | htmlDateString) != (date |
+htmlDateString) %} {% set postContent = page.templateContent or content or '' %}
+<div class="flex items-center gap-3 md:gap-4 flex-wrap">
+  <time datetime="{{ date | getSitemapDate }}" data-updated="true">
+    <time class="entry-date" datetime="{{ date | getSitemapDate }}">
+      <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
+        {{ date | displayDateOnly }}
+      </span>
+    </time>
+  </time>
+  <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
+    {{ helpers.getReadingTime(postContent) }} MIN READ
+  </span>
+  <time class="entry-date updated-date" datetime="{{ lastUpdated | htmlDateString }}">
+    <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
+      Last Updated: 15-JUNE-2026
+    </span>
+  </time>
+  {% if showUpdated %}
+  <time class="entry-date updated-date" datetime="{{ lastUpdated | htmlDateString }}">
+    <span class="text-textColor font-ui font-medium text-md md:text-xl uppercase">
+      Last Updated: {{ lastUpdated | readableDate }}
+    </span>
+  </time>
+  {% endif %}
+</div>
+{% endif %}
