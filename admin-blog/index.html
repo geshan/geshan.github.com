@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="robots" content="noindex"><title>Admin</title><meta name="description" content=" "><meta name="author" content=" "><meta name="HandheldFriendly" content="true"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel="preload" href="/fonts/source-sans-4/source-serif-4-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/source-sans-pro/source-sans-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/source-sans-3/source-sans-3-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/inter/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin></head><body><div id="app"></div><script id="admin-config-script" type="text/javascript">var env = {
+        siteId: "ax89pemrhvvc5a",
+        local: false,
+      };
+
+      function uuidv4() {
+        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+          /[xy]/g,
+          function (c) {
+            var r = (Math.random() * 16) | 0,
+              v = c == "x" ? r : (r & 0x3) | 0x8;
+            return v.toString(16);
+          }
+        );
+      }
+
+      var uuid = uuidv4();
+      var script = document.createElement("script");
+      script.src = "https://app.forestry.io/admin/forestry.min.js?hash=" + uuid;
+      script.id = "forestry-admin";
+      document.body.appendChild(script);
+
+      var link = document.createElement("link");
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "https://app.forestry.io/admin/main.css?hash=" + uuid;
+      document.head.appendChild(link);</script></body></html>
