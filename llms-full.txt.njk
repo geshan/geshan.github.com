@@ -1,0 +1,13 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.title | safe }} — Complete Post Index
+
+> Complete chronological index of all {{ collections.latestPosts | length }} posts published on {{ metadata.url }} by {{ metadata.author.name | safe }} (2007–present).
+
+For a concise overview and curated popular/recent posts, see [llms.txt]({{ '/llms.txt' | url | absoluteUrl(metadata.url) }}).
+
+## All Posts ({{ collections.latestPosts | length }})
+{% for post in collections.latestPosts %}{% set postUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}{% set postDesc = (post.data.description or helpers.getMetaDescription(post.templateContent)) | replace("\n", " ") | trim %}
+- [{{ post.data.title | safe }}]({{ postUrl }}) ({{ post.date | htmlDateString }}){% if postDesc %}: {{ postDesc | safe }}{% endif %}{% endfor %}

@@ -11,6 +11,45 @@
     {%- include "components/ga.njk" -%}
     {%- include "components/statsig.njk" -%}
     {%- include "components/sw-new.njk" -%}
+    {% if page.url == '/' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "{{ metadata.url }}#website",
+            "url": "{{ metadata.url }}",
+            "name": "{{ metadata.title }}",
+            "description": "{{ metadata.description }}",
+            "publisher": { "@id": "{{ metadata.url }}#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "{{ metadata.url }}#person",
+            "name": "{{ metadata.author.name }}",
+            "url": "https://geshan.com.np/about/",
+            "image": "https://geshan.com.np/images/geshan.jpg",
+            "jobTitle": "Technical Lead",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Safewill",
+              "url": "https://safewill.com/"
+            },
+            "sameAs": [
+              "https://github.com/geshan",
+              "https://linkedin.com/in/geshan",
+              "https://twitter.com/geshan",
+              "https://bsky.app/profile/geshan.com.np",
+              "https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar",
+              "https://builder.aws.com/community/@geshan",
+              "https://stackoverflow.com/users/112849/geshan"
+            ]
+          }
+        ]
+      }
+    </script>
+    {% endif %}
   </head>
   <body class="overflow-x-hidden font-ui flex flex-col min-h-screen">
     {%- include "components/gtm.njk" -%}

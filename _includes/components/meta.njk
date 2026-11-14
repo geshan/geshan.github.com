@@ -14,7 +14,12 @@
 
 <meta name="p:domain_verify" content="e654c68562abebfa25c291f59d7d00e8" />
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="{% if templateClass == 'tmpl-post' %}article{% else %}website{% endif %}">
+{%- if templateClass == "tmpl-post" and date %}
+<meta property="article:published_time" content="{{ date | htmlDateString }}">
+<meta property="article:modified_time" content="{{ (lastModified or date) | htmlDateString }}">
+<meta property="article:author" content="{{ metadata.author.name }}">
+{%- endif %}
 <meta property="og:url" content="{{ absolutePostUrl }}">
 <meta property="og:title" content="{{ title or page.title or metadata.title }}">
 <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">

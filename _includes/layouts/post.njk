@@ -10,8 +10,7 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "{{ metadata.title }}",
-    "alternativeHeadline": "{{ title }}",
+    "headline": "{{ title }}",
     "image": "{{ coverImage | url | absoluteUrl(metadata.url) }}",
     "editor": "{{ metadata.author.name }}",
     "genre": "{{ tags[1] }}",
@@ -19,13 +18,28 @@ absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     "url": "{{ absolutePostUrl }}",
     "datePublished": "{{ date | htmlDateString }}",
     "dateCreated": "{{ date | htmlDateString }}",
-    "dateModified": "{{ date | htmlDateString }}",
+    "dateModified": "{{ (lastModified or date) | htmlDateString }}",
     "description": "{{ renderData.description or description or metadata.description }}",
     "articleBody": "{{ content | stripTags }}",
-    "author": { "@type": "Person", "name": "{{ metadata.author.name }}" },
-    "publisher": {
-      "@type": "Organization",
+    "author": {
+      "@type": "Person",
       "name": "{{ metadata.author.name }}",
+      "url": "https://geshan.com.np/about/",
+      "jobTitle": "Technical Lead",
+      "sameAs": [
+        "https://github.com/geshan",
+        "https://linkedin.com/in/geshan",
+        "https://twitter.com/geshan",
+        "https://bsky.app/profile/geshan.com.np",
+        "https://developers.google.com/community/experts/directory/profile/profile-geshan_manandhar",
+        "https://builder.aws.com/community/@geshan",
+        "https://stackoverflow.com/users/112849/geshan"
+      ]
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ metadata.author.name }}",
+      "url": "https://geshan.com.np/about/",
       "logo": { "@type": "ImageObject", "url": "{{ logoUrl }}" }
     },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ absolutePostUrl }}" }
