@@ -1,0 +1,34 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.title | safe }}
+
+> Technical blog by {{ metadata.author.name | safe }} — Lead Software Engineer at Safewill in Sydney, Australia, Google Developer Expert (GDE), and conference speaker blogging since 2007. Covers software engineering, AI / Gen AI / LLMs, Node.js, JavaScript/TypeScript, Docker, Kubernetes, Google Cloud Run, DevOps, software architecture, databases, and PHP.
+
+This site provides full-content feeds and structured indexes for LLMs and AI search engines:
+- [Full Post Index (llms-full.txt)]({{ '/llms-full.txt' | url | absoluteUrl(metadata.url) }}): Complete index of all {{ collections.posts | length }} blog posts with dates and descriptions.
+- [Atom Feed]({{ metadata.feed.path | url | absoluteUrl(metadata.url) }}): Full-content Atom feed of the 30 most recent posts.
+- [XML Sitemap]({{ '/sitemap.xml' | url | absoluteUrl(metadata.url) }}): Complete XML sitemap of blog posts.
+
+## Core Pages
+
+- [Home]({{ metadata.url }}): Latest posts, popular picks, side projects, and author overview.
+- [About Me]({{ '/about/' | url | absoluteUrl(metadata.url) }}): Author biography, 17+ years of software engineering experience, public speaking, Gen AI workshops, and side projects.
+- [Blog Archives]({{ '/blog/archives/' | url | absoluteUrl(metadata.url) }}): Chronological archive of all blog posts since 2007.
+- [Newsletter]({{ '/newsletter/' | url | absoluteUrl(metadata.url) }}): Subscribe to new software engineering and AI posts.
+
+## Popular & Featured Posts
+{% for post in collections.popularPicks %}{% set postUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}{% set postDesc = (post.data.description or helpers.getMetaDescription(post.templateContent)) | replace("\n", " ") | trim %}
+- [{{ post.data.title | safe }}]({{ postUrl }}){% if postDesc %}: {{ postDesc | safe }}{% endif %} ({{ post.date | htmlDateString }}){% endfor %}
+
+## Recent Posts
+{% for post in collections.latestPosts | head(25) %}{% set postUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}{% set postDesc = (post.data.description or helpers.getMetaDescription(post.templateContent)) | replace("\n", " ") | trim %}
+- [{{ post.data.title | safe }}]({{ postUrl }}){% if postDesc %}: {{ postDesc | safe }}{% endif %} ({{ post.date | htmlDateString }}){% endfor %}
+
+## Optional
+
+- [Public Speaking Repository](https://github.com/geshan/public-speaking): Organized list of conference talks on ChatOps, continuous delivery, microservices, and serverless containers.
+- [AU Tech Jobs](https://autechjobs.com/): Australian tech job aggregator side project.
+- [E-commerce Product Description Generator Workshop](https://gw.geshan.com.np/): Gen AI hands-on workshop.
+- [Geolocation Gen AI Workshop](https://geo.geshan.com.np/): Using Gen AI to guess the geolocation of a photo.
