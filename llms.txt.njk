@@ -18,11 +18,12 @@ This site provides full-content feeds and structured indexes for LLMs and AI sea
 - [Blog Archives]({{ '/blog/archives/' | url | absoluteUrl(metadata.url) }}): Chronological archive of all blog posts since 2007.
 - [Newsletter]({{ '/newsletter/' | url | absoluteUrl(metadata.url) }}): Subscribe to new software engineering and AI posts.
 
-## Popular & Featured Posts
-{% for post in collections.popularPicks %}{% set postUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}{% set postDesc = (post.data.description or helpers.getMetaDescription(post.templateContent)) | replace("\n", " ") | trim %}
-- [{{ post.data.title | safe }}]({{ postUrl }}){% if postDesc %}: {{ postDesc | safe }}{% endif %} ({{ post.date | htmlDateString }}){% endfor %}
+{% set popularPosts = popular | head(5) %}{% if popularPosts.length > 0 %}
+## Popular Posts
+{% for post in popularPosts %}
+- [{{ post.title | safe }}]({{ post.url | url | absoluteUrl(metadata.url) }}){% endfor %}
 
-## Recent Posts
+{% endif %}## Recent Posts
 {% for post in collections.latestPosts | head(25) %}{% set postUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}{% set postDesc = (post.data.description or helpers.getMetaDescription(post.templateContent)) | replace("\n", " ") | trim %}
 - [{{ post.data.title | safe }}]({{ postUrl }}){% if postDesc %}: {{ postDesc | safe }}{% endif %} ({{ post.date | htmlDateString }}){% endfor %}
 
