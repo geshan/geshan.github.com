@@ -11,13 +11,13 @@
     {%- for tag in collections.tagList | sort -%} {%- if tag | lower in allowedTags -%} {%- set
     tagUrl -%}/blog/categories/{{ tag | slug }}/{%- endset -%}
     <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} mb-5 border-b-2 border-neutralGray hover:border-avocado font-body font-semibold text-gray w-full text-base capitalize"
+      class="list-group-item{% if tagUrl == page.url %} active{% endif %} mb-5 border-b-2 border-neutralGray hover:border-borderStrong font-body font-semibold text-gray w-full text-base capitalize"
       href="{{ tagUrl }}"
       title="{{ tag }}"
     >
       {{ tag | lower }}
       <span
-        class="badge inline-block bg-darkAvocado px-2 py-1 rounded-full text-white mb-2 float-right"
+        class="badge inline-block bg-fillAccent px-2 py-1 rounded-full text-textOnAccent mb-2 float-right"
       >
         {{ collections[ tag ] | length }}
       </span>
@@ -25,7 +25,7 @@
 
     {%- endif -%} {%- endfor -%}
     <a
-      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-body font-semibold text-gray border-b-2 border-neutralGray hover:border-avocado pb-2 mb-5"
+      class="list-group-item{% if tagUrl == page.url %} active{% endif %} font-body font-semibold text-gray border-b-2 border-neutralGray hover:border-borderStrong pb-2 mb-5"
       href="/blog/categories/"
       title="All the categories"
     >

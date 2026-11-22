@@ -2,6 +2,8 @@
 <html class="no-js" lang="en">
   <head>
     {%- include "components/meta.njk" -%}
+    <meta name="color-scheme" content="light dark">
+    <script>(function(){try{var t=localStorage.getItem('color-scheme');if(t==='light'||t==='dark'){document.querySelector('meta[name="color-scheme"]').content=t;}}catch(e){}})();</script>
     {%- include "components/favicons.njk" -%}
     <link href="/atom.xml" rel="alternate" title="{{ metadata.title }}" type="application/atom+xml">
     <title>{{ pagetitle or renderData.title or title or metadata.title }}</title>
@@ -51,7 +53,7 @@
     </script>
     {% endif %}
   </head>
-  <body class="overflow-x-hidden font-ui flex flex-col min-h-screen">
+  <body class="overflow-x-hidden font-ui flex flex-col min-h-screen bg-surface text-textBody">
     {%- include "components/gtm.njk" -%}
     <header role="banner">
       {%- include "components/header.njk" -%}
@@ -77,6 +79,7 @@
       {% include "footer/footer.njk" %}
     </footer>
     <!-- Current page: {{ page.url | url }} -->
+    <script src="/js/theme.js" defer></script>
     <script src="/js/all.min.js" defer></script>
   </body>
 </html>
