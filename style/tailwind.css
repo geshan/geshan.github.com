@@ -4,25 +4,364 @@
 @import '../css/fonts.css';
 
 :root {
-  --darkAvocado: #517329;
-  --lightAvocado: #f3f8ec;
-  --textColor: #6a6c66;
-  --blackText: #000000;
-  --lightGray: #797b75;
-  --gray: #3f423b;
-  --midgrey: #858393;
-  --lightbg: #f5f5f5;
+  color-scheme: light dark;
+
+  /* Raw semantic palette — Light */
+  --surface-canvas-light: #ffffff;
+  --surface-tinted-light: #f3f8ec;
+  --surface-accent-light: #cde4b2;
+  --surface-elevated-light: #ffffff;
+  --surface-subtle-light: #fafafa;
+  --surface-code-light: #f5f6f9;
+  --surface-tag-light: #f1f3f5;
+  --surface-gradient-start-light: #def6bc;
+  --surface-gradient-end-light: #f3f8ec;
+
+  --text-strong-light: #000000;
+  --text-body-light: #3f423b;
+  --text-muted-light: #52554e;
+  --text-accent-light: #466523;
+  --fill-accent-light: #466523;
+  --text-on-accent-light: #ffffff;
+  --text-blockquote-light: #251f54;
+
+  --border-subtle-light: #d4d8d0;
+  --border-strong-light: #466523;
+
+  --code-text-light: #2a2a2a;
+  --code-comment-light: #48687c;
+  --code-keyword-light: #5a36f5;
+  --code-string-light: #5a36f5;
+  --code-function-light: #3f60f5;
+  --code-number-light: #7c3aed;
+
+  /* Raw semantic palette — Dark (Warm Forest-Charcoal / Dark Avocado) */
+  --surface-canvas-dark: #111411;
+  --surface-tinted-dark: #192018;
+  --surface-accent-dark: #202b1e;
+  --surface-elevated-dark: #1c231b;
+  --surface-subtle-dark: #161c15;
+  --surface-code-dark: #181e17;
+  --surface-tag-dark: #232d21;
+  --surface-gradient-start-dark: #1c271a;
+  --surface-gradient-end-dark: #151c14;
+
+  --text-strong-dark: #f1f5ee;
+  --text-body-dark: #dce3d8;
+  --text-muted-dark: #b2bcb0;
+  --text-accent-dark: #9bd15e;
+  --fill-accent-dark: #84bc43;
+  --text-on-accent-dark: #111411;
+  --text-blockquote-dark: #d4e8bc;
+
+  --border-subtle-dark: #2f3b2c;
+  --border-strong-dark: #84bc43;
+
+  --code-text-dark: #e5ece2;
+  --code-comment-dark: #94ad98;
+  --code-keyword-dark: #c4b5fd;
+  --code-string-dark: #a3e67c;
+  --code-function-dark: #7dd3fc;
+  --code-number-dark: #fcd34d;
+
+  /* Active semantic tokens — Light default (fallback for browsers without light-dark()) */
+  --surface-canvas: var(--surface-canvas-light);
+  --surface-tinted: var(--surface-tinted-light);
+  --surface-accent: var(--surface-accent-light);
+  --surface-elevated: var(--surface-elevated-light);
+  --surface-subtle: var(--surface-subtle-light);
+  --surface-code: var(--surface-code-light);
+  --surface-tag: var(--surface-tag-light);
+  --surface-gradient-start: var(--surface-gradient-start-light);
+  --surface-gradient-end: var(--surface-gradient-end-light);
+
+  --text-strong: var(--text-strong-light);
+  --text-body: var(--text-body-light);
+  --text-muted: var(--text-muted-light);
+  --text-accent: var(--text-accent-light);
+  --fill-accent: var(--fill-accent-light);
+  --text-on-accent: var(--text-on-accent-light);
+  --text-blockquote: var(--text-blockquote-light);
+
+  --border-subtle: var(--border-subtle-light);
+  --border-strong: var(--border-strong-light);
+
+  --code-text: var(--code-text-light);
+  --code-comment: var(--code-comment-light);
+  --code-keyword: var(--code-keyword-light);
+  --code-string: var(--code-string-light);
+  --code-function: var(--code-function-light);
+  --code-number: var(--code-number-light);
+
+  /* Legacy custom property aliases */
+  --darkAvocado: var(--text-accent);
+  --lightAvocado: var(--surface-tinted);
+  --textColor: var(--text-muted);
+  --blackText: var(--text-strong);
+  --lightGray: var(--text-muted);
+  --gray: var(--text-body);
+  --midgrey: var(--text-muted);
+  --lightbg: var(--border-subtle);
+
   --font-heading: 'Source Serif 4', Georgia, serif;
   --font-ui: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  /* --font-ui: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
-  /* --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; */
   --font-body: 'Source Sans Pro', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   --font-nav: 'inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  accent-color: var(--fill-accent);
+  scrollbar-color: var(--text-muted) var(--surface-subtle);
+}
+
+/* Reflect <meta name="color-scheme"> override into CSS color-scheme */
+:root:has(> head > meta[name='color-scheme'][content='dark']) {
+  color-scheme: dark;
+  --surface-canvas: var(--surface-canvas-dark);
+  --surface-tinted: var(--surface-tinted-dark);
+  --surface-accent: var(--surface-accent-dark);
+  --surface-elevated: var(--surface-elevated-dark);
+  --surface-subtle: var(--surface-subtle-dark);
+  --surface-code: var(--surface-code-dark);
+  --surface-tag: var(--surface-tag-dark);
+  --surface-gradient-start: var(--surface-gradient-start-dark);
+  --surface-gradient-end: var(--surface-gradient-end-dark);
+
+  --text-strong: var(--text-strong-dark);
+  --text-body: var(--text-body-dark);
+  --text-muted: var(--text-muted-dark);
+  --text-accent: var(--text-accent-dark);
+  --fill-accent: var(--fill-accent-dark);
+  --text-on-accent: var(--text-on-accent-dark);
+  --text-blockquote: var(--text-blockquote-dark);
+
+  --border-subtle: var(--border-subtle-dark);
+  --border-strong: var(--border-strong-dark);
+
+  --code-text: var(--code-text-dark);
+  --code-comment: var(--code-comment-dark);
+  --code-keyword: var(--code-keyword-dark);
+  --code-string: var(--code-string-dark);
+  --code-function: var(--code-function-dark);
+  --code-number: var(--code-number-dark);
+}
+
+:root:has(> head > meta[name='color-scheme'][content='light']) {
+  color-scheme: light;
+}
+
+/* Fallback for browsers without light-dark() when following system dark preference */
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(> head > meta[name='color-scheme'][content='light'])) {
+    --surface-canvas: var(--surface-canvas-dark);
+    --surface-tinted: var(--surface-tinted-dark);
+    --surface-accent: var(--surface-accent-dark);
+    --surface-elevated: var(--surface-elevated-dark);
+    --surface-subtle: var(--surface-subtle-dark);
+    --surface-code: var(--surface-code-dark);
+    --surface-tag: var(--surface-tag-dark);
+    --surface-gradient-start: var(--surface-gradient-start-dark);
+    --surface-gradient-end: var(--surface-gradient-end-dark);
+
+    --text-strong: var(--text-strong-dark);
+    --text-body: var(--text-body-dark);
+    --text-muted: var(--text-muted-dark);
+    --text-accent: var(--text-accent-dark);
+    --fill-accent: var(--fill-accent-dark);
+    --text-on-accent: var(--text-on-accent-dark);
+    --text-blockquote: var(--text-blockquote-dark);
+
+    --border-subtle: var(--border-subtle-dark);
+    --border-strong: var(--border-strong-dark);
+
+    --code-text: var(--code-text-dark);
+    --code-comment: var(--code-comment-dark);
+    --code-keyword: var(--code-keyword-dark);
+    --code-string: var(--code-string-dark);
+    --code-function: var(--code-function-dark);
+    --code-number: var(--code-number-dark);
+  }
+}
+
+/* Modern light-dark() token resolution driven automatically by computed color-scheme */
+@supports (color: light-dark(white, black)) {
+  :root {
+    --surface-canvas: light-dark(var(--surface-canvas-light), var(--surface-canvas-dark));
+    --surface-tinted: light-dark(var(--surface-tinted-light), var(--surface-tinted-dark));
+    --surface-accent: light-dark(var(--surface-accent-light), var(--surface-accent-dark));
+    --surface-elevated: light-dark(var(--surface-elevated-light), var(--surface-elevated-dark));
+    --surface-subtle: light-dark(var(--surface-subtle-light), var(--surface-subtle-dark));
+    --surface-code: light-dark(var(--surface-code-light), var(--surface-code-dark));
+    --surface-tag: light-dark(var(--surface-tag-light), var(--surface-tag-dark));
+    --surface-gradient-start: light-dark(
+      var(--surface-gradient-start-light),
+      var(--surface-gradient-start-dark)
+    );
+    --surface-gradient-end: light-dark(
+      var(--surface-gradient-end-light),
+      var(--surface-gradient-end-dark)
+    );
+
+    --text-strong: light-dark(var(--text-strong-light), var(--text-strong-dark));
+    --text-body: light-dark(var(--text-body-light), var(--text-body-dark));
+    --text-muted: light-dark(var(--text-muted-light), var(--text-muted-dark));
+    --text-accent: light-dark(var(--text-accent-light), var(--text-accent-dark));
+    --fill-accent: light-dark(var(--fill-accent-light), var(--fill-accent-dark));
+    --text-on-accent: light-dark(var(--text-on-accent-light), var(--text-on-accent-dark));
+    --text-blockquote: light-dark(var(--text-blockquote-light), var(--text-blockquote-dark));
+
+    --border-subtle: light-dark(var(--border-subtle-light), var(--border-subtle-dark));
+    --border-strong: light-dark(var(--border-strong-light), var(--border-strong-dark));
+
+    --code-text: light-dark(var(--code-text-light), var(--code-text-dark));
+    --code-comment: light-dark(var(--code-comment-light), var(--code-comment-dark));
+    --code-keyword: light-dark(var(--code-keyword-light), var(--code-keyword-dark));
+    --code-string: light-dark(var(--code-string-light), var(--code-string-dark));
+    --code-function: light-dark(var(--code-function-light), var(--code-function-dark));
+    --code-number: light-dark(var(--code-number-light), var(--code-number-dark));
+  }
+}
+
+/* Forced Colors Mode (Windows High Contrast) */
+@media (forced-colors: active) {
+  :root {
+    --surface-canvas: Canvas;
+    --surface-tinted: Canvas;
+    --surface-accent: Canvas;
+    --surface-elevated: Canvas;
+    --surface-subtle: Canvas;
+    --surface-code: Canvas;
+    --surface-tag: Canvas;
+    --text-strong: CanvasText;
+    --text-body: CanvasText;
+    --text-muted: GrayText;
+    --text-accent: LinkText;
+    --fill-accent: ButtonFace;
+    --text-on-accent: ButtonText;
+    --border-subtle: CanvasText;
+    --border-strong: Highlight;
+  }
+
+  .theme-toggle,
+  .copy-code-button {
+    border: 1px solid ButtonText;
+  }
 }
 
 html,
 body {
   font-family: initial;
+  background-color: var(--surface-canvas);
+  color: var(--text-body);
+}
+
+/* Theme toggle button — non-color icon & accessible label switching via CSS only */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-subtle);
+  background-color: var(--surface-elevated);
+  color: var(--text-body);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-strong);
+  color: var(--text-accent);
+  background-color: var(--surface-tinted);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--border-strong);
+  outline-offset: 2px;
+}
+
+/* Default (light): show moon icon ("Switch to dark theme"), hide sun icon */
+.theme-toggle-to-light {
+  display: none;
+}
+.theme-toggle-to-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When Active Theme is dark (explicit override or OS dark without light override) */
+:root:has(> head > meta[name='color-scheme'][content='dark']) .theme-toggle-to-dark {
+  display: none;
+}
+:root:has(> head > meta[name='color-scheme'][content='dark']) .theme-toggle-to-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(> head > meta[name='color-scheme'][content='light'])) .theme-toggle-to-dark {
+    display: none;
+  }
+  :root:not(:has(> head > meta[name='color-scheme'][content='light'])) .theme-toggle-to-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Surface Band utilities */
+.honest-takes-band {
+  background: linear-gradient(
+    115deg,
+    var(--surface-gradient-start) 0.02%,
+    var(--surface-gradient-end) 96.45%
+  );
+}
+
+/* Preserve readable filled accent buttons/banners even when templates or markdown use bg-darkAvocado */
+.bg-darkAvocado,
+.bg-fillAccent {
+  background-color: var(--fill-accent);
+  color: var(--text-on-accent);
+}
+.bg-darkAvocado p,
+.bg-fillAccent p {
+  color: var(--text-on-accent);
+}
+
+/* Targeted dark-mode image treatments */
+:root:has(> head > meta[name='color-scheme'][content='dark']) .conference-logos img {
+  background-color: #edf2e8;
+  padding: 0.4rem 0.65rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+:root:has(> head > meta[name='color-scheme'][content='dark']) .entry-content img {
+  filter: brightness(0.9) contrast(1.05);
+  transition: filter 0.2s ease;
+}
+:root:has(> head > meta[name='color-scheme'][content='dark']) .entry-content img:hover {
+  filter: brightness(1) contrast(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(> head > meta[name='color-scheme'][content='light'])) .conference-logos img {
+    background-color: #edf2e8;
+    padding: 0.4rem 0.65rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  }
+
+  :root:not(:has(> head > meta[name='color-scheme'][content='light'])) .entry-content img {
+    filter: brightness(0.9) contrast(1.05);
+    transition: filter 0.2s ease;
+  }
+  :root:not(:has(> head > meta[name='color-scheme'][content='light'])) .entry-content img:hover {
+    filter: brightness(1) contrast(1);
+  }
 }
 
 h1,
@@ -31,8 +370,7 @@ h3,
 h4,
 h5 {
   font-family: var(--font-heading);
-  color: var(--blackText);
-  /* font-weight: 500; */
+  color: var(--text-strong);
 }
 
 /* UI areas */
@@ -48,31 +386,26 @@ nav,
 /* Mobile First - Phone (default) */
 h1 {
   font-size: 32px;
-  /* font-weight: 400; */
   line-height: 1.2;
 }
 
 h2 {
   font-size: 29px;
-  /* font-weight: 400; */
   line-height: 1.3;
 }
 
 h3 {
   font-size: 20px;
-  /* font-weight: 500; */
   line-height: 1.4;
 }
 
 h4 {
   font-size: 23px;
-  /* font-weight: 500; */
   line-height: 1.4;
 }
 
 h5 {
   font-size: 25px;
-  /* font-weight: 500; */
   line-height: 1.4;
 }
 
@@ -119,7 +452,7 @@ h3,
 h4,
 h5 {
   --tw-text-opacity: 1;
-  color: var(--blackText);
+  color: var(--text-strong);
 }
 
 h1 > a.direct-link,
@@ -135,6 +468,7 @@ h3:hover a.direct-link,
 h4:hover a.direct-link,
 h5:hover a.direct-link {
   display: inline;
+  color: var(--text-accent);
 }
 div > div > article > div > p > a,
 div > div > article > div > ul > li > a,
@@ -142,17 +476,16 @@ div > div > article > ul > li > a,
 div > div > article > div > ol > li > a,
 div > div > article > ul > ol > a,
 p > a {
-  color: #517329;
+  color: var(--text-accent);
 }
 
 img.sharing-common {
-  background-color: #f5f5f5;
+  background-color: var(--surface-tag);
   height: 42px;
   width: 42px;
-
   padding: 4px;
   border-radius: 10px;
-  border: 1px solid var(--darkAvocado);
+  border: 1px solid var(--border-strong);
 }
 span.fb-color:hover {
   background-color: #1e51bf;
@@ -181,15 +514,21 @@ kbd,
 pre,
 samp {
   font-size: 0.95rem;
-  background-color: #f1f3f5;
+  background-color: var(--surface-code);
+  color: var(--code-text);
+}
+
+:not(pre) > code {
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
 }
 
 /* code highlight */
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #2a2a2a;
+  color: var(--code-text);
   background: 0 0;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   text-align: left;
@@ -215,6 +554,7 @@ pre,
   overflow-y: hidden;
   border-radius: 0.3em;
   max-width: 100%;
+  border: 1px solid var(--border-subtle);
 }
 pre[class*='language-'] {
   padding: 1em;
@@ -225,10 +565,10 @@ pre[class*='language-'] {
 }
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: #f5f6f9;
+  background: var(--surface-code);
 }
 :not(pre) > code[class*='language-'] {
-  padding: 0.1em;
+  padding: 0.1em 0.3em;
   border-radius: 0.3em;
   white-space: normal;
 }
@@ -236,10 +576,10 @@ pre[class*='language-'] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-  color: #51768d;
+  color: var(--code-comment);
 }
 .token.punctuation {
-  color: #5a36f5;
+  color: var(--code-keyword);
 }
 .token.namespace {
   opacity: 0.7;
@@ -249,11 +589,11 @@ pre[class*='language-'] {
 .token.property,
 .token.symbol,
 .token.tag {
-  color: #3f60f5;
+  color: var(--code-function);
 }
 .token.boolean,
 .token.number {
-  color: #ae81ff;
+  color: var(--code-number);
 }
 .token.attr-name,
 .token.builtin,
@@ -261,7 +601,7 @@ pre[class*='language-'] {
 .token.inserted,
 .token.selector,
 .token.string {
-  color: #5a36f5;
+  color: var(--code-string);
 }
 .language-css .token.string,
 .style .token.string,
@@ -269,20 +609,20 @@ pre[class*='language-'] {
 .token.operator,
 .token.url,
 .token.variable {
-  color: #5a36f5;
+  color: var(--code-keyword);
 }
 .token.atrule,
 .token.attr-value,
 .token.class-name,
 .token.function {
-  color: #3f60f5;
+  color: var(--code-function);
 }
 .token.keyword {
-  color: #5a36f5;
+  color: var(--code-keyword);
 }
 .token.important,
 .token.regex {
-  color: #2a2a2a;
+  color: var(--code-text);
 }
 .token.bold,
 .token.important {
@@ -296,10 +636,10 @@ pre[class*='language-'] {
 }
 
 .token.deleted {
-  background-color: hsl(350deg 100% 88% / 47%);
+  background-color: hsla(350, 80%, 50%, 0.22);
 }
 .token.inserted {
-  background-color: hsl(120deg 73% 75% / 35%);
+  background-color: hsla(120, 60%, 45%, 0.22);
 }
 
 /* Make the + and - characters unselectable for copy/paste */
@@ -325,8 +665,10 @@ pre[class*='language-'] {
 #carbonads {
   display: flex;
   max-width: 330px;
-  background-color: #f9f9f9;
-  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+  background-color: var(--surface-elevated);
+  color: var(--text-body);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.15);
 }
 #carbonads a {
   color: inherit;
@@ -360,14 +702,8 @@ pre[class*='language-'] {
 .carbon-poweredby {
   display: block;
   padding: 8px 10px;
-  background: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 5px,
-      hsla(0, 0%, 0%, 0.025) 5px,
-      hsla(0, 0%, 0%, 0.025) 10px
-    )
-    hsla(203, 11%, 95%, 0.4);
+  background: var(--surface-subtle);
+  color: var(--text-muted);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -376,27 +712,46 @@ pre[class*='language-'] {
   line-height: 1;
 }
 
-/* copy to clipboard */
+/* Theme-aware copy to clipboard button */
 .copy-code-button {
-  background-color: white;
-  background-image: url('../images/theme/copy-btn.png');
+  background-color: var(--surface-elevated);
+  color: var(--text-body);
+  border: 1px solid var(--border-subtle);
   border-radius: 6px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
   margin-left: auto;
   margin-right: 2px;
   margin-bottom: -10px;
-  padding: 3px 8px;
-  width: 70px;
+  padding: 3px 10px;
+  min-width: 70px;
   height: 28px;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
   position: relative;
   top: 36px;
   left: -10px;
+  z-index: 1;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.copy-code-button::after {
+  content: 'Copy';
 }
 .copy-code-button:hover {
   cursor: pointer;
+  border-color: var(--border-strong);
+  color: var(--text-accent);
 }
-.copied {
-  background-image: url('../images/theme/copied-button.png');
+.copy-code-button.copied {
+  background-color: var(--fill-accent);
+  border-color: var(--fill-accent);
+  color: var(--text-on-accent);
+}
+.copy-code-button.copied::after {
+  content: 'Copied!';
 }
 .highlight pre {
   margin: 0;
@@ -431,7 +786,7 @@ pre[class*='language-'] {
   list-style: auto;
 }
 .entry-content li::marker {
-  color: #517329;
+  color: var(--text-accent);
 }
 .entry-content > div > .cover-description {
   font-size: 24px;
@@ -459,11 +814,6 @@ pre[class*='language-'] {
   }
 }
 .homepage-icons img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-}
-.homepage-icons img:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
@@ -474,12 +824,12 @@ div > details {
 }
 div > details > summary {
   font-size: 20px;
-  color: #517329;
+  color: var(--text-accent);
   cursor: pointer;
 }
 div > details > ul li a {
   font-size: 20px;
-  color: #517329;
+  color: var(--text-accent);
 }
 #scrollDiv {
   transition: all ease-in-out 0.5s;
@@ -494,33 +844,30 @@ blockquote > p {
   width: 80%;
   margin: 0 auto;
   font-size: 26px;
-  color: #251f54;
+  color: var(--text-blockquote);
   font-weight: 500;
 }
 blockquote > p:first-child:before {
   content: '';
-  background-image: url('../images/theme/quote.svg');
+  background-color: var(--text-blockquote);
+  -webkit-mask: url('../images/theme/quote.svg') no-repeat center / contain;
+  mask: url('../images/theme/quote.svg') no-repeat center / contain;
   height: 23px;
   width: 26px;
   position: absolute;
   top: 10px;
-  left: 40px;
+  left: 5px;
 }
 
 table,
 td,
 th {
-  border: 2px solid #517329;
+  border: 2px solid var(--border-strong);
   text-align: center;
   padding: 7px;
 }
 table tr:nth-of-type(even) {
-  background-color: rgba(232, 230, 230, 0.942);
-}
-.entry-content {
-  overflow-x: hidden;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  background-color: var(--surface-subtle);
 }
 .entry-content > table {
   display: block;
@@ -542,16 +889,16 @@ table {
   border-radius: 6px;
 }
 
-/*Scroll bar progress */
+/* Scroll bar progress */
 .progress-bar {
-  background: linear-gradient(to right, #517329 var(--scroll), transparent 0);
+  background: linear-gradient(to right, var(--border-strong) var(--scroll), transparent 0);
   background-repeat: no-repeat;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   height: 4px;
-  z-index: 1;
+  z-index: 50;
 }
 
 span.share-icons {
@@ -562,17 +909,11 @@ span.share-icons {
   margin-top: 16px;
   gap: 10px;
 }
-.homepage-icons img {
-  filter: none;
-  -webkit-filter: grayscale(0%);
-}
-blockquote > p:first-child:before {
-  left: 5px;
-}
 
 /* Print Styles */
 @media print {
-  .share-icons {
+  .share-icons,
+  .theme-toggle {
     display: none !important;
   }
 }
@@ -588,12 +929,12 @@ iframe[src*='player.twitch.tv'] {
 
 /* Hide scrollbar utility */
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  display: none;
 }
 
 /* CLS Optimization: Prevent layout shifts */

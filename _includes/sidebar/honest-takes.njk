@@ -23,8 +23,7 @@
   }
 ] %}
 
-<section class="pt-16 px-4 md:px-8 pb-20" style="
-background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
+<section class="pt-16 px-4 md:px-8 pb-20 honest-takes-band">
   <div class="max-w-6xl mx-auto">
     <h1 class="text-3xl md:text-5xl font-heading font-regular pb-12 tracking-normal leading-[105%] md:leading-[105%]">
       <span class="text-lightGray italic"> Honest</span>
@@ -34,10 +33,10 @@ background: linear-gradient(115deg, #DEF6BC 0.02%, #F3F8EC 96.45%);">
     <div class="grid  md:grid-cols-2 grid-cols-1 items-start gap-6">
       {% for testimonial in testimonials %}
       <div
-        class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-white rounded-2xl shadow-md font-body relative overflow-hidden"
+        class="{% if testimonial.isLarge %}md:col-span-2{% endif %} bg-surfaceElevated border border-borderSubtle rounded-2xl shadow-md font-body relative overflow-hidden"
       >
         <p
-          class="text-md md:text-xl text-black font-regular mb-6 md:px-12 px-4 py-8 leading-[100%] md:leading-[100%]"
+          class="text-md md:text-xl text-textStrong font-regular mb-6 md:px-12 px-4 py-8 leading-[100%] md:leading-[100%]"
         >
           {{ testimonial.quote }}
         </p>

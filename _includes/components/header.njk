@@ -1,5 +1,5 @@
 <div>
-  <nav class="bg-white" role="navigation">
+  <nav class="bg-surface border-b border-borderSubtle" role="navigation">
     <div class="w-full md:max-w-6xl mx-auto py-4 px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo on the left -->
@@ -9,15 +9,15 @@
           </a>
         </div>
 
-        <!-- Navigation links and search on the right -->
-        <div class="flex items-center gap-12">
+        <!-- Navigation links, search, and theme selector on the right -->
+        <div class="flex items-center gap-3 sm:gap-6 md:gap-10">
           <!-- Navigation links -->
-          <div class="hidden sm:flex items-center gap-12">
+          <div class="hidden sm:flex items-center gap-6 md:gap-10">
             {%- for entry in collections.all | eleventyNavigation %}
             <a
               href="{{ entry.url | url }}"
-              class="uppercase text-base font-ui font-medium text-gray hover:text-midgrey transition-colors {% if entry.url == page.url %} text-textColor{% endif %}"
-              aria-current="page"
+              class="uppercase text-base font-ui font-medium text-textBody hover:text-textAccent transition-colors {% if entry.url == page.url %} text-textAccent{% endif %}"
+              {% if entry.url == page.url %}aria-current="page"{% endif %}
             >
               {{ entry.title }}
             </a>
@@ -33,17 +33,18 @@
             <input type="hidden" name="sitesearch" value="geshan.com.np" />
             <div class="relative">
               <input
-                class="bg-gray-100 border border-neutralGray rounded-lg py-2 pl-10 pr-4 font-body text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
+                class="bg-surfaceTag text-textStrong placeholder:text-textMuted border border-borderSubtle rounded-lg py-2 pl-9 pr-3 font-body text-sm focus:outline-none focus:ring-2 focus:ring-borderStrong focus:border-transparent w-32 sm:w-40"
                 type="text"
                 name="q"
                 placeholder="Search"
-                label="search"
+                aria-label="Search blog"
               />
               <svg
-                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutralGray"
+                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-textMuted"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   stroke-linecap="round"
@@ -55,10 +56,41 @@
             </div>
           </form>
 
+          <!-- Theme Selector Toggle -->
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-toggle
+            title="Toggle light/dark theme"
+          >
+            <span class="theme-toggle-to-dark">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              </svg>
+              <span class="sr-only">Switch to dark theme</span>
+            </span>
+            <span class="theme-toggle-to-light">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="sr-only">Switch to light theme</span>
+            </span>
+          </button>
+
           <!-- Mobile menu button -->
           <button
             type="button"
-            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-avocado"
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-textStrong hover:bg-surfaceTinted focus:outline-none focus:ring-2 focus:ring-inset focus:ring-borderStrong"
             onClick="mobileView()"
             aria-controls="mobile-menu"
             aria-expanded="false"
@@ -68,8 +100,9 @@
               class="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewbox="0 0 24 24"
+              viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -85,7 +118,8 @@
 
     <!-- Mobile menu (overlay) -->
     <div
-      class="mobile-menu fixed inset-0 z-40 hidden sm:hidden bg-black bg-opacity-40"
+      id="mobile-menu"
+      class="mobile-menu fixed inset-0 z-40 hidden sm:hidden bg-black bg-opacity-50"
       role="dialog"
       aria-modal="true"
     >
@@ -94,17 +128,17 @@
 
       <!-- Slide-over panel -->
       <div
-        class="mobile-menu-panel relative ml-auto flex h-full w-10/12 max-w-sm flex-col justify-start bg-white shadow-xl"
+        class="mobile-menu-panel relative ml-auto flex h-full w-10/12 max-w-sm flex-col justify-start bg-surfaceElevated text-textBody shadow-xl border-l border-borderSubtle"
       >
         <!-- Header -->
-        <div class="flex items-center justify-between px-4 py-4 border-b border-gray-200">
+        <div class="flex items-center justify-between px-4 py-4 border-b border-borderSubtle">
           <div class="flex items-center gap-3">
             <img class="h-8 w-8" src="/images/theme/new_logo.svg" alt="Geshan G" />
-            <span class="text-lg font-semibold text-textColor font-body">Geshan's Blog</span>
+            <span class="text-lg font-semibold text-textStrong font-body">Geshan's Blog</span>
           </div>
           <button
             type="button"
-            class="inline-flex items-center justify-center rounded-full p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-avocado"
+            class="inline-flex items-center justify-center rounded-full p-2 text-textBody hover:bg-surfaceTinted focus:outline-none focus:ring-2 focus:ring-borderStrong"
             onClick="mobileView()"
             aria-label="Close main menu"
           >
@@ -114,6 +148,7 @@
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -129,16 +164,16 @@
         <nav class="overflow-y-auto px-4 py-6 space-y-2">
           <a
             href="/"
-            class="block rounded-lg px-3 py-2 text-base font-medium font-ui text-black hover:bg-lightAvocado"
-            aria-current="page"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-ui text-textStrong hover:bg-surfaceTinted {% if page.url == '/' %} bg-surfaceTinted{% endif %}"
+            {% if page.url == '/' %}aria-current="page"{% endif %}
           >
             Home
           </a>
           {%- for entry in collections.all | eleventyNavigation %}
           <a
             href="{{ entry.url | url }}"
-            class="block rounded-lg px-3 py-2 text-base font-medium font-ui text-black hover:bg-lightAvocado {% if entry.url == page.url %} bg-lightAvocado{% endif %}"
-            aria-current="page"
+            class="block rounded-lg px-3 py-2 text-base font-medium font-ui text-textStrong hover:bg-surfaceTinted {% if entry.url == page.url %} bg-surfaceTinted{% endif %}"
+            {% if entry.url == page.url %}aria-current="page"{% endif %}
           >
             {{ entry.title }}
           </a>
@@ -146,12 +181,12 @@
         </nav>
 
         <!-- Footer area (optional actions) -->
-        <div class="px 4 py-4 border-t border-gray-200">
+        <div class="px-4 py-4 border-t border-borderSubtle">
           <a
             href="https://www.linkedin.com/in/geshan"
             target="_blank"
             rel="noopener noreferrer"
-            class="rounded-lg bg-darkAvocado px-4 py-2 text-base font-regular font-body text-white hover:bg-avocado hover:text-black transition-colors w-2/3 mx-auto ml-4"
+            class="inline-block rounded-lg bg-fillAccent px-4 py-2 text-base font-regular font-body text-textOnAccent hover:opacity-90 transition-opacity w-full text-center"
           >
             Connect on LinkedIn
           </a>
