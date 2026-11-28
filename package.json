@@ -7,9 +7,9 @@
     "watch": "eleventy --watch",
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "dev:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-006.css --watch",
+    "dev:tailwind": "npx @tailwindcss/cli -i style/tailwind.css -o _site/css/tw-006.css --watch",
     "dev:eleventy": "npx @11ty/eleventy --serve",
-    "build:tailwind": "npx tailwindcss -i style/tailwind.css -o _site/css/tw-006.css --minify",
+    "build:tailwind": "npx @tailwindcss/cli -i style/tailwind.css -o _site/css/tw-006.css --minify",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "dev": "eleventy --serve --incremental",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy"
@@ -33,6 +33,7 @@
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@tailwindcss/cli": "^4.3.5",
     "axios": "^1.21.1",
     "eleventy-google-fonts": "^0.1.0",
     "eleventy-plugin-blog-tools": "^0.4.1",
@@ -43,7 +44,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.10.1",
     "rimraf": "^6.1.4",
-    "tailwindcss": "^3.1.8",
+    "tailwindcss": "^4.3.5",
     "workbox-build": "^7.3.0"
   }
 }

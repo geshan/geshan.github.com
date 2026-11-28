@@ -19,7 +19,7 @@ renderData:
       {% set tagUrl %}/blog/categories/{{ tag | slug }}/{% endset %}
       <a
         href="{{ tagUrl | url }}"
-        class="group flex items-center justify-between gap-8 rounded-xl border border-gray bg-white px-4 py-3 font-ui text-textColor transition-colors hover:border-avocado hover:bg-lightAvocado/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-darkAvocado/60"
+        class="group flex items-center justify-between gap-8 rounded-xl border border-gray bg-white px-4 py-3 font-ui text-textColor transition-colors hover:border-avocado hover:bg-lightAvocado/30 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-darkAvocado/60"
       >
         <span class="capitalize text-lg font-medium text-gray group-hover:text-blackText">
           {{ tag }}

@@ -3,7 +3,7 @@
     <div class="w-full md:max-w-6xl mx-auto py-4 px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo on the left -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <a href="/" class="flex items-center">
             <img class="h-12 w-12" src="/images/theme/new_logo.svg" alt="Geshan G" />
           </a>
@@ -33,7 +33,7 @@
             <input type="hidden" name="sitesearch" value="geshan.com.np" />
             <div class="relative">
               <input
-                class="bg-gray-100 border border-neutralGray rounded-lg py-2 pl-10 pr-4 font-body text-sm focus:outline-none focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
+                class="bg-gray-100 border border-neutralGray rounded-lg py-2 pl-10 pr-4 font-body text-sm focus:outline-hidden focus:ring-2 focus:ring-avocado focus:border-transparent w-40"
                 type="text"
                 name="q"
                 placeholder="Search"
@@ -58,7 +58,7 @@
           <!-- Mobile menu button -->
           <button
             type="button"
-            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-avocado"
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-avocado"
             onClick="mobileView()"
             aria-controls="mobile-menu"
             aria-expanded="false"
@@ -85,7 +85,7 @@
 
     <!-- Mobile menu (overlay) -->
     <div
-      class="mobile-menu fixed inset-0 z-40 hidden sm:hidden bg-black bg-opacity-40"
+      class="mobile-menu fixed inset-0 z-40 hidden sm:hidden bg-black/40"
       role="dialog"
       aria-modal="true"
     >
@@ -104,7 +104,7 @@
           </div>
           <button
             type="button"
-            class="inline-flex items-center justify-center rounded-full p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-avocado"
+            class="inline-flex items-center justify-center rounded-full p-2 text-gray-700 hover:bg-gray-100 focus:outline-hidden focus:ring-2 focus:ring-avocado"
             onClick="mobileView()"
             aria-label="Close main menu"
           >
