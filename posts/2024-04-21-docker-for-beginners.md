@@ -19,9 +19,9 @@ Docker has revolutionized the way we build, ship, and run applications. By packa
 
 ## Table of contents
 
-* [What are Containers?](#what-are-containers)
-* [What is Docker?](#what-is-docker)
-* [Why Use Containers and Docker?](#why-use-containers-and-docker)
+* [What are Containers?](#what-are-containers%3F)
+* [What is Docker?](#what-is-docker%3F)
+* [Why Use Containers and Docker?](#why-use-containers-and-docker%3F)
 * [Containers vs. Virtual Machines](#containers-vs.-virtual-machines)
 * [Docker Concepts](#docker-concepts)
     * [Dockerfile](#dockerfile)

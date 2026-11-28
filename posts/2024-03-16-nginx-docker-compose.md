@@ -21,9 +21,9 @@ Nginx, a free, open-source, high-performance web server and reverse proxy, has b
 
 * [Nginx and Docker compose](#nginx-and-docker-compose)
 * [Prerequisites](#prerequisites)
-* [Nginx Docker Compose a simple example](#nginx-docker-compose-a-simple-example)
+* [Nginx Docker Compose a simple example](#nginx-docker-compose%3A-a-simple-example)
 * [Multi-container example with Nginx and Docker compose](#multi-container-example-with-nginx-and-docker-compose)
-    * [The components of Nginx Docker compose a multi-container setup](#the-components-of-nginx-docker-compose-a-multi-container-setup)
+    * [The components of Nginx Docker compose a multi-container setup](#the-components-of-nginx-docker-compose-multi-container-setup)
 * [Conclusion](#conclusion)
 
 ## Nginx and Docker Compose

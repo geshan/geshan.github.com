@@ -65,7 +65,7 @@ This post has multiple sections shown below in the table of content:
     + [5.9. Click view website](#5.9.-click-view-website)
   * [6. Edit text on the website](#6.-edit-text-on-the-website)
     + [6.1. Edit your website on Forestry](#6.1.-edit-your-website-on-forestry)
-    + [6.2. Go to Home, click hero section and edit text](#6.2.-go-to-home--click-hero-section-and-edit-text)
+    + [6.2. Go to Home, click hero section and edit text](#6.2.-go-to-home%2C-click-hero-section-and-edit-text)
     + [6.3. Edit the text of home hero section like below](#6.3.-edit-the-text-of-home-hero-section-like-below)
     + [6.4. Website deploying](#6.4.-website-deploying)
     + [6.5. Site deployed](#6.5.-site-deployed)

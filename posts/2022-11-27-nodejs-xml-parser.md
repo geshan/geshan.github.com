@@ -22,12 +22,12 @@ Writing and parsing XML files with Node.js might not be one of the first things 
 
 ## Table of contents
 
-* [Is XML still used?](#is-xml-still-used)
+* [Is XML still used?](#is-xml-still-used%3F)
 * [Prerequisites](#prerequisites)
 * [Example - Parse sample XML](#example---parse-sample-xml)
     * [Sample XML file](#sample-xml-file)
-* [Validate XML using Node.js](#validate-xml-using-nodejs)
-* [Parse XML with Node.js](#parse-xml-with-nodejs)
+* [Validate XML using Node.js](#validate-xml-using-node.js)
+* [Parse XML with Node.js](#parse-xml-with-node.js)
 * [Create XML using Fast XML parser](#create-xml-using-fast-xml-parser)
 * [Comparing with other libraries](#comparing-with-other-libraries)
 

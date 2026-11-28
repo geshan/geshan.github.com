@@ -23,7 +23,7 @@ Jest Mock Implementation is a technique that lets you replace the internal logic
 * [When to use Jest mockImlementation](#when-to-use-jest-mockimlementation)
 * [How to use mockImplementation with Jest](#how-to-use-mockimplementation-with-jest)
     * [Example with Process exit and console](#example-with-process-exit-and-console)
-    * [Tests using Jest mockImplenentation.](#tests-using-jest-mockimplenentation)
+    * [Tests using Jest mockImplenentation.](#tests-using-jest-mockimplenentation.)
 * [Conclusion](#conclusion)
 
 ## Jest Mock implementation an intro

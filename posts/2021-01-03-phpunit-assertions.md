@@ -23,7 +23,7 @@ PHPUnit has been blowing away its competition for more than [5 years](https://tr
 ## Table of contents
 
 * [PHPUnit Assertions to know about](#phpunit-assertions-to-know-about)
-* [Analyzing PHPUnit Assertions usage in a small, medium, and large project](#analyzing--phpunit-assertions-usage-in-a-small-medium-and-large-project)
+* [Analyzing PHPUnit Assertions usage in a small, medium, and large project](#analyzing-phpunit-assertions-usage-in-a-small%2C-medium%2C-and-large-project)
   * [Small Project with PHPUnit Assertions](#small-project-with-phpunit-assertions)
   * [Medium project for PHPUnit Assertions count](#medium-project-for-phpunit-assertions-count)
   * [Big project for counting PHPUnit Assertions](#big-project-for-counting-phpunit-assertions)

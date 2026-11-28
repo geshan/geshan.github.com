@@ -22,7 +22,7 @@ In the world of database management systems, PostgreSQL (Postgres) is a popular 
 * [What is PostgreSQL](#what-is-postgresql)
 * [PostgreSQL COALESCE](#postgresql-coalesce)
 * [When to Use COALESCE](#when-to-use-coalesce)
-* [How to Use PostgreSQL COALESCE (with Examples)](#how-to-use-postgresql-coalesce-with-examples)
+* [How to Use PostgreSQL COALESCE (with Examples)](#how-to-use-postgresql-coalesce-(with-examples))
   * [Replace null with a value](#replace-null-with-a-value)
   * [Select a different value from another field](#select-a-different-value-from-another-field)
   * [Replace the null value in join with a fallback value](#replace-the-null-value-in-join-with-a-fallback-value)

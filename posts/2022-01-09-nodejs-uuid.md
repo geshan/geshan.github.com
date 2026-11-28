@@ -23,11 +23,11 @@ Universally Unique Identifier (UUID) is very useful. In Node.js there are many w
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
-* [When to use Node.js UUID](#when-to-use-nodejs-uuid)
+* [When to use Node.js UUID](#when-to-use-node.js-uuid)
     * [Get your competitor’s order volume example](#get-your-competitor’s-order-volume-example)
     * [Hide your autoincrement ID](#hide-your-autoincrement-id)
 * [Methods to generate UUID in Node.js](#methods-to-generate-uuid-in-node.js)
-    * [Node.js UUID with Crypto module](#nodejs-uuid-with-crypto-module)
+    * [Node.js UUID with Crypto module](#node.js-uuid-with-crypto-module)
     * [UUID NPM Package](#uuid-npm-package)
 * [Nano ID to generate UUID using Node.js](#nano-id-to-generate-uuid-using-node.js)
 * [Quick comparison](#quick-comparison)

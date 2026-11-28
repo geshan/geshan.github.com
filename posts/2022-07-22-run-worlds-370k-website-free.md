@@ -25,7 +25,7 @@ Ok, I have said it, this blog you are reading is one of the top 320K websites in
 
 * [The main points](#the-main-points)
 * [Cost for the domain name - free](#cost-for-the-domain-name---free)
-* [Fees paid to host code - $0](#fees-paid-to-host-code---0)
+* [Fees paid to host code - $0](#fees-paid-to-host-code---%240)
 * [JAM stack website - no servers no database](#jam-stack-website---no-servers-no-database)
   * [Browse offline with PWA](#browse-offline-with-pwa)
   * [Content editing](#content-editing)

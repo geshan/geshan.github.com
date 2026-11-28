@@ -20,8 +20,8 @@ RabbitMQ is one of the most popular open-source message brokers in use today. Kn
 
 ## Table of contents
 
-* [What is RabbitMQ?](#what-is-rabbitmq)
-* [Why use RabbitMQ?](#why-use-rabbitmq)
+* [What is RabbitMQ?](#what-is-rabbitmq%3F)
+* [Why use RabbitMQ?](#why-use-rabbitmq%3F)
 * [Popularity of RabbitMQ](#popularity-of-rabbitmq)
 * [Run RabbitMQ with Docker](#run-rabbitmq-with-docker)
 * [Make running RabbitMQ easier with Docker Compose](#make-running-rabbitmq-easier-with-docker-compose)

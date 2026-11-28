@@ -23,7 +23,7 @@ Docker Compose is a powerful tool for orchestrating multi-container applications
 * [Using MySQL container as an example](#using-mysql-container-as-an-example)
 * [How to define environment variables in Docker run](#how-to-define-environment-variables-in-docker-run)
 * [Adding environment variables in the Docker compose file](#adding-environment-variables-in-the-docker-compose-file)
-    * [Substitute from shell or .env file](#substitute-from-shell-or-env-file)
+    * [Substitute from shell or .env file](#substitute-from-shell-or-.env-file)
     * [Pass the env file with --env-file argument](#pass-the-env-file-with---env-file-argument)
 * [Putting environment variable in an external file](#putting-environment-variable-in-an-external-file)
     * [Use the env_file attribute](#use-the-env_file-attribute)

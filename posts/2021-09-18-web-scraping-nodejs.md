@@ -26,11 +26,11 @@ Web scraping is the process of extracting data from a website in an automated wa
 ## Table of contents
 
 - [Table of contents](#table-of-contents)
-- [Web scraping the dos and don’ts](#web-scraping-the-dos-and-donts)
+- [Web scraping the dos and don’ts](#web-scraping-the-dos-and-don%E2%80%99ts)
 - [Prerequisites](#prerequisites)
-- [Web scraping with Node.js the simple example](#web-scraping-with-nodejs-the-simple-example)
-  - [Axios and Cheerio for Node.js web scraping](#axios-and-cheerio-for-nodejs-web-scraping)
-- [Node.js web scraping rendering JavaScript](#nodejs-web-scraping-rendering-javascript)
+- [Web scraping with Node.js the simple example](#web-scraping-with-node.js-the-simple-example)
+  - [Axios and Cheerio for Node.js web scraping](#axios-and-cheerio-for-node.js-web-scraping)
+- [Node.js web scraping rendering JavaScript](#node.js-web-scraping-rendering-javascript)
   - [Puppeteer for web scraping](#puppeteer-for-web-scraping)
 - [Conclusion](#conclusion)
 

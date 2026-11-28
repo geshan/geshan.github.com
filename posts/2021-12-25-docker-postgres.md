@@ -30,7 +30,7 @@ Running Postgres with Docker and docker-compose makes it very easy to run and ma
 * [Prerequisites](#prerequisites)
 * [Postgres with Docker](#postgres-with-docker)
 * [PostgreSQL with docker-compose](#postgresql-with-docker-compose)
-* [Adding Postgres with Docker to an existing Node.js project](#adding-postgres-with-docker-to-an-existing-nodejs-project)
+* [Adding Postgres with Docker to an existing Node.js project](#adding-postgres-with-docker-to-an-existing-node.js-project)
 * [Conclusion](#conclusion)
 
 ## Why use Postgres with docker for local development

@@ -25,8 +25,8 @@ In this post, we are going to see code examples of the native HTTPS module that 
 
 * [Prerequisites](#prerequisites)
 * [The example we will use](#the-example-we-will-use)
-* [Client options for HTTP requests in Node.js](#client-options-for-http-requests-in-nodejs)
-  * [Standard Node.js HTTP(S) module](#standard-nodejs-https-module)
+* [Client options for HTTP requests in Node.js](#client-options-for-http-requests-in-node.js)
+  * [Standard Node.js HTTP(S) module](#standard-node.js-http(s)-module)
   * [Axios](#axios)
   * [Got](#got)
   * [SuperAgent](#superagent)

@@ -24,7 +24,7 @@ Gemini by Google is a powerful multimodal Large Language Model (LLM) capable of 
 
 * [Prerequisites](#prerequisites)
 * [Summarizer with Gemini API on Vertex AI](#summarizer-with-gemini-api-on-vertex-ai)
-* [Run the summarizer in the CLI with Node.js](#run-the-summarizer-in-the-cli-with-nodejs)
+* [Run the summarizer in the CLI with Node.js](#run-the-summarizer-in-the-cli-with-node.js)
 * [Next steps](#next-steps)
 * [Conclusion](#conclusion)
 

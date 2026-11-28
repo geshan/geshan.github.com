@@ -22,7 +22,7 @@ Reading a JSON (JavaScript Object Notation) file in Node.js is a common task for
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Example: Billionaires Data From 2023](#example-billionaires-data-from-2023)
+- [Example: Billionaires Data From 2023](#example%3A-billionaires-data-from-2023)
 - [Read JSON File Using Native fs](#read-json-file-using-native-fs)
   - [Read JSON File Asynchronously Using fs](#read-json-file-asynchronously-using-fs)
   - [Read JSON File Synchronously Using fs](#read-json-file-synchronously-using-fs)

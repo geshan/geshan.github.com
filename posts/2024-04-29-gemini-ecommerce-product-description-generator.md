@@ -28,7 +28,7 @@ Gen AI can be utilized to build useful things. In this post, you will build an e
 * [Name and save the prompt](#name-and-save-the-prompt)
 * [Gemini configurations](#gemini-configurations)
 * [Run generated Python Code](#run-generated-python-code)
-* [What's next](#whats-next)
+* [What's next](#what's-next)
 * [Conclusion](#conclusion)
 
 ## Process of writing product descriptions for e-commerce websites

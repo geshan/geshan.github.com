@@ -23,7 +23,7 @@ Axios is one of the most popular JavaScript libraries to do HTTP requests. It is
 
 ## Table of contents
 
-* [Calling other services/APIs](#calling-other-servicesapis)
+* [Calling other services/APIs](#calling-other-services%2Fapis)
 * [Why use a timeout in requests](#why-use-a-timeout-in-requests)
 * [Axios](#axios)
    * [Installing Axios](#installing-axios)

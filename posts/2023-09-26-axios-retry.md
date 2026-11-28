@@ -21,7 +21,7 @@ In the ever-evolving world of web development, handling HTTP requests is a funda
 ## Table of contents
 
 * [Benefits of Retrying a Failed Request](#benefits-of-retrying-a-failed-request)
-* [What is Axios?](#what-is-axios)
+* [What is Axios?](#what-is-axios%3F)
 * [Why Use Axios Retry](#why-use-axios-retry)
     * [Axios retry config](#axios-retry-config)
 * [Axios retry example](#axios-retry-example)

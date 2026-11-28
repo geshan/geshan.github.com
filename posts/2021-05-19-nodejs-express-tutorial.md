@@ -31,7 +31,7 @@ Express Js is one of the most popular Node.js frameworks. In this Node.js Expres
 * [Add the server and routes](#add-the-server-and-routes)
 * [Testing](#testing)
 * [Next steps](#next-steps)
-* [TLDR; need a quick run](#tldr-need-a-quick-run)
+* [TLDR; need a quick run](#tldr%3B-need-a-quick-run)
 * [Conclusion](#conclusion)
 
 ## What we are building
