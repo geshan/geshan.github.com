@@ -1,0 +1,59 @@
+# Geshan's Blog
+
+> Technical blog by Geshan Manandhar — Technical Team Lead at ELMO Software in Sydney, Australia, Google Developer Expert (GDE), and conference speaker blogging since 2007. Covers software engineering, AI / Gen AI / LLMs, Node.js, JavaScript/TypeScript, Docker, Kubernetes, Google Cloud Run, DevOps, software architecture, databases, and PHP.
+
+This site provides full-content feeds and structured indexes for LLMs and AI search engines:
+- [Full Post Index (llms-full.txt)](https://geshan.com.np/llms-full.txt): Complete index of all 283 blog posts with dates and descriptions.
+- [Atom Feed](https://geshan.com.np/atom.xml): Full-content Atom feed of the 30 most recent posts.
+- [XML Sitemap](https://geshan.com.np/sitemap.xml): Complete XML sitemap of blog posts.
+
+## Core Pages
+
+- [Home](https://geshan.com.np/): Latest posts, popular picks, side projects, and author overview.
+- [About Me](https://geshan.com.np/about/): Author biography, 17+ years of software engineering experience, public speaking, Gen AI workshops, and side projects.
+- [Blog Archives](https://geshan.com.np/blog/archives/): Chronological archive of all blog posts since 2007.
+- [Newsletter](https://newsletter.geshan.com.np/): Subscribe to new software engineering and AI posts.
+
+
+## Popular Posts
+
+- [How to use Ollama with Open WebUI with Docker and Docker Compose](https://geshan.com.np/blog/2025/02/ollama-docker-compose/)
+- [How to clone your own voice to use for text to speech with Gemini on Google AI Studio](https://geshan.com.np/blog/2026/10/gemini-text-to-speech/)
+- [Ollama commands: How to use Ollama in the command line](https://geshan.com.np/blog/2025/02/ollama-commands/)
+- [How to use Nginx with Docker Compose effectively with examples](https://geshan.com.np/blog/2024/03/nginx-docker-compose/)
+- [How to use NotebookLM with a practical job search example](https://geshan.com.np/blog/2025/11/how-to-use-notebooklm/)
+
+## Recent Posts
+
+- [Use Antigravity CLI /swarm to update NPM dependencies with parallel AI Agents in minutes](https://geshan.com.np/blog/2026/11/google-antigravity-swarm/): Explore how to leverage Google Antigravity CLI's /swarm command to efficiently update multiple NPM dependencies in parallel using a team of specialized AI agents. (2026-11-28)
+- [41 things about how software engineering has changed in 2026 because of AI, LLMs, and coding agents](https://geshan.com.np/blog/2026/10/ai-software-engineering/): 41 things about how software engineering has changed in 2026 because of AI, LLMs, and coding agents, and what you need to do to stay relevant in this new era of software development (2026-10-25)
+- [How to clone your own voice to use for text to speech with Gemini on Google AI Studio](https://geshan.com.np/blog/2026/10/gemini-text-to-speech/): Use Google AI studio to clone your voice and use it with Gemini Text to speech to create audio from any text (2026-10-20)
+- [3 almost hidden Google Gemini features you should start leveraging today](https://geshan.com.np/blog/2026/07/google-gemini-features/): Use Deep Research, Guided Learning, and Canvas features in Gemini for software engineering tasks for better productivity. You will be surprised how easy they are to use! (2026-07-26)
+- [How to use /goal to add last updated at feature to an Eleventy blog in Antigravity IDE with a single prompt](https://geshan.com.np/blog/2026/06/google-antigravity-goal/): Use Google Antigravity's /goal feature with Gemini 3 to add a last updated at feature to an Eleventy blog autonomously with a single prompt. (2026-06-13)
+- [How to deploy a Google Agent Development Kit (ADK) agent to Google Cloud Run](https://geshan.com.np/blog/2026/06/google-adk-deploy/): Learn how to deploy your Google Agent Development Kit (ADK) AI agent to Google Cloud Run for serverless, production-ready scaling. (2026-06-07)
+- [Getting Started with Google Agent Development Kit (ADK): Build and Run Your Simple Fact-Checker AI Agent](https://geshan.com.np/blog/2026/05/google-adk-tutorial/): A step-by-step guide to get started with Google ADK to build your first AI agent which does fact checking (2026-05-30)
+- [Using Spec Driven Development with AWS Kiro to add the last updated date on Eleventy blog](https://geshan.com.np/blog/2026/05/aws-kiro/): A step-by-step guide to add updated at to existing Eleventy blog using spec-driven development with AWS Kiro (2026-05-03)
+- [How to build a simple Google login and profile page on Google AI Studio with Firebase as a datastore [step-by-step]](https://geshan.com.np/blog/2026/03/google-ai-studio-database/): A step-by-step guide to generate a Google login and profile page app with Google AI Studio using Firebase Firestore as a database (2026-03-27)
+- [Choosing the best git branching strategy for continuous delivery in your team](https://geshan.com.np/blog/2026/03/git-branching-strategy-for-continuous-delivery/): A comparison of GitFlow, GitHub Flow (simplified GitFlow) and trunk based development with a focus on continuous delivery for your team (2026-03-22)
+- [How to use an open model with your application using Docker Model Runner and Docker Compose [Part 2]](https://geshan.com.np/blog/2026/01/docker-model-runner-docker-compose/): A tutorial showing how to run Smollm2 with Docker Model Runner and Docker Compose to work with a simple Node.js/Express.js chat application (2026-01-25)
+- [Docker Model Runner: A beginner’s guide to running open models on your own machine [Part 1]](https://geshan.com.np/blog/2026/01/docker-model-runner/): A tutorial showing how to run Smollm2 with Docker Model Runner mainly with the Docker Model CLI (2026-01-23)
+- [Recap 2025: Blogging, public speaking, tech community work, and other things](https://geshan.com.np/blog/2025/12/recap-2025/): A professional recap of 2025, focusing on public speaking, blogging, an interview, tech community work, and other things. (2025-12-25)
+- [How to use Gemini Live audio as an interviewer for a software engineering job (with video)](https://geshan.com.np/blog/2025/12/gemini-live-audio/): Learn how to use Gemini Live audio as an interviewer for a software engineering job with this practical guide. Use Gemini as an interviewer for a backend engineer role and talk with it (2025-12-16)
+- [How to create a hair style changer app using Gemini 3 on Google AI Studio](https://geshan.com.np/blog/2025/11/gemini-3-ai/): Learn how to create a hair style changer app using Gemini 3 on Google AI Studio with this practical guide. Explore its features and find out how to build your own app. (2025-11-27)
+- [How to use NotebookLM: A practical guide with examples](https://geshan.com.np/blog/2025/11/how-to-use-notebooklm/): Learn how to use Google NotebookLM effectively with this practical guide. Explore its features and find out how to use it for job search with practical examples. (2025-11-23)
+- [How to build your own resume reviewer with Google AI Studio in minutes](https://geshan.com.np/blog/2025/11/google-ai-studio-build/): Learn how to build your own resume reviewer with Google AI Studio in minutes and deploy it on Google Cloud Run. (2025-11-14)
+- [How to use the remote GitHub MCP server with Copilot on VS Code: a step-by-step guide](https://geshan.com.np/blog/2025/08/github-mcp-vscode/): Learn how to use the remote GitHub MCP server with GitHub Copilot on VS Code editor in this step-by-step tutorial (2025-08-30)
+- [How to run Gemma 3 on Google Cloud Run, the easiest way with AI Studio](https://geshan.com.np/blog/2025/06/gemma3-on-cloud-run/): Learn how to deploy Gemma 3 on Google Cloud Run using Google AI Studio, also understand the magic behind the process. (2025-06-08)
+- [Google AI Studio: How to go from a prompt to a geo-location guessing app in minutes](https://geshan.com.np/blog/2025/05/google-ai-studio-apps/): Learn how to generate, create and deploy a geo-location guessing app using Google AI Studio and run it on Google Cloud Run step by step. (2025-05-22)
+- [Cloud Run Jobs: A Beginner's Guide to Running Tasks to Completion on a schedule](https://geshan.com.np/blog/2025/04/cloud-run-jobs/): Learn how to create and run Cloud Run Jobs on GCP to run tasks to completion on a schedule with Google Cloud Scheduler. (2025-04-29)
+- [How to deploy a container image to Amazon Elastic Container Service (ECS) with Fargate: a beginner’s tutorial [Part 2]](https://geshan.com.np/blog/2025/03/amazon-ecs-tutorial/): Learn how to deploy a container from a private Amazon ECR repository to ECS with Fargate step-by-step with screenshots. (2025-03-26)
+- [How to create an Amazon Elastic Container Registry (ECR) and push a docker image to it [Part 1]](https://geshan.com.np/blog/2025/03/amazon-ecr-push-image/): Learn how create a private Amazon Elastic Container Registry (ECR), then build and push a Node.js Hello World app's Docker image to it. (2025-03-25)
+- [How to use Ollama and Open WebUI with Docker Compose [Part 4]](https://geshan.com.np/blog/2025/02/ollama-docker-compose/): Learn how to use Ollama and Open WebUI inside Docker with Docker compose to run any open LLM and create your own mini ChatGPT. (2025-02-11)
+- [Using Ollama APIs to generate responses and much more [Part 3]](https://geshan.com.np/blog/2025/02/ollama-api/): Learn how to use Ollama APIs like generate, chat and more like list model, pull model, etc with cURL and Jq with useful examples (2025-02-09)
+
+## Optional
+
+- [Public Speaking Repository](https://github.com/geshan/public-speaking): Organized list of conference talks on ChatOps, continuous delivery, microservices, and serverless containers.
+- [AU Tech Jobs](https://autechjobs.com/): Australian tech job aggregator side project.
+- [E-commerce Product Description Generator Workshop](https://gw.geshan.com.np/): Gen AI hands-on workshop.
+- [Geolocation Gen AI Workshop](https://geo.geshan.com.np/): Using Gen AI to guess the geolocation of a photo.
