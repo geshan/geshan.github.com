@@ -19,6 +19,15 @@ Google Antigravity recently added [/swarm](https://antigravity.google/docs/swarm
 
 <img class="center" src="/images/google-antigravity-swarm/01google-antigravity-swarm.jpg" title="AI has transformed software engineering in 2026" alt="AI has transformed software engineering in 2026" fetchpriority="high">
 
+## Table of contents
+
+- [More on Google Antigravity Swarm](#more-on-google-antigravity-swarm)
+    - [How it works](#how-it-works)
+- [Update NPM packages with Antigravity Swarm](#update-npm-packages-with-antigravity-swarm)
+    - [Get a list of outdated NPM packages](#get-a-list-of-outdated-npm-packages)
+    - [The prompt to upgrade NPM packages with swarm](#the-prompt-to-upgrade-npm-packages-with-swarm)
+- [Conclusion](#conclusion)
+
 ## More on Google Antigravity Swarm
 
 Before we get our hands dirty, you will need the Antigravity App or Antigravity CLI installed on your machine. I will do the demo with [Antigravity CLI](https://antigravity.google/product/antigravity-cli/) version 1.5.18. Swarm runs a group of related subagents managed by a coordinator agent. It might sound similar to the `/teamwork` command, but it is different; follow this [table](https://antigravity.google/docs/swarm/#choose-between-swarm-teamwork-boost-and-subagents) to know the difference between subagents, `/boost`, `/teamwork`, and `/swarm`. 
