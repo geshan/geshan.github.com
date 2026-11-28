@@ -5,12 +5,12 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const blogTools = require("eleventy-plugin-blog-tools");
-const htmlmin = require("html-minifier");
 const workbox = require("workbox-build");
 const { execSync } = require("child_process");
 
 module.exports = async function (eleventyConfig) {
   const { default: pluginRss } = await import("@11ty/eleventy-plugin-rss");
+  const htmlmin = await import("html-minifier");
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(blogTools);
@@ -192,10 +192,10 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addShortcode("excerptMore", require("./_custom/excerptMore"));
 
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", async function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
       try {
-        let minified = htmlmin.minify(content, {
+        let minified = await htmlmin.minify(content, {
           useShortDoctype: true,
           removeComments: true,
           collapseWhitespace: true,
@@ -216,9 +216,11 @@ module.exports = async function (eleventyConfig) {
     breaks: true,
     linkify: true,
   }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      placement: "after",
+      class: "direct-link",
+      symbol: "#",
+    }),
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
