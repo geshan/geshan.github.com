@@ -30,7 +30,7 @@ HTTP responses can be sped up with Node.js and Redis caching. In this post, we w
   * [Adding the Redis wrapper](#adding-the-redis-wrapper)
 * [Add get quotes by author route](#add-get-quotes-by-author-route)
 * [Add cache to get quotes by author](#add-cache-to-get-quotes-by-author)
-* [How fast is the Node.js Redis cache?](#how-fast-is-the-node.js-redis-cache)
+* [How fast is the Node.js Redis cache?](#how-fast-is-the-node.js-redis-cache%3F)
 * [Some other things to consider](#some-other-things-to-consider)
 * [Conclusion](#conclusion)
 

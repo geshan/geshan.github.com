@@ -28,7 +28,9 @@ The PostgreSQL database, lovingly known as Postgres, is a powerful open-source d
     * [Use the quotes example for copy](#use-the-quotes-example-for-copy)
 * [Conclusion](#conclusion)
 
-## As a software engineer, you should always strive to write highly optimized and efficient code. This can depend on the number of requests per second the code is expected to handle, the size of the data, the number of database connections, and other factors. The same goes for the data manipulation operations you perform on a database, be it MySQL, Postgres, or another database. So, you should know about the trade-offs and choose the best approach given the context.
+## Adding data
+
+As a software engineer, you should always strive to write highly optimized and efficient code. This can depend on the number of requests per second the code is expected to handle, the size of the data, the number of database connections, and other factors. The same goes for the data manipulation operations you perform on a database, be it MySQL, Postgres, or another database. So, you should know about the trade-offs and choose the best approach given the context.
 
 You will explore two ways to insert multiple rows in Postgres. First, you will look at inserting multiple rows with a single INSERT statement, then delve into the powerful `COPY` command that can be used to insert multiple rows from an external CSV file into an existing table. By the end of this comprehensive exploration, you'll have a solid grasp of how to insert multiple rows in Postgres efficiently and effectively.
 

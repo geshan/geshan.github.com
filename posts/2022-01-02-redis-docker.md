@@ -24,7 +24,7 @@ Redis is an open-source in-memory datastore used as a database, cache, and even 
 * [Prerequisites](#prerequisites)
 * [Redis and Docker](#redis-and-docker)
 * [Redis with Docker-compose](#redis-with-docker-compose)
-* [Add Redis to an existing Node.js application](#add-redis-to-an-existing-nodejs-application)
+* [Add Redis to an existing Node.js application](#add-redis-to-an-existing-node.js-application)
 * [Conclusion](#conclusion)
 
 ## Prerequisites

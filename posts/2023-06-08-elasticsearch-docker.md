@@ -20,8 +20,8 @@ Elasticsearch is one of the most popular open-source software to store, search a
 ## Table of contents
 
 - [Table of contents](#table-of-contents)
-- [What is Elasticsearch?](#what-is-elasticsearch)
-- [Why Use Elasticsearch?](#why-use-elasticsearch)
+- [What is Elasticsearch?](#what-is-elasticsearch%3F)
+- [Why Use Elasticsearch?](#why-use-elasticsearch%3F)
 - [Popularity of Elasticsearch](#popularity-of-elasticsearch)
 - [Faceted search with Elasticsearch is useful for e-commerce](#faceted-search-with-elasticsearch-is-useful-for-e-commerce)
 - [Run Elasticsearch with Docker](#run-elasticsearch-with-docker)

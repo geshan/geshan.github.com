@@ -29,7 +29,7 @@ Background Photo by [Harley-Davidson](https://unsplash.com/@harleydavidson) on [
 
 * [Web application security](#web-application-security)
   * [Handy OWASP cheat sheets](#handy-owasp-cheat-sheets)
-  * [Node.js Web application security](#nodejs-web-application-security)
+  * [Node.js Web application security](#node.js-web-application-security)
 * [Example Express Js application](#example-express-js-application)
 * [Express without Helmet Js](#express-without-helmet-js)
 * [Express Helmet to the rescue](#express-helmet-to-the-rescue)

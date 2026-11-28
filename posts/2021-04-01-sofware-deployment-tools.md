@@ -22,15 +22,15 @@ I have used a variety of software deployment tools in the last 20 years. From FT
 
 ## Table of contents
 
-* [What are software deployment tools?](#what-are-software-deployment-tools)
-* [When did my web journey start?](#when-did-my-web-journey-start)
+* [What are software deployment tools?](#what-are-software-deployment-tools%3F)
+* [When did my web journey start?](#when-did-my-web-journey-start%3F)
 * [First software deployment tools - web interface and FTP in 2000 - 2008](#first-software-deployment-tools---web-interface-and-ftp-in-2000---2008)
-* [SSH, Git pull as software deployment tools 2008-2011](#ssh-git-pull-as-software-deployment-tools-2008-2011)
+* [SSH, Git pull as software deployment tools 2008-2011](#ssh%2C-git-pull-as-software-deployment-tools-2008-2011)
 * [Hello Capistrano circa 2012-2015](#hello-capistrano-circa-2012-2015)
 * [Docker is the way to go - 2016](#docker-is-the-way-to-go---2016)
 * [Kubernetes it is 2016-2023](#kubernetes-it-is-2016-2023)
 * [Quick recap](#quick-recap)
-* [How to choose your software deployment tool?](#how-to-choose-your-software-deployment-tool)
+* [How to choose your software deployment tool?](#how-to-choose-your-software-deployment-tool%3F)
 * [Conclusion](#conclusion)
 ## What are software deployment tools?
 

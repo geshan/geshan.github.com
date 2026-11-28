@@ -19,8 +19,8 @@ Are you a software engineer who works with PostgreSQL? Do you often find yoursel
 
 ## Table of contents
 
-* [Postgres string_agg](#postgres-string-agg)
-* [Related to MySQL group_concat](#related-to-mysql-group-concat)
+* [Postgres string_agg](#postgres-string_agg)
+* [Related to MySQL group_concat](#related-to-mysql-group_concat)
 * [Example of billionaires data](#example-of-billionaires-data)
 * [List the billionaires by country and birth year with count per country](#list-the-billionaires-by-country-and-birth-year-with-count-per-country)
 * [List the billionaires by category and count per category](#list-the-billionaires-by-category-and-count-per-category)

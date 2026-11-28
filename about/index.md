@@ -29,18 +29,17 @@ Playing with Gen AI tools and evaluating how they can be used in your day-to-day
 
 - [Consciously evolving](#consciously-evolving)
 - [Day to day](#day-to-day)
-- [Why this blog?](#why-this-blog)
+- [Why this blog?](#why-this-blog%3F)
 - [Public speaking](#public-speaking)
 - [Side projects](#side-projects)
   - [Nepal News English - 2019](#nepal-news-english---2019)
   - [AU Tech Jobs - 2020](#au-tech-jobs---2020)
   - [Bloggers Union - 2022](#bloggers-union---2022)
-  - [Speakers' Camp - 2023](#speakers-camp---2023)
+  - [Speakers' Camp - 2023](#speakers'-camp---2023)
   - [GDG in each capital city of Australia - 2024](#gdg-in-each-capital-city-of-australia---2024)
 - [Publications](#publications)
-- [Feedback from colleagues](#feedback-from-colleagues)
 - [I am also](#i-am-also)
-- [Follow me/this blog](#follow-methis-blog)
+- [Follow me/this blog](#follow-me%2Fthis-blog)
 
 ## Consciously evolving
 

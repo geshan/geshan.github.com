@@ -33,7 +33,7 @@ Using RabbitMQ with Node.js to offload the things to process in the background i
 * [Publish a message to RabbitMQ using Node.js](#publish-a-message-to-rabbitmq-using-node.js)
 * [Consume messages with Node.js](#consume-messages-with-node.js)
 * [Set up Docker and Docker compose for Node.js](#set-up-docker-and-docker-compose-for-node.js)
-* [Test RabbitMQ with Node.js on Docker and docker-compose](#test-rabbitmq-with-nodejs-on-docker-and-docker-compose)
+* [Test RabbitMQ with Node.js on Docker and docker-compose](#test-rabbitmq-with-node.js-on-docker-and-docker-compose)
 * [Conclusion](#conclusion)
 
 ## Why use async processing

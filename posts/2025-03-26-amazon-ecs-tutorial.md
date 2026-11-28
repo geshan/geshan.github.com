@@ -18,7 +18,7 @@ Amazon Elastic Container Service (ECS) is a fully managed container orchestratio
 
 ## Table of contents
 
-- [What is Amazon Elastic Container Service (ECS)](#what-is-amazon-elastic-container-service-ecs)
+- [What is Amazon Elastic Container Service (ECS)](#what-is-amazon-elastic-container-service-(ecs))
 - [Create an Elastic Container Service cluster](#create-an-elastic-container-service-cluster)
 - [Create a task definition for ECS](#create-a-task-definition-for-ecs)
 - [Create an ECS Service](#create-an-ecs-service)

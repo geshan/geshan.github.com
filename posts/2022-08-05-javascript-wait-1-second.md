@@ -23,7 +23,7 @@ Call it a wait, sleep, or delay in executing code in JavaScript. It can be done 
 
 * [Wait with setTimeout](#wait-with-settimeout)
 * [Sleep with Promise](#sleep-with-promise)
-* [Sleep with timers in Node 15+](#sleep-with-timers-in-node-15)
+* [Sleep with timers in Node 15+](#sleep-with-timers-in-node-15%2B)
 * [Using Delay NPM package to wait](#using-delay-npm-package-to-wait)
     * [Other NPM packages to wait](#other-npm-packages-to-wait)
 * [Conclusion](#conclusion)

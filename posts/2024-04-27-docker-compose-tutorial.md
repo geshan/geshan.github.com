@@ -19,11 +19,11 @@ Docker Compose is a powerful tool that simplifies the management and deployment 
 
 ## Table of contents
 
-* [What is Docker Compose?](#what-is-docker-compose)
-* [Why use Docker Compose?](#why-use-docker-compose)
+* [What is Docker Compose?](#what-is-docker-compose%3F)
+* [Why use Docker Compose?](#why-use-docker-compose%3F)
 * [How to use Docker Compose](#how-to-use-docker-compose)
     * [Install Docker Compose](#install-docker-compose)
-    * [Define your Application in docker-compose.yml](#define-your-application-in-docker-composeyml)
+    * [Define your Application in docker-compose.yml](#define-your-application-in-docker-compose.yml)
     * [Build and Run your Application](#build-and-run-your-application)
     * [Additional Commands](#additional-commands)
 * [Code for Docker Compose Usage](#code-for-docker-compose-usage)

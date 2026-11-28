@@ -23,14 +23,14 @@ Next.js is a popular and opinionated React based meta-framework with a tagline o
 
 ## Table of contents
 
-* [What is Next.js](#what-is-nextjs)
-* [Next.js popularity](#nextjs-popularity)
-* [Why use next.js with Docker](#why-use-nextjs-with-docker)
+* [What is Next.js](#what-is-next.js)
+* [Next.js popularity](#next.js-popularity)
+* [Why use next.js with Docker](#why-use-next.js-with-docker)
 * [Prerequisites](#prerequisites)
-* [Install Next.js without Docker](#install-nextjs-without-docker)
-* [Docker image for Next.js](#docker-image-for-nextjs)
-* [Adding Docker compose for Next.js](#adding-docker-compose-for-nextjs)
-* [Run Next.js with docker compose](#run-nextjs-with-docker-compose)
+* [Install Next.js without Docker](#install-next.js-without-docker)
+* [Docker image for Next.js](#docker-image-for-next.js)
+* [Adding Docker compose for Next.js](#adding-docker-compose-for-next.js)
+* [Run Next.js with docker compose](#run-next.js-with-docker-compose)
 * [Conclusion](#conclusion)
 
 ## What is Next.js

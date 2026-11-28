@@ -28,7 +28,7 @@ In this comprehensive guide, we'll delve into the world of environment variables
   - [Installing dotenv](#installing-dotenv)
   - [Creating a .env file](#creating-a-.env-file)
   - [Loading environment variables](#loading-environment-variables)
-- [Get environment variables natively in Node 20+](#get-environment-variables-natively-in-node-20%2B)
+- [Get environment variables natively in Node 20+](#get-environment-variables-natively-node-20%2B)
   - [Using --env-file in Node CLI](#using---env-file-in-node-cli)
 - [Dotenv is still popular](#dotenv-is-still-popular)
 - [Conclusion](#conclusion)

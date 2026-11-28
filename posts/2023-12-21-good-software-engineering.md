@@ -25,7 +25,7 @@ In the ever-evolving landscape of technology, the importance of good software en
   * [Code Layers: Controller, Service, and Repository](#code-layers%3A-controller%2C-service%2C-and-repository)
   * [Code or not code](#code-or-not-code)
 * [Choose Boring Technology](#choose-boring-technology)
-* [Measure, Learn, and Adapt](#measure-learn-and-adapt)
+* [Measure, Learn, and Adapt](#measure%2C-learn%2C-and-adapt)
 * [Conclusion](#conclusion)
 
 

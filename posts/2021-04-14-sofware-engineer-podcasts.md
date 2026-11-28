@@ -37,7 +37,7 @@ Due to no commute in the past 12 months, I found new times and ways to listen to
     * [DevDiscuss](#devdiscuss)
     * [In Depth Podcast](#in-depth-podcast)
 * [Software Engineering podcasts from 2020](#software-engineering-podcasts-from-2020)
-    * [Command Line Heroes (from Redhat) by Saron Yitbarek](#command-line-heroes-from-redhat-by-saron-yitbarek)
+    * [Command Line Heroes (from Redhat) by Saron Yitbarek](#command-line-heroes-(from-redhat)-by-saron-yitbarek)
     * [Developing Up By Mike Miles](#developing-up-by-mike-miles)
     * [The SAAS Podcast by Umer Khan](#the-saas-podcast-by-umer-khan)
 * [Podcasts I started listening to in 2019](#podcasts-i-started-listening-to-in-2019)

@@ -19,7 +19,7 @@ React Toastify is the most popular NPM package to show toast messages on a React
 
 ## Table of contents
 
-* [Why use React?](#why-use-react)
+* [Why use React?](#why-use-react%3F)
 * [Options to show messages in React](#options-to-show-messages-in-react)
 * [React Toastify](#react-toastify)
 * [When to use React Toastify](#when-to-use-react-toastify)

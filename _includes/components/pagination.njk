@@ -13,7 +13,7 @@
      {% if pagination.pageNumber - 1 > 0 %}
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="/posts/{{ pagination.pageNumber - 1  }}"
+        href="/posts/{{ pagination.pageNumber - 1  }}/"
         class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado block p-2 rounded-md px-4  transition ease-in-out delay-100  text-center text-xl"
       >
         {{ pagination.pageNumber - 1 }}
@@ -22,7 +22,7 @@
     {% endif %} {% if pagination.pageNumber > 0 %}
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="/posts/{{ pagination.pageNumber }}"
+        href="/posts/{{ pagination.pageNumber }}/"
         class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado block p-2 rounded-md px-4  transition ease-in-out delay-100  text-center text-xl"
       >
         {{ pagination.pageNumber }}
@@ -31,7 +31,7 @@
     {% endif %}
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="/posts/{{ pagination.pageNumber + 1  }}"
+        href="/posts/{{ pagination.pageNumber + 1  }}/"
         class="bg-darkAvocado block p-2 rounded-md px-4 border-darkAvocado   text-white text-center text-xl"
       >
         {{ pagination.pageNumber + 1 }}
@@ -40,7 +40,7 @@
     {% if pagination.pageNumber + 1 < pagination.size %}
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="/posts/{{ pagination.pageNumber + 2  }}"
+        href="/posts/{{ pagination.pageNumber + 2  }}/"
         class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
       >
         {{ pagination.pageNumber + 2 }}
@@ -50,7 +50,7 @@
     
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="/posts/{{ pagination.pageNumber + 3 }}"
+        href="/posts/{{ pagination.pageNumber + 3 }}/"
         class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
       >
         {{ pagination.pageNumber + 3 }}
@@ -58,7 +58,7 @@
     </li>
     <li class="list-none md:mr-3 mr-2 inline-block font-ui">
       <a
-        href="/posts/{{ pagination.pageNumber + 4 }}"
+        href="/posts/{{ pagination.pageNumber + 4 }}/"
         class="text-gray bg-white border-darkAvocado hover:text-white hover:bg-darkAvocado rounded-md block p-2  px-4  transition ease-in-out delay-100  text-center font-ui text-xl"
       >
         {{ pagination.pageNumber + 4 }}

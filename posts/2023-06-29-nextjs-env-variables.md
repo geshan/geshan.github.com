@@ -22,7 +22,7 @@ Next.js is a React framework that makes building fast, user-friendly websites ea
 - [Popularity of Next.js](#popularity-of-next.js)
 - [Environment variables](#environment-variables)
 - [Environment variables in Next.js](#environment-variables-in-next.js)
-  - [Next.js browser level environment variables](#nextjs-browser-level-environment-variables)
+  - [Next.js browser level environment variables](#next.js-browser-level-environment-variables)
   - [Environment variable load order in Next.js](#environment-variable-load-order-in-next.js)
 - [Example city weather app](#example-city-weather-app)
   - [City weather Next.js app code](#city-weather-next.js-app-code)

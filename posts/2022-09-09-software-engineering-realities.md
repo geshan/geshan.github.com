@@ -30,7 +30,7 @@ I have been writing code in some form for more than 20 years now. I have been a 
 * [Databases](#databases)
 * [Testing](#testing)
 * [Software Deployment/Release](#software-deployment%2Frelease)
-* [DevOps/SRE](#devopssre)
+* [DevOps/SRE](#devops%2Fsre)
 * [Side projects](#side-projects)
 * [Misc](#misc)
 * [Quick visual summary](#quick-visual-summary)

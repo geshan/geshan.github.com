@@ -20,7 +20,7 @@ Renaming a column in Postgres might seem straightforward, but as your database g
 ## Table of contents
 
 * [Schema changes are rare but needed](#schema-changes-are-rare-but-needed)
-* [Example of Customer Table: A Simple Example](#example-of-customer-table-a-simple-example)
+* [Example of Customer Table: A Simple Example](#example-of-customer-table%3A-a-simple-example)
 * [Rename `phone` to `contact_phone`](#rename-phone-to-contact_phone)
 * [Steps to do a zero downtime column rename](#steps-to-do-a-zero-downtime-column-rename)
   * [Add the new column](#add-the-new-column)

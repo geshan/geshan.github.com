@@ -23,7 +23,7 @@ Have you ever tried building an AI agent, only to get bogged down in massive, co
 ## Table of contents
 
 - [Prerequisites](#prerequisites)
-- [Google Agent Development Kit (ADK)](#google-agent-development-kit-adk)
+- [Google Agent Development Kit (ADK)](#google-agent-development-kit-(adk))
 - [Fact checker agent](#fact-checker-agent)
   - [Build the agent](#build-the-agent)
   - [Run the agent in the CLI](#run-the-agent-in-the-cli)

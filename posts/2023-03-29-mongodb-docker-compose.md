@@ -21,8 +21,8 @@ MongoDB is an open-source document database that is designed to scale and provid
 
 ## Table of contents
 
-* [What is MongoDB?](#what-is-mongodb)
-* [Why use MongoDB?](#why-use-mongodb)
+* [What is MongoDB?](#what-is-mongodb%3F)
+* [Why use MongoDB?](#why-use-mongodb%3F)
 * [Prerequisites](#prerequisites)
 * [Run MongoDB with Docker](#run-mongodb-with-docker)
 * [Run MongoDB with docker-compose](#run-mongodb-with-docker-compose)

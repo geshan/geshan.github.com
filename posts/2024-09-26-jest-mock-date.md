@@ -20,7 +20,6 @@ When writing unit tests for your JavaScript code, especially when dealing with t
 
 ## Table of contents
 
-- [Introduction](#introduction)
 - [Testing native Date functions is not easy](#testing-native-date-functions-is-not-easy)
 - [Mock Date with Jest 26](#mock-date-with-jest-26)
 - [Day of the year example](#day-of-the-year-example)

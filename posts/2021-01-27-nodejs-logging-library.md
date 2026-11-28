@@ -24,7 +24,7 @@ The optimally correct logging Node.js logging library can give you unprecedented
 ## Table of contents
 
 * [Assumptions](#assumptions)
-* [Node.js logging libraries to evaluate](#nodejs-logging-libraries-to-evaluate)
+* [Node.js logging libraries to evaluate](#node.js-logging-libraries-to-evaluate)
   * [Winston](#winston)
   * [Bunyan for Node.js logging](#bunyan-for-node.js-logging)
   * [Pino](#pino)

@@ -22,7 +22,7 @@ Axios is one of the most popular JavaScript libraries to perform HTTP requests. 
 ## Table of contents
 
 * [Axios introduction](#axios-introduction)
-* [What are Axios interceptors?](#what-are-axios-interceptors)
+* [What are Axios interceptors?](#what-are-axios-interceptors%3F)
    * [Intercepting Requests](#intercepting-requests)
    * [Response Interceptors](#response-interceptors)
 * [Using Axios Interceptors to know request duration](#using-axios-interceptors-to-know-request-duration)

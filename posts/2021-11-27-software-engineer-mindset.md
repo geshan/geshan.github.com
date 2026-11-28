@@ -21,7 +21,7 @@ If you have worked in building software for some years, possibly more than once 
 
 ## Table of contents
 
-* [What is a stable software product?](#what-is-a-stable-software-product)
+* [What is a stable software product?](#what-is-a-stable-software-product%3F)
     * [Example stable product](#example-stable-product)
     * [Feature completeness is a must for a stable product](#feature-completeness-is-a-must-for-a-stable-product)
 * [Qualities of a new software project](#qualities-of-a-new-software-project)
